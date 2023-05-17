@@ -1,0 +1,187 @@
+{
+  "saveArgs": {
+    "to": "pt",
+    "messages": [
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/buy-button.add-to-cart",
+        "context": "vtex.store-components@3.x",
+        "targetMessage": "Adicionar à sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/buyButton-label-unavailable",
+        "context": "vtex.store-components@3.x",
+        "targetMessage": "Indisponível"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/buybutton.add-failure",
+        "context": "vtex.store-components@3.x",
+        "targetMessage": "Algo deu errado e o item não pôde ser adicionado à sua sacola!"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/buybutton.buy-offline-success",
+        "context": "vtex.store-components@3.x",
+        "targetMessage": "Item adicionado à sua sacola offline."
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/buybutton.buy-success",
+        "context": "vtex.store-components@3.x",
+        "targetMessage": "Item adicionado à sua sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/buybutton.buy-success-duplicate",
+        "context": "vtex.store-components@3.x",
+        "targetMessage": "Item já em sua sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/buybutton.see-cart",
+        "context": "vtex.store-components@3.x",
+        "targetMessage": "Ver sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/add-to-cart.success",
+        "context": "vtex.add-to-cart-button@0.x",
+        "targetMessage": "Item adicionado à sua sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/add-to-cart.failure",
+        "context": "vtex.add-to-cart-button@0.x",
+        "targetMessage": "Algo deu errado e o item não pôde ser adicionado à sua sacola!"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/add-to-cart.see-cart",
+        "context": "vtex.add-to-cart-button@0.x",
+        "targetMessage": "Ver Sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/add-to-cart.add-to-cart",
+        "context": "vtex.add-to-cart-button@0.x",
+        "targetMessage": "Adicionar à sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/add-to-cart.label-unavailable",
+        "context": "vtex.add-to-cart-button@0.x",
+        "targetMessage": "Indisponível"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/add-to-cart.select-sku-variations",
+        "context": "vtex.add-to-cart-button@0.x",
+        "targetMessage": "Por favor selecione uma opção de cada variação do produto!"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "admin/editor.add-to-cart.title",
+        "context": "vtex.add-to-cart-button@0.x",
+        "targetMessage": "Botão \"Adicionar à Sacola\""
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "admin/editor.add-to-cart.text.description",
+        "context": "vtex.add-to-cart-button@0.x",
+        "targetMessage": "Texto do botãox ex. \"Adicionar à Sacola\""
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/finish-shopping-button-label",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Finalizar compra"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/minicart-empty",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Sua sacola está vazia!"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/sidebar-title",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Minha sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/minicart.empty-state",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Sua sacola está vazia."
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/minicart.title",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Minha Sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/checkout-summary.disclaimer",
+        "context": "vtex.checkout-summary@0.x",
+        "targetMessage": "Taxas e frete calculados na Finalização da Compra"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "admin/editor.minicart.title",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Uma simples sacola de compras que mostra todos os produtos adicionados a ela"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "admin/editor.minicart.description",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Uma simples sacola de compras que mostra todos os produtos adicionados a ela"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/finish-shopping-button-label",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Finalizar Compra"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/minicart-empty",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Sua sacola está vazia!"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/sidebar-title",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Minha Sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/minicart.go-to-checkout",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Finalizar Compra"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/minicart.title",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Minha Sacola"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/minicart.empty-state",
+        "context": "vtex.minicart@2.x",
+        "targetMessage": "Sua sacola está vazia!"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/search.total-products-2",
+        "context": "vtex.store-components@3.x",
+        "targetMessage": "{recordsFiltered} <span>{recordsFiltered, plural, one {Produto encontrado} other {Produtos encontrados}}</span>"
+      }
+    ]
+  }
+}

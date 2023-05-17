@@ -1,0 +1,32 @@
+%dot {
+  background: $high-light;
+  width: 1.5rem !important;
+  height: 0.25rem !important;
+  padding: 0;
+  transition: all 0.2s;
+  border-radius: 0.125rem;
+
+  &.dot--isActive,
+  &.paginationDot--isActive {
+    background: $color-1;
+    border-radius: 0.125rem;
+    width: 1.5rem !important;
+    height: 0.25rem !important;
+  }
+}
+
+%dot-product {
+  background: $color-1;
+  width: 1.5rem !important;
+  height: 0.25rem !important;
+  padding: 0;
+  transition: all 0.2s;
+  border-radius: 0.125rem;
+
+  &.swiperBullet--active {
+    background: $high-light;
+    border-radius: 0.125rem;
+    width: 1.5rem !important;
+    height: 0.25rem !important;
+  }
+}

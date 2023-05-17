@@ -1,0 +1,58 @@
+.productHighlight {
+  z-index: 1;
+}
+
+.productHighlightText {
+  font-family: $main-font !important;
+  @include text($font-size-xs, $white, $semi-bold);
+  line-height: 0.875rem;
+  display: flex;
+  flex-direction: row;
+  width: fit-content !important;
+  flex-wrap: nowrap;
+  line-break: strict;
+  align-items: center;
+}
+
+.productHighlightWrapper {
+  background-color: $color-2 !important;
+  border-radius: 0.125rem;
+  padding: 0.25rem;
+  margin: 0.156rem;
+  width: 5.75rem;
+  height: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:last-child {
+    &:last-child {
+      background-color: $color-5;
+    }
+  }
+
+  &--collection {
+    margin-right: 0.188rem !important;
+
+    @include tablet {
+      margin-right: 0.313rem !important;
+      margin-left: 0.188rem !important;
+    }
+  }
+}
+
+.productHighlightText {
+}
+
+.productHighlightWrapper {
+}
+
+[data-highlight-name=''] {
+}
+
+[data-highlight-id=''] {
+}
+
+[data-highlight-type=''] {
+}

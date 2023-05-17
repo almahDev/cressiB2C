@@ -1,0 +1,152 @@
+.flexRow {
+  &--product__summary-name {
+    flex-grow: 1;
+  }
+
+  &--product__rating {
+    padding: 0.5rem 1rem;
+
+    @include tablet {
+      padding: 0.1875rem 0.5rem 0.5rem;
+
+      :global(.vtex-reviews-and-ratings-3-x-inlineContainer) {
+        :first-child {
+          font-size: $font-size-sm;
+          line-height: 1;
+        }
+      }
+
+      :global(.vtex-reviews-and-ratings-3-x-star) {
+        font-size: $font-size-sm;
+        line-height: 1;
+      }
+    }
+  }
+
+  &--product__qtty-add--desktop {
+    background: transparent;
+  }
+}
+
+.flexRowContent {
+  &--shelf__price {
+    .stretchChildrenWidth {
+    }
+  }
+
+  &--shelf__price-and-savings {
+    padding: 0 1rem 0.1875rem;
+    align-items: center;
+    text-align: left;
+
+    .stretchChildrenWidth {
+      margin: 0 !important;
+    }
+
+    @include tablet {
+      padding: 0 0.5rem 0.1875rem;
+
+      .col {
+        display: block !important;
+
+        &:first-child {
+          padding-bottom: 0.25rem;
+        }
+
+        &:empty {
+          height: 18px;
+        }
+      }
+    }
+  }
+
+  &--installments {
+    padding: 0 1rem 0.7rem;
+
+    @include tablet {
+      padding: 0 0.5rem 0.4rem;
+    }
+  }
+
+  &--shelf {
+    @extend %container-large;
+
+    .stretchChildrenWidth {
+      @include desktop {
+        margin-right: 0.625rem;
+      }
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &--product__qtty-add {
+    padding: 0 1rem 0.5rem;
+
+    .stretchChildrenWidth {
+      margin: 0;
+    }
+  }
+
+  &--product__qtty-add--desktop {
+    padding-top: 1rem;
+    background: linear-gradient(180deg, rgba(91, 91, 91, 0) 0%, rgba(91, 91, 91, 0.2) 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--product__qtty-add--mobile {
+    padding: 0 0.5rem 0.5rem;
+
+    .stretchChildrenWidth {
+      &:not(:last-child) {
+        padding-bottom: 0.75rem;
+      }
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &--product__summary-name {
+    padding: 1rem 1rem 0;
+
+    @include tablet {
+      padding: 0.6875rem 0.5rem 0;
+    }
+  }
+
+  // &--shelf-summary-price {
+  //   .stretchChildrenWidth {
+  //     margin: 0 !important;
+  //   }
+  // }
+}
+
+.flexCol {
+  &--highlights-stack-wrapper {
+    align-items: flex-start;
+    padding: 1rem;
+
+    @include tablet {
+      padding: 0.5rem;
+    }
+  }
+}
+
+.flexColChild {
+  &--shelf-summary-price-wrapper-buy-together {
+    margin: 16px 0;
+  }
+}

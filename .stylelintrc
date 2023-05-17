@@ -1,0 +1,56 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ],
+  "rules": {
+    "selector-pseudo-class-no-unknown": null,
+    "selector-pseudo-element-no-unknown": null,
+    "selector-class-pattern": null,
+    "block-no-empty": null,
+    "declaration-empty-line-before": null,
+    "alpha-value-notation": null,
+    "color-function-notation": null,
+    "length-zero-no-unit": null,
+    "rule-empty-line-before": null,
+    "function-whitespace-after": null,
+    "media-feature-range-operator-space-after": null,
+    "media-feature-range-operator-space-before": null,
+    "declaration-block-single-line-max-declarations": null,
+    "no-duplicate-at-import-rules": null,
+    "no-descending-specificity": null,
+    "import-notation": null,
+    "shorthand-property-no-redundant-values": null,
+    "function-url-quotes": null,
+    "no-duplicate-selectors": [
+      true,
+      {
+        "message": "O seguinte seletor está duplicado: \"%s\"."
+      }
+    ],
+    "color-named": [
+      "never",
+      {
+        "message": "Não utilize cores nomeadas: \"%s\". Utilize as cores do projeto, do arquivo \"sass/variables/_colors.scss\"."
+      }
+    ],
+    "color-no-hex": [
+      true,
+      {
+        "message": "Não utilize cores hexadecimais: \"%s\". Utilize as cores do projeto, do arquivo \"sass/variables/_colors.scss\"."
+      }
+    ],
+    "selector-disallowed-list": [
+      ["/^&\\w+/", "/^:global\\(\\.(.+)-(.+)-\\d-x/"],
+      {
+        "message": "Não utilize o seletor \"%s\", pois foge dos nossos padrões de código."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
+  ]
+}

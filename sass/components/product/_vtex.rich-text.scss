@@ -1,0 +1,144 @@
+@import 'mixins/text';
+@import 'mixins/links';
+
+.container {
+  &--product__title {
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .heading {
+      font-weight: $regular;
+      font-size: $font-size-lg;
+      line-height: 1.688rem;
+      color: $text-color-1;
+      text-align: start;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+
+      @include tablet {
+        font-size: $font-size-md;
+        line-height: 1.5rem;
+        margin-top: 2.75rem;
+      }
+    }
+  }
+
+  &--product__description {
+    .wrapper {
+      width: 100%;
+      text-align: left;
+    }
+
+    .paragraph {
+      @include text($font-size-lg, $text-color-1, $regular);
+      line-height: 1.688rem;
+      text-transform: uppercase;
+      margin: 0;
+
+      @include tablet {
+        font-size: $font-size-md;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  &--product__sale {
+    background-color: $color-4-700;
+    margin-bottom: 1.5rem;
+
+    .wrapper {
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+
+    .link,
+    .paragraph {
+      @include text($font-size-sm, $white, $semi-bold);
+      margin: 0;
+    }
+
+    .image {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.188rem;
+    }
+  }
+
+  &--product__shipping {
+    .paragraph {
+      @include text($font-size-md, $text-color-2-400, $bold);
+      margin: 0;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &--product__unavaible {
+    &::before {
+      content: '';
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .strong {
+      @include text($font-size-sm, $text-color-1-400, $bold);
+    }
+
+    .link {
+      @include link($font-size-xs, $color-2-500, $normal, underline);
+    }
+  }
+
+  &--home__deals--product {
+    .strong {
+      @include text($font-size-xs, $color-2-500, $bold);
+    }
+
+    .paragraph {
+      @include text($font-size-xs, $text-color-1-400, $normal);
+    }
+  }
+}
+
+.paragraph {
+  &--product__measure-table-trigger-text {
+    font-weight: $regular;
+    font-size: $font-size-xs;
+    line-height: 1.125rem;
+    text-decoration: underline;
+    text-transform: none;
+    color: $color-1;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-3-700;
+    }
+  }
+}
+
+.link {
+  &--product__download-image-text {
+    font-weight: $regular;
+    font-size: $font-size-xs;
+    line-height: 1.125rem;
+    text-decoration: underline;
+    color: $color-1;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-3-700;
+    }
+  }
+}

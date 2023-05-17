@@ -1,0 +1,15 @@
+@mixin link($fs: $font-size-xs, $fc: $white, $fw: $normal, $fd: underline, $ff: $main-font) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  color: $fc;
+  text-decoration: $fd;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    color: darken($fc, 10%);
+    transition: all 0.2s;
+  }
+}

@@ -1,0 +1,15 @@
+.showAvailableTextHighlight,
+.showAvailableText {
+  &--product__availability {
+    @include text($font-size-sm, $c-sup-2, $semi-bold);
+    line-height: 1.313rem;
+  }
+}
+
+.container {
+  &--product__availability {
+    @include tablet {
+      padding: 0;
+    }
+  }
+}

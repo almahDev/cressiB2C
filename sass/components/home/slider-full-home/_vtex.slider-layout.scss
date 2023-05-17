@@ -1,0 +1,30 @@
+.slider {
+  &Track {
+    &Container {
+      &--shelf {
+        padding-bottom: 8.125rem;
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.sliderLeftArrow {
+  &--home__slider {
+    margin-left: 1.25rem;
+
+    @include tablet {
+      margin-left: -0.5rem;
+    }
+  }
+}
+
+.sliderRightArrow {
+  &--home__slider {
+    margin-right: 2.5rem;
+
+    @include tablet {
+      margin-right: 0.5rem;
+    }
+  }
+}

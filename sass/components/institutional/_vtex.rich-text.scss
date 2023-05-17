@@ -1,0 +1,31 @@
+.heading {
+  &--all-institucional__title {
+    margin: 80px 0 24px;
+    @include text($font-size-h3, $text-color-1, $regular);
+    text-transform: uppercase;
+    @include tablet {
+      margin: 40px 0 16px;
+      font-size: $font-size-xlg;
+    }
+  }
+}
+
+.headingLevel2 {
+  &--all-institucional__content {
+    @include text($font-size-md, $text-color-1, $semi-bold);
+    margin: 12px 0;
+  }
+}
+
+.paragraph {
+  &--all-institucional__content {
+    @include text($font-size-md, $text-color-2, $regular);
+    margin: 0 0 8px;
+  }
+}
+
+.link {
+  &--all-institucional__content {
+    @include link($font-size-md, $text-color-2, $regular, none);
+  }
+}

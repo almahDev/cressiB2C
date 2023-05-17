@@ -1,0 +1,20 @@
+.groupName {
+  @include text($font-size-md, $text-color-2, $semi-bold);
+  line-height: 1.5rem;
+
+  @include tablet {
+    font-size: $font-size-sm;
+    line-height: 1.313rem;
+  }
+}
+
+.specificationName,
+.specificationValue {
+  @include text($font-size-md, $text-color-2, $regular);
+  line-height: 1.5rem;
+
+  @include tablet {
+    font-size: $font-size-sm;
+    line-height: 1.313rem;
+  }
+}

@@ -1,0 +1,44 @@
+%container {
+  margin: 0 auto !important;
+
+  @media (min-width: $screen-lp) {
+    width: 90%;
+    max-width: $xl;
+    min-width: $xl - 24;
+  }
+}
+
+%container-large {
+  margin: 0 auto !important;
+
+  @media (min-width: $screen-lg) {
+    width: 90%;
+    max-width: $desktop-min;
+    min-width: $screen-lg - 40;
+  }
+  // @media (min-width: $screen-lp) and (max-width: $screen-lg-max) {
+  //   width: 90%;
+  //   max-width: $xl;
+  //   min-width: $xl - 24;
+  // }
+}
+
+%container-extra-large {
+  margin: 0 auto !important;
+
+  @media (min-width: $screen-xxlg) {
+    width: 90%;
+    max-width: $xxxl;
+    min-width: $xxxl - 48;
+  }
+}
+
+%container-full {
+  margin: 0 auto !important;
+
+  @media (min-width: $desktop-min) {
+    width: 95%;
+    max-width: $full;
+    min-width: $desktop-min;
+  }
+}

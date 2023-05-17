@@ -1,0 +1,55 @@
+.quantitySelectorContainer {
+  &--product__quantity--shelf {
+    margin: 0;
+
+    :global(.vtex-numeric-stepper__input) {
+      width: 100%;
+      border: 1px solid $text-color-1-500 !important;
+      border-left: 0 !important;
+      border-right: 0 !important;
+      outline: none !important;
+      height: 2.75rem;
+      @include text($font-size-md, $text-color-1-500, $bold);
+
+      @include tablet {
+        height: 2rem;
+      }
+    }
+
+    :global(.vtex-numeric-stepper__plus-button) {
+      width: auto !important;
+      background: $white;
+      border: 1px solid $text-color-1-500 !important;
+      border-left: 0 !important;
+      border-radius: 0.25rem;
+      height: 2.75rem;
+      @include text($font-size-md, $text-color-1-500, $bold);
+
+      @include tablet {
+        height: 2rem;
+      }
+    }
+
+    :global(.vtex-numeric-stepper__minus-button) {
+      width: auto !important;
+      background: $white;
+      border: 1px solid $text-color-1-500 !important;
+      border-right: 0 !important;
+      border-radius: 0.25rem;
+      height: 2.75rem;
+      @include text($font-size-md, $text-color-1-500, $bold);
+
+      @include tablet {
+        height: 2rem;
+      }
+    }
+
+    :global(.vtex-numeric-stepper__minus-button__text) {
+      @include text($font-size-h3, $text-color-1-500, $normal);
+    }
+
+    :global(.vtex-numeric-stepper__plus-button__text) {
+      @include text($font-size-h3, $text-color-1-500, $normal);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+%link {
+  letter-spacing: 1px;
+  font-weight: $normal;
+  font-size: $font-size-xs;
+  color: $text-color-1-500;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $text-color-1-400;
+    text-decoration: underline;
+  }
+}
+
+%link-menu {
+  letter-spacing: 1px;
+  font-weight: $bold;
+  font-size: $font-size-xs;
+  color: $text-color-1-500;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 0.125rem;
+    background: $grad-1;
+    background-size: 350%;
+    position: absolute;
+    top: 0.625rem;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $text-color-1-500;
+
+    &::after {
+      transition: all 0.2s;
+      background-position: 75%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// PDP
+@import 'components/product/vtex.store-link';
+
+// HOME
+@import 'components/home/store-video/vtex.store-link';

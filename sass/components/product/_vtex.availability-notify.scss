@@ -1,0 +1,82 @@
+.title {
+  font-weight: $semi-bold;
+  font-size: $font-size-lg;
+  line-height: 1.688rem;
+  color: $color-1;
+
+  @include tablet {
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+  }
+}
+
+.notifyLabel {
+  font-weight: $regular;
+  font-size: $font-size-md;
+  line-height: 1.5rem;
+  color: $text-color-1;
+
+  @include tablet {
+    font-size: $font-size-sm;
+    line-height: 1.313rem;
+  }
+}
+
+.notiferContainer {
+  margin-top: 1.5rem;
+
+  .content {
+    flex-direction: row;
+    display: flex;
+
+    @include tablet {
+      flex-direction: column !important;
+      display: flex;
+    }
+  }
+
+  :global(.vtex-input-prefix__group) {
+    border: none;
+    height: auto;
+  }
+
+  :global(.vtex-styleguide-9-x-input) {
+    border: 0.063rem solid $high-light;
+    border-radius: 0.25rem;
+    width: 14.125rem;
+    height: 2.5rem;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  :global(.vtex-input__suffix) {
+    padding: 0;
+  }
+
+  :global(.vtex-button) {
+    background-color: $color-1;
+    border-radius: 0.25rem;
+    width: 7.188rem;
+    height: 2.5rem;
+    cursor: pointer;
+
+    :hover {
+      background-color: $color-1-700 !important;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  :global(.vtex-button__label) {
+    font-weight: $semi-bold;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

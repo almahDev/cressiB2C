@@ -1,0 +1,24 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// HEADER
+@import 'components/header/search-bar/vtex.store-components';
+@import 'components/header/main/vtex.store-components';
+
+// HOME
+@import 'components/home/banner-duo/vtex.store-components';
+@import 'components/home/categories-slider/vtex.store-components';
+@import 'components/home/info-cards/vtex.store-components';
+@import 'components/home/more-categories-banners/vtex.store-components';
+@import 'components/home/sales-banners/vtex.store-components';
+@import 'components/home/slider-brands/vtex.store-components';
+@import 'components/home/modal/vtex.store-components';
+
+@import 'components/shelf/vtex.store-components';
+
+@import 'components/search/vtex.store-components';
+
+@import 'components/product/vtex.store-components';

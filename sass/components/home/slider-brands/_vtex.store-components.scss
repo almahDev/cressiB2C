@@ -1,0 +1,65 @@
+@import 'mixins/text';
+@import 'extends/buttons';
+
+.info {
+  &Card {
+    &Container {
+      &--home__info-card {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 1rem !important;
+        margin-top: 4rem !important;
+        @extend %container-large;
+
+        @include tablet {
+          flex-direction: column-reverse;
+        }
+
+        .infoCardImageContainer,
+        .infoCardImage,
+        .infoCardTextContainer {
+          border-radius: 0.625rem;
+
+          @include desktop {
+            display: flex;
+            height: 26.25rem;
+            justify-content: center;
+          }
+        }
+
+        .infoCardTextContainer {
+          background-color: $color-5-400;
+          padding: 3rem;
+
+          @include desktop {
+            margin-left: 1.5rem;
+          }
+        }
+
+        .infoCard {
+          &Headline {
+            @include text($font-size-h2, $text-color-1-500, $normal);
+          }
+
+          &Subhead {
+            @include text($font-size-md, $text-color-1-400, $normal);
+          }
+
+          &CallActionContainer {
+            text-decoration: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+              text-decoration: none;
+            }
+          }
+        }
+
+        :global(.vtex-button) {
+          @extend %primary-button;
+        }
+      }
+    }
+  }
+}

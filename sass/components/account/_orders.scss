@@ -1,0 +1,107 @@
+.order {
+  &Card {
+    margin-top: 40px;
+    @include tablet {
+      margin-top: 16px;
+    }
+  }
+
+  &Header {
+    padding: 24px 32px;
+    @include tablet {
+      padding: 16px;
+    }
+
+    &Label {
+      @include text($font-size-md, $text-color-1, $regular);
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+
+    &Value {
+      @include text($font-size-md, $text-color-2, $regular);
+    }
+  }
+
+  &Id {
+    @include text($font-size-md, $text-color-1, $regular);
+    margin-bottom: 8px;
+  }
+
+  &Body {
+    padding: 32px;
+    border-color: $high-dark;
+    border-width: 1px;
+    border-style: none solid solid solid;
+    border-radius: 4px;
+    position: relative;
+    @include tablet {
+      padding: 16px;
+    }
+  }
+
+  &Product {
+    padding: 0 32px 32px 0;
+    @include tablet {
+      padding: 0 0 32px;
+    }
+
+    &Name {
+      @include text($font-size-md, $text-color-1, $regular);
+      @include tablet {
+        font-size: $font-size-sm;
+      }
+    }
+
+    &Shipping {
+      margin: 14px 0 8px;
+      @include text($font-size-md, $high-light, $regular);
+      @include tablet {
+        font-size: $font-size-sm;
+      }
+    }
+
+    &Quantity {
+      &Value {
+        @include text($font-size-md, $text-color-1, $semi-bold);
+        margin: 0;
+        @include tablet {
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }
+}
+
+.reorderBtn,
+.cancelBtn {
+  margin: 0 0 14px;
+  @include tablet {
+    margin: 14px 0;
+  }
+
+  .font {
+    margin-left: 10px;
+    @include text($font-size-sm, $text-color-1, $semi-bold);
+  }
+}
+
+.detailsBtn {
+  position: absolute;
+  right: 8px;
+  bottom: 44px;
+  padding: 10px 24px;
+  margin: 0;
+  width: auto;
+  background-color: transparent;
+  border: 2px solid $c-sup-1;
+  border-radius: 4px;
+  @include text($font-size-sm, $c-sup-1, $semi-bold);
+  text-transform: uppercase;
+  @include tablet {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 24px;
+  }
+}

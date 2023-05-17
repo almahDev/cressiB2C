@@ -1,0 +1,253 @@
+.menuContainerNav {
+  &--header__menu--mobile {
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  &--header__tooltip--links-mobile {
+    padding-top: 1.5rem;
+    border-top: 1px solid $high-light;
+  }
+
+  &--submenu-mobile-subcategory {
+    width: 100%;
+    background: #e9fbf9;
+  }
+}
+
+.styledLinkContainer {
+  &--header__retailer--mobile {
+    margin: 0;
+    padding: 1.5rem;
+
+    .styledLink {
+      @include text($font-size-sm, $text-color-1-400, $regular);
+      border: 1px solid $high-light;
+      border-radius: 4px;
+      padding: 0.5rem 0;
+      display: block;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    .styledLinkIcon {
+      display: flex;
+      margin: 0;
+      padding-right: 0.5rem;
+    }
+
+    .styledLinkContent {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--header__tooltip--links-mobile {
+    margin: 0;
+    padding: 0 1.5rem 1.5rem;
+
+    .styledLink {
+      @include text($font-size-sm, $text-color-1-500, $regular);
+      display: block;
+      text-transform: uppercase;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+
+      &--highlight {
+        color: $color-1-500;
+        text-decoration: underline;
+      }
+    }
+
+    .styledLinkIcon {
+      display: flex;
+      margin: 0;
+      padding-right: 0.5rem;
+    }
+
+    .styledLinkContent {
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  &--header__menu--mobile {
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+
+    .styledLink {
+      @include text($font-size-sm, $text-color-1-500, $regular);
+      display: block;
+      text-transform: uppercase;
+      transition: all 0.2s;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+
+      &--highlight {
+        color: $color-1-500;
+        font-weight: $bold;
+      }
+
+      .menuItem--isOpen & {
+        color: $color-1-50;
+      }
+    }
+
+    .styledLinkIcon {
+      display: flex;
+      margin: 0;
+      padding-right: 0.5rem;
+    }
+
+    .styledLinkContent {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .accordionIcon {
+      font-size: 0;
+
+      &::before {
+        @include icon('arrow', 24px);
+        transition: all 0.2s;
+      }
+
+      &--isOpen {
+        &::before {
+          @include icon('arrow-active', 24px);
+        }
+      }
+    }
+  }
+
+  &--submenu-mobile-subcategory {
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+
+    .styledLink {
+      @include text($font-size-sm, $text-color-1-500, $regular);
+      display: block;
+      text-transform: none;
+      transition: all 0.2s;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-1-50;
+        text-decoration: none;
+      }
+
+      &--highlight {
+        color: $color-1-50;
+      }
+    }
+
+    .styledLinkContent {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &--menu-item-mobile {
+    .styledLinkContent {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 20px;
+      color: $white;
+
+      .accordionIcon {
+        color: $white;
+        color: transparent;
+
+        &::after {
+          content: url('assets/svg/icon-arrow-menu-mob.svg');
+          display: inline-block;
+          transition: 0.3s all ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.submenuAccordion {
+  &--submenu-mobile {
+    padding: 0;
+  }
+}
+
+.accordionIcon--isClosed {
+}
+.accordionIcon--isOpen {
+}
+.accordionIcon {
+}
+.container {
+}
+.linkLeft {
+}
+.linkMiddle {
+}
+.linkRight {
+}
+
+.menuContainer {
+}
+.menuItemInnerDiv {
+}
+.menuItem {
+  &--menu-item-mobile--isOpen {
+    .accordionIcon {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+.menuItem--isOpen {
+}
+.menuItem--isClosed {
+}
+.menuLinkDivLeft {
+}
+.menuLinkDivMiddle {
+}
+.menuLinkDivRight {
+}
+.menuLinkNav {
+}
+.renderLink {
+}
+.styledLinkContainer {
+}
+.styledLinkContent {
+}
+.styledLinkIcon {
+}
+.styledLink {
+}
+.submenuAccordion {
+}
+.submenuColumn {
+}
+.submenuContainer {
+}
+.submenuWrapper--isClosed {
+}
+.submenuWrapper--isOpen {
+}
+.submenuWrapper {
+}
+.submenu {
+}

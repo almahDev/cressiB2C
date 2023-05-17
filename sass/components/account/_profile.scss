@@ -1,0 +1,63 @@
+.profile {
+  .dataEntryLabel,
+  .newsletterContainerTitle {
+    margin: 0 0 8px;
+    @include text($font-size-md, $text-pure-500, $bold);
+    line-height: 21px;
+  }
+
+  .passwordBox :global(.vtex-checkbox__label),
+  .dataEntryChildren,
+  .newsletterContainerMessage {
+    @include text($font-size-md, $text-dark-400, $regular);
+    line-height: 21px;
+  }
+
+  .newsletterBoxContainer {
+    :global(.vtex-checkbox__label) {
+      font-size: $font-size-xs;
+      line-height: 150%;
+      color: $text-pure-500;
+    }
+
+    :global(.vtex-checkbox__container) {
+      :global(.vtex-checkbox__inner-container.b--muted-4) {
+        border: 0.125rem solid #151415;
+      }
+    }
+  }
+
+  .passwordBoxContainer {
+    .boxContainerFooter {
+      :global(.vtex-button__label) {
+        font-size: 0;
+
+        &::before {
+          content: "Criar senha";
+          font-size: $font-size-md;
+        }
+      }
+    }
+  }
+}
+
+.boxContainerFooter {
+  position: absolute;
+  bottom: 44px;
+  right: 44px;
+  @include tablet {
+    bottom: 36px;
+    right: 36px;
+  }
+
+  :global(.vtex-button) {
+    border: none;
+
+    :global(.vtex-button__label) {
+      padding: 0 !important;
+      text-decoration: none !important;
+      @include text($font-size-md, $cta-pure-500, $bold, $main-font);
+      line-height: 24px;
+    }
+  }
+}

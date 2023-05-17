@@ -1,0 +1,26 @@
+.buttonText {
+  font-weight: $semi-bold;
+  font-size: $font-size-md;
+  line-height: 1.188rem;
+  color: $white;
+  text-transform: uppercase;
+  position: relative;
+
+  &--all-title__btn-pdp {
+    &::before {
+      @include tablet {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  &--all-pdp-img__wishlist-mob {
+    &::before {
+      @include tablet {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}

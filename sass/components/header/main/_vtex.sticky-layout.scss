@@ -1,0 +1,14 @@
+.container {
+  &--header__sticky--mobile {
+    box-shadow: 0px 12px 27px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.wrapper {
+  &--header__sticky--mobile--stuck,
+  &--header__sticky--stuck {
+    .container {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

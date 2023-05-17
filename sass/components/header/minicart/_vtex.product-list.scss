@@ -1,0 +1,156 @@
+.productListUnavailableItemsMessage,
+.productListAvailableItemsMessage {
+  letter-spacing: 0;
+  font-weight: $bold;
+  font-size: $font-size-md;
+  color: $text-color-1-400;
+  padding: 1rem;
+}
+
+.productName {
+  @include text($font-size-sm, $text-color-1-500, $regular);
+  letter-spacing: 0;
+  line-height: 21px;
+  margin-bottom: 0.5rem;
+  display: block;
+
+  @include tablet {
+    font-size: $font-size-xs;
+    line-height: 18px;
+  }
+}
+
+.productBrandName {
+  letter-spacing: 0;
+  font-weight: $bold;
+  font-size: $font-size-xs;
+  color: $text-color-1-500;
+  background: transparent;
+}
+
+.productPriceCurrency {
+  display: none;
+}
+
+.productPriceContainer {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+
+  .price {
+    @include text($font-size-xs, $text-color-1-400, $regular);
+    letter-spacing: 0;
+  }
+}
+
+.unitPriceContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.unitListPrice {
+  @include text($font-size-xs, $text-color-1-400, $regular);
+  letter-spacing: 0;
+  line-height: 1;
+  padding-bottom: 0.25rem;
+
+  @include tablet {
+    font-size: $font-size-xxs;
+  }
+}
+
+.unitPricePerUnitCurrency {
+  @include text($font-size-md, $text-color-1-500, $regular);
+  letter-spacing: 0;
+  line-height: 1;
+
+  @include tablet {
+    font-size: $font-size-sm;
+  }
+}
+
+.productVariationsItem {
+  @include text($font-size-xs, $text-color-1-500, $normal);
+  font-style: normal;
+  text-shadow: none;
+  margin-bottom: 0.375rem;
+}
+
+.removeButton {
+  padding: 0;
+
+  .deleteIcon {
+    display: none;
+  }
+
+  &::before {
+    @include icon('trash', 24px);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.removeButtonContainer {
+  height: 1rem;
+}
+
+.quantitySelectorContainer {
+  max-width: 117px;
+  margin-left: auto;
+}
+
+.quantitySelectorWrapper {
+  display: flex;
+  width: 100%;
+  height: 32px;
+  border: 1px solid $text-color-1-500;
+  border-radius: 4px;
+
+  .inputContainer {
+    flex: 1;
+    border: 0 !important;
+    font-family: $main-font;
+    font-weight: $semi-bold;
+    font-size: $font-size-md;
+    color: $text-color-1-500;
+    padding: 0;
+
+    :first-child {
+      font-family: $main-font;
+      font-weight: $semi-bold;
+      font-size: $font-size-md;
+      color: $text-color-1-500;
+      border: 0 !important;
+    }
+  }
+}
+
+.quantitySelectorButton {
+  width: 34px;
+  background: none;
+  border: 0;
+  color: $text-color-1-500;
+  font-size: $font-size-md;
+  font-weight: $regular;
+  padding: 0;
+  transition: all 0.2s;
+  background: $white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+    filter: brightness(0.9);
+  }
+}
+
+.unitPriceMeasurementUnit {
+  display: none;
+}

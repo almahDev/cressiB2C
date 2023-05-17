@@ -1,0 +1,31 @@
+.summarySmallDisclaimer {
+  &--all-cart {
+    display: none;
+  }
+}
+.summaryItemContainer {
+  &--all-cart {
+    padding-bottom: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:not(:last-child) {
+      .summaryItemLabel,
+      .summaryItemPrice {
+        font-size: $font-size-base;
+        font-weight: $regular;
+        color: $black;
+      }
+    }
+    &:last-child {
+      .summaryItemLabel,
+      .summaryItemPrice {
+        font-size: $font-size-lg;
+        font-weight: $bold;
+        color: $black;
+      }
+    }
+  }
+}

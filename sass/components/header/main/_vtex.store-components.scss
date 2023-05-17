@@ -1,0 +1,97 @@
+/* logo */
+
+.logoContainer {
+  &--header__logo {
+    padding: 0;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.logoLink {
+  &--header__logo {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    @include tablet {
+      padding-left: 3rem;
+    }
+
+    @media (max-width: 350px) {
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+.logoImage {
+  &--header__logo {
+    display: block;
+  }
+}
+
+.sizeDesktop {
+}
+
+.sizeMobile {
+}
+
+// WhatsApp
+
+.imageElementLink {
+  &--header__whatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    padding: 0;
+    z-index: 999;
+    transition: all 0.2s;
+    display: flex;
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+// BACK TO TOP
+.backToTopButtonContainer {
+  bottom: 70px;
+  right: 17px;
+  z-index: 999;
+
+  :global(.vtex-button) {
+    width: 44px;
+    height: 44px;
+    background: $white;
+    border: 1px solid $high-light;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: brightness(0.9);
+    }
+  }
+
+  :global(.vtex-button__label) {
+    padding: 0 !important;
+    color: $color-1-500;
+  }
+}
+.backToTopButtonActive {
+  animation: fadeIn 0.3s forwards;
+}

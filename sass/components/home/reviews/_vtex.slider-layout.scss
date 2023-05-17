@@ -1,0 +1,152 @@
+.wrapper {
+  &--all-reviews-resellers-slider {
+    width: 24rem;
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+    border: 0.063rem solid $high-light;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include tablet {
+      width: 100%;
+      padding: 1.5rem;
+      padding-top: 0;
+      padding-left: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+}
+
+.paragraph {
+  &--all-reviews-resellers-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $text-color-2;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-size: $font-size-sm;
+      line-height: 1.188rem;
+    }
+
+    .stretchChildrenWidth {
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.infoCardTextContainer {
+  &--all-reviews-resellers-slider {
+    width: fit-content;
+
+    @include tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+.sliderLeftArrow--all-reviews-resellers-slider {
+  margin-left: -0.75rem;
+
+  @include tablet {
+    margin-left: -0.875rem;
+  }
+}
+
+.sliderRightArrow--all-reviews-resellers-slider {
+  margin-right: 0.5rem;
+
+  @include tablet {
+    margin-right: 0.313rem;
+  }
+}
+
+.image {
+  &--all-reviews-resellers-slider {
+    margin-right: 1rem;
+
+    @include tablet {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 0.625rem;
+    }
+  }
+}
+
+.strong {
+  &--all-reviews-resellers-slider {
+    width: 14.375rem;
+    margin-bottom: 1.5rem;
+    font-weight: $semi-bold;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $text-color-1;
+
+    @include tablet {
+      font-size: $font-size-sm;
+      line-height: 1.313rem;
+    }
+
+    &:last-child {
+      display: flex;
+      width: 13.875rem;
+      position: relative;
+      top: -2.125rem;
+      bottom: unset;
+      left: 5.5rem;
+      right: unset;
+      font-style: normal;
+      font-weight: $regular;
+      font-size: $font-size-sm;
+      line-height: 1.313rem;
+      color: $text-color-2;
+
+      @include tablet {
+        font-size: $font-size-xs;
+        line-height: 1.125rem;
+        top: 1.625rem;
+        bottom: 0;
+        left: unset;
+        right: 9.063rem;
+        width: auto;
+      }
+    }
+  }
+}
+
+.sliderTrack {
+  &--all-reviews-resellers-slider {
+    @include tablet {
+      gap: 1rem;
+      padding-left: 0.25rem;
+    }
+  }
+}
+
+.container {
+  &--all-reviews-resellers-slider {
+    @include tablet {
+      width: 100%;
+    }
+  }
+}

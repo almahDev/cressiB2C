@@ -1,0 +1,58 @@
+.homeIcon {
+  display: none;
+}
+
+.link {
+  @include link($font-size-xs, $text-color-2, $regular, none);
+  line-height: 1.125rem;
+
+  &:hover {
+    text-decoration: none;
+    color: $text-color-2;
+  }
+}
+
+.term {
+  @include text($font-size-xs, $text-color-1, $semi-bold);
+  line-height: 1.125rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  flex-wrap: wrap;
+  line-height: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+
+  @include tablet {
+    padding-left: 0.375rem;
+  }
+}
+
+.homeLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+
+  &::before {
+    content: 'Home';
+    font-weight: $regular;
+    font-size: $font-size-xs;
+    line-height: 1.125rem;
+    color: $text-color-2;
+  }
+}
+
+.caretIcon {
+  color: $text-color-2;
+  width: 0.563rem;
+  height: 0.563rem;
+
+  &:last-child {
+    color: $text-color-1;
+  }
+}

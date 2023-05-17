@@ -1,0 +1,14 @@
+.addressList {
+    :global(.address-summary) {
+        color: $text-pure-500;
+        font-size: $font-size-sm;
+    }
+}
+
+.addressCreate,
+.addressEdit {
+    :global(.address-summary) {
+        padding: 0.625rem 0;
+        font-size: $font-size-sm;
+    }
+}

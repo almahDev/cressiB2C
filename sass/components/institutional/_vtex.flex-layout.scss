@@ -1,0 +1,16 @@
+.flexRowContent {
+  &--all-institucional {
+    @extend %container-large;
+
+    flex-direction: column;
+    padding: 0 0 4rem;
+
+    @include tablet {
+      padding: 0 0.5rem 3rem;
+    }
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+    }
+  }
+}

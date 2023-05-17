@@ -1,0 +1,39 @@
+.flexRow {
+  &--home__deals {
+    background-color: $high-light;
+    border-bottom: 0 !important;
+    padding: 2rem 0;
+
+    @include tablet {
+      padding: 0.625rem 0;
+    }
+  }
+}
+
+.flexRowContent {
+  &--home__deals {
+    @extend %container-large;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    .stretchChildrenWidth {
+      @include tablet {
+        flex: 0 0.1 auto;
+      }
+    }
+  }
+}
+
+.flexCol {
+  &--home__deals {
+  }
+}
+
+.flexColChild {
+  &--home__deals {
+  }
+}

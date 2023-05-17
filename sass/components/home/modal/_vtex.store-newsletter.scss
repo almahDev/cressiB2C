@@ -1,0 +1,89 @@
+.emailInputContainer {
+  &--all-newsletter-input-email {
+    :global(.vtex-input-prefix__group) {
+      border: 0.0625rem solid $low-light;
+      border-radius: 0.25rem;
+      padding: 0.25rem 1.5rem;
+      width: 100%;
+      height: 2.625rem;
+      margin-bottom: 0.5rem;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      padding-left: 0;
+
+      &::placeholder {
+        @include text($font-size-md, $text-dark-400, $regular);
+        font-family: $main-font !important;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+.formSubmitContainer {
+  &--all-newsletter-submit {
+    position: relative;
+    margin-top: 0.625rem;
+
+    :global(.vtex-button__label) {
+      @include text($font-size-sm, $high-pure, $bold);
+      line-height: 1.3125rem;
+      text-transform: capitalize;
+      border: 0;
+    }
+
+    :global(.vtex-button) {
+      width: 100%;
+      text-transform: uppercase;
+      padding: 0.3125rem 0;
+      background-color: $primary-pure-500;
+      border-color: $primary-pure-500;
+
+      &:hover {
+        background-color: $primary-dark-700;
+        border: 0;
+        padding: 0.4375rem 0;
+      }
+    }
+  }
+}
+
+.confirmationCheckboxContainer {
+}
+
+.confirmationCheckboxLabel {
+}
+
+.defaultErrorMessage {
+}
+
+.defaultSuccessMessage {
+}
+
+.emailInputContainer--invalid {
+}
+
+.emailInputLabel {
+}
+
+.formSubmitContainer--invalid {
+}
+
+.nameInputContainer {
+}
+
+.nameInputContainer--invalid {
+}
+
+.nameInputLabel {
+}
+
+.phoneInputContainer {
+}
+
+.phoneInputContainer--invalid {
+}
+
+.phoneInputLabel {
+}

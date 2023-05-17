@@ -1,0 +1,47 @@
+:global(.vtex-account__page) {
+  :global(.vtex-pageHeader__container) {
+    padding: 0;
+
+    :global(.c-on-base) {
+      margin: 0 0 24px;
+      @include tablet {
+        margin: 0 0 16px;
+      }
+
+      :global(.vtex-pageHeader__title) {
+        @include text($font-c-1, $text-pure-500, $bold);
+        line-height: 53px;
+        text-transform: capitalize;
+        @include tablet {
+          margin: 0 15px;
+          line-height: 42px;
+          font-size: $font-size-h3;
+        }
+      }
+    }
+
+    :global(.vtex-pageHeader-link__container) {
+      @include tablet {
+        margin: 16px 0;
+        padding: 12px 24px;
+      }
+
+      :global(.vtex__icon-arrow-back) {
+        @include tablet {
+          display: none;
+        }
+      }
+
+      :global(.t-action--small) {
+        @include tablet {
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+          @include text($font-size-sm, $cta-pure-500, $bold, $main-font);
+          line-height: 20px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

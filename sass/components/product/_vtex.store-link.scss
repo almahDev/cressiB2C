@@ -1,0 +1,28 @@
+.link {
+  &--product__shipping {
+    @include link($font-size-xs, $text-color-2-400, $bold, underline);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    width: 100% !important;
+    max-height: 2rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    .label {
+      display: block;
+      white-space: pre;
+      margin: 0;
+    }
+
+    @include tablet {
+      justify-content: flex-start;
+      padding-top: 0.5rem;
+    }
+  }
+}

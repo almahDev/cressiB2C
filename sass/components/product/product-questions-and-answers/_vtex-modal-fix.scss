@@ -1,0 +1,49 @@
+// :global(.vtex-modal__overlay),
+// :global(.vtex-modal__modal) {
+//   font-family: $main-font !important;
+//   color: $text-pure-500;
+//   :first-child,
+//   :last-child,
+//   :not(:first-child):not(:last-child) {
+//     font-family: $main-font !important;
+//     color: $text-pure-500;
+//   }
+// }
+
+// :global(.vtex-modal__overlay) {
+// }
+// :global(.vtex-modal__modal) {
+//   border-top-left-radius: 1rem;
+//   border-top-right-radius: 1rem;
+//   border-bottom-left-radius: 1rem;
+//   border-bottom-right-radius: 1rem;
+// }
+
+// :global(.vtex-modal__modal) {
+//   :global(.vtex-styleguide-9-x-shadowTransition) {
+//     @include text($font-size-h3 !important, $text-pure-500 !important, $bold !important);
+//     @include tablet {
+//       padding-left: 0;
+//     }
+//     span:global(.f3.c-on-base.w-1000) {
+//       @include text($font-size-h3 !important, $text-pure-500 !important, $bold !important);
+//     }
+//   }
+//   :global(.mt4):last-child {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+//   label:global(.vtex-textarea) {
+//     @include tablet {
+//       max-width: 95% !important;
+//       border-radius: 0;
+//     }
+//   }
+//   :global(.vtex-styleguide-9-x-scrollBar) {
+//     @include tablet {
+//       padding: 0;
+//       width: 100%;
+//     }
+//   }
+// }

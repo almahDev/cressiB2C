@@ -1,0 +1,90 @@
+.trigger {
+  &--product__description {
+    background: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem 0;
+    appearance: none;
+
+    :global(.vtex-store-icons-0-x-caretIcon--product-description) {
+      transition: all 0.2s;
+      background-image: url('assets/svg/icon-chevron-down.svg');
+      background-size: cover;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &--visible {
+      :global(.vtex-store-icons-0-x-caretIcon--product-description) {
+        transition: all 0.2s;
+        background-image: url('assets/svg/icon-chevron-up.svg');
+        background-size: cover;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    &--hidden {
+      border-bottom: 0.063rem solid $high-light;
+    }
+  }
+}
+
+.content {
+  &--product__description {
+    transition: all 0.1s;
+    position: relative;
+    background: none;
+    display: block !important;
+    border-bottom: 0.063rem solid $color-1;
+
+    &--hidden {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      padding: 0;
+    }
+
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+      transform: scaleY(1);
+      transform-origin: top;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+:global(.vtex-store-icons-0-x-caretIcon--product-description) {
+  color: $text-color-1-500;
+}
+
+.trigger {
+  &--product__description-mobile {
+    @include tablet {
+      :global(.vtex-store-icons-0-x-caretIcon--product-description-mobile) {
+        transition: all 0.2s;
+        background-image: url('assets/svg/icon-chevron-down.svg');
+        background-size: cover;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      &--visible {
+        :global(.vtex-store-icons-0-x-caretIcon--product-description-mobile) {
+          transition: all 0.2s;
+          background-image: url('assets/svg/icon-chevron-up.svg');
+          background-size: cover;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}

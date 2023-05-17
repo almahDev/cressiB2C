@@ -1,0 +1,8 @@
+@mixin icon($icon, $size) {
+  content: "";
+  display: inline-block;
+  background: url("assets/svg/icon-#{$icon}.svg") no-repeat center;
+  background-size: contain;
+  width: $size;
+  height: $size;
+}

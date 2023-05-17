@@ -1,0 +1,209 @@
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  :global(.vtex-dropdown__container) {
+    border: 0.063rem solid $text-color-2-300;
+    border-radius: 0.125rem;
+    margin-top: 1.875rem;
+    margin-right: 0.5rem;
+  }
+
+  :global(.vtex-dropdown__caption) {
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $text-color-1;
+  }
+
+  .writeReviewContainer {
+    margin: 0.5rem 0 0;
+
+    :global(.vtex__icon-caret-down),
+    :global(.vtex__icon-caret-up) {
+      display: none;
+    }
+  }
+
+  .writeReviewButton {
+    font-size: 0;
+    margin-left: -0.438rem;
+
+    &::before {
+      content: "Avalie esse produto";
+      font-weight: $regular;
+      font-size: $font-size-md;
+      line-height: 1.5rem;
+      color: $color-1;
+      text-decoration: underline;
+
+      @include tablet {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .formSection {
+    :global(.vtex-input-prefix__group) {
+      border: none;
+      height: auto;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      @extend %input-text;
+      border-radius: 0.25rem !important;
+      height: 3rem;
+    }
+
+    :global(.vtex-input__suffix) {
+      padding: 0;
+    }
+
+    :global(.vtex-button) {
+      @extend %primary-button;
+      border-radius: 0.25rem !important;
+    }
+
+    :global(.vtex-textarea__input) {
+      border: 0.063rem solid $color-5-700;
+    }
+  }
+
+  .reviewsPaging {
+    :global(.vtex-button) {
+      background-color: transparent;
+      border: none;
+    }
+
+    :global(.vtex__icon-caret-left) {
+      color: $high-light;
+      background: $high-light;
+      border-radius: 0.125rem;
+      padding: 0.375rem;
+      cursor: pointer;
+    }
+
+    :global(.vtex__icon-caret-right) {
+      color: $high-light;
+      background: $high-light;
+      border-radius: 0.125rem;
+      padding: 0.375rem;
+      cursor: pointer;
+    }
+  }
+
+  .reviewsHeading {
+    @include text($font-size-lg, $text-color-1-500, $bold);
+    border: none;
+    margin: 0;
+    font-size: 0;
+  }
+
+  .reviewsRating {
+    padding-top: 0;
+  }
+
+  .reviewInfo {
+    margin: 0.5rem 0;
+  }
+
+  .starsContainer {
+    padding-bottom: 0;
+  }
+
+  .reviewsRatingAverage,
+  .reviewsRatingCount {
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $text-color-1;
+  }
+
+  .reviewDateValue,
+  .reviewAuthorName {
+    font-weight: $bold;
+  }
+
+  .reviewComment {
+    background: $high-light;
+    border-radius: 0.188rem;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    position: relative;
+    padding-left: 0;
+    padding-top: 0;
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $text-color-1;
+
+    @include tablet {
+      padding: 0;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .reviewCommentUser {
+    @include text($font-size-md, $text-color-1, $regular);
+    line-height: 1.5rem;
+
+    @include tablet {
+      font-size: $font-size-sm;
+      line-height: 1.313rem;
+    }
+  }
+
+  :global(.vtex__icon-caret-down),
+  :global(.vtex__icon-caret-up) {
+    color: $text-color-2-500;
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    right: 1rem;
+    top: 2.5rem;
+  }
+}
+
+.star {
+  color: #fbe385;
+}
+
+.summaryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .summaryTotalReviews {
+    @include text($font-size-sm, $text-color-2-400, $regular);
+    font-size: 0;
+
+    &::after {
+      content: " Comentários";
+      display: inline-block;
+      white-space: pre;
+    }
+  }
+}
+
+.loginLink {
+  font-weight: $regular;
+  font-size: $font-size-md;
+  line-height: 1.5rem;
+  color: $color-1;
+  padding-left: 0;
+  padding-bottom: 0;
+  text-decoration: underline;
+
+  @include tablet {
+    text-decoration: none;
+  }
+}
+
+.reviewCommentsContainer {
+  font-weight: $regular;
+  font-size: $font-size-md;
+  line-height: 1.5rem;
+  color: $text-color-1;
+}

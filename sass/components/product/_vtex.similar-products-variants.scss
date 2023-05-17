@@ -1,0 +1,25 @@
+.title {
+  font-family: $main-font;
+  font-weight: $regular;
+  font-size: $font-size-md;
+  color: $text-color-1;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.img {
+  border: 0.063rem solid $high-light;
+  border-radius: 0.25rem;
+
+  @include tablet {
+    margin-bottom: 0.5rem;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 0.063 solid $color-1;
+    border-radius: 0.25rem;
+  }
+}

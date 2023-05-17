@@ -1,0 +1,28 @@
+// Site Zoom Fix
+
+:global(body) {
+  @include desktop-extra-small {
+    zoom: 85%;
+    transition: all 0.1s;
+    :global(.vtex-minicart-2-x-drawer--all-cart),
+    :global(.vtex-minicart-2-x-drawerContent--all-cart) {
+      zoom: 108%;
+    }
+  }
+  @include desktop-small {
+    zoom: 90%;
+    transition: all 0.1s;
+    :global(.vtex-minicart-2-x-drawer--all-cart),
+    :global(.vtex-minicart-2-x-drawerContent--all-cart) {
+      zoom: 105%;
+    }
+  }
+  @include wide {
+    zoom: 95%;
+    transition: all 0.1s;
+    :global(.vtex-minicart-2-x-drawer--all-cart),
+    :global(.vtex-minicart-2-x-drawerContent--all-cart) {
+      zoom: 102%;
+    }
+  }
+}

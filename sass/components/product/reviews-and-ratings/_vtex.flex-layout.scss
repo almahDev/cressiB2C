@@ -1,0 +1,42 @@
+.flexRow {
+  &--product__review {
+    background-color: $high-light;
+    @include tablet {
+      padding: 0 1rem 2.5rem;
+    }
+  }
+}
+.flexRowContent {
+  &--product__review {
+    @extend %container-large;
+    //padding: 1rem;
+
+    @include tablet {
+      padding: 0 0.5rem;
+    }
+  }
+  &--brand-rating {
+    .stretchChildrenWidth {
+      &:last-child {
+        justify-content: flex-end;
+        @include tablet {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+.flexCol {
+  &--product__review {
+  }
+}
+
+.flexColChild {
+  &--product__review {
+    &:last-child {
+      :first-child {
+        margin: 0;
+      }
+    }
+  }
+}

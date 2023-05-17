@@ -1,0 +1,88 @@
+.text1 {
+  display: none;
+}
+
+.text3 {
+  font-size: 0 !important;
+  display: flex;
+  align-items: center;
+  margin-right: 0.125rem;
+
+  &::after {
+    content: "Faltam";
+    font-size: $font-size-xs;
+    font-weight: $semi-bold;
+    color: $white;
+  }
+}
+
+.text4 {
+  font-size: $font-size-xs !important;
+  font-weight: $semi-bold;
+  color: $white;
+  margin: 0;
+  transform: translateY(19px);
+}
+
+.freigthScaleContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  box-shadow: none !important;
+  padding: 0 0 1rem !important;
+}
+
+.currencyContainer {
+  font-weight: $semi-bold;
+  font-size: $font-size-xs !important;
+
+  &::after {
+    content: " para o ";
+    font-size: $font-size-xs;
+    font-weight: $semi-bold;
+    color: $white;
+  }
+}
+
+.currencyCode,
+.currencyLiteral,
+.currencyInteger,
+.currencyDecimal,
+.currencyFraction {
+  font-size: $font-size-xs !important;
+  font-weight: $semi-bold;
+  color: $white;
+}
+
+.currencyText {
+  font-size: 0 !important;
+
+  &::after {
+    content: "FRETE GRÁTIS";
+    font-size: $font-size-xs;
+    font-weight: $semi-bold;
+    color: $white;
+  }
+}
+
+.barContainer {
+  background: $c-sup-1;
+  border-radius: 4px 0px 0px 4px;
+  height: 100%;
+}
+
+.sliderText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: pre;
+  transform: translateY(19px);
+  margin: 0px;
+}
+
+.sliderContainer {
+  background: $high-light;
+  border-radius: 4px;
+  height: 1.5rem;
+  border: 0;
+  margin: 0;
+}

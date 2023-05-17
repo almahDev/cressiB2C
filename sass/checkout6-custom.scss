@@ -1,0 +1,11 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// STRUCTURE
+@import 'components/checkout/header';
+@import 'components/checkout/footer';
+@import 'components/checkout/structure';
+@import 'components/checkout/shipping';

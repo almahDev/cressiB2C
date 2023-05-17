@@ -1,0 +1,18 @@
+.imageElement {
+  &--main-menu-banner {
+    object-fit: cover;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.imageElementLink {
+  &--main-menu-banner {
+    display: flex;
+  }
+}

@@ -1,0 +1,118 @@
+.relatedProducts {
+  .title {
+    @extend %big-title-section;
+    margin-top: 0;
+    text-align: center;
+    padding: 7.5rem 0 0;
+    margin-bottom: 0.5rem;
+    padding-top: 5.438rem;
+
+    @include tablet {
+      padding-top: 4.063rem;
+    }
+  }
+
+  .title {
+    &--all__title-pdp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: '';
+        width: 5.625rem;
+        height: 0.063rem;
+        background-color: $color-1-500;
+        margin: 0 auto 0.5rem;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  .slide {
+    padding: 0;
+  }
+
+  .arrow {
+    overflow: visible !important;
+  }
+
+  .arrowLeft {
+    &--all__title-pdp {
+      width: 0;
+      height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      align-content: center;
+      margin-left: 0.875rem;
+
+      @include tablet {
+        margin-left: 0;
+      }
+
+      &::after {
+        content: url('assets/svg/seta-esquerda-pdp.svg');
+        position: absolute;
+
+        @include tablet {
+          top: unset;
+          bottom: 3.25rem;
+        }
+      }
+
+      @include tablet {
+        left: 1rem;
+      }
+    }
+  }
+
+  .arrowRight {
+    &--all__title-pdp {
+      width: 0;
+      height: 0;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 0.875rem;
+
+      @include tablet {
+        margin-right: 0;
+      }
+
+      &::after {
+        content: url('assets/svg/seta-direita-pdp.svg');
+        position: absolute;
+
+        @include tablet {
+          top: unset;
+          bottom: 3.25rem;
+        }
+      }
+
+      @include tablet {
+        right: 1rem;
+      }
+    }
+  }
+
+  .dot {
+    @extend %dot;
+  }
+}
+
+.sliderContainer {
+  &--all__title {
+    height: auto;
+  }
+}
+
+.slide--all__title {
+  :global(.vtex-product-summary-2-x-brandName) {
+    min-height: 4.5rem;
+  }
+}

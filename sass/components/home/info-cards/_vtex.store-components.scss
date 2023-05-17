@@ -1,0 +1,195 @@
+.infoCardContainer {
+  &--home__info-card {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 1rem !important;
+    margin-top: 4rem !important;
+    @extend %container-large;
+
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &--all-infocard-all {
+    width: 100%;
+    height: 27.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-size: contain;
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100.35%)
+        no-repeat center center;
+      transform: rotate(-180deg);
+      border-radius: 0.25rem 0.25rem 0 0;
+
+      @include tablet {
+      }
+    }
+
+    @include tablet {
+      height: 18.75rem;
+      max-height: 100%;
+    }
+  }
+}
+
+.container--infocard1,
+.container--infocard2 {
+  z-index: 1;
+}
+
+.paragraph {
+  &--infocard1,
+  &--infocard2 {
+    font-weight: $regular;
+    font-size: $font-size-lg;
+    line-height: 1.688rem;
+    color: $white;
+    margin-right: 1.5rem;
+
+    @include tablet {
+      font-size: $font-size-md;
+      line-height: 1.688rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+.infoCardImageContainer,
+.infoCardImage,
+.infoCardTextContainer {
+  &--home__info-card {
+    border-radius: 0.625rem;
+
+    @include desktop {
+      display: flex;
+      height: 26.25rem;
+      justify-content: center;
+    }
+  }
+}
+
+.infoCardTextContainer {
+  &--home__info-card {
+    background-color: $color-5-400;
+    padding: 3rem;
+
+    @include desktop {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &--infocard1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &--infocard2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.infoCardCallActionContainer {
+  &--home__info-card {
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+    :global(.vtex-button) {
+      @extend %primary-button;
+    }
+  }
+
+  &--infocard1 {
+    :global(.vtex-button) {
+      background-color: transparent;
+      border: 0.063rem solid $white;
+      border-radius: 0.25rem;
+      width: 9.375rem;
+      height: 2.5rem;
+      padding: 0.625rem 1.5rem;
+    }
+
+    :global(.vtex-button__label) {
+      font-weight: $semi-bold;
+      font-size: $font-size-md;
+      line-height: 1.5rem;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+
+  &--infocard2 {
+    :global(.vtex-button) {
+      background-color: transparent;
+      border: 0.063rem solid $white;
+      border-radius: 0.25rem;
+      width: 9.375rem;
+      height: 2.5rem;
+      padding: 0.625rem 1.5rem;
+    }
+
+    :global(.vtex-button__label) {
+      font-weight: $semi-bold;
+      font-size: $font-size-md;
+      line-height: 1.5rem;
+      color: $white;
+      text-transform: uppercase;
+      width: 8rem;
+      position: relative;
+
+      &::before {
+        content: url('assets/svg/icon-instagram.svg');
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &--infocard2-mobile {
+    @include tablet {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.infoCardCallActionContainer {
+  &--all-infocard-all {
+    z-index: 1;
+  }
+}

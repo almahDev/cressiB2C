@@ -1,0 +1,93 @@
+.cookieCloseButton {
+  @extend %primary-button;
+  font-size: $font-size-md;
+  font-weight: $bold;
+  margin-left: auto;
+  padding: 0.5rem 1.25rem;
+  width: 80%;
+  white-space: pre;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  text-transform: initial !important;
+  margin-bottom: 0.0625rem;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.cookieModalText {
+  @include text($font-size-md, $text-pure-500, $regular);
+  font-family: $main-font !important;
+  line-height: 1.5rem;
+
+  @include tablet {
+    text-align: left;
+    line-height: 1.5212rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0.938rem;
+  }
+}
+
+.cookieModalLink {
+  @include text($font-size-md, $secondary-pure-500, $bold);
+  font-family: $main-font !important;
+  line-height: 1.5rem;
+  text-decoration: none !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  @include tablet {
+    text-align: left;
+    font-size: $font-size-sm;
+    font-weight: $regular;
+    line-height: 1.3125rem;
+    width: 100%;
+  }
+}
+
+.cookieModalPaper {
+  @extend %container-full;
+  outline: none;
+  background: transparent;
+  box-shadow: 0 0.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+
+  @include tablet {
+    width: 90%;
+    margin-bottom: 0.5rem !important;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.cookieModalContent {
+  background: $high-pure;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  padding: 1.75rem 2.0625rem;
+  border-radius: 0;
+
+  @include tablet {
+    padding: 0.938rem;
+  }
+}
+
+.cookieModalColumn {
+  &:first-child {
+    width: 99%;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+}

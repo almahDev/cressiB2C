@@ -1,0 +1,546 @@
+.accessCodeOptionBtn {
+}
+.accountOptions {
+}
+.arrowUp {
+}
+.backButton {
+}
+.box {
+  right: -140px !important;
+
+  .contentContainer {
+    .content {
+      .contentFormVisible {
+        .loginOptionsContainer {
+          .options {
+            .formTitle {
+              margin: 0;
+              padding: 0;
+            }
+
+            .formTitle,
+            .optionsList,
+            .optionsListItem,
+            .optionsListItem,
+            .googleOptionBtn,
+            .facebookOptionBtn,
+            .oauthLabel,
+            .buttonSocial,
+            .button {
+              justify-content: flex-start !important;
+              text-align: left;
+
+              :global(.vtex-button) {
+                @include text($font-size-sm, $text-color-1-500, $regular);
+                justify-content: flex-start !important;
+                line-height: 1;
+                margin: 0;
+                min-height: unset;
+                padding: 0;
+                text-align: left;
+                background: none !important;
+                border: none !important;
+                transition: all 0.2s ease-in-out !important;
+
+                &:hover,
+                &:active,
+                &:focus {
+                  color: $color-1-50;
+                  transition: all 0.2s ease-in-out !important;
+                }
+
+                :global(.vtex-button__label) {
+                  justify-content: flex-start !important;
+                  line-height: 1;
+                  margin: 0;
+                  padding: 0;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.box,
+.contentForm,
+.contentContainer {
+  border-radius: 0 !important;
+}
+.backButton {
+  :global(.vtex-button) {
+    width: 100%;
+    @extend %secondary-button;
+  }
+}
+.button {
+}
+.buttonDanger {
+}
+.buttonLink {
+}
+.buttonSocial {
+}
+.codeConfirmation {
+}
+.container {
+  margin: 0;
+
+  :global(.vtex-button) {
+    border: none;
+    background: none;
+    color: $text-color-1-500;
+    padding: 0;
+    transition: all 0.2s !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: none;
+      opacity: 0.8;
+      transition: all 0.2s !important;
+    }
+
+    :global(.vtex-button__label) {
+      color: $text-color-1-500;
+      padding: 0 !important;
+
+      :global(.flex.pv2.items-center) {
+        padding: 0;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        transition: all 0.2s ease-in-out !important;
+      }
+
+      &::before {
+        @include icon('profile', 32px);
+      }
+    }
+  }
+
+  .profileIcon {
+    color: $text-color-1-500;
+    overflow: visible;
+
+    @include tablet {
+      color: $text-color-1-500;
+    }
+  }
+
+  .label {
+    @include text($font-size-sm, $text-color-1-400, $regular);
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    text-align: left;
+    line-height: 21px;
+    padding-left: 0.8rem;
+    max-width: 100px;
+    letter-spacing: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      transition: color 0.2s !important;
+    }
+  }
+
+  .profile {
+    @include text($font-size-sm, $text-color-1-400, $regular);
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    text-align: left;
+    line-height: 21px;
+    padding-left: 0.8rem;
+    max-width: 100px;
+    letter-spacing: 0;
+
+    @include tablet {
+      display: block;
+      max-width: unset;
+      width: auto;
+      white-space: unset;
+    }
+  }
+  .relative.buttonLink {
+    :global(.vtex-button) {
+      :global(.vtex-button__label) {
+        .profileIcon--header__login--mobile {
+        }
+      }
+    }
+  }
+}
+
+.portalContainer {
+  .content {
+    padding: 1.5rem 1.45rem 1rem;
+
+    .contentForm {
+      padding: 0;
+    }
+
+    &--loginOptions {
+      .formTitle {
+        display: none;
+      }
+    }
+
+    &--accountOptions {
+      .accountOptions {
+        :global(.mv4.min-h-2.b--muted-4) {
+          margin: 0;
+          padding-bottom: 0.5rem;
+        }
+
+        :global(.mv2.o-30) {
+          display: none;
+        }
+      }
+
+      .button,
+      :global(.vtex-button) {
+        @include text($font-size-sm, $text-color-1-500, $regular);
+        justify-content: flex-start !important;
+        line-height: 1;
+        margin: 0;
+        min-height: unset;
+        padding: 0;
+        text-align: left;
+        background: none !important;
+        border: none !important;
+        transition: all 0.2s ease-in-out !important;
+        text-transform: none;
+
+        :first-child {
+          @include text($font-size-sm, $text-color-1-500, $regular);
+          text-transform: none;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color-1-50;
+          transition: all 0.2s ease-in-out !important;
+        }
+
+        :global(.vtex-button__label) {
+          justify-content: flex-start !important;
+          line-height: 1;
+          margin: 0;
+          padding: 0;
+          text-align: left;
+        }
+      }
+    }
+
+    .formTitle {
+      margin-top: 0;
+    }
+
+    .optionsList {
+      margin: 0;
+    }
+
+    .optionsListItem {
+      &:not(:last-child) {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}
+.content {
+}
+.content--accountOptions {
+}
+.content--codeConfirmation {
+}
+.content--emailAndPassword {
+}
+.content--emailVerification {
+}
+.content--recoveryPassword {
+}
+.contentAlwaysWithOptions {
+  background: transparent;
+}
+.contentContainer {
+}
+.contentForm {
+  :global(.vtex-input-prefix__group) {
+    border: none;
+  }
+
+  :global(.vtex-styleguide-9-x-input) {
+    @extend %input-text;
+  }
+
+  :global(.vtex-input__suffix) {
+    padding: 0;
+  }
+
+  .eyeSightIcon {
+    width: 1.5rem;
+  }
+
+  .eyeIcon {
+    &--visible,
+    &--invisible {
+      color: $text-color-1-500;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .forgotPasswordLink,
+  .dontHaveAccount {
+    text-decoration: underline;
+    @extend %link;
+  }
+}
+.contentFormVisible {
+}
+.contentInitialScreen {
+}
+.customOAuthOptionBtn {
+}
+.dontHaveAccount {
+}
+.emailAndPasswordForm {
+}
+.emailForm {
+}
+.emailPasswordOptionBtn {
+}
+.emailVerification {
+}
+.eyeIcon {
+}
+.facebookOptionBtn {
+}
+.forgotPasswordForm {
+}
+.forgotPasswordLink {
+}
+.formError {
+}
+.formFooter {
+  border: none;
+
+  .sendButton {
+    :global(.vtex-button) {
+      width: 100%;
+      @extend %primary-button;
+      padding: 0 !important;
+      transition: all 0.2s ease-in-out !important;
+
+      :global(.vtex-spinner_circle) {
+        color: $white;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        transition: all 0.2s ease-in-out !important;
+      }
+    }
+  }
+
+  .backButton {
+    :global(.vtex-button) {
+      width: 100%;
+      @extend %secondary-button;
+      padding: 0 !important;
+      transition: all 0.2s ease-in-out !important;
+
+      &:hover,
+      &:active,
+      &:focus {
+        transition: all 0.2s ease-in-out !important;
+      }
+    }
+  }
+}
+.formLinkContainer {
+}
+.formSubtitle {
+}
+.formTitle {
+  color: $text-color-1-500;
+  font-size: $font-size-sm;
+  font-weight: $bold;
+  padding: 0;
+}
+.googleOptionBtn {
+}
+.googleOptionBtn,
+.facebookOptionBtn,
+.oauthLabel,
+.oauthProvider,
+.buttonSocial {
+  color: $text-color-2-500 !important;
+  font-size: $font-size-base !important;
+  font-weight: $normal;
+  line-height: 1 !important;
+  min-height: unset !important;
+  min-width: 15rem;
+  text-align: left !important;
+  text-transform: lowercase;
+  width: 100%;
+
+  ::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-1-500 !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+}
+.inputContainer {
+}
+.inputContainerAccessCode {
+}
+.inputContainerEmail {
+}
+.inputContainerPassword {
+}
+.label {
+  &:hover,
+  &:focus,
+  &:active {
+    background: none;
+    color: $text-color-1-400;
+    text-decoration: none !important;
+  }
+}
+.oauthProvider {
+}
+.options {
+}
+.options,
+.optionsList,
+.optionsListItem,
+.loginOptionsContainer,
+.contentForm,
+.contentFormVisible {
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-base;
+  justify-content: flex-start;
+  min-width: 15rem;
+  text-transform: lowercase;
+  width: 100%;
+
+  ::first-letter {
+    text-transform: uppercase;
+  }
+
+  :global(.vtex-button) {
+    display: flex;
+    font-size: $font-size-base;
+    justify-content: center;
+    transition: all 0.2s ease-in-out !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      transition: all 0.2s ease-in-out !important;
+    }
+
+    :global(.vtex-button__label) {
+      display: flex;
+      font-size: $font-size-base;
+      justify-content: center;
+      line-height: 1.5;
+      transition: all 0.2s ease-in-out !important;
+
+      &:hover,
+      &:focus,
+      &:active {
+        transition: all 0.2s ease-in-out !important;
+      }
+    }
+  }
+}
+.optionsList {
+}
+.oauthLabel,
+.oauthProvider,
+.googleOptionBtn,
+.facebookOptionBtn,
+.optionsList,
+.optionsListItem,
+.buttonSocial {
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  :global(.vtex-button) {
+    color: $text-color-2-500;
+    text-transform: lowercase;
+
+    ::first-letter {
+      text-transform: uppercase;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      color: $color-1-500;
+      text-decoration: none !important;
+      transition: all 0.2s ease-in-out !important;
+    }
+
+    :global(.vtex-button__label) {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+.optionsListItem {
+}
+.optionsListItemContainer {
+}
+.optionsSticky {
+  .accessCodeOptionBtn,
+  .emailPasswordOptionBtn {
+    :global(.vtex-button) {
+      width: 100%;
+      @extend %secondary-button;
+    }
+  }
+}
+.profile {
+}
+
+.profileIcon {
+  @include desktop {
+    // width: 17px;
+    height: 1.5rem;
+  }
+}
+.sendButton {
+  :global(.vtex-button) {
+    width: 100%;
+    @extend %primary-button;
+  }
+}
+.termsAndConditions {
+}
+.tooltipContainer {
+}
+.tooltipContainerLeft {
+}
+.tooltipContainerTop {
+}

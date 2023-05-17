@@ -1,0 +1,87 @@
+.flexRow {
+  &--header__tooltip {
+    background-color: $color-1-500;
+    color: $text-white-100;
+    padding: 0.23rem 0;
+  }
+
+  &--header__main {
+    background-color: $white;
+    color: $black;
+    padding: 1rem 0;
+
+    @include tablet {
+      padding: 0.5rem 0;
+    }
+  }
+}
+.flexRowContent {
+  &--header__main {
+    align-items: center;
+    justify-content: space-between;
+    @extend %container-large;
+
+    @media (min-width: $l) and (max-width: $screen-xlg-max) {
+      padding: 0 15px;
+    }
+
+    .stretchChildrenWidth {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .flexCol {
+      width: 38% !important;
+
+      &:first-child {
+        width: 25% !important;
+      }
+
+      &:last-child {
+        width: 32% !important;
+      }
+    }
+  }
+
+  &--header__main--mob {
+    display: flex;
+  }
+
+  &--header__login--mobile {
+    align-items: center;
+  }
+
+  &--header__tooltip {
+    align-items: center;
+    display: flex;
+    @extend %container-large;
+
+    @media (min-width: $l) and (max-width: $screen-xlg-max) {
+      padding: 0 15px;
+    }
+
+    @include desktop {
+      justify-content: space-between;
+    }
+
+    .stretchChildrenWidth {
+      &:first-child {
+        width: 100% !important;
+
+        @include desktop {
+          padding-right: 6.5rem;
+        }
+      }
+    }
+  }
+
+  &--header__links--desktop {
+    .stretchChildrenWidth {
+    }
+  }
+}
+
+.flexCol {
+}
+.flexColChild {
+}

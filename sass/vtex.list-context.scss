@@ -1,0 +1,13 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// HEADER
+@import 'components/wishlist/vtex.wish-list';
+
+@import 'components/footer/vtex.list-context';
+
+// HOME
+@import 'components/home/sales-banners/vtex.list-context';

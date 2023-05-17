@@ -1,0 +1,250 @@
+.orderPlacedWrapper {
+  padding-top: 95px;
+  background-color: $color-c-1;
+}
+
+.confirmationIconWrapper {
+  color: $primary-pure-500;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.confirmationTitle {
+  @include text($font-size-h3, $text-pure-500, $bold);
+  line-height: 33px;
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+
+.confirmationMessage {
+  @include text($font-size-md, $text-pure-500, $regular);
+  line-height: 22px;
+  margin: 0 0 16px 0;
+
+  .strong {
+    font-weight: $regular !important;
+  }
+}
+
+.noticesList {
+  background-color: $high-light;
+}
+
+.noticeListItem {
+  border: none;
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.orderNumber {
+  @include text($font-size-xlg, $text-pure-500, $bold);
+  line-height: 27px;
+  margin-bottom: 8px;
+}
+
+.orderDatetime {
+  @include text($font-size-base, $text-pure-500, $regular);
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+
+.orderSoldBy {
+  @include text($font-size-base, $text-pure-500, $regular);
+  line-height: 22px;
+
+  .orderSeller {
+    font-weight: $bold;
+    color: $primary-pure-500;
+  }
+}
+
+.myOrdersButton,
+.updateOrderButton {
+  :global(.vtex-button) {
+    height: 32px;
+    border: none;
+    background: $primary-pure-500;
+    border-radius: 30px;
+    @include text($font-size-md, $high-pure, $bold);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+    min-width: 205px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $primary-dark-700;
+      color: $high-pure;
+    }
+    :global(.vtex-button__label) {
+      text-decoration: none;
+    }
+  }
+}
+
+.cancelOrderButton {
+  :global(.vtex-button) {
+    height: 32px;
+    border: 1px solid $error-pure;
+    background: transparent;
+    border-radius: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $error-pure;
+    transition: all 0.2s ease-in-out;
+    min-width: 205px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $error-dark;
+      border: 1px solid $error-dark;
+      color: $white;
+    }
+
+    :global(.vtex-button__label) {
+      text-decoration: none;
+      text-transform: capitalize;
+      font-weight: $bold;
+    }
+  }
+}
+
+.addressContainer,
+.packageSLA,
+.packageShippingEstimate,
+.paymentValue,
+.paymentGroup,
+.customerInfoListName,
+.customerInfoListEmail,
+.customerInfoListDocument,
+.customerInfoListPhone {
+  @include text($font-size-base, $text-pure-500, $regular);
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.paymentGroup,
+.customerInfoListName {
+  font-weight: $bold;
+}
+
+.orderPlacedMainWrapper {
+  @extend %container;
+}
+
+.section {
+  &:not(:first-child):not(:last-child) {
+    border-top: 1px solid $high-medium;
+  }
+
+  margin: 0;
+  &--pickupPackages {
+    border-top: 1px solid $high-medium;
+  }
+  &--confirmation {
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &--paymentMethods {
+    //margin-top: 16px;
+  }
+}
+
+.packageDeliveryTitle {
+  @include text($font-size-lg, $text-pure-500, $bold);
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.packageHeader {
+  &--delivery {
+    margin: 0;
+  }
+}
+
+.totalList {
+  width: 100%;
+}
+
+.totalListItemValue,
+.totalListItemLabel {
+  @include text($font-size-lg, $text-pure-500, $regular);
+  line-height: 25px;
+}
+
+.totalListItem {
+  &:last-child {
+    .totalListItemValue,
+    .totalListItemLabel {
+      @include text($font-c-2, $text-pure-500, $bold);
+      line-height: 33px;
+    }
+  }
+}
+.productName {
+  @include text($font-size-base, $text-pure-500, $bold);
+  line-height: 22px;
+  margin: 0;
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.productQuantity {
+  @include tablet {
+    text-align: left;
+  }
+}
+.productPrice {
+  color: $text-pure-500;
+  font-weight: $bold;
+}
+
+[data-testid='button-link'] {
+  text-decoration: none !important;
+}
+
+.productWrapper {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.productInfoColumn {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 16px;
+  }
+}
+.productImageWrapper {
+  width: 84px;
+  height: 84px;
+}
+
+.totalListWrapper {
+  border-top: 1px solid $high-medium;
+}
+.packageSLA,
+.packageAddressWrapper {
+}

@@ -1,0 +1,12 @@
+.flexRowContent {
+  &--all-not-found-page {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+
+    @include tablet {
+      padding: 2rem 1rem;
+    }
+  }
+}

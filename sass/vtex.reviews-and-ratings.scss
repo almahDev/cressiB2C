@@ -1,0 +1,11 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// PRODUCT
+@import 'components/product/vtex.reviews-and-ratings';
+
+// SHELF
+@import 'components/shelf/vtex.reviews-and-ratings';

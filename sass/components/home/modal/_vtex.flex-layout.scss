@@ -1,0 +1,52 @@
+.flexRow {
+  &--all-modal-news__content {
+  }
+}
+
+.flexRowContent {
+  &--all-modal-news__content {
+    background: $high-pure;
+
+    @include tablet {
+      margin-bottom: 13.5rem;
+    }
+  }
+}
+
+.flexCol {
+  &--all-modal-news__content {
+    &--form {
+      align-items: center;
+      justify-content: center;
+      padding: 0 4rem;
+    }
+
+    @include tablet {
+      &--form {
+        padding: 2rem;
+      }
+
+      &--image {
+        display: none;
+      }
+    }
+  }
+
+  &--all-modal-news__content--image {
+  }
+}
+
+.flexColChild {
+  &--all-modal-news__content--form {
+    height: auto !important;
+
+    @include tablet {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+}

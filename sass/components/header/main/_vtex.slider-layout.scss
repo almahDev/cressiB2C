@@ -1,0 +1,96 @@
+.sliderLayoutContainer {
+  &--header__tooltip {
+    @include desktop {
+      max-width: 625px;
+      margin-left: auto;
+    }
+  }
+}
+
+.sliderArrows {
+  &--header__tooltip {
+    @include tablet {
+      padding: 0 0.5rem;
+    }
+
+    .caretIcon {
+      display: none;
+      // width: 12px;
+      // height: 12px;
+      // color: $text-color-1-500;
+
+      // @include tablet {
+      //   width: 16px;
+      //   height: 16px;
+      // }
+    }
+  }
+}
+
+.sliderLeftArrow {
+  &--header__tooltip {
+    &::before {
+      @include icon('arrow-left-tooltip', 24px);
+    }
+  }
+}
+
+.sliderRightArrow {
+  &--header__tooltip {
+    &::before {
+      @include icon('arrow-right-tooltip', 24px);
+    }
+  }
+}
+
+.infoCardContainer {
+  &--header__tooltip {
+    background: transparent;
+    padding: 0;
+  }
+}
+
+.infoCardTextContainer {
+  &--header__tooltip {
+    width: 100%;
+    background: transparent;
+    padding: 0;
+  }
+}
+
+.infoCardHeadline {
+  &--header__tooltip {
+    @include text($font-size-sm, $color-1-500, $normal);
+    margin: 0;
+    padding: 0;
+    line-height: 21px;
+  }
+}
+
+.infoCardCallActionContainer,
+.infoCardImageContainer {
+  &--header__tooltip {
+    display: none;
+  }
+}
+
+.wrapper {
+  &--header__tooltip {
+    width: 100%;
+    text-align: center;
+    padding: 0 3rem;
+  }
+}
+
+.paragraph {
+  &--header__tooltip {
+    @include text($font-size-sm, $color-1-500, $regular);
+    margin: 0;
+    line-height: 21px;
+
+    @include tablet {
+      font-size: $font-size-xs;
+      line-height: 18px;
+    }
+  }
+}

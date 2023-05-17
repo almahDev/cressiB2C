@@ -1,0 +1,48 @@
+.container {
+  &--all__title {
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .heading {
+      @extend %big-title-section;
+    }
+  }
+
+  &--search__categories-banner {
+    .wrapper {
+      width: 100%;
+      text-align: left;
+    }
+
+    .heading {
+      @extend %big-title-section;
+
+      margin: 0 !important;
+    }
+
+    .paragraph {
+      @include text($font-size-sm, $text-color-1-400, $normal);
+    }
+
+    .link {
+      @include link($font-size-xs, $color-3-500, $bold, underline);
+    }
+  }
+}
+
+.wrapper--all__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: '';
+    width: 5.625rem;
+    height: 0.063rem;
+    background-color: $color-1-500;
+    margin: 0 auto 0.5rem;
+  }
+}

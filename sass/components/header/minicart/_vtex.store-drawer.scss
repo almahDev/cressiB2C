@@ -1,0 +1,70 @@
+.minicartTitle {
+  @include text($font-size-lg, $text-color-1-500, $bold);
+  background: $high-light;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.75rem 0.95rem 0.95rem;
+  border-bottom: none;
+}
+
+.closeIconButton {
+  &--all-cart {
+    &:not(&--continuar-comprando) {
+      position: absolute;
+    }
+    &--continuar-comprando {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: $font-size-md;
+      font-weight: $semi-bold;
+      color: $text-color-1-500;
+      font-family: $main-font;
+      margin: 0 auto 1rem;
+      text-decoration: none;
+      border: 1px solid $high-light;
+      border-radius: 4px;
+      transition: all 0.2s;
+      box-sizing: border-box;
+      background: $white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}
+
+.closeIconButton {
+  &--continuar-comprando {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: $font-size-md;
+    font-weight: $semi-bold;
+    color: $text-color-1-500;
+    font-family: $main-font;
+    margin: 0 auto 1rem;
+    text-decoration: none;
+    border: 1px solid $high-light;
+    border-radius: 4px;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    background: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: brightness(0.9);
+    }
+  }
+}

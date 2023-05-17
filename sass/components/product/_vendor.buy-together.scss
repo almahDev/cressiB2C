@@ -1,0 +1,647 @@
+.buyTogetherTitleContainer {
+  &--all__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: '';
+      width: 5.625rem;
+      height: 0.063rem;
+      background-color: $color-1-500;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.buyTogetherTitle {
+  &--all__title-buy-together {
+    font-weight: $regular;
+    font-size: $font-size-h3;
+    line-height: 3rem;
+    color: $text-color-1;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+
+    @include tablet {
+      font-size: $font-size-xlg;
+      line-height: 1.875rem;
+    }
+  }
+}
+
+.buyTogetherBuyCardSubtitle {
+  &--all__title-buy-together {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    font-weight: $regular;
+    font-size: $font-size-lg;
+    line-height: 1.688rem;
+    color: $text-color-2;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: $font-size-md;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.buyTogetherBuyCard {
+  &--all__title-buy-together {
+    background-color: $high-light;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      padding: 0;
+      margin-bottom: 0;
+      margin-top: 1.625rem;
+    }
+  }
+}
+
+.buyTogetherBuyCardSubtitleSellingPrice {
+  &--all__title-buy-together {
+    font-weight: $regular;
+    font-size: $font-c-2;
+    line-height: 2.25rem;
+    color: $text-color-1;
+
+    @include tablet {
+      font-size: $font-size-xlg;
+      line-height: 1.875rem;
+    }
+  }
+}
+
+.buyTogetherBuyCardButton {
+  &--all__title-buy-together {
+    @extend %primary-button;
+    border-radius: 0.25rem;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.buyTogetherBuyCardButtonText {
+  &--all__title-buy-together {
+    font-weight: $semi-bold;
+    font-size: $font-size-md;
+    line-height: 1.188rem;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.buyTogetherSelectableBoxIcon {
+  border-color: $high-light;
+  border-radius: 0.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: $white;
+  transition: all 0.2s;
+}
+
+.checkIcon {
+  border-color: $color-3;
+  background-color: $color-3;
+  border-radius: 0.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.buyTogetherSelectableBoxLabel {
+  font-weight: $regular;
+  font-size: $font-size-md;
+  line-height: 1.5rem;
+  color: $text-color-1;
+}
+
+.buyTogetherSelectableBoxIconSelected {
+  border-color: $color-3;
+  background-color: $color-3;
+  transition: all 0.2s;
+}
+
+.buyTogetherSelectableBox {
+  position: absolute;
+  bottom: -3.125rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  @include tablet {
+    bottom: -2.813rem;
+    top: unset;
+  }
+}
+
+.buyTogether {
+  &--all__title-buy-together {
+    margin-bottom: -5.5rem;
+
+    @include tablet {
+      margin-bottom: -1.5rem;
+      margin-top: -1.5rem;
+    }
+  }
+}
+
+.buyTogetherWrapper {
+  &--all__title-buy-together {
+    @media screen and (max-width: 86.25rem) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+}
+
+.ShelfAccessories {
+  @extend %container-extra-large;
+
+  @media (min-width: $screen-lp) and (max-width: $screen-xlg-max) {
+    padding: 0 1rem;
+  }
+}
+
+.ShelfAccessoriesTitle {
+  @extend %big-title-section;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1rem;
+
+  @include tablet {
+    padding: 0 1rem 1rem;
+  }
+}
+
+.ShelfAccessoriesText {
+  @include text($font-size-md, $text-color-2-500, $regular);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1.5rem;
+
+  @include tablet {
+    padding: 0 1rem 1.5rem;
+  }
+}
+
+.ShelfAccessoriesIcon {
+  @include text($font-size-h1, $color-1-500, $bold);
+  text-align: center;
+}
+
+.ShelfAccessoriesPlusIcon {
+  @include text($font-size-h3, $color-1-500, $bold);
+  text-align: center;
+}
+
+.ShelfAccessoriesBuyButton {
+  :global(.vtex-button) {
+    @extend %primary-button;
+    width: 100%;
+
+    &:disabled {
+      background-color: $color-6-200;
+      cursor: not-allowed;
+    }
+
+    :global(.vtex-spinner_circle) {
+      color: $white;
+    }
+  }
+}
+
+.ShelfAccessoriesCardInfoName {
+  @include text($font-size-md, $text-color-2-500, $regular);
+  margin: 0.5rem 0;
+}
+
+.ShelfAccessoriesCardImage {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+.ShelfAccessoriesCardMainImage,
+.ShelfAccessoriesCardHoverImage {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  object-fit: cover;
+  height: 28.125rem;
+  max-height: 100%;
+
+  @include tablet {
+    height: 100%;
+  }
+}
+
+.ShelfAccessoriesCardHoverImage {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: all 0.2s;
+}
+
+.ShelfAccessoriesCardWishlist {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: unset;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 3;
+
+  @include desktop {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-out;
+  }
+
+  :global(.vtex-button) {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    position: inherit;
+    background: transparent;
+    padding: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    :global(.vtex-wish-list-1-x-wishlistIcon) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  :global(.vtex-button__label) {
+    justify-content: flex-end;
+  }
+}
+
+.ShelfAccessoriesCardFlags {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  .savings {
+    @include text($font-size-md, $white, $bold);
+    line-height: 1.5rem;
+    background: $color-1-500;
+    width: 3.375rem;
+    height: 4.063rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 0.375rem;
+
+    @include tablet {
+      font-size: $font-size-xxs;
+      width: 2rem;
+      height: 2.625rem;
+      line-height: 0.75rem;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 0.063rem;
+      background: $white;
+      margin-bottom: 0.125rem;
+    }
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 0.063rem;
+      background: $white;
+      margin-top: 0.125rem;
+    }
+  }
+}
+
+.ShelfAccessoriesCardRecycleImage {
+  @include tablet {
+    max-width: 2rem;
+  }
+}
+
+.ShelfAccessoriesCardCheckboxLabel {
+  @include text($font-size-md, $text-color-2-500, $regular);
+}
+
+.ShelfAccessoriesCardRating {
+  padding: 0 0 0.813rem;
+}
+
+.ShelfAccessoriesBuyBox {
+  @include tablet {
+    padding: 0 1rem;
+  }
+
+  @include desktop {
+    flex-basis: 25%;
+    padding-left: 1.5rem;
+  }
+}
+
+.ShelfAccessoriesBuyBoxText {
+  padding-bottom: 1rem;
+}
+
+.ShelfAccessoriesBuyBoxTextHighlight {
+  @include text($font-size-lg, $color-1-500, $bold);
+  display: inline-block;
+}
+
+.ShelfAccessoriesCards {
+  @include tablet {
+    padding-left: 1rem;
+  }
+}
+
+.ShelfAccessoriesCard {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+  @include tablet {
+    padding-left: 0.5rem;
+  }
+
+  &:hover {
+    .ShelfAccessoriesCardWishlist,
+    .ShelfAccessoriesCardHoverImage {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  // SKU SELECTOR
+  .skuSelectorContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+  }
+
+  :global(.vtex-store-components-3-x-skuSelectorTextContainer) {
+    display: none;
+  }
+
+  :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem 0.375rem;
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.4s ease-out !important;
+    gap: 0.5rem 0;
+  }
+
+  .skuSelectorNameContainer,
+  .skuSelectorOptionsList {
+    margin: 0;
+  }
+
+  .skuSelectorOptionsList {
+    gap: 0.5rem 0;
+  }
+
+  :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+    margin: 0;
+    padding: 0;
+  }
+
+  .skuSelectorItem {
+    height: 2rem;
+    min-width: 2rem;
+    border: 0.063rem solid $color-5-700;
+    transition: all 0.2s;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+
+    @include tablet {
+      height: 1.5rem;
+      min-width: 1.5rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $color-6-300;
+      background: $color-6-300;
+      transition: all 0.2s;
+
+      .skuSelectorInternalBox .valueWrapper {
+        color: $white;
+      }
+    }
+
+    &--selected {
+      border-color: $color-6-900 !important;
+      background: $color-6-900 !important;
+      transition: all 0.2s;
+
+      .skuSelectorInternalBox .valueWrapper {
+        color: $white;
+      }
+    }
+  }
+
+  .frameAround {
+    display: none;
+  }
+
+  .skuSelectorItemImage {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .skuSelectorItemImageValue {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0.125rem;
+    bottom: 0;
+    z-index: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .skuSelectorInternalBox {
+    border: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 0;
+
+    .valueWrapper {
+      @include text($font-size-sm, $text-color-2-400, $bold);
+      padding: 0;
+      transition: all 0.2s;
+
+      @include tablet {
+        font-size: $font-size-xs;
+      }
+
+      &--unavailable {
+        color: $color-5-700;
+      }
+    }
+
+    .diagonalCross {
+      margin: 0;
+      transform: rotate(130deg);
+    }
+  }
+}
+
+// PRICE
+.ShelfAccessoriesCardInfoPrice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+
+  .listPrice {
+    @include text($font-size-md, $text-color-1, $regular);
+    margin-right: 0.5rem;
+  }
+
+  .sellingPrice {
+    @include text($font-size-md, $text-color-1, $bold);
+    margin-right: 0.5rem;
+  }
+
+  .installments {
+    @include text($font-size-base, $text-color-2, $regular);
+    word-spacing: -0.063rem;
+  }
+}
+
+// HIGHLIGHTS
+.ShelfAccessoriesCardHighlights {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.productHighlightWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  background: $white;
+  border: 0.063rem solid $color-5-500;
+  width: auto !important;
+
+  &:not(:last-child) {
+    margin-right: 0.375rem;
+  }
+}
+
+.productHighlightText {
+  @include text($font-size-xxs, $color-6-300, $semi-bold);
+  text-transform: uppercase;
+}
+
+// SLIDER
+.ShelfAccessoriesCardsArrows {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: $white !important;
+  color: $text-color-1-500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+  font-size: 0;
+  margin: auto;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  &:hover {
+    filter: brightness(95%);
+  }
+
+  @include tablet {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.ShelfAccessoriesCardsArrowLeft {
+  left: 1rem;
+
+  &::before {
+    @include icon('arrow-left', 0.875rem);
+  }
+}
+
+.ShelfAccessoriesCardsArrowRight {
+  right: 1rem;
+
+  &::before {
+    @include icon('arrow-right', 0.875rem);
+  }
+}
+
+.ShelfAccessoriesPlusIcon {
+  padding: 0 0.5rem;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+:global(.vtex-slider-0-x-sliderFrame) {
+  @include tablet {
+    align-items: flex-start;
+  }
+}

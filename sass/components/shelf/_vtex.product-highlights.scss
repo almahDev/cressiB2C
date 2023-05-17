@@ -1,0 +1,61 @@
+.productHighlight {
+  z-index: 1;
+}
+
+.productHighlightText {
+  @include text($font-size-xs, $white, $bold);
+  line-height: 0.875rem;
+  display: flex;
+  flex-flow: row nowrap;
+  width: fit-content !important;
+  line-break: strict;
+  align-items: center;
+
+  @include tablet {
+    font-size: $font-size-xxs;
+  }
+}
+
+.productHighlightWrapper {
+  background: $color-5-500 !important;
+  padding: 0.3125rem 0.2813rem;
+  margin: 0.125rem 0;
+  width: fit-content !important;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+
+  @include tablet {
+    padding: 0.125rem 0.2813rem;
+  }
+
+  &[data-highlight-name="Promoção"] {
+    background: $color-5-500 !important;
+  }
+
+  &[data-highlight-name="50% Off"] {
+    background: $color-1-50 !important;
+  }
+
+  &[data-highlight-name="Black Friday"] {
+    background: $color-5-500 !important;
+  }
+
+  &[data-highlight-name="Lançamento"] {
+    background: $color-1-50 !important;
+  }
+}
+
+.productHighlightText {
+}
+.productHighlightWrapper {
+}
+
+[data-highlight-name=""] {
+}
+[data-highlight-id=""] {
+}
+[data-highlight-type=""] {
+}

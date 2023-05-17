@@ -1,0 +1,12 @@
+.container {
+  &--all__title {
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .heading {
+      @extend %big-title-section;
+    }
+  }
+}

@@ -1,0 +1,200 @@
+// .formContainer {
+//   &--product__review {
+//     margin: 0;
+//     padding: 0;
+
+//     :first-child,
+//     :last-child,
+//     :not(:first-child):not(:last-child) {
+//       @extend %input-override;
+//     }
+//     :global(.vtex-button) {
+//       &:first-child {
+//         @extend %secondary-button;
+//       }
+//       &:last-child {
+//         @extend %primary-button;
+//         :global(.vtex-button__label) {
+//           color: $white !important;
+//         }
+//       }
+//     }
+//   }
+// }
+// .questionsList {
+//   :first-child,
+//   :last-child,
+//   :not(:first-child):not(:last-child) {
+//     font-family: $main-font !important;
+//   }
+// }
+// .thumbsIcon {
+// }
+// .qna-header {
+//   padding: 3rem 0;
+//   :first-child,
+//   :last-child,
+//   :not(:first-child):not(:last-child) {
+//     font-family: $main-font !important;
+//   }
+//   @include text($font-size-h3, $text-pure-500, $bold);
+//   text-align: center;
+// }
+// .qna-search-container {
+//   :first-child,
+//   :last-child,
+//   :not(:first-child):not(:last-child) {
+//     font-family: $main-font !important;
+//   }
+// }
+
+// .qna-search {
+//   :first-child,
+//   :last-child,
+//   :not(:first-child):not(:last-child) {
+//     font-family: $main-font !important;
+//   }
+// }
+
+// .votes-question-container {
+// }
+
+// .votes {
+// }
+
+// .button-container {
+// }
+// .vote-count {
+// }
+// .vote-text {
+// }
+
+// .question-container {
+// }
+
+// .question-label {
+// }
+
+// .answer-label {
+// }
+
+// .no-answer {
+// }
+
+// .question-text {
+// }
+
+// .answer-container {
+// }
+
+// .answer-label {
+// }
+
+// .answer-text {
+// }
+
+// .additional-info {
+// }
+
+// .questions-dropdown {
+//   &:hover {
+//   }
+// }
+
+// .collapse-button {
+//   &:hover {
+//   }
+// }
+
+// .more-questions-button {
+//   &:hover {
+//   }
+// }
+
+// .create-question-container {
+//   margin: 0;
+//   padding: 1rem;
+//   background: $white;
+//   display: flex;
+//   border-radius: 1rem;
+//   height: 80px;
+
+//   align-items: center;
+//   justify-content: center;
+//   align-content: center;
+//   flex-wrap: wrap;
+//   :global(.vtex-button) {
+//     @extend %primary-button;
+//     :global(.vtex-button__label) {
+//       color: $white !important;
+//       text-transform: capitalize;
+//     }
+//   }
+//   @include tablet {
+//     height: fit-content;
+//   }
+// }
+// .open-answer-modal-container {
+//   :global(.vtex-button) {
+//     @extend %secondary-button;
+//     :global(.vtex-button__label) {
+//       text-transform: capitalize;
+//     }
+//   }
+// }
+// .create-question-text {
+//   @include desktop {
+//     padding: 1rem;
+//   }
+//   @include tablet {
+//     padding: 0.5rem;
+//   }
+// }
+
+// .open-modal-button {
+//   @extend %primary-button;
+//   color: $white !important;
+// }
+
+// .question-text-box {
+// }
+
+// .modal-buttons-container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100%;
+// }
+
+// .submit-question-button {
+//   &:hover {
+//   }
+// }
+
+// .close-modal-button {
+//   &:hover {
+//   }
+// }
+
+// .answer-item {
+// }
+
+// .answer-item-info {
+// }
+
+// .answer-container {
+// }
+
+// .iconSize {
+// }
+// .fill {
+// }
+// .outline {
+// }
+
+// .clearLink {
+// }
+
+// .question-email-container {
+//   @extend %input-override;
+// }

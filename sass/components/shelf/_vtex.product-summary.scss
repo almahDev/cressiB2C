@@ -1,0 +1,358 @@
+.container {
+  &:hover {
+    :global(.vtex-button) {
+    }
+  }
+}
+
+.brandName {
+}
+
+.clearLink {
+}
+
+.element {
+}
+
+:global(.vtex-button) {
+}
+
+// new stuff
+
+.nameContainer {
+}
+.container {
+  &:hover {
+    :global(.vtex-button) {
+    }
+
+    :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
+    }
+  }
+}
+
+.brandName {
+}
+
+.clearLink {
+}
+
+.element {
+  :global(.vtex-reviews-and-ratings-3-x-inlineContainer) {
+  }
+}
+
+.image {
+}
+
+.hoverImage {
+}
+
+.hoverEffect:hover {
+  .hoverImage {
+  }
+}
+
+.diagonalCross {
+}
+
+.container {
+  background: $white;
+  border-radius: 0.25rem;
+  padding: 0;
+  margin: 7.5px;
+  transition: all 0.2s;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid $high-light;
+  margin-bottom: 0;
+
+  @include desktop {
+    max-width: 315px !important;
+    height: auto;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+      .mainImageHovered {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .hoverImage {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      :global(
+          .vtex-flex-layout-0-x-flexRowContent--product__qtty-add--desktop
+        ) {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &Normal {
+    &--product__summary-shelf--buy-together {
+      margin: 0 1.375rem 20% 1.125rem;
+      overflow: visible;
+
+      @include tablet {
+        margin: 0 0.375rem;
+        margin-bottom: 2.813rem;
+        height: auto;
+      }
+    }
+  }
+
+  .nameContainer {
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .brandName {
+    @include text($font-size-md, $text-color-1-500, $regular);
+    line-height: 1.5rem;
+    text-align: start;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    margin: 0;
+
+    @media screen and (min-width: $screen-lp) {
+      min-height: 4.5rem;
+    }
+
+    @include tablet {
+      font-size: $font-size-xs;
+      line-height: 1.125rem;
+    }
+  }
+
+  .clearLink {
+    position: relative;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .element {
+    padding: 0 0 0;
+  }
+
+  .imageContainer {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+  }
+
+  .mainImageHovered {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .hoverImage {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+  }
+
+  :global(.vtex-button) {
+    @extend %primary-button;
+    width: 100%;
+    padding: 0 1.5rem;
+    border-radius: 0.25rem;
+    height: 2.75rem;
+
+    @include tablet {
+      min-height: auto;
+      height: 2rem;
+      padding: 0;
+    }
+
+    :global(.vtex-button__label) {
+      padding: 0 !important;
+    }
+
+    :global(.vtex-spinner_circle) {
+      color: $white;
+    }
+  }
+}
+
+.name {
+  &Container {
+    padding-bottom: 0;
+
+    @include tablet {
+      margin-bottom: 0.375rem;
+    }
+  }
+}
+
+// Order Size
+
+.skuSelectorItem--all-shelf {
+  &--18 {
+    order: 1;
+  }
+
+  &--19 {
+    order: 2;
+  }
+
+  &--20 {
+    order: 3;
+  }
+
+  &--21 {
+    order: 4;
+  }
+
+  &--22 {
+    order: 5;
+  }
+
+  &--23 {
+    order: 6;
+  }
+
+  &--24 {
+    order: 7;
+  }
+
+  &--25 {
+    order: 8;
+  }
+
+  &--26 {
+    order: 9;
+  }
+
+  &--27 {
+    order: 10;
+  }
+
+  &--28 {
+    order: 11;
+  }
+
+  &--29 {
+    order: 12;
+  }
+
+  &--30 {
+    order: 13;
+  }
+
+  &--31 {
+    order: 14;
+  }
+
+  &--32 {
+    order: 15;
+  }
+
+  &--33 {
+    order: 16;
+  }
+
+  &--34 {
+    order: 17;
+  }
+
+  &--35 {
+    order: 18;
+  }
+
+  &--36 {
+    order: 19;
+  }
+
+  &--37 {
+    order: 20;
+  }
+
+  &--38 {
+    order: 21;
+  }
+
+  &--39 {
+    order: 22;
+  }
+
+  &--40 {
+    order: 23;
+  }
+
+  &--41 {
+    order: 24;
+  }
+
+  &--42 {
+    order: 25;
+  }
+
+  &--43 {
+    order: 26;
+  }
+
+  &--44 {
+    order: 27;
+  }
+
+  &--45 {
+    order: 28;
+  }
+
+  &--46 {
+    order: 29;
+  }
+
+  &--47 {
+    order: 30;
+  }
+
+  &--48 {
+    order: 31;
+  }
+
+  &--49 {
+    order: 32;
+  }
+
+  &--50 {
+    order: 33;
+  }
+
+  &--pp {
+    order: 1;
+  }
+
+  &--p {
+    order: 2;
+  }
+
+  &--m {
+    order: 3;
+  }
+
+  &--g {
+    order: 4;
+  }
+
+  &--gg {
+    order: 5;
+  }
+}

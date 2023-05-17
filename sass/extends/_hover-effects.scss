@@ -1,0 +1,8 @@
+%base-hover {
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($color-1-500, 10%);
+    transition: all 0.2s;
+  }
+}

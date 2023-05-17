@@ -1,0 +1,72 @@
+.searchBarIcon {
+  &--header__search {
+    padding: 0 0 0 1rem;
+    color: $text-color-1-500;
+
+    @include tablet {
+      padding: 0 1rem 0 0;
+    }
+  }
+}
+
+.searchIcon {
+  &--header__search {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.searchBarContainer {
+  padding: 0;
+
+  // @include desktop {
+  //   max-width: 500px;
+  //   margin: 0 auto;
+  // }
+}
+
+.searchBarInnerContainer {
+  &--header__search {
+    :global(.vtex-input-prefix__group) {
+      border: none;
+      border-bottom: 1px solid $color-1-500;
+      border-radius: 0;
+
+      @include tablet {
+        border-bottom: none;
+        padding-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      border: none;
+      @include text($font-size-sm, $text-color-1-500);
+      border-radius: 0;
+      background-color: $white;
+      padding: 0;
+
+      &::placeholder {
+        color: $text-color-1-400;
+      }
+    }
+
+    :global(.vtex-input__suffix) {
+      border-radius: 0 2rem 2rem 0;
+      color: $text-color-1-500;
+      background: $white;
+      transition: all 0.5s ease-in-out;
+      padding: 0;
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.8;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}

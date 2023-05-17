@@ -1,0 +1,24 @@
+.flexRow {
+  &--header__menu {
+    background: $white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &--main-menu-department-block {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.flexRowContent {
+  &--header__menu {
+    @extend %container-large;
+
+    @media (min-width: $l) and (max-width: $screen-xlg-max) {
+      padding: 0 15px;
+    }
+  }
+}
+.flexCol {
+}
+.flexColChild {
+}

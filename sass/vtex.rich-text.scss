@@ -1,0 +1,37 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// HEADER
+@import 'components/header/main/vtex.rich-text';
+@import 'components/header/minicart/vtex.rich-text';
+
+// HOME
+@import 'components/home/modal/vtex.rich-text';
+@import 'components/home/categories-slider/vtex.rich-text';
+@import 'components/home/deals/vtex.rich-text';
+@import 'components/home/more-categories-banners/vtex.rich-text';
+@import 'components/home/sales-banners/vtex.rich-text';
+@import 'components/home/slider-brands/vtex.rich-text';
+@import 'components/home/info-cards/vtex.rich-text';
+@import 'components/home/store-video/vtex.rich-text';
+
+// FOOTER
+@import 'components/footer/vtex.rich-text';
+
+// PRODUCT
+@import 'components/product/vtex.rich-text';
+
+// SEARCH
+@import 'components/search/vtex.rich-text';
+
+// INSTITUTIONAL
+@import 'components/institutional/vtex.rich-text';
+
+// NOT FOUND
+@import 'components/not-found/vtex.rich-text';
+
+// SHELF
+@import 'components/shelf/vtex.rich-text';

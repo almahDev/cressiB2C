@@ -1,0 +1,26 @@
+.container {
+  &--search__categories-banner {
+    padding: 30px 0;
+  }
+
+  &--all-search__seo {
+    @extend %container-large;
+    padding: 1rem 0 4rem 0;
+    @include tablet {
+      padding: 1rem 1rem 4rem 1rem;
+    }
+
+    .heading {
+      @include text($font-size-h5, $text-color-1-500, $bold);
+    }
+
+    .paragraph {
+      font-size: $font-size-sm;
+      color: $text-color-2-500;
+    }
+  }
+}
+
+.paragraph--all-search__seo {
+  margin: 0 !important;
+}

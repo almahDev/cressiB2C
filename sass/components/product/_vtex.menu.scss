@@ -1,0 +1,86 @@
+.menuContaineNav {
+  &--all-product__wishlist {
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+
+    .styledLink {
+      font-size: $font-size-sm;
+      color: $white;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $text-color-1-200;
+      }
+    }
+
+    .styledLinkContainer {
+      margin: 0;
+      padding: 0;
+      padding-top: 0.375rem;
+      .styledLinkIcon {
+        &--all-product__wishlist--item {
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          margin-right: 0.875rem;
+
+          @include desktop {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menuItem {
+  &--product__menu {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: $color-5-500;
+    border-radius: 0.188rem;
+
+    .accordionIcon {
+      &--isClosed {
+        font-size: 0;
+
+        &::before {
+          content: '';
+          width: 1.25rem;
+          height: 1.25rem;
+          display: block;
+          background-image: url($arrow-b);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center center;
+        }
+      }
+
+      &--isOpen {
+        font-size: 0;
+
+        &::before {
+          content: '';
+          width: 1.25rem;
+          height: 1.25rem;
+          display: block;
+          background-image: url($arrow-b);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center center;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .styledLink {
+      @include link($font-size-sm, $color-2-500, $bold, none);
+
+      &--highlight {
+        @include link($font-size-md, $color-2-500, $bold, none);
+      }
+    }
+  }
+}

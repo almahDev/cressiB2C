@@ -1,0 +1,10 @@
+.slider {
+  &Track {
+    &Container {
+      &--shelf {
+        padding-bottom: 8.125rem;
+        padding-top: 0;
+      }
+    }
+  }
+}

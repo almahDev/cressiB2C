@@ -1,0 +1,10 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+@import 'components/shelf/vtex.stack-layout';
+
+// PDP
+@import 'components/product/vtex.stack-layout';

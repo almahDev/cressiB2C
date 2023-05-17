@@ -1,0 +1,34 @@
+.container {
+  &--minicart-sale-text {
+    display: flex;
+    justify-content: center;
+    background-color: $high-light;
+    height: 32px;
+    margin-bottom: 0.5rem;
+  }
+}
+.paragraph {
+  &--minicart-sale-text {
+    margin: 0;
+    color: $text-color-1-500;
+    font-size: $font-size-base;
+    font-weight: $semi-bold;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url("assets/svg/fi_tag.svg") center no-repeat;
+      background-size: contain;
+      margin-right: 3px;
+      transform: translateY(7px);
+    }
+  }
+}
+.link {
+  &--minicart-sale-text {
+    color: $text-color-1-500;
+    font-size: $font-size-base;
+    font-weight: $semi-bold;
+  }
+}

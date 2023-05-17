@@ -1,0 +1,93 @@
+@import '../variables/all';
+@mixin phone {
+  @media (max-width: #{$phone-max}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-min}) {
+    @content;
+  }
+}
+
+@mixin ultrawide {
+  @media (max-width: #{$full-width-min}) {
+    @content;
+  }
+}
+
+// zoom correction media-queries
+
+@mixin wide {
+  @media (min-width: #{$full-width-min}) and (max-width: 100rem) {
+    @content;
+  }
+}
+
+@mixin desktop-small {
+  @media (min-width: #{$ultrawide-min}) and (max-width: #{$ultrawide-max}) {
+    @content;
+  }
+}
+
+@mixin desktop-extra-small {
+  @media (min-width: #{$desktop-min}) and (max-width: #{$desktop-max}) {
+    @content;
+  }
+}
+
+@mixin desktop-min {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin ultrawide-min {
+  @media (min-width: #{$xxxl}) {
+    @content;
+  }
+}
+
+//vtex media-queries
+
+// Tudo que seja phone (até 320px ou menores que 320px)
+@mixin vtex-phone {
+  @media (max-width: #{$phone-max}) {
+    @content;
+  }
+}
+
+// Tudo que seja mobile (a partir de 321px e maiores)
+@mixin vtex-mobile {
+  @media (min-width: #{$phone-min}) {
+    @content;
+  }
+}
+
+// Tudo que seja tablet (a partir de 640px e maiores)
+@mixin vtex-tablet {
+  @media (min-width: #{$tablet-min}) {
+    @content;
+  }
+}
+
+// Tudo que seja tablet (a partir de 1025px e maiores)
+@mixin vtex-desktop {
+  @media (min-width: #{$desktop-min}) {
+    @content;
+  }
+}
+
+// Tudo que seja tablet (a partir de 1367px e maiores)
+@mixin vtex-ultrawide {
+  @media (min-width: #{$ultrawide-min}) {
+    @content;
+  }
+}

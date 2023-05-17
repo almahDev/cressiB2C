@@ -1,0 +1,61 @@
+.paper {
+  &--all-modal-news {
+    margin: 0;
+    padding: 0;
+    max-width: 53rem;
+    border-radius: 0;
+    background: transparent;
+
+    @include desktop {
+      max-height: 34.875rem;
+      overflow: hidden;
+    }
+
+    @include tablet {
+      margin: 0 1rem;
+    }
+  }
+}
+
+.headerContainer {
+  &--all-modal-news__header {
+    border: none;
+  }
+}
+
+.closeButton {
+  &--all-modal-news__header {
+    display: flex;
+
+    .closeIcon {
+      &--all-modal-news__header {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: url('assets/svg/smart-fechar.svg');
+      position: absolute;
+      right: 1.5rem;
+      top: 2.25rem;
+    }
+  }
+
+  &--all-modal-news__success {
+    @extend %primary-button;
+    width: 100%;
+    border-radius: 0.125rem;
+    transition: all 0.2s;
+    background-color: $primary-pure-500 !important;
+    border: 0;
+    text-transform: capitalize !important;
+    height: 3rem;
+    font-weight: $bold !important;
+    font-size: $font-size-md !important;
+
+    &:hover {
+      background-color: $color-1-700 !important;
+      border: 0;
+    }
+  }
+}

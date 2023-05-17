@@ -1,0 +1,121 @@
+.defaultSuccessMessage {
+  @include text($font-size-lg, $white, $bold);
+  padding: 0;
+  text-align: center;
+
+  @include tablet {
+    padding: 2rem 0;
+  }
+}
+
+.newsletterForm {
+  &--footer__newsletter {
+    display: grid;
+    grid-template-areas:
+      "inputEmail submit"
+      "checkbox checkbox";
+    @include tablet {
+      grid-template-areas:
+        "inputEmail"
+        "submit"
+        "checkbox";
+    }
+
+    :global(.vtex-button) {
+      width: 150px;
+      height: 2.5rem;
+      border: 0.125rem solid $white;
+      border-radius: 0.5rem;
+      @include text($font-size-md, $white, $bold);
+      text-transform: capitalize;
+      background-color: transparent;
+    }
+
+    :global(.vtex-input-prefix__group) {
+      width: 450px;
+      height: 2.5rem;
+      border: none;
+      @include tablet {
+        width: 100%;
+      }
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+      padding: 0.25rem 1.5rem 0.25rem 1rem;
+      background-color: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      @include text($font-size-sm, $text-color-2, $regular);
+    }
+
+    :global(.vtex-checkbox__label),
+    :global(.vtex-checkbox__label) .labelLink {
+      @include text($font-size-xs, $white, $semi-bold);
+    }
+  }
+}
+
+.emailInputContainer {
+  &--footer__newsletter {
+    &--input-email {
+      grid-area: inputEmail;
+      margin: 0 0.5rem 0 0;
+      @include tablet {
+        margin: 0 0 1rem;
+      }
+    }
+  }
+}
+
+.confirmationCheckboxContainer {
+  &--footer__newsletter {
+    &--checkbox {
+      grid-area: checkbox;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.formSubmitContainer {
+  &--footer__newsletter--submit {
+    grid-area: submit;
+    @include tablet {
+      margin: 0 0 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+.confirmationCheckboxContainer {
+}
+.confirmationCheckboxLabel {
+}
+.defaultErrorMessage {
+}
+
+.emailInputContainer {
+}
+.emailInputContainer--invalid {
+}
+.emailInputLabel {
+}
+.formSubmitContainer {
+}
+.formSubmitContainer--invalid {
+}
+.nameInputContainer {
+}
+.nameInputContainer--invalid {
+}
+.nameInputLabel {
+}
+.newsletterForm {
+}
+.phoneInputContainer {
+}
+.phoneInputContainer--invalid {
+}
+.phoneInputLabel {
+}

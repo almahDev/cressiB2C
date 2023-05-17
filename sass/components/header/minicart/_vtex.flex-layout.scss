@@ -1,0 +1,23 @@
+.flexRow {
+  &--all-cart {
+    padding: 1rem;
+  }
+
+  &--minicart-footer {
+    box-shadow: none;
+    padding: 0.5rem 1rem 0;
+    border-top: 1px solid $high-light;
+    background-color: $white;
+    position: static;
+  }
+}
+
+.flexRowContent {
+  &--all-cart {
+    padding: 0;
+  }
+}
+.flexCol {
+}
+.flexColChild {
+}

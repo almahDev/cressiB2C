@@ -1,0 +1,98 @@
+.sliderLayoutContainer {
+  &--all-home__deals {
+    background-color: $high-light;
+    padding: 1.375rem 0;
+  }
+}
+
+.sliderTrackContainer {
+  &--all-home__deals {
+    background-color: $high-light;
+    @extend %container-large;
+  }
+}
+
+.infoCardContainer {
+  &--all-home__deals {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $high-light;
+  }
+}
+
+.infoCardTextContainer {
+  &--all-home__deals {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.container {
+  &--all-home__deals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+.sliderTrack {
+  &--all-home__deals {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.italic {
+  &--all-home__deals {
+    font-style: normal;
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: 2rem;
+    color: $text-color-1;
+
+    @include tablet {
+      font-size: $font-size-sm;
+      line-height: 1.313rem;
+    }
+  }
+}
+
+.strong {
+  &--all-home__deals {
+    font-weight: $semi-bold;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $text-color-2;
+
+    @include tablet {
+      font-size: $font-size-sm;
+      line-height: 1.313rem;
+    }
+  }
+}
+
+.paragraph {
+  &--all-home__deals {
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $text-color-2;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+
+    @include tablet {
+      font-size: $font-size-sm;
+      line-height: 1.313rem;
+    }
+  }
+}

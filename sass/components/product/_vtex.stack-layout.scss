@@ -1,0 +1,10 @@
+.stackItem {
+  &--product__images--all-pdp-img__wishlist-mob {
+    @include tablet {
+      display: inline-block;
+      left: unset;
+      right: 10px;
+      top: 18px;
+    }
+  }
+}

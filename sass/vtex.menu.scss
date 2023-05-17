@@ -1,0 +1,13 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+@import 'components/header/menu/desktop/vtex.menu';
+@import 'components/header/menu/mobile/vtex.menu';
+
+@import 'components/footer/vtex.menu';
+
+// PRODUCT
+@import 'components/product/vtex.menu';

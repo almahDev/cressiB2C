@@ -1,0 +1,23 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+@import 'components/header/main/vtex.login';
+
+// Ajustes da drawer mobile da busca
+@import 'components/account/drawer';
+
+// PRODUCT QUESTIONS AND ANSWERS FIX
+@import 'components/product/product-questions-and-answers/vtex-modal-fix';
+
+// PRODUCT REVIEW FIX
+@import 'components/product/reviews-and-ratings/danger-fix';
+
+// MAIN FONT FIX
+@import 'components/main-font-fix';
+
+// SITE ZOOM FIX
+// ativar somente se necessário!
+// @import 'components/site-zoom-fix';

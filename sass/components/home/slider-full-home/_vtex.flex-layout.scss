@@ -1,0 +1,18 @@
+.flexRow {
+  &--home__slider {
+    background-color: $color-5-400;
+    margin-bottom: 4rem;
+    padding: 4rem 0;
+  }
+
+  &--home__container {
+    @extend %container-large;
+  }
+}
+
+.flexRowContent {
+  &--home__deals,
+  &--home__slider {
+    @extend %container-large;
+  }
+}

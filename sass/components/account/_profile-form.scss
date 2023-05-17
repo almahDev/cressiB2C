@@ -1,0 +1,51 @@
+.genderSubContainer,
+.documentsSubContainer,
+.emailContainer,
+.lastNameSubContainer,
+.firstNameSubContainer {
+  margin: 0 0 40px;
+  @include tablet {
+    margin: 0 0 24px;
+  }
+}
+
+.phoneNumberSubContainer,
+.dateOfBirthSubContainer {
+  margin: 0;
+  @include tablet {
+    margin: 0 0 24px;
+  }
+}
+
+.newsletterContainerMessage {
+  padding: 0 0 24px;
+}
+
+.passwordBox {
+  :global(.vtex-checkbox__line-container) {
+    align-items: center;
+
+    :global(.vtex-checkbox__container) {
+      margin: 0 16px 0 0;
+
+      :global(vtex-checkbox__input) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    :global(.vtex-checkbox__label) {
+      @include text($font-size-md, $text-pure-500, $regular);
+      line-height: 21px;
+    }
+  }
+
+  :global(.vtex-checkbox__container) {
+    margin: 5px 16px 0 0;
+
+    :global(.vtex-checkbox__inner-container) {
+      border: 1px solid #424242 !important;
+      border-radius: 2px;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.flexRowContent {
+  &--institucional {
+    @extend %container-large;
+  }
+}

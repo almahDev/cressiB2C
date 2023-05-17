@@ -1,0 +1,54 @@
+.stackContainer {
+  :global(.vtex-stack-layout-0-x-stackItem--highlights-stack-wrapper) {
+    //width: 100% !important;
+    justify-content: center !important;
+    position: absolute !important;
+    margin: 0 auto !important;
+  }
+
+  &--shelf__price {
+    .stackItem {
+      &:last-child {
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        top: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      &--all-shelf__wishlist {
+        left: unset;
+        right: 0;
+
+        :global(.vtex-button) {
+          opacity: 1;
+          visibility: visible;
+          position: inherit;
+          background: transparent;
+          transition: all 0.2s;
+
+          &:hover,
+          &:active,
+          &:focus {
+            filter: brightness(0.9);
+          }
+        }
+
+        :global(.vtex-button__label) {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+.stackItem {
+  &--all-shelf__wishlist {
+  }
+}

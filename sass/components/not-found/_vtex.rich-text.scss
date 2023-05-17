@@ -1,0 +1,59 @@
+.wrapper {
+  &--all-not-found-page {
+    &__title {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        @include text(45px, $text-color-1-500, $bold);
+
+        margin: 0 0 54px;
+
+        @include tablet {
+          margin-bottom: 2rem;
+          font-size: $font-size-h3;
+        }
+      }
+    }
+
+    &__subtitle {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        @include text($font-size-xlg, $text-color-1-500, $regular);
+
+        margin: 0 0 2rem;
+        max-width: 360px;
+
+        @include tablet {
+          margin-bottom: 1.5rem;
+          font-size: $font-size-md;
+        }
+      }
+    }
+
+    &__text {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        @include text($font-size-xlg, $text-color-1-500, $regular);
+
+        margin: 0;
+
+        @include tablet {
+          font-size: $font-size-md;
+        }
+      }
+    }
+
+    &__button {
+      :global(.vtex-rich-text-0-x-link) {
+        @extend %secondary-button;
+
+        width: 321px;
+        height: 54px;
+        margin-top: 56px;
+
+        @include tablet {
+          margin-top: 42px;
+          font-size: $font-size-xxs;
+          width: 255px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}

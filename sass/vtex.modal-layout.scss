@@ -1,0 +1,11 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// HOME
+@import 'components/home/modal/vtex.modal-layout';
+
+// PDP
+@import 'components/product/vtex.modal-layout';

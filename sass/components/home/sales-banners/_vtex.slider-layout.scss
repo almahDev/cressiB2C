@@ -1,0 +1,42 @@
+.slider {
+  &Track {
+    &Container {
+      &--shelf {
+        padding-bottom: 8.125rem;
+        padding-top: 0;
+      }
+    }
+  }
+
+  &Layout {
+    &Container {
+      &--home__slider {
+        .imageElement {
+          margin: 0 auto !important;
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .paginationDotsContainer {
+          margin-bottom: 0.5rem !important;
+
+          @include tablet {
+            margin-bottom: 0.5rem !important;
+          }
+        }
+      }
+
+      .paginationDotsContainer {
+        margin-bottom: 4rem;
+
+        @include tablet {
+          margin-bottom: 1rem;
+        }
+
+        &--all-reviews-resellers-slider {
+          margin-bottom: -1.563rem;
+        }
+      }
+    }
+  }
+}

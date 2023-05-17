@@ -1,0 +1,205 @@
+.wrapper {
+  &--all-modal-news {
+    &__title,
+    &__subtitle {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.paragraph {
+  &--all-modal-news__success {
+    text-align: center;
+  }
+
+  &--all-modal-news {
+    &__title {
+      @include text($font-size-sm, $text-pure-500, $regular);
+      line-height: 1.3125rem;
+      margin-top: 0;
+      margin-bottom: 0.313rem;
+    }
+
+    &__subtitle {
+      @include text($font-size-lg, $text-pure-500, $bold);
+      line-height: 1.6875rem;
+      margin-bottom: 1rem;
+
+      @include tablet {
+        font-size: $font-size-md;
+        line-height: 1.1719rem;
+      }
+    }
+  }
+
+  &--all-home__title-video {
+    @include text($font-size-h3, $text-color-1, $regular);
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0;
+
+    @include tablet {
+      font-size: $font-size-xlg;
+      transform: none;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &--all-home__text-seo {
+    @include text($font-size-md, $text-color-2, $regular);
+    line-height: 1.5rem;
+    margin-top: 0;
+
+    @include tablet {
+      font-size: $font-size-sm;
+      margin-top: 1rem;
+    }
+  }
+
+  &--all-home__icon-text {
+    @include text($font-size-md, $text-color-1, $regular);
+    line-height: 1.5rem;
+    margin: 0.8rem 0.5rem;
+    width: 100%;
+
+    @include tablet {
+      font-size: $font-size-sm;
+      line-height: 1.313rem;
+      margin: 0.625rem 1rem;
+      margin-left: 0.625rem;
+    }
+  }
+
+  &--all-modal-newsletter-text {
+    @include text($font-size-sm, $text-pure-500, $regular);
+    line-height: 1.3125rem;
+    text-align: center;
+  }
+}
+
+.strong {
+  &--all-home__title-video {
+    font-size: 4rem;
+    line-height: 4rem;
+
+    @include tablet {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.container {
+  &--all-modal-news {
+  }
+
+  &--all-modal-news__subtitle {
+  }
+
+  &--all-modal-newsletter-text {
+    @include tablet {
+      width: 17.5rem;
+    }
+  }
+}
+
+.heading {
+  &--all-modal-news {
+  }
+}
+
+.headingLevel1 {
+  &--all-modal-news {
+  }
+}
+
+.headingLevel2 {
+  &--all-modal-news {
+  }
+}
+
+.headingLevel3 {
+  &--all-modal-news {
+  }
+}
+
+.headingLevel4 {
+  &--all-modal-news {
+  }
+}
+
+.headingLevel5 {
+  &--all-modal-news {
+  }
+}
+
+.headingLevel6 {
+  &--all-modal-news {
+  }
+}
+
+.image {
+  &--all-modal-news {
+  }
+}
+
+.italic {
+  &--all-modal-news {
+  }
+}
+
+.link {
+  &--all-modal-news {
+  }
+}
+
+.list {
+  &--all-modal-news {
+  }
+}
+
+.listItem {
+  &--all-modal-news {
+  }
+}
+
+.listOrdered {
+  &--all-modal-news {
+  }
+}
+
+.table {
+  &--all-modal-news {
+  }
+}
+
+.tableBody {
+  &--all-modal-news {
+  }
+}
+
+.tableHead {
+  &--all-modal-news {
+  }
+}
+
+.tableTd {
+  &--all-modal-news {
+  }
+}
+
+.tableTh {
+  &--all-modal-news {
+  }
+}
+
+.tableTr {
+  &--all-modal-news {
+  }
+}

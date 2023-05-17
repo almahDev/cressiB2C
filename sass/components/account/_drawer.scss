@@ -1,0 +1,33 @@
+:global(.ReactCollapse--collapse),
+:global(.ReactCollapse--content) {
+  padding: 0 !important;
+  color: $text-pure-500;
+  :global(.pl8) {
+    padding: 0 0 0 1rem !important;
+    color: $text-pure-500;
+    &::-webkit-scrollbar {
+      border-radius: 30px;
+      margin: 10px;
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $high-dark;
+      border-radius: 30px;
+      padding-right: 0.25rem;
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-pure-500;
+      border-radius: 30px;
+      width: 3px;
+    }
+  }
+  :fist-child {
+    padding: 0 !important ;
+    :fist-child {
+      padding: 0 !important;
+    }
+  }
+}

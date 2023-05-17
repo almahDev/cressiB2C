@@ -1,0 +1,125 @@
+/* all Free Shipping Meter */
+.all-v1-shipping-progress-bar-container {
+  margin-top: 0;
+  padding: 1rem 0 0;
+  padding-top: 0;
+}
+
+.all-v1-shipping-progress-bar {
+  width: 100%;
+  max-width: 100%;
+  background: $white;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  align-items: center;
+
+  .progress {
+    background: $high-dark;
+    box-shadow: none;
+    border-radius: 0;
+    float: right;
+    width: 100%;
+    height: 1.25rem;
+    overflow: visible;
+    position: absolute;
+    margin-bottom: 0;
+    display: block;
+
+    .sr-only {
+      display: none;
+    }
+  }
+
+  .progress-bar {
+    position: relative;
+    background: $color-2-500;
+    width: 0%;
+    height: 1.25rem;
+    transition: width 0.6s ease;
+    border-radius: 0;
+    max-width: 100%;
+  }
+
+  .progress-bar-text {
+    bottom: 9px;
+    position: absolute;
+    width: 100%;
+    line-height: 2.5rem;
+    text-align: center;
+    @include text($font-size-sm, $text-pure-500, normal);
+
+    span {
+      font-weight: $bold;
+    }
+  }
+
+  .tooltip {
+    position: relative;
+    z-index: auto;
+    display: block;
+    opacity: 1;
+    top: -10px;
+  }
+
+  .tooltip-inner {
+    @include text($font-size-xs, $black, $regular);
+    line-height: 14px;
+    background-color: transparent;
+    text-align: center;
+    max-width: fit-content;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre;
+    width: 100%;
+
+    @include tablet {
+      color: $high-dark;
+    }
+
+    span {
+      text-transform: uppercase;
+    }
+
+    strong {
+      font-weight: $regular;
+      font-size: $font-size-xs;
+      line-height: 14px;
+      color: $black;
+
+      @include tablet {
+        color: $high-dark;
+      }
+    }
+  }
+
+  .tooltip.bottom {
+    margin-top: 0;
+  }
+
+  .tooltip-necessary {
+    display: none;
+  }
+}
+
+.all-v1-shipping-progress-bar .tooltip-inner strong,
+.all-v1-shipping-progress-bar .tooltip-inner {
+  font-family: $main-font;
+  font-weight: $semi-bold !important;
+  font-size: $font-size-xs !important;
+  color: $black !important;
+  line-height: 14px;
+}
+
+.all-v1-shipping-alert-box {
+  margin-top: 10px !important;
+  font-family: $main-font;
+  font-weight: $regular;
+  font-size: $font-size-sm;
+  color: $text-color-1;
+  line-height: 150%;
+}

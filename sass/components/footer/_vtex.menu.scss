@@ -1,0 +1,259 @@
+.menuContainerNav {
+  &--footer__menu {
+    .menuContainer {
+      .menuItem {
+        .styledLink {
+          @include link($font-size-sm, $text-color-1, $regular, none);
+          line-height: 230%;
+
+          .styledLinkContainer {
+            margin: 0;
+            padding: 0;
+          }
+
+          .styledLinkContent {
+            &--icon-footer-menu {
+              justify-content: flex-start;
+            }
+          }
+
+          .styledLinkIcon {
+            &--icon-footer-menu {
+              margin-right: 0.75rem;
+              align-items: center;
+              display: flex;
+            }
+          }
+        }
+
+        &:first-child {
+          @include tablet {
+            display: none;
+          }
+
+          .styledLink {
+            @include link($font-size-md, $text-color-1, $semi-bold, none);
+            line-height: 150%;
+
+            .styledLinkContainer {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .menuContainer {
+      .menuItem {
+        &:first-child {
+          .styledLink {
+            color: $color-1-500;
+          }
+        }
+      }
+    }
+  }
+
+  &--footer__tooltip--text {
+    margin-bottom: 1.5rem;
+
+    .styledLink {
+      @include link($font-size-md, $white, $normal, none);
+      margin-bottom: 0.625rem;
+      display: block;
+
+      &--highlight {
+        @include link($font-size-md, $white, $bold, none);
+        margin-bottom: 1.5rem;
+      }
+
+      .styledLinkContainer {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.menuItem {
+  &--footer__menu--mob {
+    margin: 0 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ccc;
+
+    .styled {
+      &Link {
+        &Container {
+          margin: 0;
+        }
+
+        &Content {
+          @include link($font-size-md, $text-color-1, $semi-bold, none);
+          align-items: center;
+
+          &--footer__menu__item {
+            @include tablet {
+              @include link($font-size-sm, $text-color-1, $regular, none);
+            }
+          }
+
+          .accordion {
+            &Icon {
+              &--isClosed,
+              &--isOpen {
+                font-size: 0;
+                margin: 0;
+
+                &::before {
+                  content: url("assets/svg/fi_chevron-right.svg");
+                  width: 1.5rem;
+                  height: 1.5rem;
+                }
+              }
+
+              &--isOpen {
+                &::before {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.submenuAccordion {
+  &--footer_inner_menu--mob {
+    padding: 1rem 0 0.25rem;
+  }
+}
+
+.styledLink {
+  &--footer__menu__title,
+  &--footer__menu__item {
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+
+  &Container {
+    &--footer__menu {
+      &__title {
+        margin: 0 0 16px;
+        padding: 0;
+      }
+
+      &__item {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.submenuAccordion {
+  &--footer_inner_menu--mob {
+    padding: 1rem 0 0.25rem;
+  }
+}
+
+.accordionIcon {
+}
+
+.container {
+}
+
+.linkLeft {
+}
+
+.linkMiddle {
+}
+
+.linkRight {
+}
+
+.menuItemInnerDiv {
+}
+
+.menuItem--isOpen {
+}
+
+.menuItem--isClosed {
+}
+
+.menuLinkDivLeft {
+}
+
+.menuLinkDivMiddle {
+}
+
+.menuLinkDivRight {
+}
+
+.menuLinkNav {
+}
+
+.renderLink {
+}
+
+.styledLinkContent {
+  &--footer__menu {
+    &__title {
+      text-transform: uppercase;
+      @include link($font-size-md, $text-color-1, $regular, none);
+      text-decoration: none !important;
+
+      &:hover {
+        text-decoration: none !important;
+        color: $color-2;
+        transition: all 0.2s;
+      }
+    }
+
+    &__item {
+      @include link($font-size-sm, $text-color-2, $regular, none);
+      line-height: 200%;
+      justify-content: flex-start;
+      text-decoration: none !important;
+
+      &:hover {
+        text-decoration: none !important;
+        color: $color-2;
+        transition: all 0.2s;
+      }
+    }
+
+    &--mob {
+      text-transform: uppercase;
+      font-weight: $regular !important;
+    }
+  }
+}
+
+.styledLinkIcon {
+  &--footer__menu {
+    &__item {
+      margin: 0 8px 0 0;
+      display: flex;
+    }
+  }
+}
+
+.submenuColumn {
+}
+
+.submenuContainer {
+}
+
+.submenuWrapper--isClosed {
+}
+
+.submenuWrapper--isOpen {
+}
+
+.submenuWrapper {
+}
+
+.submenu {
+}

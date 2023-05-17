@@ -1,0 +1,92 @@
+.listPrice {
+  @include text($font-size-sm, $text-color-1-300, $regular);
+
+  @include tablet {
+    font-size: $font-size-xs;
+    display: block;
+    line-height: 0.875rem;
+  }
+}
+
+.sellingPrice {
+  @include text($font-size-lg, $text-color-1-500, $regular);
+
+  @include tablet {
+    font-size: $font-size-md;
+    display: block;
+    line-height: 1.5rem;
+  }
+}
+
+.installments {
+  @include text($font-size-lg, $text-color-1-500, $regular);
+  text-align: left;
+  line-height: 1.3125rem;
+
+  &--summary {
+    display: block;
+    min-height: 21px;
+  }
+
+  @include tablet {
+    font-size: $font-size-md;
+  }
+}
+
+.installmentsNumber {
+  @include text($font-size-lg, $text-color-1-500, $bold);
+
+  @include tablet {
+    font-size: $font-size-md;
+  }
+}
+
+.installments-times {
+  @include text($font-size-lg, $text-color-1-500, $bold);
+
+  @include tablet {
+    font-size: $font-size-md;
+  }
+}
+
+.installmentValue {
+  @include text($font-size-lg, $text-color-1-500, $bold);
+
+  @include tablet {
+    font-size: $font-size-md;
+  }
+}
+
+.savings {
+  @include text($font-size-sm, $white, $bold);
+  display: block;
+  background: $high-light;
+  border-radius: 0.125rem;
+  padding: 0.3125rem 0.375rem;
+  text-align: center;
+
+  &--summary-percentage-shelf {
+    margin-bottom: 0.125rem;
+
+    .savingsPercentage {
+      display: block;
+    }
+  }
+
+  @include tablet {
+    font-size: $font-size-xxs;
+    padding: 0.1875rem 0.2813rem;
+
+    .savingsPercentage {
+      padding-bottom: 0.125rem;
+    }
+  }
+
+  &--all-summary-percentage__pdp {
+    display: flex;
+    border-radius: 0.125rem;
+  }
+}
+
+.savingsPercentage {
+}

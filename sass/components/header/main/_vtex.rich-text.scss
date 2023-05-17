@@ -1,0 +1,35 @@
+.container {
+  &--header__tooltip--text {
+    .paragraph {
+      margin: 0;
+      @include text($font-size-xs);
+      font-size: $font-size-xs - 1;
+      color: $white;
+      display: flex;
+      align-items: center;
+
+      .strong--header__tooltip--text {
+        margin: 0 0.2rem;
+      }
+    }
+  }
+}
+
+.paragraph {
+  &--header__login--mobile {
+    @include text($font-size-sm, $white, $regular);
+    line-height: 21px;
+    margin: 0;
+
+    .link {
+      color: $color-1-500;
+    }
+  }
+
+  &--title-menu {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $white;
+  }
+}

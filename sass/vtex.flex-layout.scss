@@ -1,0 +1,39 @@
+// COMMON
+
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// HEADER
+@import 'components/header/main/vtex.flex-layout';
+@import 'components/header/menu/vtex.flex-layout';
+@import 'components/header/minicart/vtex.flex-layout';
+
+// HOME
+@import 'components/home/banner-duo/vtex.flex-layout';
+@import 'components/home/categories-slider/vtex.flex-layout';
+@import 'components/home/deals/vtex.flex-layout';
+@import 'components/home/modal/vtex.flex-layout';
+@import 'components/home/more-categories-banners/vtex.flex-layout';
+@import 'components/home/sales-banners/vtex.flex-layout';
+@import 'components/home/slider-brands/vtex.flex-layout';
+@import 'components/home/slider-full-home/vtex.flex-layout';
+@import 'components/home/store-video/vtex.flex-layout';
+
+// FOOTER
+@import 'components/footer/vtex.flex-layout';
+
+// PRODUCT
+@import 'components/product/vtex.flex-layout';
+
+// SEARCH
+@import 'components/search/vtex.flex-layout';
+
+// INSTITUTIONAL
+@import 'components/institutional/vtex.flex-layout';
+
+// NOT FOUND
+@import 'components/not-found/vtex.flex-layout';
+
+// SHELF
+@import 'components/shelf/vtex.flex-layout';

@@ -1,0 +1,115 @@
+.main-header {
+  .container {
+    @extend %container;
+  }
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000;
+  border-bottom: none !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 1.625rem 0 !important;
+  margin-bottom: 1.875rem;
+
+  .header-link {
+    padding-top: 1.5rem;
+  }
+
+  .buy-more-link {
+    font-size: $font-size-xs !important;
+    line-height: 21px !important;
+    justify-content: center;
+    font-weight: $bold;
+
+    &::before {
+      margin-right: 1rem;
+    }
+  }
+
+  .checkout-steps_items {
+    justify-content: flex-end !important;
+    opacity: 1 !important;
+  }
+
+  .checkout-steps_item.visited {
+    opacity: 1 !important;
+    .text {
+      opacity: 1 !important;
+      color: $text-pure-500 !important;
+      font-weight: $bold !important;
+    }
+    color: $text-pure-500 !important;
+    font-weight: $bold !important;
+  }
+
+  .checkout-steps_item {
+    opacity: 1 !important;
+    color: $primary-pure-500 !important;
+    font-weight: $bold !important;
+    .visited {
+      .text {
+        color: $text-pure-500 !important;
+        font-weight: $bold !important;
+      }
+      color: $text-pure-500 !important;
+      font-weight: $bold !important;
+    }
+    &::after {
+      min-width: 16px;
+      margin: 0 0.5rem;
+    }
+
+    .text {
+      opacity: 1 !important;
+      font-weight: $bold !important;
+      text-transform: uppercase !important;
+      color: $cta-pure-500 !important;
+
+      &::before {
+        display: block;
+        box-sizing: border-box;
+        margin-top: 0.125rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 1.375rem 0 !important;
+    margin-bottom: 2.5rem !important;
+
+    .container {
+      justify-content: center;
+    }
+
+    .checkout-steps {
+      display: none !important;
+    }
+
+    .header-link {
+      padding-top: 0;
+
+      a {
+        font-size: 0;
+      }
+
+      .buy-more-link {
+        display: none;
+      }
+    }
+  }
+}
+
+@include tablet {
+  body:not(.body-cart) .main-header .logo:before {
+    content: none;
+  }
+
+  body:not(.body-cart) .main-header .logo img {
+    display: block !important;
+  }
+
+  body:not(.body-cart) .main-header {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}

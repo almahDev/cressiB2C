@@ -1,0 +1,68 @@
+.flexRow {
+  &--home__categories-banner {
+    padding-bottom: 2.5rem;
+    padding-top: 1.25rem;
+
+    @include tablet {
+      padding-top: 1.625rem;
+      padding-bottom: 2.375rem;
+    }
+  }
+
+  &--all-title-video-seo {
+    background-color: $high-light;
+    margin-top: 3rem !important;
+    margin-bottom: 1.438rem !important;
+    padding: 4.313rem 0;
+    @extend %container-full;
+
+    @include tablet {
+      padding: 2rem 0;
+    }
+  }
+
+  &--all-main-info--cards {
+    margin-bottom: 5.5rem;
+    margin-top: 2.938rem;
+
+    @include tablet {
+      margin-bottom: 3rem;
+      margin-top: 1.875rem;
+    }
+  }
+}
+
+.flexRowContent {
+  &--home__categories-banner--col {
+    .stretchChildrenWidth {
+      &:hover {
+        box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 30%);
+      }
+    }
+  }
+
+  &--all-title-video-seo,
+  &--all-main-info--cards,
+  &--all-home__image-list-home,
+  &--home__categories-banner,
+  &--all-reviews-resellers,
+  &--home__deals,
+  &--home__more-categories-banner {
+    @extend %container-large;
+
+    &--col {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0.75rem;
+
+      @include tablet {
+        flex-direction: column;
+      }
+    }
+
+    .stretchChildrenWidth {
+      border-radius: 0.625rem;
+      flex-grow: 1;
+    }
+  }
+}

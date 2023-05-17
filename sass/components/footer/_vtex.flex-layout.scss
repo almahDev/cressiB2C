@@ -1,0 +1,157 @@
+.flexRow {
+  &--footer__newsletter {
+    padding: 2rem 0;
+    margin-bottom: 2.5rem;
+    background-color: $color-1-500;
+    @include tablet {
+      padding: 1.5rem 1rem;
+    }
+
+    .stretchChildrenWidth {
+      width: auto !important;
+    }
+  }
+
+  &--footer__about {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: $color-1;
+      height: 1px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 50%;
+      transform: translateY(calc(-50% + 1rem));
+      @include tablet {
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &--footer__about,
+  &--footer__menu {
+    background-color: $high-light;
+    padding: 32px 0;
+
+    &__area--mob {
+      background-color: $high-light;
+      @include tablet {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &--footer_legal_information {
+    border-top: 1px solid $high-light;
+    @include tablet {
+      border: none;
+    }
+  }
+
+  &--footer_legal_information {
+    background-color: $white;
+    padding: 24px 0;
+  }
+
+  &--footer__methods {
+    background-color: $white;
+    padding: 16px 0 0;
+  }
+
+  &--credits {
+    padding: 1.5rem 0;
+    @include tablet {
+      padding: 1rem;
+    }
+  }
+}
+.flexRowContent {
+  &--footer__newsletter {
+    justify-content: center;
+  }
+
+  &--home__footer--developed-powered-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &--payment-methods-flags {
+    @include tablet {
+      justify-content: center !important;
+      flex-direction: column;
+    }
+  }
+
+  &--footer__methods {
+    padding: 32px 0;
+    @include tablet {
+      padding: 0 !important;
+      border-bottom: 1px solid $high-light;
+    }
+  }
+
+  &--footer__newsletter {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  &--footer_legal_information,
+  &--footer__about,
+  &--footer__menu,
+  &--footer__methods,
+  &--footer__newsletter,
+  &--credits {
+    @extend %container-large;
+  }
+  &--footer__menu {
+    &__area--mob {
+      @include tablet {
+        flex-direction: column;
+        .stretchChildrenWidth {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  &--footer_legal_information,
+  &--footer__methods {
+    @include tablet {
+      flex-direction: column;
+      .stretchChildrenWidth {
+        width: 100% !important;
+      }
+    }
+  }
+
+  &--home__footer--high {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+    @include tablet {
+      justify-content: center !important;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.flexCol {
+  &--home__footer--powered {
+    @include tablet {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &--home__footer--high {
+    @include tablet {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.flexColChild {
+}

@@ -1,0 +1,98 @@
+@import "extends/container";
+
+.sliderLayoutContainer {
+  &--payment-methods-images {
+    @include tablet {
+      justify-content: center;
+    }
+
+    &--top {
+      @include tablet {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &--footer__social-media__images-list {
+    @include tablet {
+      justify-content: center;
+    }
+  }
+}
+
+.sliderTrack {
+  &--payment-methods-images {
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &--security-badges-images,
+  &--payment-methods-images,
+  &--footer__social-media__images-list {
+    gap: 4px;
+  }
+}
+
+.sliderTrackContainer {
+  &--payment-methods-images {
+    width: auto;
+  }
+
+  &--footer__social-media__images-list {
+    @include tablet {
+      margin-bottom: 24px;
+      width: auto;
+    }
+  }
+}
+
+.slide {
+  &--security-slider {
+    width: auto !important;
+    margin: 0 0.25rem !important;
+  }
+
+  &--social-networks {
+    width: auto !important;
+    margin: 0 0.5rem !important;
+  }
+}
+
+.imageElement {
+  &--security-slider,
+  &--social-networks {
+    display: block;
+  }
+}
+
+.paginationDot--isActive {
+}
+.paginationDot {
+}
+.paginationDotsContainer {
+}
+.slide--firstVisible {
+}
+.slide--hidden {
+}
+.slide--lastVisible {
+}
+.slide--visible {
+}
+.slideChildrenContainer {
+}
+.slide {
+}
+.sliderArrows {
+}
+.sliderLayoutContainer {
+}
+.sliderLeftArrow {
+}
+.sliderRightArrow {
+}
+.sliderTrackContainer {
+}
+.sliderTrack {
+}

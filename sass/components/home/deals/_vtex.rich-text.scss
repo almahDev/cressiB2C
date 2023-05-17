@@ -1,0 +1,144 @@
+.container {
+}
+
+.paragraph {
+  &--all-home-deals__title {
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: 1.5rem;
+    color: $text-color-1;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.313rem;
+
+    @include tablet {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &--all-home-deals__content {
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    color: $text-color-2;
+    margin: 0;
+
+    @include tablet {
+      font-size: $font-size-sm;
+    }
+  }
+}
+
+.heading {
+  &--home__deals {
+  }
+}
+
+.headingLevel1 {
+  &--home__deals {
+  }
+}
+
+.headingLevel2 {
+  &--home__deals {
+  }
+}
+
+.headingLevel3 {
+  &--home__deals {
+  }
+}
+
+.headingLevel4 {
+  &--home__deals {
+  }
+}
+
+.headingLevel5 {
+  &--home__deals {
+  }
+}
+
+.headingLevel6 {
+  &--home__deals {
+  }
+}
+
+.image {
+  &--home__deals {
+  }
+}
+
+.italic {
+  &--home__deals {
+  }
+}
+
+.link {
+  &--home__deals {
+  }
+}
+
+.list {
+  &--home__deals {
+  }
+}
+
+.listItem {
+  &--home__deals {
+  }
+}
+
+.listOrdered {
+  &--home__deals {
+  }
+}
+
+.paragraph {
+  &--home__deals {
+  }
+}
+
+.strong {
+  &--home__deals {
+  }
+}
+
+.table {
+  &--home__deals {
+  }
+}
+
+.tableBody {
+  &--home__deals {
+  }
+}
+
+.tableHead {
+  &--home__deals {
+  }
+}
+
+.tableTd {
+  &--home__deals {
+  }
+}
+
+.tableTh {
+  &--home__deals {
+  }
+}
+
+.tableTr {
+  &--home__deals {
+  }
+}
+
+.wrapper {
+  &--home__deals {
+  }
+}

@@ -1,0 +1,56 @@
+.quantitySelectorContainer {
+  margin: 0;
+
+  :global(.vtex-numeric-stepper__input) {
+    border: 0.063rem solid $text-color-1-500;
+    border-left: 0;
+    border-right: 0;
+    outline: none !important;
+    height: 3rem;
+    width: 2rem;
+    @include text($font-size-md, $text-color-1, $semi-bold);
+    line-height: 1.188rem;
+
+    @include tablet {
+      width: 1rem;
+      border-top: 0.063rem solid $text-color-1;
+      border-bottom: 0.063rem solid $text-color-1;
+    }
+  }
+
+  :global(.vtex-numeric-stepper__plus-button) {
+    background: $white;
+    border-radius: 0.25rem;
+    border-top: 0.063rem solid $text-color-1;
+    border-bottom: 0.063rem solid $text-color-1;
+    border-right: 0.063rem solid $text-color-1;
+    border-color: $text-color-1;
+    height: 3rem;
+    @include text($font-size-md, $text-color-1, $semi-bold);
+    line-height: 1.188rem;
+  }
+
+  :global(.vtex-numeric-stepper__minus-button) {
+    background: $white;
+    border-radius: 0.25rem;
+    border-top: 0.063rem solid $text-color-1;
+    border-bottom: 0.063rem solid $text-color-1;
+    border-left: 0.063rem solid $text-color-1;
+    border-color: $text-color-1;
+    height: 3rem;
+    @include text($font-size-md, $text-color-1, $semi-bold);
+    line-height: 1.188rem;
+  }
+
+  :global(.vtex-numeric-stepper__minus-button__text) {
+    @include text($font-size-h3, $text-color-1-500, $normal);
+  }
+
+  :global(.vtex-numeric-stepper__plus-button__text) {
+    @include text($font-size-h3, $text-color-1-500, $normal);
+  }
+}
+
+.quantitySelectorTitle {
+  display: none;
+}
