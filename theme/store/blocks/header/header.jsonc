@@ -1,0 +1,284 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  // HEADER DESKTOP START
+  "header-layout.desktop": {
+    "title": "Almah |Header - Desktop",
+    "children": [
+      "flex-layout.row#3-desktop",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#5-desktop",
+      "experimental__visibility-layout#back-to-top-button",
+      "experimental__visibility-layout#header-whatsapp"
+    ]
+  },
+  "flex-layout.row#3-desktop": {
+    "title": "Almah |Header - Topbar - Desktop",
+    "props": {
+      "blockClass": "header__tooltip",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#tooltip-01",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#tooltip"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "header__sticky"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "title": "Almah | Header - Conteúdo - Desktop",
+    "props": {
+      "blockClass": "header__main",
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children": ["disposition-layout#row-4"]
+  },
+  "disposition-layout#row-4": {
+    "title": "Almah | Header - Disposição do conteúdo",
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-desktop",
+      "flex-layout.col#links-desktop"
+    ],
+    "props": {
+      "blockClass": "header__main--order",
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        }
+      ]
+    }
+  },
+  "flex-layout.col#search-desktop": {
+    "title": "Almah |Header - Busca",
+    "props": {
+      "verticalAlign": "middle",
+      "width": "40%"
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#logo-desktop": {
+    "title": "Almah |Header - Logo",
+    "props": {
+      "verticalAlign": "middle",
+      "width": "20%"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#links-desktop": {
+    "title": "Almah |Header - Links",
+    "children": ["flex-layout.row#links-desktop"],
+    "props": {
+      "verticalAlign": "middle",
+      "width": "30%"
+    }
+  },
+  "flex-layout.row#links-desktop": {
+    "title": "Almah |Header - Links - Desktop",
+    "children": [
+      "locale-switcher",
+      "login#header",
+      "menu#wishlist",
+      "minicart.v2#main-header"
+    ]
+  },
+  // WISH LIST
+  "menu#wishlist": {
+    "children": ["menu-item#wishlist"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "al-product__wishlist"
+    },
+    "title": "Almah |Header - Link - Wishlist"
+  },
+  "menu-item#wishlist": {
+    "props": {
+      "id": "menu-item-icone",
+      "blockClass": "al-product__wishlist--item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "href": "/account/#/wishlist",
+        "noFollow": false,
+        "tagTitle": "Favoritos",
+        "text": ""
+      },
+      "iconProps": {
+        "id": "hpa-heart-full",
+        "size": 18,
+        "viewBox": "0 0 24 24",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "O que você procura hoje?",
+      "openAutocompleteOnFocus": true,
+      "blockClass": "header__search"
+    },
+    "blocks": ["autocomplete-result-list.v2"]
+  },
+  "autocomplete-result-list.v2": {
+    "props": {
+      "horizontalProductSummary": "product-summary.shelf#search",
+      "productLayout": "HORIZONTAL",
+      "simulationBehavior": "default"
+    },
+    "blocks": ["product-summary.shelf#search"]
+  },
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo da al Store",
+      "href": "/",
+      "url": "https://fakeimg.pl/200x50/",
+      "width": "200",
+      "blockClass": "header__logo"
+    }
+  },
+  "login#header": {
+    "title": "Almah |Header - Link - Login",
+    "props": {
+      "showIconProfile": true,
+      "blockClass": "header__login"
+    }
+  },
+  "flex-layout.row#5-desktop": {
+    "title": "Almah |Header - Menu Principal - Desktop",
+    "props": {
+      "blockClass": "header__menu",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["vtex.menu@2.x:menu#main-menu"]
+  },
+  // HEADER DESKTOP END
+
+  // HEADER MOBILE START
+  "header-layout.mobile": {
+    "title": "Almah |Header - Mobile",
+    "children": [
+      "flex-layout.row#0-mobile",
+      "sticky-layout#1-mobile",
+      "experimental__visibility-layout#back-to-top-button",
+      "experimental__visibility-layout#header-whatsapp"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#0-mobile": {
+    "title": "Almah |Header - Topbar - Mobile",
+    "props": {
+      "blockClass": "header__tooltip",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["rich-text#tooltip-01"]
+  },
+  "flex-layout.row#1-mobile": {
+    "title": "Almah |Header - Conteúdo - Mobile",
+    "children": [
+      "drawer#header-mobile",
+      "logo#mobile",
+      "flex-layout.row#mob-list"
+    ],
+    "props": {
+      "blockClass": "header__main",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#mob-list": {
+    "props": {
+      "blockClass": "header__main--mob"
+    },
+    "children": ["drawer#search-mobile", "minicart.v2#main-header"]
+  },
+
+  "drawer#search-mobile": {
+    "title": "Almah |Header - Busca - Mobile",
+    "props": {
+      "isFullWidth": true,
+      "slideDirection": "horizontal",
+      "blockClass": "header__drawer--search"
+    },
+    "children": ["search-bar"]
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo da al Store",
+      "href": "/",
+      "url": "https://fakeimg.pl/200x50/",
+      "width": "150",
+      "blockClass": "header__logo"
+    }
+  },
+
+  "drawer#header-mobile": {
+    "title": "Almah |Header - Menu Principal - Mobile",
+    "props": {
+      "isFullWidth": true,
+      "backdropMode": "none",
+      "slideDirection": "horizontal"
+    },
+    "blocks": ["drawer-header#header-mobile"],
+    "children": ["menu#drawer"]
+  },
+  "drawer-header#header-mobile": {
+    "children": ["rich-text#title-menu", "drawer-close-button"],
+    "props": {
+      "blockClass": "al-drawer__menu--mobile"
+    }
+  },
+
+  "rich-text#title-menu": {
+    "title": "Titulo Menu",
+    "props": {
+      "text": "Menu",
+      "blockClass": ["title-menu"]
+    }
+  },
+
+  "menu#drawer": {
+    "children": ["vtex.menu@2.x:menu#menu-mobile"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "header_menu--mob"
+    }
+  }
+
+  // HEADER MOBILE END
+}

@@ -1,0 +1,8 @@
+{
+  "product-identifier.product": {
+    "props": {
+      "customLabel": "Ref",
+      "label": "custom"
+    }
+  }
+}

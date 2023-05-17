@@ -1,0 +1,40 @@
+{
+  "flex-layout.row#product-price": {
+    "title": "Preço de lista e desconto",
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "product__price",
+      "colGap": 3
+    },
+    "children": ["product-list-price#product", "product-selling-price#product"]
+  },
+  "product-list-price#product": {
+    "title": "Preço 'De'",
+    "props": {
+      "blockClass": "product__price",
+      "message": "{listPriceValue}"
+    }
+  },
+  "product-selling-price#product": {
+    "title": "Preço 'Por'",
+    "props": {
+      "blockClass": "product__price",
+      "message": "{sellingPriceValue}"
+    }
+  },
+  "product-price-savings#product": {
+    "title": "Porcentagem",
+    "props": {
+      "blockClass": "product__price",
+      "message": "{savingsPercentage} OFF"
+    }
+  },
+
+  "product-installments#product": {
+    "props": {
+      "message": "ou {installmentsNumber}x de {installmentValue}",
+      "blockClass": ["product__price"]
+    }
+  }
+}

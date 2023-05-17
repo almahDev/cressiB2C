@@ -1,0 +1,17 @@
+{
+  "flex-layout.row#highlights": {
+    "title": "Destaques",
+    "props": {
+      "blockClass": "product__highlight",
+      "colSizing": "auto",
+      "colGap": 2,
+      "horizontalAlign": "left",
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "vtex.product-highlights@2.x:product-highlights#promotion",
+      "vtex.product-highlights@2.x:product-highlights#teaser"
+    ]
+  }
+}

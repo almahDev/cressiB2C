@@ -1,0 +1,38 @@
+{
+  "stack-layout#product-images": {
+    "props": {
+      "blockClass": "product__images"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "flex-layout.row#product-wishlist-share-mobile",
+      "flex-layout.row#product-flags"
+    ]
+  },
+
+  "flex-layout.row#product-image": {
+    "title": "Imagem do produto",
+    "children": ["product-images#pdp"],
+    "props": {
+      "fullWidth": true,
+      "colGap": 0,
+      "blockClass": "product__images"
+    }
+  },
+
+  "product-images#pdp": {
+    "title": "Opções - Desktop",
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "maxHeight": 686,
+      "displayMode": "carousel",
+      "showNavigationArrows": true,
+      "showPaginationDots": true,
+      "thumbnailVisibility": "visible",
+      "blockClass": "product__images--desktop"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "flex-layout.row#product-tipbar": {
+    "title": "Dicas do produto",
+    "children": [
+      "flex-layout.col#product-tipbar-card",
+      "flex-layout.col#product-tipbar-card-2"
+    ],
+    "props": {
+      "blockClass": "product__tipbar",
+      "fullWidth": true,
+      "colSizing": "equal",
+      "colGap": 6,
+      "preserveLayoutOnMobile": false,
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#product-tipbar-card": {
+    "title": "Dicas - Card 1",
+    "children": ["flex-layout.row#tipbar-card-inner"],
+    "props": {
+      "blockClass": "product__tipbar-card",
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#tipbar-card-inner": {
+    "children": ["image#product-tipbar-image", "rich-text#product-tipbar-text"],
+    "props": {
+      "blockClass": "product__tipbar-card",
+
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    }
+  },
+  "image#product-tipbar-image": {
+    "title": "Produto - Tipbar - Item - Imagem",
+    "props": {
+      "src": "https://fakeimg.pl/50x50/",
+      "alt": "Flag",
+      "title": "Flag",
+      "blockClass": "product__tipbar-flag--image",
+      "link": {
+        "openNewTab": false,
+        "title": "Flag",
+        "url": "/"
+      }
+    }
+  },
+  "rich-text#product-tipbar-text": {
+    "title": "Produto - Tipbar - Item - Texto",
+    "props": {
+      "blockClass": "product__tipbar-flag--text",
+      "text": "Loren ipsum",
+      "htmlId": "product-tipbar-text",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.col#product-tipbar-card-2": {
+    "title": "Dicas - Card 2",
+    "children": ["flex-layout.row#tipbar-card-inner-2"],
+    "props": {
+      "blockClass": "product__tipbar-card",
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#tipbar-card-inner-2": {
+    "children": [
+      "image#product-tipbar-image-2",
+      "rich-text#product-tipbar-text-2"
+    ],
+    "props": {
+      "blockClass": "product__tipbar-card",
+
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    }
+  },
+  "image#product-tipbar-image-2": {
+    "title": "Produto - Tipbar - Item - Imagem",
+    "props": {
+      "src": "https://fakeimg.pl/50x50/",
+      "alt": "Flag",
+      "title": "Flag",
+      "blockClass": "product__tipbar-flag--image",
+      "link": {
+        "openNewTab": false,
+        "title": "Flag",
+        "url": "/"
+      }
+    }
+  },
+  "rich-text#product-tipbar-text-2": {
+    "title": "Produto - Tipbar - Item - Texto",
+    "props": {
+      "blockClass": "product__tipbar-flag--text",
+      "text": "Loren ipsum",
+      "htmlId": "product-tipbar-text",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  }
+}

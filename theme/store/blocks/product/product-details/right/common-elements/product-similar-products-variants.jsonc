@@ -1,0 +1,9 @@
+{
+  "experimental__visibility-layout#product-similar-products-variants": {
+    "title": "Bloco de Similares (On/Off)",
+    "props": {
+      "visible": false
+    },
+    "children": ["similar-products-variants"]
+  }
+}

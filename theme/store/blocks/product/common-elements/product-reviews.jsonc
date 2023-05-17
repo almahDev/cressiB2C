@@ -1,0 +1,27 @@
+{
+  "flex-layout.row#product-review": {
+    "title": "Avaliações",
+    "children": ["flex-layout.col#product-review"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__review"]
+    }
+  },
+  "flex-layout.col#product-review": {
+    "children": [
+      "rich-text#review",
+      "product-reviews",
+      "product-questions-and-answers"
+    ],
+    "props": {
+      "blockClass": ["product__review"]
+    }
+  },
+  "rich-text#review": {
+    "title": "Título",
+    "props": {
+      "text": "##### Avaliações",
+      "blockClass": "product__title"
+    }
+  }
+}

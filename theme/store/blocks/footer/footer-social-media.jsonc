@@ -1,0 +1,83 @@
+{
+  "flex-layout.row#social-networks-wrapper": {
+    "title": "al | Redes Sociais",
+    "children": ["flex-layout.col#social-networks"],
+    "props": {
+      "blockClass": ["social-networks"]
+    }
+  },
+  "flex-layout.col#social-networks": {
+    "title": "Rodapé - Meios Redes Sociais",
+    "children": ["flex-layout.row#social-networks"],
+    "props": {
+      "blockClass": "social-networks-wrapper",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "flex-layout.row#social-networks": {
+    "children": ["list-context.media-list#social-networks"],
+    "props": {
+      "blockClass": "social-networks-badges",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "list-context.media-list#social-networks": {
+    "title": "Lista de Redes Sociais",
+    "children": ["list-context-renderer#social-networks"],
+    "props": {
+      "blockClass": ["social-networks-badges"],
+      "preload": true,
+      "height": 40,
+      "mediaList": [
+        {
+          "image": "assets/svg/hpa-facebook.svg",
+          "mobileImage": "assets/svg/hpa-facebook.svg",
+          "description": "Facebook",
+          "link": {
+            "url": "https://pt-br.facebook.com/jequiticosmeticos/",
+            "openNewTab": true,
+            "title": "Facebook"
+          }
+        },
+        {
+          "image": "assets/svg/hpa-instagram.svg",
+          "mobileImage": "assets/svg/hpa-instagram.svg",
+          "description": "Instagram",
+          "link": {
+            "url": "https://www.instagram.com/jequiticosmeticos/",
+            "openNewTab": true,
+            "title": "Instagram"
+          }
+        },
+        {
+          "image": "assets/svg/hpa-youtube.svg",
+          "mobileImage": "assets/svg/hpa-youtube.svg",
+          "description": "Youtube",
+          "link": {
+            "url": "https://www.youtube.com/",
+            "openNewTab": true,
+            "title": "Youtube"
+          }
+        }
+      ]
+    }
+  },
+  "list-context-renderer#social-networks": {
+    "props": {
+      "listElement": "ul",
+      "itemElement": "li",
+      "blockClass": "social-networks-renderer"
+    }
+  }
+}

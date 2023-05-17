@@ -1,0 +1,36 @@
+{
+  "flex-layout.row#al-total-products-grid-switcher-mobile": {
+    "title": "Total Products Grid Switcher Mobile",
+    "props": {
+      "blockClass": "al-total-products-grid-switcher-mobile",
+      "preventHorizontalStretch": false,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#al-total-products-mobile",
+      "flex-layout.col#al-grid-switcher-mobile"
+    ]
+  },
+  "flex-layout.col#al-total-products-mobile": {
+    "title": "Total Products Mobile",
+    "props": {
+      "blockClass": "al-total-products-grid-switcher-mobile",
+      "width": "50%"
+    },
+    "children": ["total-products.v2"]
+  },
+  "flex-layout.col#al-grid-switcher-mobile": {
+    "title": "Grid Switcher Mobile",
+    "props": {
+      "blockClass": "al-grid-switcher-mobile",
+      "width": "50%"
+    },
+    "children": ["gallery-layout-switcher#mobile"]
+  },
+  "gallery-layout-switcher#mobile": {
+    "props": {
+      "blockClass": "al-grid-switcher-mobile"
+    },
+    "children": ["gallery-layout-option#grid", "gallery-layout-option#list"]
+  }
+}

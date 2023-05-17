@@ -1,0 +1,21 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us",
+    "isSitemapEntry": true
+  },
+  "store.custom#faq": {
+    "path": "/faq",
+    "isSitemapEntry": true
+  },
+  "store.custom#contact-us": {
+    "path": "/contato",
+    "isSitemapEntry": true
+  },
+  "store.custom#institucional": {
+    "path": "/institucional",
+    "isSitemapEntry": true
+  },
+  "store.custom#collection": {
+    "path": "/colecao/:id"
+  }
+}

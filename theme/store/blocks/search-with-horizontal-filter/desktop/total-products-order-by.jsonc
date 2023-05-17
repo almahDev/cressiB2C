@@ -1,0 +1,23 @@
+{
+  "flex-layout.row#al-total-products-order-by": {
+    "title": "Total de Produtos e Ordenação",
+    "props": {
+      "blockClass": "al-search__products-order-by",
+      "width": "auto",
+      "colSizing": "auto"
+    },
+    "children": ["total-products.v2", "flex-layout.col#al-order-by"]
+  },
+  "flex-layout.col#al-order-by": {
+    "title": "Ordenação",
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "al-search__order-by"
+    }
+  },
+  "total-products.v2": {
+    "props": {
+      "blockClass": "al-search__total-products"
+    }
+  }
+}

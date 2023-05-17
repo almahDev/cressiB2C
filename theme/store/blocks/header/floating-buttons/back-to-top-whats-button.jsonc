@@ -1,0 +1,37 @@
+{
+  "experimental__visibility-layout#header-whatsapp": {
+    "title": "Link do Whatsapp (Flutuante) (On/Off)",
+    "props": {
+      "visible": true
+    },
+    "children": ["image#header-whatsapp"]
+  },
+  "image#header-whatsapp": {
+    "title": "Link do Whatsapp (Flutuante)",
+    "props": {
+      "analyticsProperties": "provide",
+      "src": "icon-whatsapp",
+      "link": {
+        "openNewTab": true,
+        "title": "WhatsApp",
+        "alt": "WhatsApp",
+        "url": "https://api.whatsapp.com/send?phone=551188888888"
+      },
+      "title": "WhatsApp",
+      "alt": "WhatsApp",
+      "blockClass": "header__whatsapp"
+    }
+  },
+  "experimental__visibility-layout#back-to-top-button": {
+    "title": "Botão - Voltar ao Topo (On/Off)",
+    "props": {
+      "visible": true
+    },
+    "children": ["back-to-top-button"]
+  },
+  "back-to-top-button": {
+    "props": {
+      "display": "caret-icon"
+    }
+  }
+}

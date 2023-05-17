@@ -1,0 +1,44 @@
+{
+  "flex-layout.row#product-flags": {
+    "children": ["flex-layout.col#product-flags"],
+    "props": {
+      "fullWidth": true,
+      "colGap": 0,
+      "blockClass": "product__flags"
+    }
+  },
+  "flex-layout.col#product-flags": {
+    "children": [
+      "product-price-savings#product",
+      "condition-layout.product#product-flag-recycle"
+    ],
+    "props": {
+      "fullWidth": true,
+      "colGap": 0,
+      "blockClass": "product__flags"
+    }
+  },
+  "condition-layout.product#product-flag-recycle": {
+    "title": "Condição de campo produto - Flag",
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "flag"
+          }
+        }
+      ],
+      "Then": "image-new#product-flag"
+    }
+  },
+  "image-new#product-flag": {
+    "title": "Imagem - Flag",
+    "props": {
+      "blockClass": "product__flags",
+      "src": "https://fakeimg.pl/50x50/",
+      "alt": "Flag",
+      "title": "Flag"
+    }
+  }
+}

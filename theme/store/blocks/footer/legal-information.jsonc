@@ -1,0 +1,110 @@
+{
+  "flex-layout.row#footer-legal-information": {
+    "title": "Footer  Inferior",
+    "children": [
+      "rich-text#footer-copyright",
+      "flex-layout.col#footer-developed-powered"
+    ],
+    "props": {
+      "blockClass": ["footer_legal_information-", "footer_legal_information"]
+    }
+  },
+
+  // copyright
+  "rich-text#footer-copyright": {
+    "title": "Footer  Copyright",
+    "props": {
+      "text": "Copyright © Loja - Todos os direitos reservados.",
+      "blockClass": ["footer__copyright", "footer__copyright-"]
+    }
+  },
+
+  // powered by and developed by section
+  "flex-layout.col#footer-developed-powered": {
+    "title": "Rodapé - Developed/Powered",
+    "children": ["flex-layout.row#footer-developed-powered"],
+    "props": {
+      "blockClass": "home__footer--developed-powered"
+    }
+  },
+  "flex-layout.row#footer-developed-powered": {
+    "children": [
+      "flex-layout.col#footer-powered",
+      "flex-layout.col#footer-developed"
+    ],
+    "props": {
+      "blockClass": "home__footer--developed-powered-wrapper",
+      "colGap": 6,
+      "colSizing": "equal",
+      "fullWidth": false,
+      "horizontalAlign": "right",
+      "preserveLayoutOnMobile": false,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": false
+    }
+  },
+  "flex-layout.col#footer-developed": {
+    "children": ["rich-text#footer-developed", "image#developed"],
+    "props": {
+      "blockClass": "home__footer--developed",
+      "props": {
+        "horizontalAlign": "left",
+        "marginLeft": 0,
+        "marginRight": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "preventVerticalStretch": true,
+        "rowGap": 0,
+        "verticalAlign": "top"
+      }
+    }
+  },
+  "flex-layout.col#footer-powered": {
+    "children": ["rich-text#footer-powered", "image#powered"],
+    "props": {
+      "blockClass": "home__footer--powered"
+    }
+  },
+  "rich-text#footer-developed": {
+    "props": {
+      "text": "###### Developed by",
+      "blockClass": [
+        "footer__developed-powered--title",
+        "footer_methods--title",
+        "footer__copyright--title"
+      ]
+    }
+  },
+  "image#developed": {
+    "props": {
+      // "src": "assets/img/footer-01.png", Logo almah
+      "link": {
+        "url": "https://www.allegralar.com",
+        "openNewTab": true,
+        "title": "allegralar"
+      },
+      "blockClass": "home__footer-developed--image"
+    }
+  },
+  "rich-text#footer-powered": {
+    "props": {
+      "text": "###### Powered by",
+      "blockClass": [
+        "footer__developed-powered--title",
+        "footer_methods--title",
+        "footer__copyright--title"
+      ]
+    }
+  },
+  "image#powered": {
+    "props": {
+      "src": "assets/img/footer-02.png",
+      "link": {
+        "url": "https://www.vtex.com",
+        "openNewTab": true,
+        "title": "VTEX"
+      },
+      "blockClass": "home__footer-powered--image"
+    }
+  }
+}

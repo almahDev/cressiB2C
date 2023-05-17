@@ -1,0 +1,10 @@
+{
+  "rich-text#product-sale-text": {
+    "title": "Desconto - Texto",
+    "props": {
+      "text": "![Tag](https://fakeimg.pl/50x50/) [Cadastre-se](/account#/profile) e **GANHE 10% OFF**\nna primeira compra",
+      "fullWidth": true,
+      "blockClass": "product__sale"
+    }
+  }
+}

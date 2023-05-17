@@ -1,0 +1,355 @@
+{
+  //  menu 1
+  "vtex.menu@2.x:menu#footer-menu-1": {
+    "title": "Footer  Menu 1",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer__menu", "footer__menu-"]
+    },
+    "children": [
+      "menu-item#footer-menu-1-title",
+      "menu-item#footer-menu-1-col-1",
+      "menu-item#footer-menu-1-col-2",
+      "menu-item#footer-menu-1-col-3"
+    ]
+  },
+  "menu-item#footer-menu-1-title": {
+    "props": {
+      "id": "menu-item-footer-menu-1-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    }
+  },
+  "menu-item#footer-menu-1-col-1": {
+    "props": {
+      "id": "menu-item-footer-menu-1-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
+      }
+    }
+  },
+  "menu-item#footer-menu-1-col-2": {
+    "props": {
+      "id": "menu-item-footer-menu-1-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Nossa história",
+        "text": "Nossa história"
+      }
+    }
+  },
+  "menu-item#footer-menu-1-col-3": {
+    "props": {
+      "id": "menu-item-footer-menu-1-col-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Notícias",
+        "text": "Notícias"
+      }
+    }
+  },
+
+  //  menu 2
+  "vtex.menu@2.x:menu#footer-menu-2": {
+    "title": "Footer  Menu 2",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer__menu", "footer__menu-"]
+    },
+    "children": [
+      "menu-item#footer-menu-2-title",
+      "menu-item#footer-menu-2-col-1",
+      "menu-item#footer-menu-2-col-2",
+      "menu-item#footer-menu-2-col-3"
+    ]
+  },
+  "menu-item#footer-menu-2-title": {
+    "props": {
+      "id": "menu-item-footer-menu-2-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Política comercial",
+        "text": "Política comercial"
+      }
+    }
+  },
+  "menu-item#footer-menu-2-col-1": {
+    "props": {
+      "id": "menu-item-footer-menu-2-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Formas de pagamento",
+        "text": "Formas de pagamento"
+      }
+    }
+  },
+  "menu-item#footer-menu-2-col-2": {
+    "props": {
+      "id": "menu-item-footer-menu-2-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Trocas e devoluções",
+        "text": "Trocas e devoluções"
+      }
+    }
+  },
+  "menu-item#footer-menu-2-col-3": {
+    "props": {
+      "id": "menu-item-footer-menu-2-col-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Prazos e entrega",
+        "text": "Prazos e entrega"
+      }
+    }
+  },
+
+  //  menu 3
+  "vtex.menu@2.x:menu#footer-menu-3": {
+    "title": "Footer  Menu 3",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer__menu", "footer__menu-"]
+    },
+    "children": [
+      "menu-item#footer-menu-3-title",
+      "menu-item#footer-menu-3-col-1",
+      "menu-item#footer-menu-3-col-2",
+      "menu-item#footer-menu-3-col-3",
+      "menu-item#footer-menu-3-col-4"
+    ]
+  },
+  "menu-item#footer-menu-3-title": {
+    "props": {
+      "id": "menu-item-footer-menu-3-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Ajuda",
+        "text": "Ajuda"
+      }
+    }
+  },
+  "menu-item#footer-menu-3-col-1": {
+    "props": {
+      "id": "menu-item-footer-menu-3-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Perguntas frequentes",
+        "text": "Perguntas frequentes"
+      }
+    }
+  },
+  "menu-item#footer-menu-3-col-2": {
+    "props": {
+      "id": "menu-item-footer-menu-3-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Como comprar",
+        "text": "Como comprar"
+      }
+    }
+  },
+  "menu-item#footer-menu-3-col-3": {
+    "props": {
+      "id": "menu-item-footer-menu-3-col-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Fale conosco",
+        "text": "Fale conosco"
+      }
+    }
+  },
+  "menu-item#footer-menu-3-col-4": {
+    "props": {
+      "id": "menu-item-footer-menu-3-col-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer__menu__item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Lista de presentes",
+        "text": "Lista de presentes"
+      }
+    }
+  },
+
+  //  menu 4
+  "vtex.menu@2.x:menu#footer-menu-4": {
+    "title": "Footer  Menu 4",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer__menu", "footer__menu-"]
+    },
+    "children": [
+      "menu-item#footer-menu-4-title",
+      "menu-item#footer-menu-4-col-1",
+      "menu-item#footer-menu-4-col-2",
+      "rich-text#footer-menu-4-col-3",
+      "rich-text#footer-menu-4-col-4",
+      "menu-item#footer-menu-4-col-5"
+    ]
+  },
+  "menu-item#footer-menu-4-title": {
+    "props": {
+      "id": "menu-item-footer-menu-4-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    }
+  },
+  "menu-item#footer-menu-4-col-1": {
+    "props": {
+      "id": "menu-item-footer-menu-4-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "loja@loja.com.br",
+        "text": "loja@loja.com.br"
+      },
+      "iconProps": {
+        "id": "icon-email-footer",
+        "size": 20,
+        "viewBox": "0 0 20 20"
+      },
+      "blockClass": ["icon-footer-menu", "footer__menu__item"]
+    }
+  },
+  "menu-item#footer-menu-4-col-2": {
+    "props": {
+      "id": "menu-item-footer-menu-4-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "(11) 8888-8888",
+        "text": "(11) 8888-8888"
+      },
+      "iconProps": {
+        "id": "icon-tel-footer",
+        "size": 20,
+        "viewBox": "0 0 20 21"
+      },
+      "blockClass": ["icon-footer-menu", "footer__menu__item"]
+    }
+  },
+  "rich-text#footer-menu-4-col-3": {
+    "props": {
+      "text": "![Logo](assets/svg/u_whatsapp.svg) **Contato** (11) 8888-8888",
+      "blockClass": "icon-footer-menu"
+    }
+  },
+  "rich-text#footer-menu-4-col-4": {
+    "props": {
+      "text": "![Logo](assets/svg/u_whatsapp.svg) **Contato** (11) 8888-8888",
+      "blockClass": "icon-footer-menu"
+    }
+  },
+  "menu-item#footer-menu-4-col-5": {
+    "props": {
+      "id": "menu-item-footer-menu-4-col-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Segunda-feira à sexta-feira das 8h às 17h",
+        "text": "Segunda-feira à sexta-feira das 8h às 17h"
+      },
+      "blockClass": ["icon-footer-menu", "footer__menu__item"]
+    }
+  }
+}

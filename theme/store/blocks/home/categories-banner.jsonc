@@ -1,0 +1,115 @@
+{
+  "flex-layout.row#categories-banner-main": {
+    "title": "al | Categorias",
+    "children": ["flex-layout.col#categories-banner-main"],
+    "props": {
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "flex-layout.col#categories-banner-main": {
+    "children": [
+      "rich-text#categories-banner",
+      "flex-layout.row#categories-banner"
+    ],
+    "props": {
+      "blockClass": "home__categories-banner--col"
+    }
+  },
+  "rich-text#categories-banner": {
+    "props": {
+      "text": "## Principais Categorias",
+      "blockClass": "al__title"
+    },
+    "title": "al | Categorias - Título"
+  },
+  "flex-layout.row#categories-banner": {
+    "title": "al | Categorias - Listagem",
+    "children": ["list-context.info-card-list#categories"],
+    "props": {
+      "blockClass": ["home__categories-banner--col-wrapper"]
+    }
+  },
+  "list-context.info-card-list#categories": {
+    "children": ["slider-layout#categories-info-cards"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-category-1",
+          "isFullModeStyle": true,
+          "imageUrl": "https://fakeimg.pl/600x300/",
+          "callToActionText": "Categoria 1",
+          "callToActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories-banner--col",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-category-2",
+          "isFullModeStyle": true,
+          "imageUrl": "https://fakeimg.pl/600x300/",
+          "callToActionText": "Categoria 2",
+          "callToActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories-banner--col",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-category-3",
+          "isFullModeStyle": true,
+          "imageUrl": "https://fakeimg.pl/600x300/",
+          "callToActionText": "Categoria 3",
+          "callToActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories-banner--col",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-category-4",
+          "isFullModeStyle": true,
+          "imageUrl": "https://fakeimg.pl/600x300/",
+          "callToActionText": "Categoria 4",
+          "callToActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories-banner--col",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-category-5",
+          "isFullModeStyle": true,
+          "imageUrl": "https://fakeimg.pl/600x300/",
+          "callToActionText": "Categoria 5",
+          "callToActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories-banner--col",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-category-6",
+          "isFullModeStyle": true,
+          "imageUrl": "https://fakeimg.pl/600x300/",
+          "callToActionText": "Categoria 6",
+          "callToActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories-banner--col",
+          "textAlignment": "center"
+        }
+      ]
+    }
+  },
+  "slider-layout#categories-info-cards": {
+    "props": {
+      "showNavigationArrows": "never",
+      "usePagination": true,
+      "showPaginationDots": "never",
+      "navigationStep": "page",
+      "label": "slider-categories-info-cards",
+      "blockClass": ["home__categories-banner--slider"],
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true
+    }
+  }
+}

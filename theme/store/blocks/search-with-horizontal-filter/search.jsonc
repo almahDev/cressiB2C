@@ -1,0 +1,72 @@
+{
+  "store.search": {
+    "title": "Busca",
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL",
+        "simulationBehavior": "default",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+
+  "store.search#brand": {
+    "title": "Busca - Marca",
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 16,
+        "skusFilter": "ALL",
+        "simulationBehavior": "default"
+      }
+    }
+  },
+
+  "store.search#department": {
+    "title": "Busca - Departamento",
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL",
+        "simulationBehavior": "default",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+
+  //categoria
+  "store.search#category": {
+    "title": "Busca - Categoria",
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL",
+        "simulationBehavior": "default",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+
+  "store.search#subcategory": {
+    "title": "Busca - Subcategoria",
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL",
+        "simulationBehavior": "default",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+
+  "search-result-layout": {
+    "blocks": ["search-result-layout.desktop", "search-not-found-layout"]
+  }
+}

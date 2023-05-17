@@ -1,0 +1,17 @@
+{
+  "experimental__visibility-layout#search-top-title": {
+    "title": "Controle de Visibilidade - Título da Busca (ON/OFF)",
+    "props": {
+      "blockClass": "al-search__top-title",
+      "visible": true
+    },
+    "children": ["flex-layout.row#al-search-title"]
+  },
+  "flex-layout.row#al-search-title": {
+    "title": "Título da busca",
+    "children": ["search-title.v2"],
+    "props": {
+      "blockClass": "al-search__main-title"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#newsletter": {
+    "title": "Footer  Newsletter",
+    "children": [
+      "rich-text#newsletter-logo",
+      "rich-text#newsletter-title",
+      "newsletter-form#footer"
+    ],
+    "props": {
+      "blockClass": ["footer__newsletter", "footer__newsletter-"]
+    }
+  },
+
+  "newsletter-form#footer": {
+    "children": [
+      "newsletter-input-email#footer",
+      "newsletter-checkbox-confirmation#footer",
+      "newsletter-submit#footer"
+    ],
+    "props": {
+      "blockClass": "footer__newsletter"
+    }
+  },
+
+  "rich-text#newsletter-logo": {
+    "title": "Footer  Newsletter - Logo",
+    "props": {
+      "text": "![Newsletter](https://fakeimg.pl/120x80/)",
+      "blockClass": "footer__newsletter--logo"
+    }
+  },
+
+  "rich-text#newsletter-title": {
+    "title": "Footer  Newsletter - Title",
+    "props": {
+      "text": "Quer receber promoções e novidades?",
+      "blockClass": "footer__newsletter--title"
+    }
+  },
+
+  "newsletter-input-email#footer": {
+    "title": "Footer  Newsletter - Email",
+    "props": {
+      "placeholderText": "Digite o seu e-mail",
+      "blockClass": "footer__newsletter--input-email"
+    }
+  },
+
+  "newsletter-checkbox-confirmation#footer": {
+    "title": "Footer  Newsletter - Checkbox",
+    "props": {
+      "checkboxLabel": "Ao se cadastrar, você concordar com a nossa {firstLink}",
+      "firstLabelLink": {
+        "url": "/",
+        "text": "política de privacidade"
+      },
+      "blockClass": "footer__newsletter--checkbox"
+    }
+  },
+
+  "newsletter-submit#footer": {
+    "title": "Footer  Newsletter - Enviar",
+    "props": {
+      "submitButtonLabel": "Enviar",
+      "blockClass": "footer__newsletter--submit"
+    }
+  }
+}

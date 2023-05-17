@@ -1,0 +1,14 @@
+{
+  "flex-layout.row#footer-menu-desktop": {
+    "title": "Footer  Menu - Desktop",
+    "children": [
+      "vtex.menu@2.x:menu#footer-menu-1",
+      "vtex.menu@2.x:menu#footer-menu-2",
+      "vtex.menu@2.x:menu#footer-menu-3",
+      "vtex.menu@2.x:menu#footer-menu-4"
+    ],
+    "props": {
+      "blockClass": "footer__menu"
+    }
+  }
+}

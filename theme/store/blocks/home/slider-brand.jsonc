@@ -1,0 +1,60 @@
+{
+  "flex-layout.row#slider-brand-home": {
+    "title": "al | Marcas",
+    "children": ["list-context.media-list#slider-brand-home"],
+    "props": {
+      "blockClass": "home__slider"
+    }
+  },
+
+  "list-context.media-list#slider-brand-home": {
+    "children": ["slider-layout#slider-brand-home"],
+    "props": {
+      "mediaList": [
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        },
+        {
+          "image": "https://fakeimg.pl/150x80/"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-brand-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "home__slider",
+      "showPaginationDots": "never"
+    }
+  }
+}

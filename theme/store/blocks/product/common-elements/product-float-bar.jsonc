@@ -1,0 +1,63 @@
+{
+  "sticky-layout#buy-button": {
+    "props": {
+      "position": "bottom"
+    },
+    "children": ["flex-layout.row#product-float-bar"]
+  },
+  "flex-layout.row#product-float-bar": {
+    "title": "Bloco Flutuante (Mobile)",
+    "props": {
+      "blockClass": "product__float-bar",
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children": [
+      "experimental__visibility-layout#float-bar-price",
+      "experimental__visibility-layout#float-bar-quantity"
+    ]
+  },
+
+  "experimental__visibility-layout#float-bar-price": {
+    "title": "Controle de visibilidade - Preço (ON/OFF)",
+    "props": {
+      "blockClass": "product__float-bar-price",
+      "visible": true
+    },
+    "children": ["flex-layout.col#product-price-float-bar"]
+  },
+  "experimental__visibility-layout#float-bar-quantity": {
+    "title": "Controle de visibilidade - Quantidade (ON/OFF)",
+    "props": {
+      "blockClass": "product__float-bar-quantity",
+      "visible": true
+    },
+    "children": ["flex-layout.col#product-quantity-buy-float-bar"]
+  },
+  "flex-layout.col#product-quantity-buy-float-bar": {
+    "children": ["flex-layout.row#product-main-btn"],
+    "props": {
+      "blockClass": "product__float-bar-quantity-buy"
+    }
+  },
+
+  "flex-layout.col#product-price-float-bar": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": ["product__price", "product__price-float-bar"],
+      "rowGap": 2
+    },
+    "children": [
+      "product-selling-price#product-float-bar",
+      "product-installments#product"
+    ]
+  },
+
+  "product-selling-price#product-float-bar": {
+    "title": "Preço 'Por'",
+    "props": {
+      "blockClass": ["product__price", "product__float-bar"],
+      "message": "{sellingPriceValue}"
+    }
+  }
+}

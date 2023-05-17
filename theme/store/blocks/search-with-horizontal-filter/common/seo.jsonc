@@ -1,0 +1,67 @@
+{
+  "experimental__visibility-layout#seo": {
+    "title": "Controle de visibilidade - Texto SEO da busca (ON/OFF)",
+    "children": ["flex-layout.row#search-seo-wrapper"],
+    "props": {
+      "blockClass": ["al-search__seo", "al-search__seo--desktop"],
+      "visible": true
+    }
+  },
+
+  "flex-layout.row#search-seo-wrapper": {
+    "title": "Título e texto de SEO",
+    "children": ["flex-layout.col#search-seo"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "search-seo-wrapper"
+    }
+  },
+
+  "flex-layout.col#search-seo": {
+    "children": [
+      "experimental__visibility-layout#seo-title",
+      "rich-text#seo-text"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      //"width": "80%",
+      //"paddingLeft": 6,
+      //"paddingRight": 2,
+      "blockClass": "search-seo-col"
+    }
+  },
+  "experimental__visibility-layout#seo-title": {
+    "title": "Controle de visibilidade - Título do Texto SEO (ON/OFF)",
+    "children": ["flex-layout.row#searchtitle-seo"],
+    "props": {
+      "blockClass": ["al-search__seo", "al-search__seo--desktop"],
+      "visible": true
+    }
+  },
+  "flex-layout.row#searchtitle-seo": {
+    "title": "Título - SEO da busca",
+    "children": ["search-title.v2#seo-title"],
+    "props": {
+      "blockClass": ["searchtitle-seo"],
+      "fullWidth": true
+    }
+  },
+  "search-title.v2#seo-title": {
+    "props": {
+      "blockClass": "seo-title"
+    }
+  },
+
+  "rich-text#seo-text": {
+    "title": "Texto SEO",
+    "props": {
+      "htmlId": "seo-text",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "blockClass": "al-search__seo"
+    }
+  }
+}
+
+/* Pellentesque bibendum enim lacinia venenatis condimentum. Maecenas eget dictum tellus, eget tristique velit. Nulla et nunc nec elit gravida pulvinar. Nullam at elementum velit, eu consequat nulla. Donec fermentum, sapien nec tincidunt vehicula, erat eros porta quam, in condimentum eros mi nec quam. Phasellus aliquam arcu ut dolor vehicula, non hendrerit quam vulputate. Cras et pharetra enim, elementum consequat metus. Etiam molestie, arcu vitae tincidunt volutpat, tellus tellus auctor nulla, */

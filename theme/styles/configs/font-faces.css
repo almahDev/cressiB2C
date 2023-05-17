@@ -1,0 +1,39 @@
+/* stylelint-disable font-family-name-quotes */
+
+/* usar o site Transfonter para gerar esse arquivo */
+
+@font-face {
+  font-display: swap;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: url('assets/fonts/Ubuntu-Light.woff') format('woff'),
+    url('assets/fonts/Ubuntu-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/Ubuntu-Regular.woff') format('woff'),
+    url('assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url('assets/fonts/Ubuntu-Medium.woff') format('woff'),
+    url('assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/Ubuntu-Bold.woff') format('woff'),
+    url('assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+}

@@ -1,0 +1,380 @@
+{
+  "flex-layout.row#footer-methods": {
+    "title": "Footer  Selos",
+    "children": [
+      "flex-layout.col#payment-flags",
+      "flex-layout.col#security-badges",
+      "flex-layout.col#social-networks-badges"
+    ],
+    "props": {
+      "blockClass": ["footer_methods-", "footer_methods"]
+    }
+  },
+
+  // payment methods
+  "flex-layout.col#payment-flags": {
+    "title": "Footer  Selos - Pagamento",
+    "children": [
+      "rich-text#footer-payment-title",
+      "flex-layout.row#payment-methods-top",
+      "flex-layout.row#payment-methods-bottom"
+    ],
+    "props": {
+      "blockClass": ["payment-flags-wrapper", "home__footer--high"],
+      "horizontalAlign": "left",
+      "marginLeft": 0,
+      "marginRight": 0,
+      "paddingLeft": 0,
+      "paddingRight": 2,
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "verticalAlign": "top",
+      "width": "37%"
+    }
+  },
+  "rich-text#footer-payment-title": {
+    "title": "Footer  Selos - Pagamento - Título",
+    "props": {
+      "text": "### Formas de pagamento",
+      "blockClass": "footer_methods--title"
+    }
+  },
+  "flex-layout.row#payment-methods-top": {
+    "children": ["list-context.media-list#payment-methods-top"],
+    "props": {
+      "blockClass": ["payment-methods-flags"],
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "marginBottom": 1,
+      "marginTop": 0,
+      "paddingBottom": 1,
+      "paddingTop": 0,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#payment-methods-bottom": {
+    "children": ["list-context.media-list#payment-methods-bottom"],
+    "props": {
+      "blockClass": "payment-methods-flags",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "marginBottom": 1,
+      "marginTop": 0,
+      "paddingBottom": 1,
+      "paddingTop": 1,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "list-context.media-list#payment-methods-top": {
+    "title": "Bandeiras - Linha superior",
+    "children": ["slider-layout#payment-methods-images-top"],
+    "props": {
+      "blockClass": ["payment-methods-flags", "payment-methods-flags--top"],
+      "preload": false,
+      "height": 33,
+      "mediaList": [
+        {
+          "image": "assets/img/pagamento/PayPal.png",
+          "mobileImage": "assets/img/pagamento/PayPal.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/Boleto.png",
+          "mobileImage": "assets/img/pagamento/Boleto.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/Cielo.png",
+          "mobileImage": "assets/img/pagamento/Cielo.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/Diners-Club.png",
+          "mobileImage": "assets/img/pagamento/Diners-Club.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/MasterCard.png",
+          "mobileImage": "assets/img/pagamento/MasterCard.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/MasterCard.png",
+          "mobileImage": "assets/img/pagamento/MasterCard.png",
+          "description": "bandeira",
+          "width": "50px"
+        }
+      ]
+    }
+  },
+  "list-context.media-list#payment-methods-bottom": {
+    "title": "Bandeiras - Linha inferior",
+    "children": ["slider-layout#payment-methods-images-bottom"],
+    "props": {
+      "blockClass": ["payment-methods-flags", "payment-methods-flags--bottom"],
+      "preload": false,
+      "height": 33,
+      "mediaList": [
+        {
+          "image": "assets/img/pagamento/American-Express.png",
+          "mobileImage": "assets/img/pagamento/American-Express.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/Hipercard.png",
+          "mobileImage": "assets/img/pagamento/Hipercard.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/Visa.png",
+          "mobileImage": "assets/img/pagamento/Visa.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/Elo.png",
+          "mobileImage": "assets/img/pagamento/Elo.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/Maestro.png",
+          "mobileImage": "assets/img/pagamento/Maestro.png",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "assets/img/pagamento/Maestro.png",
+          "mobileImage": "assets/img/pagamento/Maestro.png",
+          "description": "bandeira",
+          "width": "50px"
+        }
+      ]
+    }
+  },
+  "slider-layout#payment-methods-images-top": {
+    "title": "Imagens - Bandeiras superiores",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 6,
+        "phone": 6
+      },
+      "blockClass": ["payment-methods-images"],
+      "infinite": false,
+      "label": "payment-flags-slider",
+      "fullWidth": false,
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": 6
+    }
+  },
+  "slider-layout#payment-methods-images-bottom": {
+    "title": "Imagens - Bandeiras inferiores",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 6,
+        "phone": 6
+      },
+      "blockClass": ["payment-methods-images"],
+      "infinite": false,
+      "label": "payment-flags-slider",
+      "fullWidth": false,
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": 6
+    }
+  },
+
+  // security badges
+  "flex-layout.col#security-badges": {
+    "title": "Rodapé - Selos de segurança",
+    "children": [
+      "rich-text#footer-lights-title",
+      "flex-layout.row#footer-highlights"
+    ],
+    "props": {
+      "blockClass": "security-badges",
+      "horizontalAlign": "left",
+      "marginLeft": 0,
+      "marginRight": 0,
+      "paddingLeft": 0,
+      "paddingRight": 2,
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "verticalAlign": "top",
+      "width": "37%"
+    }
+  },
+  "rich-text#footer-lights-title": {
+    "title": "Título - Selos de segurança",
+    "props": {
+      "text": "### Segurança",
+      "blockClass": "footer_methods--title"
+    }
+  },
+  "flex-layout.row#footer-highlights": {
+    "children": ["list-context.media-list#highlight-images"],
+    "props": {
+      "blockClass": "home__footer--high",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "marginBottom": 0,
+      "marginTop": 0,
+      "paddingBottom": 0,
+      "paddingTop": 0,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "list-context.media-list#highlight-images": {
+    "title": "Lista - Selos de segurança",
+    "children": ["slider-layout#highlight-images"],
+    "props": {
+      "preload": false,
+      "height": 56,
+      "mediaList": [
+        {
+          "image": "assets/img/seguranca/pci.png",
+          "mobileImage": "assets/img/seguranca/pci.png",
+          "description": "brasão",
+          "width": "65px"
+        },
+        {
+          "image": "assets/img/seguranca/lets-encrypt.png",
+          "mobileImage": "assets/img/seguranca/lets-encrypt.png",
+          "description": "brasão",
+          "width": "61px"
+        }
+      ]
+    }
+  },
+  "slider-layout#highlight-images": {
+    "title": "Imagens - selos de segurança",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "label": "highlight-badges-slider",
+      "fullWidth": false,
+      "centerMode": "to-the-left",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": "security-slider"
+    }
+  },
+
+  // redes sociais
+  "flex-layout.col#social-networks-badges": {
+    "title": "Rodapé - Redes Sociais",
+    "children": [
+      "rich-text#footer-social-networks-title",
+      "flex-layout.row#footer-social-networks"
+    ],
+    "props": {
+      "blockClass": "social-networks",
+      "horizontalAlign": "left",
+      "marginLeft": 0,
+      "marginRight": 0,
+      "paddingLeft": 0,
+      "paddingRight": 2,
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "verticalAlign": "top",
+      "width": "25%"
+    }
+  },
+  "rich-text#footer-social-networks-title": {
+    "title": "Título - Redes Sociais",
+    "props": {
+      "text": "### Siga nossas redes sociais",
+      "blockClass": "footer_methods--title"
+    }
+  },
+  "flex-layout.row#footer-social-networks": {
+    "children": ["list-context.media-list#social-networks-images"],
+    "props": {
+      "blockClass": "home__footer--high",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "marginBottom": 0,
+      "marginTop": 0,
+      "paddingBottom": 0,
+      "paddingTop": 0,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "list-context.media-list#social-networks-images": {
+    "title": "Lista - Redes Sociais",
+    "children": ["slider-layout#social-networks-images"],
+    "props": {
+      "preload": false,
+      "height": 32,
+      "mediaList": [
+        {
+          "image": "assets/img/redes-sociais/Facebook-elipse-outline.png",
+          "mobileImage": "assets/img/redes-sociais/Facebook-elipse-outline.png",
+          "description": "brasão",
+          "width": "32px"
+        },
+        {
+          "image": "assets/img/redes-sociais/Instagram-elipse-outline.png",
+          "mobileImage": "assets/img/redes-sociais/Instagram-elipse-outline.png",
+          "description": "brasão",
+          "width": "32px"
+        },
+        {
+          "image": "assets/img/redes-sociais/Youtube-elipse-outline.png",
+          "mobileImage": "assets/img/redes-sociais/Youtube-elipse-outline.png",
+          "description": "brasão",
+          "width": "32px"
+        }
+      ]
+    }
+  },
+  "slider-layout#social-networks-images": {
+    "title": "Imagens - Redes Sociais",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": false,
+      "label": "highlight-badges-slider",
+      "fullWidth": false,
+      "centerMode": "to-the-left",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": "social-networks"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "experimental__visibility-layout#smartnewsletter": {
+    "title": "VISIBILIDADE DO Smartnewsletter (ON/OFF)",
+    "props": {
+      "blockClass": ["smartnewsletter"],
+      "visible": true
+    },
+    "children": ["modal-trigger#al-newsletter"]
+  },
+
+  "modal-trigger#al-newsletter": {
+    "title": "Modal Smartnewsletter",
+    "props": {
+      "trigger": "load-session"
+    },
+    "children": ["modal-layout#al-newsletter-content"]
+  },
+
+  "modal-layout#al-newsletter-content": {
+    "children": [
+      "flex-layout.row#al-newsletter-header",
+      "flex-layout.row#al-newsletter-content"
+    ],
+    "props": {
+      "blockClass": "al-modal-news"
+    }
+  },
+
+  "flex-layout.row#al-newsletter-header": {
+    "children": ["modal-header#al-modal-newsletter"]
+  },
+  "modal-header#al-modal-newsletter": {
+    "props": {
+      "blockClass": "al-modal-news__header",
+      "iconCloseSize": 20
+    }
+  },
+
+  "flex-layout.row#al-newsletter-content": {
+    "title": "Modal Smartnewsletter - Conteúdo",
+    "children": [
+      "flex-layout.col#al-newsletter-content-1",
+      "flex-layout.col#al-newsletter-content-2"
+    ],
+    "props": {
+      "blockClass": "al-modal-news__content",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#al-newsletter-content-1": {
+    "title": "Modal Smartnewsletter - Imagem",
+    "children": ["image#al-modal-newsletter"],
+    "props": {
+      "blockClass": "al-modal-news__content--image"
+    }
+  },
+  "flex-layout.col#al-newsletter-content-2": {
+    "title": "Modal Smartnewsletter - Textos",
+    "children": ["image#logo-smart", "newsletter-form#al-modal-newsletter"],
+    "props": {
+      "blockClass": "al-modal-news__content--form"
+    }
+  },
+  "image#logo-smart": {
+    "props": {
+      "src": "https://fakeimg.pl/84x143/",
+      "maxWidth": "84.96px",
+      "maxHeight": "143.76px",
+      "blockClass": "al-smart__img"
+    }
+  },
+  "image#al-modal-newsletter": {
+    "props": {
+      "src": "https://fakeimg.pl/430x530/",
+      "maxWidth": "430px",
+      "maxHeight": "530px",
+      "blockClass": "al-modal-news__banner"
+    }
+  },
+  "newsletter-form#al-modal-newsletter": {
+    "props": {
+      "blockClass": "al-modal-news__input",
+      "SuccessState": "flex-layout.row#succesState"
+    },
+    "children": [
+      "rich-text#al-modal-content",
+      "rich-text#al-modal-newsletter-text",
+      "newsletter-input-email#modal",
+      "newsletter-submit#modal"
+    ]
+  },
+  "rich-text#al-modal-content": {
+    "title": "Modal Smartnewsletter - Textos - Título",
+    "props": {
+      "blockClass": "al-modal-news__title",
+      "text": "Bem vindo!"
+    }
+  },
+  "rich-text#al-modal-newsletter-text": {
+    "title": "Modal Smartnewsletter - Textos - Subtítulo",
+    "props": {
+      "blockClass": "al-modal-news__subtitle",
+      "text": "Receba em primeira mão desconto e ofertas exclusivas"
+    }
+  },
+  "flex-layout.row#succesState": {
+    "children": ["flex-layout.col#succesState"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "succesState_row",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#succesState": {
+    "children": [
+      "rich-text#al-modal-newsletter-sucess",
+      "modal-actions.close#success"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "succesState_col",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#al-modal-newsletter-sucess": {
+    "title": "al | Modal Smartnewsletter - Sucess",
+    "props": {
+      "blockClass": ["al-modal-newsletter-text"],
+      "text": "Em breve, você receberá em seu e-mail \n nossas ofertas e descontos exclusivos."
+    }
+  },
+  "newsletter-input-email#modal": {
+    "title": "Modal Smartnewsletter - Campo de email",
+    "props": {
+      "placeholderText": "Seu email favorito",
+      "blockClass": "al-newsletter-input-email"
+    }
+  },
+  "newsletter-submit#modal": {
+    "title": "Botão enviar",
+    "props": {
+      "submitButtonLabel": "Enviar",
+      "blockClass": "al-newsletter-submit"
+    }
+  },
+  "modal-actions.close#success": {
+    "props": {
+      "blockClass": "al-modal-news__success",
+      "label": "Fechar"
+    }
+  }
+}

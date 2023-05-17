@@ -1,0 +1,14 @@
+{
+  "flex-layout.row#product-main": {
+    "title": "Bloco Principal",
+    "props": {
+      "fullWidth": true,
+      "colGap": 6,
+      "blockClass": ["product__main"]
+    },
+    "children": [
+      "flex-layout.col#product-left-col",
+      "flex-layout.col#product-right-col"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "flex-layout.row#shipping-simulator": {
+    "title": "Simulador de Frete",
+    "children": ["flex-layout.col#shipping-simulator"],
+    "props": {
+      "blockClass": "product__shipping",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "colGap": 0
+    }
+  },
+  "flex-layout.col#shipping-simulator": {
+    "children": [
+      "rich-text#shipping-simulator-title",
+      "flex-layout.row#shipping-simulator-content"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "blockClass": "product__shipping"
+    }
+  },
+  "rich-text#shipping-simulator-title": {
+    "title": "Título",
+    "props": {
+      "text": "Calcular frete",
+      "blockClass": "product__shipping"
+    }
+  },
+  "flex-layout.row#shipping-simulator-content": {
+    "children": ["shipping-simulator", "link#shipping-simulator-title"],
+    "props": {
+      "blockClass": "product__shipping--content",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colGap": 4,
+      "fullWidth": true
+    }
+  },
+  "link#shipping-simulator-title": {
+    "title": "Link - Não sei meu cep",
+    "props": {
+      "href": "//buscacepinter.correios.com.br/app/endereco/index.php?t",
+      "label": "Não sei meu CEP",
+      "target": "_blank",
+      "rel": "noopener",
+      "blockClass": "product__shipping"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content"],
+    "props": {
+      "blockClass": ["al-search__products", "al-search__products--mobile"],
+      "preserveLayoutOnMobile": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "flex-layout.row#availability": {
+    "title": "Produto indisponível - Formulário",
+    "props": {
+      "blockClass": "availability"
+    },
+    "children": ["availability-notify"]
+  }
+}

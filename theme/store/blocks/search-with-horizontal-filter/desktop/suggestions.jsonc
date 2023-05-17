@@ -1,0 +1,11 @@
+{
+  "flex-layout.row#al-search-suggestions": {
+    "title": "Sugestões de busca",
+    "children": ["search-suggestions"],
+    "props": {
+      "blockClass": "al-search__suggestions",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  }
+}

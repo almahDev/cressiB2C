@@ -1,0 +1,54 @@
+{
+  "flex-layout.row#selling-price": {
+    "title": "Preço de venda",
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": ["product-selling-price"]
+  },
+
+  "flex-layout.row#list-price-savings": {
+    "title": "Preço de lista e desconto",
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "product__price",
+      "colGap": 2
+    },
+    "children": [
+      "flex-layout.col#prices-pdp",
+      "product-price-savings#pdp",
+      "product-price-savings#summaryPercentage"
+    ]
+  },
+  "flex-layout.col#prices-pdp": {
+    "children": ["product-list-price#pdp", "product-selling-price#pdp"],
+    "props": {
+      "blockClass": "product__price",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "rowGap": 2,
+
+      "horizontalAlign": "center",
+      "verticalAlign": "top"
+    }
+  },
+  "product-list-price#pdp": {
+    "props": {
+      "message": "de: {listPriceValue}"
+    }
+  },
+  "product-selling-price#pdp": {
+    "props": {
+      "message": "por: {sellingPriceValue}"
+    }
+  },
+  "product-price-savings#pdp": {
+    "props": {
+      "blockClass": "product__price-savings-pdp"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "flex-layout.row#product-shelf-view": {
+    "title": "Vitrine de produtos vistos",
+    "children": ["shelf.relatedProducts#option-1"],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": ["shelf__product", "product__container"]
+    }
+  },
+  "shelf.relatedProducts#option-1": {
+    "blocks": ["product-summary.shelf#product"],
+    "props": {
+      "recommendation": "view",
+      "hideOutOfStockItems": false,
+      "productList": {
+        "maxItems": 8,
+        "minItemsPerPage": 2,
+        "itemsPerPage": 4,
+        "titleText": "Quem viu, viu também"
+      }
+    }
+  },
+  "flex-layout.row#shelf-buy": {
+    "title": "Vitrine de produtos comprados",
+    "children": ["shelf.relatedProducts#option-2"],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "shelf__product"
+    }
+  },
+  "shelf.relatedProducts#option-2": {
+    "blocks": ["product-summary.shelf#product"],
+    "props": {
+      "recommendation": "buy",
+      "productList": {
+        "maxItems": 8,
+        "minItemsPerPage": 2,
+        "itemsPerPage": 4,
+        "titleText": "Quem comprou, comprou também"
+      }
+    }
+  },
+  "flex-layout.row#shelf-similars": {
+    "title": "Vitrine de produtos similares",
+    "children": ["shelf.relatedProducts#option-3"],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": ["shelf__product"]
+    }
+  },
+  "shelf.relatedProducts#option-3": {
+    "blocks": ["product-summary.shelf#product"],
+    "props": {
+      "recommendation": "similars",
+      "productList": {
+        "maxItems": 8,
+        "minItemsPerPage": 2,
+        "itemsPerPage": 4,
+        "titleText": "Produtos Similares"
+      }
+    }
+  }
+}

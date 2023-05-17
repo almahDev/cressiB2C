@@ -1,0 +1,9 @@
+{
+  "experimental__visibility-layout#cookie-modal": {
+    "title": "Visibilidade do Modal de Cookies (ON/OFF)",
+    "props": {
+      "visible": true
+    }
+    // "children": ["cookie-modal"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  // LEFT
+  "flex-layout.col#product-left-col": {
+    "title": "Bloco da Esquerda",
+    "children": ["stack-layout#product-images"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0,
+      "blockClass": "product__left-col"
+    }
+  }
+}

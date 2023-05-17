@@ -1,0 +1,60 @@
+{
+  "flex-layout.row#product-main-btn": {
+    "title": "Botões de compra",
+    "props": {
+      "blockClass": "product__main--btn"
+    },
+    "children": [
+      "experimental__visibility-layout#quantity-selector",
+      "flex-layout.col#product-main-btn"
+    ]
+  },
+  "experimental__visibility-layout#quantity-selector": {
+    "title": "Controle de visibilidade - Botão 'Comprar agora' (ON/OFF)",
+    "props": {
+      "blockClass": "product__quantity",
+      "visible": true
+    },
+    "children": ["product-quantity"]
+  },
+  "flex-layout.col#product-main-btn": {
+    "props": {
+      "blockClass": "product__main--btn",
+      "rowGap": 4
+    },
+    "children": [
+      "experimental__visibility-layout#buy-now",
+      "experimental__visibility-layout#add-to-cart"
+    ]
+  },
+  "experimental__visibility-layout#buy-now": {
+    "title": "Controle de visibilidade - Botão 'Comprar agora' (ON/OFF)",
+    "props": {
+      "blockClass": "product__buy-now",
+      "visible": false
+    },
+    "children": ["add-to-cart-button#product-buy-now"]
+  },
+  "experimental__visibility-layout#add-to-cart": {
+    "title": "Controle de visibilidade - Botão 'Adicionar ao Carrinho' (ON/OFF)",
+    "props": {
+      "blockClass": "product__add-to-cart",
+      "visible": true
+    },
+    "children": ["add-to-cart-button#product-add-to-cart"]
+  },
+  "add-to-cart-button#product-buy-now": {
+    "title": "Botão Comprar - Comprar Agora",
+    "props": {
+      "isOneClickBuy": true,
+      "text": "COMPRAR AGORA"
+    }
+  },
+
+  "add-to-cart-button#product-add-to-cart": {
+    "title": "Botão Comprar - Adicionar ao Carrinho",
+    "props": {
+      "text": "COMPRAR"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  // RIGHT
+  "flex-layout.col#product-right-col": {
+    "title": "Bloco da Direita",
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "product__right-col"
+    },
+    "children": ["condition-layout.product#availability"]
+  },
+  "condition-layout.product#availability": {
+    "title": "Condição de disponibilidade do Produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "disposition-layout#product-right-col",
+      "Else": "disposition-layout#product-right-col-unavailable"
+    }
+  }
+}

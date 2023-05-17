@@ -1,0 +1,24 @@
+{
+  "flex-layout.row#al-result": {
+    "title": "Resultado da Busca",
+    "children": ["flex-layout.col#al-result"],
+    "props": {
+      "blockClass": "al-search__main",
+      "preventHorizontalStretch": false,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#al-result": {
+    "children": [
+      "flex-layout.row#al-filter-grid-layout", // desktop
+      "flex-layout.row#al-order-by-filter-mobile", // mobile
+      "flex-layout.row#total-grid-mobile", // mobile
+      "flex-layout.row#al-content-search"
+    ],
+    "props": {
+      "blockClass": "al-search__main",
+      "preventHorizontalStretch": false,
+      "fullWidth": true
+    }
+  }
+}

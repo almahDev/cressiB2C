@@ -1,0 +1,61 @@
+{
+  "flex-layout.row#al-order-by-filter-mobile": {
+    "title": "Order By Filter Mobile",
+    "children": [
+      "flex-layout.col#al-filter-mobile",
+      "flex-layout.col#al-order-by-mobile"
+    ],
+    "props": {
+      "blockClass": "al-search-order-filter--mobile",
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "colSizing": "equal",
+
+      "colJustify": "between"
+    }
+  },
+
+  "flex-layout.row#total-grid-mobile": {
+    "title": "Total Products Grid Switcher Mobile",
+    "children": ["total-products.v2", "gallery-layout-switcher#mobile"],
+    "props": {
+      "blockClass": "al-search__total-grid--mobile",
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colGap": 2,
+      "colJustify": "between",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#al-filter-mobile": {
+    "children": ["filter-navigator.v3#al-filter-navigator"],
+    "props": {
+      "width": "40%",
+      "blockClass": "al-search__filter--mobile"
+    }
+  },
+  "filter-navigator.v3#al-filter-navigator": {
+    "blocks": ["sidebar-close-button"],
+    "title": "Filter Navigator",
+    "props": {
+      "blockClass": "al-search__filter--mobile",
+      "initiallyCollapsed": true,
+      "openFiltersMode": "one",
+      "closeOnOutsideClick": true,
+      "showClearAllFiltersOnDesktop": false,
+      "appliedFiltersOverview": "hide",
+      "priceRangeLayout": "inputAndSlider",
+      "categoryFiltersMode": "href",
+      "navigationTypeOnMobile": "collapsible",
+      "layout": "phone"
+    }
+  },
+  "flex-layout.col#al-order-by-mobile": {
+    "children": ["order-by.v2"],
+    "props": {
+      "width": "60%",
+      "blockClass": "al-search__orderBy--mobile"
+    }
+  }
+}

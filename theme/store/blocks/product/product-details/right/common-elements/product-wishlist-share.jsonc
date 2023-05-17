@@ -1,0 +1,59 @@
+{
+  "flex-layout.row#product-wishlist-share-desktop": {
+    "children": ["add-to-list-btn", "overlay-trigger#share-product"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colGap": 4,
+      "colSizing": "auto",
+      "blockClass": [
+        "product__wishlist-share",
+        "product__wishlist-share--desktop"
+      ]
+    }
+  },
+  "flex-layout.row#product-wishlist-share-mobile": {
+    "children": ["add-to-list-btn", "overlay-trigger#share-product"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colGap": 4,
+      "colSizing": "auto",
+      "blockClass": [
+        "product__wishlist-share",
+        "product__wishlist-share--mobile"
+      ]
+    }
+  },
+  "overlay-trigger#share-product": {
+    "props": {
+      "blockClass": "product__share"
+    },
+    "children": ["icon#share", "overlay-layout#share-product"]
+  },
+  "overlay-layout#share-product": {
+    "props": {
+      "showArrow": true,
+      "placement": "bottom"
+    },
+    "children": ["share#default"]
+  },
+  "icon#share": {
+    "props": {
+      "blockClass": "product-share",
+      "id": "icon-share",
+      "size": 24,
+      "viewBox": "0 0 24 24",
+      "handle": "shareIcon"
+    }
+  },
+  "share#default": {
+    "title": "Compartilhamento",
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": false
+      }
+    }
+  }
+}

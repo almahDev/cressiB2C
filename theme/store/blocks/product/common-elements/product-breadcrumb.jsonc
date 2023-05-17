@@ -1,0 +1,23 @@
+{
+  "flex-layout.row#product-breadcrumb-desktop": {
+    "title": "Breadcrumb (Desktop)",
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__breadcrumb", "product__breadcrumb--desktop"]
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#product-breadcrumb-mobile": {
+    "title": "Breadcrumb (Mobile)",
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__breadcrumb", "product__breadcrumb--mobile"]
+    },
+    "children": ["breadcrumb"]
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  }
+}

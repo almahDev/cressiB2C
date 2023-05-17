@@ -1,0 +1,23 @@
+{
+  "vtex.menu@2.x:menu#menu-mobile": {
+    "title": "Menu principal - Mobile",
+    "props": {
+      "blockClass": ["menu-mobile-wrapper"],
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#dep1-mobile",
+      "menu-item#dep2-mobile",
+      "menu-item#dep3-mobile",
+      "menu-item#dep4-mobile",
+      "menu-item#dep5-mobile",
+      "menu-item#dep6-mobile",
+      "menu-item#dep6-mobile",
+      "menu-item#dep7-mobile",
+      "menu-item#dep8-mobile",
+      "menu-item#dep9-mobile",
+      "menu-item#dep10-mobile"
+    ]
+  }
+}

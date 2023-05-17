@@ -1,0 +1,9 @@
+{
+  "product-availability": {
+    "props": {
+      "blockClass": "product__availability",
+      "threshold": "15",
+      "lowStockMessage": "Restam poucas unidades {quantity}"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "flex-layout.row#highlights-wrapper": {
+    "title": "Destaques",
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#promotion",
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "vtex.product-highlights@2.x:product-highlights#teaser"
+    ],
+    "props": {
+      "blockClass": ["highlights-stack-wrapper"],
+      "colJustify": "around",
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "experimentalHideEmptyCols": true
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#promotion": {
+    "title": "Flags de Promoção",
+    "props": {
+      "type": "promotion"
+    },
+    "children": ["product-highlight-wrapper#promotion"]
+  },
+  "product-highlight-wrapper#promotion": {
+    "props": {
+      "blockClass": "promotion"
+    },
+    "children": ["product-highlight-text#promotion"]
+  },
+  "product-highlight-text#promotion": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": ["promotion-highlight-tag"]
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "title": "Flags de Coleção",
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper#collection"]
+  },
+  "product-highlight-wrapper#collection": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text#collection"]
+  },
+  "product-highlight-text#collection": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": ["collection-highlight-tag"]
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#teaser": {
+    "title": "Flags de Teaser",
+    "props": {
+      "type": "teaser"
+    },
+    "children": ["product-highlight-wrapper#teaser"]
+  },
+  "product-highlight-wrapper#teaser": {
+    "props": {
+      "blockClass": "teaser"
+    },
+    "children": ["product-highlight-text#teaser"]
+  },
+  "product-highlight-text#teaser": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": ["teaser-highlight-tag"]
+    }
+  }
+}

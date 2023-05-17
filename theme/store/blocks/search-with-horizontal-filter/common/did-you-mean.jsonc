@@ -1,0 +1,14 @@
+{
+  "flex-layout.row#didyoumean": {
+    "children": ["did-you-mean#search"],
+    "props": {
+      "blockClass": "did-you-mean-row",
+      "fullWidth": true
+    }
+  },
+  "did-you-mean#search": {
+    "props": {
+      "blockClass": "did-you-mean"
+    }
+  }
+}

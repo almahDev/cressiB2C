@@ -1,0 +1,27 @@
+{
+  "store.custom#collection": {
+    "title": "Coleção",
+    "blocks": [
+      "search-result-layout.customQuery#collection",
+      "back-to-top-button"
+    ]
+  },
+  "search-result-layout.customQuery#collection": {
+    "blocks": [
+      "search-result-layout.desktop",
+      //"search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 16,
+        "skusFilter": "ALL",
+        "simulationBehavior": "default",
+        "queryField": "1",
+        "mapField": "productClusterIds"
+      }
+    }
+  }
+}
