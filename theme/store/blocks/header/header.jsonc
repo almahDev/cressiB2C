@@ -250,7 +250,7 @@
   "drawer#header-mobile": {
     "title": "Almah |Header - Menu Principal - Mobile",
     "props": {
-      "isFullWidth": true,
+      "maxWidth": "85%",
       "backdropMode": "none",
       "slideDirection": "horizontal"
     },

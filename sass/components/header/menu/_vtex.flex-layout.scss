@@ -4,11 +4,28 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   }
 
+  &--header-mob {
+    background: #e9fbf9;
+    padding: {
+      left: 2.3rem;
+      right: 2.3rem;
+      top: 1.5rem;
+      bottom: 1.5rem;
+    }
+  }
+
   &--main-menu-department-block {
     justify-content: space-between;
     width: 100%;
   }
 }
+
+.flexCol {
+  &--header-mob__social-block {
+    flex-direction: row;
+  }
+}
+
 .flexRowContent {
   &--header__menu {
     @extend %container-large;
@@ -18,7 +35,9 @@
     }
   }
 }
-.flexCol {
-}
+
 .flexColChild {
+  &--header-mob__social-block {
+    margin-right: 1.4rem;
+  }
 }

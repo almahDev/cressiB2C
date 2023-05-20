@@ -134,7 +134,7 @@
 
   &--submenu-mobile-subcategory {
     margin: 0;
-    padding: 0.5rem 1.5rem;
+    padding: 1.5rem 2.5rem;
 
     .styledLink {
       @include text($font-size-sm, $text-color-1-500, $regular);
@@ -161,6 +161,9 @@
   }
 
   &--menu-item-mobile {
+    margin: 0 2.5rem;
+    padding: 1rem 0;
+
     .styledLinkContent {
       font-weight: 700;
       font-size: 1rem;

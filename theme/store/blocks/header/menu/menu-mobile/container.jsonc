@@ -7,6 +7,7 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
+      "flex-layout.row#header-menu",
       "menu-item#dep1-mobile",
       "menu-item#dep2-mobile",
       "menu-item#dep3-mobile",
@@ -19,5 +20,46 @@
       "menu-item#dep9-mobile",
       "menu-item#dep10-mobile"
     ]
+  },
+  "flex-layout.row#header-menu": {
+    "title": "Almah | Header Menu",
+    "props": {
+      "blockClass": "header-mob"
+    },
+    "children": [
+      "flex-layout.col#header-menu",
+      "flex-layout.col#social-media-menu"
+    ]
+  },
+  "flex-layout.col#header-menu": {
+    "title": "Almah | Contato",
+    "props": {
+      "blockClass": ["header-mob__contact"]
+    },
+    "children": ["rich-text#contato"]
+  },
+  "rich-text#contato": {
+    "title": "Almah | Contato Mobile",
+    "props": {
+      "text": "![](assets/svg/icon-allegralar-phone-black.svg)**ENTRE** EM CONTATO **(99) 9999-9999**",
+      "blockClass": "header-mob__text"
+    }
+  },
+  "flex-layout.col#social-media-menu": {
+    "title": "Almah | Social Menu Mobile",
+    "props": {
+      "blockClass": "header-mob__social-block"
+    },
+    "children": ["image#facebook-mob", "image#instagram-mob"]
+  },
+  "image#facebook-mob": {
+    "props": {
+      "src": "assets/svg/Facebook.svg"
+    }
+  },
+  "image#instagram-mob": {
+    "props": {
+      "src": "assets/svg/Instagram.svg"
+    }
   }
 }
