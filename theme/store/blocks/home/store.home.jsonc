@@ -3,7 +3,7 @@
     "title": "al | Home",
     "blocks": ["disposition-layout#home"],
     "children": [
-      "experimental__visibility-layout#smartnewsletter"
+      // "experimental__visibility-layout#smartnewsletter"
       // "experimental__visibility-layout#cookie-modal"
     ]
   },
@@ -12,7 +12,7 @@
     "title": "al | Home - Disposição do conteúdo",
     "children": [
       "list-context.media-list#slider-full-home",
-      "flex-layout.row#deals",
+      "list-context.info-card-list#home-deals",
       "flex-layout.row#categories-banner-main",
       "flex-layout.row#shelf-home",
       "flex-layout.row#info-card",

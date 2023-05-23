@@ -1,0 +1,32 @@
+.container {
+  &--home__title {
+    .wrapper {
+      width: 100%;
+      text-align: left;
+    }
+
+    .heading {
+      @include text($font-size-md + 1, $low-pure, $regular);
+      line-height: 21px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .paragraph {
+      @include text($font-size-md + 1, $low-pure, $regular);
+      line-height: 21px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .strong {
+      @include text($font-size-md + 1, $primary-pure-500, $extra-bold);
+      line-height: 21px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}

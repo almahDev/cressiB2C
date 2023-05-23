@@ -3,14 +3,11 @@
     "title": "al | Banner Home",
     "children": ["slider-layout#slider-full-home"],
     "props": {
+      "height": "100%",
       "mediaList": [
         {
-          "image": "https://fakeimg.pl/1920x440/",
-          "mobileImage": "https://fakeimg.pl/600x600/"
-        },
-        {
-          "image": "https://fakeimg.pl/1920x440/",
-          "mobileImage": "https://fakeimg.pl/600x600/"
+          "image": "assets/img/home/home-fullbanner-desktop.png",
+          "mobileImage": "assets/img/home/home-fullbanner-mobile.png"
         }
       ]
     }

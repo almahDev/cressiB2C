@@ -1,86 +1,57 @@
 {
-  "flex-layout.row#deals": {
-    "title": "al | Informações de destaque",
-    "children": [
-      "flex-layout.col#deals1",
-      "flex-layout.col#deals2",
-      "flex-layout.col#deals3",
-      "flex-layout.col#deals4"
-    ],
+  "list-context.info-card-list#home-deals": {
+    "title": "Informações de destaque",
+    "children": ["slider-layout#home-deals"],
     "props": {
-      "blockClass": "home__deals"
+      "blockClass": "home__deals",
+      "infoCards": [
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/svg/icon-deals-1.svg",
+          "headline": "Compre com segurança: até 3x sem\njuros no cartão.",
+          "textAlignment": "left",
+          "textMode": "rich-text",
+          "blockClass": "home__deals",
+          "callToActionMode": "none"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/svg/icon-deals-2.svg",
+          "headline": "Entrega expressa em todo o Brasil!\nCompre com CNPJ da sua empresa!",
+          "textAlignment": "left",
+          "textMode": "rich-text",
+          "blockClass": "home__deals",
+          "callToActionMode": "none"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/svg/icon-deals-3.svg",
+          "headline": "Compre com segurança: até 3x\nsem juros no cartão.",
+          "textAlignment": "left",
+          "textMode": "rich-text",
+          "blockClass": "home__deals",
+          "callToActionMode": "none"
+        }
+      ]
     }
   },
-
-  "flex-layout.col#deals1": {
-    "title": "al | Destaque - Coluna 1",
-    "children": ["image#deal1", "rich-text#deal1"]
-  },
-  "image#deal1": {
-    "title": "al | Destaque - Coluna 1 - Imagem",
+  "slider-layout#home-deals": {
+    "title": "Configurações do Carousel",
     "props": {
-      "src": "https://fakeimg.pl/64x64/"
-    }
-  },
-  "rich-text#deal1": {
-    "title": "al | Destaque - Coluna 1 - Texto",
-    "props": {
-      "text": "Diferencial de compra tip bar 1",
-      "blockClass": "home__deals"
-    }
-  },
-
-  "flex-layout.col#deals2": {
-    "title": "al | Destaque - Coluna 2",
-    "children": ["image#deal2", "rich-text#deal2"]
-  },
-  "image#deal2": {
-    "title": "al | Destaque - Coluna 2 - Imagem",
-    "props": {
-      "src": "https://fakeimg.pl/64x64/"
-    }
-  },
-  "rich-text#deal2": {
-    "title": "al | Destaque - Coluna 2 - Texto",
-    "props": {
-      "text": "Diferencial de compra tip bar 2",
-      "blockClass": "home__deals"
-    }
-  },
-
-  "flex-layout.col#deals3": {
-    "title": "al | Destaque - Coluna 3",
-    "children": ["image#deal3", "rich-text#deal3"]
-  },
-  "image#deal3": {
-    "title": "al | Destaque - Coluna 3 - Imagem",
-    "props": {
-      "src": "https://fakeimg.pl/64x64/"
-    }
-  },
-  "rich-text#deal3": {
-    "title": "al | Destaque - Coluna 3 - Texto",
-    "props": {
-      "text": "Diferencial de compra tip bar 3",
-      "blockClass": "home__deals"
-    }
-  },
-
-  "flex-layout.col#deals4": {
-    "title": "al | Destaque - Coluna 4",
-    "children": ["image#deal4", "rich-text#deal4"]
-  },
-  "image#deal4": {
-    "title": "al | Destaque - Coluna 4 - Imagem",
-    "props": {
-      "src": "https://fakeimg.pl/64x64/"
-    }
-  },
-  "rich-text#deal4": {
-    "title": "al | Destaque - Coluna 4 - Texto",
-    "props": {
-      "text": "Diferencial de compra [saiba mais](https://stackedit.io/app#)",
-      "blockClass": "home__deals"
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "blockClass": "home__deals",
+      "fullWidth": true,
+      "infinite": false,
+      "usePagination": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
     }
   }
 }

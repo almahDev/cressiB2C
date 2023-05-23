@@ -155,10 +155,10 @@
 
   "logo#desktop": {
     "props": {
-      "title": "Logo da al Store",
+      "title": "Logo da Allegra Lar",
       "href": "/",
-      "url": "https://fakeimg.pl/200x50/",
-      "width": "200",
+      "url": "assets/img/allegra-logo-header.png",
+      "width": "308",
       "blockClass": "header__logo"
     }
   },
@@ -239,10 +239,10 @@
 
   "logo#mobile": {
     "props": {
-      "title": "Logo da al Store",
+      "title": "Logo da Allegra Lar",
       "href": "/",
-      "url": "https://fakeimg.pl/200x50/",
-      "width": "150",
+      "url": "assets/img/allegra-logo-header.png",
+      "width": "192",
       "blockClass": "header__logo"
     }
   },

@@ -17,8 +17,8 @@
   "rich-text#shelf-home": {
     "title": "al | Vitrine 1 - Título",
     "props": {
-      "text": "## Mais Vendidos em Tênis",
-      "blockClass": "al__title"
+      "text": "## **Produtos** em Destaque",
+      "blockClass": "home__title"
     }
   },
 

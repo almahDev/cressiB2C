@@ -17,8 +17,8 @@
   },
   "rich-text#categories-banner": {
     "props": {
-      "text": "## Principais Categorias",
-      "blockClass": "al__title"
+      "text": "## Produtos em Destaque",
+      "blockClass": "home__title"
     },
     "title": "al | Categorias - Título"
   },
