@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#home-collections": {
+    "title": "al | Coleções",
+    "children": ["flex-layout.col#home-collections"],
+    "props": {
+      "blockClass": "home__collections"
+    }
+  },
+  "flex-layout.col#home-collections": {
+    "children": [
+      "rich-text#home-collections-title",
+      "list-context.info-card-list#home-collections"
+    ],
+    "props": {
+      "blockClass": "home__collections"
+    }
+  },
+  "rich-text#home-collections-title": {
+    "title": "al | Coleções - Título",
+    "props": {
+      "text": "## **Nossas** Coleções",
+      "blockClass": "home__title"
+    }
+  },
+  "list-context.info-card-list#home-collections": {
+    "children": ["slider-layout#home-collections"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-collection-1",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/home/home-collections-1.png",
+          "callToActionText": "SALA DE JANTAR",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__collections",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-collection-2",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/home/home-collections-2.png",
+          "callToActionText": "QUARTOS",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__collections",
+          "textAlignment": "center"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-collections": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "blockClass": "home__collections",
+      "fullWidth": true,
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never"
+    }
+  }
+}

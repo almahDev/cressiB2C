@@ -1,0 +1,20 @@
+.flexRow {
+  &--home__collections {
+  }
+}
+
+.flexRowContent {
+  &--home__collections {
+    @extend %container-large;
+  }
+}
+
+.flexCol {
+  &--home__collections {
+  }
+}
+
+.flexColChild {
+  &--home__collections {
+  }
+}

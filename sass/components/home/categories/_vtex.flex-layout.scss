@@ -1,0 +1,20 @@
+.flexRow {
+  &--home__categories {
+  }
+}
+
+.flexRowContent {
+  &--home__categories {
+    @extend %container-large;
+  }
+}
+
+.flexCol {
+  &--home__categories {
+  }
+}
+
+.flexColChild {
+  &--home__categories {
+  }
+}

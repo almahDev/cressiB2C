@@ -1,0 +1,90 @@
+{
+  "flex-layout.row#home-categories": {
+    "title": "al | Categorias",
+    "children": ["flex-layout.col#home-categories"],
+    "props": {
+      "blockClass": "home__categories"
+    }
+  },
+  "flex-layout.col#home-categories": {
+    "children": [
+      "rich-text#home-categories-title",
+      "list-context.info-card-list#home-categories"
+    ],
+    "props": {
+      "blockClass": "home__categories"
+    }
+  },
+  "rich-text#home-categories-title": {
+    "title": "al | Categorias - Título",
+    "props": {
+      "text": "## **Nossas** Categorias",
+      "blockClass": "home__title"
+    }
+  },
+  "list-context.info-card-list#home-categories": {
+    "children": ["slider-layout#home-categories"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-category-1",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/home/home-categories-1.png",
+          "callToActionText": "Cozinhas",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-category-2",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/home/home-categories-2.png",
+          "callToActionText": "Quarto",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-category-3",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/home/home-categories-3.png",
+          "callToActionText": "Escritório",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-category-4",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/home/home-categories-4.png",
+          "callToActionText": "Sala de Jantar",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__categories",
+          "textAlignment": "center"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-categories": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "blockClass": "home__categories",
+      "fullWidth": true,
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never"
+    }
+  }
+}

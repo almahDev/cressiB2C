@@ -1,27 +1,26 @@
 .sliderTrackContainer {
-  &--home__deals {
-    @extend %container-large;
-    overflow-x: auto;
+  &--home__collections {
+    // overflow-x: auto;
   }
 }
 
 .sliderLayoutContainer {
-  &--home__deals {
-    padding: 4.375rem 0 2.875rem;
+  &--home__collections {
+    padding: 33px 0 0;
 
-    @include tablet {
-      padding: 1.25rem 0 1.3125rem;
-      margin-bottom: 3.5rem;
-    }
+    // @include tablet {
+    //   padding: 1.25rem 0 1.3125rem;
+    //   margin-bottom: 3.5rem;
+    // }
   }
 }
 
 .slideChildrenContainer {
-  &--home__deals {
+  &--home__collections {
     align-items: stretch;
     padding: 0;
 
-    :global(.vtex-info-card-list-0-x-home__deals--home__deals) {
+    :global(.vtex-info-card-list-0-x-home__collections--home__collections) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -35,38 +34,8 @@
   }
 }
 
-.slide {
-  &--home__deals {
-    @include desktop {
-      &:not(:last-child) {
-        .infoCardContainer--home__deals {
-          border-right: 1px solid $color-c-4;
-        }
-      }
-
-      &:not(:first-child):not(:last-child) {
-        .infoCardContainer--home__deals {
-          padding-left: 20px;
-          padding-right: 15px;
-        }
-
-        .infoCardTextContainer--home__deals {
-          padding-left: 30px;
-        }
-      }
-
-      &:last-child {
-        .infoCardContainer--home__deals {
-          padding-left: 30px;
-          justify-content: flex-start;
-        }
-      }
-    }
-  }
-}
-
 .sliderLeftArrow {
-  &--home__deals {
+  &--home__collections {
     margin-left: 6.25rem;
 
     @include tablet {
@@ -76,7 +45,7 @@
 }
 
 .sliderRightArrow {
-  &--home__deals {
+  &--home__collections {
     margin-right: 6.25rem;
 
     @include tablet {
@@ -86,7 +55,7 @@
 }
 
 .caretIcon {
-  &--home__deals {
+  &--home__collections {
     max-width: 100%;
     max-height: 100%;
     width: 1rem;
@@ -96,18 +65,19 @@
 }
 
 .infoCardContainer {
-  &--home__deals {
+  &--home__collections {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     text-align: center;
     background: $white;
     border-radius: 0;
-    padding: 0.25rem 0;
+    padding: 12px;
     margin: 0;
     height: 100%;
     width: 100%;
+    position: relative;
 
     @include tablet {
       margin: 0.5rem auto;
@@ -116,15 +86,20 @@
 }
 
 .infoCardTextContainer {
-  &--home__deals {
-    width: auto;
-    text-align: center;
-    padding: 0 0 0 2.875rem;
+  &--home__collections {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    position: absolute;
+    bottom: 67px;
+    left: 0;
+    right: 0;
+    margin-left: 12px;
   }
 }
 
 .infoCardImageContainer {
-  &--home__deals {
+  &--home__collections {
     width: auto;
     display: flex;
     align-items: center;
@@ -133,8 +108,35 @@
   }
 }
 
+.infoCardImage {
+  &--home__collections {
+    display: block;
+  }
+}
+
+.infoCardCallActionContainer {
+  &--home__collections {
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px 15px 22px;
+  }
+}
+
+.infoCardCallActionText {
+  &--home__collections {
+    @include text($font-size-sm, $low-pure, $semi-bold);
+    line-height: 21px;
+    margin: 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
 .infoCardHeadline {
-  &--home__deals {
+  &--home__collections {
     @include text($font-size-sm, $color-c-3, $bold);
     line-height: 1.0625rem;
     margin: 0;
@@ -142,7 +144,7 @@
 }
 
 .infoCardSubhead {
-  &--home__deals {
+  &--home__collections {
     @include text($font-size-sm, $text-dark-400, $regular);
     line-height: 1.0625rem;
     margin: 0;
@@ -150,13 +152,13 @@
 }
 
 .container {
-  &--home__deals {
+  &--home__collections {
     width: 100%;
   }
 }
 
 .heading {
-  &--home__deals {
+  &--home__collections {
     @include text($font-size-md, $text-pure-500, $bold);
     line-height: 1.1875rem;
     padding-bottom: 0.5rem;
@@ -165,7 +167,7 @@
 }
 
 .paragraph {
-  &--home__deals {
+  &--home__collections {
     @include text($font-size-sm, $color-c-3, $bold);
     line-height: 1.0625rem;
     margin: 0;
