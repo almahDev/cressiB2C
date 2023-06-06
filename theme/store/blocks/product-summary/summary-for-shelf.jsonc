@@ -15,9 +15,6 @@
     "title": "Imagem e Tags - Disposição de elementos",
     "children": [
       "product-summary-image#shelf",
-      "flex-layout.row#wishlist-shelf",
-      "flex-layout.row#flags-wrapper",
-      "experimental__visibility-layout#summary-spec-badges",
       "flex-layout.row#highlights-wrapper"
     ],
     "props": {
@@ -28,68 +25,20 @@
   "disposition-layout#summary-shelf": {
     "title": "Sumário do produto - Disposição de elementos",
     "children": [
-      "flex-layout.row#summary-brand",
       "flex-layout.row#product-summary-name",
-      "flex-layout.row#summary-sku-name",
-      "flex-layout.row#productRating",
-      "flex-layout.row#product__sku-selector",
-      "flex-layout.row#summary-shelf-price-savings",
-      "flex-layout.row#installments-summary",
-      "condition-layout.product#availability-summary",
-      "flex-layout.row#summary-description",
-      "flex-layout.row#summary-attachments-list"
+      "flex-layout.row#summary-shelf-price-savings"
     ],
     "props": {
       "disposition": [
         {
-          "__editorItemTitle": "Marca do produto",
-          "order": 1,
-          "show": false
-        },
-        {
           "__editorItemTitle": "Nome do produto",
-          "order": 2,
+          "order": 1,
           "show": true
-        },
-        {
-          "__editorItemTitle": "Nome do SKU",
-          "order": 3,
-          "show": false
-        },
-        {
-          "__editorItemTitle": "Classificação",
-          "order": 4,
-          "show": true
-        },
-        {
-          "__editorItemTitle": "Seletor de SKU",
-          "order": 5,
-          "show": false
         },
         {
           "__editorItemTitle": "Preços e Desconto",
-          "order": 6,
+          "order": 2,
           "show": true
-        },
-        {
-          "__editorItemTitle": "Parcelamento",
-          "order": 7,
-          "show": true
-        },
-        {
-          "__editorItemTitle": "Disponibilidade - Quantidade e Botão de Compra",
-          "order": 8,
-          "show": true
-        },
-        {
-          "__editorItemTitle": "Descrição",
-          "order": 9,
-          "show": false
-        },
-        {
-          "__editorItemTitle": "Anexos",
-          "order": 10,
-          "show": false
         }
       ]
     }

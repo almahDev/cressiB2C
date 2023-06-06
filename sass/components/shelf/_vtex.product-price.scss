@@ -1,5 +1,8 @@
 .listPrice {
-  @include text($font-size-sm, $text-color-1-300, $regular);
+  @include text($font-size-xs, $low-dark, $normal);
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 
   @include tablet {
     font-size: $font-size-xs;
@@ -9,7 +12,10 @@
 }
 
 .sellingPrice {
-  @include text($font-size-lg, $text-color-1-500, $regular);
+  @include text($font-size-sm, $low-pure, $normal);
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 
   @include tablet {
     font-size: $font-size-md;
@@ -19,41 +25,43 @@
 }
 
 .installments {
-  @include text($font-size-lg, $text-color-1-500, $regular);
+  @include text($font-size-sm, $low-pure, $normal);
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: none;
   text-align: left;
-  line-height: 1.3125rem;
 
   &--summary {
     display: block;
-    min-height: 21px;
   }
 
   @include tablet {
-    font-size: $font-size-md;
+    font-size: $font-size-xs;
   }
 }
 
 .installmentsNumber {
-  @include text($font-size-lg, $text-color-1-500, $bold);
+  @include text($font-size-sm, $primary-pure-500, $bold);
 
   @include tablet {
-    font-size: $font-size-md;
+    font-size: $font-size-xs;
   }
 }
 
 .installments-times {
-  @include text($font-size-lg, $text-color-1-500, $bold);
+  @include text($font-size-sm, $primary-pure-500, $bold);
+  text-transform: none;
 
   @include tablet {
-    font-size: $font-size-md;
+    font-size: $font-size-xs;
   }
 }
 
 .installmentValue {
-  @include text($font-size-lg, $text-color-1-500, $bold);
+  @include text($font-size-sm, $low-pure, $normal);
 
   @include tablet {
-    font-size: $font-size-md;
+    font-size: $font-size-xs;
   }
 }
 

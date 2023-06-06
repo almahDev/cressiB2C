@@ -58,13 +58,13 @@
 
 .container {
   background: $white;
-  border-radius: 0.25rem;
+  border-radius: 0;
   padding: 0;
   margin: 7.5px;
-  transition: all 0.2s;
+  transition: all 0.3s ease-in-out;
   overflow: hidden;
   position: relative;
-  border: 1px solid $high-light;
+  border: none;
   margin-bottom: 0;
 
   @include desktop {
@@ -74,7 +74,8 @@
     &:hover,
     &:active,
     &:focus {
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease-in-out;
+      background: $color-c-5;
 
       .mainImageHovered {
         opacity: 0;
@@ -109,23 +110,21 @@
   }
 
   .nameContainer {
-    padding: 0;
+    padding: 16px 12px 0;
     margin: 0;
     justify-content: flex-start;
   }
 
   .brandName {
-    @include text($font-size-md, $text-color-1-500, $regular);
-    line-height: 1.5rem;
-    text-align: start;
+    @include text($font-size-md, $black, $semi-bold);
+    line-height: 20px;
+    text-align: left;
     overflow: hidden;
     width: 100%;
     display: block;
     margin: 0;
-
-    @media screen and (min-width: $screen-lp) {
-      min-height: 4.5rem;
-    }
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 
     @include tablet {
       font-size: $font-size-xs;
@@ -147,6 +146,10 @@
     display: block;
     width: 100%;
     height: 100%;
+  }
+
+  .imageStackContainer {
+    padding: 6px 6px 0;
   }
 
   .image {

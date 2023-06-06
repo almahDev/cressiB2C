@@ -1,18 +1,25 @@
 {
   "flex-layout.row#highlights-wrapper": {
     "title": "Destaques",
+    "children": ["flex-layout.col#highlights-wrapper"],
+    "props": {
+      "blockClass": ["highlights-stack-wrapper"],
+      "colJustify": "around",
+      "horizontalAlign": "left",
+      "fullWidth": true,
+      "experimentalHideEmptyCols": true
+    }
+  },
+  "flex-layout.col#highlights-wrapper": {
     "children": [
+      "product-price-savings#summaryPercentage-shelf--flag",
       "vtex.product-highlights@2.x:product-highlights#promotion",
       "vtex.product-highlights@2.x:product-highlights#collection",
       "vtex.product-highlights@2.x:product-highlights#teaser"
     ],
     "props": {
       "blockClass": ["highlights-stack-wrapper"],
-      "colJustify": "around",
-      "colSizing": "auto",
-      "horizontalAlign": "center",
-      "fullWidth": true,
-      "experimentalHideEmptyCols": true
+      "horizontalAlign": "left"
     }
   },
   "vtex.product-highlights@2.x:product-highlights#promotion": {

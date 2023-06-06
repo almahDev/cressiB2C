@@ -22,7 +22,6 @@
     "props": {
       "blockClass": "product__image-tags",
       "fullWidth": true,
-      "colSizing": "auto",
       "horizontalAlign": "center",
       "preventVerticalStretch": true
     }
@@ -97,11 +96,14 @@
     "title": "Imagem - Sumário do produto",
     "props": {
       "showBadge": false,
-      "blockClass": "shelf__image",
-      "hoverImage": {
-        "criteria": "index",
-        "index": 1
-      }
+      // "aspectRatio": "1:1",
+      "width": 303,
+      "height": 313,
+      "blockClass": "shelf__image"
+      // "hoverImage": {
+      //   "criteria": "index",
+      //   "index": 1
+      // }
     }
   },
   "flex-layout.row#flags-wrapper": {
@@ -162,14 +164,18 @@
     "props": { "blockClass": "shelf-summary-price-wrapper" }
   },
   "flex-layout.col#summary-shelf-price-savings": {
-    "props": { "blockClass": "shelf-summary-price-wrapper" },
-    "children": ["flex-layout.row#price-summary"]
+    "props": {
+      "blockClass": "shelf-summary-price-wrapper",
+      "horizontalAlign": "left"
+    },
+    "children": ["product-list-price#summary", "flex-layout.row#price-summary"]
   },
   "flex-layout.row#price-summary": {
-    "title": "Preço e Desconto",
+    "title": "Preço Por e Parcelas",
     "children": ["flex-layout.col#selling-price-savings"],
     "props": {
       "blockClass": "shelf-summary-price",
+      "colJustify": "left",
       "horizontalAlign": "left"
     }
   },
@@ -198,9 +204,13 @@
   },
   "flex-layout.col#selling-price-savings": {
     "props": {
-      "blockClass": "shelf__price-and-savings--col"
+      "blockClass": "shelf__price-and-savings--col",
+      "horizontalAlign": "left"
     },
-    "children": ["flex-layout.row#selling-price-savings"]
+    "children": [
+      "product-selling-price#summary",
+      "product-installments#summary"
+    ]
   },
   "flex-layout.row#selling-price-savings": {
     "title": "Preços e Descontos",
@@ -242,12 +252,13 @@
   "product-list-price#summary": {
     "props": {
       "blockClass": "summary",
-      "message": "de: {listPriceValue}"
+      "message": "{listPriceValue}"
     }
   },
   "product-installments#summary": {
     "props": {
-      "message": "ou em {installmentsNumber}x de {installmentValue}",
+      "markers": ["times"],
+      "message": "Ou em <times>{installmentsNumber}x</times> de {installmentValue}",
       "blockClass": ["summary", "al-summary-price"]
     }
   },
@@ -255,7 +266,7 @@
   "product-selling-price#summary": {
     "props": {
       "blockClass": "summary",
-      "message": "por: {sellingPriceValue}"
+      "message": "{sellingPriceValue}"
     }
   },
   "product-price-savings#summary": {
