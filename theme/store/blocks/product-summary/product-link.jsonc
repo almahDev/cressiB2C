@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#product-summary-link": {
+    "children": ["link.product#product-summary-link"],
+    "props": {
+      "blockClass": "summary__link",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    }
+  },
+  "link.product#product-summary-link": {
+    "title": "Link para PDP - Ver Mais",
+    "props": {
+      "blockClass": "summary__link",
+      "label": "Ver Mais",
+      "href": "/{slug}/p"
+    }
+  }
+}

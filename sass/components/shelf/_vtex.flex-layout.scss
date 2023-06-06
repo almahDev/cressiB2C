@@ -26,6 +26,15 @@
   &--product__qtty-add--desktop {
     background: transparent;
   }
+
+  &--summary__link {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .flexRowContent {
@@ -129,6 +138,13 @@
     @include tablet {
       padding: 0;
     }
+  }
+
+  &--summary__link {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   // &--shelf-summary-price {

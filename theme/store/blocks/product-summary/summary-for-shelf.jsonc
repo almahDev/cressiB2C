@@ -15,7 +15,8 @@
     "title": "Imagem e Tags - Disposição de elementos",
     "children": [
       "product-summary-image#shelf",
-      "flex-layout.row#highlights-wrapper"
+      "flex-layout.row#highlights-wrapper",
+      "flex-layout.row#product-summary-link"
     ],
     "props": {
       "blockClass": ["shelf__price", "prodsum-stack-shelf"]

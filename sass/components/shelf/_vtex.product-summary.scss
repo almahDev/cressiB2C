@@ -87,9 +87,14 @@
         visibility: visible;
       }
 
-      :global(
-          .vtex-flex-layout-0-x-flexRowContent--product__qtty-add--desktop
-        ) {
+      // :global(
+      //     .vtex-flex-layout-0-x-flexRowContent--product__qtty-add--desktop
+      //   ) {
+      //   opacity: 1;
+      //   visibility: visible;
+      // }
+
+      :global(.vtex-flex-layout-0-x-flexRow--summary__link) {
         opacity: 1;
         visibility: visible;
       }

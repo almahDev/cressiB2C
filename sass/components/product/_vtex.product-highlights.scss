@@ -3,56 +3,60 @@
 }
 
 .productHighlightText {
-  font-family: $main-font !important;
-  @include text($font-size-xs, $white, $semi-bold);
-  line-height: 0.875rem;
+  @include text($font-size-sm, $white, $normal, $secondary-font);
+  line-height: 16px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   width: fit-content !important;
-  flex-wrap: nowrap;
   line-break: strict;
   align-items: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: $font-size-xs;
+  }
 }
 
 .productHighlightWrapper {
-  background-color: $color-2 !important;
-  border-radius: 0.125rem;
-  padding: 0.25rem;
-  margin: 0.156rem;
-  width: 5.75rem;
-  height: 1.5rem;
+  background: $color-c-6 !important;
+  padding: 6px 18px;
+  margin: 0;
+  width: fit-content !important;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0;
 
-  &:last-child {
-    &:last-child {
-      background-color: $color-5;
-    }
+  @include tablet {
+    padding: 0.125rem 0.2813rem;
   }
 
-  &--collection {
-    margin-right: 0.188rem !important;
+  &[data-highlight-name='Promoção'] {
+    background: $color-c-6 !important;
+  }
 
-    @include tablet {
-      margin-right: 0.313rem !important;
-      margin-left: 0.188rem !important;
-    }
+  &[data-highlight-name='50% Off'] {
+    background: $color-1-50 !important;
+  }
+
+  &[data-highlight-name='Black Friday'] {
+    background: $color-c-6 !important;
+  }
+
+  &[data-highlight-name='Lançamento'] {
+    background: $color-1-50 !important;
   }
 }
 
 .productHighlightText {
 }
-
 .productHighlightWrapper {
 }
 
 [data-highlight-name=''] {
 }
-
 [data-highlight-id=''] {
 }
-
 [data-highlight-type=''] {
 }

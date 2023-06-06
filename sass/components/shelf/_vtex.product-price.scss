@@ -66,12 +66,15 @@
 }
 
 .savings {
-  @include text($font-size-sm, $white, $bold);
-  display: block;
-  background: $high-light;
-  border-radius: 0.125rem;
-  padding: 0.3125rem 0.375rem;
+  @include text($font-size-sm, $white, $regular, $secondary-font);
+  background: $color-c-6;
+  line-height: 16px;
+  border-radius: 0;
+  padding: 6px 18px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &--summary-percentage-shelf {
     margin-bottom: 0.125rem;
