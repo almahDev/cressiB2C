@@ -167,6 +167,10 @@
   &--shelf-summary-price-wrapper {
     align-items: flex-start;
     padding: 10px 10px 14px;
+
+    @include tablet {
+      padding: 9px 2px 13px;
+    }
   }
 
   &--shelf__price-and-savings--col {

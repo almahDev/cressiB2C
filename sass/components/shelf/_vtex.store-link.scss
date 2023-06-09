@@ -1,0 +1,27 @@
+.link {
+  &--summary__link {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: $primary-pure-500;
+    border-radius: 6px;
+    padding: 13px 26px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $primary-dark-700;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.label {
+  &--summary__link {
+    @include text($font-size-md, $white, $bold);
+    line-height: 16px;
+  }
+}

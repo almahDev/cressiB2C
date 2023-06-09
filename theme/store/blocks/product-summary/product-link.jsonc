@@ -3,6 +3,7 @@
     "children": ["link.product#product-summary-link"],
     "props": {
       "blockClass": "summary__link",
+      "colSizing": "auto",
       "horizontalAlign": "center",
       "fullWidth": true
     }
