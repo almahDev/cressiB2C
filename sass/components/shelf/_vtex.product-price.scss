@@ -18,9 +18,9 @@
   text-transform: uppercase;
 
   @include tablet {
-    font-size: $font-size-md;
+    font-size: $font-size-xxs;
+    line-height: 17px;
     display: block;
-    line-height: 1.5rem;
   }
 }
 
@@ -36,7 +36,8 @@
   }
 
   @include tablet {
-    font-size: $font-size-xs;
+    font-size: $font-size-xxs;
+    line-height: 17px;
   }
 }
 
@@ -44,7 +45,7 @@
   @include text($font-size-sm, $primary-pure-500, $bold);
 
   @include tablet {
-    font-size: $font-size-xs;
+    font-size: $font-size-xxs;
   }
 }
 
@@ -53,7 +54,7 @@
   text-transform: none;
 
   @include tablet {
-    font-size: $font-size-xs;
+    font-size: $font-size-xxs;
   }
 }
 
@@ -61,7 +62,7 @@
   @include text($font-size-sm, $low-pure, $normal);
 
   @include tablet {
-    font-size: $font-size-xs;
+    font-size: $font-size-xxs;
   }
 }
 

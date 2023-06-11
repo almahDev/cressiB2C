@@ -49,7 +49,7 @@
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": true,
       "showPaginationDots": "always",
       "blockClass": "shelf"
     }
