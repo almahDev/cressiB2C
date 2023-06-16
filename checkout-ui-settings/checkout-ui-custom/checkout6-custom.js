@@ -4,10 +4,10 @@ try {
       var CheckoutCustom = {
         init: function () {
           CheckoutCustom.appendFont()
-          CheckoutCustom.appendHeader()
-          CheckoutCustom.appendFooter()
+          // CheckoutCustom.appendHeader()
+          // CheckoutCustom.appendFooter()
           CheckoutCustom.vCustomCheckout()
-          CheckoutCustom.showShippingStep()
+          // CheckoutCustom.showShippingStep()
           CheckoutCustom.i18n()
           CheckoutCustom.addStepActiveClass()
         },
