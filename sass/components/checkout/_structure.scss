@@ -21,11 +21,6 @@ body {
   @extend %container;
 }
 
-.checkout-steps_items {
-  @include tablet {
-    display: none;
-  }
-}
 button#go-to-shipping,
 button#go-to-payment,
 button#payment-data-submit {
@@ -707,10 +702,6 @@ div.cart-select-gift-placeholder:empty {
 
   body.v-custom-step-payment::before {
     width: 92%;
-  }
-
-  .checkout-steps {
-    display: none !important;
   }
 
   .body-cart-vertical .cart-template.full-cart.active {
