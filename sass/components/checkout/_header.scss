@@ -8,13 +8,15 @@
   }
 
   .buy-more-link {
-    font-size: $font-size-xs !important;
+    font-size: $font-size-xs + 2 !important;
     line-height: 21px !important;
     justify-content: center;
     font-weight: $bold;
+    color: #000 !important;
 
     &::before {
       margin-right: 1rem;
+      background-color: #000 !important;
     }
   }
 
@@ -131,7 +133,7 @@
 
   @include tablet {
     padding: 0 !important;
-    margin-bottom: 2.5rem !important;
+    margin-bottom: 4rem !important;
 
     .container {
       justify-content: center;
@@ -140,13 +142,10 @@
 
     .header-link {
       padding-top: 0;
+      top: calc(100% + 33px) !important;
 
       a {
-        font-size: 0;
-      }
-
-      .buy-more-link {
-        display: none;
+        max-width: unset !important;
       }
     }
   }
