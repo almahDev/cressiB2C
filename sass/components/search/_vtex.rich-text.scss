@@ -19,6 +19,25 @@
       color: $text-color-2-500;
     }
   }
+
+  .paragraph {
+    &--al-not-found-page__title {
+      letter-spacing: 0.4em;
+      margin-top: 78px;
+    }
+
+    &--al-not-found-page__text {
+      margin-bottom: 220px;
+    }
+  }
+
+  .strong {
+    &--al-not-found-page__title {
+      color: #40d6c6;
+      font-weight: 900;
+      font-size: 17px;
+    }
+  }
 }
 
 .paragraph--all-search__seo {
