@@ -3,6 +3,7 @@
     "title": "Coleções",
     "children": ["flex-layout.col#home-collections"],
     "props": {
+      "fullWidth": true,
       "blockClass": "home__collections"
     }
   },

@@ -4,6 +4,7 @@
     "children": ["slider-layout#slider-full-home"],
     "props": {
       "height": "100%",
+      "preload": true,
       "mediaList": [
         {
           "image": "assets/img/home/home-fullbanner-desktop.png",

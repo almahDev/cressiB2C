@@ -16,20 +16,20 @@
     }
   },
   "rich-text#categories-banner": {
+    "title": "Categorias - Título",
     "props": {
       "text": "## Produtos em Destaque",
       "blockClass": "home__title"
-    },
-    "title": "Categorias - Título"
+    }
   },
   "flex-layout.row#categories-banner": {
-    "title": "Categorias - Listagem",
     "children": ["list-context.info-card-list#categories"],
     "props": {
       "blockClass": ["home__categories-banner--col-wrapper"]
     }
   },
   "list-context.info-card-list#categories": {
+    "title": "Categorias - Listagem",
     "children": ["slider-layout#categories-info-cards"],
     "props": {
       "infoCards": [

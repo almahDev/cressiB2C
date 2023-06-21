@@ -1,0 +1,20 @@
+.flexRow {
+  &--home__projects {
+  }
+}
+
+.flexRowContent {
+  &--home__projects {
+    @extend %container-large;
+  }
+}
+
+.flexCol {
+  &--home__projects {
+  }
+}
+
+.flexColChild {
+  &--home__projects {
+  }
+}

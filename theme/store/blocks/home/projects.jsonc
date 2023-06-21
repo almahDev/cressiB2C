@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#home-projects": {
+    "title": "Coleções",
+    "children": [
+      "info-card#home-projects",
+      "list-context.image-list#home-projects"
+    ],
+    "props": {
+      "colGap": 4,
+      "fullWidth": true,
+      "blockClass": "home__projects"
+    }
+  },
+  "info-card#home-projects": {
+    "title": "Bloco de Informações",
+    "props": {
+      "id": "info-card-home-projects",
+      "isFullModeStyle": false,
+      "headline": "## **FAÇA SEU** PROJETO MOOBLE",
+      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "callToActionText": "Ver Mais",
+      "callToActionUrl": "/",
+      "callToActionMode": "button",
+      "blockClass": "home__projects",
+      "textAlignment": "left",
+      "textMode": "rich-text",
+      "width": "40%"
+    }
+  },
+  "list-context.image-list#home-projects": {
+    "title": "Lista de Imagens",
+    "children": ["slider-layout#home-projects"],
+    "props": {
+      "height": "100%",
+      "preload": false,
+      "images": [
+        {
+          "image": "assets/img/home/home-projects-1.png"
+        },
+        {
+          "image": "assets/img/home/home-projects-2.png"
+        },
+        {
+          "image": "https://fakeimg.pl/424x488/"
+        },
+        {
+          "image": "https://fakeimg.pl/424x488/"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-projects": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "blockClass": "home__projects",
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "centerMode": "disabled",
+      "centerModeSlidesGap": 8
+    }
+  }
+}
