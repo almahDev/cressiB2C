@@ -1,6 +1,6 @@
 {
   "store.home": {
-    "title": "al | Home",
+    "title": "Home",
     "blocks": ["disposition-layout#home"],
     "children": [
       // "experimental__visibility-layout#smartnewsletter"
@@ -9,7 +9,7 @@
   },
 
   "disposition-layout#home": {
-    "title": "al | Home - Disposição do conteúdo",
+    "title": "Home - Disposição do conteúdo",
     "children": [
       "list-context.media-list#slider-full-home",
       "list-context.info-card-list#home-deals",
@@ -72,7 +72,7 @@
     }
   },
   "info-card#home": {
-    "title": "al | Seção Lançamento",
+    "title": "Seção Lançamento",
     "props": {
       "id": "home__infoCard",
       "isFullModeStyle": false,

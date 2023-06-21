@@ -1,6 +1,6 @@
 {
   "flex-layout.row#shelf-home-2": {
-    "title": "al | Vitrine 2",
+    "title": "Vitrine 2",
     "children": ["flex-layout.col#shelf-home-2"],
     "props": {
       "blockClass": "shelf"
@@ -15,7 +15,7 @@
   },
 
   "rich-text#shelf-home-2": {
-    "title": "al | Vitrine 1 - Título",
+    "title": "Vitrine 1 - Título",
     "props": {
       "text": "## Acabou de Chegar",
       "blockClass": "home__title"
@@ -23,7 +23,7 @@
   },
 
   "flex-layout.row#shelf-home-2-slider": {
-    "title": "al | Vitrine 1 - Produtos",
+    "title": "Vitrine 1 - Produtos",
     "children": ["list-context.product-list#shelf-home-2-slider"],
     "props": {
       "blockClass": "shelf--col"

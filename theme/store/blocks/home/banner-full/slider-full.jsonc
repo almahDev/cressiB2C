@@ -1,6 +1,6 @@
 {
   "list-context.media-list#slider-full-home": {
-    "title": "al | Banner Home",
+    "title": "Banner Home",
     "children": ["slider-layout#slider-full-home"],
     "props": {
       "height": "100%",

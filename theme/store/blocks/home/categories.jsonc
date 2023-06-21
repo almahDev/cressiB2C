@@ -1,6 +1,6 @@
 {
   "flex-layout.row#home-categories": {
-    "title": "al | Categorias",
+    "title": "Categorias",
     "children": ["flex-layout.col#home-categories"],
     "props": {
       "blockClass": "home__categories"
@@ -16,7 +16,7 @@
     }
   },
   "rich-text#home-categories-title": {
-    "title": "al | Categorias - Título",
+    "title": "Categorias - Título",
     "props": {
       "text": "## **Nossas** Categorias",
       "blockClass": "home__title"

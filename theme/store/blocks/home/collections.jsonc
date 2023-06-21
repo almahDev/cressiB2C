@@ -1,6 +1,6 @@
 {
   "flex-layout.row#home-collections": {
-    "title": "al | Coleções",
+    "title": "Coleções",
     "children": ["flex-layout.col#home-collections"],
     "props": {
       "blockClass": "home__collections"
@@ -16,7 +16,7 @@
     }
   },
   "rich-text#home-collections-title": {
-    "title": "al | Coleções - Título",
+    "title": "Coleções - Título",
     "props": {
       "text": "## **Nossas** Coleções",
       "blockClass": "home__title"

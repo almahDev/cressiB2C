@@ -1,6 +1,6 @@
 {
   "flex-layout.row#slider-brand-home": {
-    "title": "al | Marcas",
+    "title": "Marcas",
     "children": ["list-context.media-list#slider-brand-home"],
     "props": {
       "blockClass": "home__slider"

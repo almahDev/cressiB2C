@@ -1,6 +1,6 @@
 {
   "flex-layout.row#banner-duo-main": {
-    "title": "al | Mosaico 3 - Banners",
+    "title": "Mosaico 3 - Banners",
     "children": ["image#banner-duo-main-1", "image#banner-duo-main-2"],
     "props": {
       "blockClass": "home__banner-duo-main"
@@ -8,7 +8,7 @@
   },
 
   "image#banner-duo-main-1": {
-    "title": "al | Mosaico 3 - Banner 1",
+    "title": "Mosaico 3 - Banner 1",
     "props": {
       "src": "https://fakeimg.pl/600x300/",
       "link": "/",
@@ -16,7 +16,7 @@
     }
   },
   "image#banner-duo-main-2": {
-    "title": "al | Mosaico 3 - Banner 2",
+    "title": "Mosaico 3 - Banner 2",
     "props": {
       "src": "https://fakeimg.pl/600x300/",
       "link": "/",

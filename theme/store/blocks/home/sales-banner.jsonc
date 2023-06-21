@@ -1,6 +1,6 @@
 {
   "flex-layout.row#sales-banner-main": {
-    "title": "al | Mosaico 1 - Banners",
+    "title": "Mosaico 1 - Banners",
     "children": [
       "image#sales-banner-1",
       "image#sales-banner-2",
@@ -12,7 +12,7 @@
   },
 
   "image#sales-banner-1": {
-    "title": "al | Mosaico 1 - Banner 1",
+    "title": "Mosaico 1 - Banner 1",
     "props": {
       "src": "https://fakeimg.pl/600x300/",
       "link": "/",
@@ -20,7 +20,7 @@
     }
   },
   "image#sales-banner-2": {
-    "title": "al | Mosaico 1 - Banner 2",
+    "title": "Mosaico 1 - Banner 2",
     "props": {
       "src": "https://fakeimg.pl/600x300/",
       "link": "/",
@@ -28,7 +28,7 @@
     }
   },
   "image#sales-banner-3": {
-    "title": "al | Mosaico 1 - Banner 3",
+    "title": "Mosaico 1 - Banner 3",
     "props": {
       "src": "https://fakeimg.pl/600x300/",
       "link": "/",

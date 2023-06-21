@@ -1,6 +1,6 @@
 {
   "flex-layout.row#categories-banner-main": {
-    "title": "al | Categorias",
+    "title": "Categorias",
     "children": ["flex-layout.col#categories-banner-main"],
     "props": {
       "blockClass": "home__categories-banner"
@@ -20,10 +20,10 @@
       "text": "## Produtos em Destaque",
       "blockClass": "home__title"
     },
-    "title": "al | Categorias - Título"
+    "title": "Categorias - Título"
   },
   "flex-layout.row#categories-banner": {
-    "title": "al | Categorias - Listagem",
+    "title": "Categorias - Listagem",
     "children": ["list-context.info-card-list#categories"],
     "props": {
       "blockClass": ["home__categories-banner--col-wrapper"]

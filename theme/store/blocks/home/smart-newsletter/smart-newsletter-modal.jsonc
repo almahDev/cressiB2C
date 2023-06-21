@@ -123,7 +123,7 @@
     }
   },
   "rich-text#al-modal-newsletter-sucess": {
-    "title": "al | Modal Smartnewsletter - Sucess",
+    "title": "Modal Smartnewsletter - Sucess",
     "props": {
       "blockClass": ["al-modal-newsletter-text"],
       "text": "Em breve, você receberá em seu e-mail \n nossas ofertas e descontos exclusivos."
