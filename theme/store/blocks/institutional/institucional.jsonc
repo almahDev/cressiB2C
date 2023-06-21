@@ -1,16 +1,19 @@
 {
   "store.custom#institucional": {
-    "blocks": ["flex-layout.row#institucional"]
+    "blocks": [
+      "flex-layout.row#institucional",
+      "flex-layout.row#institucional-option"
+    ]
   },
   "flex-layout.row#institucional": {
     "props": {
       "blockClass": "al-institucional"
     },
     "children": [
-      "rich-text#title-institucional",
-      "rich-text#content-institucional-1",
-      "rich-text#content-institucional-2",
-      "rich-text#content-institucional-3"
+      "rich-text#title-institucional"
+      // "rich-text#content-institucional-1",
+      // "rich-text#content-institucional-2",
+      // "rich-text#content-institucional-3"
     ]
   },
 
@@ -19,30 +22,239 @@
       "blockClass": "al-institucional__title",
       "textAlignment": "START",
       "textPosition": "START",
-      "text": "# GARANTIA E TROCA"
+      "text": "# INSTITUCIONAL"
     },
     "title": "Título institucional"
   },
+  "flex-layout.row#institucional-option": {
+    "title": "Blocos de informações",
+    "children": [
+      "disclosure-layout#simple-1",
+      "disclosure-layout#simple-2",
+      "disclosure-layout#simple-3",
+      "disclosure-layout#simple-4",
+      "disclosure-layout#simple-5",
+      "disclosure-layout#simple-6",
+      "disclosure-layout#simple-7",
+      "disclosure-layout#simple-8",
+      "disclosure-layout#simple-9",
+      "disclosure-layout#simple-10"
+    ],
+    "props": {
+      "blockClass": "al-institucional__information"
+    }
+  },
 
-  "rich-text#content-institucional-1": {
-    "props": {
-      "blockClass": "al-institucional__content",
-      "text": "Solicitar a troca ou devolução de seu produto é simples e rápido. Mesmo com toda dedicação Mondial e nossa oferta de produtos modernos e de qualidade, pode ocorrer que a mercadoria adquirida não atenda às suas expectativas por algum motivo. Para garantir a satisfação e manter a transparência e respeito com nossos clientes, criamos nossa Política de Troca e Devolução, tendo como base o Código de Defesa do Consumidor. \n\n Antes de efetuar os passos a seguir, sempre comunique a troca ou devolução ao nosso SAC. As ocorrências sem essa comunicação e/ ou fora dos termos estipulados abaixo serão reenviados sem consulta prévia. \n\n - A embalagem esteja aberta ou avariada. \n\n - O produto esteja avariado. Sugerimos que desembale a mercadoria no momento do recebimento e confira o estado geral do produto; verifique a existência de peças, acessórios, kits pertencentes ao produto, entre outros; \n\n - O produto estiver em desacordo comercial: preço diferente do acordado, produto diferente do comprado, voltagem errada, entre outros. \n\n\n Nos casos acima, você deverá recusar o produto no ato da entrega e preencher o verso da Nota Fiscal mencionando o motivo da recusa. \n\n Caso você tenha recebido o produto mesmo assim, por favor, entre em contato com o nosso SAC dentro de até 72 horas a partir do recebimento para comunicar o ocorrido. \n\n\n\n Para que você possa solicitar a devolução e/ou troca do pedido, é imprescindível que o produto: \n\n - Esteja acompanhado da Nota Fiscal de Venda; \n\n - Esteja na embalagem original e sem uso; \n\n - Não possua indícios de estrago por mau uso; \n\n - Esteja acompanhado do manual e com todos os acessórios (cabos, maletas, baterias, peças e acessórios);"
-    },
-    "title": "Conteúdo institucional - Bloco 1"
+  "disclosure-layout#simple-1": {
+    "children": ["disclosure-trigger#simple-1", "disclosure-content#simple-1"]
   },
-  "rich-text#content-institucional-2": {
-    "props": {
-      "blockClass": "al-institucional__content",
-      "text": "## Desistência e/ou Arrependimento \n Se você recebeu o produto [NOME CLIENTE] e não ficou satisfeito ou se arrependeu, faça sua solicitação de devolução no nosso Sac. Mas é importante saber que você tem o prazo de 07(sete) dias corridos a contar da data de recebimento da mercadoria para isso. Você deverá entrar em contato com o SAC 0000 0000 000 de Segunda a Sexta das 8h00 às 18h00 (exceto em feriados nacionais) ou através do e-mail [email@lojacliente.com.br]. \n\n A central poderá te orientar como nos enviar esse produto de volta e os procedimentos do estorno ou crédito na loja virtual, que podem variar de acordo com a forma de pagamento escolhida. Todo caso de restituição do valor pago, seja por troca indisponível ou desistência dentro de 7 (sete dias), acontecerá de acordo com a forma de pagamento escolhida no ato da compra. Para depósitos, o estorno acontecerá no prazo de até 10 dias úteis. Para compras no cartão de crédito a administradora de cartão de crédito será acionada no prazo de 2 (dois) dias úteis, para que ela comunique a instituição financeira responsável pelo crédito (estorno) que poderá ocorrer em até 2 (duas) faturas subsequentes, conforme a data de fechamento da fatura de cartão de crédito."
-    },
-    "title": "Conteúdo institucional - Bloco 2"
+  "disclosure-trigger#simple-1": {
+    "children": ["rich-text#question-1"]
   },
-  "rich-text#content-institucional-3": {
+  "disclosure-content#simple-1": {
+    "children": ["rich-text#answer-1"]
+  },
+  "rich-text#question-1": {
     "props": {
-      "blockClass": "al-institucional__content",
-      "text": "## Troca \n Se você recebeu seu produto com alguma avaria e deseja trocá-lo, faça sua solicitação de devolução no nosso Sac. Mas é importante saber que você tem o prazo de 07(sete) dias corridos a contar da data de recebimento da mercadoria para isso. Você deverá entrar em contato com o SAC 0800 5248 145 de Segunda a Sexta das 8h00 às 18h00 (exceto em feriados nacionais) ou através do e- mail ecommerce@mondialline.com.br. \n\n A troca será efetivada somente após o recebimento da mercadoria e após análise do produto pela equipe técnica. O prazo para análise é de até 05 (cinco) dias úteis contados a partir do recebimento do produto. Após análise, você será informado via e- mail sobre o envio de seu novo pedido. Somente a primeira troca tem o frete por conta da Mondial. \n\n Caso o produto a ser trocado não esteja mais disponível no estoque, o Cliente poderá optar entre: \n\n a) Troca por outro produto disponível, do mesmo valor do produto adquirido, incluindo o frete; \n\n b) Recebimento de crédito do mesmo valor da compra, em forma de voucher (Cupom desconto) para utilizar na loja virtual; \n\n c) Restituição do valor do produto, incluindo o valor pago pelo frete. \n\n Falha técnica \n\n Após o prazo de sete dias, em caso de alguma falha no funcionamento do produto você deverá contatar diretamente a Assistência Técnica autorizada mais próxima. Confira os endereços disponíveis AQUI. Não há prazo determinado para contatar a assistência técnica, mas confira sempre a garantia de seu produto no manual."
-    },
-    "title": "Conteúdo institucional - Bloco 3"
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-1": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-2": {
+    "children": ["disclosure-trigger#simple-2", "disclosure-content#simple-2"]
+  },
+  "disclosure-trigger#simple-2": {
+    "children": ["rich-text#question-2"]
+  },
+  "disclosure-content#simple-2": {
+    "children": ["rich-text#answer-2"]
+  },
+  "rich-text#question-2": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-2": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-3": {
+    "children": ["disclosure-trigger#simple-3", "disclosure-content#simple-3"]
+  },
+  "disclosure-trigger#simple-3": {
+    "children": ["rich-text#question-3"]
+  },
+  "disclosure-content#simple-3": {
+    "children": ["rich-text#answer-3"]
+  },
+  "rich-text#question-3": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-3": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-4": {
+    "children": ["disclosure-trigger#simple-4", "disclosure-content#simple-4"]
+  },
+  "disclosure-trigger#simple-4": {
+    "children": ["rich-text#question-4"]
+  },
+  "disclosure-content#simple-4": {
+    "children": ["rich-text#answer-4"]
+  },
+  "rich-text#question-4": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-4": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-5": {
+    "children": ["disclosure-trigger#simple-5", "disclosure-content#simple-5"]
+  },
+  "disclosure-trigger#simple-5": {
+    "children": ["rich-text#question-5"]
+  },
+  "disclosure-content#simple-5": {
+    "children": ["rich-text#answer-5"]
+  },
+  "rich-text#question-5": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-5": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-6": {
+    "children": ["disclosure-trigger#simple-6", "disclosure-content#simple-6"]
+  },
+  "disclosure-trigger#simple-6": {
+    "children": ["rich-text#question-6"]
+  },
+  "disclosure-content#simple-6": {
+    "children": ["rich-text#answer-6"]
+  },
+  "rich-text#question-6": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-6": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-7": {
+    "children": ["disclosure-trigger#simple-7", "disclosure-content#simple-7"]
+  },
+  "disclosure-trigger#simple-7": {
+    "children": ["rich-text#question-7"]
+  },
+  "disclosure-content#simple-7": {
+    "children": ["rich-text#answer-7"]
+  },
+  "rich-text#question-7": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-7": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-8": {
+    "children": ["disclosure-trigger#simple-8", "disclosure-content#simple-8"]
+  },
+  "disclosure-trigger#simple-8": {
+    "children": ["rich-text#question-8"]
+  },
+  "disclosure-content#simple-8": {
+    "children": ["rich-text#answer-8"]
+  },
+  "rich-text#question-8": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-8": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-9": {
+    "children": ["disclosure-trigger#simple-9", "disclosure-content#simple-9"]
+  },
+  "disclosure-trigger#simple-9": {
+    "children": ["rich-text#question-9"]
+  },
+  "disclosure-content#simple-9": {
+    "children": ["rich-text#answer-9"]
+  },
+  "rich-text#question-9": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-9": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  "disclosure-layout#simple-10": {
+    "children": ["disclosure-trigger#simple-10", "disclosure-content#simple-10"]
+  },
+  "disclosure-trigger#simple-10": {
+    "children": ["rich-text#question-10"]
+  },
+  "disclosure-content#simple-10": {
+    "children": ["rich-text#answer-10"]
+  },
+  "rich-text#question-10": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer-10": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
   }
+
+  // "rich-text#content-institucional-1": {
+  //   "props": {
+  //     "blockClass": "al-institucional__content",
+  //     "text": "Solicitar a troca ou devolução de seu produto é simples e rápido. Mesmo com toda dedicação Mondial e nossa oferta de produtos modernos e de qualidade, pode ocorrer que a mercadoria adquirida não atenda às suas expectativas por algum motivo. Para garantir a satisfação e manter a transparência e respeito com nossos clientes, criamos nossa Política de Troca e Devolução, tendo como base o Código de Defesa do Consumidor. \n\n Antes de efetuar os passos a seguir, sempre comunique a troca ou devolução ao nosso SAC. As ocorrências sem essa comunicação e/ ou fora dos termos estipulados abaixo serão reenviados sem consulta prévia. \n\n - A embalagem esteja aberta ou avariada. \n\n - O produto esteja avariado. Sugerimos que desembale a mercadoria no momento do recebimento e confira o estado geral do produto; verifique a existência de peças, acessórios, kits pertencentes ao produto, entre outros; \n\n - O produto estiver em desacordo comercial: preço diferente do acordado, produto diferente do comprado, voltagem errada, entre outros. \n\n\n Nos casos acima, você deverá recusar o produto no ato da entrega e preencher o verso da Nota Fiscal mencionando o motivo da recusa. \n\n Caso você tenha recebido o produto mesmo assim, por favor, entre em contato com o nosso SAC dentro de até 72 horas a partir do recebimento para comunicar o ocorrido. \n\n\n\n Para que você possa solicitar a devolução e/ou troca do pedido, é imprescindível que o produto: \n\n - Esteja acompanhado da Nota Fiscal de Venda; \n\n - Esteja na embalagem original e sem uso; \n\n - Não possua indícios de estrago por mau uso; \n\n - Esteja acompanhado do manual e com todos os acessórios (cabos, maletas, baterias, peças e acessórios);"
+  //   },
+  //   "title": "Conteúdo institucional - Bloco 1"
+  // },
+  // "rich-text#content-institucional-2": {
+  //   "props": {
+  //     "blockClass": "al-institucional__content",
+  //     "text": "## Desistência e/ou Arrependimento \n Se você recebeu o produto [NOME CLIENTE] e não ficou satisfeito ou se arrependeu, faça sua solicitação de devolução no nosso Sac. Mas é importante saber que você tem o prazo de 07(sete) dias corridos a contar da data de recebimento da mercadoria para isso. Você deverá entrar em contato com o SAC 0000 0000 000 de Segunda a Sexta das 8h00 às 18h00 (exceto em feriados nacionais) ou através do e-mail [email@lojacliente.com.br]. \n\n A central poderá te orientar como nos enviar esse produto de volta e os procedimentos do estorno ou crédito na loja virtual, que podem variar de acordo com a forma de pagamento escolhida. Todo caso de restituição do valor pago, seja por troca indisponível ou desistência dentro de 7 (sete dias), acontecerá de acordo com a forma de pagamento escolhida no ato da compra. Para depósitos, o estorno acontecerá no prazo de até 10 dias úteis. Para compras no cartão de crédito a administradora de cartão de crédito será acionada no prazo de 2 (dois) dias úteis, para que ela comunique a instituição financeira responsável pelo crédito (estorno) que poderá ocorrer em até 2 (duas) faturas subsequentes, conforme a data de fechamento da fatura de cartão de crédito."
+  //   },
+  //   "title": "Conteúdo institucional - Bloco 2"
+  // },
+  // "rich-text#content-institucional-3": {
+  //   "props": {
+  //     "blockClass": "al-institucional__content",
+  //     "text": "## Troca \n Se você recebeu seu produto com alguma avaria e deseja trocá-lo, faça sua solicitação de devolução no nosso Sac. Mas é importante saber que você tem o prazo de 07(sete) dias corridos a contar da data de recebimento da mercadoria para isso. Você deverá entrar em contato com o SAC 0800 5248 145 de Segunda a Sexta das 8h00 às 18h00 (exceto em feriados nacionais) ou através do e- mail ecommerce@mondialline.com.br. \n\n A troca será efetivada somente após o recebimento da mercadoria e após análise do produto pela equipe técnica. O prazo para análise é de até 05 (cinco) dias úteis contados a partir do recebimento do produto. Após análise, você será informado via e- mail sobre o envio de seu novo pedido. Somente a primeira troca tem o frete por conta da Mondial. \n\n Caso o produto a ser trocado não esteja mais disponível no estoque, o Cliente poderá optar entre: \n\n a) Troca por outro produto disponível, do mesmo valor do produto adquirido, incluindo o frete; \n\n b) Recebimento de crédito do mesmo valor da compra, em forma de voucher (Cupom desconto) para utilizar na loja virtual; \n\n c) Restituição do valor do produto, incluindo o valor pago pelo frete. \n\n Falha técnica \n\n Após o prazo de sete dias, em caso de alguma falha no funcionamento do produto você deverá contatar diretamente a Assistência Técnica autorizada mais próxima. Confira os endereços disponíveis AQUI. Não há prazo determinado para contatar a assistência técnica, mas confira sempre a garantia de seu produto no manual."
+  //   },
+  //   "title": "Conteúdo institucional - Bloco 3"
+  // }
 }

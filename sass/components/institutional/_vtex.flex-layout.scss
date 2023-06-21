@@ -13,4 +13,21 @@
       width: 100% !important;
     }
   }
+
+  &--al-institucional__information {
+    flex-direction: column;
+
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      width: 100% !important;
+      flex-direction: column;
+      // border: 1px solid #c9c9c9;
+      // border-bottom: 0;
+      // position: relative;
+
+      &:last-child {
+        border-bottom: 1px solid #c9c9c9;
+        margin-bottom: 200px;
+      }
+    }
+  }
 }

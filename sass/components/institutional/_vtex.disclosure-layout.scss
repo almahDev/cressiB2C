@@ -1,0 +1,20 @@
+.trigger {
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  border-bottom: 0;
+  // transition: 0.2s all ease-in-out;
+
+  &--visible {
+    border: 1px solid #7fe4da;
+    background-color: #7fe4da;
+  }
+  // }
+}
+
+.content {
+  &--visible {
+    border-left: 1px solid #7fe4da;
+    border-right: 1px solid #7fe4da;
+    background-color: #7fe4da;
+  }
+}
