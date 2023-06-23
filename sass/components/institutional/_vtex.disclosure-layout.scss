@@ -2,19 +2,50 @@
   background-color: #fff;
   border: 1px solid #c9c9c9;
   border-bottom: 0;
-  // transition: 0.2s all ease-in-out;
+  height: 88px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    content: url('assets/svg/icon-close-institucional.svg');
+  }
 
   &--visible {
-    border: 1px solid #7fe4da;
-    background-color: #7fe4da;
+    border: 1px solid #d3f8f4;
+    background-color: #d3f8f4;
+
+    &::after {
+      content: url('assets/svg/icon-open-institucional.svg');
+    }
   }
-  // }
 }
 
 .content {
   &--visible {
-    border-left: 1px solid #7fe4da;
-    border-right: 1px solid #7fe4da;
-    background-color: #7fe4da;
+    border-left: 1px solid #d3f8f4;
+    border-right: 1px solid #d3f8f4;
+    background-color: #d3f8f4;
+    padding: 0 1rem;
+    color: #000;
+  }
+}
+
+.trigger,
+.content {
+  position: relative;
+
+  &--visible {
+    &::before {
+      content: '';
+      display: block;
+      background-color: #40d6c6;
+      width: 4px;
+      height: 100.3%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }

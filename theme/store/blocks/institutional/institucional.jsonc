@@ -56,12 +56,13 @@
   },
   "rich-text#question-1": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-1": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?",
+      "blockClass": ["institucional-text"]
     }
   },
   "disclosure-layout#simple-2": {
@@ -75,12 +76,12 @@
   },
   "rich-text#question-2": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-2": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   },
   "disclosure-layout#simple-3": {
@@ -94,12 +95,12 @@
   },
   "rich-text#question-3": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-3": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   },
   "disclosure-layout#simple-4": {
@@ -113,12 +114,12 @@
   },
   "rich-text#question-4": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-4": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   },
   "disclosure-layout#simple-5": {
@@ -132,12 +133,12 @@
   },
   "rich-text#question-5": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-5": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   },
   "disclosure-layout#simple-6": {
@@ -151,12 +152,12 @@
   },
   "rich-text#question-6": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-6": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   },
   "disclosure-layout#simple-7": {
@@ -170,12 +171,12 @@
   },
   "rich-text#question-7": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-7": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   },
   "disclosure-layout#simple-8": {
@@ -189,12 +190,12 @@
   },
   "rich-text#question-8": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-8": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   },
   "disclosure-layout#simple-9": {
@@ -208,12 +209,12 @@
   },
   "rich-text#question-9": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-9": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   },
   "disclosure-layout#simple-10": {
@@ -227,12 +228,12 @@
   },
   "rich-text#question-10": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Lorem Ipsum?"
     }
   },
   "rich-text#answer-10": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234"
+      "text": "Lorem ipsum dolor sit amet. 33 aperiam quas quo impedit explicabo est itaque quaerat eum molestiae ducimus?"
     }
   }
 
