@@ -13,14 +13,9 @@
     "children": [
       "list-context.media-list#slider-full-home",
       "list-context.info-card-list#home-deals",
-      "flex-layout.row#categories-banner-main",
       "flex-layout.row#shelf-home",
       "flex-layout.row#home-categories",
-      "flex-layout.row#info-card",
-      "flex-layout.row#sales-banner-main",
       "flex-layout.row#shelf-home-2",
-      "flex-layout.row#more-categories-banner-main",
-      "flex-layout.row#banner-duo-main",
       "flex-layout.row#home-projects",
       "flex-layout.row#home-collections"
     ],

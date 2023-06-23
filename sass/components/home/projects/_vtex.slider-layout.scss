@@ -7,7 +7,7 @@
 
 .slideChildrenContainer {
   &--home__projects {
-    @include tablet {
+    @include desktop {
       padding: 0 12.5px;
     }
   }

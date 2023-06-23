@@ -23,14 +23,33 @@
   },
 
   "flex-layout.row#shelf-home-slider": {
-    "title": "Vitrine 1 - Produtos",
-    "children": ["list-context.product-list#shelf-home-slider"],
+    "children": [
+      "info-card#home-slider",
+      "list-context.product-list#shelf-home-slider"
+    ],
     "props": {
       "blockClass": "shelf--col"
     }
   },
 
+  "info-card#home-slider": {
+    "title": "Bloco de Informações",
+    "props": {
+      "id": "info-card-home-projects",
+      "isFullModeStyle": false,
+      "headline": "DESTAQUES",
+      "callToActionText": "Ver Todos",
+      "callToActionUrl": "/",
+      "callToActionMode": "button",
+      "blockClass": "home__projects",
+      "textPosition": "center",
+      "textAlignment": "center",
+      "width": "50%"
+    }
+  },
+
   "list-context.product-list#shelf-home-slider": {
+    "title": "Vitrine 1 - Produtos",
     "blocks": ["product-summary.shelf#product"],
     "children": ["slider-layout#shelf-home-slider"],
     "props": {
