@@ -24,7 +24,7 @@
       "blockClass": "home__projects",
       "textAlignment": "left",
       "textMode": "rich-text",
-      "width": "40%"
+      "width": "35%"
     }
   },
   "list-context.image-list#home-projects": {
@@ -61,8 +61,7 @@
       "infinite": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "never",
-      "centerMode": "disabled",
-      "centerModeSlidesGap": 8
+      "centerMode": "disabled"
     }
   }
 }

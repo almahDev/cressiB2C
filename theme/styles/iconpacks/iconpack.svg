@@ -76,20 +76,14 @@
     </g>
 
     <g id="nav-thin-caret--right">
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" />
-        <path d="M18 14L24 20L18 26" stroke="#191919" stroke-width="1.5" stroke-linecap="round"
-          stroke-linejoin="round" />
-        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#CCCCCC" />
+      <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.375 21.75L11.625 11.5L1.375 1.25" stroke="#C3CBCD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </g>
 
     <g id="nav-thin-caret--left">
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="39.5" y="39.5" width="39" height="39" rx="19.5" transform="rotate(-180 39.5 39.5)" fill="white" />
-        <path d="M22 26L16 20L22 14" stroke="#191919" stroke-width="1.5" stroke-linecap="round"
-          stroke-linejoin="round" />
-        <rect x="39.5" y="39.5" width="39" height="39" rx="19.5" transform="rotate(-180 39.5 39.5)" stroke="#CCCCCC" />
+      <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.625 21.75L1.375 11.5L11.625 1.25" stroke="#C3CBCD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </g>
 

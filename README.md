@@ -1,6 +1,4 @@
-# MVP Sport
-
-## Allegralar
+# Allegralar
 
 ## Pacotes globais necessários
 

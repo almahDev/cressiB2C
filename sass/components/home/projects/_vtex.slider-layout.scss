@@ -1,0 +1,45 @@
+.sliderLayoutContainer {
+  &--home__projects {
+    padding-bottom: 68px;
+    overflow: hidden;
+  }
+}
+
+.slideChildrenContainer {
+  &--home__projects {
+    @include tablet {
+      padding: 0 12.5px;
+    }
+  }
+}
+
+.sliderLeftArrow {
+  &--home__projects {
+    padding: 10px 15px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: unset;
+    right: 46px;
+  }
+}
+
+.sliderRightArrow {
+  &--home__projects {
+    padding: 10px 15px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: unset;
+    right: -15px;
+  }
+}
+
+.caretIcon {
+  &--home__projects {
+    width: 13px;
+    height: 23px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
