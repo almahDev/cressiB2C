@@ -1,7 +1,7 @@
 .heading {
   &--al-institucional__title {
     margin: 80px 0 24px;
-    @include text($font-size-h3, $color-1, $regular);
+    @include text($font-size-h3 - 12, $color-1, $regular);
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 0.4em;

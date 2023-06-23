@@ -1,9 +1,18 @@
 .flex {
   &Row {
     &--al-institucional {
+      :global(.vtex-store-components-3-x-container) {
+        @media (min-width: 1200px) {
+          max-width: 82.5rem;
+        }
+      }
+
       &__information {
         :global(.vtex-store-components-3-x-container) {
           padding: 0 2.4rem;
+          @media (min-width: 1200px) {
+            max-width: 82.5rem;
+          }
         }
       }
     }
@@ -32,9 +41,6 @@
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
       width: 100% !important;
       flex-direction: column;
-      // border: 1px solid #c9c9c9;
-      // border-bottom: 0;
-      // position: relative;
 
       &:first-child {
         :global(.vtex-disclosure-layout-1-x-trigger) {
