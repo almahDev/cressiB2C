@@ -1,11 +1,14 @@
 .heading {
-  &--all-institucional__title {
+  &--al-institucional__title {
     margin: 80px 0 24px;
-    @include text($font-size-h3, $text-color-1, $regular);
+    @include text($font-size-h3 - 12, $color-1, $regular);
     text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.4em;
+
     @include tablet {
-      margin: 40px 0 16px;
-      font-size: $font-size-xlg;
+      margin: 23px 43px 16px 43px;
+      font-size: $font-size-xlg - 6;
     }
   }
 }
@@ -21,6 +24,10 @@
   &--all-institucional__content {
     @include text($font-size-md, $text-color-2, $regular);
     margin: 0 0 8px;
+  }
+
+  &--institucional-text {
+    color: #000;
   }
 }
 

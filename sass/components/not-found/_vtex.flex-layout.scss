@@ -1,12 +1,7 @@
-.flexRowContent {
-  &--all-not-found-page {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 0;
-
-    @include tablet {
-      padding: 2rem 1rem;
+.flexRow--al-not-found-page {
+  :global(.vtex-store-components-3-x-container) {
+    @media (min-width: 1200px) {
+      max-width: 82.5rem;
     }
   }
 }
