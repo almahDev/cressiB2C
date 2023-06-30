@@ -25,7 +25,7 @@
   "flex-layout.row#shelf-home-slider": {
     "children": [
       "info-card#home-slider",
-      "list-context.product-list#shelf-home-slider"
+      "slider-layout-group#shelf-home-slider"
     ],
     "props": {
       "blockClass": "shelf--col"
@@ -35,23 +35,34 @@
   "info-card#home-slider": {
     "title": "Bloco de Informações",
     "props": {
-      "id": "info-card-home-projects",
+      "id": "info-card-home-slider",
+      "imageUrl": "assets/img/home/home-info-card-desktop.png",
+      "mobileImageUrl": "assets/img/home/home-info-card-mobile.png",
+      "imageActionUrl": "/",
       "isFullModeStyle": false,
       "headline": "DESTAQUES",
       "callToActionText": "Ver Todos",
       "callToActionUrl": "/",
       "callToActionMode": "button",
-      "blockClass": "home__projects",
+      "blockClass": "home__slider",
       "textPosition": "center",
       "textAlignment": "center",
       "width": "50%"
     }
   },
-
-  "list-context.product-list#shelf-home-slider": {
+  "slider-layout-group#shelf-home-slider": {
+    "children": [
+      "list-context.product-list#shelf-home-slider-1",
+      "list-context.product-list#shelf-home-slider-2"
+    ],
+    "props": {
+      "blockClass": "shelf"
+    }
+  },
+  "list-context.product-list#shelf-home-slider-1": {
     "title": "Vitrine 1 - Produtos",
     "blocks": ["product-summary.shelf#product"],
-    "children": ["slider-layout#shelf-home-slider"],
+    "children": ["slider-layout#shelf-home-slider-1"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "collection": "",
@@ -60,17 +71,42 @@
       "maxItems": 10
     }
   },
-  "slider-layout#shelf-home-slider": {
+  "list-context.product-list#shelf-home-slider-2": {
+    "title": "Vitrine 2 - Produtos",
+    "blocks": ["product-summary.shelf#product"],
+    "children": ["slider-layout#shelf-home-slider-2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "slider-layout#shelf-home-slider-1": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 2,
         "tablet": 2,
         "phone": 1
       },
       "infinite": true,
       "fullWidth": true,
       "showPaginationDots": "always",
-      "blockClass": "shelf"
+      "blockClass": ["shelf", "shelf-group", "shelf-group-1"]
+    }
+  },
+  "slider-layout#shelf-home-slider-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showPaginationDots": "always",
+      "blockClass": ["shelf", "shelf-group", "shelf-group-2"]
     }
   }
 }
