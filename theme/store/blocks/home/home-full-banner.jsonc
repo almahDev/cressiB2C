@@ -1,7 +1,7 @@
 {
-  "list-context.media-list#slider-full-home": {
-    "title": "Banner Home",
-    "children": ["slider-layout#slider-full-home"],
+  "list-context.media-list#home-full-banner": {
+    "title": "Banner",
+    "children": ["slider-layout#home-full-banner"],
     "props": {
       "height": "100%",
       "preload": true,
@@ -13,7 +13,7 @@
       ]
     }
   },
-  "slider-layout#slider-full-home": {
+  "slider-layout#home-full-banner": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -22,7 +22,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "always",
-      "blockClass": "home__slider"
+      "blockClass": ["home__slider", "home__full-banner"]
     }
   }
 }

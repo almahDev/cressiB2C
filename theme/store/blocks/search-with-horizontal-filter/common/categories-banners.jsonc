@@ -1,9 +1,0 @@
-{
-  "experimental__visibility-layout#categories-banner-main": {
-    "title": "Banner de Categorias (On/Off)",
-    "props": {
-      "visible": true
-    },
-    "children": ["flex-layout.row#categories-banner-main"]
-  }
-}
