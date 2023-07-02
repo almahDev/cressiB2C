@@ -3,6 +3,7 @@
     "title": "Categorias",
     "children": ["flex-layout.col#home-categories"],
     "props": {
+      "fullWidth": true,
       "blockClass": "home__categories"
     }
   },

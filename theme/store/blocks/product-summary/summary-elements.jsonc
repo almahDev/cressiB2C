@@ -13,7 +13,7 @@
     "title": "Produto indisponível - Mensagem",
     "props": {
       "text": "**Indisponível** \n [Avise-me quando retornar ao estoque](#)",
-      "blockClass": "product__unavaible"
+      "blockClass": "product__unavailable"
     }
   },
   "flex-layout.row#image-tags": {
@@ -96,8 +96,8 @@
     "title": "Imagem - Sumário do produto",
     "props": {
       "showBadge": false,
-      // "aspectRatio": "1:1",
-      "width": 303,
+      "aspectRatio": "1:1",
+      "width": 313,
       "height": 313,
       "blockClass": "shelf__image"
       // "hoverImage": {

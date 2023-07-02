@@ -75,7 +75,7 @@
     }
   }
 
-  &--product__unavaible {
+  &--product__unavailable {
     &::before {
       content: '';
       background-color: rgba(255, 255, 255, 0.5);
@@ -90,14 +90,23 @@
     .wrapper {
       width: 100%;
       text-align: center;
+      min-height: 72px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .strong {
-      @include text($font-size-sm, $text-color-1-400, $bold);
+      @include text($font-size-sm, $low-pure, $bold);
+      text-transform: uppercase;
     }
 
     .link {
-      @include link($font-size-xs, $color-2-500, $normal, underline);
+      @include link($font-size-xs, $low-pure, $normal, underline);
+    }
+
+    .paragraph {
+      margin: 0;
     }
   }
 

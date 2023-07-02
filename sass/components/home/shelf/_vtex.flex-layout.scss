@@ -1,5 +1,10 @@
 .flexRowContent {
-  &--shelf--col {
+  &--home__shelf {
+    @extend %container-large;
+  }
+
+  &--home__shelf--col {
     padding: 56px 0 64px;
+    align-items: flex-start;
   }
 }

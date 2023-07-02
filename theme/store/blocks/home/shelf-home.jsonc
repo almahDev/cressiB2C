@@ -3,14 +3,14 @@
     "title": "Vitrine 1",
     "children": ["flex-layout.col#shelf-home"],
     "props": {
-      "blockClass": ["shelf", "bg__gray"]
+      "blockClass": ["home__shelf", "bg__gray"]
     }
   },
 
   "flex-layout.col#shelf-home": {
     "children": ["rich-text#shelf-home", "flex-layout.row#shelf-home-slider"],
     "props": {
-      "blockClass": "shelf--col"
+      "blockClass": "home__shelf--col"
     }
   },
 
@@ -25,10 +25,16 @@
   "flex-layout.row#shelf-home-slider": {
     "children": [
       "info-card#home-slider",
-      "slider-layout-group#shelf-home-slider"
+      "flex-layout.col#shelf-group-home-slider"
     ],
     "props": {
-      "blockClass": "shelf--col"
+      "blockClass": "home__shelf--col"
+    }
+  },
+  "flex-layout.col#shelf-group-home-slider": {
+    "children": ["slider-layout-group#shelf-home-slider"],
+    "props": {
+      "blockClass": "home__shelf--group-col"
     }
   },
 
@@ -44,7 +50,7 @@
       "callToActionText": "Ver Todos",
       "callToActionUrl": "/",
       "callToActionMode": "button",
-      "blockClass": "home__slider",
+      "blockClass": "home__shelf",
       "textPosition": "center",
       "textAlignment": "center",
       "width": "50%"
@@ -56,7 +62,7 @@
       "list-context.product-list#shelf-home-slider-2"
     ],
     "props": {
-      "blockClass": "shelf"
+      "blockClass": "home__shelf"
     }
   },
   "list-context.product-list#shelf-home-slider-1": {
@@ -92,8 +98,9 @@
       },
       "infinite": true,
       "fullWidth": true,
-      "showPaginationDots": "always",
-      "blockClass": ["shelf", "shelf-group", "shelf-group-1"]
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["home__shelf", "shelf-group", "shelf-group-1"]
     }
   },
   "slider-layout#shelf-home-slider-2": {
@@ -105,8 +112,9 @@
       },
       "infinite": true,
       "fullWidth": true,
-      "showPaginationDots": "always",
-      "blockClass": ["shelf", "shelf-group", "shelf-group-2"]
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": ["home__shelf", "shelf-group", "shelf-group-2"]
     }
   }
 }

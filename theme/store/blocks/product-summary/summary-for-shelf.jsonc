@@ -27,7 +27,7 @@
     "title": "Sumário do produto - Disposição de elementos",
     "children": [
       "flex-layout.row#product-summary-name",
-      "flex-layout.row#summary-shelf-price-savings"
+      "condition-layout.product#availability-summary"
     ],
     "props": {
       "disposition": [
@@ -53,7 +53,7 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.row#qtty-add",
+      "Then": "flex-layout.row#summary-shelf-price-savings",
       "Else": "rich-text#unavaible"
     }
   }

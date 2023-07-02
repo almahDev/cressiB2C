@@ -167,6 +167,7 @@
   &--shelf-summary-price-wrapper {
     align-items: flex-start;
     padding: 10px 10px 14px;
+    min-height: 72px;
 
     @include tablet {
       padding: 8px 2px 13px;
