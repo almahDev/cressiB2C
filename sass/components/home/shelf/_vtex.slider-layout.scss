@@ -12,6 +12,20 @@
     // padding-bottom: 1.5rem;
     // padding-top: 1rem;
   }
+
+  &--home__shelf-simple {
+    // @include desktop {
+    //   margin-left: -25px;
+    // }
+  }
+}
+
+.sliderTrack {
+  &--home__shelf-simple {
+    @include desktop {
+      gap: 0 24px;
+    }
+  }
 }
 
 .sliderLeftArrow {
@@ -23,6 +37,11 @@
     left: unset;
     right: 46px;
   }
+
+  &--home__shelf-simple {
+    top: -62px;
+    right: 57px;
+  }
 }
 
 .sliderRightArrow {
@@ -33,6 +52,11 @@
     top: -92px;
     left: unset;
     right: -15px;
+  }
+
+  &--home__shelf-simple {
+    top: -62px;
+    right: 0;
   }
 }
 

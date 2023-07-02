@@ -1,3 +1,9 @@
+.flexRow {
+  &--home__shelf-1 {
+    padding-top: 28px;
+  }
+}
+
 .flexRowContent {
   &--home__shelf {
     @extend %container-large;
@@ -6,5 +12,19 @@
   &--home__shelf--col {
     padding: 56px 0 64px;
     align-items: flex-start;
+  }
+}
+
+.flexCol {
+  &--home__shelf--group-col {
+    @include desktop {
+      padding-left: 20.5px;
+    }
+  }
+}
+
+.flexColChild {
+  &--home__shelf-2--col {
+    padding-bottom: 25px;
   }
 }

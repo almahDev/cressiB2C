@@ -1,44 +1,48 @@
 {
-  "flex-layout.row#shelf-home": {
-    "title": "Vitrine 1",
-    "children": ["flex-layout.col#shelf-home"],
+  "flex-layout.row#shelf-home-3": {
+    "title": "Vitrine 3",
+    "children": ["flex-layout.col#shelf-home-3"],
     "props": {
-      "blockClass": ["home__shelf", "bg__gray"]
+      "fullWidth": true,
+      "blockClass": ["home__shelf", "home__shelf-3"]
     }
   },
 
-  "flex-layout.col#shelf-home": {
-    "children": ["rich-text#shelf-home", "flex-layout.row#shelf-home-slider"],
+  "flex-layout.col#shelf-home-3": {
+    "children": [
+      "rich-text#shelf-home-3",
+      "flex-layout.row#shelf-home-slider-3"
+    ],
     "props": {
-      "blockClass": "home__shelf--col"
+      "blockClass": ["home__shelf--col", "home__shelf-3--col"]
     }
   },
 
-  "rich-text#shelf-home": {
-    "title": "Vitrine 1 - Título",
+  "rich-text#shelf-home-3": {
+    "title": "Vitrine 3 - Título",
     "props": {
-      "text": "## **Produtos** em Destaque",
+      "text": "## **CAMPEÕES** DE VENDA",
       "blockClass": "home__title"
     }
   },
 
-  "flex-layout.row#shelf-home-slider": {
+  "flex-layout.row#shelf-home-slider-3": {
     "children": [
-      "info-card#home-slider",
-      "flex-layout.col#shelf-group-home-slider"
+      "info-card#home-slider-3",
+      "flex-layout.col#shelf-group-home-slider-3"
     ],
     "props": {
       "blockClass": "home__shelf--col"
     }
   },
-  "flex-layout.col#shelf-group-home-slider": {
-    "children": ["slider-layout-group#shelf-home-slider"],
+  "flex-layout.col#shelf-group-home-slider-3": {
+    "children": ["slider-layout-group#shelf-home-slider-3"],
     "props": {
       "blockClass": "home__shelf--group-col"
     }
   },
 
-  "info-card#home-slider": {
+  "info-card#home-slider-3": {
     "title": "Bloco de Informações",
     "props": {
       "id": "info-card-home-slider",
@@ -46,7 +50,7 @@
       "mobileImageUrl": "assets/img/home/home-info-card-mobile.png",
       "imageActionUrl": "/",
       "isFullModeStyle": false,
-      "headline": "DESTAQUES",
+      "headline": "CAMPEÕES",
       "callToActionText": "Ver Todos",
       "callToActionUrl": "/",
       "callToActionMode": "button",
@@ -56,19 +60,19 @@
       "width": "50%"
     }
   },
-  "slider-layout-group#shelf-home-slider": {
+  "slider-layout-group#shelf-home-slider-3": {
     "children": [
-      "list-context.product-list#shelf-home-slider-1",
-      "list-context.product-list#shelf-home-slider-2"
+      "list-context.product-list#shelf-home-slider-3-1",
+      "list-context.product-list#shelf-home-slider-3-2"
     ],
     "props": {
       "blockClass": "home__shelf"
     }
   },
-  "list-context.product-list#shelf-home-slider-1": {
+  "list-context.product-list#shelf-home-slider-3-1": {
     "title": "Vitrine 1 - Produtos",
     "blocks": ["product-summary.shelf#product"],
-    "children": ["slider-layout#shelf-home-slider-1"],
+    "children": ["slider-layout#shelf-home-slider-3-1"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "collection": "",
@@ -77,10 +81,10 @@
       "maxItems": 10
     }
   },
-  "list-context.product-list#shelf-home-slider-2": {
+  "list-context.product-list#shelf-home-slider-3-2": {
     "title": "Vitrine 2 - Produtos",
     "blocks": ["product-summary.shelf#product"],
-    "children": ["slider-layout#shelf-home-slider-2"],
+    "children": ["slider-layout#shelf-home-slider-3-2"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "collection": "",
@@ -89,7 +93,7 @@
       "maxItems": 10
     }
   },
-  "slider-layout#shelf-home-slider-1": {
+  "slider-layout#shelf-home-slider-3-1": {
     "props": {
       "itemsPerPage": {
         "desktop": 2,
@@ -103,7 +107,7 @@
       "blockClass": ["home__shelf", "shelf-group", "shelf-group-1"]
     }
   },
-  "slider-layout#shelf-home-slider-2": {
+  "slider-layout#shelf-home-slider-3-2": {
     "props": {
       "itemsPerPage": {
         "desktop": 2,

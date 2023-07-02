@@ -13,9 +13,10 @@
     "children": [
       "list-context.media-list#slider-full-home",
       "list-context.info-card-list#home-deals",
-      "flex-layout.row#shelf-home",
-      "flex-layout.row#home-categories",
+      "flex-layout.row#shelf-home-1",
       "flex-layout.row#shelf-home-2",
+      "flex-layout.row#home-categories",
+      "flex-layout.row#shelf-home-3",
       "flex-layout.row#home-projects",
       "flex-layout.row#home-collections"
     ],

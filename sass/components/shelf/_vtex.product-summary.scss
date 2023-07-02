@@ -68,7 +68,7 @@
   margin-bottom: 0;
 
   @include desktop {
-    max-width: 315px !important;
+    max-width: 100% !important;
     height: auto;
 
     &:hover,
@@ -371,5 +371,16 @@
 
   &--gg {
     order: 5;
+  }
+}
+
+.container--product__summary--shelf-simple {
+  margin: 0;
+
+  :global(.vtex-flex-layout-0-x-flexCol--shelf-summary-price-wrapper),
+  .nameContainer,
+  .imageStackContainer {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

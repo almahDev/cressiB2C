@@ -96,7 +96,6 @@
     "title": "Imagem - Sumário do produto",
     "props": {
       "showBadge": false,
-      "aspectRatio": "1:1",
       "width": 313,
       "height": 313,
       "blockClass": "shelf__image"
