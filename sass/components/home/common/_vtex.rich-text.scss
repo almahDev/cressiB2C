@@ -11,6 +11,12 @@
       letter-spacing: 0.4em;
       text-transform: uppercase;
       margin: 0;
+
+      @include tablet {
+        font-size: 12px;
+        letter-spacing: 4.8px;
+        line-height: 14.63px;
+      }
     }
 
     .paragraph {
@@ -19,6 +25,12 @@
       letter-spacing: 0.4em;
       text-transform: uppercase;
       margin: 0;
+
+      @include tablet {
+        font-size: 12px;
+        letter-spacing: 4.8px;
+        line-height: 14.63px;
+      }
     }
 
     .strong {
@@ -27,6 +39,12 @@
       letter-spacing: 0.4em;
       text-transform: uppercase;
       margin: 0;
+
+      @include tablet {
+        font-size: 12px;
+        letter-spacing: 4.8px;
+        line-height: 14.63px;
+      }
     }
   }
 }

@@ -14,7 +14,7 @@
       "list-context.media-list#home-full-banner",
       "list-context.info-card-list#home-deals",
       "flex-layout.row#shelf-home-1",
-      "flex-layout.row#shelf-home-2",
+      "responsive-layout.desktop#shelf-home-2",
       "flex-layout.row#home-categories",
       "flex-layout.row#shelf-home-3",
       "flex-layout.row#home-projects",

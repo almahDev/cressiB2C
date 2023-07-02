@@ -1,4 +1,7 @@
 {
+  "responsive-layout.desktop#shelf-home-2": {
+    "children": ["flex-layout.row#shelf-home-2"]
+  },
   "flex-layout.row#shelf-home-2": {
     "title": "Vitrine 2",
     "children": ["flex-layout.col#shelf-home-2"],

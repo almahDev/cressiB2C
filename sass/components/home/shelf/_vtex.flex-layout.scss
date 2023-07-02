@@ -7,6 +7,10 @@
 .flexRowContent {
   &--home__shelf {
     @extend %container-large;
+
+    @include tablet {
+      padding: 0 12px;
+    }
   }
 
   &--home__shelf--col {
