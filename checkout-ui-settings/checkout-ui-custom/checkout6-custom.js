@@ -3,13 +3,10 @@ try {
     try {
       var CheckoutCustom = {
         init: function () {
-          CheckoutCustom.appendFont()
-          // CheckoutCustom.appendHeader()
-          // CheckoutCustom.appendFooter()
-          CheckoutCustom.vCustomCheckout()
-          // CheckoutCustom.showShippingStep()
-          CheckoutCustom.i18n()
           CheckoutCustom.addStepActiveClass()
+          CheckoutCustom.appendFont()
+          // CheckoutCustom.vCustomCheckout()
+          CheckoutCustom.i18n()
         },
         i18n: function () {
           var intervalLang = setInterval(function () {
@@ -124,200 +121,31 @@ try {
           style.appendChild(document.createTextNode(fontFacesRules))
           document.head.appendChild(style)
         },
-        showShippingStep: function () {
-          var intervalRedux = setInterval(function () {
-            if (typeof store === 'undefined' || !store) {
-              return
-            }
 
-            clearInterval(intervalRedux)
-
-            window.vcustom.checkout.init()
-          }, 200)
-        },
-
-        appendHeader: function () {
-          $(
-            '<header class="main-header"> <div class="container"> <div class="header-link"> <a href="/" title="Continuar comprand" class="buy-more-link link">Continuar comprando</a> <a href="/checkout/#/cart" title="voltar ao carrinho" class="back-cart-link link">Voltar para o carrinho</a> </div> <a href="/" title="Ir para a homepage" class="logo"> <img title="Logo" src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/svg/logo-header-hover.svg" /> </a> </div> </header>'
-          ).insertAfter('.header')
-          $('.header').first().remove()
-        },
-        appendFooter: function () {
-          $(
-            `<footer class="main-footer">
-            <div class="footer-container">
-              <div class="container">
-                <ul class="flags">
-                  <li>
-                    <input type="checkbox" id="pagamento" />
-                    <label class="botao-colapse" for="pagamento">
-                      <h2 class="payments footer-title">Formas de pagamento</h2>
-                      <i></i>
-                    </label>
-                    <div class="flags-pagamento colapse">
-                      <div class="line">
-                        <img
-                          title="Mastercard"
-                          alt="Mastercard"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/MasterCard.png"
-                        />
-                        <img
-                          title="Maestro"
-                          alt="Maestro"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/Maestro.png"
-                        />
-                        <img
-                          title="Elo"
-                          alt="Elo"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/Elo.png"
-                        />
-                        <img
-                          title="Visa"
-                          alt="Visa"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/Visa.png"
-                        />
-                        <img
-                          title="Caixa"
-                          alt="Caixa"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/caixa.png"
-                        />
-                        <img
-                          title="Itau"
-                          alt="Itau"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/itau.png"
-                        />
-                        <img
-                          title="Boleto"
-                          alt="Boleto"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/Boleto.png"
-                        />
-                        <img
-                          title="Pix"
-                          alt="Pix"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/pix.png"
-                        />
-                        <img
-                          title="Cielo"
-                          alt="Cielo"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/Cielo.png"
-                        />
-                        <img
-                          title="Amazon"
-                          alt="Amazon"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/amazon.png"
-                        />
-                        <img
-                          title="PayPal"
-                          alt="PayPal"
-                          src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/pagamento/PayPal.png"
-                        />
-                      </div>
-                      </div>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="seguranca" />
-                      <label class="botao-colapse" for="seguranca">
-                        <h2 class="security footer-title">Selos de segurança</h2>
-                        <i></i>
-                      </label>
-                      <div class="flags-seguranca colapse">
-                        <div class="line">
-                          <img
-                            title=""
-                            alt="brasão"
-                            class=""
-                            src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/seguranca/eureciclo.png"
-                          />
-                          <img
-                            title=""
-                            alt="brasão"
-                            class=""
-                            src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/seguranca/ebit.png"
-                          />
-                          <img
-                            title=""
-                            alt="brasão"
-                            class=""
-                            src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/seguranca/letsencrypt.png"
-                          />
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <ul class="developed-powered">
-                    <li class="powered">
-                      <h6 class="title-dev-pow">Powered by</h6>
-                      <img
-                        title=""
-                        alt=""
-                        class=""
-                        src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/logo-vtex.png"
-                      />
-                    </li>
-                    <li class="developed">
-                      <h6 class="title-dev-pow">Developed by</h6>
-                      <img
-                        title=""
-                        alt=""
-                        class=""
-                        src="https://tfdfjz.vtexassets.com/assets/vtex/assets-builder/tfdfjz.store-theme/0.0.3/img/logo-allegralar___eb527980c62e06cdf045118ef25cc127.png"
-                      />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cnpj">
-                <div class="container">
-                  <p>
-                    ©${new Date().getFullYear()} KIKOS CALCADOS & CONFECCOES LTDA. Todos os direitos reservados. CNPJ
-                    07.827.295/0004-66 <br /> Rua Campos Sales, 558, Centro Itapetininga/SP
-                  </p>
-                </div>
-              </div>
-            </footer>`
-          ).insertAfter('.footer')
-          $('.footer').first().remove()
-        },
         addStepActiveClass: function () {
+          // Separando as urls necessárias
           const stepHashes = ['#/cart', '#/profile', '#/shipping', '#/payment', '#/confirmation']
 
-          $(window).on('hashchange', function () {
+          // ao carregar a pagina ele ativa o primeiro step com active
+          $(window).on('load hashchange', function () {
+            // Vamos pegar a hash para comparar os valores
             const hash = window.location.hash
 
-            $('.checkout-steps_item').each(function () {
+            // para cada step conseguimos tratar as urls
+            $('.checkout-steps_item').each(function (index) {
+              // direcionado direto para a ordeplaced por isso fica undefined é outra pagina
               if ($(this).data('url') === undefined) return
-              const stepIndex = stepHashes.indexOf($(this).data('url').split('#')[1])
 
-              if (hash === stepHashes[stepIndex]) {
-                $(this).addClass('active')
+              // CADA STEP
+              const $checkoutStep = $(this)
+              const stepUrl = $checkoutStep.data('url')
+              const stepUrlFinal = stepUrl.split('/checkout/')[1].replace('#/', '')
+              const $checkoutStepItem = $checkoutStep.addClass(`mz-step--${stepUrlFinal}`)
+
+              if (stepHashes[index] === hash || (hash === '#/email' && stepHashes[index] === '#/profile')) {
+                $checkoutStepItem.addClass('active')
               } else {
-                $(this).removeClass('active')
-              }
-
-              if (stepIndex <= stepHashes.indexOf(hash)) {
-                $(this).addClass('visited')
-              } else {
-                $(this).removeClass('visited')
-              }
-            })
-          })
-          $(window).on('load', function () {
-            const hash = window.location.hash
-
-            $('.checkout-steps_item').each(function () {
-              if ($(this).data('url') === undefined) return
-              const stepIndex = stepHashes.indexOf($(this).data('url').split('#')[1])
-
-              if (hash === stepHashes[stepIndex]) {
-                $(this).addClass('active')
-              } else {
-                $(this).removeClass('active')
-              }
-
-              if (stepIndex <= stepHashes.indexOf(hash)) {
-                $(this).addClass('visited')
-              } else {
-                $(this).removeClass('visited')
+                $checkoutStepItem.removeClass('active')
               }
             })
           })
