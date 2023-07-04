@@ -11,6 +11,10 @@
     margin: 0;
     height: 100%;
     width: 100%;
+
+    @include tablet {
+      padding: 0 12px;
+    }
   }
 }
 
@@ -35,6 +39,10 @@
     text-decoration: none;
     padding-top: 43px;
 
+    @include tablet {
+      padding-top: 38px;
+    }
+
     :global(.vtex-button) {
       background: $primary-pure-500;
       border-radius: 6px;
@@ -53,6 +61,7 @@
 
     :global(.vtex-button__label) {
       @include text($font-size-md, $white, $bold);
+      text-transform: none;
       line-height: 16px;
       padding: 0 !important;
     }
@@ -64,6 +73,12 @@
     @include text($font-size-sm, $color-c-3, $bold);
     line-height: 1.0625rem;
     margin: 0;
+
+    @include tablet {
+      font-size: 12px;
+      letter-spacing: 4.8px;
+      line-height: 14.63px;
+    }
   }
 }
 
@@ -72,6 +87,12 @@
     @include text($font-size-sm, $text-dark-400, $regular);
     line-height: 1.0625rem;
     margin: 0;
+
+    @include tablet {
+      font-size: $font-size-xs;
+      letter-spacing: 4.8px;
+      line-height: 14.63px;
+    }
   }
 }
 
@@ -89,6 +110,13 @@
     text-transform: uppercase;
     margin: 0;
     padding-bottom: 52px;
+
+    @include tablet {
+      display: none;
+      font-size: $font-size-xs;
+      letter-spacing: 4.8px;
+      line-height: 14.63px;
+    }
   }
 }
 
@@ -99,6 +127,12 @@
     letter-spacing: 0.4em;
     text-transform: uppercase;
     margin: 0;
+
+    @include tablet {
+      font-size: $font-size-xs;
+      letter-spacing: 4.8px;
+      line-height: 14.63px;
+    }
   }
 }
 
@@ -109,6 +143,11 @@
     text-align: left;
     margin: 0;
     padding-right: 80px;
+
+    @include tablet {
+      font-size: $font-size-xs;
+      line-height: normal;
+    }
 
     &:not(:last-child) {
       padding-bottom: 20px;

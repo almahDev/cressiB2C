@@ -17,7 +17,7 @@
       margin: 0;
 
       @include tablet {
-        font-size: 12px;
+        font-size: $font-size-xs;
         letter-spacing: 4.8px;
         line-height: 14.63px;
       }
@@ -31,7 +31,7 @@
       margin: 0;
 
       @include tablet {
-        font-size: 12px;
+        font-size: $font-size-xs;
         letter-spacing: 4.8px;
         line-height: 14.63px;
       }
@@ -45,7 +45,7 @@
       margin: 0;
 
       @include tablet {
-        font-size: 12px;
+        font-size: $font-size-xs;
         letter-spacing: 4.8px;
         line-height: 14.63px;
       }

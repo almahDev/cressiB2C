@@ -43,7 +43,8 @@
     right: 46px;
 
     @include tablet {
-      top: -30px;
+      top: -29px;
+      right: 40px;
     }
   }
 }
@@ -58,7 +59,7 @@
     right: 0;
 
     @include tablet {
-      top: -30px;
+      top: -29px;
     }
   }
 }
@@ -69,6 +70,11 @@
     height: 23px;
     max-height: 100%;
     max-width: 100%;
+
+    @include tablet {
+      width: 10px;
+      height: 20px;
+    }
   }
 }
 

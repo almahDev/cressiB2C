@@ -3,12 +3,23 @@
     "title": "Coleções",
     "children": [
       "info-card#home-projects",
-      "list-context.image-list#home-projects"
+      "list-context.image-list#home-projects",
+      "responsive-layout.mobile#home-collections-title-mobile"
     ],
     "props": {
       "colGap": 4,
       "fullWidth": true,
       "blockClass": "home__projects"
+    }
+  },
+  "responsive-layout.mobile#home-collections-title-mobile": {
+    "children": ["rich-text#home-collections-title-mobile"]
+  },
+  "rich-text#home-collections-title-mobile": {
+    "title": "Título (Mobile)",
+    "props": {
+      "text": "## **FAÇA SEU** PROJETO MOOBLE",
+      "blockClass": "home__title"
     }
   },
   "info-card#home-projects": {

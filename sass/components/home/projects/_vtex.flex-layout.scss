@@ -1,12 +1,23 @@
 .flexRow {
   &--home__projects {
     padding-bottom: 58px;
+
+    @include tablet {
+      padding-bottom: 45px;
+    }
   }
 }
 
 .flexRowContent {
   &--home__projects {
     @extend %container-large;
+
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
   }
 }
 

@@ -2,6 +2,11 @@
   &--home__projects {
     padding-bottom: 68px;
     overflow: hidden;
+
+    @include tablet {
+      padding: 19px 12px 16px;
+      overflow: visible;
+    }
   }
 }
 
@@ -21,6 +26,12 @@
     bottom: 0;
     left: unset;
     right: 46px;
+
+    @include tablet {
+      top: -29px;
+      right: 40px;
+      bottom: unset;
+    }
   }
 }
 
@@ -32,6 +43,12 @@
     bottom: 0;
     left: unset;
     right: -15px;
+
+    @include tablet {
+      top: -29px;
+      right: 0;
+      bottom: unset;
+    }
   }
 }
 
@@ -41,5 +58,10 @@
     height: 23px;
     max-height: 100%;
     max-width: 100%;
+
+    @include tablet {
+      width: 10px;
+      height: 20px;
+    }
   }
 }
