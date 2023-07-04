@@ -48,6 +48,28 @@
           "callToActionMode": "link",
           "blockClass": "home__collections",
           "textAlignment": "center"
+        },
+        {
+          "id": "info-card-collection-3",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/home/home-collections-1.png",
+          "callToActionText": "SALA DE JANTAR",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__collections",
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-collection-4",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/home/home-collections-2.png",
+          "callToActionText": "QUARTOS",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "callToActionMode": "link",
+          "blockClass": "home__collections",
+          "textAlignment": "center"
         }
       ]
     }

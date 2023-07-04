@@ -3,6 +3,10 @@
     .wrapper {
       width: 100%;
       text-align: left;
+
+      @include tablet {
+        padding: 0 12px;
+      }
     }
 
     .heading {
