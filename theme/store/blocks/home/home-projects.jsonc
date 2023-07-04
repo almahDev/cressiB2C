@@ -9,6 +9,7 @@
     "props": {
       "colGap": 4,
       "fullWidth": true,
+      "experimentalHideEmptyCols": true,
       "blockClass": "home__projects"
     }
   },
