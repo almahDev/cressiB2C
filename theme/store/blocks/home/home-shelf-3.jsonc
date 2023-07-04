@@ -47,7 +47,7 @@
     "props": {
       "id": "info-card-home-slider",
       "imageUrl": "assets/img/home/home-info-card-desktop.png",
-      "mobileImageUrl": "assets/img/home/home-info-card-mobile.png",
+      "mobileImageUrl": "assets/img/home/home-info-card-mobile-2.png",
       "imageActionUrl": "/",
       "isFullModeStyle": false,
       "headline": "CAMPEÕES",

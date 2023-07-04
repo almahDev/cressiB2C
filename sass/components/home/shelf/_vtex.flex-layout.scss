@@ -16,6 +16,17 @@
     @include tablet {
       padding: 26px 12px 56px;
     }
+
+    @include tablet-min {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .stretchChildrenWidth {
+        width: 100% !important;
+      }
+    }
   }
 }
 

@@ -6,6 +6,17 @@
 .flexRowContent {
   &--home__collections {
     @extend %container-large;
+
+    @include tablet-min {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .stretchChildrenWidth {
+        width: 100% !important;
+      }
+    }
   }
 }
 

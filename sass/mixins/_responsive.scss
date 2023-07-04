@@ -55,6 +55,12 @@
   }
 }
 
+@mixin tablet-min {
+  @media (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+
 //vtex media-queries
 
 // Tudo que seja phone (até 320px ou menores que 320px)

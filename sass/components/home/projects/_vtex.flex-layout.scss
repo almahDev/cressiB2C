@@ -18,6 +18,17 @@
       align-items: center;
       flex-direction: column-reverse;
     }
+
+    @include tablet-min {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+
+      .stretchChildrenWidth {
+        width: 100% !important;
+      }
+    }
   }
 }
 
