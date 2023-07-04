@@ -8,6 +8,10 @@
   &--home__categories {
     padding: 33px 0 0;
 
+    @include tablet {
+      padding: 13px 9px 0;
+    }
+
     // @include tablet {
     //   padding: 1.25rem 0 1.3125rem;
     //   margin-bottom: 3.5rem;
@@ -36,31 +40,46 @@
 
 .sliderLeftArrow {
   &--home__categories {
-    margin-left: 6.25rem;
+    padding: 10px 15px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: unset;
+    right: 46px;
 
     @include tablet {
-      margin-left: 2.1875rem;
+      top: -35px;
+      right: 40px;
     }
   }
 }
 
 .sliderRightArrow {
   &--home__categories {
-    margin-right: 6.25rem;
+    padding: 10px 15px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: unset;
+    right: 0;
 
     @include tablet {
-      margin-right: 2.1875rem;
+      top: -35px;
     }
   }
 }
 
 .caretIcon {
   &--home__categories {
-    max-width: 100%;
+    width: 13px;
+    height: 23px;
     max-height: 100%;
-    width: 1rem;
-    height: 1rem;
-    overflow: visible !important;
+    max-width: 100%;
+
+    @include tablet {
+      width: 10px;
+      height: 20px;
+    }
   }
 }
 
@@ -79,7 +98,8 @@
     width: 100%;
 
     @include tablet {
-      margin: 0.5rem auto;
+      padding: 3px;
+      margin: 0;
     }
   }
 }
@@ -114,6 +134,10 @@
     margin: 0;
     padding-top: 20px;
     text-decoration: none;
+
+    @include tablet {
+      padding-top: 8px;
+    }
   }
 }
 
@@ -125,6 +149,12 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
+
+    @include tablet {
+      font-size: $font-size-xs - 1;
+      line-height: 13.41px;
+      letter-spacing: 1.1px;
+    }
   }
 }
 

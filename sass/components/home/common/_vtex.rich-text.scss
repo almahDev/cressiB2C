@@ -7,6 +7,10 @@
       @include tablet {
         padding: 0 12px;
       }
+
+      @media (max-width: 275px) {
+        max-width: 275px;
+      }
     }
 
     .heading {

@@ -1,6 +1,10 @@
 .flexRow {
   &--home__categories {
     padding-bottom: 94px;
+
+    @include tablet {
+      padding-bottom: 58px;
+    }
   }
 }
 

@@ -2,6 +2,10 @@
   &--home__deals {
     @extend %container-large;
     overflow-x: auto;
+
+    @include tablet {
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -10,7 +14,7 @@
     padding: 4.375rem 0 2.875rem;
 
     @include tablet {
-      padding: 1.25rem 0 0;
+      padding: 14px 0 0;
     }
   }
 }
@@ -108,7 +112,8 @@
     width: 100%;
 
     @include tablet {
-      margin: 0.5rem auto;
+      padding: 0;
+      margin: 0;
     }
   }
 }
@@ -118,6 +123,10 @@
     width: auto;
     text-align: center;
     padding: 0 0 0 2.875rem;
+
+    @include tablet {
+      padding-left: 23px;
+    }
   }
 }
 
@@ -128,6 +137,18 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+  }
+}
+
+.infoCardImage {
+  &--home__deals {
+    display: block;
+
+    @include tablet {
+      width: 55px;
+      height: 55px;
+      object-fit: contain !important;
+    }
   }
 }
 
@@ -167,5 +188,12 @@
     @include text($font-size-sm, $color-c-3, $bold);
     line-height: 1.0625rem;
     margin: 0;
+
+    @include tablet {
+      font-size: $font-size-xs - 1;
+      font-weight: $bold;
+      line-height: 13.41px;
+      color: $color-c-4;
+    }
   }
 }

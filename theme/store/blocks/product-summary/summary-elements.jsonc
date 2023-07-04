@@ -96,8 +96,16 @@
     "title": "Imagem - Sumário do produto",
     "props": {
       "showBadge": false,
-      "width": 313,
-      "height": 313,
+      "width": {
+        "desktop": 313,
+        "tablet": 313,
+        "mobile": 191
+      },
+      "height": {
+        "desktop": 313,
+        "tablet": 313,
+        "mobile": 208
+      },
       "blockClass": "shelf__image"
       // "hoverImage": {
       //   "criteria": "index",

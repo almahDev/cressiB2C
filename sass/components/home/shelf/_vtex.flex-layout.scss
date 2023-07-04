@@ -12,6 +12,10 @@
   &--home__shelf--col {
     padding: 56px 0 64px;
     align-items: flex-start;
+
+    @include tablet {
+      padding: 26px 12px 56px;
+    }
   }
 }
 
@@ -19,6 +23,10 @@
   &--home__shelf--group-col {
     @include desktop {
       padding-left: 20.5px;
+    }
+
+    @include tablet {
+      padding-top: 15px;
     }
   }
 }

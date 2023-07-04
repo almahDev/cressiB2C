@@ -60,7 +60,7 @@
   background: $white;
   border-radius: 0;
   padding: 0;
-  margin: 7.5px;
+  margin: 3.5px;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
   position: relative;
@@ -69,6 +69,7 @@
 
   @include desktop {
     max-width: 100% !important;
+    margin: 7.5px;
     height: auto;
 
     &:hover,
@@ -138,6 +139,7 @@
     @include tablet {
       font-size: $font-size-xs + 1;
       line-height: 13px;
+      min-height: 52px;
     }
   }
 
@@ -171,6 +173,10 @@
     height: 100%;
     transition: all 0.2s;
     object-fit: cover !important;
+
+    @include tablet {
+      margin: 0 auto;
+    }
   }
 
   .mainImageHovered {
