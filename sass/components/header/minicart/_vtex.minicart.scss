@@ -8,18 +8,14 @@
 }
 
 .minicartIconContainer {
-  color: $white;
-  padding: 0;
-  display: flex;
+  &::after {
+    content: url('assets/svg/commerce-and-shopping.svg');
+  }
+}
 
-  :global(.vtex-store-icons-0-x-cartIcon) {
-    width: 32px;
-    height: 32px;
-
-    @include tablet {
-      width: 24px;
-      height: 24px;
-    }
+.cartIcon {
+  &--al-cart {
+    display: none;
   }
 }
 
@@ -82,7 +78,7 @@
 
     :global(.vtex-button__label) {
       &::before {
-        @include icon("cart", 24px);
+        @include icon('cart', 24px);
         padding-right: 0.5rem;
       }
     }
@@ -100,10 +96,6 @@
       padding-bottom: 2px;
       transition: all 0.2s;
       min-height: auto;
-
-      @include tablet {
-        margin-right: 1rem;
-      }
 
       &:hover,
       &:focus,

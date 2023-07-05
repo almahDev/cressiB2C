@@ -224,7 +224,8 @@
     "props": {
       "blockClass": "header__main--mob"
     },
-    "children": ["drawer#search-mobile", "minicart.v2#main-header"]
+    "children": ["minicart.v2#main-header"]
+    // "children": ["drawer#search-mobile", "minicart.v2#main-header"]
   },
 
   "drawer#search-mobile": {
@@ -252,7 +253,8 @@
     "props": {
       "maxWidth": "85%",
       "backdropMode": "none",
-      "slideDirection": "horizontal"
+      "slideDirection": "horizontal",
+      "blockClass": "header__menu__hamburguer"
     },
     "blocks": ["drawer-header#header-mobile"],
     "children": ["menu#drawer"]
