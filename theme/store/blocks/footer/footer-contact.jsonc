@@ -1,13 +1,13 @@
 {
   "rich-text#footer-contact-title": {
-    "title": "al | Footer - Menu - Título - Contato",
+    "title": "Footer - Menu - Título - Contato",
     "props": {
       "text": "### Atendimento",
       "blockClass": "footer__tooltip--text"
     }
   },
   "vtex.menu@2.x:menu#footer-contact-tooltip": {
-    "title": "al | Footer - Menu - Contato",
+    "title": "Footer - Menu - Contato",
     "props": {
       "orientation": "vertical",
       "blockClass": "footer__tooltip--text"

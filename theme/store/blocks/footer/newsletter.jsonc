@@ -1,11 +1,7 @@
 {
   "flex-layout.row#newsletter": {
-    "title": "Footer  Newsletter",
-    "children": [
-      "rich-text#newsletter-logo",
-      "rich-text#newsletter-title",
-      "newsletter-form#footer"
-    ],
+    "title": "Newsletter",
+    "children": ["rich-text#newsletter-title", "newsletter-form#footer"],
     "props": {
       "blockClass": ["footer__newsletter", "footer__newsletter-"]
     }
@@ -13,8 +9,8 @@
 
   "newsletter-form#footer": {
     "children": [
+      "newsletter-input-name#footer",
       "newsletter-input-email#footer",
-      "newsletter-checkbox-confirmation#footer",
       "newsletter-submit#footer"
     ],
     "props": {
@@ -22,46 +18,34 @@
     }
   },
 
-  "rich-text#newsletter-logo": {
-    "title": "Footer  Newsletter - Logo",
-    "props": {
-      "text": "![Newsletter](https://fakeimg.pl/120x80/)",
-      "blockClass": "footer__newsletter--logo"
-    }
-  },
-
   "rich-text#newsletter-title": {
-    "title": "Footer  Newsletter - Title",
+    "title": "Newsletter - Title",
     "props": {
-      "text": "Quer receber promoções e novidades?",
+      "text": "Cadastre-se e receba ofertas e inspirações",
       "blockClass": "footer__newsletter--title"
     }
   },
 
-  "newsletter-input-email#footer": {
-    "title": "Footer  Newsletter - Email",
+  "newsletter-input-name#footer": {
+    "title": "Newsletter - Email",
     "props": {
-      "placeholderText": "Digite o seu e-mail",
+      "placeholderText": "Nome",
       "blockClass": "footer__newsletter--input-email"
     }
   },
 
-  "newsletter-checkbox-confirmation#footer": {
-    "title": "Footer  Newsletter - Checkbox",
+  "newsletter-input-email#footer": {
+    "title": "Newsletter - Email",
     "props": {
-      "checkboxLabel": "Ao se cadastrar, você concordar com a nossa {firstLink}",
-      "firstLabelLink": {
-        "url": "/",
-        "text": "política de privacidade"
-      },
-      "blockClass": "footer__newsletter--checkbox"
+      "placeholderText": "E-mail",
+      "blockClass": "footer__newsletter--input-email"
     }
   },
 
   "newsletter-submit#footer": {
-    "title": "Footer  Newsletter - Enviar",
+    "title": "Newsletter - Cadastrar",
     "props": {
-      "submitButtonLabel": "Enviar",
+      "submitButtonLabel": "Cadastrar",
       "blockClass": "footer__newsletter--submit"
     }
   }

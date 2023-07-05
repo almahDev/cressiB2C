@@ -1,6 +1,6 @@
 {
   "flex-layout.row#social-networks-wrapper": {
-    "title": "al | Redes Sociais",
+    "title": "Redes Sociais",
     "children": ["flex-layout.col#social-networks"],
     "props": {
       "blockClass": ["social-networks"]

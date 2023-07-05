@@ -1,10 +1,10 @@
 {
   "footer": {
-    "title": "al | Footer",
+    "title": "Footer",
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
-    "title": "al | Footer - Desktop",
+    "title": "Footer - Desktop",
     "children": [
       "flex-layout.row#newsletter",
       "flex-layout.row#footer-about",
@@ -16,7 +16,7 @@
 
   // FOOTER MOBILE
   "footer-layout.mobile": {
-    "title": "al | Footer - Mobile",
+    "title": "Footer - Mobile",
     "children": [
       "flex-layout.row#newsletter",
       "flex-layout.row#footer-about",
