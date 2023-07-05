@@ -76,26 +76,6 @@ button#payment-data-submit {
   }
 }
 
-// button#cart-coupon-add {
-//   @include text($font-size-md, $primary-pure-500, $semi-bold);
-//   // text-transform: uppercase;
-//   border-radius: 50px !important;
-//   transition: all 0.2s;
-//   height: 48px !important;
-//   padding: 0 1rem;
-//   text-transform: lowercase !important;
-//   &::first-letter {
-//     text-transform: uppercase !important;
-//   }
-
-//   &:hover,
-//   &:active,
-//   &:focus {
-//     background-color: $primary-pure-500;
-//     color: $white;
-//   }
-// }
-
 #shipping-calculate-link {
   font-size: 0;
   transition: all 0.2s;
@@ -412,28 +392,6 @@ button#payment-data-submit {
 
   .item {
     color: $text-pure-500;
-  }
-}
-
-.orderform-template .cart-template.mini-cart .summary-totalizers {
-  tbody {
-    padding-bottom: 0;
-
-    td {
-      font-size: $font-size-sm !important;
-      padding-bottom: 1.2rem !important;
-    }
-  }
-
-  tfoot {
-    tr td {
-      font-size: $font-size-md !important;
-      padding-bottom: 22px !important;
-
-      @include tablet {
-        font-size: $font-size-sm !important;
-      }
-    }
   }
 }
 
@@ -958,48 +916,6 @@ div.cart-template.mini-cart.span4,
   border-radius: 4px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.16);
   padding: 1rem;
-
-  .coupon-fieldset {
-    .coupon-label {
-      display: block !important;
-      color: #808080 !important;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      text-align: start;
-      margin-bottom: 0.2rem !important;
-    }
-
-    #cart-coupon {
-      border-radius: 2px;
-      width: 100%;
-      max-width: 226px;
-    }
-
-    #cart-coupon-add {
-      border-radius: 6px;
-      border: 2px solid #40d6c6;
-      font-size: 0;
-      color: #40d6c6;
-      font-style: normal;
-      font-weight: 500;
-      width: 100%;
-      max-width: 120px;
-      position: relative;
-
-      &::before {
-        content: 'Enviar';
-        font-size: 16px;
-      }
-
-      &::after {
-        content: url('/arquivos/icon-checkout-enviar.svg');
-        position: absolute;
-        right: 17px;
-        top: 7px;
-      }
-    }
-  }
 
   .totalizers-list {
     border: 0;

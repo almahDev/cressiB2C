@@ -1,22 +1,6 @@
 .client-profile-data {
-  .active & {
-  }
-
-  .accordion-toggle {
-    > span {
-      color: #000;
-      font-size: 19px;
-      font-style: normal;
-      font-weight: 700;
-
-      &:before {
-        border-radius: 33px;
-        border: 2px solid #40d6c6 !important;
-        background: #f7f5f2 !important;
-        color: #40d6c6 !important;
-      }
-    }
-  }
+  // .active & {
+  // }
 
   .box-client-info-pf {
     .client-notice {
@@ -73,5 +57,37 @@
   input[type='email'],
   input[type='text'] {
     height: 48px;
+  }
+}
+
+.accordion-toggle {
+  > span {
+    color: #000;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+
+    &:before {
+      border-radius: 33px;
+      border: 2px solid #40d6c6 !important;
+      background: #f7f5f2 !important;
+      color: #40d6c6 !important;
+    }
+  }
+}
+
+#shipping-data {
+  span {
+    color: #000;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+
+    &:before {
+      border-radius: 33px;
+      border: 2px solid #40d6c6 !important;
+      background: #f7f5f2 !important;
+      color: #40d6c6 !important;
+    }
   }
 }
