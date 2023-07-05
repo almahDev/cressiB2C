@@ -441,41 +441,6 @@ button#payment-data-submit {
   margin-right: 1rem !important;
 }
 
-body.v-custom-step-profile {
-  .client-profile-data .accordion-toggle > span:before {
-    background-color: $primary-pure-500 !important;
-    color: $white !important;
-    text-transform: unset !important;
-
-    font-weight: $bold !important;
-    font-size: $font-size-h3 !important;
-  }
-}
-
-body.v-custom-step-shipping {
-  .shipping-data .accordion-toggle:before,
-  .client-profile-data .accordion-toggle > span:before {
-    background-color: $primary-pure-500 !important;
-    color: $white !important;
-    text-transform: unset !important;
-
-    font-weight: $bold !important;
-    font-size: $font-size-h3 !important;
-  }
-}
-
-body.v-custom-step-payment {
-  .shipping-data .accordion-toggle:before,
-  .accordion-toggle > span:before {
-    background-color: $primary-pure-500 !important;
-    color: $white !important;
-    text-transform: unset !important;
-
-    font-weight: $bold !important;
-    font-size: $font-size-h3 !important;
-  }
-}
-
 p.payment-submit-wrap {
   @include tablet {
     position: relative !important;
@@ -555,19 +520,6 @@ p.payment-submit-wrap {
     min-width: auto !important;
     max-width: 143px !important;
     @extend %primary-button;
-  }
-}
-
-.orderform-template-holder #client-profile-data .step.client-profile-data {
-  input[type='text'],
-  input[type='email'] {
-    height: 37px !important;
-    @include text($font-size-md, $text-pure-500, $regular);
-    padding: 0 1.5rem !important;
-
-    @include tablet {
-      font-size: $font-size-sm !important;
-    }
   }
 }
 
@@ -739,26 +691,26 @@ div.cart-select-gift-placeholder:empty {
     display: none;
   }
 }
-.shipping-data.accordion-toggle.collapsed,
-.accordion-toggle.collapsed > span,
-.shipping-data .accordion-toggle.collapsed,
-.accordion-toggle.collapsed > span {
-  text-transform: unset !important;
+// .shipping-data.accordion-toggle.collapsed,
+// .accordion-toggle.collapsed > span,
+// .shipping-data .accordion-toggle.collapsed,
+// .accordion-toggle.collapsed > span {
+//   text-transform: unset !important;
 
-  font-weight: $bold !important;
-  font-size: $font-size-h3 !important;
+//   font-weight: $bold !important;
+//   font-size: $font-size-h3 !important;
 
-  &::before {
-    background-color: $white !important;
-    border-color: $primary-pure-500 !important;
-    color: $primary-pure-500 !important;
-    margin-right: 1rem !important;
-    text-transform: unset !important;
+//   &::before {
+//     background-color: $white !important;
+//     border-color: $primary-pure-500 !important;
+//     color: $primary-pure-500 !important;
+//     margin-right: 1rem !important;
+//     text-transform: unset !important;
 
-    font-weight: $bold !important;
-    font-size: $font-size-h3 !important;
-  }
-}
+//     font-weight: $bold !important;
+//     font-size: $font-size-h3 !important;
+//   }
+// }
 button#btn-go-to-payment {
   @extend %primary-button;
   border-radius: 50px;
