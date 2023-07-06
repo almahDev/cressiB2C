@@ -1,6 +1,18 @@
 .flexRowContent {
   &--confirmationButtons {
     margin: 0;
+
+    :global(.vtex-button) {
+      height: 48px;
+      border: none;
+      background: $primary-pure-500;
+      border-radius: 6px;
+      @include text($font-size-md, $high-pure, $bold);
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &--order-header {
@@ -14,17 +26,12 @@
       height: 48px;
       border: none;
       background: $primary-pure-500;
-      border-radius: 30px;
+      border-radius: 6px;
       @include text($font-size-md, $high-pure, $bold);
       padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-  }
-  &--confirmationButtons {
-    :global(.vtex-button) {
-      @extend %secondary-button;
     }
   }
 }

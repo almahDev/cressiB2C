@@ -9,6 +9,10 @@
 
   #go-to-cart-button {
     top: 1.5rem !important;
+
+    a {
+      color: #000 !important;
+    }
   }
 
   .summary-template-holder {
@@ -22,10 +26,15 @@
   }
 
   .coupon-label {
+    display: block !important;
+    text-align: left;
+    margin-bottom: 0.5rem !important;
+
     label {
       color: #808080;
-      font-size: 14px;
+      font-size: 14px !important;
       font-weight: 400;
+      font-style: normal;
     }
   }
 
@@ -35,11 +44,7 @@
 
       #cart-coupon {
         width: 100%;
-        max-width: 80%;
-
-        @media (max-width: $screen-xs-max) {
-          max-width: 70%;
-        }
+        max-width: 70%;
       }
 
       #cart-coupon-add {
@@ -48,11 +53,10 @@
         color: $color-1;
         height: 40px !important;
         width: 100%;
-        max-width: 20%;
-
-        @media (max-width: $screen-xs-max) {
-          max-width: 30%;
-        }
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
@@ -60,7 +64,7 @@
   .totalizers {
     .info,
     .monetary {
-      color: $color-1 !important;
+      color: #808080 !important;
     }
   }
 }
