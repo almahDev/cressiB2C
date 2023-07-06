@@ -1,0 +1,93 @@
+.client-profile-data {
+  // .active & {
+  // }
+
+  .box-client-info-pf {
+    .client-notice {
+      font-size: 14px;
+      font-weight: 600;
+      color: #808080;
+    }
+
+    .client-email {
+      label {
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .box-client-info-pj {
+    a {
+      color: #40d6c6 !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+
+  .newsletter {
+    .checkbox {
+      min-height: unset;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    input[type='checkbox'] {
+      accent-color: #11a595;
+      width: 25px;
+      height: 25px;
+    }
+
+    .newsletter-text {
+      color: #7f7f7f;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      margin-left: 0.5rem;
+    }
+  }
+
+  #go-to-shipping {
+    border-radius: 6px !important;
+  }
+
+  input[type='email'],
+  input[type='text'] {
+    height: 48px;
+  }
+}
+
+.accordion-toggle {
+  > span {
+    color: #000;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+
+    &:before {
+      border-radius: 33px;
+      border: 2px solid #40d6c6 !important;
+      background: #f7f5f2 !important;
+      color: #40d6c6 !important;
+    }
+  }
+}
+
+#shipping-data {
+  span {
+    color: #000;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+
+    &:before {
+      border-radius: 33px;
+      border: 2px solid #40d6c6 !important;
+      background: #f7f5f2 !important;
+      color: #40d6c6 !important;
+    }
+  }
+}

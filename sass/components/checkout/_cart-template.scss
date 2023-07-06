@@ -1,0 +1,70 @@
+.cart-template {
+  .custom-cart-template-wrap {
+    padding: 61px 20px 27px 20px !important;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 15px !important;
+    }
+  }
+
+  #go-to-cart-button {
+    top: 1.5rem !important;
+
+    a {
+      color: #000 !important;
+    }
+  }
+
+  .summary-template-holder {
+    box-shadow: none;
+    border: none;
+
+    .summary-coupon-wrap,
+    .totalizers-list {
+      border: 0 !important;
+    }
+  }
+
+  .coupon-label {
+    display: block !important;
+    text-align: left;
+    margin-bottom: 0.5rem !important;
+
+    label {
+      color: #808080;
+      font-size: 14px !important;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+
+  .coupon-fields {
+    span {
+      align-items: center;
+
+      #cart-coupon {
+        width: 100%;
+        max-width: 70%;
+      }
+
+      #cart-coupon-add {
+        border-radius: 6px;
+        border: 2px solid $color-1;
+        color: $color-1;
+        height: 40px !important;
+        width: 100%;
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .totalizers {
+    .info,
+    .monetary {
+      color: #808080 !important;
+    }
+  }
+}
