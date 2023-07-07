@@ -1,11 +1,21 @@
 .minicartTitle {
-  @include text($font-size-lg, $text-color-1-500, $bold);
-  background: $high-light;
-  letter-spacing: 0;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 0.75rem 0.95rem 0.95rem;
-  border-bottom: none;
+  font-size: 0;
+  font-style: normal;
+
+  &::before {
+    content: 'MINHAS';
+    color: $color-1;
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+  }
+
+  &::after {
+    content: 'COMPRAS';
+    font-size: 22px;
+    color: #4f4f4f;
+    font-weight: normal;
+  }
 }
 
 .closeIconButton {

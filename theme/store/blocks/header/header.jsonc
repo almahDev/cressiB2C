@@ -198,7 +198,7 @@
     "children": ["flex-layout.row#1-mobile", "flex-layout.row#bar-search"]
   },
   "flex-layout.row#0-mobile": {
-    "title": "Almah |Header - Topbar - Mobile",
+    "title": "Almah | Header - Topbar - Mobile",
     "props": {
       "blockClass": "header__tooltip",
       "horizontalAlign": "center",
@@ -227,7 +227,6 @@
       "blockClass": "header__main--mob"
     },
     "children": ["minicart.v2#main-header"]
-    // "children": ["drawer#search-mobile", "minicart.v2#main-header"]
   },
 
   "flex-layout.row#bar-search": {
@@ -237,15 +236,6 @@
     },
     "children": ["search-bar"]
   },
-  // "drawer#search-mobile": {
-  //   "title": "Almah |Header - Busca - Mobile",
-  //   "props": {
-  //     "isFullWidth": true,
-  //     "slideDirection": "horizontal",
-  //     "blockClass": "header__drawer--search"
-  //   },
-  //   "children": ["search-bar"]
-  // },
 
   "logo#mobile": {
     "props": {

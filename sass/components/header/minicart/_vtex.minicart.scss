@@ -7,6 +7,11 @@
   }
 }
 
+.closeIconContainer {
+  position: absolute;
+  right: 0;
+}
+
 .minicartIconContainer {
   &::after {
     content: url('assets/svg/commerce-and-shopping.svg');

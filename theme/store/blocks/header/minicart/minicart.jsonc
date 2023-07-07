@@ -9,7 +9,7 @@
     "children": ["minicart-base-content#main-header"]
   },
 
-  // MINICART HEADER
+  // // MINICART HEADER
   "minicart-base-content#main-header": {
     "blocks": ["minicart-empty-state#main-header"],
     "children": [
