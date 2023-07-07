@@ -138,16 +138,18 @@
   },
   "search-bar": {
     "props": {
-      "placeholder": "O que você procura hoje?",
+      "placeholder": "ENCONTRE UM PRODUTO",
       "openAutocompleteOnFocus": true,
-      "blockClass": "header__search"
+      "blockClass": "header__search",
+      "displayMode": "clear-button"
     },
     "blocks": ["autocomplete-result-list.v2"]
+    // PLACEHOLDER SÓ ACEITA STRING
   },
   "autocomplete-result-list.v2": {
     "props": {
       "horizontalProductSummary": "product-summary.shelf#search",
-      "productLayout": "HORIZONTAL",
+      "productLayout": "VERTICAL",
       "simulationBehavior": "default"
     },
     "blocks": ["product-summary.shelf#search"]
@@ -193,7 +195,7 @@
     ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": ["flex-layout.row#1-mobile", "flex-layout.row#bar-search"]
   },
   "flex-layout.row#0-mobile": {
     "title": "Almah |Header - Topbar - Mobile",
@@ -228,15 +230,22 @@
     // "children": ["drawer#search-mobile", "minicart.v2#main-header"]
   },
 
-  "drawer#search-mobile": {
-    "title": "Almah |Header - Busca - Mobile",
+  "flex-layout.row#bar-search": {
+    "title": "Almah | Barra de Busca",
     "props": {
-      "isFullWidth": true,
-      "slideDirection": "horizontal",
-      "blockClass": "header__drawer--search"
+      "blockClass": "block-search-bar"
     },
     "children": ["search-bar"]
   },
+  // "drawer#search-mobile": {
+  //   "title": "Almah |Header - Busca - Mobile",
+  //   "props": {
+  //     "isFullWidth": true,
+  //     "slideDirection": "horizontal",
+  //     "blockClass": "header__drawer--search"
+  //   },
+  //   "children": ["search-bar"]
+  // },
 
   "logo#mobile": {
     "props": {
