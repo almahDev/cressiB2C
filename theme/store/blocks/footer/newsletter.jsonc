@@ -3,7 +3,8 @@
     "title": "Newsletter",
     "children": ["rich-text#newsletter-title", "newsletter-form#footer"],
     "props": {
-      "blockClass": ["footer__newsletter", "footer__newsletter-"]
+      "fullWidth": true,
+      "blockClass": ["footer__newsletter"]
     }
   },
 

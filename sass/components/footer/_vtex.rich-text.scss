@@ -131,52 +131,23 @@
     }
   }
 
-  &--footer__newsletter {
-    &--logo {
-      margin: 0 1rem 0 0;
-      width: auto;
-      align-items: center;
-      @include tablet {
-        margin: 0 0 0.5rem;
-        justify-content: center;
-      }
-
-      .wrapper {
-        .paragraph {
-          margin: 0;
-
-          .image {
-            height: 3rem;
-            width: 84px;
-            @include tablet {
-              width: 4rem;
-              height: 2.5rem;
-            }
-          }
-        }
-      }
+  &--footer__newsletter--title {
+    width: 100%;
+    align-items: center;
+    @include tablet {
+      max-width: none;
+      margin: 0 0 1rem;
+      text-align: center;
     }
 
-    &--title {
-      margin: 0 3rem 0 0;
-      max-width: 315px;
-      width: auto;
-      align-items: center;
-      @include tablet {
-        max-width: none;
-        margin: 0 0 1rem;
-        text-align: center;
-      }
-
-      .wrapper {
-        .paragraph {
-          margin: 0;
-          @include text($font-size-h3, $white, $bold);
-          line-height: 29px;
-          @include tablet {
-            @include text($font-size-xlg, $white, $bold);
-            line-height: 150%;
-          }
+    .wrapper {
+      .paragraph {
+        margin: 0;
+        @include text($font-size-h3, $white, $bold);
+        line-height: 29px;
+        @include tablet {
+          @include text($font-size-xlg, $white, $bold);
+          line-height: 150%;
         }
       }
     }

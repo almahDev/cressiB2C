@@ -10,16 +10,9 @@
 
 .newsletterForm {
   &--footer__newsletter {
-    display: grid;
-    grid-template-areas:
-      "inputEmail submit"
-      "checkbox checkbox";
-    @include tablet {
-      grid-template-areas:
-        "inputEmail"
-        "submit"
-        "checkbox";
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     :global(.vtex-button) {
       width: 150px;

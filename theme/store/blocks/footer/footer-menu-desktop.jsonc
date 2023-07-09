@@ -2,6 +2,7 @@
   "flex-layout.row#footer-menu-desktop": {
     "title": "Footer  Menu - Desktop",
     "children": [
+      "logo#footer",
       "vtex.menu@2.x:menu#footer-menu-1",
       "vtex.menu@2.x:menu#footer-menu-2",
       "vtex.menu@2.x:menu#footer-menu-3",

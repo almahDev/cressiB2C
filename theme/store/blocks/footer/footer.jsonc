@@ -7,7 +7,6 @@
     "title": "Footer - Desktop",
     "children": [
       "flex-layout.row#newsletter",
-      "flex-layout.row#footer-about",
       "flex-layout.row#footer-menu-desktop",
       "flex-layout.row#footer-methods",
       "flex-layout.row#footer-legal-information"
@@ -19,7 +18,6 @@
     "title": "Footer - Mobile",
     "children": [
       "flex-layout.row#newsletter",
-      "flex-layout.row#footer-about",
       "menu-item#footer-menu-1-mob",
       "menu-item#footer-menu-2-mob",
       "menu-item#footer-menu-3-mob",

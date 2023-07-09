@@ -1,32 +1,11 @@
 .flexRow {
   &--footer__newsletter {
-    padding: 2rem 0;
-    margin-bottom: 2.5rem;
-    background-color: $color-1-500;
+    padding: 24px 0 21px;
+    margin-bottom: 0;
+    background-color: $primary-pure-500;
+
     @include tablet {
       padding: 1.5rem 1rem;
-    }
-
-    .stretchChildrenWidth {
-      width: auto !important;
-    }
-  }
-
-  &--footer__about {
-    position: relative;
-
-    &::before {
-      content: "";
-      background-color: $color-1;
-      height: 1px;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 50%;
-      transform: translateY(calc(-50% + 1rem));
-      @include tablet {
-        transform: translateY(-50%);
-      }
     }
   }
 
@@ -67,6 +46,7 @@
     }
   }
 }
+
 .flexRowContent {
   &--footer__newsletter {
     justify-content: center;
