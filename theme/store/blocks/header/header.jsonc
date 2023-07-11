@@ -12,7 +12,7 @@
     "children": [
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop",
-      "flex-layout.row#5-desktop",
+      // "flex-layout.row#5-desktop",
       "experimental__visibility-layout#back-to-top-button",
       "experimental__visibility-layout#header-whatsapp"
     ]
@@ -30,7 +30,6 @@
       "rich-text#tooltip-01",
       "flex-layout.col#spacer",
       "flex-layout.col#tooltip-social"
-      // "vtex.menu@2.x:menu#tooltip"
     ]
   },
   "flex-layout.col#spacer": {
@@ -55,11 +54,7 @@
   },
   "disposition-layout#row-4": {
     "title": "Almah | Header - Disposição do conteúdo",
-    "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#search-desktop",
-      "flex-layout.col#links-desktop"
-    ],
+    "children": ["flex-layout.col#logo-desktop", "flex-layout.col#search-link"],
     "props": {
       "blockClass": "header__main--order",
       "disposition": [
@@ -75,11 +70,26 @@
       ]
     }
   },
+  "flex-layout.col#search-link": {
+    "children": ["flex-layout.row#main-line-1", "flex-layout.row#main-line-2"]
+  },
+  "flex-layout.row#main-line-1": {
+    "children": [
+      "flex-layout.col#search-desktop",
+      "flex-layout.col#links-desktop"
+    ],
+    "props": {
+      "width": "80%"
+    }
+  },
+  "flex-layout.row#main-line-2": {
+    "children": ["vtex.menu@2.x:menu#main-menu"]
+  },
+
   "flex-layout.col#search-desktop": {
     "title": "Almah |Header - Busca",
     "props": {
-      "verticalAlign": "middle",
-      "width": "40%"
+      "verticalAlign": "middle"
     },
     "children": ["search-bar"]
   },
@@ -95,8 +105,7 @@
     "title": "Almah |Header - Links",
     "children": ["flex-layout.row#links-desktop"],
     "props": {
-      "verticalAlign": "middle",
-      "width": "30%"
+      "verticalAlign": "middle"
     }
   },
   "flex-layout.row#links-desktop": {

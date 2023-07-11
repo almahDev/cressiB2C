@@ -14,14 +14,20 @@
   },
   "image#face-book": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": 24
+      "src": "assets/svg/top-bar-Facebook.svg",
+      "maxHeight": 24,
+      "link": {
+        "url": ""
+      }
     }
   },
   "image#instagram": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": 24
+      "src": "assets/svg/top-bar-Instagram.svg",
+      "maxHeight": 24,
+      "link": {
+        "url": ""
+      }
     }
   }
 }

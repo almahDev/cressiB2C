@@ -19,6 +19,7 @@
     background-color: #f9f9f9;
   }
 }
+
 .flexRowContent {
   &--header__main {
     align-items: center;
@@ -31,19 +32,7 @@
 
     .stretchChildrenWidth {
       align-items: center;
-      justify-content: space-between;
-    }
-
-    .flexCol {
-      width: 38% !important;
-
-      &:first-child {
-        width: 25% !important;
-      }
-
-      &:last-child {
-        width: 32% !important;
-      }
+      justify-content: initial;
     }
   }
 
@@ -78,14 +67,17 @@
       }
     }
   }
-
-  &--header__links--desktop {
-    .stretchChildrenWidth {
-    }
-  }
 }
 
 .flexCol {
+  &--tooltip-social {
+    display: flex;
+    flex-direction: row;
+  }
 }
+
 .flexColChild {
+  &--tooltip-social {
+    margin: 0 0.5rem;
+  }
 }
