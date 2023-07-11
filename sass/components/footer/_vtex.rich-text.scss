@@ -136,17 +136,18 @@
     align-items: center;
     @include tablet {
       max-width: none;
-      margin: 0 0 1rem;
+      margin: 0;
       text-align: center;
     }
 
     .wrapper {
       .paragraph {
+        @include text($font-size-xlg, $white, $bold);
+        line-height: 24.38px;
         margin: 0;
-        @include text($font-size-h3, $white, $bold);
-        line-height: 29px;
+
         @include tablet {
-          @include text($font-size-xlg, $white, $bold);
+          @include text($font-size-lg, $white, $bold);
           line-height: 150%;
         }
       }

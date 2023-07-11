@@ -50,6 +50,15 @@
 .flexRowContent {
   &--footer__newsletter {
     justify-content: center;
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+
+      &:first-child {
+        width: auto !important;
+        white-space: pre;
+      }
+    }
   }
 
   &--home__footer--developed-powered-wrapper {

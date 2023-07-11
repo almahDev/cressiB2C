@@ -4,6 +4,7 @@
     "children": ["rich-text#newsletter-title", "newsletter-form#footer"],
     "props": {
       "fullWidth": true,
+      "colGap": 7,
       "blockClass": ["footer__newsletter"]
     }
   },
