@@ -29,7 +29,8 @@
     "children": [
       "rich-text#tooltip-01",
       "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#tooltip"
+      "flex-layout.col#tooltip-social"
+      // "vtex.menu@2.x:menu#tooltip"
     ]
   },
   "flex-layout.col#spacer": {
