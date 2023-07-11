@@ -3,77 +3,56 @@
   "vtex.menu@2.x:menu#footer-menu-1": {
     "title": "Footer  Menu 1",
     "props": {
+      "additionalDef": "title",
       "orientation": "vertical",
-      "blockClass": ["footer__menu", "footer__menu-"]
-    },
-    "children": [
-      "menu-item#footer-menu-1-title",
-      "menu-item#footer-menu-1-col-1",
-      "menu-item#footer-menu-1-col-2",
-      "menu-item#footer-menu-1-col-3"
-    ]
-  },
-  "menu-item#footer-menu-1-title": {
-    "props": {
-      "id": "menu-item-footer-menu-1-title",
-      "type": "custom",
-      "iconId": null,
-      "highlight": true,
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "Institucional",
-        "text": "Institucional"
-      }
-    }
-  },
-  "menu-item#footer-menu-1-col-1": {
-    "props": {
-      "id": "menu-item-footer-menu-1-col-1",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "footer__menu__item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "Quem Somos",
-        "text": "Quem Somos"
-      }
-    }
-  },
-  "menu-item#footer-menu-1-col-2": {
-    "props": {
-      "id": "menu-item-footer-menu-1-col-2",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "footer__menu__item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "Nossa história",
-        "text": "Nossa história"
-      }
-    }
-  },
-  "menu-item#footer-menu-1-col-3": {
-    "props": {
-      "id": "menu-item-footer-menu-1-col-3",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "footer__menu__item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "Notícias",
-        "text": "Notícias"
-      }
+      "blockClass": ["footer__menu"],
+      "title": {
+        "itemProps": {
+          "text": "Institucional"
+        },
+        "type": "custom"
+      },
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "footer__menu__item",
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Sobre Nós",
+            "text": "Sobre Nós"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "footer__menu__item",
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Política de Privacidade",
+            "text": "Política de Privacidade"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "footer__menu__item",
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Política de Troca",
+            "text": "Política de Troca"
+          }
+        }
+      ]
     }
   },
 
