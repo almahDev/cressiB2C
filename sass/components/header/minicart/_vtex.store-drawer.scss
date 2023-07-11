@@ -1,6 +1,8 @@
 .minicartTitle {
   font-size: 0;
   font-style: normal;
+  margin-top: 2.5rem;
+  padding: 0 1.5rem 3.31rem 1.5rem;
 
   &::before {
     content: 'MINHAS';
@@ -23,31 +25,6 @@
     &:not(&--continuar-comprando) {
       position: absolute;
     }
-    &--continuar-comprando {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 48px;
-      width: 100%;
-      text-transform: uppercase;
-      font-size: $font-size-md;
-      font-weight: $semi-bold;
-      color: $text-color-1-500;
-      font-family: $main-font;
-      margin: 0 auto 1rem;
-      text-decoration: none;
-      border: 1px solid $high-light;
-      border-radius: 4px;
-      transition: all 0.2s;
-      box-sizing: border-box;
-      background: $white;
-
-      &:hover,
-      &:active,
-      &:focus {
-        filter: brightness(0.9);
-      }
-    }
   }
 }
 
@@ -59,9 +36,9 @@
     height: 48px;
     width: 100%;
     text-transform: uppercase;
-    font-size: $font-size-md;
+    font-size: 1.25rem;
     font-weight: $semi-bold;
-    color: $text-color-1-500;
+    color: $white;
     font-family: $main-font;
     margin: 0 auto 1rem;
     text-decoration: none;
@@ -69,7 +46,43 @@
     border-radius: 4px;
     transition: all 0.2s;
     box-sizing: border-box;
-    background: $white;
+    background: #bdbdbd;
+    text-transform: capitalize;
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+:global(.vtex-rich-text-0-x-wrapper--continuar-comprando) {
+  width: 100%;
+
+  :global(.vtex-rich-text-0-x-paragraph--continuar-comprando) {
+    margin: 0;
+  }
+
+  :global(.vtex-rich-text-0-x-link--continuar-comprando) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: $semi-bold;
+    color: $white;
+    font-family: $main-font;
+    text-transform: capitalize;
+    margin: 0 auto 1rem;
+    text-decoration: none;
+    border: 1px solid#bdbdbd;
+    border-radius: 6px;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    background: #bdbdbd;
 
     &:hover,
     &:active,

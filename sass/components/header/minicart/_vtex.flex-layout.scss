@@ -6,7 +6,6 @@
   &--minicart-footer {
     box-shadow: none;
     padding: 0.5rem 1rem 0;
-    border-top: 1px solid $high-light;
     background-color: $white;
     position: static;
   }
@@ -16,8 +15,22 @@
   &--all-cart {
     padding: 0;
   }
-}
-.flexCol {
-}
-.flexColChild {
+
+  &--al-cart-list-row {
+    padding: 0 1.5rem;
+  }
+
+  &--al-quantity {
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      &:first-child {
+        width: 70% !important;
+      }
+
+      &:last-child {
+        width: 30% !important;
+        align-items: center;
+        justify-content: end;
+      }
+    }
+  }
 }
