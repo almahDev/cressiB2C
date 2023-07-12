@@ -1,53 +1,45 @@
 .menuContainerNav {
   &--footer__menu {
-    .menuContainer {
-      .menuItem {
-        .styledLink {
-          @include link($font-size-sm, $text-color-1, $regular, none);
-          line-height: 230%;
+    .styledLinkContainer {
+      margin: 0;
+      padding: 0 0 19px;
+      text-decoration: none;
+    }
 
-          .styledLinkContainer {
-            margin: 0;
-            padding: 0;
-          }
+    .styledLink {
+      @include link($font-size-h5 + 1, $color-c-11, $bold, none);
+      text-transform: uppercase;
+      line-height: normal;
+      display: inline-block;
 
-          .styledLinkContent {
-            &--icon-footer-menu {
-              justify-content: flex-start;
-            }
-          }
-
-          .styledLinkIcon {
-            &--icon-footer-menu {
-              margin-right: 0.75rem;
-              align-items: center;
-              display: flex;
-            }
-          }
-        }
-
-        &:first-child {
-          @include tablet {
-            display: none;
-          }
-
-          .styledLink {
-            @include link($font-size-md, $text-color-1, $semi-bold, none);
-            line-height: 150%;
-
-            .styledLinkContainer {
-              margin-bottom: 1rem;
-            }
-          }
-        }
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none !important;
       }
     }
 
     .menuContainer {
       .menuItem {
-        &:first-child {
-          .styledLink {
-            color: $color-1-500;
+        .styledLink {
+          @include link($font-size-lg, $color-c-11, $regular, none);
+          text-transform: none;
+
+          &::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: $color-c-11;
+            transition: width 0.2s ease-in-out;
+            display: block;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            &::after {
+              width: 100%;
+            }
           }
         }
       }
@@ -104,7 +96,7 @@
                 margin: 0;
 
                 &::before {
-                  content: url("assets/svg/fi_chevron-right.svg");
+                  content: url('assets/svg/fi_chevron-right.svg');
                   width: 1.5rem;
                   height: 1.5rem;
                 }
