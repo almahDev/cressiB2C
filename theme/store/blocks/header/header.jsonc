@@ -79,7 +79,8 @@
       "flex-layout.col#links-desktop"
     ],
     "props": {
-      "width": "80%"
+      "width": "80%",
+      "blockClass": "main-elements-desk"
     }
   },
   "flex-layout.row#main-line-2": {
@@ -97,7 +98,8 @@
     "title": "Almah |Header - Logo",
     "props": {
       "verticalAlign": "middle",
-      "width": "20%"
+      "width": "20%",
+      "blockClass": ["logo-allegralar-desk"]
     },
     "children": ["logo#desktop"]
   },
@@ -110,12 +112,7 @@
   },
   "flex-layout.row#links-desktop": {
     "title": "Almah |Header - Links - Desktop",
-    "children": [
-      "locale-switcher",
-      "login#header",
-      "menu#wishlist",
-      "minicart.v2#main-header"
-    ]
+    "children": ["login#header", "menu#wishlist", "minicart.v2#main-header"]
   },
   // WISH LIST
   "menu#wishlist": {

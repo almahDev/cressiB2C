@@ -67,12 +67,27 @@
       }
     }
   }
+
+  &--main-elements-desk {
+    justify-content: space-between;
+
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      &:last-child {
+        width: 19rem !important;
+      }
+    }
+  }
 }
 
 .flexCol {
   &--tooltip-social {
     display: flex;
     flex-direction: row;
+  }
+
+  &--logo-allegralar-desk {
+    width: 20rem !important;
+    margin-right: 2.25rem;
   }
 }
 
