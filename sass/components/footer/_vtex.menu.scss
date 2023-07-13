@@ -14,6 +14,7 @@
         none,
         $secondary-font
       );
+      font-family: $secondary-font !important;
       text-transform: uppercase;
       line-height: normal;
       display: inline-block;
@@ -35,6 +36,7 @@
             none,
             $secondary-font
           );
+          font-family: $secondary-font !important;
           text-transform: none;
 
           &::after {
@@ -94,6 +96,7 @@
         none,
         $secondary-font
       );
+      font-family: $secondary-font !important;
       text-transform: uppercase;
       line-height: normal;
       display: inline-block;
