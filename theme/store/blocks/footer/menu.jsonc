@@ -142,96 +142,51 @@
   },
 
   //  menu 3
-  "vtex.menu@2.x:menu#footer-menu-3": {
+  "flex-layout.col#menu#footer-menu-3": {
     "title": "Footer  Menu 3",
-    "props": {
-      "orientation": "vertical",
-      "blockClass": ["footer__menu", "footer__menu-"]
-    },
     "children": [
-      "menu-item#footer-menu-3-title",
-      "menu-item#footer-menu-3-col-1",
-      "menu-item#footer-menu-3-col-2",
-      "menu-item#footer-menu-3-col-3",
-      "menu-item#footer-menu-3-col-4"
-    ]
-  },
-  "menu-item#footer-menu-3-title": {
+      "menu-item#footer-menu-3-security-title",
+      "flex-layout.row#footer-menu-3-security",
+      "menu-item#footer-menu-3-social-media-title",
+      "flex-layout.row#footer-menu-3-social-networks"
+    ],
     "props": {
-      "id": "menu-item-footer-menu-3-title",
+      "blockClass": ["footer__menu", "footer__menu--thirdcolumn"],
+      "preventVerticalStretch": true,
+      "width": "30%"
+    }
+  },
+  "menu-item#footer-menu-3-security-title": {
+    "title": "Título - Segurança",
+    "props": {
+      "id": "menu-item-footer-menu-3-security-title",
       "type": "custom",
+      "blockClass": ["footer__menu", "footer__menu--title"],
       "iconId": null,
       "highlight": true,
       "itemProps": {
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "Ajuda",
-        "text": "Ajuda"
+        "tagTitle": "SEGURANÇA",
+        "text": "SEGURANÇA"
       }
     }
   },
-  "menu-item#footer-menu-3-col-1": {
+  "menu-item#footer-menu-3-social-media-title": {
+    "title": "Título - Redes Sociais",
     "props": {
-      "id": "menu-item-footer-menu-3-col-1",
+      "id": "menu-item-footer-menu-3-security-title",
       "type": "custom",
+      "blockClass": ["footer__menu", "footer__menu--title"],
       "iconId": null,
-      "highlight": false,
-      "blockClass": "footer__menu__item",
+      "highlight": true,
       "itemProps": {
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "Perguntas frequentes",
-        "text": "Perguntas frequentes"
-      }
-    }
-  },
-  "menu-item#footer-menu-3-col-2": {
-    "props": {
-      "id": "menu-item-footer-menu-3-col-2",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "footer__menu__item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "Como comprar",
-        "text": "Como comprar"
-      }
-    }
-  },
-  "menu-item#footer-menu-3-col-3": {
-    "props": {
-      "id": "menu-item-footer-menu-3-col-3",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "footer__menu__item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "Fale conosco",
-        "text": "Fale conosco"
-      }
-    }
-  },
-  "menu-item#footer-menu-3-col-4": {
-    "props": {
-      "id": "menu-item-footer-menu-3-col-4",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "footer__menu__item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "Lista de presentes",
-        "text": "Lista de presentes"
+        "tagTitle": "REDES SOCIAIS",
+        "text": "REDES SOCIAIS"
       }
     }
   }

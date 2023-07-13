@@ -71,7 +71,7 @@
     "blocks": ["vtex.menu@2.x:submenu.accordion#footer-menu-3"]
   },
   "vtex.menu@2.x:submenu.accordion#footer-menu-3": {
-    "children": ["vtex.menu@2.x:menu#footer-menu-3"],
+    // "children": ["vtex.menu@2.x:menu#footer-menu-3"],
     "props": {
       "blockClass": "footer_inner_menu--mob"
     }

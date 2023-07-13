@@ -1,33 +1,14 @@
 {
-  "flex-layout.row#social-networks-wrapper": {
+  "flex-layout.row#footer-menu-3-social-networks": {
     "title": "Redes Sociais",
-    "children": ["flex-layout.col#social-networks"],
-    "props": {
-      "blockClass": ["social-networks"]
-    }
-  },
-  "flex-layout.col#social-networks": {
-    "title": "Rodapé - Meios Redes Sociais",
-    "children": ["flex-layout.row#social-networks"],
-    "props": {
-      "blockClass": "social-networks-wrapper",
-      "horizontalAlign": "center",
-      "preventVerticalStretch": true,
-      "rowGap": 0,
-      "verticalAlign": "middle"
-    }
-  },
-
-  "flex-layout.row#social-networks": {
     "children": ["list-context.media-list#social-networks"],
     "props": {
-      "blockClass": "social-networks-badges",
+      "blockClass": "footer__social-network",
       "colGap": 0,
       "colSizing": "equal",
       "fullWidth": true,
       "horizontalAlign": "center",
       "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "rowGap": 0
     }
@@ -36,38 +17,32 @@
     "title": "Lista de Redes Sociais",
     "children": ["list-context-renderer#social-networks"],
     "props": {
-      "blockClass": ["social-networks-badges"],
+      "blockClass": ["footer__social-network"],
       "preload": true,
-      "height": 40,
+      "height": "100%",
       "mediaList": [
         {
-          "image": "assets/svg/hpa-facebook.svg",
-          "mobileImage": "assets/svg/hpa-facebook.svg",
+          "image": "assets/img/redes-sociais/icon-facebook.png",
           "description": "Facebook",
+          "width": "45px",
+          "height": "45px",
+          "experimentalSetExplicitDimensions": true,
           "link": {
-            "url": "https://pt-br.facebook.com/jequiticosmeticos/",
+            "url": "https://pt-br.facebook.com/",
             "openNewTab": true,
             "title": "Facebook"
           }
         },
         {
-          "image": "assets/svg/hpa-instagram.svg",
-          "mobileImage": "assets/svg/hpa-instagram.svg",
+          "image": "assets/img/redes-sociais/icon-instagram.png",
           "description": "Instagram",
+          "width": "46px",
+          "height": "45px",
+          "experimentalSetExplicitDimensions": true,
           "link": {
-            "url": "https://www.instagram.com/jequiticosmeticos/",
+            "url": "https://www.instagram.com/",
             "openNewTab": true,
             "title": "Instagram"
-          }
-        },
-        {
-          "image": "assets/svg/hpa-youtube.svg",
-          "mobileImage": "assets/svg/hpa-youtube.svg",
-          "description": "Youtube",
-          "link": {
-            "url": "https://www.youtube.com/",
-            "openNewTab": true,
-            "title": "Youtube"
           }
         }
       ]
@@ -75,9 +50,9 @@
   },
   "list-context-renderer#social-networks": {
     "props": {
-      "listElement": "ul",
-      "itemElement": "li",
-      "blockClass": "social-networks-renderer"
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": ["footer__social-network", "footer__methods"]
     }
   }
 }

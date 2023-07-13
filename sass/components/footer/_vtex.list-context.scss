@@ -1,0 +1,56 @@
+.list {
+  &--footer__methods {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &--footer__security {
+    padding-bottom: 55px;
+  }
+}
+
+.item {
+  &--footer__methods {
+    display: flex;
+  }
+
+  &--footer__security {
+    &:not(:last-child) {
+      padding-right: 1rem;
+    }
+  }
+
+  &--footer__social-network {
+    &:not(:last-child) {
+      padding-right: 11px;
+    }
+  }
+
+  &--footer__payment-methods {
+    &:not(:last-child) {
+      padding-right: 11px;
+    }
+  }
+}
+
+.imageElementLink {
+  &--footer__methods {
+    display: flex;
+    transition: all 0.4s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.imageElement {
+  &--footer__methods {
+    display: block;
+  }
+}

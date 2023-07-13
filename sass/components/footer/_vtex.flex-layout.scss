@@ -9,17 +9,21 @@
     }
   }
 
-  &--footer__about,
+  &--footer__payment-methods,
   &--footer__menu {
-    background-color: $high-light;
-    padding: 32px 0;
+    background-color: $color-c-12;
+    padding: 51px 0;
 
     &__area--mob {
-      background-color: $high-light;
+      background-color: $color-c-12;
       @include tablet {
         flex-direction: column;
       }
     }
+  }
+
+  &--footer__payment-methods {
+    padding-top: 0;
   }
 
   &--footer_legal_information {
@@ -44,6 +48,10 @@
     @include tablet {
       padding: 1rem;
     }
+  }
+
+  &--footer__payment-methods {
+    justify-content: flex-start;
   }
 }
 
@@ -90,10 +98,9 @@
   }
 
   &--footer_legal_information,
-  &--footer__about,
   &--footer__menu,
-  &--footer__methods,
   &--footer__newsletter,
+  &--footer__payment-methods,
   &--credits {
     @extend %container-large;
   }
@@ -107,6 +114,8 @@
       }
     }
   }
+
+  &--footer__payment-methods,
   &--footer_legal_information,
   &--footer__methods {
     @include tablet {
@@ -115,6 +124,10 @@
         width: 100% !important;
       }
     }
+  }
+
+  &--footer__payment-methods {
+    justify-content: flex-start;
   }
 
   &--home__footer--high {

@@ -7,7 +7,13 @@
     }
 
     .styledLink {
-      @include link($font-size-h5 + 1, $color-c-11, $bold, none);
+      @include link(
+        $font-size-h5 + 1,
+        $color-c-11,
+        $bold,
+        none,
+        $secondary-font
+      );
       text-transform: uppercase;
       line-height: normal;
       display: inline-block;
@@ -22,7 +28,13 @@
     .menuContainer {
       .menuItem {
         .styledLink {
-          @include link($font-size-lg, $color-c-11, $regular, none);
+          @include link(
+            $font-size-lg,
+            $color-c-11,
+            $regular,
+            none,
+            $secondary-font
+          );
           text-transform: none;
 
           &::after {
@@ -67,6 +79,33 @@
 }
 
 .menuItem {
+  &--footer__menu--title {
+    .styledLinkContainer {
+      margin: 0;
+      padding: 0 0 19px;
+      text-decoration: none;
+    }
+
+    .styledLink {
+      @include link(
+        $font-size-h5 + 1,
+        $color-c-11,
+        $bold,
+        none,
+        $secondary-font
+      );
+      text-transform: uppercase;
+      line-height: normal;
+      display: inline-block;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none !important;
+      }
+    }
+  }
+
   &--footer__menu--mob {
     margin: 0 1rem;
     padding: 0.75rem 0;
@@ -122,26 +161,6 @@
 }
 
 .styledLink {
-  &--footer__menu__title,
-  &--footer__menu__item {
-    &:hover {
-      text-decoration: none !important;
-    }
-  }
-
-  &Container {
-    &--footer__menu {
-      &__title {
-        margin: 0 0 16px;
-        padding: 0;
-      }
-
-      &__item {
-        margin: 0;
-        padding: 0;
-      }
-    }
-  }
 }
 
 .submenuAccordion {
