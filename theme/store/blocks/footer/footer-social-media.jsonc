@@ -8,7 +8,6 @@
       "colSizing": "equal",
       "fullWidth": true,
       "horizontalAlign": "center",
-      "preserveLayoutOnMobile": true,
       "preventVerticalStretch": true,
       "rowGap": 0
     }

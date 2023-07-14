@@ -19,8 +19,9 @@
     "children": [
       "flex-layout.row#newsletter-mob",
       "menu-item#footer-menu-1-mob",
-      "menu-item#footer-menu-2-mob",
-      "menu-item#footer-menu-3-mob",
+      "vtex.menu@2.x:menu#footer-menu-1",
+      "flex-layout.col#menu#footer-menu-3",
+      "flex-layout.row#footer-payment-methods",
       "flex-layout.row#footer-legal-information"
     ]
   }
