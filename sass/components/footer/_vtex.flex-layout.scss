@@ -5,7 +5,7 @@
     background-color: $primary-pure-500;
 
     @include tablet {
-      padding: 1.5rem 1rem;
+      padding: 24px 22px 31px;
     }
   }
 
@@ -59,12 +59,14 @@
   &--footer__newsletter {
     justify-content: center;
 
-    .stretchChildrenWidth {
-      width: 100% !important;
+    @include desktop {
+      .stretchChildrenWidth {
+        width: 100% !important;
 
-      &:first-child {
-        width: auto !important;
-        white-space: pre;
+        &:first-child {
+          width: auto !important;
+          white-space: pre;
+        }
       }
     }
   }
@@ -93,7 +95,6 @@
   }
 
   &--footer__newsletter {
-    max-width: 500px;
     margin: 0 auto;
   }
 

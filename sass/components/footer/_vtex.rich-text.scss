@@ -91,6 +91,25 @@
     }
   }
 
+  &--footer__newsletter--title-mobile {
+    .heading {
+      @include text($font-size-xs, $white, $semi-bold);
+      line-height: 14.364px;
+      margin: 0;
+      padding-bottom: 6px;
+    }
+  }
+
+  &--footer__newsletter--subtitle-mobile {
+    .paragraph {
+      @include text($font-size-xs, $white, $normal);
+      line-height: 14.364px;
+      opacity: 0.7;
+      margin: 0;
+      padding-bottom: 13px;
+    }
+  }
+
   &--footer__social-media__title {
     @include tablet {
       justify-content: center;

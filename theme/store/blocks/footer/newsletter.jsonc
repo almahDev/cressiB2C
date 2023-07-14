@@ -1,6 +1,7 @@
 {
-  "flex-layout.row#newsletter": {
-    "title": "Newsletter",
+  // DESKTOP
+  "flex-layout.row#newsletter-desktop": {
+    "title": "Newsletter (Desktop)",
     "children": ["rich-text#newsletter-title", "newsletter-form#footer"],
     "props": {
       "fullWidth": true,
@@ -49,6 +50,83 @@
     "props": {
       "submitButtonLabel": "Cadastrar",
       "blockClass": "footer__newsletter--submit"
+    }
+  },
+
+  // MOBILE
+  "flex-layout.row#newsletter-mob": {
+    "title": "Newsletter (Mobile)",
+    "children": ["flex-layout.col#newsletter-mob"],
+    "props": {
+      "fullWidth": true,
+      "colGap": 0,
+      "preserveLayoutOnMobile": true,
+      "blockClass": ["footer__newsletter", "footer__newsletter--mobile"]
+    }
+  },
+  "flex-layout.col#newsletter-mob": {
+    "children": [
+      "rich-text#newsletter-title-mob",
+      "rich-text#newsletter-subtitle-mob",
+      "newsletter-form#footer-mob"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": ["footer__newsletter", "footer__newsletter--mobile"]
+    }
+  },
+
+  "rich-text#newsletter-title-mob": {
+    "title": "Newsletter - Título",
+    "props": {
+      "text": "### NEWSLETTER",
+      "blockClass": [
+        "footer__newsletter--title",
+        "footer__newsletter--title-mobile"
+      ]
+    }
+  },
+
+  "rich-text#newsletter-subtitle-mob": {
+    "title": "Newsletter - Subtítulo",
+    "props": {
+      "text": "Receba descontos e promoções por email",
+      "blockClass": [
+        "footer__newsletter--subtitle",
+        "footer__newsletter--subtitle-mobile"
+      ]
+    }
+  },
+
+  "newsletter-form#footer-mob": {
+    "children": [
+      "newsletter-input-email#footer-mob",
+      "newsletter-submit#footer-mob"
+    ],
+    "props": {
+      "blockClass": ["footer__newsletter", "footer__newsletter--mobile"]
+    }
+  },
+
+  "newsletter-input-email#footer-mob": {
+    "title": "Newsletter - Email",
+    "props": {
+      "placeholderText": "Deixe seu email",
+      "blockClass": [
+        "footer__newsletter--input-email",
+        "footer__newsletter--input-email-mobile"
+      ]
+    }
+  },
+
+  "newsletter-submit#footer-mob": {
+    "title": "Newsletter - Cadastrar",
+    "props": {
+      "submitButtonLabel": "enviar",
+      "blockClass": [
+        "footer__newsletter--submit",
+        "footer__newsletter--submit-mobile"
+      ]
     }
   }
 }
