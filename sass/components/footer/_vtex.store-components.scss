@@ -35,3 +35,17 @@
 
 .sizeMobile {
 }
+
+.imageElementLink {
+  &--home__footer-powered--image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.imageElement {
+  &--home__footer-powered--image {
+    display: block;
+  }
+}
