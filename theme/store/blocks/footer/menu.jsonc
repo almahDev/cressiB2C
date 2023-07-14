@@ -166,7 +166,7 @@
       "highlight": true,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "#",
         "noFollow": false,
         "tagTitle": "SEGURANÇA",
         "text": "SEGURANÇA"
@@ -183,7 +183,7 @@
       "highlight": true,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "#",
         "noFollow": false,
         "tagTitle": "REDES SOCIAIS",
         "text": "REDES SOCIAIS"

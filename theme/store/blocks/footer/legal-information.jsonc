@@ -1,41 +1,33 @@
 {
   "flex-layout.row#footer-legal-information": {
-    "title": "Footer  Inferior",
+    "title": "Footer - Copyright",
     "children": [
       "rich-text#footer-copyright",
-      "flex-layout.row#footer-powered"
+      "rich-text#footer-powered",
+      "image#powered"
     ],
     "props": {
-      "blockClass": ["footer_legal_information-", "footer_legal_information"]
+      "blockClass": ["footer_legal_information"],
+      "fullWidth": true
     }
   },
 
   // copyright
   "rich-text#footer-copyright": {
-    "title": "Footer  Copyright",
+    "title": "Texto - Copyright",
     "props": {
       "text": "2022 - PISOLAR - Razão Social: PISOLAR Loja LTDA - Todos os Direitos Reservados | CNPJ: 99.999.999/0009-99",
-      "blockClass": ["footer__copyright", "footer__copyright-"]
+      "blockClass": ["footer__copyright", "footer__copyright-"],
+      "width": "65%"
     }
   },
 
   // powered by  section
-  "flex-layout.row#footer-powered": {
-    "children": ["rich-text#footer-powered", "image#powered"],
-    "props": {
-      "blockClass": "home__footer--powered",
-      "colGap": 0,
-      "colSizing": "equal",
-      "fullWidth": false,
-      "horizontalAlign": "right",
-      "preserveLayoutOnMobile": false,
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": false
-    }
-  },
   "rich-text#footer-powered": {
+    "title": "Título - Powered By",
     "props": {
       "text": "###### Powered By",
+      "width": "20%",
       "blockClass": [
         "footer__developed-powered--title",
         "footer_methods--title",
@@ -44,6 +36,7 @@
     }
   },
   "image#powered": {
+    "title": "Imagem - Powered By",
     "props": {
       "src": "assets/img/vtex_logo.png",
       "link": {
