@@ -12,14 +12,7 @@
   &--footer__payment-methods,
   &--footer__menu {
     background-color: $color-c-12;
-    padding: 51px 0;
-
-    &__area--mob {
-      background-color: $color-c-12;
-      @include tablet {
-        flex-direction: column;
-      }
-    }
+    padding: 51px 0 45px;
   }
 
   &--footer__social-network {
@@ -113,16 +106,6 @@
   &--footer__payment-methods,
   &--credits {
     @extend %container-large;
-  }
-  &--footer__menu {
-    &__area--mob {
-      @include tablet {
-        flex-direction: column;
-        .stretchChildrenWidth {
-          width: 100% !important;
-        }
-      }
-    }
   }
 
   &--footer__payment-methods,
