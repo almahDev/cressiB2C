@@ -48,4 +48,10 @@
   &--home__footer-powered--image {
     display: block;
   }
+
+  &--footer__powered-by-vtex {
+    @include tablet {
+      max-width: 55px;
+    }
+  }
 }

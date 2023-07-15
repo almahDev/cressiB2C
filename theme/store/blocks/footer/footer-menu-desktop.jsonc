@@ -5,7 +5,7 @@
       "logo#footer",
       "vtex.menu@2.x:menu#footer-menu-1",
       "vtex.menu@2.x:menu#footer-menu-2",
-      "flex-layout.col#menu#footer-menu-3"
+      "flex-layout.col#footer-menu-3"
     ],
     "props": {
       "blockClass": "footer__menu",

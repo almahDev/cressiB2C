@@ -12,6 +12,30 @@
       "rowGap": 0
     }
   },
+  "flex-layout.row#footer-menu-social-networks-mob": {
+    "title": "Redes Sociais",
+    "children": ["flex-layout.col#footer-menu-social-networks-mob"],
+    "props": {
+      "blockClass": "footer__social-network",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "flex-layout.col#footer-menu-social-networks-mob": {
+    "title": "Redes Sociais",
+    "children": [
+      "menu-item#footer-menu-3-social-media-title",
+      "list-context.media-list#social-networks"
+    ],
+    "props": {
+      "blockClass": "footer__social-network",
+      "preventVerticalStretch": true
+    }
+  },
   "list-context.media-list#social-networks": {
     "title": "Lista de Redes Sociais",
     "children": ["list-context-renderer#social-networks"],

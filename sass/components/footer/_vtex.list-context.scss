@@ -5,6 +5,10 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &--footer__security {
@@ -33,6 +37,14 @@
     &:not(:last-child) {
       padding-right: 11px;
     }
+
+    @include tablet {
+      padding-right: 6px;
+
+      &:not(:last-child) {
+        padding-right: 6px;
+      }
+    }
   }
 }
 
@@ -52,5 +64,17 @@
 .imageElement {
   &--footer__methods {
     display: block;
+
+    @include tablet {
+      max-width: 50px;
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+
+  &--footer__social-network {
+    @include tablet {
+      max-width: 25px;
+    }
   }
 }

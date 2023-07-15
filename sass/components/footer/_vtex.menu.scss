@@ -1,9 +1,18 @@
 .menuContainerNav {
   &--footer__menu {
+    @include tablet {
+      background-color: $color-c-12;
+      padding-top: 44px;
+    }
+
     .styledLinkContainer {
       margin: 0;
       padding: 0 0 19px;
       text-decoration: none;
+
+      @include tablet {
+        text-align: center;
+      }
     }
 
     .styledLink {
@@ -24,6 +33,11 @@
       &:focus {
         text-decoration: none !important;
       }
+
+      @include tablet {
+        font-size: $font-size-md;
+        text-align: center;
+      }
     }
 
     .menuContainer {
@@ -39,20 +53,29 @@
           font-family: $secondary-font !important;
           text-transform: none;
 
-          &::after {
-            content: '';
-            width: 0;
-            height: 2px;
-            background-color: $color-c-11;
-            transition: width 0.2s ease-in-out;
-            display: block;
+          @include tablet {
+            font-size: $font-size-md + 1;
+            font-weight: 300;
+            line-height: normal;
+            text-align: center;
           }
 
-          &:hover,
-          &:active,
-          &:focus {
+          @include desktop {
             &::after {
-              width: 100%;
+              content: '';
+              width: 0;
+              height: 2px;
+              background-color: $color-c-11;
+              transition: width 0.2s ease-in-out;
+              display: block;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+              &::after {
+                width: 100%;
+              }
             }
           }
         }
@@ -86,6 +109,11 @@
       margin: 0;
       padding: 0 0 19px;
       text-decoration: none;
+
+      @include tablet {
+        padding-bottom: 10px;
+        text-align: center;
+      }
     }
 
     .styledLink {
@@ -105,6 +133,12 @@
       &:active,
       &:focus {
         text-decoration: none !important;
+      }
+
+      @include tablet {
+        font-size: $font-size-md;
+        line-height: normal;
+        text-align: center;
       }
     }
   }

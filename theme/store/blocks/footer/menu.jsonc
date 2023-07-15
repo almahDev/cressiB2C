@@ -142,7 +142,7 @@
   },
 
   //  menu 3
-  "flex-layout.col#menu#footer-menu-3": {
+  "flex-layout.col#footer-menu-3": {
     "title": "Footer  Menu 3",
     "children": [
       "menu-item#footer-menu-3-security-title",

@@ -9,7 +9,7 @@
       "flex-layout.row#newsletter-desktop",
       "flex-layout.row#footer-menu-desktop",
       "flex-layout.row#footer-payment-methods",
-      "flex-layout.row#footer-legal-information"
+      "flex-layout.row#footer-legal-information-desktop"
     ]
   },
 
@@ -20,9 +20,10 @@
       "flex-layout.row#newsletter-mob",
       "menu-item#footer-menu-1-mob",
       "vtex.menu@2.x:menu#footer-menu-1",
-      "flex-layout.col#menu#footer-menu-3",
+      "flex-layout.col#footer-menu-3",
       "flex-layout.row#footer-payment-methods",
-      "flex-layout.row#footer-legal-information"
+      "flex-layout.row#footer-menu-social-networks-mob",
+      "flex-layout.row#footer-legal-information-mob"
     ]
   }
 }
