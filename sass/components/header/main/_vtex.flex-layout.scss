@@ -69,12 +69,16 @@
   }
 
   &--main-elements-desk {
-    justify-content: space-between;
-
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-      &:last-child {
-        width: 19rem !important;
+      &:first-child {
+        width: 55% !important;
       }
+    }
+  }
+
+  &--block-main-links {
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      flex: 1;
     }
   }
 }

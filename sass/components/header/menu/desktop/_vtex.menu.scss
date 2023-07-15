@@ -15,14 +15,16 @@
     }
 
     .styledLink {
-      @include link($font-size-md, $text-color-1-500, $regular, none);
+      @include link(0.9375rem, #101010, 500, none);
       text-transform: uppercase;
       transition: all 0.2s;
+      display: flex;
+      flex: 1;
 
       &:hover,
       &:active,
       &:focus {
-        color: $color-1-50;
+        color: #101010;
         text-decoration: none;
       }
 
@@ -46,12 +48,42 @@
         text-decoration: none;
       }
     }
+
+    &--al-product__wishlist--item {
+      display: flex;
+      align-items: center;
+      color: #636363;
+      font-size: 0.625rem;
+      font-style: normal;
+      font-weight: 400;
+
+      &::before {
+        content: url('assets/svg/icon-wishlist-green.svg');
+        margin-right: 0.64rem;
+      }
+    }
   }
 
   .styledLinkContainer {
     &--header__tooltip--link {
       margin: 0;
       padding: 0;
+    }
+
+    &--al-product__wishlist--item {
+      margin: 0;
+      padding: 0;
+
+      .styledLinkContent--al-product__wishlist--item {
+        flex-direction: column;
+
+        &::after {
+          content: 'FAVORITOS';
+          color: #636363;
+          font-size: 0.625rem;
+          font-weight: 700;
+        }
+      }
     }
   }
 }
@@ -95,14 +127,14 @@
     @extend %container-large;
 
     .styledLink {
-      @include link($font-size-sm, $text-color-1-400, $regular, none);
+      @include link($font-size-sm, $text-color-1-400, 700, none);
       text-transform: none;
       display: block;
 
       &:hover,
       &:active,
       &:focus {
-        color: $color-1-50;
+        color: #101010;
         text-decoration: none;
         transition: all 0.2s;
       }
@@ -170,6 +202,13 @@
       transition: all 0.2s;
     }
   }
+
+  &--header__menu {
+    &::after {
+      content: url('assets/svg/arrow-down.svg');
+      margin-left: 0.3rem;
+    }
+  }
 }
 
 .styledLinkIcon {
@@ -193,9 +232,8 @@
     .styledLinkContainer--header__menu {
       .styledLink--header__menu {
         .styledLinkContent--header__menu {
-          color: $color-1-50;
+          color: #101010;
           text-decoration: none;
-          font-weight: $bold;
           transition: all 0.2s;
         }
       }

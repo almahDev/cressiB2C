@@ -112,7 +112,10 @@
   },
   "flex-layout.row#links-desktop": {
     "title": "Almah |Header - Links - Desktop",
-    "children": ["login#header", "menu#wishlist", "minicart.v2#main-header"]
+    "children": ["login#header", "menu#wishlist", "minicart.v2#main-header"],
+    "props": {
+      "blockClass": "block-main-links"
+    }
   },
   // WISH LIST
   "menu#wishlist": {
@@ -133,13 +136,7 @@
         "href": "/account/#/wishlist",
         "noFollow": false,
         "tagTitle": "Favoritos",
-        "text": ""
-      },
-      "iconProps": {
-        "id": "hpa-heart-full",
-        "size": 18,
-        "viewBox": "0 0 24 24",
-        "mutedClassName": "c-action-primary"
+        "text": "MEUS"
       }
     }
   },
@@ -172,10 +169,9 @@
     }
   },
   "login#header": {
-    "title": "Almah |Header - Link - Login",
+    "title": "Almah | Header - Link - Login",
     "props": {
-      "showIconProfile": true,
-      "blockClass": "header__login"
+      "showIconProfile": false
     }
   },
   "flex-layout.row#5-desktop": {
