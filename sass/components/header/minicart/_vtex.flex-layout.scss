@@ -24,6 +24,10 @@
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
       &:first-child {
         width: 70% !important;
+
+        @media (min-width: $screen-lg-min) {
+          justify-content: start;
+        }
       }
 
       &:last-child {
@@ -31,6 +35,14 @@
         align-items: center;
         justify-content: end;
       }
+    }
+  }
+}
+
+.flexCol {
+  &--al-cart-image {
+    @media (min-width: $screen-lg-min) {
+      margin-right: 2.94rem;
     }
   }
 }

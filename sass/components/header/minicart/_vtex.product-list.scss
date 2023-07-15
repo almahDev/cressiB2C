@@ -99,6 +99,9 @@
 
   &--al-cart {
     position: absolute;
+    @media (min-width: $screen-lg-min) {
+      top: 146px;
+    }
   }
 }
 
@@ -170,6 +173,11 @@
   .productImage {
     &--al-cart-image {
       height: 9.75rem;
+
+      @media (min-width: 1200px) {
+        width: 8.25rem;
+        height: 8.25rem;
+      }
     }
   }
 }
