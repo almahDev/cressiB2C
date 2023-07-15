@@ -14,16 +14,21 @@
         "main-menu-column-fourth"
       ]
     },
-    "children": ["image-new#banner-dep6-col4"]
+    "children": ["image-new#banner-dep6-col4", "rich-text#name-collection-6"]
   },
   "image-new#banner-dep6-col4": {
     "title": "Imagem - Banner",
     "props": {
       "blockClass": "main-menu-banner",
-      "src": "https://via.placeholder.com/250x350",
+      "src": "https://via.placeholder.com/446x264",
       "link": {
         "url": "#"
       }
+    }
+  },
+  "rich-text#name-collection-6": {
+    "props": {
+      "text": "NOME DA COLEÇÃO  [VER MAIS](#)"
     }
   }
 }

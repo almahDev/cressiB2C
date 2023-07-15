@@ -14,7 +14,10 @@
         "main-menu-column-first"
       ]
     },
-    "children": ["vtex.menu@2.x:menu#menu-dep3-col1"]
+    "children": [
+      "vtex.menu@2.x:menu#menu-dep3-col1",
+      "vtex.menu@2.x:menu#menu-dep3-col1-two"
+    ]
   },
   "vtex.menu@2.x:menu#menu-dep3-col1": {
     "props": {
@@ -34,6 +37,86 @@
         {
           "type": "custom",
           "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        }
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-dep3-col1-two": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "main-menu-menu",
+        "main-menu-column",
+        "main-menu-column-first"
+      ],
+      "title": {
+        "itemProps": {
+          "text": ""
+        },
+        "type": "custom"
+      },
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
           "itemProps": {
             "type": "internal",
             "href": "#",
