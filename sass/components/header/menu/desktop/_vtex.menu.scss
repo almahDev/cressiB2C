@@ -96,6 +96,25 @@
   &--header__menu {
     justify-content: space-between;
   }
+
+  &--al-product__wishlist {
+    position: relative;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: url('assets/svg/haste.svg');
+      position: absolute;
+    }
+
+    &::before {
+      left: -16px;
+    }
+
+    &::after {
+      right: 16px;
+    }
+  }
 }
 .submenu {
   &--main-menu-department-submenu,
