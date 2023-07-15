@@ -127,7 +127,7 @@
     @extend %container-large;
 
     .styledLink {
-      @include link($font-size-sm, $text-color-1-400, 700, none);
+      @include link($font-size-sm, $text-color-1-400, 400, none);
       text-transform: none;
       display: block;
 
@@ -140,7 +140,7 @@
       }
 
       &--highlight {
-        @include link($font-size-md, $text-color-1-500, $regular, none);
+        @include link(0.9375rem, #515151, 400, none);
         padding-bottom: 10px;
         text-transform: uppercase;
         transition: all 0.2s;
