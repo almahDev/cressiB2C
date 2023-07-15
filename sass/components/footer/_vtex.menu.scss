@@ -83,23 +83,8 @@
     }
   }
 
-  &--footer__tooltip--text {
-    margin-bottom: 1.5rem;
-
-    .styledLink {
-      @include link($font-size-md, $white, $normal, none);
-      margin-bottom: 0.625rem;
-      display: block;
-
-      &--highlight {
-        @include link($font-size-md, $white, $bold, none);
-        margin-bottom: 1.5rem;
-      }
-
-      .styledLinkContainer {
-        margin: 0;
-      }
-    }
+  &--footer__menu--mob {
+    padding: 23px 0 0.25rem;
   }
 }
 
@@ -144,66 +129,83 @@
   }
 
   &--footer__menu--mob {
-    margin: 0 1rem;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    background-color: $color-c-12;
 
-    .styled {
-      &Link {
-        &Container {
-          margin: 0;
-        }
+    &:not(:last-child) {
+      padding: 0 0 19px;
+    }
 
-        &Content {
-          @include link($font-size-md, $text-color-1, $semi-bold, none);
-          align-items: center;
+    .styledLinkContainer {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
 
-          &--footer__menu__item {
-            @include tablet {
-              @include link($font-size-sm, $text-color-1, $regular, none);
-            }
-          }
+    .styledLink {
+      @include link($font-size-sm - 1, $color-c-11, $regular, none);
+      text-transform: none;
+      line-height: normal;
+      display: inline-block;
+      width: 100%;
 
-          .accordion {
-            &Icon {
-              &--isClosed,
-              &--isOpen {
-                font-size: 0;
-                margin: 0;
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none !important;
+      }
+    }
 
-                &::before {
-                  content: url('assets/svg/fi_chevron-right.svg');
-                  width: 1.5rem;
-                  height: 1.5rem;
-                }
-              }
+    .styledLinkContent {
+      width: 100%;
+    }
 
-              &--isOpen {
-                &::before {
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
+    .accordionIcon {
+      font-size: 0;
+      margin: 0;
+
+      &::before {
+        content: url('assets/svg/icon-arrow-footer.svg');
+        width: 16px;
+        height: 11px;
+        transition: all 0.3s ease-in-out;
+        display: block;
+      }
+
+      &--isOpen {
+        &::before {
+          transform: rotate(180deg);
+          transition: all 0.3s ease-in-out;
         }
       }
+    }
+  }
+
+  &--footer__menu--mob-title {
+    padding: 31px 22px 23px;
+    background-color: $color-c-12;
+    border-top: 6px solid $white;
+    border-bottom: 6px solid $white;
+
+    &:not(:last-child) {
+      padding: 31px 22px 23px;
+    }
+
+    .styledLink--footer__menu--mob-title {
+      font-weight: $bold;
+      text-transform: uppercase;
     }
   }
 }
 
 .submenuAccordion {
   &--footer_inner_menu--mob {
-    padding: 1rem 0 0.25rem;
+    padding: 0;
   }
 }
 
 .styledLink {
-}
-
-.submenuAccordion {
-  &--footer_inner_menu--mob {
-    padding: 1rem 0 0.25rem;
-  }
 }
 
 .accordionIcon {
@@ -243,49 +245,6 @@
 }
 
 .renderLink {
-}
-
-.styledLinkContent {
-  &--footer__menu {
-    &__title {
-      text-transform: uppercase;
-      @include link($font-size-md, $text-color-1, $regular, none);
-      text-decoration: none !important;
-
-      &:hover {
-        text-decoration: none !important;
-        color: $color-2;
-        transition: all 0.2s;
-      }
-    }
-
-    &__item {
-      @include link($font-size-sm, $text-color-2, $regular, none);
-      line-height: 200%;
-      justify-content: flex-start;
-      text-decoration: none !important;
-
-      &:hover {
-        text-decoration: none !important;
-        color: $color-2;
-        transition: all 0.2s;
-      }
-    }
-
-    &--mob {
-      text-transform: uppercase;
-      font-weight: $regular !important;
-    }
-  }
-}
-
-.styledLinkIcon {
-  &--footer__menu {
-    &__item {
-      margin: 0 8px 0 0;
-      display: flex;
-    }
-  }
 }
 
 .submenuColumn {
