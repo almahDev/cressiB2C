@@ -14,6 +14,12 @@
   &--footer__security {
     padding-bottom: 55px;
   }
+
+  &--footer__payment-methods {
+    @include tablet {
+      padding-top: 20px;
+    }
+  }
 }
 
 .item {
@@ -25,11 +31,23 @@
     &:not(:last-child) {
       padding-right: 1rem;
     }
+
+    @include tablet {
+      &:not(:last-child) {
+        padding-right: 6px;
+      }
+    }
   }
 
   &--footer__social-network {
     &:not(:last-child) {
       padding-right: 11px;
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        padding-right: 6px;
+      }
     }
   }
 
