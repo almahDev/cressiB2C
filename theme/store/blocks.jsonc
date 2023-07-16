@@ -38,18 +38,5 @@
 
   "store.product-review-form": {
     "blocks": ["product-review-form"]
-  },
-
-  "store.not-found#search": {
-    "blocks": ["rich-text#not-found"]
-  },
-
-  "rich-text#not-found": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "**PÁGINA NÃO ENCONTRADA**",
-      "font": "t-heading-1"
-    }
   }
 }

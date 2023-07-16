@@ -1,13 +1,79 @@
 {
   "search-not-found-layout": {
-    "children": ["flex-layout.row#notfound"]
+    "children": [
+      "flex-layout.row#search-not-found",
+      "flex-layout.row#search-not-found-text",
+      "flex-layout.row#search-not-found-collections"
+    ]
   },
 
-  "flex-layout.row#notfound": {
-    "children": ["not-found"],
+  "store.not-found#search": {
+    "blocks": [
+      "flex-layout.row#search-not-found",
+      "flex-layout.row#search-not-found-text",
+      "flex-layout.row#search-collections"
+    ]
+  },
+
+  "flex-layout.row#search-not-found": {
     "props": {
-      "blockClass": "al-search__not-found",
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": ["al-search-not-found-page", "al-not-found-page"]
+    },
+    "children": ["rich-text#search-not-found-title"]
+  },
+  "flex-layout.row#search-not-found-text": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["al-search-not-found-page", "al-not-found-page"]
+    },
+    "children": ["rich-text#search-not-found-text"]
+  },
+
+  "rich-text#search-not-found-title": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "**RESULTADOS** DA BUSCA",
+      "blockClass": [
+        "al-not-found-page__title",
+        "al-search-not-found-page__title"
+      ]
+    }
+  },
+  "rich-text#search-not-found-text": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Não foram encontrados resultados para a busca",
+      "blockClass": [
+        "al-not-found-page__text",
+        "al-search-not-found-page__text"
+      ]
+    }
+  },
+  "flex-layout.row#search-not-found-collections": {
+    "title": "Coleções",
+    "children": ["flex-layout.col#search-not-found-collections"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__collections", "search__collections"]
+    }
+  },
+  "flex-layout.col#search-not-found-collections": {
+    "children": [
+      "rich-text#search-not-found-collections-title",
+      "list-context.info-card-list#search-collections"
+    ],
+    "props": {
+      "blockClass": ["home__collections", "search__collections"]
+    }
+  },
+  "rich-text#search-not-found-collections-title": {
+    "title": "Coleções - Título",
+    "props": {
+      "text": "## **VOCÊ PODE** GOSTAR DE",
+      "blockClass": ["home__title", "search__collections--title"]
     }
   }
 }

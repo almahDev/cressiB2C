@@ -1,7 +1,5 @@
-.flexRow--al-not-found-page {
-  :global(.vtex-store-components-3-x-container) {
-    @media (min-width: 1200px) {
-      max-width: 82.5rem;
-    }
+.flexRowContent {
+  &--al-not-found-page {
+    @extend %container-large;
   }
 }
