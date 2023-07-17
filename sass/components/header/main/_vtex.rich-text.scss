@@ -13,6 +13,11 @@
       }
     }
   }
+
+  &--text-collection-menu {
+    width: 100%;
+    display: block;
+  }
 }
 
 .paragraph {
@@ -43,5 +48,26 @@
     font-size: 22px;
     line-height: 27px;
     color: $white;
+  }
+
+  &--text-collection-menu {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+}
+
+.link {
+  &--text-collection-menu {
+    border-radius: 6px;
+    background: #40d6c6;
+    color: $white;
+    text-decoration: none;
+    padding: 1rem 2rem;
   }
 }

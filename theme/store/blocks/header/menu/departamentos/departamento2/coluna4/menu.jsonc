@@ -2,7 +2,7 @@
   "experimental__visibility-layout#menu-dep2-col4": {
     "title": "Menu (On/Off)",
     "props": {
-      "visible": false
+      "visible": true
     },
     "children": ["flex-layout.col#menu-dep2-col4"]
   },
@@ -34,10 +34,11 @@
         {
           "type": "custom",
           "iconId": null,
+          "highlight": true,
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
+            "tagTitle": "Subcategoria Teste",
             "text": "Subcategoria"
           }
         },

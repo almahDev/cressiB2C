@@ -100,7 +100,7 @@
     display: flex;
 
     &::after {
-      content: url("assets/svg/seta-esquerda-pdp.svg");
+      content: url('assets/svg/seta-esquerda-pdp.svg');
       display: flex;
     }
   }
@@ -117,7 +117,7 @@
     }
 
     &::after {
-      content: url("assets/svg/seta-direita-pdp.svg");
+      content: url('assets/svg/seta-direita-pdp.svg');
       display: flex;
     }
   }
@@ -242,7 +242,7 @@
     font-size: 0;
 
     &::after {
-      content: "OK";
+      content: 'OK';
       @include text($font-size-sm, $white, $bold);
     }
   }

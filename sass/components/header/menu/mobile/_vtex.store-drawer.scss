@@ -54,6 +54,10 @@
   &--header__drawer--search {
     color: $text-color-1-500;
   }
+
+  &--header__menu__hamburguer {
+    display: none;
+  }
 }
 
 .closeIconContainer {
@@ -91,6 +95,14 @@
 .openIconContainer {
   &--header__drawer--search {
     width: auto;
+  }
+
+  &--header__menu__hamburguer {
+    padding: 0;
+
+    &::before {
+      content: url('assets/svg/icon-menu-hamburger.svg');
+    }
   }
 }
 

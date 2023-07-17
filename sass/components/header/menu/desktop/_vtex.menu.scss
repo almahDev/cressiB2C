@@ -15,14 +15,16 @@
     }
 
     .styledLink {
-      @include link($font-size-md, $text-color-1-500, $regular, none);
+      @include link(0.9375rem, #101010, 500, none);
       text-transform: uppercase;
       transition: all 0.2s;
+      display: flex;
+      flex: 1;
 
       &:hover,
       &:active,
       &:focus {
-        color: $color-1-50;
+        color: #101010;
         text-decoration: none;
       }
 
@@ -46,12 +48,42 @@
         text-decoration: none;
       }
     }
+
+    &--al-product__wishlist--item {
+      display: flex;
+      align-items: center;
+      color: #636363;
+      font-size: 0.625rem;
+      font-style: normal;
+      font-weight: 400;
+
+      &::before {
+        content: url('assets/svg/icon-wishlist-green.svg');
+        margin-right: 0.64rem;
+      }
+    }
   }
 
   .styledLinkContainer {
     &--header__tooltip--link {
       margin: 0;
       padding: 0;
+    }
+
+    &--al-product__wishlist--item {
+      margin: 0;
+      padding: 0;
+
+      .styledLinkContent--al-product__wishlist--item {
+        flex-direction: column;
+
+        &::after {
+          content: 'FAVORITOS';
+          color: #636363;
+          font-size: 0.625rem;
+          font-weight: 700;
+        }
+      }
     }
   }
 }
@@ -63,6 +95,25 @@
 .menuContainer {
   &--header__menu {
     justify-content: space-between;
+  }
+
+  &--al-product__wishlist {
+    position: relative;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: url('assets/svg/haste.svg');
+      position: absolute;
+    }
+
+    &::before {
+      left: -16px;
+    }
+
+    &::after {
+      right: -21px;
+    }
   }
 }
 .submenu {
@@ -88,27 +139,33 @@
     box-shadow: 0px 0.25rem 8px rgba(0, 0, 0, 0.15);
     z-index: 200000;
     border-radius: 0px 0px 0.25rem 0.25rem;
-    padding: 30px 25px 27px;
+    padding: 30px 21rem 27px;
     right: 0;
     transition: all 0.2s;
     animation: fadeIn 0.2s forwards;
     @extend %container-large;
+    max-width: 100vw;
+    min-width: 100vw;
+
+    @media (max-width: 1400px) {
+      padding: 30px 5rem 27px;
+    }
 
     .styledLink {
-      @include link($font-size-sm, $text-color-1-400, $regular, none);
+      @include link($font-size-sm, $text-color-1-400, 400, none);
       text-transform: none;
       display: block;
 
       &:hover,
       &:active,
       &:focus {
-        color: $color-1-50;
+        color: #101010;
         text-decoration: none;
         transition: all 0.2s;
       }
 
       &--highlight {
-        @include link($font-size-md, $text-color-1-500, $regular, none);
+        @include link(1.125rem, #515151, 700, none);
         padding-bottom: 10px;
         text-transform: uppercase;
         transition: all 0.2s;
@@ -170,6 +227,13 @@
       transition: all 0.2s;
     }
   }
+
+  &--header__menu {
+    &::after {
+      content: url('assets/svg/arrow-down.svg');
+      margin-left: 0.3rem;
+    }
+  }
 }
 
 .styledLinkIcon {
@@ -193,9 +257,8 @@
     .styledLinkContainer--header__menu {
       .styledLink--header__menu {
         .styledLinkContent--header__menu {
-          color: $color-1-50;
+          color: #101010;
           text-decoration: none;
-          font-weight: $bold;
           transition: all 0.2s;
         }
       }
