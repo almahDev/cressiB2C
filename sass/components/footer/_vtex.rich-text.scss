@@ -1,99 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 .container {
   &--footer__copyright {
     align-items: center;
+
     @include tablet {
       width: 100%;
     }
 
-    &--title {
-      .heading {
-        margin: 0 0 0.375rem;
-        @include text($font-size-xxs, $white, $regular);
-        line-height: 0.75rem;
-      }
-
-      .heading {
-        color: $text-color-1-500;
-      }
-    }
-
     .paragraph {
+      @include text($font-size-sm, #6f6f6f, $lighter, $secondary-font);
+      font-family: $secondary-font !important;
       margin: 0;
-      @include text($font-size-sm, $text-color-2, $regular);
-      line-height: 150%;
+      line-height: normal;
       @include tablet {
         text-align: center;
-        margin-bottom: 24px;
       }
     }
   }
 
-  &--icon-footer-menu {
-    .paragraph {
-      margin: 0;
-      display: flex;
-      @include link($font-size-sm, $text-color-1, $regular, none);
-      line-height: 230%;
-
-      .image {
-        margin: 0 0.75rem 0 0.25rem;
-        align-items: center;
-        display: flex;
-        width: 1.5rem;
-      }
-
-      .strong {
-        margin-right: 0.25rem;
-      }
-    }
-  }
-
-  &--footer__newsletter {
-    .wrapper {
-      width: 100%;
-      text-align: center;
-    }
-
-    .paragraph {
-      @include text($font-size-lg, $color-2-500, $bold);
-    }
-  }
-
-  &--footer__about {
+  &--footer__copyright--title {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    .wrapper {
-      background-color: $white;
-      padding: 0 1.5rem;
-      z-index: 1;
-      @include tablet {
-        padding: 0 0.625rem;
-      }
-
-      .paragraph {
-        margin: 0;
-      }
+    @include tablet {
+      width: 100%;
+      white-space: pre;
     }
 
-    .image {
-      height: 115px;
-      @include tablet {
-        height: 88px;
-      }
-    }
-
-    .heading {
-      @include text($font-size-sm, $white, $bold);
-
-      @include desktop {
-        width: 40%;
-      }
-    }
-
+    .heading,
     .paragraph {
-      @include text($font-size-xxs, $white, $normal);
+      // @include text($font-size-md, #6f6f6f, $regular, $secondary-font);
+      @include text($font-size-md, #6f6f6f, $regular, $tertiary-font);
+      font-family: $tertiary-font !important;
+      padding-bottom: 6px;
+      margin: 0;
+      line-height: normal;
+      text-align: center;
     }
   }
 
@@ -125,60 +69,45 @@
     }
   }
 
-  &--footer__legal-information {
-    .paragraph {
-      @include text($font-size-xxs, $text-color-1-400, $normal);
+  &--footer__newsletter--title {
+    width: 100%;
+    align-items: center;
+    @include tablet {
+      max-width: none;
+      margin: 0;
+      text-align: center;
+    }
+
+    .wrapper {
+      .paragraph {
+        @include text($font-size-xlg, $white, $bold);
+        line-height: 24.38px;
+        margin: 0;
+
+        @include tablet {
+          @include text($font-size-lg, $white, $bold);
+          line-height: 150%;
+        }
+      }
     }
   }
 
-  &--footer__newsletter {
-    &--logo {
-      margin: 0 1rem 0 0;
-      width: auto;
-      align-items: center;
-      @include tablet {
-        margin: 0 0 0.5rem;
-        justify-content: center;
-      }
-
-      .wrapper {
-        .paragraph {
-          margin: 0;
-
-          .image {
-            height: 3rem;
-            width: 84px;
-            @include tablet {
-              width: 4rem;
-              height: 2.5rem;
-            }
-          }
-        }
-      }
+  &--footer__newsletter--title-mobile {
+    .heading {
+      @include text($font-size-xs, $white, $semi-bold);
+      line-height: 14.364px;
+      margin: 0;
+      padding-bottom: 6px;
     }
+  }
 
-    &--title {
-      margin: 0 3rem 0 0;
-      max-width: 315px;
-      width: auto;
-      align-items: center;
-      @include tablet {
-        max-width: none;
-        margin: 0 0 1rem;
-        text-align: center;
-      }
-
-      .wrapper {
-        .paragraph {
-          margin: 0;
-          @include text($font-size-h3, $white, $bold);
-          line-height: 29px;
-          @include tablet {
-            @include text($font-size-xlg, $white, $bold);
-            line-height: 150%;
-          }
-        }
-      }
+  &--footer__newsletter--subtitle-mobile {
+    .paragraph {
+      @include text($font-size-xs, $white, $normal);
+      line-height: 14.364px;
+      opacity: 0.7;
+      margin: 0;
+      padding-bottom: 13px;
     }
   }
 

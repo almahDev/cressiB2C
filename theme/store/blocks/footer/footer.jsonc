@@ -1,31 +1,29 @@
 {
   "footer": {
-    "title": "al | Footer",
+    "title": "Footer",
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
-    "title": "al | Footer - Desktop",
+    "title": "Footer - Desktop",
     "children": [
-      "flex-layout.row#newsletter",
-      "flex-layout.row#footer-about",
+      "flex-layout.row#newsletter-desktop",
       "flex-layout.row#footer-menu-desktop",
-      "flex-layout.row#footer-methods",
-      "flex-layout.row#footer-legal-information"
+      "flex-layout.row#footer-payment-methods",
+      "flex-layout.row#footer-legal-information-desktop"
     ]
   },
 
   // FOOTER MOBILE
   "footer-layout.mobile": {
-    "title": "al | Footer - Mobile",
+    "title": "Footer - Mobile",
     "children": [
-      "flex-layout.row#newsletter",
-      "flex-layout.row#footer-about",
+      "flex-layout.row#newsletter-mob",
       "menu-item#footer-menu-1-mob",
-      "menu-item#footer-menu-2-mob",
-      "menu-item#footer-menu-3-mob",
-      "menu-item#footer-menu-4-mob",
-      "flex-layout.row#footer-methods",
-      "flex-layout.row#footer-legal-information"
+      "vtex.menu@2.x:menu#footer-menu-1",
+      "flex-layout.col#footer-menu-3",
+      "flex-layout.row#footer-payment-methods",
+      "flex-layout.row#footer-menu-social-networks-mob",
+      "flex-layout.row#footer-legal-information-mob"
     ]
   }
 }

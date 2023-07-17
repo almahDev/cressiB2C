@@ -1,0 +1,95 @@
+{
+  "flex-layout.row#footer-payment-methods": {
+    "title": "Formas de Pagamento",
+    "children": [
+      "menu-item#payment-methods-title",
+      "list-context.media-list#payment-methods"
+    ],
+    "props": {
+      "blockClass": "footer__payment-methods",
+      "colGap": 6,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "menu-item#payment-methods-title": {
+    "title": "Título - Formas de Pagamento",
+    "props": {
+      "id": "menu-item-footer-payment-methods-title",
+      "type": "custom",
+      "blockClass": ["footer__menu", "footer__menu--title"],
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "FORMAS DE PAGAMENTO",
+        "text": "FORMAS DE PAGAMENTO"
+      }
+    }
+  },
+  "list-context.media-list#payment-methods": {
+    "title": "Lista de Formas de Pagamento",
+    "children": ["list-context-renderer#payment-methods"],
+    "props": {
+      "blockClass": ["footer__payment-methods"],
+      "preload": true,
+      "height": "100%",
+      "mediaList": [
+        {
+          "image": "assets/img/pagamento/visa.png",
+          "description": "Visa",
+          "width": "66px",
+          "height": "42px",
+          "experimentalSetExplicitDimensions": true
+        },
+        {
+          "image": "assets/img/pagamento/mastercard.png",
+          "description": "MasterCard",
+          "width": "66px",
+          "height": "43px",
+          "experimentalSetExplicitDimensions": true
+        },
+        {
+          "image": "assets/img/pagamento/american-express.png",
+          "description": "American Express",
+          "width": "67px",
+          "height": "43px",
+          "experimentalSetExplicitDimensions": true
+        },
+        {
+          "image": "assets/img/pagamento/diners-club.png",
+          "description": "Diners Club",
+          "width": "67px",
+          "height": "44px",
+          "experimentalSetExplicitDimensions": true
+        },
+        {
+          "image": "assets/img/pagamento/elo.png",
+          "description": "Elo",
+          "width": "68px",
+          "height": "44px",
+          "experimentalSetExplicitDimensions": true
+        },
+        {
+          "image": "assets/img/pagamento/hiper.png",
+          "description": "Hiper",
+          "width": "66px",
+          "height": "43px",
+          "experimentalSetExplicitDimensions": true
+        }
+      ]
+    }
+  },
+  "list-context-renderer#payment-methods": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": ["footer__payment-methods", "footer__methods"]
+    }
+  }
+}

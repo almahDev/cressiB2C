@@ -1,0 +1,98 @@
+.list {
+  &--footer__methods {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &--footer__security {
+    padding-bottom: 55px;
+  }
+
+  &--footer__payment-methods {
+    @include tablet {
+      padding-top: 20px;
+    }
+  }
+}
+
+.item {
+  &--footer__methods {
+    display: flex;
+  }
+
+  &--footer__security {
+    &:not(:last-child) {
+      padding-right: 1rem;
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        padding-right: 6px;
+      }
+    }
+  }
+
+  &--footer__social-network {
+    &:not(:last-child) {
+      padding-right: 11px;
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        padding-right: 6px;
+      }
+    }
+  }
+
+  &--footer__payment-methods {
+    &:not(:last-child) {
+      padding-right: 11px;
+    }
+
+    @include tablet {
+      padding-right: 6px;
+
+      &:not(:last-child) {
+        padding-right: 6px;
+      }
+    }
+  }
+}
+
+.imageElementLink {
+  &--footer__methods {
+    display: flex;
+    transition: all 0.4s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.imageElement {
+  &--footer__methods {
+    display: block;
+
+    @include tablet {
+      max-width: 50px;
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+
+  &--footer__social-network {
+    @include tablet {
+      max-width: 25px;
+    }
+  }
+}

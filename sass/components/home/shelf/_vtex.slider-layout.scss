@@ -58,6 +58,10 @@
     left: unset;
     right: -15px;
 
+    @media (max-width: 1300px) {
+      right: 0;
+    }
+
     @include tablet {
       top: -314px;
       right: -12px;

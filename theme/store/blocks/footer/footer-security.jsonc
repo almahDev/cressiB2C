@@ -1,0 +1,69 @@
+{
+  "flex-layout.row#footer-menu-3-security": {
+    "title": "Selos de Segurança",
+    "children": ["list-context.media-list#security"],
+    "props": {
+      "blockClass": "footer__social-network",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "list-context.media-list#security": {
+    "title": "Lista de Selos de Segurança",
+    "children": ["list-context-renderer#security"],
+    "props": {
+      "blockClass": ["footer__social-network"],
+      "preload": true,
+      "height": "100%",
+      "mediaList": [
+        {
+          "image": "assets/img/seguranca/pci-certified.png",
+          "description": "PCI Certified",
+          "width": "65px",
+          "height": "60px",
+          "experimentalSetExplicitDimensions": true,
+          "link": {
+            "url": "#",
+            "openNewTab": true,
+            "title": "PCI Certified"
+          }
+        },
+        {
+          "image": "assets/img/seguranca/google-safe-browsing.png",
+          "description": "Google Safe Browsing",
+          "width": "119px",
+          "height": "46px",
+          "experimentalSetExplicitDimensions": true,
+          "link": {
+            "url": "#",
+            "openNewTab": true,
+            "title": "Google Safe Browsing"
+          }
+        },
+        {
+          "image": "assets/img/seguranca/grupo-construbrasil.png",
+          "description": "Grupo Construbrasil",
+          "width": "130px",
+          "height": "55px",
+          "experimentalSetExplicitDimensions": true,
+          "link": {
+            "url": "#",
+            "openNewTab": true,
+            "title": "Grupo Construbrasil"
+          }
+        }
+      ]
+    }
+  },
+  "list-context-renderer#security": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": ["footer__security", "footer__methods"]
+    }
+  }
+}
