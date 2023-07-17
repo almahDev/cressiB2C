@@ -6,23 +6,13 @@
           "name": "grid",
           "component": "GridSummary",
           "itemsPerRow": {
-            "desktop": 4,
+            "desktop": 3,
             "tablet": 3,
             "phone": 2
           }
-        },
-        {
-          "name": "list",
-          "component": "ListSummary",
-          "itemsPerRow": {
-            "desktop": 3,
-            "tablet": 2,
-            "phone": 1
-          }
         }
       ],
-      "GridSummary": "product-summary.shelf#product",
-      "ListSummary": "product-summary.shelf#product"
+      "GridSummary": "product-summary.shelf#product"
     }
   }
 }

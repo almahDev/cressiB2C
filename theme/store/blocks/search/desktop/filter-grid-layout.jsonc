@@ -59,8 +59,7 @@
       "openFiltersMode": "one",
       "closeOnOutsideClick": true,
       "showClearAllFiltersOnDesktop": false,
-      "appliedFiltersOverview": "hide",
-      "priceRangeLayout": "inputAndSlider",
+      "appliedFiltersOverview": "show",
       "categoryFiltersMode": "href",
       "navigationTypeOnMobile": "collapsible",
       "layout": "desktop"
@@ -81,9 +80,20 @@
 
   "flex-layout.row#al-grid-switcher": {
     "props": {
+      "colSizing": "auto",
+      "colGap": 4,
+      "horizontalAlign": "center",
       "blockClass": "al-search__grid-switcher"
     },
-    "children": ["gallery-layout-switcher"]
+    "children": ["rich-text#al-grid-switcher", "gallery-layout-switcher"]
+  },
+
+  "rich-text#al-grid-switcher": {
+    "title": "Texto - Visualização",
+    "props": {
+      "blockClass": "al-search__grid-switcher",
+      "text": "Visualización:"
+    }
   },
 
   "gallery-layout-switcher": {
@@ -98,7 +108,15 @@
       "blockClass": "iconGrid",
       "name": "grid"
     },
-    "children": ["icon-grid"]
+    "children": ["icon#grid"]
+  },
+  "icon#grid": {
+    "props": {
+      "id": "icon-grid",
+      "size": 18,
+      "viewBox": "0 0 18 18",
+      "handle": "gridIcon"
+    }
   },
 
   "gallery-layout-option#list": {
@@ -106,6 +124,30 @@
       "blockClass": "iconList",
       "name": "list"
     },
-    "children": ["icon-inline-grid"]
+    "children": ["icon#list"]
+  },
+  "icon#list": {
+    "props": {
+      "id": "icon-list",
+      "size": 18,
+      "viewBox": "0 0 18 18",
+      "handle": "inlineGridIcon"
+    }
+  },
+
+  "gallery-layout-option#list-mobile": {
+    "props": {
+      "blockClass": "iconList",
+      "name": "list-mobile"
+    },
+    "children": ["icon#list-mobile"]
+  },
+  "icon#list-mobile": {
+    "props": {
+      "id": "icon-list-mobile",
+      "size": 18,
+      "viewBox": "0 0 18 18",
+      "handle": "inlineGridIcon"
+    }
   }
 }

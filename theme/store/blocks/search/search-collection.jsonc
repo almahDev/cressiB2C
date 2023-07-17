@@ -1,14 +1,12 @@
 {
   "store.custom#collection": {
     "title": "Coleção",
-    "blocks": [
-      "search-result-layout.customQuery#collection",
-      "back-to-top-button"
-    ]
+    "blocks": ["search-result-layout.customQuery#collection"]
   },
+
   "search-result-layout.customQuery#collection": {
     "blocks": [
-      "search-result-layout.desktop",
+      "search-result-layout.desktop#category",
       //"search-result-layout.mobile",
       "search-not-found-layout"
     ],
@@ -16,7 +14,7 @@
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 16,
+        "maxItemsPerPage": 15,
         "skusFilter": "ALL",
         "simulationBehavior": "default",
         "queryField": "1",

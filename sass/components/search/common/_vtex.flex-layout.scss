@@ -1,0 +1,383 @@
+.flexRow {
+  &--al-search__main-title-order-by--desktop {
+    display: none;
+
+    @include desktop {
+      display: block;
+      padding-top: 65px;
+    }
+  }
+
+  &--al-search__main-title-order-by--mobile,
+  &--al-search-order-filter--mobile,
+  &--al-search__total-grid--mobile {
+    @include desktop {
+      display: none;
+    }
+
+    @include tablet {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &--al-search__empty {
+    background-color: $white;
+    padding: 5rem 0 2.25rem 0;
+
+    @include tablet {
+      padding: 2.5rem 1rem;
+    }
+  }
+
+  &--al-search__empty--empty {
+    padding: 5rem 0 0;
+
+    @include tablet {
+      padding: 2rem 0 0;
+    }
+  }
+
+  &--al-search__main--search {
+    padding-bottom: 5.0625rem;
+    padding-top: 0.75rem;
+
+    @include tablet {
+      padding-bottom: 3.5rem;
+    }
+
+    :global(.vtex-search-result-3-x-galleryTitle--layout) {
+      &::before {
+        content: 'Resultado de "';
+      }
+
+      &::after {
+        content: '"';
+      }
+    }
+  }
+
+  &--al-search-order-filter--mobile {
+    padding-bottom: 1rem;
+
+    @include tablet {
+      padding-bottom: 0;
+    }
+  }
+
+  &--al-search__filter-navigator {
+    width: 100%;
+    max-width: 100vw;
+    min-width: 100vw;
+    background-color: $white;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  &--al-search-order-filter {
+    margin-bottom: 1.5625rem;
+  }
+
+  &--order-by-and-grid-switcher--container {
+    z-index: 10;
+    background-color: $white;
+    padding-top: 1rem;
+    height: 2.5rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--al-search__filter-grid-layout {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--al-search-order-filter--mobile {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &--searchtitle-seo {
+    @include tablet {
+      :global(.vtex-search-result-3-x-galleryTitle--layout) {
+        text-align: left;
+      }
+    }
+  }
+
+  &--al-search__order {
+    @include tablet {
+      padding: 1rem 0;
+    }
+  }
+
+  &--al-search__filter-navigator {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--al-search__products-order-by {
+    @include desktop {
+      padding-bottom: 0.625rem;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--search__breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+  }
+
+  &--al-search__content {
+    // padding-top: 2.875rem;
+
+    // @include tablet {
+    //   padding-top: 1.25rem;
+    // }
+  }
+}
+
+.flexRowContent {
+  &--al-search__main-title-order-by--desktop {
+    @extend %container-large;
+  }
+
+  &--al-search-order-filter--mobile {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    .stretchChildrenWidth {
+      @include tablet {
+        width: 50% !important;
+
+        &:last-child {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+
+  &--al-search__empty {
+    @extend %container-large;
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+    }
+  }
+
+  &--al-search__filter-navigator {
+    @extend %container-large;
+    background-color: $high-pure;
+  }
+
+  &--order-by-and-grid-switcher--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--al-search-order-filter {
+    display: flex;
+    justify-content: space-around;
+
+    .stretchChildrenWidth {
+      &:first-child,
+      &:last-child {
+        width: 20%;
+      }
+
+      &:last-child {
+        .flexCol--al-grid-switcher-mobile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 2.5rem;
+        }
+      }
+
+      width: 60% !important;
+    }
+  }
+
+  &--al-search__filter-grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.875rem;
+  }
+
+  &--filtered-by {
+    .stretchChildrenWidth {
+      &:last-child {
+        display: inherit;
+      }
+    }
+  }
+
+  &--search__breadcrumb {
+    width: 100%;
+
+    .stretchChildrenWidth {
+      &:first-child {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &--al-search__order {
+    .stretchChildrenWidth {
+      @include tablet {
+        width: 50% !important;
+      }
+
+      &:first-child {
+        @include tablet {
+          padding-right: 0.3125rem !important;
+        }
+      }
+
+      &:last-child {
+        @include tablet {
+          padding-left: 0.3125rem !important;
+        }
+      }
+    }
+  }
+
+  &--al-search__suggestions {
+    @include tablet {
+      padding: 0 1rem;
+    }
+  }
+
+  &--search__breadcrumb {
+    @include tablet {
+      flex-direction: column;
+      width: 100%;
+
+      .stretchChildrenWidth {
+        width: 100% !important;
+        justify-content: center !important;
+      }
+    }
+  }
+
+  &--al-search__order-by {
+    align-items: center;
+  }
+
+  &--al-search__grid-switcher {
+    align-items: center;
+
+    @include tablet {
+      padding-right: 1rem;
+    }
+  }
+
+  &--al-search__main {
+    @extend %container-large;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--slider-full-search {
+    @extend %container-full;
+    width: 100% !important;
+  }
+
+  &--al-search__total-grid--mobile {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &--any-page-breadcrumb {
+    @extend %container-large;
+  }
+}
+
+.flexCol {
+  &--al--grid-switcher {
+    display: none;
+  }
+
+  &--al-grid-switcher-mobile {
+  }
+
+  &--al-search__main {
+    padding-bottom: 5.0625rem;
+
+    @include tablet {
+      padding-bottom: 2.25rem;
+    }
+  }
+
+  &--al-search__main--search {
+    padding-bottom: 0;
+
+    @include tablet {
+      padding-bottom: 0;
+    }
+  }
+
+  &--al-search__filter {
+    @include desktop {
+      padding-top: 0;
+    }
+  }
+
+  &--search-seo-col {
+    @include desktop {
+      padding-left: 0.5rem;
+    }
+  }
+
+  &--not-found-col-1 {
+    padding: 3rem 0 4rem 0;
+
+    @include tablet {
+      padding: 3rem 1rem 2.5rem 1rem;
+    }
+  }
+}
+
+.flexColChild {
+  &--al-grid-switcher-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--al-search__orderBy {
+  }
+
+  &--al-search__result {
+    padding-left: 3.125rem;
+  }
+
+  &--al-search__filter {
+    @include tablet {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}

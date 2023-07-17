@@ -1,0 +1,104 @@
+.container {
+  &--search__breadcrumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: nowrap;
+    line-height: 1rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+
+    @include tablet {
+      padding-top: 0;
+      padding-left: 0.75rem;
+      padding-bottom: 0;
+    }
+
+    .homeIcon {
+      display: flex;
+      width: 1rem;
+      height: 1rem;
+
+      &--search-panapilhas {
+        display: none;
+      }
+    }
+
+    .link {
+      @include text($font-size-xs, $low-dark, $regular, none);
+      line-height: 0.75rem;
+      text-decoration: none;
+      padding: 0.25rem 0.35rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $text-dark-400;
+      }
+    }
+
+    .term {
+      @include text($font-size-xs, $low-dark, $regular);
+      line-height: 0.75rem;
+
+      &:hover {
+        text-decoration: none;
+        color: $text-dark-400;
+      }
+    }
+
+    .homeLink {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: fit-content;
+
+      &::before {
+        content: none;
+      }
+
+      &::after {
+        content: 'Home';
+        @include text($font-size-xs, $low-dark, $regular);
+        text-decoration: none;
+        line-height: 0.75rem;
+
+        &:hover {
+          text-decoration: none;
+          color: $text-dark-400;
+        }
+      }
+    }
+
+    .caretIcon {
+      color: $low-dark;
+      width: 0.5625rem;
+      height: 0.5625rem;
+
+      &:last-child {
+        color: $low-dark;
+      }
+    }
+
+    .arrow {
+      padding: 0 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:last-child {
+        .link {
+          @include text($font-size-xs, $low-dark, $bold);
+        }
+
+        .caretIcon {
+          color: $low-dark;
+        }
+      }
+    }
+  }
+}

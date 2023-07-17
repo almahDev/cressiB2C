@@ -1,20 +1,40 @@
 {
-  "search-result-layout.desktop": {
-    "title": "Layout da Busca - Desktop",
+  "search-result-layout.desktop#category": {
+    "title": "Layout da Busca",
     "children": [
-      "experimental__visibility-layout#search-banner-top",
-      "flex-layout.row#al-search-breadcrumb",
-      "flex-layout.row#didyoumean",
-      "flex-layout.row#al-search-suggestions",
+      "flex-layout.row#al-search-title-order-by-desktop", // DESKTOP
+      "flex-layout.row#al-search-title-mobile", // MOBILE
       "flex-layout.row#al-result",
-      "experimental__visibility-layout#seo"
+      "flex-layout.row#search-collections"
     ],
     "props": {
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
       },
-      "blockClass": "al-search",
+      "blockClass": "al-search-category",
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets": {
+        "priceRange": false
+      }
+    }
+  },
+  "search-result-layout.desktop#search": {
+    "title": "Layout da Busca",
+    "children": [
+      "flex-layout.row#al-search-title-order-by-desktop", // DESKTOP
+      "flex-layout.row#al-search-title-mobile", // MOBILE
+      "flex-layout.row#al-result-search",
+      "flex-layout.row#search-collections"
+    ],
+    "props": {
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "blockClass": "al-search-search",
       "pagination": "show-more",
       "preventRouteChange": false,
       "defaultGalleryLayout": "grid",

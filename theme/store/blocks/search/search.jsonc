@@ -1,40 +1,45 @@
 {
+  // BUSCA
   "store.search": {
     "title": "Busca",
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout#search"],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
         "skusFilter": "ALL",
         "simulationBehavior": "default",
-        "maxItemsPerPage": 16
+        "maxItemsPerPage": 15
       }
     }
   },
 
+  // MARCA
   "store.search#brand": {
     "title": "Busca - Marca",
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout#category"],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
-        "maxItemsPerPage": 16,
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 15,
         "skusFilter": "ALL",
         "simulationBehavior": "default"
       }
     }
   },
 
+  // DEPARTAMENTO
   "store.search#department": {
     "title": "Busca - Departamento",
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout#category"],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
         "skusFilter": "ALL",
         "simulationBehavior": "default",
-        "maxItemsPerPage": 16
+        "maxItemsPerPage": 15
       }
     }
   },
@@ -42,31 +47,58 @@
   //categoria
   "store.search#category": {
     "title": "Busca - Categoria",
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout#category"],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
         "skusFilter": "ALL",
         "simulationBehavior": "default",
-        "maxItemsPerPage": 16
+        "maxItemsPerPage": 15
       }
     }
   },
 
+  // SUBCATEGORIA
   "store.search#subcategory": {
     "title": "Busca - Subcategoria",
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout#category"],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
         "skusFilter": "ALL",
         "simulationBehavior": "default",
-        "maxItemsPerPage": 16
+        "maxItemsPerPage": 15
       }
     }
   },
 
-  "search-result-layout": {
-    "blocks": ["search-result-layout.desktop", "search-not-found-layout"]
+  // BUSCA COMPLETA
+  "store.search#configurable": {
+    "title": "Busca - Completa",
+    "blocks": ["search-result-layout#search"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 15,
+        "skusFilter": "ALL",
+        "simulationBehavior": "default"
+      }
+    }
+  },
+
+  "search-result-layout#search": {
+    "title": "Resultado de búsqueda flexible",
+    "blocks": ["search-result-layout.desktop#search", "search-not-found-layout"]
+  },
+
+  "search-result-layout#category": {
+    "title": "Resultado de búsqueda flexible",
+    "blocks": [
+      "search-result-layout.desktop#category",
+      "search-not-found-layout"
+    ]
   }
 }

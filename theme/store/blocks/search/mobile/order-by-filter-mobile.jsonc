@@ -17,7 +17,7 @@
 
   "flex-layout.row#total-grid-mobile": {
     "title": "Total Products Grid Switcher Mobile",
-    "children": ["total-products.v2", "gallery-layout-switcher#mobile"],
+    "children": ["total-products.v2"],
     "props": {
       "blockClass": "al-search__total-grid--mobile",
       "preserveLayoutOnMobile": true,
@@ -29,24 +29,24 @@
   },
 
   "flex-layout.col#al-filter-mobile": {
-    "children": ["filter-navigator.v3#al-filter-navigator"],
+    "children": ["filter-navigator.v3#mobile"],
     "props": {
       "width": "40%",
       "blockClass": "al-search__filter--mobile"
     }
   },
-  "filter-navigator.v3#al-filter-navigator": {
+  "filter-navigator.v3#mobile": {
     "blocks": ["sidebar-close-button"],
     "title": "Filter Navigator",
     "props": {
       "blockClass": "al-search__filter--mobile",
       "initiallyCollapsed": true,
-      "openFiltersMode": "one",
+      "openFiltersMode": "many",
       "closeOnOutsideClick": true,
       "showClearAllFiltersOnDesktop": false,
       "appliedFiltersOverview": "hide",
-      "priceRangeLayout": "inputAndSlider",
       "categoryFiltersMode": "href",
+      "totalProductsOnMobile": "hide",
       "navigationTypeOnMobile": "collapsible",
       "layout": "phone"
     }

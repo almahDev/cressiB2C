@@ -1,0 +1,66 @@
+{
+  "experimental__visibility-layout#search-banner-top": {
+    "title": "Controle de visibilidade - Banner superior",
+    "children": ["flex-layout.row#slider-full-search"],
+    "props": {
+      "visible": true,
+      "blockClass": ["al-search__carousel", "search__page"]
+    }
+  },
+
+  "flex-layout.row#slider-full-search": {
+    "title": "Bloco - Listagem Banners",
+    "children": ["list-context.image-list#slider-full-search"],
+    "props": {
+      "blockClass": "slider-full-search",
+      "fullWidth": true
+    }
+  },
+
+  "list-context.image-list#slider-full-search": {
+    "title": "Listagem Banners",
+    "children": ["slider-layout#slider-full-search"],
+    "props": {
+      "preload": true,
+      "height": "100%",
+      "images": [
+        {
+          "image": "https://fakeimg.pl/1920x300/",
+          "mobileImage": "https://fakeimg.pl/360x230/"
+        },
+        {
+          "image": "https://fakeimg.pl/1920x300/",
+          "mobileImage": "https://fakeimg.pl/360x230/"
+        },
+        {
+          "image": "https://fakeimg.pl/1920x300/",
+          "mobileImage": "https://fakeimg.pl/360x230/"
+        },
+        {
+          "image": "https://fakeimg.pl/1920x300/",
+          "mobileImage": "https://fakeimg.pl/360x230/"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#slider-full-search": {
+    "title": "Carrossel - Categorias",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "arrowSize": 20,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": ["home__slider", "slider-full-search"],
+      "autoplay": {
+        "stopOnHover": true,
+        "timeout": 7000
+      }
+    }
+  }
+}

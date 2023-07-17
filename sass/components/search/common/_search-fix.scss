@@ -1,0 +1,66 @@
+// 犯罪はここで行われた
+:global(.vtex-search-result-3-x-caretIcon--al-search__filter--mobile)
+  :global([href='#nav-caret--up']) {
+  color: $text-pure-500 !important;
+  fill: $text-pure-500 !important;
+  stroke: $text-pure-500 !important;
+  transition: all 0.2s !important;
+}
+
+:global(.vtex-search-result-3-x-accordionFilter)
+  :global(.ReactCollapse--collapse)
+  :global(.pl8) {
+  padding: 0 !important;
+  color: $text-color-1-500;
+}
+
+:global(.vtex-search-result-3-x-accordionFilter)
+  :global(.ReactCollapse--collapse) {
+  border-bottom: 0.0625rem solid $high-dark;
+  margin: 0 1rem;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+:global(.vtex-search-result-3-x-accordionFilter)
+  :global(.ReactCollapse--collapse)
+  :global(.vtex-search-result-3-x-filterAccordionItemBox) {
+  min-height: 0;
+  padding-bottom: 1rem;
+
+  @include tablet {
+    padding-left: 1rem;
+  }
+}
+
+:global(.vtex-search-result-3-x-orderByButton:not(.b--transparent)),
+:global(.vtex-search-result-3-x-orderByButton.b--muted-4) {
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+:global(
+    .vtex-search-result-3-x-accordionFilterContainer--al-search__filter--mobile--faixa-de-preco
+  ) {
+  + :global(.ReactCollapse--collapse) {
+    @include tablet {
+      height: auto !important;
+      overflow: unset !important;
+    }
+  }
+}
+
+:global(
+    .vtex-search-result-3-x-filterAccordionItemBox--al-search__filter--mobile--faixa-de-preco
+  ) {
+  :global(
+      .vtex-search-result-3-x-accordionFilterContent--al-search__filter--mobile
+    ) {
+    :global(.vtex-search-result-3-x-caretIcon--al-search__filter--mobile) {
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+}

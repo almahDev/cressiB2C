@@ -1,0 +1,29 @@
+{
+  "flex-layout.row#al-search-breadcrumb": {
+    "title": "Breadcrumb - Categoria e Busca",
+    "children": ["breadcrumb.search#search-panapilhas"],
+    "props": {
+      "blockClass": ["search__breadcrumb", "search-panapilhas"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": false,
+      "colSizing": "equal",
+      "colJustify": "between"
+    }
+  },
+
+  "breadcrumb.search#search-panapilhas": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": ["search__breadcrumb", "search-panapilhas"]
+    }
+  },
+
+  "breadcrumb.search": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": "search__breadcrumb"
+    }
+  }
+}

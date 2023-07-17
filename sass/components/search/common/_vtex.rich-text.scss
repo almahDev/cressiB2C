@@ -1,0 +1,112 @@
+.container {
+  &--al-search__seo {
+    padding: 0;
+
+    .heading {
+      @include text($font-size-xlg, $text-pure-500, $bold);
+      line-height: 1.5rem;
+      margin: 0;
+      padding-bottom: 1.5rem;
+    }
+
+    .paragraph {
+      @include text($font-size-md, $text-dark-400, $regular);
+      line-height: 1.5212rem;
+      margin: 0;
+      padding-bottom: 1rem;
+
+      @include tablet {
+        font-size: $font-size-sm;
+        line-height: 1.0625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &--al-search__grid-switcher {
+    padding: 0;
+
+    .paragraph {
+      @include text($font-size-sm, $text-dark-400, $regular);
+      line-height: 1.0625rem;
+      margin: 0;
+
+      @include tablet {
+        font-size: $font-size-xs;
+        line-height: 0.875rem;
+      }
+    }
+  }
+
+  &--al-search__empty {
+    align-items: center;
+    justify-content: center;
+
+    .heading {
+      @include text($font-size-h3, $text-pure-500, $bold);
+      line-height: 2rem;
+      padding: 0 0 1rem;
+      margin: 0;
+
+      @include tablet {
+        font-size: $font-c-2;
+        line-height: 1.8125rem;
+      }
+    }
+
+    .strong {
+      @include text($font-size-lg, $text-dark-400, $regular);
+      line-height: 1.25rem;
+      padding: 0;
+      margin: 0 0 2.5rem;
+
+      @include tablet {
+        font-size: $font-size-sm;
+        line-height: 1.0625rem;
+      }
+    }
+
+    .paragraph {
+      @include text($font-size-lg, $text-pure-500, $regular);
+      line-height: 1.25rem;
+      padding: 0;
+      margin: 0;
+
+      @include tablet {
+        font-size: $font-size-md;
+      }
+    }
+
+    .link {
+      @include text($font-size-lg, $text-dark-400, $regular);
+
+      @include tablet {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+
+  &--search-not-found-title {
+    .paragraph {
+      @include text($font-c-1, $text-pure-500, $bold);
+      margin: 0 0 1rem 0;
+      line-height: 2.93rem;
+
+      @include tablet {
+        font-size: $font-c-2;
+        line-height: 1.7581rem;
+      }
+    }
+  }
+
+  &--search-not-found-subtitle {
+    .paragraph {
+      @include text($font-size-md, $text-dark-400, $regular);
+      margin: 0;
+      text-align: center;
+      line-height: 1.5rem;
+    }
+  }
+}

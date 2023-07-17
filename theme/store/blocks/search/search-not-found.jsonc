@@ -11,7 +11,7 @@
     "blocks": [
       "flex-layout.row#search-not-found",
       "flex-layout.row#search-not-found-text",
-      "flex-layout.row#search-collections"
+      "flex-layout.row#search-not-found-collections"
     ]
   },
 

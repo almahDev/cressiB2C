@@ -1,39 +1,52 @@
 .arrowBackIcon {
 }
+
 .assistantSalesIcon {
 }
+
 .caretIcon {
 }
+
 .cartIcon {
   &--minicart-empty-state {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     margin-left: -2rem;
     overflow: visible !important;
     z-index: 20000;
+
     :last-child {
-      width: 32px;
-      height: 32px;
+      width: 2rem;
+      height: 2rem;
       overflow: visible !important ;
     }
   }
 }
+
 .checkIcon {
 }
+
 .closeIcon {
 }
+
 .deleteIcon {
 }
+
 .equalsIcon {
 }
+
 .eyeSightIcon {
 }
+
 .filterIcon {
 }
+
 .globeIcon {
 }
+
 .gridIcon {
 }
+
 .gridIcon,
 .inlineGridIcon {
   overflow: visible !important;
@@ -42,43 +55,63 @@
     overflow: visible !important;
   }
 }
+
 .heartIcon {
 }
+
 .homeIcon {
 }
+
 .inlineGridIcon {
 }
+
 .locationInputIcon {
 }
+
 .locationMarkerIcon {
 }
+
 .menuIcon {
 }
+
 .minusIcon {
 }
+
 .plusIcon {
 }
+
 .profileIcon {
 }
+
 .removeIcon {
 }
+
 .searchIcon {
 }
+
 .singleGridIcon {
 }
+
 .socialIcon {
 }
+
 .starIcon {
 }
+
 .swapIcon {
 }
+
 .playIcon {
 }
+
 .pauseIcon {
 }
+
 .fullscreenIcon {
 }
+
 .volumeOnIcon {
 }
+
 .volumeOffIcon {
 }

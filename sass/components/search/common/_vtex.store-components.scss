@@ -1,18 +1,18 @@
 .infoCardContainer {
-  &--all-search__slider--banner {
+  &--al-search__slider--banner {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
   }
 }
 .infoCardImageContainer {
-  &--all-search__slider--banner {
+  &--al-search__slider--banner {
     width: 100%;
   }
 }
 
 .infoCardCallActionContainer {
-  &--all-search__slider--banner {
+  &--al-search__slider--banner {
     margin: 0;
     padding: 0;
     text-decoration: none !important;
@@ -20,7 +20,7 @@
 }
 
 .infoCardCallActionContainerText {
-  &--all-search__slider--banner {
+  &--al-search__slider--banner {
     @extend %link;
     text-decoration: none !important;
   }

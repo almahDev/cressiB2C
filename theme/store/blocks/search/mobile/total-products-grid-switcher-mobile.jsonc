@@ -25,12 +25,27 @@
       "blockClass": "al-grid-switcher-mobile",
       "width": "50%"
     },
-    "children": ["gallery-layout-switcher#mobile"]
+    "children": ["rich-text#al-grid-switcher", "gallery-layout-switcher#mobile"]
   },
+
+  "flex-layout.row#al-grid-switcher-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "colGap": 4,
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "al-search__grid-switcher"
+    },
+    "children": ["rich-text#al-grid-switcher", "gallery-layout-switcher#mobile"]
+  },
+
   "gallery-layout-switcher#mobile": {
     "props": {
       "blockClass": "al-grid-switcher-mobile"
     },
-    "children": ["gallery-layout-option#grid", "gallery-layout-option#list"]
+    "children": [
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list-mobile"
+    ]
   }
 }

@@ -1,0 +1,17 @@
+{
+  // TITLE - ORDER BY (DESKTOP)
+  "flex-layout.row#al-search-title-order-by-desktop": {
+    "title": "Título e Ordenação (Desktop)",
+    "children": [
+      "experimental__visibility-layout#search-top-title",
+      "order-by.v2"
+    ],
+    "props": {
+      "blockClass": "al-search__main-title-order-by--desktop",
+      "colSizing": "auto",
+      "colJustify": "between",
+      "preventHorizontalStretch": false,
+      "fullWidth": true
+    }
+  }
+}

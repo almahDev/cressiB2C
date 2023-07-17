@@ -1,0 +1,12 @@
+{
+  // TITLE - ORDER BY (DESKTOP)
+  "flex-layout.row#al-search-title-mobile": {
+    "title": "Título (Mobile)",
+    "children": ["experimental__visibility-layout#search-top-title"],
+    "props": {
+      "blockClass": "al-search__main-title-order-by--mobile",
+      "preventHorizontalStretch": false,
+      "fullWidth": true
+    }
+  }
+}

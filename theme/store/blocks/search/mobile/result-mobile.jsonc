@@ -2,14 +2,12 @@
   "search-result-layout.mobile": {
     "title": "Mobile",
     "children": [
-      "flex-layout.row#al-search-breadcrumb",
       "flex-layout.row#al-search-title",
       "flex-layout.row#al-order-by-filter-mobile",
-      "filter-navigator.v3#filtered-by-mobile",
+      // "filter-navigator.v3#filtered-by-mobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
-      "flex-layout.row#fetchmore",
-      "experimental__visibility-layout#seo"
+      "flex-layout.row#fetchmore"
     ],
     "props": {
       "blockClass": "al-search",
@@ -24,20 +22,20 @@
       }
     }
   },
-  "filter-navigator.v3#filtered-by-mobile": {
-    "props": {
-      "initiallyCollapsed": false,
-      "openFiltersMode": "one",
-      "closeOnOutsideClick": true,
-      "showClearAllFiltersOnDesktop": false,
-      "appliedFiltersOverview": "hide",
-      "priceRangeLayout": "inputAndSlider",
-      "categoryFiltersMode": "href",
-      "navigationTypeOnMobile": "collapsible",
-      "layout": "desktop",
-      "blockClass": "filtered-by-mobile"
-    }
-  },
+  // "filter-navigator.v3#filtered-by-mobile": {
+  //   "props": {
+  //     "initiallyCollapsed": false,
+  //     "openFiltersMode": "one",
+  //     "closeOnOutsideClick": true,
+  //     "showClearAllFiltersOnDesktop": false,
+  //     "appliedFiltersOverview": "hide",
+  //     "priceRangeLayout": "inputAndSlider",
+  //     "categoryFiltersMode": "href",
+  //     "navigationTypeOnMobile": "collapsible",
+  //     "layout": "desktop",
+  //     "blockClass": "filtered-by-mobile"
+  //   }
+  // },
   "flex-layout.row#fetchprevious": {
     "props": {
       "blockClass": "al-search__fetch--previous"
