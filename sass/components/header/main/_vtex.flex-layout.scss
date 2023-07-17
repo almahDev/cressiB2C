@@ -11,10 +11,15 @@
     padding: 1rem 0;
 
     @include tablet {
-      padding: 0.5rem 0;
+      padding: 1.75rem;
     }
   }
+
+  &--block-search-bar {
+    background-color: #f9f9f9;
+  }
 }
+
 .flexRowContent {
   &--header__main {
     align-items: center;
@@ -27,19 +32,7 @@
 
     .stretchChildrenWidth {
       align-items: center;
-      justify-content: space-between;
-    }
-
-    .flexCol {
-      width: 38% !important;
-
-      &:first-child {
-        width: 25% !important;
-      }
-
-      &:last-child {
-        width: 32% !important;
-      }
+      justify-content: initial;
     }
   }
 
@@ -75,13 +68,36 @@
     }
   }
 
-  &--header__links--desktop {
-    .stretchChildrenWidth {
+  &--main-elements-desk {
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      &:first-child {
+        width: 55% !important;
+      }
+    }
+  }
+
+  &--block-main-links {
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      flex: 1;
+      margin-left: 36px;
     }
   }
 }
 
 .flexCol {
+  &--tooltip-social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--logo-allegralar-desk {
+    width: 20rem !important;
+    margin-right: 2.25rem;
+  }
 }
+
 .flexColChild {
+  &--tooltip-social {
+    margin: 0 0.5rem;
+  }
 }

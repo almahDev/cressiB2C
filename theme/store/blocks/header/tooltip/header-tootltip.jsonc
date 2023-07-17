@@ -6,39 +6,27 @@
       "blockClass": "header__tooltip--text"
     }
   },
-  "vtex.menu@2.x:menu#tooltip": {
-    "title": "Almah | Header - Topbar - Contato",
-    "children": ["menu-item#contact", "menu-item#atend"]
-  },
-  "menu-item#contact": {
+  "flex-layout.col#tooltip-social": {
+    "children": ["image#face-book", "image#instagram"],
     "props": {
-      "id": "menu-item-contact",
-      "blockClass": "header__tooltip--link",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "tel:+5599999999999",
-        "noFollow": false,
-        "tagTitle": "Contato: (99) 9.9999-9999",
-        "text": "Contato: (99) 9.9999-9999"
+      "blockClass": ["tooltip-social"]
+    }
+  },
+  "image#face-book": {
+    "props": {
+      "src": "assets/svg/top-bar-Facebook.svg",
+      "maxHeight": 24,
+      "link": {
+        "url": ""
       }
     }
   },
-  "menu-item#atend": {
+  "image#instagram": {
     "props": {
-      "id": "menu-item-atend",
-      "blockClass": "header__tooltip--link",
-      "type": "custom",
-      "iconId": "hpa-chat",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/atendimento",
-        "noFollow": false,
-        "tagTitle": "Atendimento",
-        "text": "Atendimento"
+      "src": "assets/svg/top-bar-Instagram.svg",
+      "maxHeight": 24,
+      "link": {
+        "url": ""
       }
     }
   }

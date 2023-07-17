@@ -1,10 +1,10 @@
 .summarySmallDisclaimer {
-  &--all-cart {
+  &--al-cart {
     display: none;
   }
 }
 .summaryItemContainer {
-  &--all-cart {
+  &--al-cart {
     padding-bottom: 0;
 
     &:first-child {
@@ -14,17 +14,54 @@
     &:not(:last-child) {
       .summaryItemLabel,
       .summaryItemPrice {
-        font-size: $font-size-base;
+        font-size: 1.25rem;
         font-weight: $regular;
         color: $black;
       }
+
+      .summaryItemLabel {
+        color: #40d6c6;
+        font-style: normal;
+        font-weight: 700;
+
+        &::after {
+          content: ':';
+          margin-right: 0.5rem;
+        }
+      }
+
+      .summaryItemPrice {
+        color: #808080;
+        text-align: left;
+        display: flex;
+      }
     }
+
     &:last-child {
       .summaryItemLabel,
       .summaryItemPrice {
-        font-size: $font-size-lg;
+        font-size: 1.25rem;
         font-weight: $bold;
         color: $black;
+      }
+
+      .summaryItemLabel {
+        color: #40d6c6;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+
+        &::after {
+          content: ':';
+          margin-right: 0.5rem;
+        }
+      }
+
+      .summaryItemPrice {
+        color: #808080;
+        font-weight: $regular;
+        text-align: left;
+        display: flex;
       }
     }
   }

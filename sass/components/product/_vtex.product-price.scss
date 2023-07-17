@@ -14,7 +14,7 @@
 .sellingPrice,
 .sellingPriceValue {
   &--product__price {
-    @include text($font-size-lg, $text-color-1, $regular);
+    @include text($font-size-sm, #2b2b2b, $regular);
     line-height: 1.688rem;
   }
 

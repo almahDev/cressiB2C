@@ -18,6 +18,10 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  &--block-main-links {
+    margin-left: 2.25rem;
+  }
 }
 
 .flexCol {
@@ -32,6 +36,30 @@
 
     @media (min-width: $l) and (max-width: $screen-xlg-max) {
       padding: 0 15px;
+    }
+  }
+
+  &--block-main-links {
+    :global(.vtex-login-2-x-container) {
+      :global(.vtex-button__label) {
+        &::before {
+          background: none !important;
+          content: url('assets/svg/icon-stand-jojo.svg') !important;
+          display: unset !important;
+          height: unset !important;
+          width: unset !important;
+          margin-top: 0.2rem;
+        }
+
+        :global(.vtex-login-2-x-label) {
+          font-size: 0;
+          line-height: unset;
+
+          &::after {
+            content: url('assets/svg/ENTRAR-OU-CADASTRE-SE.svg');
+          }
+        }
+      }
     }
   }
 }
