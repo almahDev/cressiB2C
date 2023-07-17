@@ -28,7 +28,8 @@
   },
   "rich-text#name-collection-6": {
     "props": {
-      "text": "NOME DA COLEÇÃO  [VER MAIS](#)"
+      "text": "NOME DA COLEÇÃO  [VER MAIS](#)",
+      "blockClass": ["text-collection-menu"]
     }
   }
 }
