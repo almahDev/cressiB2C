@@ -1,7 +1,7 @@
 .filter {
-  &--al-search__filter {
-    padding: 1rem 1.5rem 0.1563rem;
-  }
+  // &--al-search__filter {
+  //   padding: 1rem 1.5rem 0.1563rem;
+  // }
 }
 
 .accordionFilter {
@@ -115,6 +115,7 @@
 
 .accordionFilterItemOptions {
   padding-left: 0;
+  padding-top: 65px;
 }
 
 .accordionFilterItemTitle {
@@ -375,8 +376,9 @@
     border-radius: 0.125rem;
 
     @include tablet {
-      border-color: $primary-dark-700;
+      border-color: $color-1;
       border-radius: 0;
+      background-color: $color-1;
     }
   }
 
@@ -614,13 +616,20 @@
     }
   }
 
-  &--al-search__filter {
-    padding-bottom: 1rem;
-    border-bottom: 0.0625rem solid $high-medium;
-
-    &:last-child {
-      border-bottom: 0;
+  &--al-search__filter--title {
+    @media (min-width: $screen-lg-min) {
+      display: none;
     }
+  }
+
+  &--al-search__filter {
+    border: 0;
+    // padding-bottom: 1rem;
+    // border-bottom: 0.0625rem solid $high-medium;
+
+    // &:last-child {
+    //   border-bottom: 0;
+    // }
   }
 }
 
@@ -1041,7 +1050,7 @@
       width: 1rem;
       height: 1rem;
       margin-bottom: -0.375rem;
-      color: $primary-pure-500;
+      color: #4f4f4f;
     }
   }
 
@@ -1098,9 +1107,8 @@
 
 .filterPopupTitle {
   @include desktop {
-    @include text($font-size-md, $text-pure-500, $regular);
+    @include text($font-size-md, #000, $regular);
     position: relative;
-    right: 2.0625rem;
     text-transform: capitalize;
   }
 
@@ -1151,6 +1159,9 @@
       justify-content: space-between;
       align-items: center;
       width: 100% !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.8125rem;
     }
   }
 }
@@ -1237,17 +1248,22 @@
 
   .filterPopupButton {
     @extend %primary-button;
-    padding-top: 0.6875rem;
-    padding-bottom: 0.6875rem;
-    border-radius: 0.25rem;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent !important;
+    display: flex;
 
     .filterPopupTitle {
       display: flex;
       justify-content: center;
       align-items: center;
+      color: #4f4f4f;
+      font-size: 0.9375rem !important;
+      font-weight: 700;
+      text-transform: uppercase;
 
-      &::before {
-        @include icon('filter', 1.125rem);
+      &::after {
+        @include icon('filter', 1.375rem);
         margin-right: 0.5rem;
       }
     }
@@ -1276,9 +1292,6 @@
 
   &--al-search__filter {
     @extend %scrollbar;
-    max-height: 16.875rem;
-    padding: 0 0 0 1.5rem;
-    margin-right: 1.5rem;
 
     :global(.vtex-slider-container) {
       :global(.vtex-slider) {
@@ -1410,19 +1423,19 @@
 }
 
 .galleryTitle--layout {
-  @include text($font-c-2, $text-pure-500, $bold);
+  @include text(0.75rem, $text-pure-500, $regular);
   line-height: 1.7581rem;
   position: relative;
   text-transform: none;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 1.5rem;
+  padding-top: 1.44rem;
 
   @include tablet {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-    font-size: $font-size-xlg;
+    padding-left: 0.81rem;
+    padding-right: 0.81rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -1466,16 +1479,17 @@
 
   .orderByButton {
     align-items: center;
-    border: 0.125rem solid $high-medium;
-    border-radius: 0.25rem !important;
+    border-radius: 0 !important;
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0.6875rem 1rem;
+    padding: 0.6875rem;
     transition: all 0.2s;
     text-transform: none;
+    border: 0;
 
     @include tablet {
+      border: 1px solid #4f4f4f;
       height: 2.5rem;
       justify-content: center;
       width: 100%;
@@ -1501,7 +1515,7 @@
         @include tablet {
           width: 1rem;
           height: 1rem;
-          color: $primary-pure-500;
+          color: #4f4f4f;
           margin-top: 0.5rem;
         }
       }
@@ -1567,39 +1581,41 @@
 }
 
 .orderByText {
-  color: $text-dark-400;
+  color: #4f4f4f;
   display: block;
   font-size: 0;
-  font-weight: $regular;
+  font-weight: $bold;
   line-height: normal;
   position: relative;
 
   @include tablet {
-    @include text($font-size-md, $text-pure-500, $regular);
+    @include text($font-size-md, #4f4f4f, $regular);
     position: relative;
-
-    &::before {
-      content: ':';
-      @include text($font-size-md, $text-pure-500, $regular);
-      position: absolute;
-      right: 0.3125rem;
-      left: unset;
-      top: 0;
-    }
   }
 
-  &::after {
-    @include desktop {
-      content: 'Ordenar por: ';
-      @include text($font-size-md, $text-pure-500, $bold);
-      position: absolute;
-      top: -0.6875rem;
-      left: unset;
-      right: 1.25rem;
-      width: 6.25rem;
-      text-transform: initial;
-    }
-  }
+  // &::after {
+  //   @include desktop {
+  //     content: 'Ordenar por: ';
+  //     @include text($font-size-md, $text-pure-500, $bold);
+  //     position: absolute;
+  //     top: -0.6875rem;
+  //     left: unset;
+  //     right: 1.25rem;
+  //     width: 6.25rem;
+  //     text-transform: initial;
+  //   }
+  // }  // &::after {
+  //   @include desktop {
+  //     content: 'Ordenar por: ';
+  //     @include text($font-size-md, $text-pure-500, $bold);
+  //     position: absolute;
+  //     top: -0.6875rem;
+  //     left: unset;
+  //     right: 1.25rem;
+  //     width: 6.25rem;
+  //     text-transform: initial;
+  //   }
+  // }
 }
 
 .productCount {

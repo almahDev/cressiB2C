@@ -24,3 +24,10 @@
 // SITE ZOOM FIX
 // ativar somente se necessário!
 // @import 'components/site-zoom-fix';
+
+:global(.vtex-slider__base-internal),
+:global(.vtex-slider__selector),
+:global(.vtex-slider__selector-tooltip) {
+  background-color: #40d6c6;
+  border-color: #40d6c6;
+}

@@ -156,13 +156,14 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1.69rem;
 
     .stretchChildrenWidth {
       @include tablet {
         width: 50% !important;
 
         &:last-child {
-          padding-left: 1rem;
+          padding-left: 0.63rem;
         }
       }
     }
