@@ -37,6 +37,10 @@
     content: url('assets/svg/MEU-CARRINHO.svg');
     position: absolute;
     left: 33px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
