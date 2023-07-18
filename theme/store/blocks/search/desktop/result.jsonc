@@ -43,7 +43,7 @@
       "maxItemsCategory": 10,
       "maxItemsDepartment": 10,
       "truncateFilters": true,
-      "initiallyCollapsed": true,
+      "initiallyCollapsed": false,
       "navigationTypeOnMobile": "collapsible",
       "totalProductsOnMobile": "show",
       "openFiltersMode": "many",
@@ -61,7 +61,6 @@
 
   "flex-layout.col#al-result": {
     "children": [
-      "flex-layout.row#total-grid-mobile", // mobile
       "flex-layout.row#al-order-by-filter-mobile", // mobile
       "flex-layout.row#al-content-search"
     ],
@@ -74,7 +73,6 @@
   },
   "flex-layout.col#al-result-search": {
     "children": [
-      "flex-layout.row#total-grid-mobile", // mobile
       "flex-layout.row#al-order-by-filter-mobile", // mobile
       "flex-layout.row#al-content-search"
     ],
