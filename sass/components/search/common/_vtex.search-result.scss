@@ -378,7 +378,7 @@
     @include tablet {
       border-color: $color-1;
       border-radius: 0;
-      background-color: $color-1;
+      // background-color: $color-1;
     }
   }
 
@@ -623,13 +623,14 @@
   }
 
   &--al-search__filter {
-    border: 0;
-    // padding-bottom: 1rem;
-    // border-bottom: 0.0625rem solid $high-medium;
+    border: 1px solid #e7e6e6;
+    background: #fafafa;
+    padding: 1rem;
+    margin-bottom: 1.44rem;
+  }
 
-    // &:last-child {
-    //   border-bottom: 0;
-    // }
+  &--manual {
+    display: none;
   }
 }
 
@@ -818,8 +819,9 @@
       margin-right: 0.75rem;
       border-width: 0.0625rem;
       border-radius: 0;
-      border-color: $primary-dark-700;
+      border-color: $color-1;
       margin-top: 0.0625rem;
+      // background-color: $color-1;
     }
 
     :global(.vtex-checkbox__box-wrapper) {
@@ -1335,7 +1337,7 @@
 
 .filterTitleSpan {
   &--al-search__filter--mobile {
-    @include text($font-size-base, $text-color-1-500, $regular);
+    @include text($font-size-base, #515151, $regular);
   }
 
   color: $text-color-1;
@@ -1423,7 +1425,7 @@
 }
 
 .galleryTitle--layout {
-  @include text(0.75rem, $text-pure-500, $regular);
+  @include text(1.0625rem, #000, $regular);
   line-height: 1.7581rem;
   position: relative;
   text-transform: none;
@@ -1456,6 +1458,11 @@
   transition: all 0.2s;
 
   &--layout {
+    @include desktop {
+      display: flex;
+      align-items: center;
+    }
+
     @include tablet {
       padding-right: 0.5rem;
       width: 100%;
