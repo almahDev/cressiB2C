@@ -1353,7 +1353,7 @@
   }
 
   &--al-search__filter {
-    @include text($font-size-md, $text-pure-500, $bold);
+    @include text($font-size-md, #515151, $bold);
     line-height: 1.1719rem;
     text-transform: initial;
   }
