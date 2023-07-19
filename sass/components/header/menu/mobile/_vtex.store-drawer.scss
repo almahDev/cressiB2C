@@ -35,17 +35,38 @@
     }
 
     .closeIconButton {
-      border: 1px solid red;
       padding: 1rem 0.75rem;
     }
   }
 
   &--al-drawer__menu--mobile {
     justify-content: space-between;
-    margin: 1rem 1rem 1rem 2.5rem;
+    margin: 1rem;
+
+    :global(.vtex-login-2-x-container) {
+      :global(.vtex-button) {
+        padding: 14px;
+        background-color: #e9fbf9;
+        border-radius: 2px;
+      }
+
+      :global(.vtex-button__label) {
+        &::after {
+          content: 'Faça seu Login';
+          font-size: 13px;
+          font-weight: bold;
+          color: $color-1-500;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
 
     .closeIconButton {
       color: $white;
+      padding: 0;
     }
   }
 }

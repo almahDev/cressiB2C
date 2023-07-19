@@ -262,7 +262,11 @@
     "children": ["menu#drawer"]
   },
   "drawer-header#header-mobile": {
-    "children": ["rich-text#title-menu", "drawer-close-button"],
+    "children": [
+      "rich-text#title-menu",
+      "login#desktop",
+      "drawer-close-button"
+    ],
     "props": {
       "blockClass": "al-drawer__menu--mobile"
     }
@@ -273,6 +277,16 @@
     "props": {
       "text": "Menu",
       "blockClass": ["title-menu"]
+    }
+  },
+
+  "login#desktop": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
     }
   },
 
