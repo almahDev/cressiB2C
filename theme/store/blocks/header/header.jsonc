@@ -261,6 +261,7 @@
     "blocks": ["drawer-header#header-mobile"],
     "children": ["menu#drawer"]
   },
+
   "drawer-header#header-mobile": {
     "children": [
       "rich-text#title-menu",

@@ -28,6 +28,20 @@
   &--header-mob__social-block {
     flex-direction: row;
   }
+
+  &--mega-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 25%;
+
+    &::after {
+      content: url('assets/svg/arrow-down.svg');
+      margin-left: 0.3rem;
+    }
+  }
 }
 
 .flexRowContent {

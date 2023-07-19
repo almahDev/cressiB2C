@@ -6,12 +6,35 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#dep1",
+      "flex-layout.col#trigger-mega-menu",
+
+      // "menu-item#dep1",
       "menu-item#dep2",
       "menu-item#dep3",
       "menu-item#dep4",
       "menu-item#dep5",
       "menu-item#dep6"
     ]
+  },
+  "flex-layout.row#mega-menu": {
+    "children": ["mega-menu#desktop"]
+  },
+  "mega-menu#desktop": {
+    "props": {
+      "openOnly": "horizontal"
+    }
+  },
+
+  "flex-layout.col#trigger-mega-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": ["mega-menu"]
+    },
+    "children": ["mega-menu-trigger-btn", "flex-layout.row#mega-menu"]
+  },
+  "mega-menu-trigger-btn": {
+    "props": {
+      "Drawer": "drawer"
+    }
   }
 }

@@ -1,0 +1,41 @@
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+.triggerContainer {
+  &::before {
+    content: 'TODAS AS CATEGORIAS';
+    font-weight: 500;
+  }
+
+  .triggerButtonIcon {
+    display: none;
+  }
+}
+
+.menuContainerNav {
+  top: 85%;
+  padding: 0px 21rem 0px;
+  box-shadow: 0 0.25rem 8px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 1400px) {
+    padding: 0px 5rem 0px;
+  }
+
+  .menuContainer {
+    .menuItem {
+      max-height: unset;
+
+      &:hover {
+        background-color: $color-1-500;
+        color: $white;
+      }
+    }
+  }
+}
+
+.accordionIconContainer {
+  &--isOpen {
+    color: $white;
+  }
+}

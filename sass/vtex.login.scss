@@ -45,3 +45,24 @@
     background-color: $color-1;
   }
 }
+
+:global(.vtex-flex-layout-0-x-flexColChild--mega-menu) {
+  :global(.bg-black-05) {
+    background-color: $color-1;
+
+    :global(.vtex-mega-menu-2-x-styledLinkText) {
+      color: $white;
+    }
+  }
+
+  :global(.vtex-mega-menu-2-x-menuContainer) {
+    :global(h3) {
+      font-size: 0;
+
+      &::before {
+        content: 'Departamentos';
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
