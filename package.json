@@ -1,5 +1,5 @@
 {
-  "name": "allegralar",
+  "name": "b2bcressi",
   "version": "2.1.0",
   "readme": "no readme file",
   "license": "UNLICENSED",
@@ -21,7 +21,7 @@
     "vprom": "cd theme && vtex use prod --production --verbose && vtex install --verbose && vtex promote --verbose",
     "vvin": "cd theme && vtex use validacao && vtex install --verbose && cd ..",
     "vtex:base": "vtex install --verbose vtex.admin-graphql-ide vtex.admin-mercadolivre-opportunities vtex.admin-pages vtex.admin-search vtex.admin-users vtex.app-install-monitor vtex.asset-server vtex.audit-io vtex.auth-server vtex.billing vtex.broadcaster vtex.cartman vtex.checkout vtex.colossus-legacy-proxy vtex.developer-docs-integration vtex.dotnet-messenger-sender vtex.evolution-manager-graphql vtex.invoice-notifier vtex.marketplace-network vtex.messages-templates vtex.messenger-core vtex.my-account vtex.notification-generator vtex.orders-broadcast vtex.pix-payment vtex.request-capture vtex.rewriter vtex.search-resolver vtex.seller-provisioner vtex.seller-welcome vtex.sms-messenger-sender vtex.smtp-messenger-sender vtex.sse-server vtex.store vtex.store-sitemap vtex.toolbelt-telemetry vtex.transform-handlebars-email vtex.transform-handlebars-sms vtex.transform-render-email vtex.transform-render-sms vtex.ab-tester@0.x vtex.admin-cms@0.x vtex.admin-cms-graphql@0.xvtex.admin-cms-graphql-rc@0.x vtex.admin-graphql-ide@3.x vtex.admin-search@1.x vtex.admin-subscriptions@1.x vtex.app-store-seller@0.x vtex.badges@3.x vtex.search@2.x vtex.console@0.x vtex.google-tag-manager@2.x vtex.my-credits@1.x vtex.my-subscriptions@3.x vtex.search@2.x vtex.search-resolver@2.x vtex.store-indexer@0.x",
-    "vtex:deps": "vtex install --verbose allegralar.trustvox-integration@1.x allegralar.any-page-breadcrumb@0.x vtexeurope.minicart-freeshipping-bar@2.x vtex.disposition-layout@3.x vtex.mega-menu@2.x vtex.wish-list@1.x vtex.reviews-and-ratings@3.x vtex.store-locator@0.x vtex.quickorder@3.x vtex.availability-notify@1.x vtex.checkout-ui-custom",
+    "vtex:deps": "vtex install --verbose vtexeurope.minicart-freeshipping-bar@2.x vtex.disposition-layout@3.x vtex.mega-menu@2.x vtex.wish-list@1.x vtex.reviews-and-ratings@3.x vtex.availability-notify@1.x vtex.checkout-ui-custom",
     "gulp:create:css": "gulp css",
     "gulp:create:image": "gulp image",
     "postinstall": "yarn gulp:create:css"

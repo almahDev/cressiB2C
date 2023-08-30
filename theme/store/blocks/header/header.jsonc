@@ -99,7 +99,7 @@
     "props": {
       "verticalAlign": "middle",
       "width": "20%",
-      "blockClass": ["logo-allegralar-desk"]
+      "blockClass": ["logo-b2bcressi-desk"]
     },
     "children": ["logo#desktop"]
   },

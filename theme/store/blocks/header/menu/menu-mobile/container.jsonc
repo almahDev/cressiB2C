@@ -41,7 +41,7 @@
   "rich-text#contato": {
     "title": "Almah | Contato Mobile",
     "props": {
-      "text": "![](assets/svg/icon-allegralar-phone-black.svg)**ENTRE** EM CONTATO **(99) 9999-9999**",
+      "text": "![](assets/svg/icon-b2bcressi-phone-black.svg)**ENTRE** EM CONTATO **(99) 9999-9999**",
       "blockClass": "header-mob__text"
     }
   },

@@ -2,7 +2,7 @@
   "rich-text#tooltip-01": {
     "title": "Almah | Header - Topbar - Texto",
     "props": {
-      "text": "![](assets/svg/icon-allegralar-phone.svg)**ENTRE** EM CONTATO **(99) 9999-9999**",
+      "text": "![](assets/svg/icon-b2bcressi-phone.svg)**ENTRE** EM CONTATO **(99) 9999-9999**",
       "blockClass": "header__tooltip--text"
     }
   },

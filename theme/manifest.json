@@ -1,5 +1,5 @@
 {
-  "vendor": "allegralar",
+  "vendor": "b2bcressi",
   "name": "theme",
   "version": "0.0.3",
   "builders": {
@@ -86,7 +86,8 @@
     "vtex.disposition-layout": "3.x",
     "vtex.reviews-and-ratings": "3.x",
     "vtex.wish-list": "1.x",
-    "vtex.mega-menu": "2.x"
+    "vtex.mega-menu": "2.x",
+    "vtexeurope.minicart-freeshipping-bar": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

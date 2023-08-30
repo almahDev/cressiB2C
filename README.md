@@ -1,4 +1,4 @@
-# Allegralar
+# Cressi B2B
 
 ## Pacotes globais necessários
 
@@ -28,7 +28,7 @@
 
 1. Verificar se esta logado na VTEX do seu cliente
    - `vtex whoami`
-     - `info: Logged into {{accountClient}} as yourUser@allegralar.com at production workspace master`
+     - `info: Logged into {{accountClient}} as yourUser@b2bcressi.com at production workspace master`
 2. Instalar os pacotes do node
    - `yarn`
 
@@ -43,7 +43,7 @@ yarn install v1.22.11
 success Already up-to-date.
 $ gulp css
 [16:36:56] Requiring external module babel-register
-[16:36:56] Using gulpfile ~\Documents\allegralar\accountname.store-theme\gulpfile.babel.js
+[16:36:56] Using gulpfile ~\Documents\b2bcressi\accountname.store-theme\gulpfile.babel.js
 [16:36:56] Starting 'css'...
 [16:36:56] Finished 'css' after 325 ms
 Done in 26.05s.
@@ -55,7 +55,7 @@ Done in 26.05s.
 
 1. Agora para começar a desenvolver voce precisa saber se esta logado no seu {{accountClient}}
    - `vtex whoami`
-     - `info: Logged into {{accountClient}} as yourUser@allegralar.com at production workspace master`
+     - `info: Logged into {{accountClient}} as yourUser@b2bcressi.com at production workspace master`
 2. Criar seu próprio workspace
    - `vtex use exampleWorkspace`
      - A partir disso voce criará seu próprio workspace para realizar suas alterações
