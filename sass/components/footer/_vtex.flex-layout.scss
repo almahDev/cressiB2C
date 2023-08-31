@@ -2,10 +2,10 @@
   &--footer__newsletter {
     padding: 24px 0 21px;
     margin-bottom: 0;
-    background-color: $primary-pure-500;
+    background-color: #1e1e1e;
 
     @include tablet {
-      padding: 24px 22px 31px;
+      padding: 24px 48px 31px;
     }
   }
 

@@ -76,6 +76,11 @@
       max-width: none;
       margin: 0;
       text-align: center;
+      justify-content: center;
+    }
+
+    @include phone {
+      justify-content: start;
     }
 
     .wrapper {
@@ -94,10 +99,11 @@
 
   &--footer__newsletter--title-mobile {
     .heading {
-      @include text($font-size-xs, $white, $semi-bold);
-      line-height: 14.364px;
+      @include text(1.25rem, $white, $semi-bold);
+      line-height: normal;
       margin: 0;
-      padding-bottom: 6px;
+      padding-bottom: 0.86rem;
+      text-align: left;
     }
   }
 

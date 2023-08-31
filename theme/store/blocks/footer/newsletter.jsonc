@@ -67,7 +67,6 @@
   "flex-layout.col#newsletter-mob": {
     "children": [
       "rich-text#newsletter-title-mob",
-      "rich-text#newsletter-subtitle-mob",
       "newsletter-form#footer-mob"
     ],
     "props": {
@@ -77,9 +76,9 @@
   },
 
   "rich-text#newsletter-title-mob": {
-    "title": "Newsletter - Título",
+    "title": "Newsletter - Text",
     "props": {
-      "text": "### NEWSLETTER",
+      "text": "### **Deixe seu contato e fique por dentro das novidades!**",
       "blockClass": [
         "footer__newsletter--title",
         "footer__newsletter--title-mobile"
@@ -87,19 +86,9 @@
     }
   },
 
-  "rich-text#newsletter-subtitle-mob": {
-    "title": "Newsletter - Subtítulo",
-    "props": {
-      "text": "Receba descontos e promoções por email",
-      "blockClass": [
-        "footer__newsletter--subtitle",
-        "footer__newsletter--subtitle-mobile"
-      ]
-    }
-  },
-
   "newsletter-form#footer-mob": {
     "children": [
+      "newsletter-input-name#footer-mob",
       "newsletter-input-email#footer-mob",
       "newsletter-submit#footer-mob"
     ],
@@ -108,10 +97,21 @@
     }
   },
 
+  "newsletter-input-name#footer-mob": {
+    "title": "Newsletter - Name",
+    "props": {
+      "placeholderText": "Nome",
+      "blockClass": [
+        "footer__newsletter--input-email",
+        "footer__newsletter--input-email-mobile"
+      ]
+    }
+  },
+
   "newsletter-input-email#footer-mob": {
     "title": "Newsletter - Email",
     "props": {
-      "placeholderText": "Deixe seu email",
+      "placeholderText": "E-Mail",
       "blockClass": [
         "footer__newsletter--input-email",
         "footer__newsletter--input-email-mobile"
