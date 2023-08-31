@@ -45,10 +45,22 @@
       "height": "100%",
       "mediaList": [
         {
+          "image": "assets/img/redes-sociais/icon-pintrest.png",
+          "description": "Pintrest",
+          "width": "29px",
+          "height": "29px",
+          "experimentalSetExplicitDimensions": true,
+          "link": {
+            "url": "https://www.pintrest.com/",
+            "openNewTab": true,
+            "title": "Pintrest"
+          }
+        },
+        {
           "image": "assets/img/redes-sociais/icon-facebook.png",
           "description": "Facebook",
-          "width": "45px",
-          "height": "45px",
+          "width": "29px",
+          "height": "29px",
           "experimentalSetExplicitDimensions": true,
           "link": {
             "url": "https://pt-br.facebook.com/",
@@ -59,13 +71,25 @@
         {
           "image": "assets/img/redes-sociais/icon-instagram.png",
           "description": "Instagram",
-          "width": "46px",
-          "height": "45px",
+          "width": "29px",
+          "height": "29px",
           "experimentalSetExplicitDimensions": true,
           "link": {
             "url": "https://www.instagram.com/",
             "openNewTab": true,
             "title": "Instagram"
+          }
+        },
+        {
+          "image": "assets/img/redes-sociais/icon-youtube.png",
+          "description": "Youtube",
+          "width": "29px",
+          "height": "29px",
+          "experimentalSetExplicitDimensions": true,
+          "link": {
+            "url": "https://www.youtube.com/",
+            "openNewTab": true,
+            "title": "Youtube"
           }
         }
       ]

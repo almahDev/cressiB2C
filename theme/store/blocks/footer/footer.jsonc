@@ -8,7 +8,6 @@
     "children": [
       "flex-layout.row#newsletter-desktop",
       "flex-layout.row#footer-menu-desktop",
-      "flex-layout.row#footer-payment-methods",
       "flex-layout.row#footer-legal-information-desktop"
     ]
   },

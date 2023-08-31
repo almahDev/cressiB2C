@@ -102,13 +102,7 @@
     }
 
     .styledLink {
-      @include link(
-        $font-size-h5 + 1,
-        $color-c-11,
-        $bold,
-        none,
-        $secondary-font
-      );
+      @include link($font-size-h5 + 1, $white, $bold, none, $secondary-font);
       font-family: $secondary-font !important;
       text-transform: uppercase;
       line-height: normal;

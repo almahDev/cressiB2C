@@ -10,7 +10,7 @@
         "blockClass": "footer__menu--title",
         "itemProps": {
           "blockClass": "footer__menu--title",
-          "text": "Institucional"
+          "text": "Sobre Nós"
         },
         "type": "custom"
       },
@@ -24,8 +24,8 @@
             "type": "internal",
             "href": "/",
             "noFollow": false,
-            "tagTitle": "Sobre Nós",
-            "text": "Sobre Nós"
+            "tagTitle": "O Que Fazemos",
+            "text": "O Que Fazemos"
           }
         },
         {
@@ -37,8 +37,8 @@
             "type": "internal",
             "href": "/",
             "noFollow": false,
-            "tagTitle": "Política de Privacidade",
-            "text": "Política de Privacidade"
+            "tagTitle": "Nossa Missão",
+            "text": "Nossa Missão"
           }
         },
         {
@@ -50,8 +50,8 @@
             "type": "internal",
             "href": "/",
             "noFollow": false,
-            "tagTitle": "Política de Troca",
-            "text": "Política de Troca"
+            "tagTitle": "Nossas Lojas",
+            "text": "Nossas Lojas"
           }
         }
       ]
@@ -67,7 +67,7 @@
       "blockClass": ["footer__menu"],
       "title": {
         "itemProps": {
-          "text": "DÚVIDAS"
+          "text": "Atendimento"
         },
         "type": "custom"
       },
@@ -81,60 +81,47 @@
             "type": "internal",
             "href": "/",
             "noFollow": false,
-            "tagTitle": "Entrega",
-            "text": "Entrega"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Pagamento",
-            "text": "Pagamento"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Este Site é Seguro",
-            "text": "Este Site é Seguro"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Trocas e Devoluções",
-            "text": "Trocas e Devoluções"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
             "tagTitle": "FAQ",
             "text": "FAQ"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "footer__menu__item",
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Fale Conosco",
+            "text": "Fale Conosco"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "footer__menu__item",
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Trabalhe Conosco",
+            "text": "Trabalhe Conosco"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "footer__menu__item",
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Assistência Técnica",
+            "text": "Assistência Técnica"
           }
         }
       ]
@@ -146,9 +133,7 @@
     "title": "Footer  Menu 3",
     "children": [
       "menu-item#footer-menu-3-security-title",
-      "flex-layout.row#footer-menu-3-security",
-      "menu-item#footer-menu-3-social-media-title",
-      "flex-layout.row#footer-menu-3-social-networks"
+      "flex-layout.row#footer-menu-3-security"
     ],
     "props": {
       "blockClass": ["footer__menu", "footer__menu--thirdcolumn"],

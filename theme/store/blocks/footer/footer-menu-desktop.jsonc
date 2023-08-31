@@ -2,14 +2,15 @@
   "flex-layout.row#footer-menu-desktop": {
     "title": "Footer  Menu - Desktop",
     "children": [
-      "logo#footer",
+      "flex-layout.col#footer-menu-1",
       "vtex.menu@2.x:menu#footer-menu-1",
       "vtex.menu@2.x:menu#footer-menu-2",
-      "flex-layout.col#footer-menu-3"
+      "flex-layout.col#footer-menu-3",
+      "flex-layout.col#footer-payment-methods"
     ],
     "props": {
       "blockClass": "footer__menu",
-      "colGap": 9,
+      "colGap": 8,
       "fullWidth": true
     }
   }

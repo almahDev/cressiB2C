@@ -1,10 +1,17 @@
 {
+  "flex-layout.col#footer-menu-1": {
+    "children": [
+      "logo#footer",
+      "menu-item#footer-menu-3-social-media-title",
+      "flex-layout.row#footer-menu-3-social-networks"
+    ]
+  },
   "logo#footer": {
     "props": {
       "title": "Logo da Allegra Lar",
       "href": "/",
-      "url": "assets/img/allegra-logo-footer.png",
-      "width": "282",
+      "url": "assets/img/cressi-logo_preto.png",
+      "width": "162",
       "blockClass": "footer__logo"
     }
   }
