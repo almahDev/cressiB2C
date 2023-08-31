@@ -21,14 +21,6 @@
     }
   },
 
-  "rich-text#newsletter-title": {
-    "title": "Newsletter - Title",
-    "props": {
-      "text": "Cadastre-se e receba ofertas e inspirações",
-      "blockClass": "footer__newsletter--title"
-    }
-  },
-
   "newsletter-input-name#footer": {
     "title": "Newsletter - Email",
     "props": {
@@ -48,7 +40,7 @@
   "newsletter-submit#footer": {
     "title": "Newsletter - Cadastrar",
     "props": {
-      "submitButtonLabel": "Cadastrar",
+      "submitButtonLabel": "ENVIAR",
       "blockClass": "footer__newsletter--submit"
     }
   },
@@ -65,17 +57,14 @@
     }
   },
   "flex-layout.col#newsletter-mob": {
-    "children": [
-      "rich-text#newsletter-title-mob",
-      "newsletter-form#footer-mob"
-    ],
+    "children": ["rich-text#newsletter-title", "newsletter-form#footer-mob"],
     "props": {
       "preventVerticalStretch": true,
       "blockClass": ["footer__newsletter", "footer__newsletter--mobile"]
     }
   },
 
-  "rich-text#newsletter-title-mob": {
+  "rich-text#newsletter-title": {
     "title": "Newsletter - Text",
     "props": {
       "text": "### **Deixe seu contato e fique por dentro das novidades!**",
