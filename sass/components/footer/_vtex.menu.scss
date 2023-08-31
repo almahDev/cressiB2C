@@ -131,7 +131,6 @@
   &--footer__menu--mob {
     margin: 0;
     padding: 0;
-    background-color: $color-c-12;
 
     &:not(:last-child) {
       padding: 0 0 19px;
@@ -144,7 +143,7 @@
     }
 
     .styledLink {
-      @include link($font-size-sm - 1, $color-c-11, $regular, none);
+      @include link($font-size-sm - 1, $white, $regular, none);
       text-transform: none;
       line-height: normal;
       display: inline-block;
@@ -184,7 +183,7 @@
 
   &--footer__menu--mob-title {
     padding: 31px 22px 23px;
-    background-color: $color-c-12;
+    background-color: #000;
     border-top: 6px solid $white;
     border-bottom: 6px solid $white;
 
@@ -193,8 +192,17 @@
     }
 
     .styledLink--footer__menu--mob-title {
-      font-weight: $bold;
+      color: #fff;
+      // font-family: Barlow;
+      font-size: 1.25rem;
+      font-style: italic;
+      font-weight: 700;
+      line-height: normal;
       text-transform: uppercase;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }
