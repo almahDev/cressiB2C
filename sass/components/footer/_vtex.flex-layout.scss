@@ -17,7 +17,7 @@
 
   &--footer__social-network {
     @include tablet {
-      background-color: $color-c-12;
+      background-color: $black;
     }
   }
 
@@ -25,17 +25,17 @@
     padding: 0 0 30px;
 
     @include tablet {
-      background-color: $color-c-12;
+      background-color: $black;
       padding: 32px 0 58px;
     }
   }
 
   &--footer_legal_information {
-    background-color: $white;
+    background-color: $black;
     padding: 24px 0;
 
     @include tablet {
-      background-color: $color-c-12;
+      background-color: $black;
       padding: 32px 0;
     }
   }
@@ -78,6 +78,17 @@
     justify-content: flex-start;
     @include tablet {
       justify-content: center;
+    }
+  }
+
+  &--footer__menu {
+    @include desktop {
+      justify-content: space-between;
+
+      :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: auto !important;
+        padding: 0;
+      }
     }
   }
 
@@ -145,7 +156,41 @@
       margin-bottom: 1.5rem;
     }
   }
+
+  &--powerd-by {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .flexColChild {
+  &--logo-social-colum {
+    @include desktop {
+      height: auto !important;
+
+      &:first-child {
+        padding-bottom: 1.5rem;
+      }
+
+      &:last-child {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  &--footer__payment-methods {
+    @include desktop {
+      width: 100%;
+    }
+  }
+
+  &--powerd-by {
+    height: auto !important;
+  }
+
+  &--desk-copyright {
+    display: flex;
+    align-items: center;
+  }
 }

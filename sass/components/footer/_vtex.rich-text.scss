@@ -31,8 +31,7 @@
 
     .heading,
     .paragraph {
-      // @include text($font-size-md, #6f6f6f, $regular, $secondary-font);
-      @include text($font-size-md, #6f6f6f, $regular, $tertiary-font);
+      @include text($font-size-md, $white, $regular, $tertiary-font);
       font-family: $tertiary-font !important;
       padding-bottom: 6px;
       margin: 0;

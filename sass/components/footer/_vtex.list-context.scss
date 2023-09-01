@@ -82,11 +82,14 @@
 .imageElement {
   &--footer__methods {
     display: block;
+    max-width: 50px;
+    width: auto !important;
+    height: auto !important;
+  }
 
-    @include tablet {
-      max-width: 50px;
-      width: auto !important;
-      height: auto !important;
+  &--footer__security {
+    @include desktop {
+      max-width: 100px;
     }
   }
 

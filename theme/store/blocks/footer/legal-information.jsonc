@@ -2,22 +2,35 @@
   "flex-layout.row#footer-legal-information-desktop": {
     "title": "Footer - Copyright",
     "children": [
-      "rich-text#footer-copyright",
-      "rich-text#footer-powered",
-      "image#powered"
+      "flex-layout.col#footer-legal-information-desktop-copyright",
+      "flex-layout.col#footer-legal-information-desktop-powerd"
     ],
     "props": {
       "blockClass": ["footer_legal_information"],
       "fullWidth": true
     }
   },
-  "flex-layout.row#footer-legal-information-mob": {
-    "title": "Footer - Copyright",
+  "flex-layout.col#footer-legal-information-desktop-copyright": {
+    "children": ["rich-text#footer-copyright"],
+    "props": {
+      "width": "70%",
+      "blockClass": ["desk-copyright"]
+    }
+  },
+  "flex-layout.col#footer-legal-information-desktop-powerd": {
     "children": [
       "rich-text#footer-powered",
       "image#logo-almah",
       "image#powered"
     ],
+    "props": {
+      "width": "30%",
+      "blockClass": ["powerd-by"]
+    }
+  },
+  "flex-layout.row#footer-legal-information-mob": {
+    "title": "Footer - Copyright",
+    "children": ["rich-text#footer-powered", "image#powered"],
     "props": {
       "blockClass": ["footer_legal_information"],
       "preserveLayoutOnMobile": true,
@@ -66,7 +79,7 @@
   "image#powered": {
     "title": "Imagem - Powered By",
     "props": {
-      "src": "assets/img/vtex_logo.png",
+      "src": "assets/img/new-vtex_logo.png",
       "link": {
         "url": "https://www.vtex.com",
         "openNewTab": true,

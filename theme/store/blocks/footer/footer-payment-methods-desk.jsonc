@@ -7,7 +7,6 @@
     ],
     "props": {
       "blockClass": "footer__payment-methods",
-      "colGap": 6,
       "colSizing": "auto",
       "fullWidth": true,
       "horizontalAlign": "center",
@@ -43,43 +42,43 @@
         {
           "image": "assets/img/pagamento/visa.png",
           "description": "Visa",
-          "width": "66px",
-          "height": "42px",
+          "width": "32px",
+          "height": "22px",
           "experimentalSetExplicitDimensions": true
         },
         {
           "image": "assets/img/pagamento/mastercard.png",
           "description": "MasterCard",
-          "width": "66px",
-          "height": "43px",
+          "width": "32px",
+          "height": "22px",
           "experimentalSetExplicitDimensions": true
         },
         {
           "image": "assets/img/pagamento/american-express.png",
           "description": "American Express",
-          "width": "67px",
-          "height": "43px",
+          "width": "32px",
+          "height": "22px",
           "experimentalSetExplicitDimensions": true
         },
         {
           "image": "assets/img/pagamento/diners-club.png",
           "description": "Diners Club",
-          "width": "67px",
-          "height": "44px",
+          "width": "32px",
+          "height": "22px",
           "experimentalSetExplicitDimensions": true
         },
         {
           "image": "assets/img/pagamento/elo.png",
           "description": "Elo",
-          "width": "68px",
-          "height": "44px",
+          "width": "32px",
+          "height": "22px",
           "experimentalSetExplicitDimensions": true
         },
         {
           "image": "assets/img/pagamento/hiper.png",
           "description": "Hiper",
-          "width": "66px",
-          "height": "43px",
+          "width": "32px",
+          "height": "22px",
           "experimentalSetExplicitDimensions": true
         }
       ]

@@ -10,7 +10,7 @@
     ],
     "props": {
       "blockClass": "footer__menu",
-      "colGap": 8,
+      "colGap": 6,
       "fullWidth": true
     }
   }

@@ -137,8 +137,7 @@
     ],
     "props": {
       "blockClass": ["footer__menu", "footer__menu--thirdcolumn"],
-      "preventVerticalStretch": true,
-      "width": "30%"
+      "preventVerticalStretch": true
     }
   },
   "menu-item#footer-menu-3-security-title": {

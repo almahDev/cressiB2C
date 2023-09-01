@@ -43,18 +43,6 @@
             "openNewTab": true,
             "title": "Google Safe Browsing"
           }
-        },
-        {
-          "image": "assets/img/seguranca/grupo-construbrasil.png",
-          "description": "Grupo Construbrasil",
-          "width": "130px",
-          "height": "55px",
-          "experimentalSetExplicitDimensions": true,
-          "link": {
-            "url": "#",
-            "openNewTab": true,
-            "title": "Grupo Construbrasil"
-          }
         }
       ]
     }

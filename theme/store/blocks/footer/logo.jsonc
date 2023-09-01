@@ -4,7 +4,10 @@
       "logo#footer",
       "menu-item#footer-menu-3-social-media-title",
       "flex-layout.row#footer-menu-3-social-networks"
-    ]
+    ],
+    "props": {
+      "blockClass": ["logo-social-colum"]
+    }
   },
   "logo#footer": {
     "props": {
