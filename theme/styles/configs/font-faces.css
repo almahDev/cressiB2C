@@ -1,364 +1,328 @@
 /* stylelint-disable font-family-name-quotes */
 
 /* usar o site Transfonter para gerar esse arquivo */
-
 @font-face {
-  font-display: swap;
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 300;
-  src: url('assets/fonts/Ubuntu-Light.woff') format('woff'),
-    url('assets/fonts/Ubuntu-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: url('assets/fonts/Ubuntu-Regular.woff') format('woff'),
-    url('assets/fonts/Ubuntu-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  src: url('assets/fonts/Ubuntu-Medium.woff') format('woff'),
-    url('assets/fonts/Ubuntu-Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: url('assets/fonts/Ubuntu-Bold.woff') format('woff'),
-    url('assets/fonts/Ubuntu-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-Black.eot');
-  src: url('assets/fonts/Montserrat-Black.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-Black.woff') format('woff'),
-    url('assets/fonts/Montserrat-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-ExtraBold.eot');
-  src: url('assets/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-ExtraBold.woff') format('woff'),
-    url('assets/fonts/Montserrat-ExtraBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-ExtraBoldItalic.eot');
-  src: url('assets/fonts/Montserrat-ExtraBoldItalic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-ExtraBoldItalic.woff') format('woff'),
-    url('assets/fonts/Montserrat-ExtraBoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-BlackItalic.eot');
-  src: url('assets/fonts/Montserrat-BlackItalic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-BlackItalic.woff') format('woff'),
-    url('assets/fonts/Montserrat-BlackItalic.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-BlackItalic.woff2') format('woff2'),
+      url('assets/fonts/Exo-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-BoldItalic.eot');
-  src: url('assets/fonts/Montserrat-BoldItalic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-BoldItalic.woff') format('woff'),
-    url('assets/fonts/Montserrat-BoldItalic.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-BoldItalic.woff2') format('woff2'),
+      url('assets/fonts/Exo-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-Bold.eot');
-  src: url('assets/fonts/Montserrat-Bold.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-Bold.woff') format('woff'),
-    url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-Bold.woff2') format('woff2'),
+      url('assets/fonts/Exo-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-ExtraLight.eot');
-  src: url('assets/fonts/Montserrat-ExtraLight.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-ExtraLight.woff') format('woff'),
-    url('assets/fonts/Montserrat-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-Black.woff2') format('woff2'),
+      url('assets/fonts/Exo-Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-LightItalic.eot');
-  src: url('assets/fonts/Montserrat-LightItalic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-LightItalic.woff') format('woff'),
-    url('assets/fonts/Montserrat-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-Medium.eot');
-  src: url('assets/fonts/Montserrat-Medium.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-Medium.woff') format('woff'),
-    url('assets/fonts/Montserrat-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-ExtraLightItalic.eot');
-  src: url('assets/fonts/Montserrat-ExtraLightItalic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-ExtraLightItalic.woff') format('woff'),
-    url('assets/fonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-Italic.eot');
-  src: url('assets/fonts/Montserrat-Italic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-Italic.woff') format('woff'),
-    url('assets/fonts/Montserrat-Italic.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-Italic.woff2') format('woff2'),
+      url('assets/fonts/Exo-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-Light.eot');
-  src: url('assets/fonts/Montserrat-Light.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-Light.woff') format('woff'),
-    url('assets/fonts/Montserrat-Light.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-ExtraBold.woff2') format('woff2'),
+      url('assets/fonts/Exo-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-ExtraLight.woff2') format('woff2'),
+      url('assets/fonts/Exo-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-ExtraBoldItalic.woff2') format('woff2'),
+      url('assets/fonts/Exo-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-Light.woff2') format('woff2'),
+      url('assets/fonts/Exo-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-MediumItalic.eot');
-  src: url('assets/fonts/Montserrat-MediumItalic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-MediumItalic.woff') format('woff'),
-    url('assets/fonts/Montserrat-MediumItalic.ttf') format('truetype');
-  font-weight: 500;
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-ExtraLightItalic.woff2') format('woff2'),
+      url('assets/fonts/Exo-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-SemiBoldItalic.eot');
-  src: url('assets/fonts/Montserrat-SemiBoldItalic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-SemiBoldItalic.woff') format('woff'),
-    url('assets/fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-SemiBold.eot');
-  src: url('assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-SemiBold.woff') format('woff'),
-    url('assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-Regular.eot');
-  src: url('assets/fonts/Montserrat-Regular.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-Regular.woff') format('woff'),
-    url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-Regular.woff2') format('woff2'),
+      url('assets/fonts/Exo-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-ThinItalic.eot');
-  src: url('assets/fonts/Montserrat-ThinItalic.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-ThinItalic.woff') format('woff'),
-    url('assets/fonts/Montserrat-ThinItalic.ttf') format('truetype');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat-Thin.eot');
-  src: url('assets/fonts/Montserrat-Thin.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-Thin.woff') format('woff'),
-    url('assets/fonts/Montserrat-Thin.ttf') format('truetype');
-  font-weight: 100;
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-SemiBold.woff2') format('woff2'),
+      url('assets/fonts/Exo-SemiBold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamLight.woff2') format('woff2'),
-      url('assets/fonts/GothamLight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamBlack-Italic.woff2') format('woff2'),
-      url('assets/fonts/GothamBlack-Italic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamThin.woff2') format('woff2'),
-      url('assets/fonts/GothamThin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamMedium.woff2') format('woff2'),
-      url('assets/fonts/GothamMedium.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-Medium.woff2') format('woff2'),
+      url('assets/fonts/Exo-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamThin-Italic.woff2') format('woff2'),
-      url('assets/fonts/GothamThin-Italic.ttf') format('truetype');
-  font-weight: 100;
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-SemiBoldItalic.woff2') format('woff2'),
+      url('assets/fonts/Exo-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gotham Ultra';
-  src: url('assets/fonts/GothamUltra-Italic.woff2') format('woff2'),
-      url('assets/fonts/GothamUltra-Italic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamExtraLight-Italic.woff2') format('woff2'),
-      url('assets/fonts/GothamExtraLight-Italic.ttf') format('truetype');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamMedium-Italic.woff2') format('woff2'),
-      url('assets/fonts/GothamMedium-Italic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamLight-Italic.woff2') format('woff2'),
-      url('assets/fonts/GothamLight-Italic.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-LightItalic.woff2') format('woff2'),
+      url('assets/fonts/Exo-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gotham Ultra';
-  src: url('assets/fonts/GothamUltra.woff2') format('woff2'),
-      url('assets/fonts/GothamUltra.ttf') format('truetype');
-  font-weight: 900;
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-MediumItalic.woff2') format('woff2'),
+      url('assets/fonts/Exo-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-Thin.woff2') format('woff2'),
+      url('assets/fonts/Exo-Thin.ttf') format('truetype');
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamExtraLight.woff2') format('woff2'),
-      url('assets/fonts/GothamExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
+  font-family: 'Exo';
+  src: url('assets/fonts/Exo-ThinItalic.woff2') format('woff2'),
+      url('assets/fonts/Exo-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
   font-display: swap;
 }
 
+
 @font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamBold-Italic.woff2') format('woff2'),
-      url('assets/fonts/GothamBold-Italic.ttf') format('truetype');
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-BoldItalic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamBlack.woff2') format('woff2'),
-      url('assets/fonts/GothamBlack.ttf') format('truetype');
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-Black.woff2') format('woff2'),
+      url('assets/fonts/Barlow-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('assets/fonts/GothamBold.woff2') format('woff2'),
-      url('assets/fonts/GothamBold.ttf') format('truetype');
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-Bold.woff2') format('woff2'),
+      url('assets/fonts/Barlow-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-BlackItalic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-ExtraBold.woff2') format('woff2'),
+      url('assets/fonts/Barlow-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-ExtraLight.woff2') format('woff2'),
+      url('assets/fonts/Barlow-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-ExtraLightItalic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-ExtraBoldItalic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-Italic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-Light.woff2') format('woff2'),
+      url('assets/fonts/Barlow-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-LightItalic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-Regular.woff2') format('woff2'),
+      url('assets/fonts/Barlow-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-MediumItalic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-Medium.woff2') format('woff2'),
+      url('assets/fonts/Barlow-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-SemiBold.woff2') format('woff2'),
+      url('assets/fonts/Barlow-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-Thin.woff2') format('woff2'),
+      url('assets/fonts/Barlow-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-SemiBoldItalic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('assets/fonts/Barlow-ThinItalic.woff2') format('woff2'),
+      url('assets/fonts/Barlow-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
   font-display: swap;
 }
 
