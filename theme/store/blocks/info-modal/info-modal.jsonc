@@ -1,0 +1,118 @@
+{
+  "experimental__visibility-layout#info-modal": {
+    "title": "Visibilidade - Modal de Informações (ON/OFF)",
+    "props": {
+      "blockClass": ["modal__info"],
+      "visible": true
+    },
+    "children": ["modal-trigger#info-modal"]
+  },
+
+  "modal-trigger#info-modal": {
+    "title": "Modal de Informações",
+    "props": {
+      "blockClass": "modal__info",
+      "trigger": "load" // TODO - change to load-session
+      // "trigger": "load-session"
+    },
+    "children": ["modal-layout#info-modal-content"]
+  },
+
+  "modal-layout#info-modal-content": {
+    "children": [
+      "flex-layout.row#info-modal-header",
+      "flex-layout.row#info-modal-content"
+    ],
+    "props": {
+      "blockClass": "modal__info"
+    }
+  },
+
+  "flex-layout.row#info-modal-header": {
+    "children": ["modal-header#info-modal-newsletter"]
+  },
+  "modal-header#info-modal-newsletter": {
+    "props": {
+      "blockClass": "modal__info--header",
+      "iconCloseSize": 20
+    }
+  },
+
+  "flex-layout.row#info-modal-content": {
+    "title": "Modal de Informações - Conteúdo",
+    "children": ["flex-layout.col#info-modal-content"],
+    "props": {
+      "blockClass": "modal__info--content",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#info-modal-content": {
+    "children": [
+      "rich-text#info-modal-content-title",
+      "rich-text#info-modal-content-subtitle"
+    ],
+    "props": {
+      "blockClass": "modal__info--content"
+    }
+  },
+  "rich-text#info-modal-content-title": {
+    "title": "Modal de Informações - Textos - Título",
+    "props": {
+      "blockClass": "modal__info--title",
+      "text": "### COMO **COMPRAR?**"
+    }
+  },
+  "rich-text#info-modal-content-subtitle": {
+    "title": "Modal de Informações - Textos - Subtítulo",
+    "props": {
+      "blockClass": "modal__info--subtitle",
+      "text": "Veja como é fácil comprar no site da Cressi B2B:"
+    }
+  },
+  "flex-layout.row#succesState": {
+    "children": ["flex-layout.col#succesState"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "succesState_row",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#succesState": {
+    "children": [
+      "rich-text#al-modal-newsletter-sucess",
+      "modal-actions.close#success"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "succesState_col",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#al-modal-newsletter-sucess": {
+    "title": "Modal de Informações - Success",
+    "props": {
+      "blockClass": ["al-modal-newsletter-text"],
+      "text": "Em breve, você receberá em seu e-mail \n nossas ofertas e descontos exclusivos."
+    }
+  },
+  "newsletter-input-email#modal": {
+    "title": "Modal de Informações - Campo de email",
+    "props": {
+      "placeholderText": "Seu email favorito",
+      "blockClass": "modal__info-input-email"
+    }
+  },
+  "newsletter-submit#modal": {
+    "title": "Botão enviar",
+    "props": {
+      "submitButtonLabel": "Enviar",
+      "blockClass": "modal__info-submit"
+    }
+  },
+  "modal-actions.close#success": {
+    "props": {
+      "blockClass": "modal__info--success",
+      "label": "Fechar"
+    }
+  }
+}

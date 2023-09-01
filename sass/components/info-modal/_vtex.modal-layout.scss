@@ -1,0 +1,57 @@
+.paper {
+  &--modal__info {
+    margin: 0;
+    padding: 0 0 107px 57px;
+    max-width: 65.3125rem;
+    border-radius: 0;
+    border-radius: 5px;
+    border: 3px solid $secondary-pure-500;
+    background: $high-pure-7;
+    position: relative;
+
+    @include desktop {
+      max-height: 34.875rem;
+      overflow: hidden;
+    }
+
+    @include tablet {
+      margin: 0 1rem;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background: url('assets/svg/icon-info-modal-feature.svg') no-repeat center;
+      background-size: contain;
+      width: 264px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.headerContainer {
+  &--modal__info--header {
+    border: none;
+  }
+}
+
+.closeButton {
+  &--modal__info--header {
+    display: flex;
+    padding: 0 10px;
+
+    &::before {
+      content: 'X';
+      @include text($font-c-4, $black, $bold);
+      line-height: 80px;
+      margin: 0;
+    }
+
+    .closeIcon {
+      display: none;
+    }
+  }
+}

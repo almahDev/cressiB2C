@@ -1,0 +1,40 @@
+.container {
+  &--modal__info--title {
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .heading {
+      @include text($font-c-3, $black, $bold, $secondary-font);
+      font-style: italic;
+      line-height: normal;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .strong {
+      @include text($font-c-3, $black, $bold, $secondary-font);
+      -webkit-text-fill-color: $white;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: $black;
+      font-style: italic;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  &--modal__info--subtitle {
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .paragraph {
+      @include text($font-size-lg, #515151, $regular);
+      font-style: italic;
+      margin: 0;
+      line-height: 28.8px;
+    }
+  }
+}
