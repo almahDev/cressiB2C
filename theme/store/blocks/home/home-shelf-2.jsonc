@@ -38,7 +38,7 @@
 
   "list-context.product-list#shelf-home-2-slider": {
     "title": "Vitrine 2 - Produtos",
-    "blocks": ["product-summary.shelf#product-simple"],
+    "blocks": ["product-summary.shelf#product"],
     "children": ["slider-layout#shelf-home-2-slider"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",

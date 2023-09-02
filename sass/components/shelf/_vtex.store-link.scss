@@ -17,11 +17,27 @@
       transition: all 0.3s ease-in-out;
     }
   }
+
+  &--shelf__login {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    padding-top: 20px;
+  }
 }
 
 .label {
   &--summary__link {
     @include text($font-size-md, $white, $bold);
     line-height: 16px;
+  }
+
+  &--shelf__login {
+    @include text($font-size-sm, #ed1b34, $regular);
+    line-height: 19.6px;
+    transition: all 0.3s ease-in-out;
   }
 }

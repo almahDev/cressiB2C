@@ -3,7 +3,7 @@
     "title": "Sumário do produto",
     "children": [
       "flex-layout.row#image-tags",
-      "disposition-layout#summary-shelf"
+      "condition-layout.binding#summary-shelf"
     ],
     "props": {
       "blockClass": ["product__summary", "product__summary--shelf"],
@@ -15,8 +15,7 @@
     "title": "Imagem e Tags - Disposição de elementos",
     "children": [
       "product-summary-image#shelf",
-      "flex-layout.row#highlights-wrapper",
-      "flex-layout.row#product-summary-link"
+      "flex-layout.row#highlights-wrapper"
     ],
     "props": {
       "blockClass": ["shelf__price", "prodsum-stack-shelf"]
@@ -26,19 +25,29 @@
   "disposition-layout#summary-shelf": {
     "title": "Sumário do produto - Disposição de elementos",
     "children": [
+      "flex-layout.row#qtty-add",
       "flex-layout.row#product-summary-name",
-      "condition-layout.product#availability-summary"
+      "condition-layout.product#availability-summary",
+      "product-summary-sku-selector#shelf"
     ],
     "props": {
       "disposition": [
         {
-          "__editorItemTitle": "Nome do produto",
           "order": 1,
           "show": true
         },
         {
-          "__editorItemTitle": "Preços e Desconto",
+          "__editorItemTitle": "Nome do produto",
           "order": 2,
+          "show": true
+        },
+        {
+          "__editorItemTitle": "Preços e Desconto",
+          "order": 3,
+          "show": true
+        },
+        {
+          "order": 4,
           "show": true
         }
       ]
@@ -55,6 +64,14 @@
       ],
       "Then": "flex-layout.row#summary-shelf-price-savings",
       "Else": "rich-text#unavaible"
+    }
+  },
+  "product-summary-sku-selector#shelf": {
+    "props": {
+      "blockClass": "product__sku-selector--shelf",
+      "skuSelector": true,
+      "showVariationsLabels": "variation",
+      "initialSelection": "empty"
     }
   }
 }
