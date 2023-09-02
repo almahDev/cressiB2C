@@ -76,14 +76,14 @@
     </g>
 
     <g id="nav-thin-caret--right">
-      <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.375 21.75L11.625 11.5L1.375 1.25" stroke="#C3CBCD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 20 36" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7162 18.5118L0.254846 3.1099L2.83684 0.565842L19.8048 18.5118L2.83685 35.7328L0.254853 33.1887L14.7162 18.5118Z" fill="black"/>
       </svg>
     </g>
 
     <g id="nav-thin-caret--left">
-      <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M11.625 21.75L1.375 11.5L11.625 1.25" stroke="#C3CBCD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg width="21" height="36" viewBox="0 0 21 36" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.70425 17.2399L20.1656 32.6418L17.5836 35.1859L0.615576 17.2399L17.5836 0.0189259L20.1656 2.56299L5.70425 17.2399Z" fill="black"/>
       </svg>
     </g>
 
