@@ -2,8 +2,8 @@
   "flex-layout.row#home-projects": {
     "title": "Coleções",
     "children": [
-      "info-card#home-projects",
       "list-context.image-list#home-projects",
+      "info-card#home-projects",
       "responsive-layout.mobile#home-collections-title-mobile"
     ],
     "props": {
@@ -28,15 +28,15 @@
     "props": {
       "id": "info-card-home-projects",
       "isFullModeStyle": false,
-      "headline": "## **FAÇA SEU** PROJETO MOOBLE",
-      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-      "callToActionText": "Ver Mais",
+      "headline": "## CADASTRE-SE",
+      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "callToActionText": "CADASTRE-SE",
       "callToActionUrl": "/",
       "callToActionMode": "button",
       "blockClass": "home__projects",
       "textAlignment": "left",
       "textMode": "rich-text",
-      "width": "35%"
+      "width": "55%"
     }
   },
   "list-context.image-list#home-projects": {
@@ -47,16 +47,7 @@
       "preload": false,
       "images": [
         {
-          "image": "assets/img/home/home-projects-1.png"
-        },
-        {
-          "image": "assets/img/home/home-projects-2.png"
-        },
-        {
-          "image": "https://fakeimg.pl/424x488/"
-        },
-        {
-          "image": "https://fakeimg.pl/424x488/"
+          "image": "assets/img/home/banner-cadastre-se.png"
         }
       ]
     }

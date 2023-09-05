@@ -7,7 +7,7 @@
       "preload": true,
       "mediaList": [
         {
-          "image": "assets/img/home/home-fullbanner-desktop.png",
+          "image": "assets/img/home/full-banner_dev1.png",
           "mobileImage": "assets/img/home/home-fullbanner-mobile.png"
         }
       ]
