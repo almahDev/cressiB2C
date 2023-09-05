@@ -1,0 +1,152 @@
+{
+  "experimental__visibility-layout#info-modal": {
+    "title": "Visibilidade - Modal de Informações (ON/OFF)",
+    "props": {
+      "blockClass": ["modal__info"],
+      "visible": true
+    },
+    "children": ["condition-layout.binding#info-modal"]
+  },
+  "condition-layout.binding#info-modal": {
+    "title": "Condição de Exibição - Modal de Informações",
+    "props": {
+      "conditions": [
+        {
+          "subject": "bindingId",
+          "arguments": {
+            "id": "e0bbf489-af0d-4c18-8d9d-6f4ea0e09a17"
+          }
+        }
+      ],
+      "Then": "modal-trigger#info-modal"
+    }
+  },
+
+  "modal-trigger#info-modal": {
+    "title": "Modal de Informações",
+    "props": {
+      "blockClass": "modal__info",
+      "trigger": "load-session"
+    },
+    "children": ["modal-layout#info-modal-content"]
+  },
+
+  "modal-layout#info-modal-content": {
+    "children": [
+      "flex-layout.row#info-modal-header",
+      "flex-layout.row#info-modal-content"
+    ],
+    "props": {
+      "blockClass": "modal__info"
+    }
+  },
+
+  "flex-layout.row#info-modal-header": {
+    "children": ["modal-header#info-modal-newsletter"]
+  },
+  "modal-header#info-modal-newsletter": {
+    "props": {
+      "blockClass": "modal__info--header",
+      "iconCloseSize": 20
+    }
+  },
+
+  "flex-layout.row#info-modal-content": {
+    "title": "Modal de Informações - Conteúdo",
+    "children": ["flex-layout.col#info-modal-content"],
+    "props": {
+      "blockClass": "modal__info--content",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#info-modal-content": {
+    "children": [
+      "rich-text#info-modal-content-title",
+      "rich-text#info-modal-content-subtitle",
+      "list-context.info-card-list#info-modal-bullets"
+    ],
+    "props": {
+      "blockClass": "modal__info--content"
+    }
+  },
+  "rich-text#info-modal-content-title": {
+    "title": "Modal de Informações - Textos - Título",
+    "props": {
+      "blockClass": "modal__info--title",
+      "text": "### COMO **COMPRAR?**"
+    }
+  },
+  "rich-text#info-modal-content-subtitle": {
+    "title": "Modal de Informações - Textos - Subtítulo",
+    "props": {
+      "blockClass": "modal__info--subtitle",
+      "text": "Veja como é fácil comprar no site da Cressi B2B:"
+    }
+  },
+
+  "list-context.info-card-list#info-modal-bullets": {
+    "title": "Lista de Bullets",
+    "children": ["slider-layout#info-modal-bullets"],
+    "props": {
+      "blockClass": "modal__info--bullets",
+      "infoCards": [
+        {
+          "id": "info-card-info-modal-bullet-1",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/info-modal/info-modal-bullet-1.png",
+          "imageActionUrl": "/login",
+          "callToActionUrl": "/login",
+          "callToActionText": "Faça seu login e cadastre-se",
+          "callToActionMode": "link",
+          "blockClass": "modal__info--bullet",
+          "textAlignment": "center",
+          "textMode": "rich-text"
+        },
+        {
+          "id": "info-card-info-modal-bullet-2",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/info-modal/info-modal-bullet-2.png",
+          "headline": "Navegue em nosso site e escolha seus produtos",
+          "callToActionMode": "none",
+          "blockClass": "modal__info--bullet",
+          "textAlignment": "center",
+          "textMode": "rich-text"
+        },
+        {
+          "id": "info-card-info-modal-bullet-3",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/info-modal/info-modal-bullet-3.png",
+          "headline": "Realize o\npagamento",
+          "callToActionMode": "none",
+          "blockClass": "modal__info--bullet",
+          "textAlignment": "center",
+          "textMode": "rich-text"
+        },
+        {
+          "id": "info-card-info-modal-bullet-4",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/img/info-modal/info-modal-bullet-4.png",
+          "headline": "Pronto! Enviaremos\nseus produtos",
+          "callToActionMode": "none",
+          "blockClass": "modal__info--bullet",
+          "textAlignment": "center",
+          "textMode": "rich-text"
+        }
+      ]
+    }
+  },
+  "slider-layout#info-modal-bullets": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "blockClass": "modal__info--bullets",
+      "fullWidth": true,
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    }
+  }
+}

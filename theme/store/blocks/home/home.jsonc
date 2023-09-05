@@ -3,7 +3,7 @@
     "title": "Home",
     "blocks": ["disposition-layout#home"],
     "children": [
-      // "experimental__visibility-layout#smartnewsletter"
+      "experimental__visibility-layout#info-modal"
       // "experimental__visibility-layout#cookie-modal"
     ]
   },
