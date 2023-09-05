@@ -39,42 +39,29 @@
 }
 
 .sliderLeftArrow {
-  &--home__categories {
-    padding: 10px 15px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: unset;
-    right: 46px;
-
+  &--home__selecao {
     @include tablet {
-      top: -35px;
-      right: 40px;
+      left: -20px;
     }
   }
 }
 
 .sliderRightArrow {
-  &--home__categories {
-    padding: 10px 15px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: unset;
-    right: 0;
-
+  &--home__selecao {
     @include tablet {
-      top: -35px;
+      right: -20px;
     }
   }
 }
 
 .caretIcon {
-  &--home__categories {
+  &--home__categories,
+  &--home__selecao {
     width: 13px;
     height: 23px;
     max-height: 100%;
     max-width: 100%;
+    filter: brightness(0);
 
     @include tablet {
       width: 10px;
@@ -149,6 +136,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 
     @include tablet {
       font-size: $font-size-xs - 1;

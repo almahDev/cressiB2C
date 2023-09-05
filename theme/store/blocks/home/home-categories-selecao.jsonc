@@ -1,0 +1,54 @@
+{
+  "flex-layout.row#home-selecao": {
+    "title": "Categorias",
+    "children": ["flex-layout.col#home-selecao"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "home__selecao"
+    }
+  },
+  "flex-layout.col#home-selecao": {
+    "children": ["list-context.image-list#home-selecao"],
+    "props": {
+      "blockClass": "home__selecao"
+    }
+  },
+  "list-context.image-list#home-selecao": {
+    "children": ["slider-layout#home-selecao"],
+    "props": {
+      "preload": true,
+      "height": 251,
+      "images": [
+        {
+          "loading": "lazy",
+          "image": "assets/img/home/banner_dev2.png",
+          "description": "something something"
+        },
+        {
+          "loading": "lazy",
+          "image": "assets/img/home/banner_dev3.png",
+          "description": "something something"
+        },
+        {
+          "loading": "lazy",
+          "image": "assets/img/home/banner_dev4.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-selecao": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "blockClass": "home__selecao",
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never"
+    }
+  }
+}
