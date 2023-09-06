@@ -1,6 +1,9 @@
 .flexRow {
   &--home__projects {
     padding-bottom: 58px;
+    background-color: #f2f2f2;
+    padding-top: 2.25rem;
+    margin-bottom: 4.13rem;
 
     @include tablet {
       padding-bottom: 45px;
@@ -16,12 +19,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
 
     @include tablet-min {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 

@@ -9,7 +9,7 @@
     padding: 33px 0 0;
 
     @include tablet {
-      padding: 13px 9px 0;
+      padding: 1.3rem 0px 0;
     }
 
     // @include tablet {
@@ -41,7 +41,7 @@
 .sliderLeftArrow {
   &--home__selecao {
     @include tablet {
-      left: -20px;
+      left: -16px;
     }
   }
 }
@@ -49,7 +49,7 @@
 .sliderRightArrow {
   &--home__selecao {
     @include tablet {
-      right: -20px;
+      right: -16px;
     }
   }
 }
@@ -58,14 +58,11 @@
   &--home__categories,
   &--home__selecao {
     width: 13px;
-    height: 23px;
-    max-height: 100%;
-    max-width: 100%;
     filter: brightness(0);
 
     @include tablet {
-      width: 10px;
-      height: 20px;
+      width: 7px;
+      overflow: initial !important;
     }
   }
 }

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    background: $white;
+    background: #f2f2f2;
     border-radius: 0;
     padding: 0;
     margin: 0;
@@ -13,7 +13,7 @@
     width: 100%;
 
     @include tablet {
-      padding: 0 12px;
+      padding: 0 1.6rem;
     }
   }
 }
@@ -37,30 +37,37 @@
     width: 100%;
     margin: 0;
     text-decoration: none;
-    padding-top: 43px;
+    padding-top: 1.5rem;
 
     @include tablet {
       padding-top: 38px;
     }
 
     :global(.vtex-button) {
-      background: $primary-pure-500;
-      border-radius: 6px;
+      @include desktop {
+        width: 12.5rem;
+        border-radius: 0.25rem;
+        min-height: 2.37rem;
+      }
+      width: 100%;
+      background: $secondary-pure-500;
       min-height: auto;
-      padding: 16px 48px;
+      padding: 0.5rem 1rem;
       transition: all 0.3s ease-in-out;
       border: none;
+      border-radius: 0;
 
       &:hover,
       &:active,
       &:focus {
-        background: $primary-dark-700;
+        background: $secondary-dark-700;
         transition: all 0.3s ease-in-out;
       }
     }
 
     :global(.vtex-button__label) {
-      @include text($font-size-md, $white, $bold);
+      @include text(1rem, $black, $bold);
+      font-family: 'Lato';
       text-transform: none;
       line-height: 16px;
       padding: 0 !important;
@@ -104,12 +111,32 @@
 
 .heading {
   &--home__projects {
-    @include text($font-size-md + 1, $low-pure, $regular);
-    line-height: 21px;
-    letter-spacing: 0.4em;
+    @include text(2rem, $high-pure-4, $bold);
+    font-family: 'Barlow';
+    font-style: italic;
     text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 52px;
+    position: relative;
+    margin-top: 3rem;
+
+    @include tablet {
+      margin-top: 1rem;
+    }
+
+    &::before {
+      content: '';
+      background: url('assets/svg/icon-info-modal-feature.svg') no-repeat center;
+      background-size: contain;
+      display: inline-block;
+      height: 27px;
+      left: -92px;
+      position: absolute;
+      top: -39px;
+      width: 264px;
+
+      @include tablet {
+        width: 170px;
+      }
+    }
 
     @include tablet {
       display: none;
@@ -138,14 +165,12 @@
 
 .paragraph {
   &--home__projects {
-    @include text($font-size-md, $high-pure-4, $regular);
-    line-height: 20px;
+    @include text(1.125rem, $high-pure-4, $regular);
     text-align: left;
     margin: 0;
-    padding-right: 80px;
 
     @include tablet {
-      font-size: $font-size-xs;
+      font-size: 1.125rem;
       line-height: normal;
     }
 

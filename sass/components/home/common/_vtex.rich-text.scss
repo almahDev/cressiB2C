@@ -5,7 +5,7 @@
       text-align: left;
 
       @include tablet {
-        padding: 0 12px;
+        padding: 0 1.6rem;
       }
 
       @media (max-width: 360px) {
@@ -14,44 +14,34 @@
     }
 
     .heading {
-      @include text($font-size-md + 1, $low-pure, $regular);
-      line-height: 21px;
-      letter-spacing: 0.4em;
+      @include text($font-size-h3, #515151, $regular);
       text-transform: uppercase;
       margin: 0;
+      font-style: italic;
 
       @include tablet {
-        font-size: $font-size-xs;
-        letter-spacing: 4.8px;
-        line-height: 14.63px;
+        font-size: $font-size-h3;
+        padding: 1rem 0;
       }
     }
 
     .paragraph {
       @include text($font-size-md + 1, $low-pure, $regular);
-      line-height: 21px;
-      letter-spacing: 0.4em;
       text-transform: uppercase;
       margin: 0;
 
       @include tablet {
         font-size: $font-size-xs;
-        letter-spacing: 4.8px;
-        line-height: 14.63px;
       }
     }
 
     .strong {
-      @include text($font-size-md + 1, $primary-pure-500, $extra-bold);
-      line-height: 21px;
-      letter-spacing: 0.4em;
+      @include text($font-size-h3, #515151, $extra-bold);
       text-transform: uppercase;
-      margin: 0;
+      margin: 1.5rem 0;
 
       @include tablet {
-        font-size: $font-size-xs;
-        letter-spacing: 4.8px;
-        line-height: 14.63px;
+        font-size: $font-size-h3;
       }
     }
   }

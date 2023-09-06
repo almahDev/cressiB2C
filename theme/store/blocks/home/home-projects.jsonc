@@ -3,8 +3,8 @@
     "title": "Coleções",
     "children": [
       "list-context.image-list#home-projects",
-      "info-card#home-projects",
-      "responsive-layout.mobile#home-collections-title-mobile"
+      "responsive-layout.mobile#home-collections-title-mobile",
+      "info-card#home-projects"
     ],
     "props": {
       "colGap": 4,
@@ -19,7 +19,7 @@
   "rich-text#home-collections-title-mobile": {
     "title": "Título (Mobile)",
     "props": {
-      "text": "## **FAÇA SEU** PROJETO MOOBLE",
+      "text": "## **BENEFÍCIOS CRESSI**",
       "blockClass": "home__title"
     }
   },
