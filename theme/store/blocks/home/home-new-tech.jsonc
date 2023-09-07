@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#home-new-tech": {
+    "title": "Imagem Desk e mobile",
+    "children": ["flex-layout.col#home-new-tech"]
+  },
+  "flex-layout.col#home-new-tech": {
+    "children": [
+      "responsive-layout.desktop#new-tech",
+      "responsive-layout.mobile#new-tech"
+    ],
+    "props": {
+      "blockClass": ["new-tech"]
+    }
+  },
+  "responsive-layout.desktop#new-tech": {
+    "children": ["image#new-tech-desk"]
+  },
+  "image#new-tech-desk": {
+    "props": {
+      "src": "assets/img/home/banner_dev5.png",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "responsive-layout.mobile#new-tech": {
+    "children": ["image#new-tech-mobile"]
+  },
+  "image#new-tech-mobile": {
+    "props": {
+      "src": "assets/img/home/banner_dev6.png",
+      "link": {
+        "url": "#"
+      }
+    }
+  }
+}
