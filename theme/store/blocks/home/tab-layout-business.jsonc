@@ -1,0 +1,219 @@
+{
+  "flex-layout.row#tab-layout-business": {
+    "title": "Title and tab layout",
+    "children": ["flex-layout.col#title-business"],
+    "props": {
+      "blockClass": "home-business-tab"
+    }
+  },
+  "flex-layout.col#title-business": {
+    "children": [
+      "flex-layout.row#title-business",
+      "flex-layout.row#tab-business"
+    ]
+  },
+  "flex-layout.row#title-business": {
+    "children": ["rich-text#title-business"]
+  },
+  "rich-text#title-business": {
+    "props": {
+      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png)**PARA O SEU NEGÓCIO**"
+    }
+  },
+
+  // Tab Layout
+  "flex-layout.row#tab-business": {
+    "title": "Tab Layout",
+    "children": [
+      "flex-layout.col#tab-business"
+      // "flex-layout.col#shelf-business"
+    ]
+  },
+  "flex-layout.col#tab-business": {
+    "children": ["tab-layout#home-business"],
+    "props": {
+      "blockClass": ["tab-layout-container"]
+    }
+  },
+  "tab-layout#home-business": {
+    "children": ["tab-list#home", "tab-content#home"],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "mergulho"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#mergulho",
+      "tab-list.item#snorkeling",
+      "tab-list.item#freediving",
+      "tab-list.item#pesca-sub",
+      "tab-list.item#confeccao",
+      "tab-list.item#natacao",
+      "tab-list.item#kids"
+    ],
+    "props": {
+      "blockClass": ["tab-layout-container"]
+    }
+  },
+  // Mergulho
+  "tab-list.item#mergulho": {
+    "props": {
+      "tabId": "mergulho",
+      "label": "Mergulho",
+      "defaultActiveTab": true
+    }
+  },
+  // Snorkeling
+  "tab-list.item#snorkeling": {
+    "props": {
+      "tabId": "snorkeling",
+      "label": "Snorkeling"
+    }
+  },
+  // Freediving
+  "tab-list.item#freediving": {
+    "props": {
+      "tabId": "freediving",
+      "label": "Freediving"
+    }
+  },
+  // Pesca Sub
+  "tab-list.item#pesca-sub": {
+    "props": {
+      "tabId": "pesca-sub",
+      "label": "Pesca Sub"
+    }
+  },
+  // Confecção
+  "tab-list.item#confeccao": {
+    "props": {
+      "tabId": "confeccao",
+      "label": "Confecção"
+    }
+  },
+  // Natação
+  "tab-list.item#natacao": {
+    "props": {
+      "tabId": "natacao",
+      "label": "Natação"
+    }
+  },
+  // Kids
+  "tab-list.item#kids": {
+    "props": {
+      "tabId": "kids",
+      "label": "Kids"
+    }
+  },
+
+  // Conteudo
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#mergulho",
+      "tab-content.item#snorkeling",
+      "tab-content.item#freediving",
+      "tab-content.item#pesca-sub",
+      "tab-content.item#confeccao",
+      "tab-content.item#natacao",
+      "tab-content.item#kids"
+    ]
+  },
+  // Mergulho Content
+  "tab-content.item#mergulho": {
+    "children": ["rich-text#mergulho"],
+    "props": {
+      "tabId": "mergulho"
+    }
+  },
+  "rich-text#mergulho": {
+    "props": {
+      "text": "**MERGULHO** \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  // Mergulho Content
+
+  // Snorkeling Content
+  "tab-content.item#snorkeling": {
+    "children": ["rich-text#snorkeling"],
+    "props": {
+      "tabId": "snorkeling"
+    }
+  },
+  "rich-text#snorkeling": {
+    "props": {
+      "text": "**Snorkeling** \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  // Snorkeling Content
+
+  // Freediving Content
+  "tab-content.item#freediving": {
+    "children": ["rich-text#freediving"],
+    "props": {
+      "tabId": "freediving"
+    }
+  },
+  "rich-text#freediving": {
+    "props": {
+      "text": "**Freediving** \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  // Freediving Content
+
+  // Pesca Sub Content
+  "tab-content.item#pesca-sub": {
+    "children": ["rich-text#pesca-sub"],
+    "props": {
+      "tabId": "pesca-sub"
+    }
+  },
+  "rich-text#pesca-sub": {
+    "props": {
+      "text": "**Pesca Sub** \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  // Pesca Sub Content
+
+  // Confecção Content
+  "tab-content.item#confeccao": {
+    "children": ["rich-text#confeccao"],
+    "props": {
+      "tabId": "confeccao"
+    }
+  },
+  "rich-text#confeccao": {
+    "props": {
+      "text": "**Confecção** \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  // Confecção Content
+
+  // Natação Content
+  "tab-content.item#natacao": {
+    "children": ["rich-text#natacao"],
+    "props": {
+      "tabId": "natacao"
+    }
+  },
+  "rich-text#natacao": {
+    "props": {
+      "text": "**Natação** \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  // Natação Content
+
+  // Kids Content
+  "tab-content.item#kids": {
+    "children": ["rich-text#kids"],
+    "props": {
+      "tabId": "kids"
+    }
+  },
+  "rich-text#kids": {
+    "props": {
+      "text": "**Kids** \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  }
+  // Kids Content
+}
