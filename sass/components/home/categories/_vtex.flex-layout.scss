@@ -10,10 +10,6 @@
 
   &--home-business-tab {
     @extend %container-large;
-
-    @include tablet {
-      padding: 0 15px;
-    }
   }
 }
 

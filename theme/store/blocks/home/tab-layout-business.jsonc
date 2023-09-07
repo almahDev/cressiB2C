@@ -17,7 +17,8 @@
   },
   "rich-text#title-business": {
     "props": {
-      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png)**PARA O SEU NEGÓCIO**"
+      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png)**PARA O SEU NEGÓCIO**",
+      "blockClass": "title-home"
     }
   },
 

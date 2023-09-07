@@ -45,4 +45,34 @@
       }
     }
   }
+
+  .paragraph {
+    &--title-home {
+      display: flex;
+      align-items: center;
+      font-size: 1.875rem;
+      font-style: italic;
+
+      @include tablet {
+        font-size: 1.25rem;
+      }
+    }
+
+    .image {
+      &--title-home {
+        height: 3rem;
+        margin-right: 0.87rem;
+
+        @include tablet {
+          height: 2.125rem;
+        }
+      }
+    }
+
+    .strong {
+      &--title-home {
+        font-family: 'Barlow';
+      }
+    }
+  }
 }
