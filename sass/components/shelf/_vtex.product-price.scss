@@ -31,6 +31,12 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0;
+
+    @include tablet {
+      font-size: 19px;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 }
 
@@ -41,6 +47,11 @@
   text-transform: none;
   text-align: left;
 
+  @include tablet {
+    font-size: $font-size-xxs;
+    line-height: 17px;
+  }
+
   &--summary {
     color: #515151;
     font-family: $secondary-font !important;
@@ -49,11 +60,12 @@
     font-weight: 700;
     line-height: normal;
     display: block;
-  }
 
-  @include tablet {
-    font-size: $font-size-xxs;
-    line-height: 17px;
+    @include tablet {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
 }
 
