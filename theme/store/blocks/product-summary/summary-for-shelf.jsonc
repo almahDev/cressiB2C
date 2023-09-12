@@ -73,8 +73,10 @@
     "props": {
       "blockClass": "product__sku-selector--shelf",
       "skuSelector": true,
-      "showVariationsLabels": "variation",
-      "initialSelection": "empty"
+      "showVariationsLabels": "itemValue",
+      "visibleVariations": ["Cor"],
+      "initialSelection": "complete",
+      "sliderDisplayThreshold": 4
     }
   }
 }

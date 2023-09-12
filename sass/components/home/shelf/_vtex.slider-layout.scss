@@ -28,25 +28,41 @@
   }
 }
 
+.sliderArrows {
+  &--home__shelf {
+    .caretIcon {
+      width: 10px;
+      height: 10px;
+      overflow: visible;
+
+      @include tablet {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+
 .sliderLeftArrow {
   &--home__shelf {
     padding: 10px 15px;
     margin: 0;
     position: absolute;
-    top: -92px;
-    left: unset;
-    right: 46px;
+    left: -35px;
+
+    @media (max-width: 1300px) {
+      left: 0;
+    }
 
     @include tablet {
-      top: -314px;
-      right: 28px;
+      left: 0;
     }
   }
 
-  &--home__shelf-simple {
-    top: -62px;
-    right: 57px;
-  }
+  // &--home__shelf-simple {
+  //   top: -62px;
+  //   right: 57px;
+  // }
 }
 
 .sliderRightArrow {
@@ -54,39 +70,36 @@
     padding: 10px 15px;
     margin: 0;
     position: absolute;
-    top: -92px;
-    left: unset;
-    right: -15px;
+    right: -35px;
 
     @media (max-width: 1300px) {
       right: 0;
     }
 
     @include tablet {
-      top: -314px;
-      right: -12px;
+      right: 0;
     }
   }
 
-  &--home__shelf-simple {
-    top: -62px;
-    right: 0;
-  }
+  // &--home__shelf-simple {
+  //   top: -62px;
+  //   right: 0;
+  // }
 }
 
-.caretIcon {
-  &--home__shelf {
-    width: 13px;
-    height: 23px;
-    max-height: 100%;
-    max-width: 100%;
+// .caretIcon {
+//   &--home__shelf {
+//     width: 13px;
+//     height: 23px;
+//     max-height: 100%;
+//     max-width: 100%;
 
-    @include tablet {
-      width: 10px;
-      height: 20px;
-    }
-  }
-}
+//     @include tablet {
+//       width: 10px;
+//       height: 20px;
+//     }
+//   }
+// }
 
 .slideChildrenContainer {
   &--home__shelf {
