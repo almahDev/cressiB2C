@@ -1,0 +1,51 @@
+{
+  "flex-layout.row#history": {
+    "title": "Bloco Nossa história",
+    "children": [
+      "flex-layout.col#history-image",
+      "flex-layout.col#history-news"
+    ],
+    "props": {
+      "blockClass": "history-background"
+    }
+  },
+  "flex-layout.col#history-image": {
+    "children": ["image#banner-history"],
+    "props": {
+      "blockClass": "history-background"
+    }
+  },
+  "image#banner-history": {
+    "props": {
+      "src": "assets/img/home/nossa-historia.png"
+    }
+  },
+  "flex-layout.col#history-news": {
+    "children": [
+      "rich-text#history-text-title",
+      "rich-text#history-text-1",
+      "rich-text#history-text-2"
+    ],
+    "props": {
+      "blockClass": ["history-background-text"]
+    }
+  },
+  "rich-text#history-text-title": {
+    "props": {
+      "text": "### NOSSA \n **HISTÓRIA**",
+      "blockClass": ["history-text-title", "modal__info--title"]
+    }
+  },
+  "rich-text#history-text-1": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "blockClass": "history-text"
+    }
+  },
+  "rich-text#history-text-2": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "blockClass": "history-text"
+    }
+  }
+}

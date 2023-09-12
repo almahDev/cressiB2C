@@ -46,6 +46,24 @@
     }
   }
 
+  &--history-text-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--history-text {
+    width: 32rem;
+    padding: 0 0 0 9.2rem;
+    margin: auto;
+  }
+
+  .wrapper {
+    &--history-text-title {
+      text-align: left !important;
+      padding: 0 0 0 17rem;
+    }
+  }
+
   .paragraph {
     &--title-home {
       display: flex;
@@ -56,6 +74,10 @@
       @include tablet {
         font-size: 1.25rem;
       }
+    }
+
+    &--history-text-title {
+      margin: 0;
     }
 
     .image {
@@ -73,6 +95,30 @@
       &--title-home {
         font-family: 'Barlow';
       }
+
+      &--history-text-title {
+        -webkit-text-fill-color: transparent;
+        font-family: 'Barlow';
+        font-size: 6rem;
+        font-style: italic;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .strong {
+    &--history-text-title {
+      -webkit-text-fill-color: transparent;
+      font-size: 6rem;
+    }
+  }
+
+  .headingLevel3 {
+    &--history-text-title {
+      font-size: 6rem !important;
+      margin-top: 3.94rem !important;
+      line-height: 0.8 !important;
     }
   }
 }
