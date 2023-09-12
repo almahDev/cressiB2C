@@ -87,3 +87,11 @@
     }
   }
 }
+
+.slideChildrenContainer {
+  &--home__shelf {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+}

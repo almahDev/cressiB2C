@@ -76,7 +76,7 @@
     &:active,
     &:focus {
       transition: all 0.3s ease-in-out;
-      background: $color-c-5;
+      background: none;
 
       .mainImageHovered {
         opacity: 0;
@@ -116,7 +116,7 @@
   }
 
   .nameContainer {
-    padding: 16px 12px 0;
+    padding: 13px 0 0;
     margin: 0;
     justify-content: flex-start;
 
@@ -126,14 +126,14 @@
   }
 
   .brandName {
-    @include text($font-size-md, $black, $semi-bold);
-    line-height: 20px;
+    @include text($font-size-md, $black, $bold, $secondary-font);
+    line-height: 19.2px;
     text-align: left;
     overflow: hidden;
     width: 100%;
     display: block;
     margin: 0;
-    letter-spacing: 0.1em;
+    letter-spacing: 0;
     text-transform: uppercase;
 
     @include tablet {
@@ -145,7 +145,7 @@
 
   .clearLink {
     position: relative;
-    height: auto;
+    height: 100%;
     max-height: 100%;
   }
 
@@ -154,9 +154,12 @@
   }
 
   .imageContainer {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+    background: rgba(243, 243, 243, 0.5);
   }
 
   .imageStackContainer {
@@ -173,6 +176,7 @@
     height: 100%;
     transition: all 0.2s;
     object-fit: cover !important;
+    mix-blend-mode: multiply;
 
     @include tablet {
       margin: 0 auto;

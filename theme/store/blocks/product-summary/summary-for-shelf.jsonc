@@ -27,6 +27,7 @@
     "children": [
       "flex-layout.row#qtty-add",
       "flex-layout.row#product-summary-name",
+      "product-summary-space",
       "condition-layout.product#availability-summary",
       "product-summary-sku-selector#shelf"
     ],
@@ -37,17 +38,19 @@
           "show": true
         },
         {
-          "__editorItemTitle": "Nome do produto",
           "order": 2,
           "show": true
         },
         {
-          "__editorItemTitle": "Preços e Desconto",
           "order": 3,
           "show": true
         },
         {
           "order": 4,
+          "show": true
+        },
+        {
+          "order": 5,
           "show": true
         }
       ]

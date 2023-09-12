@@ -39,5 +39,6 @@
     @include text($font-size-sm, #ed1b34, $regular);
     line-height: 19.6px;
     transition: all 0.3s ease-in-out;
+    text-align: left;
   }
 }
