@@ -25,10 +25,10 @@
   "disposition-layout#summary-shelf": {
     "title": "Sumário do produto - Disposição de elementos",
     "children": [
-      "flex-layout.row#qtty-add",
+      "condition-layout.product#availability-summary",
       "flex-layout.row#product-summary-name",
       "product-summary-space",
-      "condition-layout.product#availability-summary",
+      "condition-layout.product#availability-summary-savings",
       "product-summary-sku-selector#shelf"
     ],
     "props": {
@@ -57,6 +57,18 @@
     }
   },
   "condition-layout.product#availability-summary": {
+    "title": "Disponibilidade",
+    "props": {
+      "blockClass": "availability-summary",
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#qtty-add"
+    }
+  },
+  "condition-layout.product#availability-summary-savings": {
     "title": "Disponibilidade",
     "props": {
       "blockClass": "availability-summary",

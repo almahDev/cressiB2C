@@ -42,7 +42,7 @@
     "children": [
       "flex-layout.row#product-summary-name",
       "product-summary-space",
-      "link#summary-shelf-login"
+      "stop-propagation-layout#summary-shelf-login"
     ],
     "props": {
       "disposition": [
@@ -66,12 +66,25 @@
   //     "logInButtonBehavior": "link"
   //   }
   // },
+  "stop-propagation-layout#summary-shelf-login": {
+    "children": ["link#summary-shelf-login"]
+  },
   "link#summary-shelf-login": {
     "title": "Link - Login",
     "props": {
       "blockClass": "shelf__login",
       "href": "/login?returnUrl={queryString.returnUrl}",
       "label": "Para visualizar os preços, faça login ou cadastre-se."
+    }
+  },
+  "add-to-cart-button#summary-shelf-login": {
+    "title": "Link - Login",
+    "props": {
+      "text": "COMPRAR",
+      "customOneClickBuyLink": "/login?returnUrl={queryString.returnUrl}",
+      "isOneClickBuy": true,
+      "blockClass": ["shelf__login"],
+      "unavailableText": "Produto Indisponível"
     }
   }
 }

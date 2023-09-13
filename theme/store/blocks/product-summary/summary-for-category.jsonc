@@ -1,0 +1,94 @@
+{
+  "product-summary.shelf#category": {
+    "title": "Sumário do produto",
+    "children": [
+      "flex-layout.row#image-tags",
+      "condition-layout.binding#summary-shelf-category"
+    ],
+    "props": {
+      "blockClass": [
+        "product__summary",
+        "product__summary--shelf",
+        "product__summary--category"
+      ],
+      "priceBehavior": "default",
+      "trackListName": true
+    }
+  },
+
+  "condition-layout.binding#summary-shelf-category": {
+    "title": "Condição de Exibição - Sumário do produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "bindingId",
+          "arguments": {
+            "id": "e0bbf489-af0d-4c18-8d9d-6f4ea0e09a17"
+          }
+        }
+      ],
+      "Then": "challenge-block#summary-shelf-category",
+      "Else": "disposition-layout#summary-shelf-category"
+    }
+  },
+
+  "challenge-block#summary-shelf-category": {
+    "blocks": [
+      "challenge-content#summary-shelf-category",
+      "challenge-fallback#summary-shelf-category"
+    ],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+  "challenge-content#summary-shelf-category": {
+    "children": ["disposition-layout#summary-shelf-category"],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+  "challenge-fallback#summary-shelf-category": {
+    "children": ["disposition-layout#summary-shelf-not-logged"],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+
+  "disposition-layout#summary-shelf-category": {
+    "title": "Sumário do produto - Disposição de elementos",
+    "children": [
+      "condition-layout.product#availability-summary-category",
+      "product-summary-space",
+      "flex-layout.row#product-summary-name"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1,
+          "show": true
+        },
+        {
+          "order": 2,
+          "show": true
+        },
+        {
+          "order": 3,
+          "show": true
+        }
+      ]
+    }
+  },
+  "condition-layout.product#availability-summary-category": {
+    "title": "Disponibilidade",
+    "props": {
+      "blockClass": "availability-summary",
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#qtty-add",
+      "Else": "rich-text#unavaible"
+    }
+  }
+}
