@@ -101,7 +101,7 @@
       "width": "20%",
       "blockClass": ["logo-b2bcressi-desk"]
     },
-    "children": ["logo#desktop"]
+    "children": ["logo#header"]
   },
   "flex-layout.col#links-desktop": {
     "title": "Almah |Header - Links",
@@ -159,12 +159,12 @@
     "blocks": ["product-summary.shelf#search"]
   },
 
-  "logo#desktop": {
+  "logo#header": {
     "props": {
-      "title": "Logo da Allegra Lar",
+      "title": "Logo da Cressi",
       "href": "/",
-      "url": "assets/img/allegra-logo-header.png",
-      "width": "308",
+      "url": "assets/img/cressi-logo-header.png",
+      "width": "162",
       "blockClass": "header__logo"
     }
   },
@@ -214,8 +214,8 @@
   "flex-layout.row#1-mobile": {
     "title": "Almah |Header - Conteúdo - Mobile",
     "children": [
+      "logo#header",
       "drawer#header-mobile",
-      "logo#mobile",
       "flex-layout.row#mob-list"
     ],
     "props": {
@@ -238,16 +238,6 @@
       "blockClass": "block-search-bar"
     },
     "children": ["search-bar"]
-  },
-
-  "logo#mobile": {
-    "props": {
-      "title": "Logo da Allegra Lar",
-      "href": "/",
-      "url": "assets/img/allegra-logo-header.png",
-      "width": "192",
-      "blockClass": "header__logo"
-    }
   },
 
   "drawer#header-mobile": {
