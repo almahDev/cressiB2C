@@ -402,6 +402,16 @@
   }
 }
 
+.container--product__summary--category {
+  @include desktop {
+    height: 100%;
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--product__qtty-add) {
+      padding-top: 30px;
+    }
+  }
+}
+
 .skuSelectorContainer {
   &--product__sku-selector--shelf {
     padding-top: 29px;

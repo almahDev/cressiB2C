@@ -1,0 +1,39 @@
+{
+  "condition-layout.binding#summary-shelf-category": {
+    "title": "Condição de Exibição - Sumário do produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "bindingId",
+          "arguments": {
+            "id": "e0bbf489-af0d-4c18-8d9d-6f4ea0e09a17"
+          }
+        }
+      ],
+      "Then": "challenge-block#summary-shelf-category",
+      "Else": "disposition-layout#summary-shelf-category"
+    }
+  },
+
+  "challenge-block#summary-shelf-category": {
+    "blocks": [
+      "challenge-content#summary-shelf-category",
+      "challenge-fallback#summary-shelf-category"
+    ],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+  "challenge-content#summary-shelf-category": {
+    "children": ["disposition-layout#summary-shelf-category"],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+  "challenge-fallback#summary-shelf-category": {
+    "children": ["disposition-layout#summary-shelf-not-logged"],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  }
+}

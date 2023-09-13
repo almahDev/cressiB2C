@@ -78,7 +78,7 @@
         }
       ],
       "Then": "flex-layout.row#summary-shelf-price-savings",
-      "Else": "rich-text#unavaible"
+      "Else": "rich-text#unavailable"
     }
   },
   "product-summary-sku-selector#shelf": {

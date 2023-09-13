@@ -9,7 +9,7 @@
     }
   },
 
-  "rich-text#unavaible": {
+  "rich-text#unavailable": {
     "title": "Produto indisponível - Mensagem",
     "props": {
       "text": "**Indisponível** \n [Avise-me quando retornar ao estoque](#)",
