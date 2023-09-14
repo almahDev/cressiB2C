@@ -1,0 +1,73 @@
+{
+  "product-summary.shelf#category": {
+    "title": "Sumário do produto",
+    "children": [
+      "flex-layout.row#image-tags",
+      "condition-layout.binding#summary-shelf-category"
+    ],
+    "props": {
+      "blockClass": [
+        "product__summary",
+        "product__summary--shelf",
+        "product__summary--category"
+      ],
+      "priceBehavior": "default",
+      "trackListName": true
+    }
+  },
+
+  "disposition-layout#summary-shelf-category": {
+    "title": "Sumário do produto - Disposição de elementos",
+    "children": [
+      "condition-layout.product#availability-summary-category",
+      "flex-layout.row#product-summary-name",
+      "product-summary-space",
+      "condition-layout.product#availability-summary-unavailable-category"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1,
+          "show": true
+        },
+        {
+          "order": 2,
+          "show": true
+        },
+        {
+          "order": 3,
+          "show": true
+        },
+        {
+          "order": 4,
+          "show": true
+        }
+      ]
+    }
+  },
+  "condition-layout.product#availability-summary-category": {
+    "title": "Disponibilidade",
+    "props": {
+      "blockClass": "availability-summary",
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#qtty-add"
+    }
+  },
+  "condition-layout.product#availability-summary-unavailable-category": {
+    "title": "Disponibilidade",
+    "props": {
+      "blockClass": "availability-summary",
+      "matchType": "none",
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "rich-text#unavailable"
+    }
+  }
+}

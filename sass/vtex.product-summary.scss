@@ -1,7 +1,11 @@
 // COMMON
 
-@import "variables/all";
-@import "mixins/all";
-@import "extends/all";
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
 
-@import "components/shelf/vtex.product-summary";
+// SHELF
+@import 'components/shelf/vtex.product-summary';
+
+// CORES - SKU SELECTOR
+@import 'components/shelf/sku-selector-colors';

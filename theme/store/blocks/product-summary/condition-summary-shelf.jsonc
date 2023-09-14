@@ -1,0 +1,90 @@
+{
+  "condition-layout.binding#summary-shelf": {
+    "title": "Condição de Exibição - Sumário do produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "bindingId",
+          "arguments": {
+            "id": "e0bbf489-af0d-4c18-8d9d-6f4ea0e09a17"
+          }
+        }
+      ],
+      "Then": "challenge-block#summary-shelf",
+      "Else": "disposition-layout#summary-shelf"
+    }
+  },
+
+  "challenge-block#summary-shelf": {
+    "blocks": [
+      "challenge-content#summary-shelf",
+      "challenge-fallback#summary-shelf"
+    ],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+  "challenge-content#summary-shelf": {
+    "children": ["disposition-layout#summary-shelf"],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+  "challenge-fallback#summary-shelf": {
+    "children": ["disposition-layout#summary-shelf-not-logged"],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+
+  "disposition-layout#summary-shelf-not-logged": {
+    "title": "Sumário do produto - Disposição de elementos",
+    "children": [
+      "flex-layout.row#product-summary-name",
+      "product-summary-space",
+      "stop-propagation-layout#summary-shelf-login"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1,
+          "show": true
+        },
+        {
+          "order": 2,
+          "show": true
+        },
+        {
+          "order": 3,
+          "show": true
+        }
+      ]
+    }
+  },
+  // "login#summary-shelf-login": {
+  //   "props": {
+  //     "logInButtonBehavior": "link"
+  //   }
+  // },
+  "stop-propagation-layout#summary-shelf-login": {
+    "children": ["link#summary-shelf-login"]
+  },
+  "link#summary-shelf-login": {
+    "title": "Link - Login",
+    "props": {
+      "blockClass": "shelf__login",
+      "href": "/login?returnUrl={queryString.returnUrl}",
+      "label": "Para visualizar os preços, faça login ou cadastre-se."
+    }
+  },
+  "add-to-cart-button#summary-shelf-login": {
+    "title": "Link - Login",
+    "props": {
+      "text": "COMPRAR",
+      "customOneClickBuyLink": "/login?returnUrl={queryString.returnUrl}",
+      "isOneClickBuy": true,
+      "blockClass": ["shelf__login"],
+      "unavailableText": "Produto Indisponível"
+    }
+  }
+}

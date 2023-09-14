@@ -1,0 +1,70 @@
+$colors: (
+  'azul': #3451b6,
+  'amarelo': #f8d27f,
+  'vermelho': #cc1e1e,
+  'azul-marinho': #296358,
+  'areia': #d9c2b2,
+  'preto': #000,
+  'bordeaux': #821733,
+  'fendi': #938386,
+  'pink': #e73e6b,
+  'branco': #fff,
+  'verde': #639722,
+  'rosa': #efb8b6,
+  'off': #f3f3f5,
+  'coral': #fb756e,
+  'bege': #e5d9d9,
+  'cinza': #91959e,
+  'mel': #45131c,
+  'unica': #53524d,
+  'verde-militar': #473d45,
+  'terracota': #ad331d,
+  'laranja': #ff733e,
+  'magenta': #fe2b5e,
+  'marrom': #41282e,
+  'lilas': #aa97d3,
+  'marinho': #0b1833,
+  'militar': #2d3d29,
+  'vinho': #51062d,
+  'acqua': '#00c2cb',
+);
+
+.skuSelectorContainer {
+  &--product__sku-selector--shelf {
+    :global(.vtex-store-components-3-x-skuSelectorSubcontainer--cor) {
+      @each $color, $hexadecimal in $colors {
+        .skuSelectorItem--#{$color} {
+          .valueWrapper {
+            display: flex;
+            background-color: $hexadecimal;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+            position: relative;
+          }
+
+          .skuSelectorInternalBox {
+            border-radius: 100%;
+            border: 1px solid transparent;
+            transition: all 0.4s ease-in-out;
+          }
+
+          .skuSelectorItemImageValue {
+            display: none;
+          }
+
+          &.skuSelectorItem--selected {
+            background: none;
+            border: none;
+
+            .skuSelectorInternalBox {
+              border: 1px solid $black;
+              transition: all 0.4s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

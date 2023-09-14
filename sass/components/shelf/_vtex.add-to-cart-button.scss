@@ -1,26 +1,16 @@
 .buttonText {
   font-weight: $bold;
-  font-size: $font-size-md;
-  color: $white;
-  line-height: 19px;
-  text-transform: initial;
+  font-size: $font-size-lg;
+  color: $black;
+  line-height: normal;
+  text-transform: uppercase;
   position: relative;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  &::before {
-    @include icon("cart", 24px);
-    margin-right: 0.5rem;
-  }
-
   @include tablet {
-    font-size: $font-size-sm !important;
-
-    &::before {
-      width: 16px;
-      height: 16px;
-    }
+    font-size: $font-size-md - 1 !important;
   }
 }

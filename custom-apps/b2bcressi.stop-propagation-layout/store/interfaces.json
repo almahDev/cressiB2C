@@ -1,0 +1,6 @@
+{
+  "stop-propagation-layout": {
+    "component": "StopPropagationLayout",
+    "composition": "children"
+  }
+}

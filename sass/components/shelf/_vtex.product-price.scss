@@ -22,6 +22,22 @@
     line-height: 17px;
     display: block;
   }
+
+  &--summary {
+    color: #515151;
+    font-family: $secondary-font !important;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0;
+
+    @include tablet {
+      font-size: 19px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
 }
 
 .installments {
@@ -31,13 +47,25 @@
   text-transform: none;
   text-align: left;
 
-  &--summary {
-    display: block;
-  }
-
   @include tablet {
     font-size: $font-size-xxs;
     line-height: 17px;
+  }
+
+  &--summary {
+    color: #515151;
+    font-family: $secondary-font !important;
+    font-size: $font-size-lg;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+
+    @include tablet {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
 }
 

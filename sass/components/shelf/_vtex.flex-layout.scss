@@ -95,7 +95,7 @@
     }
   }
   &--product__qtty-add {
-    padding: 0 1rem 0.5rem;
+    padding: 16px 0 0;
 
     .stretchChildrenWidth {
       margin: 0;
@@ -166,11 +166,11 @@
 
   &--shelf-summary-price-wrapper {
     align-items: flex-start;
-    padding: 10px 10px 14px;
-    min-height: 72px;
+    padding: 9px 0 0;
+    // min-height: 72px;
 
     @include tablet {
-      padding: 8px 2px 13px;
+      padding: 0;
     }
   }
 

@@ -9,7 +9,7 @@
     }
   },
 
-  "rich-text#unavaible": {
+  "rich-text#unavailable": {
     "title": "Produto indisponível - Mensagem",
     "props": {
       "text": "**Indisponível** \n [Avise-me quando retornar ao estoque](#)",
@@ -43,17 +43,13 @@
   },
   "flex-layout.row#qtty-add": {
     "title": "Quantidade e Adicionar",
-    "children": [
-      "experimental__visibility-layout#summary-quantity",
-      "add-to-cart-button#add"
-    ],
+    "children": ["add-to-cart-button#add"],
     "props": {
       "blockClass": "product__qtty-add",
       "fullWidth": true,
       "horizontalAlign": "center",
       "preventVerticalStretch": true,
-      "colGap": 4,
-      "colSizing": "auto"
+      "colGap": 0
     }
   },
   "experimental__visibility-layout#summary-quantity": {
@@ -175,7 +171,10 @@
       "blockClass": "shelf-summary-price-wrapper",
       "horizontalAlign": "left"
     },
-    "children": ["product-list-price#summary", "flex-layout.row#price-summary"]
+    "children": [
+      // "product-list-price#summary",
+      "flex-layout.row#price-summary"
+    ]
   },
   "flex-layout.row#price-summary": {
     "title": "Preço Por e Parcelas",
