@@ -27,16 +27,12 @@
 .minicartIconContainer {
   &::before {
     content: url('assets/svg/commerce-and-shopping.svg');
-
-    @media (min-width: $screen-lg-min) {
-      content: url('assets/svg/commerce-and-shopping-green.svg');
-    }
   }
 
   &::after {
     content: url('assets/svg/MEU-CARRINHO.svg');
     position: absolute;
-    left: 33px;
+    left: 50px;
 
     @media (max-width: 768px) {
       display: none;

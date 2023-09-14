@@ -27,8 +27,9 @@
       "fullWidth": true
     },
     "children": [
-      "rich-text#tooltip-01",
+      "flex-layout.col#search-desktop",
       "flex-layout.col#spacer",
+      "rich-text#tooltip-01",
       "flex-layout.col#tooltip-social"
     ]
   },
@@ -71,11 +72,11 @@
     }
   },
   "flex-layout.col#search-link": {
-    "children": ["flex-layout.row#main-line-1", "flex-layout.row#main-line-2"]
+    "children": ["flex-layout.row#main-line"]
   },
-  "flex-layout.row#main-line-1": {
+  "flex-layout.row#main-line": {
     "children": [
-      "flex-layout.col#search-desktop",
+      "vtex.menu@2.x:menu#main-menu",
       "flex-layout.col#links-desktop"
     ],
     "props": {
@@ -83,9 +84,9 @@
       "blockClass": "main-elements-desk"
     }
   },
-  "flex-layout.row#main-line-2": {
-    "children": ["vtex.menu@2.x:menu#main-menu"]
-  },
+  // "flex-layout.row#main-line-2": {
+  //   "children": ["vtex.menu@2.x:menu#main-menu"]
+  // },
 
   "flex-layout.col#search-desktop": {
     "title": "Almah |Header - Busca",
@@ -142,7 +143,7 @@
   },
   "search-bar": {
     "props": {
-      "placeholder": "ENCONTRE UM PRODUTO",
+      "placeholder": "Busca",
       "openAutocompleteOnFocus": true,
       "blockClass": "header__search",
       "displayMode": "clear-button"

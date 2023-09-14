@@ -2,15 +2,13 @@
   &--header__tooltip--text {
     .paragraph {
       margin: 0;
-      @include text($font-size-xs);
-      font-size: $font-size-xs - 1;
-      color: $white;
+      @include text($font-size-xs - 1, $white, $bold, $secondary-font);
       display: flex;
       align-items: center;
+    }
 
-      .strong--header__tooltip--text {
-        margin: 0 0.2rem;
-      }
+    .image {
+      padding-right: 7px;
     }
   }
 
