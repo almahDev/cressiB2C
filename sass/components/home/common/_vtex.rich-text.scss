@@ -46,19 +46,31 @@
     }
   }
 
-  &--history-text-title {
+  &--story-text-title {
     display: flex;
     justify-content: center;
   }
 
-  &--history-text {
+  &--story-text,
+  &--story-mobile-text {
     width: 32rem;
     padding: 0 0 0 7.6rem;
     margin: auto;
+
+    @media (max-width: 768px) {
+      padding: 11rem 1.44rem 0;
+      color: $white;
+      width: unset;
+      font-size: 1.125rem;
+    }
+  }
+
+  &--story-mobile-text {
+    padding-top: 0;
   }
 
   .wrapper {
-    &--history-text-title {
+    &--story-text-title {
       text-align: left !important;
       padding: 0 0 0 15rem;
     }
@@ -76,7 +88,7 @@
       }
     }
 
-    &--history-text-title {
+    &--story-text-title {
       margin: 0;
     }
 
@@ -96,29 +108,41 @@
         font-family: 'Barlow';
       }
 
-      &--history-text-title {
+      &--story-text-title {
         -webkit-text-fill-color: transparent;
         font-family: 'Barlow';
         font-size: 6rem;
         font-style: italic;
         font-weight: 700;
         text-transform: uppercase;
+
+        @media (max-width: 768px) {
+          font-size: 3.75rem;
+        }
       }
     }
   }
 
   .strong {
-    &--history-text-title {
+    &--story-text-title {
       -webkit-text-fill-color: transparent;
       font-size: 6rem;
+
+      @media (max-width: 768px) {
+        font-size: 3.75rem;
+      }
     }
   }
 
   .headingLevel3 {
-    &--history-text-title {
+    &--story-text-title {
       font-size: 6rem !important;
       margin-top: 3.94rem !important;
       line-height: 0.8 !important;
+
+      @media (max-width: 768px) {
+        font-size: 3.75rem !important;
+      }
     }
   }
 }

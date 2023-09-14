@@ -22,7 +22,8 @@
       // "flex-layout.row#home-collections",
       "flex-layout.row#home-new-tech",
       "flex-layout.row#tab-layout-business",
-      "flex-layout.row#history"
+      "responsive-layout.desktop#story",
+      "responsive-layout.mobile#story"
     ],
     "props": {
       "disposition": [

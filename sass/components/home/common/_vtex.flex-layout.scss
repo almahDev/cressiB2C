@@ -7,29 +7,71 @@
     max-width: 53.8125rem;
   }
 
-  &--history-background {
+  &--story-background {
     max-width: 50rem;
   }
 
-  &--history-background-text {
+  &--story-background-text {
     background-color: $secondary-light-50;
     clip-path: polygon(0 0, 87% 0, 100% 100%, 12% 100%);
     height: 47.6875rem;
   }
+
+  &--story-mobile-background-text {
+    background-image: url('assets/img/home/background-clip-path.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    padding: 0 1.5rem;
+    height: 31rem;
+  }
+
+  &--background-story-mobile {
+    background-color: $low-dark;
+  }
+
+  &Child {
+    &--story-mobile-background-text {
+      height: 100%;
+      display: flex;
+      align-items: end;
+      justify-content: flex-end;
+    }
+
+    &--story-mobile-background {
+      background-color: $low-dark;
+    }
+  }
 }
 
 .flexRow {
-  &--history-background {
+  &--story-background {
     background-color: $low-dark;
     height: 38.125rem;
     position: relative;
     margin-top: 11.5rem;
     margin-bottom: 8rem;
     display: block;
+
+    :global(.vtex-store-components-3-x-container) {
+      @media (max-width: 768px) {
+        padding: 0;
+      }
+    }
+  }
+
+  &--story-mobile-background {
+    // background-color: $low-dark;
+
+    :global(.vtex-store-components-3-x-container) {
+      padding: 0;
+    }
   }
 
   .flexRowContent {
-    &--history-background {
+    &--story-background {
       position: relative;
       width: 100%;
       height: 38rem;
@@ -47,6 +89,17 @@
         &:last-child {
           right: 143px;
         }
+      }
+    }
+
+    &--story-mobile-background {
+      position: relative;
+      overflow: hidden;
+      padding-top: 1rem;
+
+      :global(.vtex-store-components-3-x-imageElement) {
+        position: relative;
+        z-index: 2;
       }
     }
   }
