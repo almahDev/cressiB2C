@@ -1,32 +1,71 @@
 {
   "rich-text#tooltip-01": {
-    "title": "Almah | Header - Topbar - Texto",
+    "title": "Almah | Header - Topbar - Texto - Contato",
     "props": {
       "text": "![](assets/svg/icon-b2bcressi-phone.svg) ENTRE EM CONTATO (99) 9999-9999",
       "blockClass": "header__tooltip--text"
     }
   },
   "flex-layout.col#tooltip-social": {
-    "children": ["image#face-book", "image#instagram"],
+    "children": [
+      "rich-text#tooltip-social-01",
+      "image#tooltip-pinterest",
+      "image#tooltip-face-book",
+      "image#tooltip-instagram",
+      "image#tooltip-youtube"
+    ],
     "props": {
       "blockClass": ["tooltip-social"]
     }
   },
-  "image#face-book": {
+  "rich-text#tooltip-social-01": {
+    "title": "Almah | Header - Topbar - Texto - Social",
     "props": {
-      "src": "assets/svg/top-bar-Facebook.svg",
-      "maxHeight": 24,
+      "text": "REDES SOCIAIS",
+      "blockClass": ["header__tooltip--text", "header__tooltip--text-social"]
+    }
+  },
+  "image#tooltip-pinterest": {
+    "title": "Ícone - Pinterest",
+    "props": {
+      "blockClass": ["tooltip-social", "tooltip-social--pinterest"],
+      "src": "assets/svg/top-bar-Pinterest.svg",
+      "maxHeight": 20,
       "link": {
-        "url": ""
+        "url": "#"
       }
     }
   },
-  "image#instagram": {
+  "image#tooltip-face-book": {
+    "title": "Ícone - Facebook",
     "props": {
-      "src": "assets/svg/top-bar-Instagram.svg",
-      "maxHeight": 24,
+      "blockClass": ["tooltip-social", "tooltip-social--facebook"],
+      "src": "assets/svg/top-bar-Facebook.svg",
+      "maxHeight": 20,
       "link": {
-        "url": ""
+        "url": "#"
+      }
+    }
+  },
+  "image#tooltip-instagram": {
+    "title": "Ícone - Instagram",
+    "props": {
+      "blockClass": ["tooltip-social", "tooltip-social--instagram"],
+      "src": "assets/svg/top-bar-Instagram.svg",
+      "maxHeight": 20,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#tooltip-youtube": {
+    "title": "Ícone - YouTube",
+    "props": {
+      "blockClass": ["tooltip-social", "tooltip-social--youtube"],
+      "src": "assets/svg/top-bar-Youtube.svg",
+      "maxHeight": 20,
+      "link": {
+        "url": "#"
       }
     }
   }

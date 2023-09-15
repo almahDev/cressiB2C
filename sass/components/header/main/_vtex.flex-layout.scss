@@ -88,6 +88,7 @@
   &--tooltip-social {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   &--logo-b2bcressi-desk {
@@ -96,8 +97,8 @@
   }
 }
 
-.flexColChild {
-  &--tooltip-social {
-    margin: 0 0.5rem;
-  }
-}
+// .flexColChild {
+//   &--tooltip-social {
+//     padding: 0 1rem 0;
+//   }
+// }

@@ -3,6 +3,7 @@
     .paragraph {
       margin: 0;
       @include text($font-size-xs - 1, $white, $bold, $secondary-font);
+      font-style: italic;
       display: flex;
       align-items: center;
     }
@@ -12,6 +13,25 @@
     }
   }
 
+  &--header__tooltip--text-social {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 19px;
+
+      &::before {
+        content: '';
+        width: 1px;
+        height: 20px;
+        background: #fff;
+      }
+    }
+
+    .paragraph {
+      padding: 0 1rem 0 1.75rem;
+    }
+  }
   &--text-collection-menu {
     width: 100%;
     display: block;
