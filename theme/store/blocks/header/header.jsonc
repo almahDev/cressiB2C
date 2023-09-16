@@ -134,10 +134,10 @@
       "type": "custom",
       "highlight": false,
       "itemProps": {
-        "href": "/account/#/wishlist",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Favoritos",
-        "text": "MEUS"
+        "tagTitle": "COMPRE POR LICITAÇÃO",
+        "text": "COMPRE POR"
       }
     }
   },

@@ -15,7 +15,7 @@
     }
 
     .styledLink {
-      @include link(0.9375rem, #101010, 500, none);
+      @include link($font-size-xs, #a5a5a5, 700, none, $secondary-font);
       text-transform: uppercase;
       transition: all 0.2s;
       display: flex;
@@ -24,13 +24,25 @@
       &:hover,
       &:active,
       &:focus {
-        color: #101010;
+        color: #a5a5a5;
         text-decoration: none;
       }
 
       &--highlight {
         font-weight: $bold;
-        color: $color-1-500;
+        color: #0077c8;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: #0077c8;
+        }
+
+        &::before {
+          content: url('assets/svg/icon-menu-highlight.svg');
+          display: block;
+          margin-right: 5px;
+        }
       }
     }
   }
@@ -52,14 +64,16 @@
     &--al-product__wishlist--item {
       display: flex;
       align-items: center;
-      color: #636363;
-      font-size: 0.625rem;
+      color: #000;
+      font-family: $quaternary-font;
+      font-size: 12px;
       font-style: normal;
       font-weight: 400;
+      line-height: 16.644px;
 
       &::before {
-        content: url('assets/svg/icon-wishlist-green.svg');
-        margin-right: 0.64rem;
+        content: url('assets/svg/icon-notes.svg');
+        margin-right: 18px;
       }
     }
   }
@@ -78,10 +92,13 @@
         flex-direction: column;
 
         &::after {
-          content: 'FAVORITOS';
-          color: #636363;
-          font-size: 0.625rem;
+          content: 'LICITAÇÃO';
+          color: #000;
+          font-family: $quaternary-font;
+          font-size: 12px;
+          font-style: normal;
           font-weight: 700;
+          line-height: 16.644px;
         }
       }
     }
@@ -228,12 +245,12 @@
     }
   }
 
-  &--header__menu {
-    &::after {
-      content: url('assets/svg/arrow-down.svg');
-      margin-left: 0.3rem;
-    }
-  }
+  // &--header__menu {
+  //   &::after {
+  //     content: url('assets/svg/arrow-down.svg');
+  //     margin-left: 0.3rem;
+  //   }
+  // }
 }
 
 .styledLinkIcon {
