@@ -9,7 +9,8 @@
     @extend %container-large;
   }
 
-  &--home__shelf--col {
+  &--home__shelf--col,
+  &--shelf--col {
     padding: 56px 0 64px;
     align-items: flex-start;
 
@@ -34,10 +35,6 @@
   &--home__shelf--group-col {
     @include desktop {
       padding-left: 20.5px;
-    }
-
-    @include tablet {
-      padding-top: 15px;
     }
   }
 }

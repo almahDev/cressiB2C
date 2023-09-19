@@ -1,16 +1,16 @@
 {
-  "flex-layout.row#shelf-home-3": {
-    "title": "Vitrine 3",
-    "children": ["flex-layout.col#shelf-home-3"],
-    "props": {
-      "fullWidth": true,
-      "blockClass": ["home__shelf", "home__shelf-3"]
-    }
-  },
+  // "flex-layout.row#shelf-home-3": {
+  //   "title": "Vitrine 3",
+  //   "children": ["flex-layout.col#shelf-home-3"],
+  //   "props": {
+  //     "fullWidth": true,
+  //     "blockClass": ["home__shelf", "home__shelf-3"]
+  //   }
+  // },
 
   "flex-layout.col#shelf-home-3": {
     "children": [
-      "rich-text#shelf-home-3",
+      // "rich-text#shelf-home-3",
       "flex-layout.row#shelf-home-slider-3"
     ],
     "props": {
@@ -28,7 +28,7 @@
 
   "flex-layout.row#shelf-home-slider-3": {
     "children": [
-      "info-card#home-slider-3",
+      // "info-card#home-slider-3",
       "flex-layout.col#shelf-group-home-slider-3"
     ],
     "props": {
@@ -62,8 +62,8 @@
   },
   "slider-layout-group#shelf-home-slider-3": {
     "children": [
-      "list-context.product-list#shelf-home-slider-3-1",
-      "responsive-layout.desktop#shelf-home-slider-3-2"
+      "list-context.product-list#shelf-home-slider-3-1"
+      // "responsive-layout.desktop#shelf-home-slider-3-2"
     ],
     "props": {
       "blockClass": "home__shelf"
@@ -99,9 +99,9 @@
   "slider-layout#shelf-home-slider-3-1": {
     "props": {
       "itemsPerPage": {
-        "desktop": 2,
-        "tablet": 2,
-        "phone": 2
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
       },
       "infinite": true,
       "fullWidth": true,

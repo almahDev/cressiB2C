@@ -8,6 +8,16 @@
     @include tablet {
       padding-bottom: 45px;
     }
+
+    :global(.vtex-rich-text-0-x-heading--home__title) {
+      &::before {
+        display: none;
+      }
+
+      :global(.vtex-rich-text-0-x-strong--home__title) {
+        margin: 0;
+      }
+    }
   }
 }
 

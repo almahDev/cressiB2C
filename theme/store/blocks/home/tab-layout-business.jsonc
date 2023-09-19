@@ -10,7 +10,10 @@
     "children": [
       "flex-layout.row#title-business",
       "flex-layout.row#tab-business"
-    ]
+    ],
+    "props": {
+      "blockClass": ["home-business__block"]
+    }
   },
   "flex-layout.row#title-business": {
     "children": ["rich-text#title-business"]
@@ -25,10 +28,7 @@
   // Tab Layout
   "flex-layout.row#tab-business": {
     "title": "Tab Layout",
-    "children": [
-      "flex-layout.col#tab-business"
-      // "flex-layout.col#shelf-business"
-    ]
+    "children": ["flex-layout.col#tab-business", "flex-layout.col#shelf-home-3"]
   },
   "flex-layout.col#tab-business": {
     "children": ["tab-layout#home-business"],

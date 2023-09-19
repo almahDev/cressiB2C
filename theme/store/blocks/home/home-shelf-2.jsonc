@@ -13,7 +13,7 @@
 
   "flex-layout.col#shelf-home-2": {
     "children": [
-      "rich-text#shelf-home-2",
+      // "rich-text#shelf-home-2",
       "flex-layout.row#shelf-home-2-slider"
     ],
     "props": {
@@ -53,7 +53,7 @@
       "itemsPerPage": {
         "desktop": 3,
         "tablet": 2,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": true,

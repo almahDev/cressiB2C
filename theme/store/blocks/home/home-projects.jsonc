@@ -19,7 +19,7 @@
   "rich-text#home-collections-title-mobile": {
     "title": "Título (Mobile)",
     "props": {
-      "text": "## **BENEFÍCIOS CRESSI**",
+      "text": "## **CADASTRE-SE**",
       "blockClass": "home__title"
     }
   },

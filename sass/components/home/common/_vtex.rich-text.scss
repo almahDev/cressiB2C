@@ -14,14 +14,19 @@
     }
 
     .heading {
-      @include text($font-size-h3, #515151, $regular);
+      @include text($font-size-h3, #000, $regular);
       text-transform: uppercase;
       margin: 0;
       font-style: italic;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: url('assets/img/home/icon-info-uni.png');
+      }
 
       @include tablet {
-        font-size: $font-size-h3;
-        padding: 1rem 0;
+        font-size: $font-size-h3 - 12;
       }
     }
 
@@ -38,10 +43,10 @@
     .strong {
       @include text($font-size-h3, #515151, $extra-bold);
       text-transform: uppercase;
-      margin: 1.5rem 0;
+      margin: 0 0.56rem;
 
       @include tablet {
-        font-size: $font-size-h3;
+        font-size: $font-size-h3 - 12;
       }
     }
   }
