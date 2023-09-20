@@ -113,7 +113,11 @@
   },
   "flex-layout.row#links-desktop": {
     "title": "Almah |Header - Links - Desktop",
-    "children": ["login#header", "menu#wishlist", "minicart.v2#main-header"],
+    "children": [
+      "challenge-block#login-header-desktop",
+      "menu#wishlist",
+      "minicart.v2#main-header"
+    ],
     "props": {
       "blockClass": "block-main-links"
     }
@@ -214,13 +218,9 @@
   },
   "flex-layout.row#1-mobile": {
     "title": "Almah |Header - Conteúdo - Mobile",
-    "children": [
-      "logo#header",
-      "drawer#header-mobile",
-      "flex-layout.row#mob-list"
-    ],
+    "children": ["logo#header", "flex-layout.row#mob-list"],
     "props": {
-      "blockClass": "header__main",
+      "blockClass": ["header__main", "header__main--mobile"],
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
@@ -228,9 +228,24 @@
   },
   "flex-layout.row#mob-list": {
     "props": {
-      "blockClass": "header__main--mob"
+      "width": "grow",
+      "preserveLayoutOnMobile": true,
+      "colGap": 6,
+      "blockClass": "header__main--mob-list"
     },
-    "children": ["minicart.v2#main-header"]
+    "children": [
+      "drawer#header-mobile",
+      "login#mobile",
+      "minicart.v2#main-header"
+    ]
+  },
+  "login#mobile": {
+    "title": "Almah | Header - Link - Login - Mobile",
+    "props": {
+      "accountOptionsButtonBehavior": "link",
+      "logInButtonBehavior": "link",
+      "showIconProfile": false
+    }
   },
 
   "flex-layout.row#bar-search": {

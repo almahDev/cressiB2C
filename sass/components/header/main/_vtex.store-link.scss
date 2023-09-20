@@ -1,0 +1,45 @@
+.link {
+  &--header__link-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    height: 29px;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: brightness(0.9);
+    }
+  }
+
+  &--header__link-login--pedido-express {
+    background: #ffdb00;
+  }
+
+  &--header__link-login--refaca-seu-pedido {
+    background: #000;
+  }
+}
+
+.label {
+  &--header__link-login {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-size-xxs;
+    font-weight: 700;
+    line-height: normal;
+    white-space: pre;
+  }
+
+  &--header__link-login--pedido-express {
+    color: #000;
+  }
+
+  &--header__link-login--refaca-seu-pedido {
+    color: #fff;
+  }
+}

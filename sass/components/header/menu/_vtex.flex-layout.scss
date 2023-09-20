@@ -76,6 +76,21 @@
       }
     }
   }
+
+  &--header__main--mob-list {
+    :global(.vtex-login-2-x-container) {
+      :global(.vtex-button__label) {
+        &::before {
+          background: none !important;
+          content: url('assets/svg/icon-user.svg') !important;
+          display: unset !important;
+          height: unset !important;
+          width: unset !important;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+  }
 }
 
 .flexColChild {

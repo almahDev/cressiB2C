@@ -36,9 +36,9 @@
     }
   }
 
-  &--header__main--mob {
-    display: flex;
-  }
+  // &--header__main--mob {
+  //   display: flex;
+  // }
 
   &--header__login--mobile {
     align-items: center;
@@ -80,6 +80,21 @@
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
       flex: 1;
       margin-left: 36px;
+    }
+  }
+
+  &--challenge__login-header--desktop {
+    .stretchChildrenWidth {
+      flex: unset;
+      margin: 0;
+    }
+
+    :global(.vtex-login-2-x-container) {
+      padding-right: 12px;
+
+      :global(.vtex-login-2-x-profile) {
+        display: none;
+      }
     }
   }
 }
