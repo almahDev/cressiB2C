@@ -13,7 +13,7 @@
 
   "flex-layout.col#shelf-home-2": {
     "children": [
-      // "rich-text#shelf-home-2",
+      "rich-text#shelf-home-2",
       "flex-layout.row#shelf-home-2-slider"
     ],
     "props": {
@@ -24,7 +24,7 @@
   "rich-text#shelf-home-2": {
     "title": "Vitrine 2 - Título",
     "props": {
-      "text": "## **ENCONTRE** SUA COZINHA",
+      "text": "## **EM PROMOÇÃO**",
       "blockClass": "home__title"
     }
   },

@@ -28,13 +28,16 @@
   // Tab Layout
   "flex-layout.row#tab-business": {
     "title": "Tab Layout",
-    "children": ["flex-layout.col#tab-business", "flex-layout.col#shelf-home-3"]
-  },
-  "flex-layout.col#tab-business": {
-    "children": ["tab-layout#home-business"],
+    "children": [
+      "flex-layout.col#tab-business",
+      "flex-layout.col#shelf-home-3"
+    ],
     "props": {
       "blockClass": ["tab-layout-container"]
     }
+  },
+  "flex-layout.col#tab-business": {
+    "children": ["tab-layout#home-business"]
   },
   "tab-layout#home-business": {
     "children": ["tab-list#home", "tab-content#home"],
