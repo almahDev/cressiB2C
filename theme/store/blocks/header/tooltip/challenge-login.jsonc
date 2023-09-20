@@ -1,0 +1,21 @@
+{
+  "challenge-block#login-header-tooltip": {
+    "blocks": ["challenge-content#login-header-tooltip"],
+    "props": {
+      "blockClass": "challenge__login-header--tooltip"
+    }
+  },
+  "challenge-content#login-header-tooltip": {
+    "children": ["login#header-tooltip"],
+    "props": {
+      "blockClass": "challenge__login-header--tooltip"
+    }
+  },
+  "login#header-tooltip": {
+    "title": "Almah | Header - Link - Login",
+    "props": {
+      "blockClass": "challenge__login-header--tooltip",
+      "showIconProfile": false
+    }
+  }
+}

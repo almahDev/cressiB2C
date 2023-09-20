@@ -28,6 +28,7 @@
     },
     "children": [
       "flex-layout.col#search-desktop",
+      "challenge-block#login-header-tooltip",
       "flex-layout.col#spacer",
       "rich-text#tooltip-01",
       "flex-layout.col#tooltip-social"
@@ -47,40 +48,27 @@
   "flex-layout.row#4-desktop": {
     "title": "Almah | Header - Conteúdo - Desktop",
     "props": {
+      "fullWidth": true,
       "blockClass": "header__main",
       "horizontalAlign": "center",
-      "verticalAlign": "center"
+      "verticalAlign": "center",
+      "colGap": 8
     },
-    "children": ["disposition-layout#row-4"]
+    "children": ["flex-layout.col#logo-desktop", "flex-layout.row#main-line"]
   },
-  "disposition-layout#row-4": {
-    "title": "Almah | Header - Disposição do conteúdo",
-    "children": ["flex-layout.col#logo-desktop", "flex-layout.col#search-link"],
-    "props": {
-      "blockClass": "header__main--order",
-      "disposition": [
-        {
-          "order": 1
-        },
-        {
-          "order": 2
-        },
-        {
-          "order": 3
-        }
-      ]
-    }
-  },
-  "flex-layout.col#search-link": {
-    "children": ["flex-layout.row#main-line"]
-  },
+  // "flex-layout.col#search-link": {
+  //   "children": ["flex-layout.row#main-line"],
+  //   "props": {
+  //     "blockClass": ["search-link-desk"]
+  //   }
+  // },
   "flex-layout.row#main-line": {
     "children": [
       "vtex.menu@2.x:menu#main-menu",
       "flex-layout.col#links-desktop"
     ],
     "props": {
-      "width": "80%",
+      "colGap": 0,
       "blockClass": "main-elements-desk"
     }
   },
@@ -99,7 +87,7 @@
     "title": "Almah |Header - Logo",
     "props": {
       "verticalAlign": "middle",
-      "width": "20%",
+      "width": "16%",
       "blockClass": ["logo-b2bcressi-desk"]
     },
     "children": ["logo#header"]
@@ -119,6 +107,7 @@
       "minicart.v2#main-header"
     ],
     "props": {
+      "colGap": 0,
       "blockClass": "block-main-links"
     }
   },

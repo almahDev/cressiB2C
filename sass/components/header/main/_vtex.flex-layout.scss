@@ -68,13 +68,13 @@
     }
   }
 
-  &--main-elements-desk {
-    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-      &:first-child {
-        width: 55% !important;
-      }
-    }
-  }
+  // &--main-elements-desk {
+  //   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  //     &:first-child {
+  //       width: 55% !important;
+  //     }
+  //   }
+  // }
 
   &--block-main-links {
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
@@ -106,10 +106,14 @@
     align-items: center;
   }
 
-  &--logo-b2bcressi-desk {
-    width: 20rem !important;
-    margin-right: 2.25rem;
-  }
+  // &--logo-b2bcressi-desk {
+  //   width: 16% !important;
+  //   margin-right: 2.25rem;
+  // }
+
+  // &--search-link-desk {
+  //   width: 84% !important;
+  // }
 }
 
 // .flexColChild {
