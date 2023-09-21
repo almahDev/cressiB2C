@@ -9,37 +9,41 @@
   margin-right: 0.125rem;
 
   &::after {
-    content: 'Faltam';
-    font-size: $font-size-xs;
+    content: 'Faltam apenas ';
+    color: #000;
+    font-family: $secondary-font;
+    font-size: $font-size-sm;
     font-weight: $semi-bold;
-    color: $white;
+    line-height: normal;
   }
 }
 
 .text4 {
-  font-size: $font-size-xs !important;
+  font-size: $font-size-sm !important;
+  color: #000;
+  font-family: $secondary-font;
   font-weight: $semi-bold;
-  color: $white;
   margin: 0;
-  transform: translateY(19px);
 }
 
 .freigthScaleContainer {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   box-shadow: none !important;
   padding: 0 0 1rem !important;
 }
 
 .currencyContainer {
   font-weight: $semi-bold;
-  font-size: $font-size-xs !important;
+  font-size: $font-size-sm !important;
 
   &::after {
-    content: ' para o ';
-    font-size: $font-size-xs;
+    content: ' para você ganhar ';
+    color: #000;
+    font-family: $secondary-font;
+    font-size: $font-size-sm;
     font-weight: $semi-bold;
-    color: $white;
+    line-height: normal;
   }
 }
 
@@ -48,19 +52,23 @@
 .currencyInteger,
 .currencyDecimal,
 .currencyFraction {
-  font-size: $font-size-xs !important;
+  color: #000;
+  font-family: $secondary-font;
+  font-size: $font-size-sm !important;
   font-weight: $semi-bold;
-  color: $white;
+  line-height: normal;
 }
 
 .currencyText {
   font-size: 0 !important;
 
   &::after {
-    content: 'FRETE GRÁTIS';
-    font-size: $font-size-xs;
+    content: 'frete grátis';
+    color: #000;
+    font-family: $secondary-font;
+    font-size: $font-size-sm;
     font-weight: $semi-bold;
-    color: $white;
+    line-height: normal;
   }
 }
 
