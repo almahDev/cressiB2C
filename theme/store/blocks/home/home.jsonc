@@ -18,7 +18,7 @@
       "flex-layout.row#shelf-home-1",
       // "responsive-layout.desktop#shelf-home-2",
       // "flex-layout.row#shelf-home-3",
-      "flex-layout.row#home-projects",
+      "challenge-block#home-projects",
       // "flex-layout.row#home-collections",
       "flex-layout.row#home-new-tech",
       "flex-layout.row#tab-layout-business",

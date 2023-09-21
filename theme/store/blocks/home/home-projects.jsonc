@@ -1,4 +1,72 @@
 {
+  "challenge-block#home-projects": {
+    "blocks": [
+      "challenge-content#home-projects",
+      "challenge-fallback#home-projects"
+    ]
+  },
+
+  "challenge-content#home-projects": {
+    "children": ["flex-layout.row#home-projects-login"]
+  },
+  "challenge-fallback#home-projects": {
+    "children": ["flex-layout.row#home-projects"]
+  },
+
+  "flex-layout.row#home-projects-login": {
+    "title": "Coleções Login",
+    "children": [
+      "list-context.image-list#home-projects-login",
+      "responsive-layout.mobile#home-collections-title-mobile-login",
+      "info-card#home-projects-login"
+    ],
+    "props": {
+      "colGap": 4,
+      "fullWidth": true,
+      "experimentalHideEmptyCols": true,
+      "blockClass": "home__projects"
+    }
+  },
+  "responsive-layout.mobile#home-collections-title-mobile-login": {
+    "children": ["rich-text#home-collections-title-mobile-login"]
+  },
+  "rich-text#home-collections-title-mobile-login": {
+    "title": "Título (Mobile)",
+    "props": {
+      "text": "## **BENEFÍCIOS CRESSI**",
+      "blockClass": "home__title"
+    }
+  },
+  "info-card#home-projects-login": {
+    "title": "Bloco de Informações",
+    "props": {
+      "id": "info-card-home-projects",
+      "isFullModeStyle": false,
+      "headline": "## CADASTRE-SE",
+      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "callToActionText": "CADASTRE-SE",
+      "callToActionUrl": "/",
+      "callToActionMode": "button",
+      "blockClass": "home__projects",
+      "textAlignment": "left",
+      "textMode": "rich-text",
+      "width": "55%"
+    }
+  },
+  "list-context.image-list#home-projects-login": {
+    "title": "Lista de Imagens",
+    "children": ["slider-layout#home-projects"],
+    "props": {
+      "height": "100%",
+      "preload": false,
+      "images": [
+        {
+          "image": "assets/img/home/banner-cadastre-se.png"
+        }
+      ]
+    }
+  },
+
   "flex-layout.row#home-projects": {
     "title": "Coleções",
     "children": [
