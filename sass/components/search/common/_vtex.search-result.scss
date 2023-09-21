@@ -205,7 +205,6 @@
       background: transparent !important;
       border: 0.125rem solid $primary-pure-500 !important;
       border-radius: 0.125rem;
-      height: 3rem;
       width: 12.5625rem;
 
       &:hover,
@@ -216,8 +215,13 @@
     }
 
     :global(.vtex-button__label) {
-      @include text($font-size-md, $primary-pure-500, $bold);
+      @include text(0, $primary-pure-500, $bold);
       text-transform: initial;
+
+      &::after {
+        content: 'CARREGAR MAIS';
+        font-size: 14px;
+      }
 
       &:hover,
       &:active,
@@ -376,7 +380,7 @@
     border-radius: 0.125rem;
 
     @include tablet {
-      border-color: $color-1;
+      border-color: $secondary-light-50;
       border-radius: 0;
       // background-color: $color-1;
     }
@@ -819,7 +823,7 @@
       margin-right: 0.75rem;
       border-width: 0.0625rem;
       border-radius: 0;
-      border-color: $color-1;
+      border-color: $secondary-light-50;
       margin-top: 0.0625rem;
       // background-color: $color-1;
     }
@@ -845,6 +849,10 @@
     &--selected {
       :global(.vtex-checkbox__label) {
         color: $text-pure-500;
+      }
+
+      :global(.vtex-checkbox__inner-container) {
+        background-color: $secondary-light-50 !important;
       }
     }
   }
@@ -1353,9 +1361,9 @@
   }
 
   &--al-search__filter {
-    @include text($font-size-md, #515151, $bold);
+    @include text($font-size-md, #000, $bold);
     line-height: 1.1719rem;
-    text-transform: initial;
+    text-transform: uppercase;
   }
 }
 
@@ -1425,19 +1433,26 @@
 }
 
 .galleryTitle--layout {
-  @include text(1.0625rem, #000, $regular);
+  @include text(1.875rem, #000, $bold);
   line-height: 1.7581rem;
   position: relative;
-  text-transform: none;
+  font-style: italic;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 1.5rem;
   padding-top: 1.44rem;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: url('assets/img/home/icon-info-uni.png');
+    margin-right: 0.5rem;
+  }
 
   @include tablet {
     padding-left: 0.81rem;
     padding-right: 0.81rem;
-    font-size: 0.75rem;
+    font-size: 1.25rem;
   }
 }
 
