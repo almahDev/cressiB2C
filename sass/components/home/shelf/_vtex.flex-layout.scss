@@ -1,6 +1,8 @@
 .flexRow {
   &--home__shelf-1 {
-    padding-top: 28px;
+    @media (min-width: 768px) {
+      padding-top: 28px;
+    }
   }
 }
 
@@ -14,7 +16,7 @@
     align-items: flex-start;
 
     @include tablet {
-      padding: 26px 12px 56px;
+      padding: 0px 12px 2rem;
     }
 
     @include tablet-min {
@@ -41,5 +43,9 @@
 .flexColChild {
   &--home__shelf-2--col {
     padding-bottom: 25px;
+
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 }

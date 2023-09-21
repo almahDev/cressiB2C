@@ -20,6 +20,7 @@
       font-style: italic;
       display: flex;
       align-items: center;
+      margin-bottom: 3.13rem;
 
       &::before {
         content: url('assets/img/home/icon-info-uni.png');
@@ -27,6 +28,7 @@
 
       @include tablet {
         font-size: $font-size-h3 - 12;
+        margin-bottom: 1.18rem;
       }
     }
 

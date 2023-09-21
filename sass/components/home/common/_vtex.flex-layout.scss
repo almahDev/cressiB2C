@@ -43,6 +43,14 @@
     &--story-mobile-background {
       background-color: $low-dark;
     }
+
+    &--new-tech {
+      margin-bottom: 7.25rem;
+
+      @include tablet {
+        margin-bottom: 1.25rem;
+      }
+    }
   }
 }
 
@@ -67,6 +75,20 @@
 
     :global(.vtex-store-components-3-x-container) {
       padding: 0;
+    }
+  }
+
+  &--home__selecao {
+    margin-bottom: 5rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 3.38rem;
+    }
+  }
+
+  &--story-mobile-background {
+    @include tablet {
+      margin-top: 1.5rem;
     }
   }
 
@@ -105,6 +127,10 @@
 
     &--tab-layout-container {
       margin-bottom: 10.88rem;
+
+      @include tablet {
+        margin-bottom: 5rem;
+      }
     }
   }
 }

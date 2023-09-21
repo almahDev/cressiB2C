@@ -7,7 +7,7 @@
     margin-top: 4rem;
 
     @include tablet {
-      padding-bottom: 45px;
+      margin: 0px;
     }
 
     :global(.vtex-rich-text-0-x-heading--home__title) {

@@ -1,13 +1,16 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--tab-layout-container) {
   &:nth-child(1) {
     > :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      &:first-child {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-radius: 15px;
+      }
+
       @media (min-width: 1336px) {
         &:first-child {
           width: 70% !important;
           margin-right: 5%;
-          background-color: #f9f9f9;
-          padding: 1rem;
-          border-radius: 15px;
         }
 
         &:last-child {
