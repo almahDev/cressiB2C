@@ -76,6 +76,10 @@
     :global(.vtex-store-components-3-x-container) {
       padding: 0;
     }
+
+    @include tablet {
+      margin-top: 1.5rem;
+    }
   }
 
   &--home__selecao {
@@ -83,12 +87,6 @@
 
     @media (max-width: 768px) {
       margin-bottom: 3.38rem;
-    }
-  }
-
-  &--story-mobile-background {
-    @include tablet {
-      margin-top: 1.5rem;
     }
   }
 
