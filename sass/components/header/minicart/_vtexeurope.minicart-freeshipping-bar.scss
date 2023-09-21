@@ -9,7 +9,7 @@
   margin-right: 0.125rem;
 
   &::after {
-    content: "Faltam";
+    content: 'Faltam';
     font-size: $font-size-xs;
     font-weight: $semi-bold;
     color: $white;
@@ -36,7 +36,7 @@
   font-size: $font-size-xs !important;
 
   &::after {
-    content: " para o ";
+    content: ' para o ';
     font-size: $font-size-xs;
     font-weight: $semi-bold;
     color: $white;
@@ -57,7 +57,7 @@
   font-size: 0 !important;
 
   &::after {
-    content: "FRETE GRÁTIS";
+    content: 'FRETE GRÁTIS';
     font-size: $font-size-xs;
     font-weight: $semi-bold;
     color: $white;
@@ -65,8 +65,8 @@
 }
 
 .barContainer {
-  background: $c-sup-1;
-  border-radius: 4px 0px 0px 4px;
+  background: #ffdb00;
+  border-radius: 6px;
   height: 100%;
 }
 
@@ -75,14 +75,14 @@
   align-items: center;
   justify-content: center;
   white-space: pre;
-  transform: translateY(19px);
+  transform: 0;
   margin: 0px;
 }
 
 .sliderContainer {
-  background: $high-light;
-  border-radius: 4px;
-  height: 1.5rem;
+  background: #000;
+  border-radius: 6px;
+  height: 16px;
   border: 0;
   margin: 0;
 }

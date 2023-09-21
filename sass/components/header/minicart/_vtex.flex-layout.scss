@@ -5,9 +5,15 @@
 
   &--minicart-footer {
     box-shadow: none;
-    padding: 0.5rem 1rem 0;
+    padding: 0.5rem 42px 0 53px;
     background-color: $white;
     position: static;
+  }
+
+  &--al-cart-list-row {
+    &:not(:last-child) {
+      padding-bottom: 68px;
+    }
   }
 }
 
@@ -17,7 +23,7 @@
   }
 
   &--al-cart-list-row {
-    padding: 0 1.5rem;
+    padding: 0 30px 0 50px;
   }
 
   &--al-quantity {
@@ -42,7 +48,11 @@
 .flexCol {
   &--al-cart-image {
     @media (min-width: $screen-lg-min) {
-      margin-right: 1.94rem;
+      margin-right: 18px;
     }
+  }
+
+  &--al-cart {
+    position: relative;
   }
 }

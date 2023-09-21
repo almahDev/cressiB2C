@@ -16,13 +16,17 @@
       .summaryItemPrice {
         font-size: 1.25rem;
         font-weight: $regular;
+        font-family: $secondary-font;
         color: $black;
       }
 
       .summaryItemLabel {
-        color: #40d6c6;
-        font-style: normal;
+        color: #000;
+        font-size: 30px;
+        font-style: italic;
         font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
 
         &::after {
           content: ':';
@@ -31,7 +35,11 @@
       }
 
       .summaryItemPrice {
-        color: #808080;
+        color: #ffdb00;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
         text-align: left;
         display: flex;
       }
@@ -41,15 +49,17 @@
       .summaryItemLabel,
       .summaryItemPrice {
         font-size: 1.25rem;
-        font-weight: $bold;
+        font-family: $secondary-font;
         color: $black;
       }
 
       .summaryItemLabel {
-        color: #40d6c6;
-        font-size: 1.25rem;
-        font-style: normal;
+        color: #000;
+        font-size: 30px;
+        font-style: italic;
         font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
 
         &::after {
           content: ':';
@@ -58,11 +68,20 @@
       }
 
       .summaryItemPrice {
-        color: #808080;
-        font-weight: $regular;
+        color: #ffdb00;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
         text-align: left;
         display: flex;
       }
     }
+  }
+}
+
+.summarySmallContent {
+  &--al-cart {
+    padding-bottom: 28px;
   }
 }

@@ -1,22 +1,17 @@
 .minicartTitle {
   font-size: 0;
   font-style: normal;
-  margin-top: 2.5rem;
-  padding: 0 1.5rem 3.31rem 1.5rem;
+  margin: 0;
+  padding: 48px 0 88px 53px;
 
   &::before {
-    content: 'MINHAS';
+    content: 'MINHAS COMPRAS';
     color: $color-1;
-    font-size: 1.375rem;
+    font-family: $secondary-font;
+    font-size: 30px;
+    font-style: italic;
     font-weight: 700;
-    margin-right: 0.5rem;
-  }
-
-  &::after {
-    content: 'COMPRAS';
-    font-size: 22px;
-    color: #4f4f4f;
-    font-weight: normal;
+    line-height: normal;
   }
 }
 
@@ -68,15 +63,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 48px;
+    height: 66px;
     width: 100%;
-    text-transform: none;
-    font-size: 1.25rem;
-    font-weight: $semi-bold;
+    font-size: 22px;
+    font-weight: $bold;
     color: $white;
-    font-family: $main-font;
-    text-transform: capitalize;
-    margin: 0 auto 1rem;
+    text-transform: uppercase;
+    margin: 0 auto;
     text-decoration: none;
     border: 1px solid#bdbdbd;
     border-radius: 6px;
