@@ -168,8 +168,33 @@
       padding: 30px 5rem 27px;
     }
 
+    @include desktop {
+      &::before {
+        content: '';
+        display: inline-block;
+        background: url('assets/svg/icon-header-features.svg') no-repeat center;
+        background-size: contain;
+        width: 45px;
+        height: 504px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        left: 0;
+
+        @include tablet {
+          width: 170px;
+        }
+      }
+    }
+
     .styledLink {
-      @include link($font-size-sm, $text-color-1-400, 400, none);
+      color: #515151;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
       text-transform: none;
       display: block;
 
@@ -182,7 +207,12 @@
       }
 
       &--highlight {
-        @include link(1.125rem, #515151, 700, none);
+        color: #0077c8;
+        font-family: $secondary-font;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
         padding-bottom: 10px;
         text-transform: uppercase;
         transition: all 0.2s;
@@ -190,8 +220,13 @@
         &:hover,
         &:active,
         &:focus {
-          color: $text-color-1-500;
+          color: #0077c8;
+          opacity: 0.8;
           text-decoration: none;
+        }
+
+        &::before {
+          content: none;
         }
       }
     }
