@@ -153,9 +153,9 @@
 .submenuWrapper {
   &--main-menu-department-submenu,
   &--header__menu {
-    box-shadow: 0px 0.25rem 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 200000;
-    border-radius: 0px 0px 0.25rem 0.25rem;
+    border-radius: 0px 0px 5px 5px;
     padding: 30px 21rem 27px;
     right: 0;
     transition: all 0.2s;
@@ -163,6 +163,8 @@
     @extend %container-large;
     max-width: 100vw;
     min-width: 100vw;
+    min-height: 460px;
+    border: 1px solid #c4c4c4;
 
     @media (max-width: 1400px) {
       padding: 30px 5rem 27px;
@@ -305,17 +307,17 @@
 }
 
 .menuItem {
-  &--header__menu--isOpen {
-    .styledLinkContainer--header__menu {
-      .styledLink--header__menu {
-        .styledLinkContent--header__menu {
-          color: #101010;
-          text-decoration: none;
-          transition: all 0.2s;
-        }
-      }
-    }
-  }
+  // &--header__menu--isOpen {
+  //   .styledLinkContainer--header__menu {
+  //     .styledLink--header__menu {
+  //       .styledLinkContent--header__menu {
+  //         color: #101010;
+  //         text-decoration: none;
+  //         transition: all 0.2s;
+  //       }
+  //     }
+  //   }
+  // }
   &--header__tooltip--link {
     padding-right: 2rem;
 

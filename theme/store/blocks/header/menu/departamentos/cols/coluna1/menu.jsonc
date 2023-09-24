@@ -27,12 +27,7 @@
         "main-menu-column",
         "main-menu-column-first"
       ],
-      "title": {
-        "itemProps": {
-          "text": ""
-        },
-        "type": "custom"
-      },
+      "additionalDef": "none",
       "items": [
         {
           "type": "custom",
@@ -41,8 +36,8 @@
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "tagTitle": "CATEGORIA 01",
+            "text": "CATEGORIA 01"
           }
         },
         {
@@ -106,12 +101,7 @@
         "main-menu-column",
         "main-menu-column-first"
       ],
-      "title": {
-        "itemProps": {
-          "text": ""
-        },
-        "type": "custom"
-      },
+      "additionalDef": "none",
       "items": [
         {
           "type": "custom",
@@ -120,8 +110,8 @@
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "tagTitle": "CATEGORIA 04",
+            "text": "CATEGORIA 04"
           }
         },
         {
