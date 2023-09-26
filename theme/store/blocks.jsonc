@@ -20,10 +20,17 @@
   },
 
   "store.login": {
-    "blocks": ["login-content#default"],
+    "blocks": ["rich-text#title-login", "login-content#default"],
     "props": {
       "iconToTheRight": true,
       "optionsTitle": ""
+    }
+  },
+  "rich-text#title-login": {
+    "title": "Titulo Login",
+    "props": {
+      "text": "## **ENTRE OU CADASTRE-SE**",
+      "blockClass": "home__title"
     }
   },
 
@@ -32,6 +39,8 @@
       "isInitialScreenOptionOnly": false,
       "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true,
+      "emailPlaceholder": "Digite seu e-mail",
+      "passwordPlaceholder": "Digite sua senha",
       "optionsTitle": ""
     }
   },
