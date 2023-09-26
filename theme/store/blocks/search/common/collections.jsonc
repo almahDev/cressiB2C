@@ -10,7 +10,7 @@
   "flex-layout.col#search-collections": {
     "children": [
       "rich-text#search-collections-title",
-      "list-context.info-card-list#search-collections"
+      "blog-latest-posts-preview.wordpress-latest-posts-preview"
     ],
     "props": {
       "blockClass": ["home__collections", "search__collections"]
@@ -19,73 +19,15 @@
   "rich-text#search-collections-title": {
     "title": "Coleções - Título",
     "props": {
-      "text": "## **Nossas** Coleções",
+      "text": "## **ARTIGOS SOBRE ESTA CATEGORIA**",
       "blockClass": ["home__title", "search__collections--title"]
     }
   },
-  "list-context.info-card-list#search-collections": {
-    "children": ["slider-layout#search-collections"],
+
+  "blog-latest-posts-preview.wordpress-latest-posts-preview": {
     "props": {
-      "infoCards": [
-        {
-          "id": "info-card-search-collection-1",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/home-collections-1.png",
-          "callToActionText": "SALA DE JANTAR",
-          "callToActionUrl": "#",
-          "imageActionUrl": "#",
-          "callToActionMode": "link",
-          "blockClass": ["home__collections", "search__collections"],
-          "textAlignment": "center"
-        },
-        {
-          "id": "info-card-search-collection-2",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/home-collections-2.png",
-          "callToActionText": "QUARTOS",
-          "callToActionUrl": "#",
-          "imageActionUrl": "#",
-          "callToActionMode": "link",
-          "blockClass": ["home__collections", "search__collections"],
-          "textAlignment": "center"
-        },
-        {
-          "id": "info-card-search-collection-3",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/home-collections-1.png",
-          "callToActionText": "SALA DE JANTAR",
-          "callToActionUrl": "#",
-          "imageActionUrl": "#",
-          "callToActionMode": "link",
-          "blockClass": ["home__collections", "search__collections"],
-          "textAlignment": "center"
-        },
-        {
-          "id": "info-card-search-collection-4",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/home-collections-2.png",
-          "callToActionText": "QUARTOS",
-          "callToActionUrl": "#",
-          "imageActionUrl": "#",
-          "callToActionMode": "link",
-          "blockClass": ["home__collections", "search__collections"],
-          "textAlignment": "center"
-        }
-      ]
-    }
-  },
-  "slider-layout#search-collections": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 2,
-        "tablet": 2,
-        "phone": 2
-      },
-      "blockClass": ["home__collections", "search__collections"],
-      "fullWidth": true,
-      "infinite": false,
-      "showNavigationArrows": "mobileOnly",
-      "showPaginationDots": "never"
+      "title": "Teste",
+      "showDates": true
     }
   }
 }

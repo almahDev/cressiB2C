@@ -43,7 +43,7 @@
     }
 
     .strong {
-      @include text($font-size-h3, #515151, $extra-bold);
+      @include text(1.875rem, #515151, $extra-bold);
       text-transform: uppercase;
       margin: 0 0.56rem;
 
