@@ -1,0 +1,17 @@
+.flex {
+  &Col {
+    &--background-cadastre {
+      background-color: rgba(235, 235, 235, 0.5);
+      margin: 0.75rem;
+      padding: 2rem 0.75rem;
+      text-align: center;
+      height: inherit;
+    }
+
+    &Child {
+      &--background-cadastre {
+        height: auto !important;
+      }
+    }
+  }
+}

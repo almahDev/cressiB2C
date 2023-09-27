@@ -1,0 +1,26 @@
+.link {
+  &--cta-lojista,
+  &--cta-instrutor {
+    padding: 0.6rem;
+    display: block;
+    width: 100%;
+    max-width: 18.5rem;
+    margin: auto;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.1875rem;
+  }
+
+  &--cta-lojista {
+    background-color: $secondary-pure-500;
+    color: $black;
+    margin-bottom: 0.68rem;
+  }
+
+  &--cta-instrutor {
+    background-color: $black;
+    color: $white;
+  }
+}

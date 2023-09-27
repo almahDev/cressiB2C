@@ -1,0 +1,58 @@
+{
+  "flex-layout.row#content": {
+    "children": [
+      "flex-layout.col#default-content",
+      "flex-layout.col#cadastro-content"
+    ]
+  },
+  "flex-layout.col#default-content": {
+    "children": ["login-content#default"]
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true,
+      "emailPlaceholder": "Digite seu e-mail",
+      "passwordPlaceholder": "Digite sua senha",
+      "optionsTitle": ""
+    }
+  },
+
+  "flex-layout.col#cadastro-content": {
+    "children": [
+      "image#cadastre-se",
+      "rich-text#sub-text-cadastro",
+      "link#lojista",
+      "link#instrutor"
+    ],
+    "props": {
+      "blockClass": ["background-cadastre"]
+    }
+  },
+  "image#cadastre-se": {
+    "props": {
+      "src": "assets/img/login/CADASTRE-SE.png"
+    }
+  },
+  "rich-text#sub-text-cadastro": {
+    "props": {
+      "text": "CADASTRE-SE",
+      "blockClass": "text-login"
+    }
+  },
+  "link#lojista": {
+    "props": {
+      "label": "SOU LOJISTA",
+      "href": "",
+      "blockClass": ["cta-lojista"]
+    }
+  },
+  "link#instrutor": {
+    "props": {
+      "label": "SOU INSTRUTOR",
+      "href": "",
+      "blockClass": ["cta-instrutor"]
+    }
+  }
+}

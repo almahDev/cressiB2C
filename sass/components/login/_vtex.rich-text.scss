@@ -1,0 +1,14 @@
+.wrapper {
+  &--text-login {
+    width: 100%;
+  }
+}
+
+.paragraph {
+  &--text-login {
+    color: $black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}

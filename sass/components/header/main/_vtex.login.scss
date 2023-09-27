@@ -337,8 +337,8 @@
 
   .sendButton {
     :global(.vtex-button) {
-      width: 100%;
       @extend %primary-button;
+      width: 90%;
       padding: 0 !important;
       transition: all 0.2s ease-in-out !important;
       border-radius: 0.1875rem;
