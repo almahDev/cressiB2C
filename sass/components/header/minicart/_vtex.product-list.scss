@@ -101,6 +101,11 @@
   &--al-cart {
     position: absolute;
     top: 20px;
+
+    @include tablet {
+      top: unset;
+      bottom: 0;
+    }
   }
 }
 

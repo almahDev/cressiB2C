@@ -23,6 +23,25 @@
     background-color: #f9f9f9;
     padding: 0 17px 16px 20px;
   }
+
+  &--block-search-bar--logged {
+    :global(
+        .vtex-store-components-3-x-searchBarInnerContainer--header__search
+      ) {
+      // max-width: 145px;
+      // width: 100%;
+
+      // @media (max-width: 412px) {
+      //   max-width: 130px;
+      // }
+    }
+
+    // .stretchChildrenWidth {
+    //   &:not(:first-child) {
+    //     flex: 1;
+    //   }
+    // }
+  }
 }
 
 .flexRowContent {
@@ -71,6 +90,10 @@
         }
       }
     }
+  }
+
+  &--block-search-bar--logged {
+    align-items: center;
   }
 
   // &--main-elements-desk {

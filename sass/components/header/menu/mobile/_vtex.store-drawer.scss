@@ -127,7 +127,11 @@
     padding: 0;
 
     &::before {
-      content: url('assets/svg/icon-menu-hamburger.svg');
+      content: '';
+      background: url('assets/svg/icon-menu-hamburger.svg') no-repeat center;
+      display: block;
+      width: 27px;
+      height: 20px;
     }
   }
 }

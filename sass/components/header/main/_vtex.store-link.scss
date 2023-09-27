@@ -14,6 +14,12 @@
     &:focus {
       filter: brightness(0.9);
     }
+
+    @include tablet {
+      min-width: 100%;
+      // max-width: 106px;
+      padding: 0 13px;
+    }
   }
 
   &--header__link-login--pedido-express {
@@ -38,6 +44,10 @@
     font-weight: 700;
     line-height: normal;
     white-space: pre;
+
+    @include tablet {
+      font-size: $font-size-xxs - 1;
+    }
   }
 
   &--header__link-login--pedido-express {

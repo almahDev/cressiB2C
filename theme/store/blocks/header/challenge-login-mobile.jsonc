@@ -1,0 +1,50 @@
+{
+  "challenge-block#login-header-mobile": {
+    "blocks": [
+      "challenge-content#login-header-mobile",
+      "challenge-fallback#login-header-mobile"
+    ],
+    "props": {
+      "blockClass": "challenge__login-header--mobile"
+    }
+  },
+  "challenge-content#login-header-mobile": {
+    "children": ["flex-layout.row#bar-search-logged"],
+    "props": {
+      "blockClass": "challenge__login-header--mobile"
+    }
+  },
+  "challenge-fallback#login-header-mobile": {
+    "children": ["flex-layout.row#bar-search"],
+    "props": {
+      "blockClass": "challenge__login-header--mobile"
+    }
+  },
+  "flex-layout.row#bar-search-logged": {
+    "title": "Almah | Barra de Busca | Logado",
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "colGap": 2,
+      // "colSizing": "auto",
+      "blockClass": ["block-search-bar", "block-search-bar--logged"]
+    },
+    "children": [
+      "search-bar#logged",
+      "link#login-header-1",
+      "link#login-header-2"
+    ]
+  },
+
+  "search-bar#logged": {
+    "props": {
+      "width": "40%",
+      "placeholder": "Busca",
+      "containerMode": "container",
+      "openAutocompleteOnFocus": true,
+      "autocompleteFullWidth": false,
+      "blockClass": "header__search",
+      "displayMode": "clear-button"
+    }
+  }
+}

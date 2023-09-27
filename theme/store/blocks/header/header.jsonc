@@ -194,7 +194,10 @@
     ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile", "flex-layout.row#bar-search"]
+    "children": [
+      "flex-layout.row#1-mobile",
+      "challenge-block#login-header-mobile"
+    ]
   },
   "flex-layout.row#0-mobile": {
     "title": "Almah | Header - Topbar - Mobile",

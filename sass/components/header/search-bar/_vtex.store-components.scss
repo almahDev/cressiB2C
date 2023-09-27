@@ -18,6 +18,11 @@
 
 .searchBarContainer {
   padding: 0;
+
+  @include tablet {
+    max-width: 100%;
+    padding-right: 4px;
+  }
 }
 
 .searchBarInnerContainer {
@@ -37,7 +42,7 @@
 
       @include tablet {
         border: 1px solid #828282;
-        padding-left: 23px;
+        padding-left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,6 +72,9 @@
       @include tablet {
         font-size: $font-size-md;
         background-color: $white;
+        padding-right: 0;
+        padding-left: 23px;
+        height: 33px;
       }
     }
 
