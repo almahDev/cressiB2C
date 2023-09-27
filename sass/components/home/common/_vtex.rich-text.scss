@@ -5,7 +5,7 @@
       text-align: left;
 
       @include tablet {
-        padding: 0 12px;
+        padding: 0 1.6rem;
       }
 
       @media (max-width: 360px) {
@@ -14,44 +14,141 @@
     }
 
     .heading {
-      @include text($font-size-md + 1, $low-pure, $regular);
-      line-height: 21px;
-      letter-spacing: 0.4em;
+      @include text($font-size-h3, #000, $regular);
       text-transform: uppercase;
       margin: 0;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      margin-bottom: 3.13rem;
+
+      &::before {
+        content: url('assets/img/home/icon-info-uni.png');
+      }
 
       @include tablet {
-        font-size: $font-size-xs;
-        letter-spacing: 4.8px;
-        line-height: 14.63px;
+        font-size: $font-size-h3 - 12;
+        margin-bottom: 1.18rem;
       }
     }
 
     .paragraph {
       @include text($font-size-md + 1, $low-pure, $regular);
-      line-height: 21px;
-      letter-spacing: 0.4em;
       text-transform: uppercase;
       margin: 0;
 
       @include tablet {
         font-size: $font-size-xs;
-        letter-spacing: 4.8px;
-        line-height: 14.63px;
       }
     }
 
     .strong {
-      @include text($font-size-md + 1, $primary-pure-500, $extra-bold);
-      line-height: 21px;
-      letter-spacing: 0.4em;
+      @include text($font-size-h3, #515151, $extra-bold);
       text-transform: uppercase;
-      margin: 0;
+      margin: 0 0.56rem;
 
       @include tablet {
-        font-size: $font-size-xs;
-        letter-spacing: 4.8px;
-        line-height: 14.63px;
+        font-size: $font-size-h3 - 12;
+      }
+    }
+  }
+
+  &--story-text-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--story-text,
+  &--story-mobile-text {
+    width: 32rem;
+    padding: 0 0 0 7.6rem;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      padding: 11rem 1.44rem 0;
+      color: $white;
+      width: unset;
+      font-size: 1.125rem;
+    }
+  }
+
+  &--story-mobile-text {
+    padding-top: 0;
+  }
+
+  .wrapper {
+    &--story-text-title {
+      text-align: left !important;
+      padding: 0 0 0 15rem;
+    }
+  }
+
+  .paragraph {
+    &--title-home {
+      display: flex;
+      align-items: center;
+      font-size: 1.875rem;
+      font-style: italic;
+
+      @include tablet {
+        font-size: 1.25rem;
+      }
+    }
+
+    &--story-text-title {
+      margin: 0;
+    }
+
+    .image {
+      &--title-home {
+        height: 3rem;
+        margin-right: 0.87rem;
+
+        @include tablet {
+          height: 2.125rem;
+        }
+      }
+    }
+
+    .strong {
+      &--title-home {
+        font-family: 'Barlow';
+      }
+
+      &--story-text-title {
+        -webkit-text-fill-color: transparent;
+        font-family: 'Barlow';
+        font-size: 6rem;
+        font-style: italic;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+          font-size: 3.75rem;
+        }
+      }
+    }
+  }
+
+  .strong {
+    &--story-text-title {
+      -webkit-text-fill-color: transparent;
+      font-size: 6rem;
+
+      @media (max-width: 768px) {
+        font-size: 3.75rem;
+      }
+    }
+  }
+
+  .headingLevel3 {
+    &--story-text-title {
+      font-size: 6rem !important;
+      margin-top: 3.94rem !important;
+      line-height: 0.8 !important;
+
+      @media (max-width: 768px) {
+        font-size: 3.75rem !important;
       }
     }
   }

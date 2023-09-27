@@ -1,0 +1,14 @@
+{
+  "challenge-block#newsletter-desktop": {
+    "blocks": ["challenge-fallback#newsletter-desktop"]
+  },
+  "challenge-fallback#newsletter-desktop": {
+    "children": ["flex-layout.row#newsletter-desktop"]
+  },
+  "challenge-block#newsletter-mobile": {
+    "blocks": ["challenge-fallback#newsletter-mobile"]
+  },
+  "challenge-fallback#newsletter-mobile": {
+    "children": ["flex-layout.row#newsletter-mob"]
+  }
+}

@@ -9,7 +9,7 @@
     padding: 33px 0 0;
 
     @include tablet {
-      padding: 13px 9px 0;
+      padding: 1.3rem 0px 0;
     }
 
     // @include tablet {
@@ -39,46 +39,30 @@
 }
 
 .sliderLeftArrow {
-  &--home__categories {
-    padding: 10px 15px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: unset;
-    right: 46px;
-
+  &--home__selecao {
     @include tablet {
-      top: -35px;
-      right: 40px;
+      left: -16px;
     }
   }
 }
 
 .sliderRightArrow {
-  &--home__categories {
-    padding: 10px 15px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: unset;
-    right: 0;
-
+  &--home__selecao {
     @include tablet {
-      top: -35px;
+      right: -16px;
     }
   }
 }
 
 .caretIcon {
-  &--home__categories {
+  &--home__categories,
+  &--home__selecao {
     width: 13px;
-    height: 23px;
-    max-height: 100%;
-    max-width: 100%;
+    filter: brightness(0);
 
     @include tablet {
-      width: 10px;
-      height: 20px;
+      width: 4px;
+      overflow: initial !important;
     }
   }
 }
@@ -149,6 +133,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 
     @include tablet {
       font-size: $font-size-xs - 1;

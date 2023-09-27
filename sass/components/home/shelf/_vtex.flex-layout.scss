@@ -1,6 +1,8 @@
 .flexRow {
   &--home__shelf-1 {
-    padding-top: 28px;
+    @media (min-width: 768px) {
+      padding-top: 28px;
+    }
   }
 }
 
@@ -9,12 +11,12 @@
     @extend %container-large;
   }
 
-  &--home__shelf--col {
-    padding: 56px 0 64px;
+  &--home__shelf--col,
+  &--shelf--col {
     align-items: flex-start;
 
     @include tablet {
-      padding: 26px 12px 56px;
+      padding: 0px 12px 2rem;
     }
 
     @include tablet-min {
@@ -35,15 +37,15 @@
     @include desktop {
       padding-left: 20.5px;
     }
-
-    @include tablet {
-      padding-top: 15px;
-    }
   }
 }
 
 .flexColChild {
   &--home__shelf-2--col {
     padding-bottom: 25px;
+
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 }

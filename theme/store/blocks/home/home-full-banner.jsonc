@@ -7,8 +7,8 @@
       "preload": true,
       "mediaList": [
         {
-          "image": "assets/img/home/home-fullbanner-desktop.png",
-          "mobileImage": "assets/img/home/home-fullbanner-mobile.png"
+          "image": "assets/img/home/full-banner_dev1.png",
+          "mobileImage": "https://placehold.co/412x218"
         }
       ]
     }

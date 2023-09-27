@@ -7,6 +7,10 @@
       padding-bottom: 94px;
     }
   }
+
+  &--home-business-tab {
+    @extend %container-large;
+  }
 }
 
 .flexRowContent {
@@ -21,6 +25,11 @@
 }
 
 .flexColChild {
-  &--home__categories {
+  &--home__selecao {
+    @extend %container-large;
+
+    @include tablet {
+      padding: 0 15px;
+    }
   }
 }

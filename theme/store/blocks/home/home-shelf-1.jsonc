@@ -21,16 +21,13 @@
   "rich-text#shelf-home-1": {
     "title": "Vitrine 1 - Título",
     "props": {
-      "text": "## **Produtos** em Destaque",
+      "text": "## **MAIS VENDIDOS**",
       "blockClass": "home__title"
     }
   },
 
   "flex-layout.row#shelf-home-slider-1": {
-    "children": [
-      "info-card#home-slider-1",
-      "flex-layout.col#shelf-group-home-slider-1"
-    ],
+    "children": ["flex-layout.col#shelf-group-home-slider-1"],
     "props": {
       "blockClass": "home__shelf--col"
     }
@@ -62,8 +59,8 @@
   },
   "slider-layout-group#shelf-home-slider-1": {
     "children": [
-      "list-context.product-list#shelf-home-slider-1-1",
-      "responsive-layout.desktop#shelf-home-slider-1-2"
+      "list-context.product-list#shelf-home-slider-1-1"
+      // "responsive-layout.desktop#shelf-home-slider-1-2"
     ],
     "props": {
       "blockClass": "home__shelf"
@@ -81,9 +78,9 @@
       "maxItems": 10
     }
   },
-  "responsive-layout.desktop#shelf-home-slider-1-2": {
-    "children": ["list-context.product-list#shelf-home-slider-1-2"]
-  },
+  // "responsive-layout.desktop#shelf-home-slider-1-2": {
+  //   "children": ["list-context.product-list#shelf-home-slider-1-2"]
+  // },
   "list-context.product-list#shelf-home-slider-1-2": {
     "title": "Vitrine 2 - Produtos",
     "blocks": ["product-summary.shelf#product"],
@@ -99,7 +96,7 @@
   "slider-layout#shelf-home-slider-1-1": {
     "props": {
       "itemsPerPage": {
-        "desktop": 2,
+        "desktop": 3,
         "tablet": 2,
         "phone": 2
       },

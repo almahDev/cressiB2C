@@ -16,3 +16,9 @@
     @extend %container-large;
   }
 }
+
+.flexColChild {
+  &--new-tech {
+    text-align: center;
+  }
+}

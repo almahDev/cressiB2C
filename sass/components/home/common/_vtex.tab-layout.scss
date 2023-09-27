@@ -1,0 +1,39 @@
+.listContainer {
+  &--tab-layout-container {
+    justify-content: start;
+
+    .listItem {
+      padding: 0;
+      margin: 0;
+      border-bottom: 1px solid $black;
+
+      :global(.vtex-button) {
+        color: $black;
+
+        &:hover {
+          border-radius: 0.5rem 0.5rem 0rem 0rem;
+        }
+      }
+
+      :global(.vtex-button__label) {
+        text-transform: capitalize;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+
+        @include tablet {
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+
+    .listItemActive {
+      :global(.vtex-button) {
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+        background-color: #0077c8;
+        border-color: #0077c8;
+        color: $white;
+      }
+    }
+  }
+}

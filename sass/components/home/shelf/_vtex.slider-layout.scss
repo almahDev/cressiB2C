@@ -36,7 +36,7 @@
       overflow: visible;
 
       @include tablet {
-        width: 10px;
+        width: 4px;
         height: 10px;
       }
     }
@@ -45,7 +45,7 @@
 
 .sliderLeftArrow {
   &--home__shelf {
-    padding: 10px 15px;
+    // padding: 10px 15px;
     margin: 0;
     position: absolute;
     left: -35px;
@@ -55,7 +55,7 @@
     }
 
     @include tablet {
-      left: 0;
+      left: -10px;
     }
   }
 
@@ -67,17 +67,17 @@
 
 .sliderRightArrow {
   &--home__shelf {
-    padding: 10px 15px;
+    // padding: 10px 15px;
     margin: 0;
     position: absolute;
     right: -35px;
 
     @media (max-width: 1300px) {
-      right: 0;
+      right: 0px;
     }
 
     @include tablet {
-      right: 0;
+      right: -10px;
     }
   }
 
