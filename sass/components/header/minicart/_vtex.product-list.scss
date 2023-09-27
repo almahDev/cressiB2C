@@ -103,8 +103,8 @@
     top: 20px;
 
     @include tablet {
-      top: unset;
-      bottom: 0;
+      position: static;
+      padding-bottom: 4px;
     }
   }
 }
@@ -113,11 +113,25 @@
   height: 1rem;
   display: flex;
   justify-content: end;
+
+  @include tablet {
+    height: 22px;
+    padding-bottom: 4px;
+  }
 }
 
 .quantitySelectorContainer {
   max-width: 103px;
   height: 27px !important;
+
+  @include tablet {
+    max-width: 144px;
+    height: 38px !important;
+  }
+
+  @media (max-width: 380px) {
+    max-width: 104px;
+  }
 }
 
 .quantitySelectorWrapper {
@@ -126,6 +140,10 @@
   height: 27px;
   border: 1px solid #f2eeea;
   border-radius: 4px;
+
+  @include tablet {
+    height: 38px !important;
+  }
 
   .inputContainer {
     flex: 1;
@@ -202,16 +220,18 @@
 
 .productImageContainer {
   &--al-cart-image {
-    width: 8.25rem !important;
+    width: 141px !important;
   }
 
   .productImage {
     &--al-cart-image {
-      height: 9.75rem;
+      height: 122px;
+      object-fit: contain;
+      display: block;
 
       @media (min-width: 1200px) {
-        height: 7.25rem;
-        max-width: 7.25rem;
+        height: 122px;
+        max-width: 141px;
       }
     }
   }

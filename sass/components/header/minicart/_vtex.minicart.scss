@@ -12,9 +12,18 @@
   top: 46px;
   right: 25px;
 
+  @include tablet {
+    right: 15px;
+    top: 40px;
+  }
+
   .closeIconButton {
     &::before {
       content: url('assets/svg/x-minicart.svg');
+
+      @include tablet {
+        content: url('assets/svg/x-minicart-mobile.svg');
+      }
     }
   }
   .closeIcon {
@@ -128,6 +137,10 @@
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+
+        @include tablet {
+          font-size: 20px;
+        }
       }
     }
   }

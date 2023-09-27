@@ -28,6 +28,10 @@
         line-height: normal;
         text-transform: uppercase;
 
+        @include tablet {
+          font-size: 22px;
+        }
+
         &::after {
           content: ':';
           margin-right: 0.5rem;
@@ -42,6 +46,10 @@
         line-height: normal;
         text-align: left;
         display: flex;
+
+        @include tablet {
+          font-size: 22px;
+        }
       }
     }
 
@@ -61,6 +69,10 @@
         line-height: normal;
         text-transform: uppercase;
 
+        @include tablet {
+          font-size: 22px;
+        }
+
         &::after {
           content: ':';
           margin-right: 0.5rem;
@@ -75,6 +87,10 @@
         line-height: normal;
         text-align: left;
         display: flex;
+
+        @include tablet {
+          font-size: 22px;
+        }
       }
     }
   }

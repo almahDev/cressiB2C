@@ -4,6 +4,10 @@
   margin: 0;
   padding: 48px 0 88px 53px;
 
+  @include tablet {
+    padding: 38px 23px;
+  }
+
   &::before {
     content: 'MINHAS COMPRAS';
     color: $color-1;
@@ -76,6 +80,10 @@
     transition: all 0.2s;
     box-sizing: border-box;
     background: #bdbdbd;
+
+    @include tablet {
+      font-size: 20px;
+    }
 
     &:hover,
     &:active,

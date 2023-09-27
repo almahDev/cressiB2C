@@ -24,6 +24,7 @@
   font-family: $secondary-font;
   font-weight: $semi-bold;
   margin: 0;
+  padding-top: 12px;
 }
 
 .freigthScaleContainer {
@@ -86,6 +87,10 @@
   transform: 0;
   margin: 0px;
   padding-top: 14px;
+
+  @include tablet {
+    padding-top: 12px;
+  }
 }
 
 .sliderContainer {
