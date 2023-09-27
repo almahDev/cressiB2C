@@ -15,10 +15,7 @@
       "menu-item#dep5-mobile",
       "menu-item#dep6-mobile",
       "menu-item#dep6-mobile",
-      "menu-item#dep7-mobile",
-      "menu-item#dep8-mobile",
-      "menu-item#dep9-mobile",
-      "menu-item#dep10-mobile"
+      "menu-item#dep7-mobile"
     ]
   },
   "flex-layout.row#header-menu": {
@@ -36,30 +33,25 @@
     "props": {
       "blockClass": ["header-mob__contact"]
     },
-    "children": ["rich-text#contato"]
+    "children": ["rich-text#tooltip-01-mob"]
   },
-  "rich-text#contato": {
-    "title": "Almah | Contato Mobile",
+  "rich-text#tooltip-01-mob": {
+    "title": "Almah | Header - Topbar - Texto - Contato",
     "props": {
-      "text": "![](assets/svg/icon-b2bcressi-phone-black.svg)**ENTRE** EM CONTATO **(99) 9999-9999**",
-      "blockClass": "header-mob__text"
+      "text": "![](assets/svg/icon-b2bcressi-phone-black.svg) ENTRE EM CONTATO (99) 9999-9999",
+      "blockClass": ["header__tooltip--text", "header__tooltip--text-mob"]
     }
   },
   "flex-layout.col#social-media-menu": {
     "title": "Almah | Social Menu Mobile",
+    "children": [
+      "image#tooltip-pinterest",
+      "image#tooltip-face-book",
+      "image#tooltip-instagram",
+      "image#tooltip-youtube"
+    ],
     "props": {
-      "blockClass": "header-mob__social-block"
-    },
-    "children": ["image#facebook-mob", "image#instagram-mob"]
-  },
-  "image#facebook-mob": {
-    "props": {
-      "src": "assets/svg/Facebook.svg"
-    }
-  },
-  "image#instagram-mob": {
-    "props": {
-      "src": "assets/svg/Instagram.svg"
+      "blockClass": ["tooltip-social"]
     }
   }
 }

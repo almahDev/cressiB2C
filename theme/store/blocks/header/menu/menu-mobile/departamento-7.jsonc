@@ -1,15 +1,16 @@
 {
   "menu-item#dep7-mobile": {
+    "title": "Menu - Mobile - Departamento 7",
     "props": {
       "blockClass": ["menu-item-mobile"],
       "id": "menu-item-dep6-mobile",
       "type": "custom",
       "iconId": null,
       "itemProps": {
-        "text": "dep7",
+        "text": "KIDS",
         "type": "internal",
         "href": "#",
-        "tagTitle": "departamento 7"
+        "tagTitle": "KIDS"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#dep7-mobile"]

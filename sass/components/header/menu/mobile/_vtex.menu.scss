@@ -11,7 +11,7 @@
 
   &--submenu-mobile-subcategory {
     width: 100%;
-    background: #e9fbf9;
+    background: #f0f6f5;
   }
 }
 
@@ -137,9 +137,12 @@
     padding: 1.5rem 2.5rem;
 
     .styledLink {
-      @include text($font-size-sm, $text-color-1-500, $regular);
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
       display: block;
-      text-transform: none;
       transition: all 0.2s;
 
       &:hover,
@@ -165,13 +168,15 @@
     padding: 1rem 0;
 
     .styledLinkContent {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
       font-weight: 700;
-      font-size: 1rem;
-      line-height: 20px;
-      color: $white;
+      line-height: normal;
+      text-transform: uppercase;
 
       .accordionIcon {
-        color: $white;
+        color: #000;
         color: transparent;
 
         &::after {

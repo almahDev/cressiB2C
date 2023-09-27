@@ -1,15 +1,16 @@
 {
   "menu-item#dep4-mobile": {
+    "title": "Menu - Mobile - Departamento 4",
     "props": {
       "blockClass": ["menu-item-mobile"],
       "id": "menu-item-dep4-mobile",
       "type": "custom",
       "iconId": null,
       "itemProps": {
-        "text": "dep4",
+        "text": "PESCA SUB",
         "type": "internal",
         "href": "#",
-        "tagTitle": "departamento 4"
+        "tagTitle": "PESCA SUB"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#dep4-mobile"]

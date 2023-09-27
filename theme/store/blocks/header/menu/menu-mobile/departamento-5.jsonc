@@ -1,15 +1,16 @@
 {
   "menu-item#dep5-mobile": {
+    "title": "Menu - Mobile - Departamento 5",
     "props": {
       "blockClass": ["menu-item-mobile"],
       "id": "menu-item-dep5-mobile",
       "type": "custom",
       "iconId": null,
       "itemProps": {
-        "text": "dep5",
+        "text": "CONFECÇÃO",
         "type": "internal",
         "href": "#",
-        "tagTitle": "departamento 5"
+        "tagTitle": "CONFECÇÃO"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#dep5-mobile"]

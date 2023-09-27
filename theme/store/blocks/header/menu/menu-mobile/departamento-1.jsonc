@@ -1,15 +1,16 @@
 {
   "menu-item#dep1-mobile": {
+    "title": "Menu - Mobile - Departamento 1",
     "props": {
       "blockClass": ["menu-item-mobile"],
       "id": "menu-item-dep1-mobile",
       "type": "custom",
       "iconId": "accordion",
       "itemProps": {
-        "text": "dep1",
+        "text": "MERGULHO",
         "type": "internal",
         "href": "#",
-        "tagTitle": "departamento 1"
+        "tagTitle": "MERGULHO"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#dep1-mobile"]

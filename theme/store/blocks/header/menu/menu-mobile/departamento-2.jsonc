@@ -1,15 +1,16 @@
 {
   "menu-item#dep2-mobile": {
+    "title": "Menu - Mobile - Departamento 2",
     "props": {
       "blockClass": ["menu-item-mobile"],
       "id": "menu-item-dep2-mobile",
       "type": "custom",
       "iconId": null,
       "itemProps": {
-        "text": "dep2",
+        "text": "SNORKELING",
         "type": "internal",
         "href": "#",
-        "tagTitle": "departamento 2"
+        "tagTitle": "SNORKELING"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#dep2-mobile"]

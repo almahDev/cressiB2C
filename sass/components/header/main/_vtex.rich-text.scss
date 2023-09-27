@@ -13,6 +13,12 @@
     }
   }
 
+  &--header__tooltip--text-mob {
+    .paragraph {
+      color: #000;
+    }
+  }
+
   &--header__tooltip--text-social {
     .wrapper {
       display: flex;
@@ -62,10 +68,13 @@
   }
 
   &--title-menu {
-    font-weight: 700;
+    color: #000;
+    font-family: $secondary-font;
     font-size: 22px;
-    line-height: 27px;
-    color: $white;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
   }
 
   &--text-collection-menu {
