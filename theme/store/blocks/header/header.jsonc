@@ -30,7 +30,7 @@
       "flex-layout.col#search-desktop",
       "challenge-block#login-header-tooltip",
       "flex-layout.col#spacer",
-      "rich-text#tooltip-01",
+      "challenge-block#login-header-tooltip-2",
       "flex-layout.col#tooltip-social"
     ]
   },
@@ -137,11 +137,13 @@
   "search-bar": {
     "props": {
       "placeholder": "Busca",
+      "containerMode": "container",
       "openAutocompleteOnFocus": true,
+      "autocompleteFullWidth": false,
       "blockClass": "header__search",
       "displayMode": "clear-button"
-    },
-    "blocks": ["autocomplete-result-list.v2"]
+    }
+    // "blocks": ["autocomplete-result-list.v2"]
     // PLACEHOLDER SÓ ACEITA STRING
   },
   "autocomplete-result-list.v2": {

@@ -17,5 +17,37 @@
       "blockClass": "challenge__login-header--tooltip",
       "showIconProfile": false
     }
+  },
+  "challenge-block#login-header-tooltip-2": {
+    "blocks": [
+      "challenge-content#login-header-tooltip-2",
+      "challenge-fallback#login-header-tooltip-2"
+    ],
+    "props": {
+      "blockClass": "challenge__login-header--tooltip"
+    }
+  },
+  "challenge-content#login-header-tooltip-2": {
+    "children": ["link#login-header-tooltip-2"],
+    "props": {
+      "blockClass": "challenge__login-header--tooltip"
+    }
+  },
+  "challenge-fallback#login-header-tooltip-2": {
+    "children": ["rich-text#tooltip-01"],
+    "props": {
+      "blockClass": "challenge__login-header--tooltip"
+    }
+  },
+  "link#login-header-tooltip-2": {
+    "title": "Link - Para Pessoas Físicas",
+    "props": {
+      "blockClass": [
+        "header__link-login",
+        "header__link-login--para-pessoas-fisicas"
+      ],
+      "href": "#",
+      "label": "Para Pessoas Físicas"
+    }
   }
 }

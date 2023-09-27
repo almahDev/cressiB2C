@@ -23,6 +23,11 @@
   &--header__link-login--refaca-seu-pedido {
     background: #000;
   }
+
+  &--header__link-login--para-pessoas-fisicas {
+    min-width: 138px;
+    background: #fff;
+  }
 }
 
 .label {
@@ -41,5 +46,9 @@
 
   &--header__link-login--refaca-seu-pedido {
     color: #fff;
+  }
+
+  &--header__link-login--para-pessoas-fisicas {
+    color: #000;
   }
 }
