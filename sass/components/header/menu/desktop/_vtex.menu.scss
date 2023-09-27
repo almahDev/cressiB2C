@@ -63,6 +63,7 @@
 
     &--al-product__wishlist--item {
       display: flex;
+      justify-content: center;
       align-items: center;
       color: #000;
       font-family: $quaternary-font;
@@ -103,6 +104,14 @@
       }
     }
   }
+
+  .styledLink--main-menu-department {
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
 }
 .styledLinkContainer {
   &--header__menu {
@@ -136,7 +145,16 @@
 .submenu {
   &--main-menu-department-submenu,
   &--header__menu {
+    @extend %container-large;
     justify-content: space-between !important;
+
+    @media (min-width: $desktop-min) and (max-width: $ultrawide-max) {
+      padding: 0 46px;
+    }
+
+    @media (min-width: $desktop-min) and (max-width: 1200px) {
+      padding: 0 55px;
+    }
 
     .menuContainerNav {
       border-left: 1px solid $color-5-500;
@@ -156,18 +174,23 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 200000;
     border-radius: 0px 0px 5px 5px;
-    padding: 30px 21rem 27px;
+    padding: 30px 0 27px;
     right: 0;
     transition: all 0.2s;
     animation: fadeIn 0.2s forwards;
-    @extend %container-large;
     max-width: 100vw;
-    min-width: 100vw;
+    width: 100%;
     min-height: 460px;
     border: 1px solid #c4c4c4;
+    margin-top: 15px !important;
 
     @media (max-width: 1400px) {
-      padding: 30px 5rem 27px;
+      padding: 30px 0 27px;
+    }
+
+    @media (min-width: $desktop-min) and (max-width: 1200px) {
+      zoom: 1.2;
+      margin-top: 12px !important;
     }
 
     @include desktop {

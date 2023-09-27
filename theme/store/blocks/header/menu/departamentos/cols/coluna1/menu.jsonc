@@ -46,8 +46,8 @@
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "tagTitle": "Opção 01",
+            "text": "Opção 01"
           }
         },
         {
@@ -56,38 +56,8 @@
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "tagTitle": "Opção 02",
+            "text": "Opção 02"
           }
         }
       ]
@@ -120,8 +90,8 @@
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "tagTitle": "Opção 01",
+            "text": "Opção 01"
           }
         },
         {
@@ -130,8 +100,8 @@
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "tagTitle": "Opção 02",
+            "text": "Opção 02"
           }
         },
         {
@@ -140,8 +110,8 @@
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "tagTitle": "Opção 03",
+            "text": "Opção 03"
           }
         },
         {
@@ -150,18 +120,8 @@
           "itemProps": {
             "type": "internal",
             "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "tagTitle": "Opção 04",
+            "text": "Opção 04"
           }
         }
       ]
