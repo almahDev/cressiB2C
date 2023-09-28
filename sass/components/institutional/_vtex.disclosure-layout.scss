@@ -17,20 +17,21 @@
   }
 
   &--visible {
-    border: 1px solid #d3f8f4;
-    background-color: #d3f8f4;
+    border: 1px solid transparent;
+    background-color: #ffdb0080;
 
     &::after {
       content: url('assets/svg/icon-open-institucional.svg');
+      filter: grayscale(1);
     }
   }
 }
 
 .content {
   &--visible {
-    border-left: 1px solid #d3f8f4;
-    border-right: 1px solid #d3f8f4;
-    background-color: #d3f8f4;
+    border-left: 1px solid #ffdb0080;
+    border-right: 1px solid #ffdb0080;
+    background-color: #ffdb0080;
     padding: 0 1rem;
     color: #000;
   }
@@ -44,7 +45,7 @@
     &::before {
       content: '';
       display: block;
-      background-color: #40d6c6;
+      background-color: $secondary-pure-500;
       width: 4px;
       height: 100.3%;
       position: absolute;

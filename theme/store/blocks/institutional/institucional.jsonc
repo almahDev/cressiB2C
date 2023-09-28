@@ -19,30 +19,101 @@
 
   "rich-text#title-institucional": {
     "props": {
-      "blockClass": "al-institucional__title",
+      "blockClass": "home__title",
       "textAlignment": "START",
       "textPosition": "START",
-      "text": "# INSTITUCIONAL"
+      "text": "## **INSTITUCIONAL**"
     },
     "title": "Título institucional"
   },
   "flex-layout.row#institucional-option": {
     "title": "Blocos de informações",
     "children": [
-      "disclosure-layout#simple-1",
-      "disclosure-layout#simple-2",
-      "disclosure-layout#simple-3",
-      "disclosure-layout#simple-4",
-      "disclosure-layout#simple-5",
-      "disclosure-layout#simple-6",
-      "disclosure-layout#simple-7",
-      "disclosure-layout#simple-8",
-      "disclosure-layout#simple-9",
-      "disclosure-layout#simple-10"
+      "experimental__visibility-layout#simple-1",
+      "experimental__visibility-layout#simple-2",
+      "experimental__visibility-layout#simple-3",
+      "experimental__visibility-layout#simple-4",
+      "experimental__visibility-layout#simple-5",
+      "experimental__visibility-layout#simple-6",
+      "experimental__visibility-layout#simple-7",
+      "experimental__visibility-layout#simple-8",
+      "experimental__visibility-layout#simple-9",
+      "experimental__visibility-layout#simple-10"
     ],
     "props": {
       "blockClass": "al-institucional__information"
     }
+  },
+
+  "experimental__visibility-layout#simple-1": {
+    "title": "Item 1 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-1"]
+  },
+  "experimental__visibility-layout#simple-2": {
+    "title": "Item 2 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-2"]
+  },
+  "experimental__visibility-layout#simple-3": {
+    "title": "Item 3 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-3"]
+  },
+  "experimental__visibility-layout#simple-4": {
+    "title": "Item 4 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-4"]
+  },
+  "experimental__visibility-layout#simple-5": {
+    "title": "Item 5 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-5"]
+  },
+  "experimental__visibility-layout#simple-6": {
+    "title": "Item 6 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-6"]
+  },
+  "experimental__visibility-layout#simple-7": {
+    "title": "Item 7 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-7"]
+  },
+  "experimental__visibility-layout#simple-8": {
+    "title": "Item 8 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-8"]
+  },
+  "experimental__visibility-layout#simple-9": {
+    "title": "Item 9 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-9"]
+  },
+  "experimental__visibility-layout#simple-10": {
+    "title": "Item 10 👁️",
+    "props": {
+      "visible": true
+    },
+    "children": ["disclosure-layout#simple-10"]
   },
 
   "disclosure-layout#simple-1": {
