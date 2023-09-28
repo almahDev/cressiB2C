@@ -276,11 +276,20 @@
 .contentForm {
   :global(.vtex-input-prefix__group) {
     border: none;
+
+    @include desktop {
+      height: 3.0625rem;
+      margin-bottom: 1.37rem;
+    }
   }
 
   :global(.vtex-styleguide-9-x-input) {
     @extend %input-text;
     border-radius: 0.3125rem;
+
+    @include desktop {
+      height: 3.0625rem;
+    }
   }
 
   :global(.vtex-input__suffix) {
@@ -355,6 +364,21 @@
       &:active,
       &:focus {
         transition: all 0.2s ease-in-out !important;
+      }
+
+      @include desktop {
+        max-width: 32.25rem;
+        height: 3.125rem;
+      }
+    }
+
+    :global(.vtex-button__label) {
+      :global(span) {
+        @include desktop {
+          font-size: 1rem !important;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -548,4 +572,25 @@
 .tooltipContainerLeft {
 }
 .tooltipContainerTop {
+}
+
+.optionsList {
+  .optionsListItem {
+    @include desktop {
+      width: fit-content;
+    }
+
+    :global(.vtex-button) {
+      @include desktop {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
 }

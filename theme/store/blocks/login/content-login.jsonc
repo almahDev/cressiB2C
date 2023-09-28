@@ -3,7 +3,10 @@
     "children": [
       "flex-layout.col#default-content",
       "flex-layout.col#cadastro-content"
-    ]
+    ],
+    "props": {
+      "blockClass": ["container-login", "container-bottom"]
+    }
   },
   "flex-layout.col#default-content": {
     "children": ["login-content#default"]

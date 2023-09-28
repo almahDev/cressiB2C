@@ -11,12 +11,24 @@
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 0.1875rem;
+
+    @include desktop {
+      max-width: 32.25rem;
+      height: 3.125rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &--cta-lojista {
     background-color: $secondary-pure-500;
     color: $black;
     margin-bottom: 0.68rem;
+
+    @include desktop {
+      margin-bottom: 1.19rem;
+    }
   }
 
   &--cta-instrutor {

@@ -1,4 +1,16 @@
 .flex {
+  &Row {
+    &--container-login {
+      @extend %container-large;
+    }
+
+    &--container-bottom {
+      @include desktop {
+        margin-bottom: 24.38rem !important;
+      }
+    }
+  }
+
   &Col {
     &--background-cadastre {
       background-color: rgba(235, 235, 235, 0.5);

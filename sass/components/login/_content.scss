@@ -22,6 +22,14 @@
         font-size: 1.25rem;
         color: $black;
         margin-bottom: 1.18rem;
+
+        @include desktop {
+          margin-bottom: 3.62rem;
+        }
+      }
+
+      @include desktop {
+        width: 100%;
       }
     }
   }
@@ -45,39 +53,51 @@
   }
 }
 
-:global(form) {
-  display: flex;
-  flex-direction: column;
-
-  .inputContainerEmail {
-    order: 0;
-  }
-
-  .inputContainerPassword {
-    order: 1;
-  }
-
-  .formLinkContainer {
-    order: 4;
+.contentFormVisible {
+  :global(form) {
     display: flex;
-    justify-content: center;
-    margin: 0;
+    flex-direction: column;
 
-    .forgotPasswordLink {
-      margin-top: 1.81rem;
-      color: #000;
-      font-size: 0.75rem;
-      font-weight: 400;
+    .inputContainerEmail {
+      order: 0;
     }
 
-    .dontHaveAccount {
-      display: none;
+    .inputContainerPassword {
+      order: 1;
     }
-  }
 
-  .formFooter {
-    order: 3;
-    margin-top: 1rem;
-    padding: 0;
+    .formLinkContainer {
+      order: 4;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+
+      @include desktop {
+        justify-content: start;
+      }
+
+      .forgotPasswordLink {
+        margin-top: 1.81rem;
+        color: #000;
+        font-size: 0.75rem;
+        font-weight: 400;
+      }
+
+      .dontHaveAccount {
+        display: none;
+      }
+    }
+
+    .formFooter {
+      order: 3;
+      margin-top: 1rem;
+      padding: 0;
+
+      @include desktop {
+        margin-top: 0;
+      }
+    }
   }
 }
+
+// @extend %container-large;

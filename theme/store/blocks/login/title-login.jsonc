@@ -1,7 +1,10 @@
 {
   // flex-layout.row#title-login","flex-layout.row#content"
   "flex-layout.row#title-login": {
-    "children": ["rich-text#title-login"]
+    "children": ["rich-text#title-login"],
+    "props": {
+      "blockClass": "container-login"
+    }
   },
   "rich-text#title-login": {
     "title": "Titulo Login",
