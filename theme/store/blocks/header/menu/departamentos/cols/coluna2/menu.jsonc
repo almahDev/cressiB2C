@@ -1,0 +1,120 @@
+{
+  "experimental__visibility-layout#menu-dep-col2": {
+    "title": "Menu (On/Off)",
+    "props": {
+      "visible": true
+    },
+    "children": ["flex-layout.col#menu-dep-col2"]
+  },
+  "flex-layout.col#menu-dep-col2": {
+    "props": {
+      "blockClass": [
+        "main-menu-menu",
+        "main-menu-column",
+        "main-menu-column-second"
+      ]
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu-dep-col2",
+      "vtex.menu@2.x:menu#menu-dep-col2-two"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu-dep-col2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "main-menu-menu",
+        "main-menu-column",
+        "main-menu-column-second"
+      ],
+      "additionalDef": "none",
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "CATEGORIA 02",
+            "text": "CATEGORIA 02"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 01",
+            "text": "Opção 01"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 02",
+            "text": "Opção 02"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 03",
+            "text": "Opção 03"
+          }
+        }
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-dep-col2-two": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "main-menu-menu",
+        "main-menu-column",
+        "main-menu-column-second"
+      ],
+      "additionalDef": "none",
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "CATEGORIA 06",
+            "text": "CATEGORIA 06"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 01",
+            "text": "Opção 01"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 02",
+            "text": "Opção 02"
+          }
+        }
+      ]
+    }
+  }
+}

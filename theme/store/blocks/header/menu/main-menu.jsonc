@@ -6,14 +6,15 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "flex-layout.col#trigger-mega-menu",
+      // "flex-layout.col#trigger-mega-menu",
 
-      // "menu-item#dep1",
+      "menu-item#dep1",
       "menu-item#dep2",
       "menu-item#dep3",
       "menu-item#dep4",
       "menu-item#dep5",
-      "menu-item#dep6"
+      "menu-item#dep6",
+      "menu-item#dep7"
     ]
   },
   "flex-layout.row#mega-menu": {

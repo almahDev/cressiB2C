@@ -2,7 +2,7 @@
   &--header__tooltip {
     background-color: $color-1-500;
     color: $text-white-100;
-    padding: 0.23rem 0;
+    padding: 10px 0 12px;
   }
 
   &--header__main {
@@ -11,12 +11,36 @@
     padding: 1rem 0;
 
     @include tablet {
-      padding: 1.75rem;
+      padding: 21px 22px;
+    }
+
+    @media (min-width: $desktop-min) and (max-width: 1200px) {
+      zoom: 85%;
     }
   }
 
   &--block-search-bar {
     background-color: #f9f9f9;
+    padding: 0 17px 16px 20px;
+  }
+
+  &--block-search-bar--logged {
+    :global(
+        .vtex-store-components-3-x-searchBarInnerContainer--header__search
+      ) {
+      // max-width: 145px;
+      // width: 100%;
+
+      // @media (max-width: 412px) {
+      //   max-width: 130px;
+      // }
+    }
+
+    // .stretchChildrenWidth {
+    //   &:not(:first-child) {
+    //     flex: 1;
+    //   }
+    // }
   }
 }
 
@@ -36,9 +60,9 @@
     }
   }
 
-  &--header__main--mob {
-    display: flex;
-  }
+  // &--header__main--mob {
+  //   display: flex;
+  // }
 
   &--header__login--mobile {
     align-items: center;
@@ -68,18 +92,37 @@
     }
   }
 
-  &--main-elements-desk {
-    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-      &:first-child {
-        width: 55% !important;
-      }
-    }
+  &--block-search-bar--logged {
+    align-items: center;
   }
+
+  // &--main-elements-desk {
+  //   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  //     &:first-child {
+  //       width: 55% !important;
+  //     }
+  //   }
+  // }
 
   &--block-main-links {
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
       flex: 1;
       margin-left: 36px;
+    }
+  }
+
+  &--challenge__login-header--desktop {
+    .stretchChildrenWidth {
+      flex: unset;
+      margin: 0;
+    }
+
+    :global(.vtex-login-2-x-container) {
+      padding-right: 12px;
+
+      :global(.vtex-login-2-x-profile) {
+        display: none;
+      }
     }
   }
 }
@@ -88,16 +131,25 @@
   &--tooltip-social {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    @include tablet {
+      padding-top: 28px;
+    }
   }
 
-  &--logo-b2bcressi-desk {
-    width: 20rem !important;
-    margin-right: 2.25rem;
-  }
+  // &--logo-b2bcressi-desk {
+  //   width: 16% !important;
+  //   margin-right: 2.25rem;
+  // }
+
+  // &--search-link-desk {
+  //   width: 84% !important;
+  // }
 }
 
-.flexColChild {
-  &--tooltip-social {
-    margin: 0 0.5rem;
-  }
-}
+// .flexColChild {
+//   &--tooltip-social {
+//     padding: 0 1rem 0;
+//   }
+// }

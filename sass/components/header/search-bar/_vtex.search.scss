@@ -1,6 +1,7 @@
 .biggy-autocomplete {
   max-height: 30rem !important;
   padding: 0 !important;
+  z-index: 1000;
   @extend %scrollbar;
 
   @include tablet {
@@ -60,7 +61,7 @@
   }
 
   &::before {
-    @include icon("search-small", 20px);
+    @include icon('search-small', 20px);
     margin-right: 0.5rem;
   }
 }
@@ -103,7 +104,7 @@
       }
 
       &::before {
-        @include icon("search-small-hover", 20px);
+        @include icon('search-small-hover', 20px);
         margin-right: 0.5rem;
       }
     }

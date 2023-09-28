@@ -1,0 +1,62 @@
+{
+  "challenge-block#login-header-desktop": {
+    "blocks": [
+      "challenge-content#login-header-desktop",
+      "challenge-fallback#login-header-desktop"
+    ],
+    "props": {
+      "blockClass": "challenge__login-header--desktop"
+    }
+  },
+  "challenge-content#login-header-desktop": {
+    "children": ["flex-layout.row#login-header-desktop"],
+    "props": {
+      "blockClass": "challenge__login-header--desktop"
+    }
+  },
+  "challenge-fallback#login-header-desktop": {
+    "children": ["login#header"],
+    "props": {
+      "blockClass": "challenge__login-header--desktop"
+    }
+  },
+  "flex-layout.row#login-header-desktop": {
+    "children": ["login#header", "flex-layout.col#login-header-desktop"],
+    "props": {
+      "colGap": 0,
+      "colSizing": "auto",
+      "blockClass": "challenge__login-header--desktop"
+    }
+  },
+  "flex-layout.col#login-header-desktop": {
+    "children": ["link#login-header-1", "link#login-header-2"],
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 2,
+      "blockClass": "challenge__login-header--desktop"
+    }
+  },
+
+  "link#login-header-1": {
+    "title": "Link - Pedido Express",
+    "props": {
+      "blockClass": [
+        "header__link-login",
+        "header__link-login--pedido-express"
+      ],
+      "href": "/pedido-express",
+      "label": "Pedido Express"
+    }
+  },
+  "link#login-header-2": {
+    "title": "Link - Refaça seu Pedido",
+    "props": {
+      "blockClass": [
+        "header__link-login",
+        "header__link-login--refaca-seu-pedido"
+      ],
+      "href": "/account#/orders",
+      "label": "Refaça seu Pedido"
+    }
+  }
+}

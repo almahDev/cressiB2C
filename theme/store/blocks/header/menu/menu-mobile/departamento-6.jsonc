@@ -1,15 +1,16 @@
 {
   "menu-item#dep6-mobile": {
+    "title": "Menu - Mobile - Departamento 6",
     "props": {
       "blockClass": ["menu-item-mobile"],
       "id": "menu-item-dep6-mobile",
       "type": "custom",
       "iconId": null,
       "itemProps": {
-        "text": "dep6",
+        "text": "NATAÇÃO",
         "type": "internal",
         "href": "#",
-        "tagTitle": "departamento 6"
+        "tagTitle": "NATAÇÃO"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#dep6-mobile"]

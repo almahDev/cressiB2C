@@ -2,18 +2,42 @@
   &--header__tooltip--text {
     .paragraph {
       margin: 0;
-      @include text($font-size-xs);
-      font-size: $font-size-xs - 1;
-      color: $white;
+      @include text($font-size-xs - 1, $white, $bold, $secondary-font);
+      font-style: italic;
       display: flex;
       align-items: center;
+    }
 
-      .strong--header__tooltip--text {
-        margin: 0 0.2rem;
-      }
+    .image {
+      padding-right: 7px;
     }
   }
 
+  &--header__tooltip--text-mob {
+    .paragraph {
+      color: #000;
+    }
+  }
+
+  &--header__tooltip--text-social {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 19px;
+
+      &::before {
+        content: '';
+        width: 1px;
+        height: 20px;
+        background: #fff;
+      }
+    }
+
+    .paragraph {
+      padding: 0 1rem 0 1.75rem;
+    }
+  }
   &--text-collection-menu {
     width: 100%;
     display: block;
@@ -44,30 +68,54 @@
   }
 
   &--title-menu {
-    font-weight: 700;
+    color: #000;
+    font-family: $secondary-font;
     font-size: 22px;
-    line-height: 27px;
-    color: $white;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
   }
 
   &--text-collection-menu {
     display: flex;
     justify-content: space-between;
-    color: #000;
-    font-size: 16px;
+    color: #515151;
+    font-size: 13px;
     font-style: normal;
-    font-weight: 600;
-    letter-spacing: 1.6px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 0;
+    max-width: 415px;
+  }
+}
+
+.heading {
+  &--text-collection-menu {
+    color: #000;
+    font-family: $secondary-font;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
     text-transform: uppercase;
+    margin: 0;
+    padding: 12px 0;
   }
 }
 
 .link {
   &--text-collection-menu {
-    border-radius: 6px;
-    background: #40d6c6;
-    color: $white;
+    border-radius: 5px;
+    background: #ffdb00;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 11px 28px;
+    margin-top: 1rem;
   }
 }

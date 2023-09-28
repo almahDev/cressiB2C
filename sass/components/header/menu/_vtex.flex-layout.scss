@@ -5,7 +5,7 @@
   }
 
   &--header-mob {
-    background: #e9fbf9;
+    background: #f0f6f5;
     padding: {
       left: 2.3rem;
       right: 2.3rem;
@@ -20,7 +20,7 @@
   }
 
   &--block-main-links {
-    margin-left: 2.25rem;
+    margin-left: 0;
   }
 }
 
@@ -58,7 +58,7 @@
       :global(.vtex-button__label) {
         &::before {
           background: none !important;
-          content: url('assets/svg/icon-stand-jojo.svg') !important;
+          content: url('assets/svg/icon-user.svg') !important;
           display: unset !important;
           height: unset !important;
           width: unset !important;
@@ -72,6 +72,21 @@
           &::after {
             content: url('assets/svg/ENTRAR-OU-CADASTRE-SE.svg');
           }
+        }
+      }
+    }
+  }
+
+  &--header__main--mob-list {
+    :global(.vtex-login-2-x-container) {
+      :global(.vtex-button__label) {
+        &::before {
+          background: none !important;
+          content: url('assets/svg/icon-user.svg') !important;
+          display: unset !important;
+          height: unset !important;
+          width: unset !important;
+          margin-top: 0.2rem;
         }
       }
     }

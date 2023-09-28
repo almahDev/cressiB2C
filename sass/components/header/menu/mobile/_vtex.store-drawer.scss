@@ -1,5 +1,5 @@
 .drawer {
-  background-color: $color-1-500;
+  // background-color: $color-1-500;
 
   &--header__drawer--search {
     background-color: $white;
@@ -9,6 +9,10 @@
     right: 0;
     top: 52px;
     padding: 10px 0;
+  }
+
+  &--header__menu__hamburguer {
+    background-color: $secondary-pure-500;
   }
 }
 
@@ -41,7 +45,8 @@
 
   &--al-drawer__menu--mobile {
     justify-content: space-between;
-    margin: 1rem;
+    margin: 0;
+    padding: 39px 28px 19px;
 
     :global(.vtex-login-2-x-container) {
       :global(.vtex-button) {
@@ -65,7 +70,7 @@
     }
 
     .closeIconButton {
-      color: $white;
+      color: $black;
       padding: 0;
     }
   }
@@ -122,7 +127,11 @@
     padding: 0;
 
     &::before {
-      content: url('assets/svg/icon-menu-hamburger.svg');
+      content: '';
+      background: url('assets/svg/icon-menu-hamburger.svg') no-repeat center;
+      display: block;
+      width: 27px;
+      height: 20px;
     }
   }
 }

@@ -9,37 +9,42 @@
   margin-right: 0.125rem;
 
   &::after {
-    content: "Faltam";
-    font-size: $font-size-xs;
+    content: 'Faltam apenas ';
+    color: #000;
+    font-family: $secondary-font;
+    font-size: $font-size-sm;
     font-weight: $semi-bold;
-    color: $white;
+    line-height: normal;
   }
 }
 
 .text4 {
-  font-size: $font-size-xs !important;
+  font-size: $font-size-sm !important;
+  color: #000;
+  font-family: $secondary-font;
   font-weight: $semi-bold;
-  color: $white;
   margin: 0;
-  transform: translateY(19px);
+  padding-top: 12px;
 }
 
 .freigthScaleContainer {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   box-shadow: none !important;
-  padding: 0 0 1rem !important;
+  padding: 39px 0 1rem !important;
 }
 
 .currencyContainer {
   font-weight: $semi-bold;
-  font-size: $font-size-xs !important;
+  font-size: $font-size-sm !important;
 
   &::after {
-    content: " para o ";
-    font-size: $font-size-xs;
+    content: ' para você ganhar ';
+    color: #000;
+    font-family: $secondary-font;
+    font-size: $font-size-sm;
     font-weight: $semi-bold;
-    color: $white;
+    line-height: normal;
   }
 }
 
@@ -48,25 +53,29 @@
 .currencyInteger,
 .currencyDecimal,
 .currencyFraction {
-  font-size: $font-size-xs !important;
+  color: #000;
+  font-family: $secondary-font;
+  font-size: $font-size-sm !important;
   font-weight: $semi-bold;
-  color: $white;
+  line-height: normal;
 }
 
 .currencyText {
   font-size: 0 !important;
 
   &::after {
-    content: "FRETE GRÁTIS";
-    font-size: $font-size-xs;
+    content: 'frete grátis';
+    color: #000;
+    font-family: $secondary-font;
+    font-size: $font-size-sm;
     font-weight: $semi-bold;
-    color: $white;
+    line-height: normal;
   }
 }
 
 .barContainer {
-  background: $c-sup-1;
-  border-radius: 4px 0px 0px 4px;
+  background: #ffdb00;
+  border-radius: 6px;
   height: 100%;
 }
 
@@ -75,14 +84,21 @@
   align-items: center;
   justify-content: center;
   white-space: pre;
-  transform: translateY(19px);
+  transform: 0;
   margin: 0px;
+  padding-top: 14px;
+
+  @include tablet {
+    padding-top: 12px;
+  }
 }
 
 .sliderContainer {
-  background: $high-light;
-  border-radius: 4px;
-  height: 1.5rem;
+  background: #000;
+  border-radius: 6px;
+  height: 16px;
   border: 0;
-  margin: 0;
+  max-width: 365px;
+  width: 100%;
+  margin: 0 auto;
 }
