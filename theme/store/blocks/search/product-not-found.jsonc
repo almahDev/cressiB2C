@@ -21,8 +21,8 @@
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "**ERRO** 404",
-      "blockClass": "al-not-found-page__title"
+      "text": "## **ERRO 404**",
+      "blockClass": "home__title"
     }
   },
   "rich-text#not-found-text": {

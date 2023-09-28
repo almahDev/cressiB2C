@@ -61,10 +61,7 @@
     }
   },
   "flex-layout.col#search-not-found-collections": {
-    "children": [
-      "rich-text#search-not-found-collections-title"
-      // "list-context.info-card-list#search-collections"
-    ],
+    "children": ["rich-text#search-not-found-collections-title"],
     "props": {
       "blockClass": ["home__collections", "search__collections"]
     }
