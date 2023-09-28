@@ -1,15 +1,16 @@
 {
   "menu-item#dep3-mobile": {
+    "title": "Menu - Mobile - Departamento 3",
     "props": {
       "blockClass": ["menu-item-mobile"],
       "id": "menu-item-dep3-mobile",
       "type": "custom",
       "iconId": null,
       "itemProps": {
-        "text": "dep3",
+        "text": "FREEDIVING",
         "type": "internal",
         "href": "#",
-        "tagTitle": "departamento 3"
+        "tagTitle": "FREEDIVING"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#dep3-mobile"]

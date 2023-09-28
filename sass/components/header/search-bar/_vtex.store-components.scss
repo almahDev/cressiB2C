@@ -1,6 +1,6 @@
 .searchBarIcon {
   &--header__search {
-    padding: 0 0 0 1rem;
+    padding: 0 15px;
     color: $text-color-1-500;
 
     @include tablet {
@@ -18,25 +18,36 @@
 
 .searchBarContainer {
   padding: 0;
+
+  @include tablet {
+    max-width: 100%;
+    padding-right: 4px;
+  }
 }
 
 .searchBarInnerContainer {
   &--header__search {
+    max-width: 17.6875rem;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
     :global(.vtex-input-prefix__group) {
       border: none;
-      border-radius: 50px;
-      padding: 0.62rem 1.55rem 0.62rem 2rem;
-      width: 33rem;
-      border: 1px solid $color-1-500;
+      border-radius: 4px;
+      padding: 0;
+      width: 17.6875rem;
+      height: 32px;
 
       @include tablet {
-        border: 0;
-        padding-left: 15px;
+        border: 1px solid #828282;
+        padding-left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 55px;
-        border-radius: 0;
+        height: 33px;
+        border-radius: 4px;
         padding: 0;
         width: 100%;
       }
@@ -44,17 +55,26 @@
 
     :global(.vtex-styleguide-9-x-input) {
       border: none;
-      @include text($font-size-sm, $text-color-1-500);
+      @include text($font-size-xs, $black, $regular);
       border-radius: 0;
       background-color: #f9f9f9;
-      padding: 0;
+      padding: 0 20px;
 
       &::placeholder {
-        color: $text-color-1-400;
+        color: $black;
+        opacity: 0.6;
       }
 
       @media (min-width: 992px) {
         background-color: $white;
+      }
+
+      @include tablet {
+        font-size: $font-size-md;
+        background-color: $white;
+        padding-right: 0;
+        padding-left: 23px;
+        height: 33px;
       }
     }
 

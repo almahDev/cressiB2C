@@ -87,3 +87,24 @@
 .backToTopButtonActive {
   animation: fadeIn 0.3s forwards;
 }
+
+// IMAGENS - TOPBAR
+.imageElementLink {
+  &--tooltip-social {
+    display: flex;
+    padding-right: 5px;
+  }
+
+  &--tooltip-social--youtube {
+    padding-right: 0;
+  }
+}
+.imageElement {
+  &--tooltip-social {
+    display: block;
+
+    @include tablet {
+      filter: invert(1);
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "experimental__visibility-layout#menu-dep-col4": {
+    "title": "Menu (On/Off)",
+    "props": {
+      "visible": true
+    },
+    "children": ["flex-layout.col#menu-dep-col4"]
+  },
+  "flex-layout.col#menu-dep-col4": {
+    "props": {
+      "blockClass": [
+        "main-menu-menu",
+        "main-menu-column",
+        "main-menu-column-fourth"
+      ]
+    },
+    "children": ["vtex.menu@2.x:menu#menu-dep-col4"]
+  },
+  "vtex.menu@2.x:menu#menu-dep-col4": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "main-menu-menu",
+        "main-menu-column",
+        "main-menu-column-fourth"
+      ],
+      "additionalDef": "none",
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "CATEGORIA 03",
+            "text": "CATEGORIA 03"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 01",
+            "text": "Opção 01"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 02",
+            "text": "Opção 02"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 03",
+            "text": "Opção 03"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Opção 04",
+            "text": "Opção 04"
+          }
+        }
+      ]
+    }
+  }
+}

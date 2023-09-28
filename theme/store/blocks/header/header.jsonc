@@ -27,8 +27,10 @@
       "fullWidth": true
     },
     "children": [
-      "rich-text#tooltip-01",
+      "flex-layout.col#search-desktop",
+      "challenge-block#login-header-tooltip",
       "flex-layout.col#spacer",
+      "challenge-block#login-header-tooltip-2",
       "flex-layout.col#tooltip-social"
     ]
   },
@@ -46,46 +48,33 @@
   "flex-layout.row#4-desktop": {
     "title": "Almah | Header - Conteúdo - Desktop",
     "props": {
+      "fullWidth": true,
       "blockClass": "header__main",
       "horizontalAlign": "center",
-      "verticalAlign": "center"
+      "verticalAlign": "center",
+      "colGap": 8
     },
-    "children": ["disposition-layout#row-4"]
+    "children": ["flex-layout.col#logo-desktop", "flex-layout.row#main-line"]
   },
-  "disposition-layout#row-4": {
-    "title": "Almah | Header - Disposição do conteúdo",
-    "children": ["flex-layout.col#logo-desktop", "flex-layout.col#search-link"],
-    "props": {
-      "blockClass": "header__main--order",
-      "disposition": [
-        {
-          "order": 1
-        },
-        {
-          "order": 2
-        },
-        {
-          "order": 3
-        }
-      ]
-    }
-  },
-  "flex-layout.col#search-link": {
-    "children": ["flex-layout.row#main-line-1", "flex-layout.row#main-line-2"]
-  },
-  "flex-layout.row#main-line-1": {
+  // "flex-layout.col#search-link": {
+  //   "children": ["flex-layout.row#main-line"],
+  //   "props": {
+  //     "blockClass": ["search-link-desk"]
+  //   }
+  // },
+  "flex-layout.row#main-line": {
     "children": [
-      "flex-layout.col#search-desktop",
+      "vtex.menu@2.x:menu#main-menu",
       "flex-layout.col#links-desktop"
     ],
     "props": {
-      "width": "80%",
+      "colGap": 0,
       "blockClass": "main-elements-desk"
     }
   },
-  "flex-layout.row#main-line-2": {
-    "children": ["vtex.menu@2.x:menu#main-menu"]
-  },
+  // "flex-layout.row#main-line-2": {
+  //   "children": ["vtex.menu@2.x:menu#main-menu"]
+  // },
 
   "flex-layout.col#search-desktop": {
     "title": "Almah |Header - Busca",
@@ -98,10 +87,10 @@
     "title": "Almah |Header - Logo",
     "props": {
       "verticalAlign": "middle",
-      "width": "20%",
+      "width": "16%",
       "blockClass": ["logo-b2bcressi-desk"]
     },
-    "children": ["logo#desktop"]
+    "children": ["logo#header"]
   },
   "flex-layout.col#links-desktop": {
     "title": "Almah |Header - Links",
@@ -112,8 +101,13 @@
   },
   "flex-layout.row#links-desktop": {
     "title": "Almah |Header - Links - Desktop",
-    "children": ["login#header", "menu#wishlist", "minicart.v2#main-header"],
+    "children": [
+      "challenge-block#login-header-desktop",
+      "menu#wishlist",
+      "minicart.v2#main-header"
+    ],
     "props": {
+      "colGap": 0,
       "blockClass": "block-main-links"
     }
   },
@@ -133,21 +127,23 @@
       "type": "custom",
       "highlight": false,
       "itemProps": {
-        "href": "/account/#/wishlist",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Favoritos",
-        "text": "MEUS"
+        "tagTitle": "COMPRE POR LICITAÇÃO",
+        "text": "COMPRE POR"
       }
     }
   },
   "search-bar": {
     "props": {
-      "placeholder": "ENCONTRE UM PRODUTO",
+      "placeholder": "Busca",
+      "containerMode": "container",
       "openAutocompleteOnFocus": true,
+      "autocompleteFullWidth": false,
       "blockClass": "header__search",
       "displayMode": "clear-button"
-    },
-    "blocks": ["autocomplete-result-list.v2"]
+    }
+    // "blocks": ["autocomplete-result-list.v2"]
     // PLACEHOLDER SÓ ACEITA STRING
   },
   "autocomplete-result-list.v2": {
@@ -159,12 +155,12 @@
     "blocks": ["product-summary.shelf#search"]
   },
 
-  "logo#desktop": {
+  "logo#header": {
     "props": {
-      "title": "Logo da Allegra Lar",
+      "title": "Logo da Cressi",
       "href": "/",
-      "url": "assets/img/allegra-logo-header.png",
-      "width": "308",
+      "url": "assets/img/cressi-logo-header.png",
+      "width": "162",
       "blockClass": "header__logo"
     }
   },
@@ -198,7 +194,10 @@
     ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile", "flex-layout.row#bar-search"]
+    "children": [
+      "flex-layout.row#1-mobile",
+      "challenge-block#login-header-mobile"
+    ]
   },
   "flex-layout.row#0-mobile": {
     "title": "Almah | Header - Topbar - Mobile",
@@ -213,41 +212,54 @@
   },
   "flex-layout.row#1-mobile": {
     "title": "Almah |Header - Conteúdo - Mobile",
-    "children": [
-      "drawer#header-mobile",
-      "logo#mobile",
-      "flex-layout.row#mob-list"
-    ],
+    "children": ["flex-layout.col#logo-mobile", "flex-layout.row#mob-list"],
     "props": {
-      "blockClass": "header__main",
-      "preventHorizontalStretch": true,
+      "blockClass": ["header__main", "header__main--mobile"],
+      "colSizing": "auto",
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
+  "flex-layout.col#logo-mobile": {
+    "title": "Almah |Header - Logo",
+    "props": {
+      "verticalAlign": "middle",
+      "width": "grow",
+      "blockClass": ["logo-b2bcressi-mobile"]
+    },
+    "children": ["logo#header"]
+  },
   "flex-layout.row#mob-list": {
     "props": {
-      "blockClass": "header__main--mob"
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "center",
+      "colGap": 6,
+      "blockClass": "header__main--mob-list"
     },
-    "children": ["minicart.v2#main-header"]
+    "children": [
+      "drawer#header-mobile",
+      "login#mobile",
+      "minicart.v2#main-header"
+    ]
+  },
+  "login#mobile": {
+    "title": "Almah | Header - Link - Login - Mobile",
+    "props": {
+      "accountOptionsButtonBehavior": "link",
+      "logInButtonBehavior": "link",
+      "showIconProfile": false,
+      "hideIconLabel": true
+    }
   },
 
   "flex-layout.row#bar-search": {
     "title": "Almah | Barra de Busca",
     "props": {
+      "fullWidth": true,
       "blockClass": "block-search-bar"
     },
     "children": ["search-bar"]
-  },
-
-  "logo#mobile": {
-    "props": {
-      "title": "Logo da Allegra Lar",
-      "href": "/",
-      "url": "assets/img/allegra-logo-header.png",
-      "width": "192",
-      "blockClass": "header__logo"
-    }
   },
 
   "drawer#header-mobile": {
@@ -263,11 +275,7 @@
   },
 
   "drawer-header#header-mobile": {
-    "children": [
-      "rich-text#title-menu",
-      "login#desktop",
-      "drawer-close-button"
-    ],
+    "children": ["rich-text#title-menu", "drawer-close-button"],
     "props": {
       "blockClass": "al-drawer__menu--mobile"
     }

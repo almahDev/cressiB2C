@@ -4,4 +4,40 @@
     max-width: 100%;
     margin: 0;
   }
+
+  &--challenge__login-header--tooltip {
+    :global(.vtex-login-2-x-container) {
+      padding-left: 20px;
+
+      :global(.vtex-button) {
+        :global(.vtex-button__label) {
+          &::before {
+            content: none;
+          }
+        }
+      }
+
+      :global(.vtex-login-2-x-profile) {
+        color: #fff;
+        font-family: $quaternary-font;
+        font-size: $font-size-xs;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 138.7%;
+        text-transform: uppercase;
+        max-width: 100%;
+        position: relative;
+        padding-left: 0;
+
+        &::before {
+          content: 'OLÁ';
+          background: black;
+          position: absolute;
+          left: 0;
+          font-weight: 400;
+          padding-left: 4px;
+        }
+      }
+    }
+  }
 }

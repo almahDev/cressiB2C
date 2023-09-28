@@ -15,10 +15,10 @@
   @include text($font-size-sm, #171714, 700);
   letter-spacing: 0;
   line-height: normal;
-  margin-bottom: 0.5rem;
+  margin-bottom: 15px;
   display: block;
   font-style: normal;
-  max-width: 11.375rem;
+  max-width: 170px;
 }
 
 .productBrandName {
@@ -64,12 +64,13 @@
 }
 
 .unitPricePerUnitCurrency {
-  @include text($font-size-md, $text-color-1-500, $regular);
+  @include text($font-size-xlg, #2b2b2b, $regular);
   letter-spacing: 0;
-  line-height: 1;
+  line-height: normal;
+  padding-bottom: 20px;
 
   @include tablet {
-    font-size: $font-size-sm;
+    font-size: $font-size-lg;
   }
 }
 
@@ -99,8 +100,11 @@
 
   &--al-cart {
     position: absolute;
-    @media (min-width: $screen-lg-min) {
-      top: 146px;
+    top: 20px;
+
+    @include tablet {
+      position: static;
+      padding-bottom: 4px;
     }
   }
 }
@@ -109,19 +113,37 @@
   height: 1rem;
   display: flex;
   justify-content: end;
+
+  @include tablet {
+    height: 22px;
+    padding-bottom: 4px;
+  }
 }
 
 .quantitySelectorContainer {
-  max-width: 8.99619rem;
-  height: 2.375rem !important;
+  max-width: 103px;
+  height: 27px !important;
+
+  @include tablet {
+    max-width: 144px;
+    height: 38px !important;
+  }
+
+  @media (max-width: 380px) {
+    max-width: 104px;
+  }
 }
 
 .quantitySelectorWrapper {
   display: flex;
   width: 100%;
-  height: 2.375rem;
+  height: 27px;
   border: 1px solid #f2eeea;
   border-radius: 4px;
+
+  @include tablet {
+    height: 38px !important;
+  }
 
   .inputContainer {
     flex: 1;
@@ -134,8 +156,8 @@
     background-color: #f2eeea;
 
     :first-child {
-      font-weight: $semi-bold;
-      font-size: $font-size-md;
+      font-weight: $bold;
+      font-size: $font-size-sm;
       color: #4f4f4f;
       border: 0 !important;
       font-family: 'arial' !important;
@@ -161,22 +183,55 @@
   }
 }
 
+.quantitySelectorDecrease {
+  :first-child {
+    display: none;
+  }
+
+  &::before {
+    content: '-';
+    color: #4f4f4f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+  }
+}
+
+.quantitySelectorIncrease {
+  :first-child {
+    display: none;
+  }
+
+  &::before {
+    content: '+';
+    color: #4f4f4f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
 .unitPriceMeasurementUnit {
   display: none;
 }
 
 .productImageContainer {
   &--al-cart-image {
-    width: 8.25rem !important;
+    width: 141px !important;
   }
 
   .productImage {
     &--al-cart-image {
-      height: 9.75rem;
+      height: 122px;
+      object-fit: contain;
+      display: block;
 
       @media (min-width: 1200px) {
-        height: 7.25rem;
-        max-width: 7.25rem;
+        height: 122px;
+        max-width: 141px;
       }
     }
   }

@@ -204,7 +204,7 @@
   font-family: 'Barlow';
   src: url('assets/fonts/Barlow-ExtraBold.woff2') format('woff2'),
       url('assets/fonts/Barlow-ExtraBold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -231,7 +231,7 @@
   font-family: 'Barlow';
   src: url('assets/fonts/Barlow-ExtraBoldItalic.woff2') format('woff2'),
       url('assets/fonts/Barlow-ExtraBoldItalic.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
