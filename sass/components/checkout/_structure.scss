@@ -98,7 +98,7 @@ button#payment-data-submit {
   .product-name {
     font-size: $font-size-sm;
     font-weight: $bold;
-    color: $text-dark-400 !important;
+    color: $black !important;
     width: auto !important;
     white-space: unset;
     float: none;
@@ -157,18 +157,43 @@ button#payment-data-submit {
 }
 
 .srp-container {
+  .srp-delivery-header {
+    .srp-items strong {
+      font-weight: normal;
+    }
+  }
   .onda-v1 .blue {
     background: $white;
+    color: $black !important;
   }
+}
+
+.srp-delivery-info {
+  .b--light-gray {
+    border-radius: 2px !important;
+    border: 1px solid $black;
+  }
+}
+
+.srp-shipping-current-single__sla {
+  color: $black !important;
+}
+
+.srp-icon-radio-selected {
+  filter: brightness(0.5);
 }
 
 .cart-more-options .srp-container {
   .ship-postalCode {
     max-width: 475px;
+
+    a {
+      color: #808080;
+    }
   }
 
   .srp-main-title {
-    @include text($font-size-lg, $text-pure-500, $bold);
+    @include text($font-size-lg - 4, $black, $bold);
     // text-transform: uppercase;
     text-transform: lowercase !important;
     &::first-letter {
@@ -199,11 +224,14 @@ button#payment-data-submit {
 }
 
 #cart-shipping-calculate {
-  @include text($font-size-md, $primary-pure-500, $bold);
+  @include text($font-size-md, $secondary-pure-500, $bold);
   height: 3rem;
   padding: 0.625rem 1.5rem;
   border-color: $color-1;
   text-transform: lowercase !important;
+  border-color: $secondary-pure-500;
+  margin-left: 0.8rem;
+
   &::first-letter {
     text-transform: uppercase !important;
   }
@@ -264,6 +292,7 @@ button#payment-data-submit {
       width: calc(100% - 295px) !important;
       padding-left: 0 !important;
       font-weight: $bold;
+      padding-bottom: 1rem;
 
       @media (min-width: 1200px) {
         width: calc(100% - 203px) !important;
@@ -355,7 +384,7 @@ button#payment-data-submit {
       padding-bottom: 0.8rem !important;
 
       @include tablet {
-        font-size: $font-size-xs !important;
+        font-size: $font-size-xs + 3 !important;
       }
     }
   }
@@ -867,6 +896,10 @@ div.cart-template.mini-cart.span4,
                   display: block;
                   margin-top: 0;
                 }
+
+                .new-product-price {
+                  text-align: end;
+                }
               }
             }
 
@@ -903,8 +936,8 @@ div.cart-template.mini-cart.span4,
     margin: 0;
 
     #shipping-calculate-link {
-      background: #40d6c6;
-      border: 1px solid #40d6c6;
+      background: $secondary-pure-500;
+      border: 1px solid $secondary-pure-500;
       border-radius: 6px;
       color: #fff;
     }

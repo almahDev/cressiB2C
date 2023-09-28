@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: $main-font !important;
+}
+
 body.body-order-form {
   .main-header {
     margin-bottom: 38px !important;
@@ -14,6 +20,11 @@ body.body-order-form {
   border-bottom: none !important;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   margin-bottom: 100px !important;
+
+  .logo {
+    margin-top: 2.12rem;
+    margin-bottom: 2.44rem;
+  }
 
   .header-link {
     top: calc(100% + 70px) !important;
@@ -51,7 +62,7 @@ body.body-order-form {
       height: 1px;
       background: #c9c9c9;
       position: absolute;
-      top: 18px;
+      top: 16px;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -120,13 +131,13 @@ body.body-order-form {
 
     &.active {
       .text {
-        color: #40d6c6 !important;
+        color: $secondary-pure-500 !important;
         font-weight: 700 !important;
         font-size: 10px;
 
         &:before {
-          border: 2px solid #40d6c6;
-          color: #40d6c6;
+          border: 2px solid $secondary-pure-500;
+          color: $secondary-pure-500;
         }
       }
     }
@@ -174,7 +185,7 @@ body.body-order-form {
 
   @include tablet {
     padding: 0 !important;
-    margin-bottom: 4rem !important;
+    margin-bottom: 5.44rem !important;
 
     .container {
       justify-content: center;
@@ -183,7 +194,7 @@ body.body-order-form {
 
     .header-link {
       padding-top: 0;
-      top: calc(100% + 33px) !important;
+      top: calc(100% + 47px) !important;
 
       a {
         max-width: unset !important;
