@@ -1,0 +1,79 @@
+{
+  "flex-layout.row#shelf-youmaylike-1": {
+    "title": "Vitrine - Você pode gostar",
+    "children": ["flex-layout.col#shelf-youmaylike-1"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__shelf", "home__shelf-1", "search__shelf-youmaylike"]
+    }
+  },
+
+  "flex-layout.col#shelf-youmaylike-1": {
+    "children": [
+      "rich-text#shelf-youmaylike-1",
+      "flex-layout.row#shelf-youmaylike-slider-1"
+    ],
+    "props": {
+      "blockClass": [
+        "home__shelf--col",
+        "home__shelf-1--col",
+        "search__shelf-youmaylike--col"
+      ]
+    }
+  },
+
+  "rich-text#shelf-youmaylike-1": {
+    "title": "Vitrine - Você pode gostar - Título",
+    "props": {
+      "text": "## **VOCÊ PODE GOSTAR DE**",
+      "blockClass": ["home__title", "search__shelf-youmaylike--title"]
+    }
+  },
+
+  "flex-layout.row#shelf-youmaylike-slider-1": {
+    "children": ["flex-layout.col#shelf-group-youmaylike-slider-1"],
+    "props": {
+      "blockClass": ["home__shelf--col", "search__shelf-youmaylike--col"]
+    }
+  },
+  "flex-layout.col#shelf-group-youmaylike-slider-1": {
+    "children": ["list-context.product-list#shelf-youmaylike-slider-1"],
+    "props": {
+      "blockClass": [
+        "home__shelf--group-col",
+        "search__shelf-youmaylike--group-col"
+      ]
+    }
+  },
+  "list-context.product-list#shelf-youmaylike-slider-1": {
+    "title": "Vitrine - Você pode gostar - Produtos",
+    "blocks": ["product-summary.shelf#product"],
+    "children": ["slider-layout#shelf-youmaylike-slider-1-1"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "slider-layout#shelf-youmaylike-slider-1-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": [
+        "home__shelf",
+        "shelf-group",
+        "shelf-group-1",
+        "search__shelf-youmaylike"
+      ]
+    }
+  }
+}

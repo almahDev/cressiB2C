@@ -1,7 +1,15 @@
 .filter {
-  // &--al-search__filter {
-  //   padding: 1rem 1.5rem 0.1563rem;
-  // }
+  &--al-search__filter {
+    padding: 14px 0 21px;
+
+    @include desktop {
+      pointer-events: none;
+
+      .filterIcon {
+        display: none;
+      }
+    }
+  }
 }
 
 .accordionFilter {
@@ -136,6 +144,14 @@
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+
+  &::-webkit-scrollbar-track {
+    border-color: #fafafa !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-color: #fafafa !important;
+  }
 }
 
 .accordionSelectedFilters {
@@ -1303,6 +1319,14 @@
   &--al-search__filter {
     @extend %scrollbar;
 
+    &::-webkit-scrollbar-track {
+      border-color: #fafafa !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-color: #fafafa !important;
+    }
+
     :global(.vtex-slider-container) {
       :global(.vtex-slider) {
         @include desktop {
@@ -1314,9 +1338,9 @@
       }
     }
 
-    .filterContent {
-      padding-top: 1rem;
-    }
+    // .filterContent {
+    //   padding-top: 1rem;
+    // }
   }
 }
 
@@ -1752,15 +1776,22 @@
 
 .totalProducts {
   &--layout {
-    @include text($font-size-md, $text-pure-500, $bold);
+    @include text($font-size-md, $secondary-pure-500, $bold);
     align-items: center;
     display: flex;
     justify-content: space-around;
     line-height: normal;
-    padding: 0 3rem 0 1rem;
+    padding: 0;
     text-align: left;
-    text-transform: lowercase;
+    text-transform: none;
     border: none;
+    white-space: pre;
+
+    &::before {
+      content: 'Foram encontrados ';
+      @include text($font-size-md, $black, $regular);
+      display: inline;
+    }
 
     @include tablet {
       padding: 0 1rem;
@@ -1772,8 +1803,15 @@
 
 .totalProductsMessage {
   &--al-search__total-products {
-    @include text($font-size-md, $text-pure-500, $regular);
-    text-transform: capitalize;
+    @include text($font-size-md, $black, $regular);
+    text-transform: none;
+    font-size: 0;
+
+    &::before {
+      content: 'resultados para esta busca';
+      @include text($font-size-md, $black, $regular);
+      display: inline;
+    }
 
     @include tablet {
       font-size: $font-size-sm;
