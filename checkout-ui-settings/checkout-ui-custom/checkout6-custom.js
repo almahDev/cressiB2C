@@ -77,49 +77,24 @@ try {
           }, 200)
         },
         appendFont: function () {
-          var style = document.createElement('style')
-          var fontFacesRules =
-            // insetir conteúdo do arquivo configs/font-faces.css aqui mudando a URL dos src para o caminho dos assets buildados da loja!
-            `@font-face {
-              font-display: swap;
-              font-family: 'Ubuntu';
-              font-style: normal;
-              font-weight: 300;
-              src: url('assets/fonts/Ubuntu-Light.woff') format('woff'),
-                url('assets/fonts/Ubuntu-Light.ttf') format('truetype');
-            }
-
-            @font-face {
-              font-display: swap;
-              font-family: 'Ubuntu';
-              font-style: normal;
-              font-weight: 400;
-              src: url('assets/fonts/Ubuntu-Regular.woff') format('woff'),
-                url('assets/fonts/Ubuntu-Regular.ttf') format('truetype');
-            }
-
-            @font-face {
-              font-display: swap;
-              font-family: 'Ubuntu';
-              font-style: normal;
-              font-weight: 500;
-              src: url('assets/fonts/Ubuntu-Medium.woff') format('woff'),
-                url('assets/fonts/Ubuntu-Medium.ttf') format('truetype');
-            }
-
-            @font-face {
-              font-display: swap;
-              font-family: 'Ubuntu';
-              font-style: normal;
-              font-weight: 700;
-              src: url('assets/fonts/Ubuntu-Bold.woff') format('woff'),
-                url('assets/fonts/Ubuntu-Bold.ttf') format('truetype');
-            }
-
-
-        `
-          style.appendChild(document.createTextNode(fontFacesRules))
-          document.head.appendChild(style)
+          WebFontConfig = {
+            google: {
+              families: [
+                'Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
+                'Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
+                'Dosis',
+                'Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900',
+                'Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
+              ],
+            },
+          }
+          ;(function (d) {
+            var wf = d.createElement('script'),
+              s = d.scripts[0]
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'
+            wf.async = true
+            s.parentNode.insertBefore(wf, s)
+          })(document)
         },
 
         addStepActiveClass: function () {
