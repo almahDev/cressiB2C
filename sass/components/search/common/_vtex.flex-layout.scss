@@ -4,7 +4,7 @@
 
     @include desktop {
       display: block;
-      padding-top: 42px;
+      padding-top: 27px;
     }
   }
 
@@ -149,6 +149,10 @@
 
   &--search__shelf-youmaylike {
     padding-bottom: 150px;
+
+    @include tablet {
+      padding-bottom: 63px;
+    }
   }
 }
 

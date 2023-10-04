@@ -226,6 +226,9 @@
     ]
   },
   "sticky-layout#1-mobile": {
+    "props": {
+      "blockClass": "header__sticky--mobile"
+    },
     "children": [
       "flex-layout.row#1-mobile",
       "challenge-block#login-header-mobile"
