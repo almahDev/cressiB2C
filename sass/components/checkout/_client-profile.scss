@@ -81,6 +81,8 @@
 
   #go-to-shipping {
     border-radius: 6px !important;
+    text-transform: uppercase !important;
+    padding: 1rem;
   }
 
   input[type='email'],
@@ -108,15 +110,86 @@
 #shipping-data {
   span {
     color: #000;
-    font-size: 19px;
+    font-size: 11px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
+    line-height: normal;
 
     &:before {
       border-radius: 33px;
       border: 2px solid $secondary-pure-500 !important;
       background: #f7f5f2 !important;
       color: $secondary-pure-500 !important;
+    }
+  }
+}
+
+.state-inscription-box {
+  label.checkbox {
+    position: relative;
+    display: flex;
+    align-items: end;
+  }
+
+  .exempt-si-text {
+    margin-left: 0.5rem;
+  }
+
+  input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border: 2px solid #ffdb00;
+    cursor: pointer;
+  }
+
+  input[type='checkbox']:checked {
+    background-color: #ffdb00;
+    border-color: #ffdb00;
+
+    & + .exempt-si-text {
+      &::before {
+        font-family: Arial, sans-serif;
+        content: '\2713';
+        left: 4px;
+        position: absolute;
+        color: white;
+        top: 5px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.AddressToggle {
+  input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border: 2px solid #ffdb00;
+    cursor: pointer;
+  }
+
+  input[type='checkbox']:checked {
+    background-color: #ffdb00;
+    border-color: #ffdb00;
+
+    & + label {
+      &::before {
+        font-family: Arial, sans-serif;
+        content: '\2713';
+        left: 4px;
+        position: absolute;
+        color: white;
+        top: 5px;
+        font-size: 17px;
+      }
     }
   }
 }

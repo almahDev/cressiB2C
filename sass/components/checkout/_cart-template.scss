@@ -56,21 +56,24 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        font-size: 0;
         height: 48px !important;
         position: relative;
+        // font-size: 0;
 
-        &::before {
-          content: 'Enviar';
-          font-size: 0.9rem;
-        }
+        // &::before {
+        //   content: 'Enviar';
+        //   font-size: 0.9rem;
+        // }
 
-        &::after {
-          content: url('/arquivos/icon-enviar.png');
-          font-size: 0.9rem;
-          position: absolute;
-          top: 10px;
-          right: 15px;
+        // &::after {
+        //   content: url('/arquivos/icon-enviar.png');
+        //   font-size: 0.9rem;
+        //   position: absolute;
+        //   top: -1px;
+        //   right: 15px;
+        // }
+        &:hover {
+          background-color: transparent;
         }
       }
     }

@@ -6,7 +6,7 @@
   "disposition-layout#product": {
     "title": "Produto - Disposição de elementos",
     "children": [
-      "flex-layout.row#product-breadcrumb-desktop",
+      //"flex-layout.row#product-breadcrumb-desktop",
       //"flex-layout.row#product-breadcrumb-mobile",
       "flex-layout.row#product-main",
       "flex-layout.row#product-description",

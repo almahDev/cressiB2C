@@ -1,0 +1,31 @@
+body.js-vcustom-hideEmailStep
+  .client-profile-data
+  .accordion-toggle
+  > span:before {
+  content: '2';
+}
+
+body.js-vcustom-hideEmailStep .shipping-data .accordion-toggle:before {
+  content: '3';
+}
+
+body.js-vcustom-hideEmailStep
+  .payment-data
+  .accordion-toggle
+  > span:not(.payment-edit-link):before {
+  content: '4';
+}
+
+#shipping-data,
+#client-profile-data,
+#payment-data {
+  .accordion-toggle {
+    span {
+      font-family: 'Montserrat' !important;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}

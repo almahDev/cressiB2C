@@ -179,13 +179,23 @@ button#payment-data-submit {
   color: $black !important;
 }
 
+.vtex-omnishipping-1-x-leanShippingIcon,
 .srp-icon-radio-selected {
-  filter: brightness(0.5);
+  filter: brightness(0);
+}
+
+.vtex-omnishipping-1-x-leanShippingText {
+  border-right: 0;
 }
 
 .cart-more-options .srp-container {
   .ship-postalCode {
     max-width: 475px;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+    }
 
     a {
       color: #808080;
@@ -217,6 +227,10 @@ button#payment-data-submit {
   height: 3rem;
   border: 1px solid $high-medium;
   border-radius: 0.25rem;
+
+  @include desktop {
+    max-width: 226px;
+  }
 
   @include tablet {
     font-size: $font-size-sm;
@@ -260,7 +274,7 @@ button#payment-data-submit {
     width: 100%;
     max-width: 208px;
     padding: 0 !important;
-    height: 43px;
+    height: 41px;
     overflow: hidden;
     display: block;
     margin-top: 1rem;
@@ -701,6 +715,8 @@ div.cart-select-gift-placeholder:empty {
 button#btn-go-to-payment {
   @extend %primary-button;
   border-radius: 6px;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 a#open-shipping {
   border-radius: 6px !important;
@@ -960,7 +976,7 @@ div.cart-template.mini-cart.span4,
     font-size: 0px;
 
     &::before {
-      content: 'Continuar pagamento';
+      content: 'CONTINUAR PARA PAGAMENTO';
       font-size: 16px;
       position: relative;
       top: 1px;
@@ -976,4 +992,64 @@ div.cart-template.mini-cart.span4,
     font-size: 14px !important;
     font-weight: 600 !important;
   }
+}
+
+.icon-edit {
+  &::before {
+    content: url('/arquivos/icon-edit.png');
+  }
+}
+
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap.active {
+  border: 1px solid #cbcbcb;
+
+  .payment-group-item-text {
+    &::before {
+      background-color: $black !important;
+      border-color: $black !important;
+    }
+  }
+}
+
+:global(.vtex-omnishipping-1-x-SummaryItemInfo) {
+  border: 0;
+}
+
+.input-prepend {
+  .add-on {
+    height: 50px !important;
+  }
+}
+
+.AddressToggle {
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.payment-card-due-month,
+.payment-card-due-year {
+  select {
+    height: 32px !important;
+  }
+}
+
+.PaymentCardCVV {
+  input {
+    height: 32px !important;
+  }
+}
+
+.ChangeNumberOfPayments a {
+  color: #000;
+  font-family: Exo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.creditCardpayment-card-0Code {
+  width: 79px !important;
 }
