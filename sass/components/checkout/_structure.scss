@@ -171,7 +171,11 @@ button#payment-data-submit {
 .srp-delivery-info {
   .b--light-gray {
     border-radius: 2px !important;
-    border: 1px solid $black;
+    border: 1px solid #c9c9c9;
+
+    @include desktop {
+      max-width: 558px;
+    }
   }
 }
 
@@ -259,8 +263,7 @@ button#payment-data-submit {
   &:hover,
   &:active,
   &:focus {
-    background-color: $primary-pure-500;
-    color: $white;
+    background-color: transparent;
   }
 }
 
@@ -716,7 +719,7 @@ button#btn-go-to-payment {
   @extend %primary-button;
   border-radius: 6px;
   padding: 1rem;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 a#open-shipping {
   border-radius: 6px !important;
@@ -950,6 +953,12 @@ div.cart-template.mini-cart.span4,
 
   #shipping-preview-container {
     margin: 0;
+
+    .srp-delivery-header {
+      span {
+        color: #000;
+      }
+    }
 
     #shipping-calculate-link {
       background: $secondary-pure-500;
