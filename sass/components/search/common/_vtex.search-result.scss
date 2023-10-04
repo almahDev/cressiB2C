@@ -1473,7 +1473,11 @@
   }
 
   @include tablet {
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem 0.3125rem;
+
+    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+      font-size: 12px !important;
+    }
   }
 }
 

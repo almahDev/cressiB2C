@@ -109,4 +109,22 @@
       line-height: 1.5rem;
     }
   }
+
+  &--search__shelf-youmaylike--title,
+  &--search__collections--title {
+    .wrapper {
+      @include tablet {
+        padding: 0 12px;
+      }
+    }
+
+    .strong {
+      color: #000;
+      font-family: $secondary-font;
+      font-style: italic;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
 }

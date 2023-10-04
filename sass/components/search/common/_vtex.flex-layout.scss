@@ -318,6 +318,24 @@
   &--any-page-breadcrumb {
     @extend %container-large;
   }
+
+  &--al-search__main--search {
+    @include tablet-min {
+      .stretchChildrenWidth {
+        width: 100% !important;
+      }
+    }
+  }
+
+  &--al-search__main-title-order-by--total-products {
+    @include tablet-min {
+      flex-direction: column;
+
+      .stretchChildrenWidth {
+        width: 100% !important;
+      }
+    }
+  }
 }
 
 .flexCol {
