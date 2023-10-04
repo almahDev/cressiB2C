@@ -8,5 +8,20 @@
       "preventHorizontalStretch": false,
       "fullWidth": true
     }
+  },
+  "flex-layout.row#al-search-title-total-products-mobile": {
+    "title": "Título (Mobile)",
+    "children": [
+      "experimental__visibility-layout#search-top-title",
+      "total-products.v2"
+    ],
+    "props": {
+      "blockClass": [
+        "al-search__main-title-order-by--mobile",
+        "al-search__main-title-order-by--total-products"
+      ],
+      "preventHorizontalStretch": false,
+      "fullWidth": true
+    }
   }
 }

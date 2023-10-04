@@ -26,7 +26,7 @@
     "title": "Layout da Busca",
     "children": [
       "flex-layout.row#al-search-title-total-products-desktop", // DESKTOP
-      "flex-layout.row#al-search-title-mobile", // MOBILE
+      "flex-layout.row#al-search-title-total-products-mobile", // MOBILE
       "flex-layout.row#al-result-search",
       "flex-layout.row#shelf-youmaylike-1"
     ],
