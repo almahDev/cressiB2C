@@ -47,7 +47,7 @@
   },
   "list-context.product-list#shelf-youmaylike-slider-1": {
     "title": "Vitrine - Você pode gostar - Produtos",
-    "blocks": ["product-summary.shelf#product"],
+    "blocks": ["product-summary.shelf#category"],
     "children": ["slider-layout#shelf-youmaylike-slider-1-1"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",

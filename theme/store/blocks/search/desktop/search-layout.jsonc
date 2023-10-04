@@ -14,10 +14,11 @@
       },
       "blockClass": "al-search-category",
       "pagination": "show-more",
+      "showFacetQuantity": true,
       "preventRouteChange": false,
       "defaultGalleryLayout": "grid",
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": true
       }
     }
   },
@@ -36,10 +37,11 @@
       },
       "blockClass": "al-search-search",
       "pagination": "show-more",
+      "showFacetQuantity": true,
       "preventRouteChange": false,
       "defaultGalleryLayout": "grid",
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": true
       }
     }
   }

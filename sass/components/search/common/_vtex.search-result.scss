@@ -1,6 +1,6 @@
 .filter {
   &--al-search__filter {
-    padding: 14px 0 21px;
+    padding: 0 0 21px;
 
     @include desktop {
       pointer-events: none;
@@ -369,14 +369,14 @@
   }
 
   :global(.vtex-checkbox__label) {
-    @include text($font-size-md, $text-pure-500, $regular);
+    @include text($font-size-md - 1, $high-pure-4, $regular, $quaternary-font);
     line-height: 1.0625rem;
   }
 
   :global(.vtex-checkbox__container) {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.75rem;
+    width: 18px;
+    height: 18px;
+    margin-right: 1rem;
     border-radius: 0;
     transition: all 0.3s ease-in-out;
 
@@ -389,27 +389,27 @@
   }
 
   :global(.vtex-checkbox__inner-container) {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.75rem;
-    border-width: 0.0625rem;
-    border-radius: 0.125rem;
+    width: 18px;
+    height: 18px;
+    margin-right: 1rem;
+    border-width: 2px;
+    border-radius: 2px;
 
     @include tablet {
-      border-color: $secondary-light-50;
+      border-color: $secondary-pure-500;
       border-radius: 0;
       // background-color: $color-1;
     }
   }
 
   :global(.vtex-checkbox__box-wrapper) {
-    width: 1.25rem;
-    height: 1.0625rem;
+    width: 18px;
+    height: 18px;
   }
 
   :global(.vtex-checkbox__input) {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 18px;
+    height: 18px;
   }
 
   :global(.vtex__icon-check) {
@@ -420,7 +420,7 @@
 
   &--selected {
     :global(.vtex-checkbox__label) {
-      color: $text-pure-500;
+      color: $high-pure-4;
     }
   }
 }
@@ -637,7 +637,7 @@
   }
 
   &--al-search__filter--title {
-    @media (min-width: $screen-lg-min) {
+    @media (min-width: $l) {
       display: none;
     }
   }
@@ -645,7 +645,7 @@
   &--al-search__filter {
     border: 1px solid #e7e6e6;
     background: #fafafa;
-    padding: 1rem;
+    padding: 30px 27px 46px;
     margin-bottom: 1.44rem;
   }
 
@@ -779,7 +779,12 @@
     }
 
     :global(.vtex-checkbox__label) {
-      @include text($font-size-md, $text-color-1-400, $regular);
+      @include text(
+        $font-size-md - 1,
+        $high-pure-4,
+        $regular,
+        $quaternary-font
+      );
       line-height: 0.9375rem;
       margin-left: 0.625rem;
 
@@ -814,13 +819,18 @@
     }
 
     :global(.vtex-checkbox__label) {
-      @include text($font-size-md, $text-pure-500, $regular);
+      @include text(
+        $font-size-md - 1,
+        $high-pure-4,
+        $regular,
+        $quaternary-font
+      );
       line-height: 1.5rem;
     }
 
     :global(.vtex-checkbox__container) {
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 18px;
+      height: 18px;
       margin-right: 0.75rem;
       border-radius: 0.125rem;
       transition: all 0.3s ease-in-out;
@@ -834,26 +844,23 @@
     }
 
     :global(.vtex-checkbox__inner-container) {
-      height: 1rem;
-      width: 1rem;
+      height: 18px;
+      width: 18px;
       margin-right: 0.75rem;
-      border-width: 0.0625rem;
+      border-width: 2px;
       border-radius: 0;
-      border-color: $secondary-light-50;
+      border-color: $secondary-pure-500;
       margin-top: 0.0625rem;
-      // background-color: $color-1;
     }
 
     :global(.vtex-checkbox__box-wrapper) {
-      height: 0.9375rem;
-      width: 0.75rem;
-      margin-left: 0.125rem;
-      margin-top: 0.0625rem;
+      height: 20px;
+      width: 18px;
     }
 
     :global(.vtex-checkbox__input) {
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 18px;
+      height: 18px;
     }
 
     :global(.vtex__icon-check) {
@@ -864,11 +871,11 @@
 
     &--selected {
       :global(.vtex-checkbox__label) {
-        color: $text-pure-500;
+        color: $high-pure-4;
       }
 
       :global(.vtex-checkbox__inner-container) {
-        background-color: $secondary-light-50 !important;
+        background-color: $secondary-pure-500 !important;
       }
     }
   }
@@ -1304,6 +1311,7 @@
     padding-bottom: 0;
     position: absolute;
     z-index: 200;
+    padding: 0;
 
     :global(.vtex-slider__selector),
     :global(.vtex-slider__base-internal) {
@@ -1318,6 +1326,7 @@
 
   &--al-search__filter {
     @extend %scrollbar;
+    padding-bottom: 0;
 
     &::-webkit-scrollbar-track {
       border-color: #fafafa !important;
