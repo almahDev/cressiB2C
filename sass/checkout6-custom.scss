@@ -16,3 +16,8 @@
 
 // Steps
 @import 'components/checkout/step';
+
+[class^='icon-'],
+[class*=' icon-'] {
+  font-family: 'FontAwesome' !important;
+}
