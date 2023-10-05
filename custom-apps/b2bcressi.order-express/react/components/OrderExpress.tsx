@@ -4,6 +4,7 @@ import styles from '../styles.css'
 import { OrderExpressContextProvider } from '../contexts/OrderExpressContext'
 import OrderExpressTotalBar from './OrderExpressTotalBar'
 import OrderExpressTitle from './OrderExpressTitle'
+import OrderExpressProductList from './OrderExpressProductList'
 
 interface OrderExpressProps {
   title?: string
@@ -21,6 +22,8 @@ const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
           <OrderExpressTotalBar sticky />
 
           <OrderExpressTitle title={title} />
+
+          <OrderExpressProductList />
 
           <OrderExpressTotalBar />
         </div>

@@ -15,12 +15,11 @@
   },
   "dependencies": {
     "vtex.css-handles": "1.x",
+    "vtex.search-graphql": "0.x",
     "vtex.store": "2.x",
     "vtex.store-components": "3.x",
     "vtex.styleguide": "9.x"
   },
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
