@@ -2,10 +2,10 @@
   "disposition-layout#product-right-col": {
     "title": "Disposição de elementos - Detalhes do Produto",
     "children": [
-      "product-identifier.product",
+      // "product-identifier.product",
       "flex-layout.row#highlights",
-      "flex-layout.row#product-name",
-      "product-rating-summary",
+      // "flex-layout.row#product-name",
+      // "product-rating-summary",
       "flex-layout.row#product-price",
       "product-installments#product",
       "sku-selector",

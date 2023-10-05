@@ -5,7 +5,7 @@
     },
     "children": [
       "flex-layout.row#product-image",
-      "flex-layout.row#product-wishlist-share-mobile",
+      // "flex-layout.row#product-wishlist-share-mobile",
       "flex-layout.row#product-flags"
     ]
   },

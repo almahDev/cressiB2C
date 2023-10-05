@@ -1,9 +1,6 @@
 {
   "flex-layout.row#product-name": {
-    "children": [
-      "vtex.store-components:product-name",
-      "flex-layout.row#product-wishlist-share-desktop"
-    ],
+    "children": ["flex-layout.row#product-wishlist-share-desktop"],
     "props": {
       "fullWidth": true,
       "preserveLayoutOnMobile": true,

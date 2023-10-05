@@ -277,13 +277,17 @@
 
 // BRAND
 .productBrand {
-  @include text($font-c-2, $text-color-1, $regular);
-  line-height: 2.25rem;
+  @include text($font-c-2, $black, $bold);
+  font-family: 'Barlow';
+  line-height: normal;
   text-transform: uppercase;
+  font-style: italic;
+  display: block;
 
   @include tablet {
-    font-size: $font-size-lg;
+    font-size: 1.25rem;
     line-height: 1.688rem;
+    margin-top: 2rem;
   }
 }
 

@@ -8,9 +8,10 @@
     "children": [
       //"flex-layout.row#product-breadcrumb-desktop",
       //"flex-layout.row#product-breadcrumb-mobile",
+      //"accessories",
+      "responsive-layout.mobile#product-name",
       "flex-layout.row#product-main",
       "flex-layout.row#product-description",
-      //"accessories",
       "flex-layout.row#product-shelf-view",
       "flex-layout.row#product-review",
       "flex-layout.row#product-float-bar"
@@ -46,5 +47,15 @@
         }
       ]
     }
+  },
+  "responsive-layout.mobile#product-name": {
+    "children": ["flex-layout.row#product-name-mobile"]
+  },
+  "flex-layout.row#product-name-mobile": {
+    "children": [
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "product-rating-summary"
+    ]
   }
 }
