@@ -5,6 +5,12 @@
     padding: 10px 0 12px;
   }
 
+  &--header__tooltip--b2c {
+    background-color: #ffdc00;
+    color: #000;
+    padding: 10px 0 12px;
+  }
+
   &--header__main {
     background-color: $white;
     color: $black;
@@ -22,6 +28,10 @@
   &--block-search-bar {
     background-color: #f9f9f9;
     padding: 0 17px 16px 20px;
+
+    @include tablet {
+      background-color: #fff;
+    }
   }
 
   &--block-search-bar--logged {

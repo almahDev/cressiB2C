@@ -14,20 +14,21 @@
       },
       "blockClass": "al-search-category",
       "pagination": "show-more",
+      "showFacetQuantity": true,
       "preventRouteChange": false,
       "defaultGalleryLayout": "grid",
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": true
       }
     }
   },
   "search-result-layout.desktop#search": {
     "title": "Layout da Busca",
     "children": [
-      "flex-layout.row#al-search-title-order-by-desktop", // DESKTOP
-      "flex-layout.row#al-search-title-mobile", // MOBILE
+      "flex-layout.row#al-search-title-total-products-desktop", // DESKTOP
+      "flex-layout.row#al-search-title-total-products-mobile", // MOBILE
       "flex-layout.row#al-result-search",
-      "flex-layout.row#search-collections"
+      "flex-layout.row#shelf-youmaylike-1"
     ],
     "props": {
       "mobileLayout": {
@@ -36,10 +37,11 @@
       },
       "blockClass": "al-search-search",
       "pagination": "show-more",
+      "showFacetQuantity": true,
       "preventRouteChange": false,
       "defaultGalleryLayout": "grid",
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": true
       }
     }
   }

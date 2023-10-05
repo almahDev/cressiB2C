@@ -10,17 +10,32 @@
   "header-layout.desktop": {
     "title": "Almah |Header - Desktop",
     "children": [
-      "flex-layout.row#3-desktop",
+      "condition-layout.binding#3-desktop",
       "sticky-layout#4-desktop",
       // "flex-layout.row#5-desktop",
       "experimental__visibility-layout#back-to-top-button",
       "experimental__visibility-layout#header-whatsapp"
     ]
   },
-  "flex-layout.row#3-desktop": {
+  "condition-layout.binding#3-desktop": {
+    "title": "Condição de Exibição - Header - Topbar - Desktop",
+    "props": {
+      "conditions": [
+        {
+          "subject": "bindingId",
+          "arguments": {
+            "id": "e0bbf489-af0d-4c18-8d9d-6f4ea0e09a17"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#3-desktop-b2b",
+      "Else": "flex-layout.row#3-desktop-b2c"
+    }
+  },
+  "flex-layout.row#3-desktop-b2b": {
     "title": "Almah |Header - Topbar - Desktop",
     "props": {
-      "blockClass": "header__tooltip",
+      "blockClass": ["header__tooltip", "header__tooltip--b2b"],
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
@@ -31,6 +46,23 @@
       "challenge-block#login-header-tooltip",
       "flex-layout.col#spacer",
       "challenge-block#login-header-tooltip-2",
+      "flex-layout.col#tooltip-social"
+    ]
+  },
+  "flex-layout.row#3-desktop-b2c": {
+    "title": "Almah |Header - Topbar - Desktop",
+    "props": {
+      "blockClass": ["header__tooltip", "header__tooltip--b2c"],
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#search-desktop",
+      "challenge-block#login-header-tooltip",
+      "flex-layout.col#spacer",
+      "rich-text#tooltip-01",
       "flex-layout.col#tooltip-social"
     ]
   },
@@ -194,6 +226,9 @@
     ]
   },
   "sticky-layout#1-mobile": {
+    "props": {
+      "blockClass": "header__sticky--mobile"
+    },
     "children": [
       "flex-layout.row#1-mobile",
       "challenge-block#login-header-mobile"
