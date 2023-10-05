@@ -7,8 +7,35 @@
       "rowGap": 0,
       "blockClass": "product__right-col"
     },
+    "children": [
+      "challenge-block#product-main",
+      "condition-layout.product#availability-tip-bar"
+    ]
+  },
+  "challenge-block#product-main": {
+    "blocks": [
+      "challenge-content#product-main",
+      "challenge-fallback#product-main"
+    ]
+  },
+  "challenge-content#product-main": {
     "children": ["condition-layout.product#availability"]
   },
+  "challenge-fallback#product-main": {
+    "children": [
+      "link#direct-login-product"
+      // "flex-layout.row#shipping-simulator",
+      // "flex-layout.row#product-tipbar"
+    ]
+  },
+  "link#direct-login-product": {
+    "props": {
+      "label": "PARA VER O PREÇO DESTE PRODUTO, CADASTRE-SE",
+      "href": "/login",
+      "blockClass": ["cta-login-product"]
+    }
+  },
+
   "condition-layout.product#availability": {
     "title": "Condição de disponibilidade do Produto",
     "props": {
@@ -18,6 +45,18 @@
         }
       ],
       "Then": "disposition-layout#product-right-col",
+      "Else": "disposition-layout#product-right-col-unavailable"
+    }
+  },
+  "condition-layout.product#availability-tip-bar": {
+    "title": "Condição de disponibilidade do Produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "disposition-layout#product-right-col-final",
       "Else": "disposition-layout#product-right-col-unavailable"
     }
   }

@@ -1,21 +1,9 @@
 {
-  "disposition-layout#product-right-col": {
+  "disposition-layout#product-right-col-final": {
     "title": "Disposição de elementos - Detalhes do Produto",
     "children": [
-      // "product-identifier.product",
-      "flex-layout.row#highlights",
-      // "flex-layout.row#product-name",
-      // "product-rating-summary",
-      "flex-layout.row#product-price",
-      "product-installments#product",
-      "sku-selector",
-      "experimental__visibility-layout#product-similar-products-variants",
-      "product-availability",
-      "product-assembly-options",
-      "flex-layout.row#product-main-btn"
-      // "flex-layout.row#shipping-simulator",
-      // "rich-text#product-sale-text",
-      // "flex-layout.row#product-tipbar"
+      "flex-layout.row#shipping-simulator",
+      "flex-layout.row#product-tipbar"
     ],
     "props": {
       "disposition": [
