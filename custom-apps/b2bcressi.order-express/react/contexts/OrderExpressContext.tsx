@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from 'react'
 
-import { Item } from '../utils/simulation'
-
 type Props = {
   children?: React.ReactNode
 }
