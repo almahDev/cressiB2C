@@ -499,10 +499,6 @@ symbol-observable@^1.0.2:
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
-"tfdfjz.price-color-app@https://vitrine2--tfdfjz.myvtex.com/_v/private/typings/linked/v1/tfdfjz.price-color-app@0.0.1+build1674255846/public/@types/tfdfjz.price-color-app":
-  version "0.0.1"
-  resolved "https://vitrine2--tfdfjz.myvtex.com/_v/private/typings/linked/v1/tfdfjz.price-color-app@0.0.1+build1674255846/public/@types/tfdfjz.price-color-app#a286701b9e785a3f09fd53632bd27c8e283a652a"
-
 ts-invariant@^0.4.0, ts-invariant@^0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/ts-invariant/-/ts-invariant-0.4.4.tgz#97a523518688f93aafad01b0e80eb803eb2abd86"

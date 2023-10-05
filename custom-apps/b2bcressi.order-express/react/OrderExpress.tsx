@@ -1,11 +1,3 @@
-import React from 'react'
-
-const OrderExpress: StorefrontFunctionComponent = () => {
-  return (
-    <>
-      <div>Hello World</div>
-    </>
-  )
-}
+import OrderExpress from './components/OrderExpress'
 
 export default OrderExpress

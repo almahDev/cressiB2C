@@ -1,2 +1,16 @@
-.helloWorld {
+.orderExpressContainer {
+}
+
+.orderExpressTitle {
+  color: #000;
+  font-family: 'Barlow', sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.iconTitleLine {
+  margin-right: 14px;
 }
