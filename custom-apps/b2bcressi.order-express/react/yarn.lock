@@ -284,10 +284,6 @@ apollo-utilities@1.3.4, apollo-utilities@^1.3.0, apollo-utilities@^1.3.4:
     ts-invariant "^0.4.0"
     tslib "^1.10.0"
 
-"b2bcressi.order-express@https://zeo--b2bcressi.myvtex.com/_v/private/typings/linked/v1/b2bcressi.order-express@0.0.1+build1696472132/public/@types/b2bcressi.order-express":
-  version "0.0.1"
-  resolved "https://zeo--b2bcressi.myvtex.com/_v/private/typings/linked/v1/b2bcressi.order-express@0.0.1+build1696472132/public/@types/b2bcressi.order-express#317ddbd659cff65ce3e4b9a8f42497af3fad0a29"
-
 chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
