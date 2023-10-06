@@ -86,7 +86,7 @@
 
   &--product__description {
     @include tablet {
-      display: none;
+      // display: none;
     }
   }
 
@@ -445,6 +445,11 @@
   }
 
   &--product__description {
+    border-top: 1px solid#c9c9c9;
+
+    &:last-child {
+      border-bottom: 1px solid #c9c9c9;
+    }
   }
 
   &--simalares-links-pdp {

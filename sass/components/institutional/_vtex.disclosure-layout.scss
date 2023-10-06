@@ -25,6 +25,19 @@
       filter: grayscale(1);
     }
   }
+
+  &--product__description {
+    border: 0;
+
+    &--visible {
+      background-color: $white;
+      border: 0;
+
+      &::before {
+        display: none !important;
+      }
+    }
+  }
 }
 
 .content {
@@ -34,6 +47,19 @@
     background-color: #ffdb0080;
     padding: 0 1rem;
     color: #000;
+  }
+
+  &--product__description--visible {
+    background-color: $white;
+    border: 0;
+
+    :global(.vtex-store-components-3-x-productDescriptionContainer) {
+      padding: 0;
+    }
+
+    &::before {
+      display: none !important;
+    }
   }
 }
 
