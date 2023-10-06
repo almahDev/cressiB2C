@@ -75,6 +75,10 @@
     max-width: 100%;
     border: 0.063rem solid $high-light;
     border-radius: 0.25rem;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   :first-child {
@@ -156,6 +160,10 @@
 .carouselGaleryThumbs {
   &--product__images--desktop {
     width: 15% !important;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 

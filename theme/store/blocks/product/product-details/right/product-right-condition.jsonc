@@ -8,6 +8,7 @@
       "blockClass": "product__right-col"
     },
     "children": [
+      "responsive-layout.desktop#product-name",
       "challenge-block#product-main",
       "condition-layout.product#availability-tip-bar"
     ]
