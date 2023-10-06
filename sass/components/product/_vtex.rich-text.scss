@@ -69,9 +69,9 @@
 
   &--product__shipping {
     .paragraph {
-      @include text($font-size-md, $text-color-2-400, $bold);
-      margin: 0;
-      padding-bottom: 0.5rem;
+      @include text($font-size-md, $black, $regular);
+      margin: 2.69rem 1.5rem 0 1.5rem;
+      padding-bottom: 0.76rem;
     }
   }
 

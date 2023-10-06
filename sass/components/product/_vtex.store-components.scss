@@ -199,26 +199,33 @@
   justify-content: space-between;
   position: relative;
   align-items: flex-start;
+  border-radius: 4px;
+  border: 1px solid $black;
+  height: 3.1875rem;
 
   :global(.vtex-input__label) {
     display: none;
   }
 
+  :global(.vtex-input) {
+    height: 100%;
+    display: block;
+  }
+
   :global(.vtex-address-form__postalCode) {
     width: 100%;
     padding-bottom: 0;
+    height: 100%;
   }
 
   :global(.vtex-input-prefix__group) {
     border: none;
-    height: auto;
+    height: 100%;
     border-radius: 0;
   }
 
   :global(.vtex-address-form-4-x-input) {
-    @extend %input-text;
-    height: 2rem;
-    margin-right: 0.5rem;
+    height: 100%;
   }
 
   :global(.vtex-input__suffix) {
@@ -226,11 +233,12 @@
   }
 
   :global(.vtex-button) {
-    @extend %primary-button;
     width: auto;
-    height: 2rem;
+    height: 100%;
     padding: 0.5rem 1.5rem;
     font-size: $font-size-xs;
+    background-color: transparent;
+    border-color: transparent;
   }
 
   :global(.vtex-button__label) {
@@ -242,8 +250,8 @@
     font-size: 0;
 
     &::after {
-      content: 'OK';
-      @include text($font-size-sm, $white, $bold);
+      content: 'CALCULAR';
+      @include text($font-size-sm, $black, $normal);
     }
   }
 
