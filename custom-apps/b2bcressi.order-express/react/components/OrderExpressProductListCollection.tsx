@@ -14,6 +14,7 @@ import styles from '../styles.css'
 import IconShow from '../icons/IconShow'
 import IconHide from '../icons/IconHide'
 import DisclosureStateTrigger from './DisclosureStateTrigger'
+import OrderExpressProductListContent from './OrderExpressProductListContent'
 
 interface OrderExpressProductListCollectionProps {
   collectionId?: string | undefined
@@ -100,7 +101,7 @@ const OrderExpressProductListCollection = ({
               }`,
             }}
           >
-            Content 1
+            <OrderExpressProductListContent products={products} />
           </DisclosureContent>
 
           <DisclosureStateTrigger setIsExpanded={setIsExpanded} />
