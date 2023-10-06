@@ -77,6 +77,50 @@ const OrderExpressProductListContent = ({
                 {product?.productName}
               </h3>
             </div>
+
+            <div
+              className={`${styles.orderExpressProductListContentBodyProductCategory} w-100 flex justify-center items-start t-body`}
+            >
+              {product?.categoryTree?.[product?.categoryTree?.length - 1]?.name}
+            </div>
+
+            <div
+              className={`${styles.orderExpressProductListContentBodyProductVariations} w-100 flex flex-column justify-start items-center`}
+            >
+              {product?.items?.map((item) => (
+                <div
+                  key={`table-product-${product?.productId}-variation-${item?.name}`}
+                  className={`${styles.orderExpressProductListContentBodyProductVariation} t-body`}
+                >
+                  {item?.name?.replace(' - ', '#####')?.split('#####')?.[1]}
+                </div>
+              ))}
+            </div>
+
+            <div
+              className={`${styles.orderExpressProductListContentBodyProductCategory} w-100 flex flex-column justify-start items-center`}
+            >
+              {product?.items?.map((item) => (
+                <div
+                  key={`table-product-${product?.productId}-variation-${item?.name}`}
+                  className={`${styles.orderExpressProductListContentBodyProductVariation} t-body`}
+                >
+                  {item?.sellers?.[0]?.commertialOffer?.Price}
+                </div>
+              ))}
+            </div>
+
+            <div
+              className={`${styles.orderExpressProductListContentBodyProductCategory} w-100 flex justify-center items-start t-body`}
+            >
+              {product?.categoryTree?.[product?.categoryTree?.length - 1]?.name}
+            </div>
+
+            <div
+              className={`${styles.orderExpressProductListContentBodyProductCategory} w-100 flex justify-center items-start t-body`}
+            >
+              {product?.categoryTree?.[product?.categoryTree?.length - 1]?.name}
+            </div>
           </div>
         ))}
       </div>
