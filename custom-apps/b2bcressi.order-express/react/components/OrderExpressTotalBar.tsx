@@ -22,7 +22,7 @@ const OrderExpressTotalBar = ({
         </span>
       </div>
 
-      <button className={`${styles.orderExpressTotalBarSubmitButton}`}>
+      <button className={`${styles.orderExpressTotalBarSubmitButton} t-body`}>
         Finalizar Pedido
       </button>
     </div>

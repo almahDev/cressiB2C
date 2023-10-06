@@ -31,8 +31,8 @@
 
 .orderExpressTotalBarSticky {
   position: sticky;
-  top: 94px;
-  z-index: 2;
+  top: 78px;
+  z-index: 3;
 }
 
 .orderExpressTotalBarSubtotal {
@@ -121,7 +121,7 @@
 }
 
 .orderExpressAccordionTrigger--visible {
-  background: rgba(255, 219, 0, 0.2);
+  background: #fff8cc;
   transition: all 0.3s ease-in-out;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .orderExpressAccordionContent--visible {
-  background: rgba(255, 219, 0, 0.2);
+  background: #fff8cc;
   transition: all 0.3s ease-in-out;
 }
 
@@ -189,4 +189,48 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  /* text-align: center; */
+}
+
+/*
+.orderExpressProductListContentHeadItem:first-child {
+  text-align: left;
+}
+
+.orderExpressProductListContentHeadItem:last-child {
+  text-align: right;
+} */
+
+
+.orderExpressProductListContentBody {
+
+}
+
+.orderExpressProductListContentBodyProduct {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 32px 30px 23px 27px;
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #CDC8C8;
+}
+
+.orderExpressProductListContentBodyProductImageTitle {
+  background: #fff8cc;
+}
+
+.orderExpressProductListContentBodyProductTitle {
+  color: #303030;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 32px;
+  padding-left: 32px;
+  margin: 0;
+}
+.orderExpressProductListContentBodyProductImage {
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
