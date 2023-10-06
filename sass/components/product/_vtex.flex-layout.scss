@@ -364,6 +364,12 @@
       margin-top: 1.875rem;
     }
   }
+
+  &--product__tipbar-card {
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+  }
 }
 
 .flexColChild {

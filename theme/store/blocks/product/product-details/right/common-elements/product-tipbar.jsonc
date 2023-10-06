@@ -38,7 +38,7 @@
   "image#product-tipbar-image": {
     "title": "Produto - Tipbar - Item - Imagem",
     "props": {
-      "src": "https://fakeimg.pl/50x50/",
+      "src": "assets/svg/icon-delivery.svg",
       "alt": "Flag",
       "title": "Flag",
       "blockClass": "product__tipbar-flag--image",
@@ -53,7 +53,7 @@
     "title": "Produto - Tipbar - Item - Texto",
     "props": {
       "blockClass": "product__tipbar-flag--text",
-      "text": "Loren ipsum",
+      "text": "Entrega expressa em todo o Brasil! Compre com CNPJ da sua empresa!",
       "htmlId": "product-tipbar-text",
       "textAlignment": "LEFT",
       "textPosition": "LEFT"
@@ -85,7 +85,7 @@
   "image#product-tipbar-image-2": {
     "title": "Produto - Tipbar - Item - Imagem",
     "props": {
-      "src": "https://fakeimg.pl/50x50/",
+      "src": "assets/svg/icon-pay.svg",
       "alt": "Flag",
       "title": "Flag",
       "blockClass": "product__tipbar-flag--image",
@@ -100,7 +100,7 @@
     "title": "Produto - Tipbar - Item - Texto",
     "props": {
       "blockClass": "product__tipbar-flag--text",
-      "text": "Loren ipsum",
+      "text": "Compre com segurança: até \n 3x sem juros no cartão.",
       "htmlId": "product-tipbar-text",
       "textAlignment": "LEFT",
       "textPosition": "LEFT"

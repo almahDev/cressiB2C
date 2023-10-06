@@ -2,8 +2,8 @@
   "disposition-layout#product-right-col-final": {
     "title": "Disposição de elementos - Detalhes do Produto",
     "children": [
-      "flex-layout.row#shipping-simulator",
-      "flex-layout.row#product-tipbar"
+      "flex-layout.row#product-tipbar",
+      "flex-layout.row#shipping-simulator"
     ],
     "props": {
       "disposition": [

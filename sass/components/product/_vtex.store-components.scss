@@ -424,3 +424,11 @@
     margin-top: 0.75rem;
   }
 }
+
+.imageElementLink {
+  &--product__tipbar-flag--image {
+    width: 3.375rem !important;
+    display: flex;
+    justify-content: center;
+  }
+}
