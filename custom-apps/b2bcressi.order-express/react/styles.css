@@ -16,6 +16,8 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  margin: 0;
+  padding: 43px 0 53px;
 }
 
 .iconTitleLine {
@@ -30,6 +32,7 @@
 .orderExpressTotalBarSticky {
   position: sticky;
   top: 94px;
+  z-index: 2;
 }
 
 .orderExpressTotalBarSubtotal {
@@ -64,11 +67,104 @@
   padding: 8px 16px;
   min-width: 200px;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .orderExpressTotalBarSubmitButton:hover,
 .orderExpressTotalBarSubmitButton:focus,
 .orderExpressTotalBarSubmitButton:active {
   background: #d3b701;
+}
+
+.orderExpressProductListContainer {
+}
+
+.orderExpressProductListContent {
+}
+
+.orderExpressProductListContent .trigger {
+}
+
+.orderExpressProductListTitle {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.orderExpressAccordionTrigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #c9c9c9;
+  background: #fff;
+  padding: 24px 24px 24px 32px;
+  margin-top: -1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.orderExpressAccordionTrigger::before {
+  content: '';
+  width: 6px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.orderExpressAccordionTrigger--visible {
+  background: rgba(255, 219, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.orderExpressAccordionTrigger--visible::before {
+  background: #ffdb00;
+}
+
+.orderExpressAccordionContent {
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.orderExpressAccordionContent::before {
+  content: '';
+  width: 6px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.orderExpressAccordionContent--visible {
+  background: rgba(255, 219, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.orderExpressAccordionContent--visible::before {
+  background: #ffdb00;
+}
+
+.orderExpressAccordionStateIndicator {
+}
+
+.orderExpressAccordionGroup {
+}
+.orderExpressAccordionLayout {
+}
+
+.iconShow {
+}
+
+.iconHide {
 }

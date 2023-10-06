@@ -1,17 +1,30 @@
 import React from 'react'
 import { useQuery } from 'react-apollo'
+import { Loading } from 'vtex.render-runtime'
 
+import type { CollectionProps } from './OrderExpress'
+import type { MaybeProduct } from 'vtex.product-context/react/ProductTypes'
+import OrderExpressProductListCollection from './OrderExpressProductListCollection'
 import ProductSearchQuery from '../graphql/productSearch.gql'
+import styles from '../styles.css'
 
-const OrderExpressProductList = () => {
+interface OrderExpressProductListProps {
+  collections?: CollectionProps[]
+}
+
+const OrderExpressProductList = ({
+  collections,
+}: OrderExpressProductListProps) => {
+  const selectedFacets = collections?.map((collection) => ({
+    key: 'productClusterIds',
+    value: collection?.collectionId,
+  }))
+
   const { data, loading, error } = useQuery(ProductSearchQuery, {
     ssr: false,
     notifyOnNetworkStatusChange: true,
     variables: {
-      selectedFacets: [
-        { key: 'productClusterIds', value: '137' },
-        { key: 'productClusterIds', value: '138' },
-      ],
+      selectedFacets,
     },
   })
 
@@ -31,7 +44,7 @@ const OrderExpressProductList = () => {
   if (loading || error || !data) {
     return (
       <>
-        loading
+        <Loading />
         {/* <Skeleton className="mr4" count={2} height={550} width={320} inline /> */}
       </>
     )
@@ -42,7 +55,11 @@ const OrderExpressProductList = () => {
   } = data ?? {}
 
   if (!products || !products?.length) {
-    return <>loading</>
+    return (
+      <>
+        <Loading />
+      </>
+    )
   }
 
   console.log(
@@ -50,17 +67,42 @@ const OrderExpressProductList = () => {
     products
   )
 
-  return (
-    <div>
-      {products?.map((product: any) => (
-        <div>
-          <img
-            src={product?.items[0]?.images[0]?.imageUrl}
-            alt={product?.productName}
-          />
+  const productsFiltered = collections?.map((collection) => ({
+    collectionId: collection?.collectionId,
+    collectionName: products?.find((product: MaybeProduct) =>
+      product?.productClusters?.find(
+        (productCluster) => productCluster?.id === collection?.collectionId
+      )
+    )?.productClusters?.[0]?.name,
+    products: products?.filter((product: MaybeProduct) =>
+      product?.productClusters?.find(
+        (productCluster) => productCluster?.id === collection?.collectionId
+      )
+    ),
+  }))
 
-          <h2>{product?.productName}</h2>
-        </div>
+  console.log(
+    '🚀 ~ file: OrderExpressProductList.tsx:76 ~ productsFiltered ~ productsFiltered:',
+    productsFiltered
+  )
+
+  if (!productsFiltered || !productsFiltered?.length) {
+    return (
+      <>
+        <Loading />
+      </>
+    )
+  }
+
+  return (
+    <div
+      className={`${styles.orderExpressProductListContainer} w-100 flex flex-column`}
+    >
+      {productsFiltered?.map((productCollection) => (
+        <OrderExpressProductListCollection
+          key={`collection-${productCollection?.collectionId}`}
+          {...productCollection}
+        />
       ))}
     </div>
   )

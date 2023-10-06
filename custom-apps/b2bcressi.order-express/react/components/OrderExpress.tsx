@@ -5,14 +5,30 @@ import { OrderExpressContextProvider } from '../contexts/OrderExpressContext'
 import OrderExpressTotalBar from './OrderExpressTotalBar'
 import OrderExpressTitle from './OrderExpressTitle'
 import OrderExpressProductList from './OrderExpressProductList'
+import { mockCollections } from '../mocks/collections'
+import { Loading } from 'vtex.render-runtime'
 
-interface OrderExpressProps {
+export type CollectionProps = {
+  collectionId?: string
+}
+
+export interface OrderExpressProps {
   title?: string
+  collections?: CollectionProps[]
 }
 
 const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
   title = 'Pedido Express',
+  collections = mockCollections,
 }) => {
+  if (!collections || !collections?.length) {
+    return (
+      <>
+        <Loading />
+      </>
+    )
+  }
+
   return (
     <OrderExpressContextProvider>
       <div
@@ -23,7 +39,7 @@ const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
 
           <OrderExpressTitle title={title} />
 
-          <OrderExpressProductList />
+          <OrderExpressProductList collections={collections} />
 
           <OrderExpressTotalBar />
         </div>
@@ -34,6 +50,7 @@ const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
 
 OrderExpress.defaultProps = {
   title: 'Pedido Express',
+  collections: mockCollections,
 }
 
 OrderExpress.schema = {
@@ -44,6 +61,21 @@ OrderExpress.schema = {
       title: 'Título',
       type: 'string',
       default: 'Pedido Express',
+    },
+    collections: {
+      title: 'Coleções',
+      type: 'array',
+      default: mockCollections,
+      items: {
+        title: 'Coleção',
+        type: 'object',
+        properties: {
+          collectionId: {
+            title: 'ID da Coleção',
+            type: 'string',
+          },
+        },
+      },
     },
   },
 }

@@ -9,8 +9,6 @@ interface OrderExpressTotalBarProps {
 const OrderExpressTotalBar = ({
   sticky = false,
 }: OrderExpressTotalBarProps) => {
-  console.log('🚀 ~ file: OrderExpressTotalBar.tsx:10 ~ sticky:', sticky)
-
   return (
     <div
       className={`${styles.orderExpressTotalBar} ${
