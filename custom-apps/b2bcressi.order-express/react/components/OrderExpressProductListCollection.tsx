@@ -62,29 +62,23 @@ const OrderExpressProductListCollection = ({
   // )
 
   return (
-    <div
-      className={`${styles.orderExpressProductListContent} w-100 flex flex-column`}
-    >
+    <div className={`${styles.productListContent} w-100 flex flex-column`}>
       <DisclosureLayoutGroup>
         <DisclosureLayout>
           <DisclosureTrigger
             htmlProps={{
-              className: `${styles.orderExpressAccordionTrigger} ${
+              className: `${styles.accordionTrigger} ${
                 isExpanded
-                  ? `${styles.orderExpressAccordionTrigger}--visible`
-                  : `${styles.orderExpressAccordionTrigger}--hidden`
+                  ? `${styles.accordionTrigger}--visible`
+                  : `${styles.accordionTrigger}--hidden`
               }`,
             }}
           >
-            <h2
-              className={`${styles.orderExpressProductListTitle} t-heading-2`}
-            >
+            <h2 className={`${styles.productListTitle} t-heading-2`}>
               {collectionName}
             </h2>
 
-            <div
-              className={`${styles.orderExpressAccordionStateIndicator} flex`}
-            >
+            <div className={`${styles.accordionStateIndicator} flex`}>
               <DisclosureStateIndicator
                 show={<IconShow />}
                 hide={<IconHide />}
@@ -94,10 +88,10 @@ const OrderExpressProductListCollection = ({
 
           <DisclosureContent
             htmlProps={{
-              className: `${styles.orderExpressAccordionContent} ${
+              className: `${styles.accordionContent} ${
                 isExpanded
-                  ? `${styles.orderExpressAccordionContent}--visible`
-                  : `${styles.orderExpressAccordionContent}--hidden`
+                  ? `${styles.accordionContent}--visible`
+                  : `${styles.accordionContent}--hidden`
               }`,
             }}
           >

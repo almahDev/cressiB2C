@@ -1,14 +1,14 @@
-.orderExpressContainer {
+.container {
 }
 
-.orderExpressColumn {
+.column {
   padding-bottom: 53px;
 }
 
-.orderExpressTitleContainer {
+.titleContainer {
 }
 
-.orderExpressTitle {
+.title {
   color: #000;
   font-family: 'Barlow', sans-serif;
   font-size: 30px;
@@ -24,18 +24,18 @@
   margin-right: 14px;
 }
 
-.orderExpressTotalBar {
+.totalBar {
   background-color: #000;
   padding: 18px 17px 21px;
 }
 
-.orderExpressTotalBarSticky {
+.totalBarSticky {
   position: sticky;
   top: 78px;
   z-index: 3;
 }
 
-.orderExpressTotalBarSubtotal {
+.totalBarSubtotal {
   color: #fff;
   font-size: 17px;
   font-style: normal;
@@ -45,7 +45,7 @@
   padding-right: 30px;
 }
 
-.orderExpressTotalBarSubtotalPrice {
+.totalBarSubtotalPrice {
   color: #ffdb00;
   font-size: 17px;
   font-style: normal;
@@ -54,7 +54,7 @@
   text-transform: uppercase;
 }
 
-.orderExpressTotalBarSubmitButton {
+.totalBarSubmitButton {
   border-radius: 4px;
   background: #ffdb00;
   border: none;
@@ -70,22 +70,22 @@
   transition: all 0.2s ease-in-out;
 }
 
-.orderExpressTotalBarSubmitButton:hover,
-.orderExpressTotalBarSubmitButton:focus,
-.orderExpressTotalBarSubmitButton:active {
+.totalBarSubmitButton:hover,
+.totalBarSubmitButton:focus,
+.totalBarSubmitButton:active {
   background: #d3b701;
 }
 
-.orderExpressProductListContainer {
+.productListContainer {
 }
 
-.orderExpressProductListContent {
+.productListContent {
 }
 
-.orderExpressProductListContent .trigger {
+.productListContent .trigger {
 }
 
-.orderExpressProductListTitle {
+.productListTitle {
   color: #333;
   font-size: 18px;
   font-style: normal;
@@ -94,7 +94,7 @@
   margin: 0;
 }
 
-.orderExpressAccordionTrigger {
+.accordionTrigger {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@
   position: relative;
 }
 
-.orderExpressAccordionTrigger::before {
+.accordionTrigger::before {
   content: '';
   width: 6px;
   height: 100%;
@@ -120,22 +120,22 @@
   transition: all 0.3s ease-in-out;
 }
 
-.orderExpressAccordionTrigger--visible {
+.accordionTrigger--visible {
   background: #fff8cc;
   transition: all 0.3s ease-in-out;
 }
 
-.orderExpressAccordionTrigger--visible::before {
+.accordionTrigger--visible::before {
   background: #ffdb00;
 }
 
-.orderExpressAccordionContent {
+.accordionContent {
   background: #fff;
   transition: all 0.3s ease-in-out;
   position: relative;
 }
 
-.orderExpressAccordionContent::before {
+.accordionContent::before {
   content: '';
   width: 6px;
   height: 100%;
@@ -147,21 +147,36 @@
   transition: all 0.3s ease-in-out;
 }
 
-.orderExpressAccordionContent--visible {
-  background: #fff8cc;
+.accordionContent--hidden {
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transform: scaleY(0);
+  transform-origin: top;
   transition: all 0.3s ease-in-out;
 }
 
-.orderExpressAccordionContent--visible::before {
+.accordionContent--visible {
+  background: #fff8cc;
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordionContent--visible::before {
   background: #ffdb00;
 }
 
-.orderExpressAccordionStateIndicator {
+.accordionStateIndicator {
 }
 
-.orderExpressAccordionGroup {
+.accordionGroup {
 }
-.orderExpressAccordionLayout {
+.accordionLayout {
 }
 
 .iconShow {
@@ -170,10 +185,10 @@
 .iconHide {
 }
 
-.orderExpressProductListContentContainer {
+.productListContentContainer {
 }
 
-.orderExpressProductListContentHead {
+.productListContentHead {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
   background: #000;
@@ -182,7 +197,7 @@
   z-index: 2;
 }
 
-.orderExpressProductListContentHeadItem {
+.productListContentHeadItem {
   color: #fff;
   font-size: 17px;
   font-style: normal;
@@ -192,19 +207,18 @@
   /* text-align: center; */
 }
 
-
-.orderExpressProductListContentHeadItem:not(:first-child):not(:last-child) {
+.productListContentHeadItem:not(:first-child):not(:last-child) {
   text-align: center;
 }
 
-.orderExpressProductListContentHeadItem:last-child {
+.productListContentHeadItem:last-child {
   text-align: right;
 }
 
-.orderExpressProductListContentBody {
+.productListContentBody {
 }
 
-.orderExpressProductListContentBodyProduct {
+.productListProductWrapper {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
   padding: 32px 30px 23px 27px;
@@ -213,56 +227,49 @@
   border-bottom: 1px solid #cdc8c8;
 }
 
-.orderExpressProductListContentBodyProductImageTitle {
+.productListProductImageTitle {
   background: #fff8cc;
 }
 
-.orderExpressProductListContentBodyProductTitle {
+.productListText {
   color: #303030;
   font-size: 15px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.productListProductTitle {
+  font-weight: 700;
   padding-left: 32px;
   margin: 0;
 }
-.orderExpressProductListContentBodyProductImage {
+
+.productListProductImage {
   object-fit: contain;
   mix-blend-mode: multiply;
   max-width: 154px;
   max-height: 134px;
 }
 
-.orderExpressProductListContentBodyProductCategory {
-  color: #303030;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
+.productListProductCategory {
 }
 
-.orderExpressProductListContentBodyProductVariations {
+.productListProductVariations {
 }
 
-.orderExpressProductListContentBodyProductVariation {
-  color: #303030;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
+.productListProductVariation {
 }
 
-.orderExpressProductListContentBodyProductPrices {
+.productListProductPrices {
 }
 
-.orderExpressProductListContentBodyProductPrice {
-  color: #303030;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
+.productListProductPrice {
+}
+
+.productListProductQuantityBuy {
+}
+
+.productListProductTotalPrice {
 }

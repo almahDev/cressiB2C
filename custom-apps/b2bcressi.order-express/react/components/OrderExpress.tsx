@@ -32,9 +32,9 @@ const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
   return (
     <OrderExpressContextProvider>
       <div
-        className={`${styles.orderExpressContainer} w-100 flex items-center justify-center mw8 center `}
+        className={`${styles.container} w-100 flex items-center justify-center mw8 center `}
       >
-        <div className={`${styles.orderExpressColumn} w-100 flex flex-column`}>
+        <div className={`${styles.column} w-100 flex flex-column`}>
           <OrderExpressTotalBar sticky />
 
           <OrderExpressTitle title={title} />

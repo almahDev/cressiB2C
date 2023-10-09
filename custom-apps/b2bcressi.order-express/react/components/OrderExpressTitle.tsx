@@ -10,10 +10,10 @@ interface OrderExpressTitleProps {
 const OrderExpressTitle = ({ title }: OrderExpressTitleProps) => {
   return (
     <div
-      className={`${styles.orderExpressTitleContainer} flex items-center justify-between`}
+      className={`${styles.titleContainer} flex items-center justify-between`}
     >
       <h1
-        className={`${styles.orderExpressTitle} w-100 t-heading-1 c-on-base flex items-center justify-start`}
+        className={`${styles.title} w-100 t-heading-1 c-on-base flex items-center justify-start`}
       >
         <IconTitleLine /> <span>{title}</span>
       </h1>

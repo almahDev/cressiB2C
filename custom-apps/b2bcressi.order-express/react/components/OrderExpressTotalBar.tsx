@@ -11,18 +11,18 @@ const OrderExpressTotalBar = ({
 }: OrderExpressTotalBarProps) => {
   return (
     <div
-      className={`${styles.orderExpressTotalBar} ${
-        sticky ? `${styles.orderExpressTotalBarSticky}` : ''
+      className={`${styles.totalBar} ${
+        sticky ? `${styles.totalBarSticky}` : ''
       } w-100 flex items-center justify-end`}
     >
-      <div className={`${styles.orderExpressTotalBarSubtotal} t-body`}>
+      <div className={`${styles.totalBarSubtotal} t-body`}>
         Subtotal:{' '}
-        <span className={`${styles.orderExpressTotalBarSubtotalPrice} t-body`}>
+        <span className={`${styles.totalBarSubtotalPrice} t-body`}>
           R$ 9999,99
         </span>
       </div>
 
-      <button className={`${styles.orderExpressTotalBarSubmitButton} t-body`}>
+      <button className={`${styles.totalBarSubmitButton} t-body`}>
         Finalizar Pedido
       </button>
     </div>

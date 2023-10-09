@@ -21,46 +21,40 @@ const OrderExpressProductListContent = ({
   )
 
   return (
-    <div className={`${styles.orderExpressProductListContentContainer}`}>
-      <div className={`${styles.orderExpressProductListContentHead}`}>
-        <div className={`${styles.orderExpressProductListContentHeadItem}`}>
+    <div className={`${styles.productListContentContainer}`}>
+      <div className={`${styles.productListContentHead}`}>
+        <div className={`${styles.productListContentHeadItem}`}>
           Nome/produto
         </div>
 
-        <div className={`${styles.orderExpressProductListContentHeadItem}`}>
-          Categoria
-        </div>
+        <div className={`${styles.productListContentHeadItem}`}>Categoria</div>
 
-        <div className={`${styles.orderExpressProductListContentHeadItem}`}>
-          Variações
-        </div>
+        <div className={`${styles.productListContentHeadItem}`}>Variações</div>
 
-        <div className={`${styles.orderExpressProductListContentHeadItem}`}>
+        <div className={`${styles.productListContentHeadItem}`}>
           Valor Unitário
         </div>
 
-        <div className={`${styles.orderExpressProductListContentHeadItem}`}>
-          QUANTIDADE
-        </div>
+        <div className={`${styles.productListContentHeadItem}`}>QUANTIDADE</div>
 
-        <div className={`${styles.orderExpressProductListContentHeadItem}`}>
+        <div className={`${styles.productListContentHeadItem}`}>
           VALOR TOTAL
         </div>
       </div>
 
       <div
-        className={`${styles.orderExpressProductListContentBody} w-100 flex flex-column`}
+        className={`${styles.productListContentBody} w-100 flex flex-column`}
       >
         {products?.map((product) => (
           <div
             key={`table-product-${product?.productId}`}
-            className={`${styles.orderExpressProductListContentBodyProduct} w-100`}
+            className={`${styles.productListProductWrapper} w-100`}
           >
             <div
-              className={`${styles.orderExpressProductListContentBodyProductImageTitle} w-100 flex justify-center items-start`}
+              className={`${styles.productListProductImageTitle} w-100 flex justify-center items-start`}
             >
               <img
-                className={`${styles.orderExpressProductListContentBodyProductImage} w-100 h-100 db`}
+                className={`${styles.productListProductImage} w-100 h-100 db`}
                 src={imageUrl(
                   product?.items?.[0]?.images?.[0]?.imageUrl ?? '',
                   DEFAULT_WIDTH,
@@ -72,25 +66,25 @@ const OrderExpressProductListContent = ({
               />
 
               <h3
-                className={`${styles.orderExpressProductListContentBodyProductTitle} w-100 t-heading-3`}
+                className={`${styles.productListText} ${styles.productListProductTitle} w-100 t-heading-3`}
               >
                 {product?.productName}
               </h3>
             </div>
 
             <div
-              className={`${styles.orderExpressProductListContentBodyProductCategory} w-100 flex justify-center items-start t-body`}
+              className={`${styles.productListProductCategory} ${styles.productListText} w-100 flex justify-center items-start t-body`}
             >
               {product?.categoryTree?.[product?.categoryTree?.length - 1]?.name}
             </div>
 
             <div
-              className={`${styles.orderExpressProductListContentBodyProductVariations} w-100 flex flex-column justify-start items-center`}
+              className={`${styles.productListProductVariations} w-100 flex flex-column justify-start items-center`}
             >
               {product?.items?.map((item) => (
                 <div
                   key={`table-product-${product?.productId}-variation-${item?.name}`}
-                  className={`${styles.orderExpressProductListContentBodyProductVariation} t-body`}
+                  className={`${styles.productListProductVariation} ${styles.productListText} t-body`}
                 >
                   {item?.name?.replace(' - ', '#####')?.split('#####')?.[1]}
                 </div>
@@ -98,12 +92,12 @@ const OrderExpressProductListContent = ({
             </div>
 
             <div
-              className={`${styles.orderExpressProductListContentBodyProductCategory} w-100 flex flex-column justify-start items-center`}
+              className={`${styles.productListProductPrices} w-100 flex flex-column justify-start items-center`}
             >
               {product?.items?.map((item) => (
                 <div
                   key={`table-product-${product?.productId}-variation-${item?.name}`}
-                  className={`${styles.orderExpressProductListContentBodyProductVariation} t-body`}
+                  className={`${styles.productListProductPrice} ${styles.productListText} t-body`}
                 >
                   {item?.sellers?.[0]?.commertialOffer?.Price}
                 </div>
@@ -111,15 +105,22 @@ const OrderExpressProductListContent = ({
             </div>
 
             <div
-              className={`${styles.orderExpressProductListContentBodyProductCategory} w-100 flex justify-center items-start t-body`}
+              className={`${styles.productListProductQuantityBuy}  ${styles.productListText} w-100 flex justify-center items-start t-body`}
             >
               {product?.categoryTree?.[product?.categoryTree?.length - 1]?.name}
             </div>
 
             <div
-              className={`${styles.orderExpressProductListContentBodyProductCategory} w-100 flex justify-center items-start t-body`}
+              className={`${styles.productListProductPrices} w-100 flex flex-column justify-center items-start t-body`}
             >
-              {product?.categoryTree?.[product?.categoryTree?.length - 1]?.name}
+              {product?.items?.map((item) => (
+                <div
+                  key={`table-product-${product?.productId}-variation-${item?.name}`}
+                  className={`${styles.productListProductTotalPrice} ${styles.productListText} t-body`}
+                >
+                  {item?.sellers?.[0]?.commertialOffer?.Price}
+                </div>
+              ))}
             </div>
           </div>
         ))}

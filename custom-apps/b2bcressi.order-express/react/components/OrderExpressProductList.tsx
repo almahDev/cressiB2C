@@ -95,9 +95,7 @@ const OrderExpressProductList = ({
   }
 
   return (
-    <div
-      className={`${styles.orderExpressProductListContainer} w-100 flex flex-column`}
-    >
+    <div className={`${styles.productListContainer} w-100 flex flex-column`}>
       {productsFiltered?.map((productCollection) => (
         <OrderExpressProductListCollection
           key={`collection-${productCollection?.collectionId}`}
