@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import styles from '../styles.css'
+import { OrderExpressContext } from '../contexts/OrderExpressContext'
 
 interface OrderExpressTotalBarProps {
   sticky?: boolean
@@ -9,6 +10,17 @@ interface OrderExpressTotalBarProps {
 const OrderExpressTotalBar = ({
   sticky = false,
 }: OrderExpressTotalBarProps) => {
+  const { selectedItems, setSelectedItems } = useContext(OrderExpressContext)
+
+  console.log(
+    '🚀 ~ file: OrderExpressTotalBar.tsx:16 ~ selectedItems:',
+    selectedItems
+  )
+  console.log(
+    '🚀 ~ file: OrderExpressTotalBar.tsx:16 ~ setSelectedItems:',
+    setSelectedItems
+  )
+
   return (
     <div
       className={`${styles.totalBar} ${
