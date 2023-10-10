@@ -72,6 +72,10 @@
       @include text($font-size-md, $black, $regular);
       margin: 2.69rem 1.5rem 0 1.5rem;
       padding-bottom: 0.76rem;
+
+      @include desktop {
+        margin-left: 0;
+      }
     }
   }
 

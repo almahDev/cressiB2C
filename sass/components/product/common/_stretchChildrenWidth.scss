@@ -1,0 +1,10 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--product__tipbar) {
+  @include desktop {
+    flex-direction: column;
+  }
+  > :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    @include desktop {
+      width: 100% !important;
+    }
+  }
+}

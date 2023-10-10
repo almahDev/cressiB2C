@@ -53,7 +53,7 @@
     "title": "Produto - Tipbar - Item - Texto",
     "props": {
       "blockClass": "product__tipbar-flag--text",
-      "text": "Entrega expressa em todo o Brasil! Compre com CNPJ da sua empresa!",
+      "text": "Entrega expressa em todo o Brasil! \n Compre com CNPJ da sua empresa!",
       "htmlId": "product-tipbar-text",
       "textAlignment": "LEFT",
       "textPosition": "LEFT"

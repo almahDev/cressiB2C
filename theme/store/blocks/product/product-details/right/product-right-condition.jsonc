@@ -24,10 +24,21 @@
   },
   "challenge-fallback#product-main": {
     "children": [
-      "link#direct-login-product"
+      "link#direct-login-product",
+      "responsive-layout.desktop#link-acora"
       // "flex-layout.row#shipping-simulator",
       // "flex-layout.row#product-tipbar"
     ]
+  },
+  "responsive-layout.desktop#link-acora": {
+    "children": ["link#ancora-video"]
+  },
+  "link#ancora-video": {
+    "props": {
+      "label": "",
+      "href": "{specificationGroups}",
+      "blockClass": ["cta-login-product-ancora"]
+    }
   },
   "link#direct-login-product": {
     "props": {

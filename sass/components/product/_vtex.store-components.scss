@@ -12,6 +12,7 @@
 
     @include desktop {
       margin: 0;
+      padding-top: 2.19rem;
     }
   }
 }
@@ -304,6 +305,10 @@
     font-size: 1.25rem;
     line-height: 1.688rem;
     margin-top: 2rem;
+  }
+
+  @include desktop {
+    padding-top: 1rem;
   }
 }
 

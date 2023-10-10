@@ -8,6 +8,10 @@
     }
   }
 
+  &--product__description {
+    @extend %container-large;
+  }
+
   &--home__deals--product {
     background-color: $white;
     margin: 0.375rem;
@@ -212,12 +216,21 @@
   &--product__shipping--content {
     padding-bottom: 1.5rem;
 
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+    }
+
     .stretchChildrenWidth {
       &:first-child {
         width: 100% !important;
         flex-wrap: wrap;
         padding: 0;
         margin: 0 1.5rem;
+
+        @include desktop {
+          margin: 0;
+        }
       }
     }
 
@@ -385,6 +398,10 @@
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
       width: auto !important;
     }
+
+    @include desktop {
+      padding: 0;
+    }
   }
 
   &--top-name-page-product {
@@ -505,5 +522,9 @@
       align-items: flex-start;
       flex-direction: column;
     }
+  }
+
+  &--product__right-col {
+    padding-top: 2.19rem;
   }
 }
