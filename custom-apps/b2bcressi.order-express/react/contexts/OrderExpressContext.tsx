@@ -7,7 +7,8 @@ type Props = {
 
 export type SelectedItemProps = {
   id?: string
-  productId?: string
+  quantity?: number
+  seller?: string
 }
 
 type OrderExpressContextProps = {

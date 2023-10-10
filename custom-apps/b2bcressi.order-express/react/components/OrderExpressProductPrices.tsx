@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedCurrency } from 'vtex.format-currency'
 import type { MaybeProduct } from 'vtex.product-context/react/ProductTypes'
 
 import styles from '../styles.css'
@@ -27,7 +28,9 @@ const OrderExpressProductPrices = ({
           key={`table-product-${product?.productId}-variation-${item?.name}`}
           className={`${styles.productListProductPrice} ${styles.productListText} t-body`}
         >
-          {getDefaultSeller(item?.sellers)?.commertialOffer?.Price}
+          <FormattedCurrency
+            value={getDefaultSeller(item?.sellers)?.commertialOffer?.Price}
+          />
         </div>
       ))}
     </div>

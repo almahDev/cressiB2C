@@ -185,6 +185,12 @@
 .iconHide {
 }
 
+.iconSearch {
+}
+
+.iconCart {
+}
+
 .productListContentContainer {
 }
 
@@ -231,6 +237,10 @@
   background: #fff8cc;
 }
 
+.productListProductLink {
+  text-decoration: none;
+}
+
 .productListText {
   color: #303030;
   font-size: 15px;
@@ -251,6 +261,9 @@
   mix-blend-mode: multiply;
   max-width: 154px;
   max-height: 134px;
+  height: auto;
+  width: auto;
+  display: block;
 }
 
 .productListProductCategory {
@@ -269,6 +282,31 @@
 }
 
 .productListProductQuantityBuy {
+}
+
+.productListProductQuantity {
+  width: 100%;
+  max-width: 63px;
+  height: 33px;
+  border: 0.5px solid #8c8c8c;
+  background: #fff;
+  color: #303030;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 7px;
+  text-align: center;
+}
+
+.productListProductBuyButton {
+  width: 100%;
+  max-width: 46px;
+  height: 33px;
+  border-radius: 3px;
+  background: #000;
+  border: none;
 }
 
 .productListProductTotalPrice {
