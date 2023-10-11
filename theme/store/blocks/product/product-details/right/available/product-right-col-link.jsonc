@@ -1,10 +1,7 @@
 {
-  "disposition-layout#product-right-col-unavailable": {
-    "title": "Disposição de elementos - Detalhes do Produto (Indisponível)",
-    "children": [
-      "flex-layout.row#availability",
-      "flex-layout.row#product-tipbar"
-    ],
+  "disposition-layout#product-right-col-link": {
+    "title": "Disposição de elementos - Link",
+    "children": ["challenge-block#product-main"],
     "props": {
       "disposition": [
         {
