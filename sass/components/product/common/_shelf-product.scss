@@ -9,7 +9,7 @@
     left: -11px;
 
     @include desktop {
-      left: -22;
+      left: -22px;
     }
 
     &::after {
@@ -24,7 +24,7 @@
     right: -11px;
 
     @include desktop {
-      right: -22;
+      right: -22px;
     }
 
     &::after {
