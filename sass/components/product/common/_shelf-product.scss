@@ -1,0 +1,38 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--product__container) {
+  :global(.vtex-shelf-1-x-arrow) {
+    :global(.vtex-shelf-1-x-caretIcon) {
+      display: none;
+    }
+  }
+
+  :global(.vtex-shelf-1-x-arrowLeft) {
+    left: -11px;
+
+    @include desktop {
+      left: -22;
+    }
+
+    &::after {
+      content: url('assets/svg/icon-arrow-left-tooltip.svg');
+
+      @include desktop {
+        content: url('assets/svg/arrow-left.svg');
+      }
+    }
+  }
+  :global(.vtex-shelf-1-x-arrowRight) {
+    right: -11px;
+
+    @include desktop {
+      right: -22;
+    }
+
+    &::after {
+      content: url('assets/svg/icon-arrow-right-tooltip.svg');
+
+      @include desktop {
+        content: url('assets/svg/arrow-rigth.svg');
+      }
+    }
+  }
+}

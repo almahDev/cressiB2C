@@ -19,7 +19,6 @@
 
 .figure {
   &--product__images--desktop {
-    border: 0.063rem solid $high-light;
     border-radius: 0.25rem;
   }
 }
@@ -74,7 +73,6 @@
   &--product__images--desktop {
     width: 37.5rem;
     max-width: 100%;
-    border: 0.063rem solid $high-light;
     border-radius: 0.25rem;
 
     @include tablet {
@@ -154,7 +152,7 @@
 }
 
 .swiperBullet--active {
-  background-color: $color-3 !important;
+  background-color: $black !important;
   border-radius: 0.125rem !important;
 }
 
