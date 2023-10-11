@@ -57,18 +57,5 @@
     "props": {
       "blockClass": "top-name-page-product"
     }
-  },
-  "responsive-layout.desktop#product-name": {
-    "children": ["flex-layout.row#product-name-desktop"]
-  },
-  "flex-layout.row#product-name-desktop": {
-    "children": [
-      "vtex.store-components:product-name",
-      "product-identifier.product",
-      "product-rating-summary"
-    ],
-    "props": {
-      "blockClass": "top-name-page-product"
-    }
   }
 }
