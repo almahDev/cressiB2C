@@ -9,6 +9,7 @@ export type SelectedItemProps = {
   id?: string
   quantity?: number
   seller?: string
+  price?: number
 }
 
 type OrderExpressContextProps = {

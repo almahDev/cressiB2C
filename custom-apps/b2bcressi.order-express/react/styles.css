@@ -275,6 +275,11 @@
 .productListProductVariation {
 }
 
+.productListProductVariation:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+
 .productListProductPrices {
 }
 
@@ -282,6 +287,12 @@
 }
 
 .productListProductQuantityBuy {
+}
+
+.productListProductQuantityBuyVariation {
+}
+.productListProductQuantityBuyVariation:not(:last-child) {
+  padding-bottom: 7px;
 }
 
 .productListProductQuantity {

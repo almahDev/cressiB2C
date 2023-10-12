@@ -13,7 +13,7 @@ const OrderExpressProductVariations = ({
 }: OrderExpressProductVariationsProps) => {
   return (
     <div
-      className={`${styles.productListProductVariations} w-100 flex flex-column justify-start items-center`}
+      className={`${styles.productListProductVariations} w-100 flex flex-column justify-between items-center`}
     >
       {product?.items?.map((item) => (
         <div
