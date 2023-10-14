@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
-import { FormattedCurrency } from 'vtex.format-currency'
+import React from 'react'
 import type { MaybeProduct } from 'vtex.product-context/react/ProductTypes'
 
 import styles from '../styles.css'
-import { getDefaultSeller } from '../utils/utils'
-import { OrderExpressContext } from '../contexts/OrderExpressContext'
+import OrderExpressProductTotalPrice from './OrderExpressProductTotalPrice'
+import OrderExpressProductPrice from './OrderExpressProductPrice'
 
 interface OrderExpressProductPricesProps {
   product?: MaybeProduct
@@ -15,13 +14,6 @@ const OrderExpressProductPrices = ({
   product,
   isTotalPrice = false,
 }: OrderExpressProductPricesProps) => {
-  const { selectedItems } = useContext(OrderExpressContext)
-
-  console.log(
-    '🚀 ~ file: OrderExpressProductPrices.tsx:16 ~ isTotalPrice:',
-    isTotalPrice
-  )
-
   return (
     <div
       className={`${styles.productListProductPrices} w-100 flex flex-column justify-between items-center`}
@@ -32,18 +24,9 @@ const OrderExpressProductPrices = ({
           className={`${styles.productListProductPrice} ${styles.productListText} t-body`}
         >
           {isTotalPrice ? (
-            <FormattedCurrency
-              value={
-                (getDefaultSeller(item?.sellers)?.commertialOffer?.Price ?? 0) *
-                (selectedItems?.find(
-                  (selectedItem) => selectedItem?.id === item?.itemId
-                )?.quantity ?? 0)
-              }
-            />
+            <OrderExpressProductTotalPrice item={item} />
           ) : (
-            <FormattedCurrency
-              value={getDefaultSeller(item?.sellers)?.commertialOffer?.Price}
-            />
+            <OrderExpressProductPrice item={item} />
           )}
         </div>
       ))}

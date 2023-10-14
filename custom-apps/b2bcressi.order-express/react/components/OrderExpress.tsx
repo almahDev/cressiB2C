@@ -15,11 +15,13 @@ export type CollectionProps = {
 export interface OrderExpressProps {
   title?: string
   collections?: CollectionProps[]
+  hideUnavailableItems?: boolean
 }
 
 const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
   title = 'Pedido Express',
   collections = mockCollections,
+  hideUnavailableItems = true,
 }) => {
   if (!collections || !collections?.length) {
     return (
@@ -39,7 +41,10 @@ const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
 
           <OrderExpressTitle title={title} />
 
-          <OrderExpressProductList collections={collections} />
+          <OrderExpressProductList
+            collections={collections}
+            hideUnavailableItems={hideUnavailableItems}
+          />
 
           <OrderExpressTotalBar />
         </div>
@@ -51,6 +56,7 @@ const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
 OrderExpress.defaultProps = {
   title: 'Pedido Express',
   collections: mockCollections,
+  hideUnavailableItems: true,
 }
 
 OrderExpress.schema = {
@@ -61,6 +67,11 @@ OrderExpress.schema = {
       title: 'Título',
       type: 'string',
       default: 'Pedido Express',
+    },
+    hideUnavailableItems: {
+      title: 'Esconder os produtos indisponíveis?',
+      type: 'boolean',
+      default: true,
     },
     collections: {
       title: 'Coleções',
