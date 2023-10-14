@@ -14,8 +14,15 @@
 .sellingPrice,
 .sellingPriceValue {
   &--product__price {
-    @include text($font-size-sm, #2b2b2b, $regular);
-    line-height: 1.688rem;
+    @include text(2.1875rem, $secondary-pure-500, $bold);
+    line-height: normal;
+    margin-top: 3rem;
+
+    .currencyCode {
+      &--product__price {
+        font-size: 1.625rem;
+      }
+    }
   }
 
   &--product__float-bar {
@@ -34,6 +41,24 @@
   &--product__price {
     padding-bottom: 1rem;
     display: block;
+
+    .installmentsNumber {
+      &--product__price--1 {
+        color: $secondary-pure-500;
+        font-size: 0.9375rem;
+
+        &::before {
+          content: 'em ';
+          font-weight: normal;
+          color: $black;
+        }
+
+        &::after {
+          content: 'x ';
+          font-weight: normal;
+        }
+      }
+    }
   }
 
   &--product__float-bar {
@@ -45,17 +70,40 @@
 .installmentsNumber,
 .installmentValue {
   &--product__price {
-    @include text($font-size-md, $text-color-2-400, $regular);
+    @include text($font-size-md, $secondary-pure-500, $bold);
     margin: 0;
 
-    &::before,
-    &::after {
-      content: none;
+    .currencyContainer--product__price {
+      color: $secondary-pure-500;
     }
   }
 
   &--product__float-bar {
     font-size: $font-size-sm;
+  }
+}
+
+.installments {
+  &--product__price {
+    font-size: 0 !important;
+
+    &::before {
+      content: 'Ou ';
+      font-size: 0.9375rem;
+    }
+
+    &::after {
+      content: 'sem juros';
+      font-size: 0.9375rem;
+      color: $black;
+    }
+  }
+}
+.installmentValue {
+  &--product__price {
+    &::before {
+      content: 'de ';
+    }
   }
 }
 

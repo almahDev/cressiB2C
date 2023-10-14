@@ -3,6 +3,7 @@
     "title": "Disposição de elementos - Detalhes do Produto",
     "children": [
       "flex-layout.row#product-tipbar",
+      "flex-layout.row#product-specification",
       "flex-layout.row#shipping-simulator"
     ],
     "props": {
@@ -53,6 +54,19 @@
           "order": 15
         }
       ]
+    }
+  },
+  "flex-layout.row#product-specification": {
+    "children": ["link.product#download"],
+    "props": {
+      "blockClass": "download"
+    }
+  },
+  "link.product#download": {
+    "props": {
+      "href": "{specificationGroups.Download.specifications.Downloads}",
+      "label": "Clique aqui e baixe os manuais deste produto",
+      "blockClass": ["donwload-content"]
     }
   }
 }

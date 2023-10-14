@@ -138,14 +138,14 @@
     align-items: center;
     align-content: center;
     position: relative;
-    height: 2.813rem;
+    height: 5px;
     margin-bottom: -0.625rem;
   }
 }
 
 .swiperBullet {
   @extend %dot-product;
-  background-color: $high-light !important;
+  background-color: $text-medium-300 !important;
   width: 1.5rem !important;
   height: 0.25rem !important;
   border-radius: 0.125rem !important;
@@ -193,6 +193,10 @@
   @include tablet {
     font-size: $font-size-sm;
     line-height: 1.313rem;
+    padding: {
+      top: 1rem;
+      bottom: 1rem;
+    }
   }
 }
 

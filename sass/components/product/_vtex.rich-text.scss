@@ -70,7 +70,7 @@
   &--product__shipping {
     .paragraph {
       @include text($font-size-md, $black, $regular);
-      margin: 2.69rem 1.5rem 0 1.5rem;
+      margin: 1.69rem 1.5rem 0 1.5rem;
       padding-bottom: 0.76rem;
 
       @include desktop {

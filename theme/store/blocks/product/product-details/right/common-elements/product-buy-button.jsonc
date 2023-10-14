@@ -5,8 +5,9 @@
       "blockClass": "product__main--btn"
     },
     "children": [
-      "experimental__visibility-layout#quantity-selector",
-      "flex-layout.col#product-main-btn"
+      // "experimental__visibility-layout#quantity-selector",
+      "flex-layout.col#product-main-btn",
+      "flex-layout.col#link-ancora"
     ]
   },
   "experimental__visibility-layout#quantity-selector": {
@@ -26,6 +27,9 @@
       "experimental__visibility-layout#buy-now",
       "experimental__visibility-layout#add-to-cart"
     ]
+  },
+  "flex-layout.col#link-ancora": {
+    "children": ["link#ancora-video"]
   },
   "experimental__visibility-layout#buy-now": {
     "title": "Controle de visibilidade - Botão 'Comprar agora' (ON/OFF)",

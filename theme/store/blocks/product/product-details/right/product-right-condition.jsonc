@@ -33,7 +33,7 @@
     ]
   },
   "challenge-content#product-main": {
-    "children": ["condition-layout.product#availability"]
+    "children": ["flex-layout.row#logged-product-main"]
   },
   "challenge-fallback#product-main": {
     "children": [
@@ -73,6 +73,12 @@
     }
   },
 
+  "flex-layout.row#logged-product-main": {
+    "children": ["condition-layout.product#availability"],
+    "props": {
+      "blockClass": "logged"
+    }
+  },
   "condition-layout.product#availability": {
     "title": "Condição de disponibilidade do Produto",
     "props": {

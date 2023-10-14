@@ -34,10 +34,10 @@
   }
 
   &--product__specification {
-    &:nth-child(2n) {
-      background-color: $c-sup-3;
-      border-radius: 0.25rem;
-    }
+    // &:nth-child(2n) {
+    //   background-color: $c-sup-3;
+    //   border-radius: 0.25rem;
+    // }
   }
 
   &--product__main {
@@ -167,9 +167,8 @@
   &--product__main--btn {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
     align-items: flex-end;
+    margin-bottom: 2.19rem;
 
     @include tablet {
       flex-direction: column;
@@ -177,12 +176,13 @@
     }
 
     .stretchChildrenWidth {
-      &:last-child {
-        width: 100% !important;
+      &:first-child {
+        width: 86% !important;
+        padding-right: 1rem;
       }
 
-      @include tablet {
-        width: 100% !important;
+      &:last-child {
+        width: 16% !important;
       }
     }
   }
@@ -411,6 +411,12 @@
       width: 100% !important;
     }
   }
+
+  &--logged {
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      flex-direction: column;
+    }
+  }
 }
 
 .flexColChild {
@@ -432,19 +438,21 @@
     &:last-child {
       :global(.vtex-button) {
         width: 100%;
-        height: 3rem;
-        background-color: $color-3;
-        border-radius: 0.25rem;
+        max-width: 25.25rem;
+        height: 4.25rem;
+        background-color: $secondary-pure-500;
+        border-radius: 0.3125rem;
         padding: 0.75rem 1.5rem;
+        border-color: $secondary-pure-500;
+        font-size: 1.375rem;
+        transition: all 0.2s;
 
         @include tablet {
           width: 100%;
         }
 
         &:hover {
-          background-color: $color-3-700;
-          border: 0;
-          transition: all 0.2s;
+          filter: brightness(0.9);
         }
 
         :global(.vtex-spinner_circle) {
@@ -525,6 +533,8 @@
   }
 
   &--product__right-col {
-    padding-top: 2.19rem;
+    @include desktop {
+      padding-top: 2.19rem;
+    }
   }
 }

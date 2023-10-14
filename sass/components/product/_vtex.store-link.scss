@@ -63,6 +63,36 @@
     }
   }
 
+  &--donwload-content {
+    color: $black;
+    padding: 1rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop {
+      justify-content: start;
+      padding: {
+        left: 0;
+      }
+    }
+
+    &::before {
+      content: url('assets/svg/download-icon.svg');
+      display: flex;
+      width: 50px;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1.5rem;
+
+      @include desktop {
+        margin-right: 3rem;
+      }
+    }
+  }
+
   .label {
     &--cta-login-product {
       color: $black;
