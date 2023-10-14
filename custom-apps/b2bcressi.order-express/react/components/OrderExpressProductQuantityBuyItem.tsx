@@ -13,35 +13,16 @@ interface OrderExpressProductQuantityBuyItemProps {
 const OrderExpressProductQuantityBuyItem = ({
   item,
 }: OrderExpressProductQuantityBuyItemProps) => {
-  const [quantity, setQuantity] = React.useState(0)
-  console.log(
-    '🚀 ~ file: OrderExpressProductQuantityBuy.tsx:14 ~ OrderExpressProductQuantityBuyItem ~ quantity:',
-    quantity
-  )
-  console.log(
-    '🚀 ~ file: OrderExpressProductQuantityBuy.tsx:14 ~ OrderExpressProductQuantityBuyItem ~ item:',
-    item
-  )
+  const [quantity, setQuantity] = React.useState(1)
 
-  const { selectedItems, setSelectedItems } = useContext(OrderExpressContext)
-  console.log(
-    '🚀 ~ file: OrderExpressProductQuantityBuy.tsx:13 ~ OrderExpressProductQuantityBuyItem ~ selectedItems:',
-    selectedItems
-  )
+  const { selectedItems, setSelectedItems, setSelectedQuantityList } =
+    useContext(OrderExpressContext)
 
   const isSelected = selectedItems?.find(
     (selecItem) => selecItem?.id === item?.itemId
   )
-  console.log(
-    '🚀 ~ file: OrderExpressProductQuantityBuyItem.tsx:35 ~ isSelected:',
-    isSelected
-  )
 
   const handleSelection = () => {
-    if (!setSelectedItems) {
-      return
-    }
-
     const seller = getDefaultSeller(item?.sellers)
 
     const selectedItem = {
@@ -61,7 +42,22 @@ const OrderExpressProductQuantityBuyItem = ({
   }
 
   const handleChangeQuantity = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setQuantity(parseInt(e.target.value, 10))
+    const valueQuantity = parseInt(e.target.value, 10)
+
+    setQuantity(valueQuantity)
+
+    const selectedItem = {
+      id: item?.itemId,
+      quantity: valueQuantity,
+    }
+
+    setSelectedQuantityList((prev) => {
+      const prevFiltered = prev.filter(
+        (prevItem) => prevItem.id !== selectedItem.id
+      )
+
+      return [...prevFiltered, selectedItem]
+    })
 
     if (isSelected) {
       handleSelection()
@@ -70,22 +66,6 @@ const OrderExpressProductQuantityBuyItem = ({
 
   const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
-    console.log(
-      '🚀 ~ file: OrderExpressProductQuantityBuy.tsx:40 ~ handleButtonClick ~ e:',
-      e
-    )
-    console.log(
-      '🚀 ~ file: OrderExpressProductQuantityBuy.tsx:40 ~ handleButtonClick ~ quantity:',
-      quantity
-    )
-    console.log(
-      '🚀 ~ file: OrderExpressProductQuantityBuy.tsx:40 ~ handleButtonClick ~ selectedItems:',
-      selectedItems
-    )
-    console.log(
-      '🚀 ~ file: OrderExpressProductQuantityBuy.tsx:40 ~ handleButtonClick ~ setSelectedItems:',
-      setSelectedItems
-    )
 
     handleSelection()
   }
@@ -99,7 +79,7 @@ const OrderExpressProductQuantityBuyItem = ({
         className={`${styles.productListProductQuantity} db t-body`}
         alt="Quantidade"
         aria-label="Quantidade"
-        min="0"
+        min="1"
         value={quantity}
         onChange={handleChangeQuantity}
       />

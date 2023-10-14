@@ -10,11 +10,17 @@ import styles from '../styles.css'
 
 interface OrderExpressProductListProps {
   collections?: CollectionProps[]
+  hideUnavailableItems?: boolean
 }
 
 const OrderExpressProductList = ({
   collections,
+  hideUnavailableItems,
 }: OrderExpressProductListProps) => {
+  console.log(
+    '🚀 ~ file: OrderExpressProductList.tsx:20 ~ hideUnavailableItems:',
+    hideUnavailableItems
+  )
   const selectedFacets = collections?.map((collection) => ({
     key: 'productClusterIds',
     value: collection?.collectionId,
@@ -25,6 +31,7 @@ const OrderExpressProductList = ({
     notifyOnNetworkStatusChange: true,
     variables: {
       selectedFacets,
+      hideUnavailableItems,
     },
   })
 
@@ -62,19 +69,38 @@ const OrderExpressProductList = ({
     )
   }
 
+  const productFilteredIfUnavailable: MaybeProduct[] = hideUnavailableItems
+    ? products?.map((product: MaybeProduct) => ({
+        ...product,
+        items: product?.items?.filter((item) => {
+          const { sellers } = item
+
+          const isAvailable = sellers?.some(
+            (seller) => seller.commertialOffer.AvailableQuantity > 0
+          )
+
+          return Boolean(isAvailable)
+        }),
+      }))
+    : products
+
   console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:34 ~ OrderExpressProductList ~ products:',
+    '🚀 ~ file: OrderExpressProductList.tsx:84 ~ productFilteredIfUnavailable ~ products:',
     products
+  )
+  console.log(
+    '🚀 ~ file: OrderExpressProductList.tsx:84 ~ productFilteredIfUnavailable ~ productFilteredIfUnavailable:',
+    productFilteredIfUnavailable
   )
 
   const productsFiltered = collections?.map((collection) => ({
     collectionId: collection?.collectionId,
-    collectionName: products?.find((product: MaybeProduct) =>
+    collectionName: productFilteredIfUnavailable?.find((product) =>
       product?.productClusters?.find(
         (productCluster) => productCluster?.id === collection?.collectionId
       )
     )?.productClusters?.[0]?.name,
-    products: products?.filter((product: MaybeProduct) =>
+    products: productFilteredIfUnavailable?.filter((product) =>
       product?.productClusters?.find(
         (productCluster) => productCluster?.id === collection?.collectionId
       )

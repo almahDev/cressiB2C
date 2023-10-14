@@ -12,6 +12,10 @@ const OrderExpressTotalBar = ({
   sticky = false,
 }: OrderExpressTotalBarProps) => {
   const { selectedItems } = useContext(OrderExpressContext)
+  console.log(
+    '🚀 ~ file: OrderExpressTotalBar.tsx:15 ~ selectedItems:',
+    selectedItems
+  )
 
   const subtotal = selectedItems?.reduce((acc, item) => {
     const price = item.price ?? 0

@@ -1,6 +1,11 @@
-query productSearch($selectedFacets: [SelectedFacetInput]) {
-  productSearch(selectedFacets: $selectedFacets)
-    @context(provider: "vtex.search-graphql") {
+query productSearch(
+  $selectedFacets: [SelectedFacetInput]
+  $hideUnavailableItems: Boolean
+) {
+  productSearch(
+    selectedFacets: $selectedFacets
+    hideUnavailableItems: $hideUnavailableItems
+  ) @context(provider: "vtex.search-graphql") {
     recordsFiltered
     products {
       productName

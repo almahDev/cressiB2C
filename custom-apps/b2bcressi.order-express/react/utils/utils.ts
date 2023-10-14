@@ -10,6 +10,28 @@ export const parseVariationName = (variationName?: string) => {
 }
 
 /**
+ * Parses the variations and returns a string with the values.
+ * @param variations - The variations to be parsed.
+ * @returns A string with the values of the variations.
+ */
+export const parseVariations = (
+  variations?: Array<{
+    name: string
+    values: string[]
+  }>
+) => {
+  if (!variations || !variations.length) {
+    return []
+  }
+
+  return variations
+    ?.map((variation) => {
+      return `${variation.values.join("', '")}`
+    }, '')
+    ?.join(' - ')
+}
+
+/**
  * Returns the default seller from an array of sellers.
  * @param sellers - An array of sellers.
  * @returns The default seller, or the first seller if there is no default.

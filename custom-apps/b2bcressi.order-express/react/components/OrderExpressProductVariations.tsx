@@ -2,7 +2,6 @@ import React from 'react'
 import type { MaybeProduct } from 'vtex.product-context/react/ProductTypes'
 
 import styles from '../styles.css'
-import { parseVariationName } from '../utils/utils'
 
 interface OrderExpressProductVariationsProps {
   product?: MaybeProduct
@@ -20,7 +19,15 @@ const OrderExpressProductVariations = ({
           key={`table-product-${product?.productId}-variation-${item?.name}`}
           className={`${styles.productListProductVariation} ${styles.productListText} t-body`}
         >
-          {parseVariationName(item?.name)}
+          {/* {parseVariations(item?.name)} */}
+          {item?.variations?.map((variation, index) => (
+            <span
+              key={`table-product-${product?.productId}-variation-${item?.name}-${variation?.name}`}
+            >
+              <b>{variation?.name}</b>: {variation?.values?.join(',')}{' '}
+              {index < item?.variations?.length - 1 ? ' - ' : ''}
+            </span>
+          ))}
         </div>
       ))}
     </div>
