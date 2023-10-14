@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { FormattedCurrency } from 'vtex.format-currency'
+import { Spinner } from 'vtex.styleguide'
 
 import styles from '../styles.css'
 import { OrderExpressContext } from '../contexts/OrderExpressContext'
@@ -11,7 +12,8 @@ interface OrderExpressTotalBarProps {
 const OrderExpressTotalBar = ({
   sticky = false,
 }: OrderExpressTotalBarProps) => {
-  const { selectedItems } = useContext(OrderExpressContext)
+  const [loading, setLoading] = useState<boolean>(false)
+  const { selectedItems, globalLoading } = useContext(OrderExpressContext)
   console.log(
     '🚀 ~ file: OrderExpressTotalBar.tsx:15 ~ selectedItems:',
     selectedItems
@@ -33,7 +35,7 @@ const OrderExpressTotalBar = ({
   // console.log('🚀 ~ file: OrderExpressTotalBar.tsx:33 ~ isEmpty:', isEmpty)
 
   const addtoCart = () => {
-    // setLoading(true)
+    setLoading(true)
 
     const linkItems = selectedItems?.reduce(
       (currentItems: string, item: any) =>
@@ -56,15 +58,24 @@ const OrderExpressTotalBar = ({
       <div className={`${styles.totalBarSubtotal} t-body`}>
         Subtotal:{' '}
         <span className={`${styles.totalBarSubtotalPrice} t-body`}>
-          <FormattedCurrency value={subtotal} />
+          {globalLoading ? (
+            <Spinner size={20} color="white" />
+          ) : (
+            <FormattedCurrency value={subtotal} />
+          )}
         </span>
       </div>
 
       <button
-        className={`${styles.totalBarSubmitButton} t-body`}
+        className={`${styles.totalBarSubmitButton} t-body flex items-center justify-center pointer`}
         onClick={addtoCart}
+        disabled={globalLoading || loading}
       >
-        Finalizar Pedido
+        {globalLoading || loading ? (
+          <Spinner size={20} color="black" />
+        ) : (
+          'Finalizar Pedido'
+        )}
       </button>
     </div>
   )

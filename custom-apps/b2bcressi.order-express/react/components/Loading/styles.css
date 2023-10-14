@@ -1,7 +1,13 @@
 .skeletonWrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
   height: 100%;
+  gap: 10px 0;
+}
+
+.skeletonWrapper > :global(br) {
+  display: none;
 }

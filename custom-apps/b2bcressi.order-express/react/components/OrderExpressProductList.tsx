@@ -49,7 +49,7 @@ const OrderExpressProductList = ({
   )
 
   if (loading || error || !data) {
-    return <Loading height="72px" />
+    return <Loading height="72px" count={collections?.length ?? 1} />
   }
 
   const {
@@ -57,7 +57,7 @@ const OrderExpressProductList = ({
   } = data ?? {}
 
   if (!products || !products?.length) {
-    return <Loading height="72px" />
+    return <Loading height="72px" count={collections?.length ?? 1} />
   }
 
   const productFilteredIfUnavailable: MaybeProduct[] = hideUnavailableItems
@@ -106,7 +106,7 @@ const OrderExpressProductList = ({
   if (!productsFiltered || !productsFiltered?.length) {
     return (
       <>
-        <Loading height="72px" />
+        <Loading height="72px" count={collections?.length ?? 1} />
       </>
     )
   }

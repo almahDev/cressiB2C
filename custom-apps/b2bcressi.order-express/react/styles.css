@@ -76,6 +76,11 @@
   background: #d3b701;
 }
 
+.totalBarSubmitButton:disabled {
+  cursor: not-allowed;
+  background: #ffdb00 !important;
+}
+
 .productListContainer {
 }
 

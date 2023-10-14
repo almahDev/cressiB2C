@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import type { Item } from 'vtex.product-context/react/ProductTypes'
+import { Spinner } from 'vtex.styleguide'
 
 import styles from '../styles.css'
 import { OrderExpressContext } from '../contexts/OrderExpressContext'
@@ -15,8 +16,13 @@ const OrderExpressProductQuantityBuyItem = ({
 }: OrderExpressProductQuantityBuyItemProps) => {
   const [quantity, setQuantity] = React.useState(1)
 
-  const { selectedItems, setSelectedItems, setSelectedQuantityList } =
-    useContext(OrderExpressContext)
+  const {
+    selectedItems,
+    setSelectedItems,
+    setSelectedQuantityList,
+    globalLoading,
+    setGlobalLoading,
+  } = useContext(OrderExpressContext)
 
   const isSelected = selectedItems?.find(
     (selecItem) => selecItem?.id === item?.itemId
@@ -39,6 +45,12 @@ const OrderExpressProductQuantityBuyItem = ({
 
       return [...prevFiltered, selectedItem]
     })
+
+    setGlobalLoading(true)
+
+    setTimeout(() => {
+      setGlobalLoading(false)
+    }, 500)
   }
 
   const handleChangeQuantity = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -88,7 +100,11 @@ const OrderExpressProductQuantityBuyItem = ({
         className={`${styles.productListProductBuyButton} flex items-center justify-center pointer`}
         onClick={handleButtonClick}
       >
-        <IconCart />
+        {globalLoading && isSelected ? (
+          <Spinner size={20} color="white" />
+        ) : (
+          <IconCart />
+        )}
       </button>
     </div>
   )

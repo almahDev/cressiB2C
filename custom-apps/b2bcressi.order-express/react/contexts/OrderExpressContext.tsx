@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 type Props = {
   children?: React.ReactNode
@@ -24,6 +24,8 @@ type OrderExpressContextProps = {
   setSelectedQuantityList: React.Dispatch<
     React.SetStateAction<SelectedQuantityListProps[]>
   >
+  globalLoading: boolean
+  setGlobalLoading: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const OrderExpressContext =
@@ -32,6 +34,8 @@ export const OrderExpressContext =
     setSelectedItems: () => {},
     selectedQuantityList: [],
     setSelectedQuantityList: () => {},
+    globalLoading: true,
+    setGlobalLoading: () => {},
   })
 
 export const OrderExpressContextProvider = ({ children }: Props) => {
@@ -40,6 +44,14 @@ export const OrderExpressContextProvider = ({ children }: Props) => {
     SelectedQuantityListProps[]
   >([])
 
+  const [globalLoading, setGlobalLoading] = useState<boolean>(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setGlobalLoading(false)
+    }, 1000)
+  }, [])
+
   return (
     <OrderExpressContext.Provider
       value={{
@@ -47,6 +59,8 @@ export const OrderExpressContextProvider = ({ children }: Props) => {
         setSelectedItems,
         selectedQuantityList,
         setSelectedQuantityList,
+        globalLoading,
+        setGlobalLoading,
       }}
     >
       {children}
