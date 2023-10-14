@@ -3,7 +3,8 @@
     "title": "Disposição de elementos - Detalhes do Produto",
     "children": [
       "flex-layout.row#highlights",
-      "flex-layout.row#product-price",
+      "responsive-layout.desktop#product-price",
+      "responsive-layout.mobile#product-price",
       "product-installments#product",
       "sku-selector",
       "experimental__visibility-layout#product-similar-products-variants",
@@ -60,5 +61,23 @@
         }
       ]
     }
+  },
+  "responsive-layout.desktop#product-price": {
+    "children": ["flex-layout.row#product-price"]
+  },
+  "responsive-layout.mobile#product-price": {
+    "children": ["flex-layout.row#product-price-link"]
+  },
+  "flex-layout.row#product-price-link": {
+    "children": [
+      "flex-layout.col#product-price-mobile",
+      "flex-layout.col#product-ancora-mobile"
+    ]
+  },
+  "flex-layout.col#product-price-mobile": {
+    "children": ["product-list-price#product", "product-selling-price#product"]
+  },
+  "flex-layout.col#product-ancora-mobile": {
+    "children": ["link#ancora-video"]
   }
 }
