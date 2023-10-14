@@ -285,7 +285,6 @@
   padding-bottom: 16px;
 }
 
-
 .productListProductPrices {
 }
 
@@ -327,4 +326,30 @@
 }
 
 .productListProductTotalPrice {
+}
+
+@media (max-width: 1024px) {
+  .productListContentHead {
+    display: none;
+  }
+
+  .accordionTrigger::before,
+  .accordionContent::before {
+    width: 3px;
+  }
+
+  .totalBarSubmitButton {
+    min-width: unset;
+    width: 100%;
+    max-width: 164px;
+  }
+
+  .totalBarSubtotal {
+    flex-direction: column;
+  }
+
+  .productListProductWrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
