@@ -62,10 +62,6 @@ const OrderExpressProductQuantityBuyItem = ({
       id: item?.itemId,
       quantity: valueQuantity,
     }
-    console.log(
-      '🚀 ~ file: OrderExpressProductQuantityBuyItem.tsx:65 ~ handleChangeQuantity ~ selectedItem:',
-      selectedItem
-    )
 
     setSelectedQuantityList((prev) => {
       const prevFiltered = prev.filter(

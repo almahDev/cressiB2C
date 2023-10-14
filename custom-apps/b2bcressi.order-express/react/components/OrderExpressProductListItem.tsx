@@ -1,4 +1,5 @@
 import React from 'react'
+import { useDevice } from 'vtex.device-detector'
 import type { MaybeProduct } from 'vtex.product-context/react/ProductTypes'
 
 import OrderExpressProductImageTitle from './OrderExpressProductImageTitle'
@@ -15,19 +16,43 @@ interface OrderExpressProductListItemProps {
 const OrderExpressProductListItem = ({
   product,
 }: OrderExpressProductListItemProps) => {
+  const { isMobile } = useDevice()
+
   return (
-    <div className={`${styles.productListProductWrapper} w-100`}>
-      <OrderExpressProductImageTitle product={product} />
+    <div
+      className={`${styles.productListProductWrapper} ${
+        isMobile ? `${styles.productListProductWrapperMobile}` : ''
+      } w-100`}
+    >
+      {isMobile ? (
+        <>
+          <div className={`${styles.productListProductWrapperMobileRow} flex`}>
+            <OrderExpressProductImageTitle product={product} showCategory />
+          </div>
 
-      <OrderExpressProductCategory product={product} />
+          <div className={`${styles.productListProductWrapperMobileRow} flex`}>
+            <OrderExpressProductVariations product={product} />
 
-      <OrderExpressProductVariations product={product} />
+            <OrderExpressProductPrices product={product} isTotalPrice />
 
-      <OrderExpressProductPrices product={product} />
+            <OrderExpressQuantityBuy product={product} />
+          </div>
+        </>
+      ) : (
+        <>
+          <OrderExpressProductImageTitle product={product} />
 
-      <OrderExpressQuantityBuy product={product} />
+          <OrderExpressProductCategory product={product} />
 
-      <OrderExpressProductPrices product={product} isTotalPrice />
+          <OrderExpressProductVariations product={product} />
+
+          <OrderExpressProductPrices product={product} />
+
+          <OrderExpressQuantityBuy product={product} />
+
+          <OrderExpressProductPrices product={product} isTotalPrice />
+        </>
+      )}
     </div>
   )
 }

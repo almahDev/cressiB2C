@@ -3,9 +3,11 @@ import type { MaybeProduct } from 'vtex.product-context/react/ProductTypes'
 
 import styles from '../styles.css'
 import { imageUrl } from '../utils/aspectRatioUtil'
+import OrderExpressProductCategory from './OrderExpressProductCategory'
 
 interface OrderExpressProductImageTitleProps {
   product?: MaybeProduct
+  showCategory?: boolean
 }
 
 const DEFAULT_WIDTH = 154
@@ -14,6 +16,7 @@ const MAX_SIZE = 154
 
 const OrderExpressProductImageTitle = ({
   product,
+  showCategory = false,
 }: OrderExpressProductImageTitleProps) => {
   return (
     <div
@@ -35,11 +38,17 @@ const OrderExpressProductImageTitle = ({
           title={product?.items?.[0]?.images?.[0]?.imageText ?? ''}
         />
 
-        <h3
-          className={`${styles.productListText} ${styles.productListProductTitle} w-100 t-heading-3`}
+        <div
+          className={`${styles.productListTextAndCategory} flex flex-column`}
         >
-          {product?.productName}
-        </h3>
+          <h3
+            className={`${styles.productListText} ${styles.productListProductTitle} w-100 t-heading-3`}
+          >
+            {product?.productName}
+          </h3>
+
+          {showCategory && <OrderExpressProductCategory product={product} />}
+        </div>
       </a>
     </div>
   )
