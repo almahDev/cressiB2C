@@ -86,7 +86,7 @@ const OrderExpressProductQuantityBuyItem = ({
 
   return (
     <div
-      className={`${styles.productListProductQuantityBuyVariation} w-100 flex justify-center items-center`}
+      className={`${styles.productListProductQuantityBuyVariation} w-100 flex justify-center items-start`}
     >
       <input
         type="number"

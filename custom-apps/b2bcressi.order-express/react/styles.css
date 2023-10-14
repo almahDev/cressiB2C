@@ -296,6 +296,7 @@
 }
 
 .productListProductVariation {
+  flex-grow: 1;
 }
 
 .productListProductVariation:not(:last-child) {
@@ -306,13 +307,20 @@
 }
 
 .productListProductPrice {
+  flex-grow: 1;
+}
+
+.productListProductPrice:not(:last-child) {
+  padding-bottom: 16px;
 }
 
 .productListProductQuantityBuy {
 }
 
 .productListProductQuantityBuyVariation {
+  flex-grow: 1;
 }
+
 .productListProductQuantityBuyVariation:not(:last-child) {
   padding-bottom: 7px;
 }

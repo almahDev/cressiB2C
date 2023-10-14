@@ -40,7 +40,7 @@ const OrderExpressSearchBar: StorefrontFunctionComponent = () => {
       >
         <input
           className={`${styles.searchBar} w-100 t-body c-on-base`}
-          type="text"
+          type="search"
           placeholder="Busca"
           title="Busca"
           aria-label="barra de busca do pedido express"
