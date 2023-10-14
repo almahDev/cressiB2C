@@ -364,6 +364,11 @@
 .productListEmpty:first-child:last-child {
   display: block !important;
   padding-bottom: 16px;
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .searchBarWrapper {
@@ -386,6 +391,7 @@
   font-weight: 400;
   line-height: normal;
   outline: none;
+  border-radius: 6px;
 }
 
 .searchBar::placeholder {
@@ -445,6 +451,10 @@
 
   .productListContainer {
     padding: 0 26px 0 16px;
+  }
+
+  .accordionTrigger {
+    padding: 32px 23px 32px 16px;
   }
 
   .accordionTrigger::before,
@@ -509,7 +519,6 @@
     font-size: 11px;
   }
 
-  .productListProductQuantity  {
-
+  .productListProductQuantity {
   }
 }
