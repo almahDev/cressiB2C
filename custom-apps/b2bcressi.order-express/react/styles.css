@@ -251,6 +251,11 @@
 }
 
 .productListProductWrapperMobileRow {
+  justify-content: space-between;
+}
+
+.productListProductWrapperMobileRow:not(:last-child) {
+  padding-bottom: 47px;
 }
 
 .productListTextAndCategory {
@@ -467,5 +472,44 @@
 
   .productListText {
     padding: 0;
+  }
+
+  .productListProductImage {
+    max-width: 93px;
+    max-height: 81px;
+  }
+
+  .productListProductCategory {
+    justify-content: flex-start;
+    padding-top: 13px;
+  }
+
+  .productListTextAndCategory {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .productListProductVariations,
+  .productListProductPrices,
+  .productListProductQuantityBuy {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .productListProductVariations {
+    padding-left: 20px;
+  }
+
+  .productListProductVariation {
+    font-size: 11px;
+    word-break: break-all;
+  }
+
+  .productListProductPrice {
+    font-size: 11px;
+  }
+
+  .productListProductQuantity  {
+
   }
 }
