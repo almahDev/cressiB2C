@@ -1,14 +1,15 @@
 // import React, { useEffect, useState } from 'react'
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 // import { useRuntime } from 'vtex.render-runtime'
 
 import IconSearch from '../icons/IconSearch'
 // import Loading from '../Loading/Loading'
 import styles from '../styles.css'
+import { OrderExpressContext } from '../contexts/OrderExpressContext'
 // import { DEFAULT_LOADING_MS } from '../../constants/constants'
 
 const OrderExpressSearchBar: StorefrontFunctionComponent = () => {
-  const [searchValue, setSearchValue] = useState('')
+  const { searchValue, setSearchValue } = useContext(OrderExpressContext)
   // const { navigate } = useRuntime()
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {

@@ -56,7 +56,7 @@ const OrderExpressTotalBar = ({
       ''
     )
 
-    window.location.href = `/checkout/cart/add?${linkItems}sc=${channel}}`
+    window.location.href = `/checkout/cart/add?${linkItems}sc=${channel}`
   }
 
   return (

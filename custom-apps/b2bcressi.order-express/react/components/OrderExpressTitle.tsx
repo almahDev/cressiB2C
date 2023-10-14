@@ -2,6 +2,7 @@ import React from 'react'
 
 import IconTitleLine from '../icons/IconTitleLine'
 import styles from '../styles.css'
+import OrderExpressSearchBar from './OrderExpressSearchBar'
 
 interface OrderExpressTitleProps {
   title?: string
@@ -17,6 +18,8 @@ const OrderExpressTitle = ({ title }: OrderExpressTitleProps) => {
       >
         <IconTitleLine /> <span>{title}</span>
       </h1>
+
+      <OrderExpressSearchBar />
     </div>
   )
 }

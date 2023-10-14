@@ -26,6 +26,8 @@ type OrderExpressContextProps = {
   >
   globalLoading: boolean
   setGlobalLoading: React.Dispatch<React.SetStateAction<boolean>>
+  searchValue: string
+  setSearchValue: React.Dispatch<React.SetStateAction<string>>
 }
 
 export const OrderExpressContext =
@@ -36,6 +38,8 @@ export const OrderExpressContext =
     setSelectedQuantityList: () => {},
     globalLoading: true,
     setGlobalLoading: () => {},
+    searchValue: '',
+    setSearchValue: () => {},
   })
 
 export const OrderExpressContextProvider = ({ children }: Props) => {
@@ -45,6 +49,7 @@ export const OrderExpressContextProvider = ({ children }: Props) => {
   >([])
 
   const [globalLoading, setGlobalLoading] = useState<boolean>(true)
+  const [searchValue, setSearchValue] = useState('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -61,6 +66,8 @@ export const OrderExpressContextProvider = ({ children }: Props) => {
         setSelectedQuantityList,
         globalLoading,
         setGlobalLoading,
+        searchValue,
+        setSearchValue,
       }}
     >
       {children}

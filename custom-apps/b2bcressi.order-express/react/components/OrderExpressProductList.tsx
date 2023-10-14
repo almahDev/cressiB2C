@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useQuery } from 'react-apollo'
 
 import type { CollectionProps } from './OrderExpress'
@@ -7,6 +7,7 @@ import OrderExpressProductListCollection from './OrderExpressProductListCollecti
 import ProductSearchQuery from '../graphql/productSearch.gql'
 import styles from '../styles.css'
 import Loading from './Loading/Loading'
+import { OrderExpressContext } from '../contexts/OrderExpressContext'
 
 interface OrderExpressProductListProps {
   collections?: CollectionProps[]
@@ -17,6 +18,7 @@ const OrderExpressProductList = ({
   collections,
   hideUnavailableItems,
 }: OrderExpressProductListProps) => {
+  const { searchValue } = useContext(OrderExpressContext)
   console.log(
     '🚀 ~ file: OrderExpressProductList.tsx:20 ~ hideUnavailableItems:',
     hideUnavailableItems
@@ -84,14 +86,23 @@ const OrderExpressProductList = ({
     productFilteredIfUnavailable
   )
 
+  const productsSearched = productFilteredIfUnavailable?.filter((product) =>
+    product?.productName?.toLowerCase()?.includes(searchValue?.toLowerCase())
+  )
+
+  console.log(
+    '🚀 ~ file: OrderExpressProductList.tsx:92 ~ productsSearched:',
+    productsSearched
+  )
+
   const productsFiltered = collections?.map((collection) => ({
     collectionId: collection?.collectionId,
-    collectionName: productFilteredIfUnavailable?.find((product) =>
+    collectionName: productsSearched?.find((product) =>
       product?.productClusters?.find(
         (productCluster) => productCluster?.id === collection?.collectionId
       )
     )?.productClusters?.[0]?.name,
-    products: productFilteredIfUnavailable?.filter((product) =>
+    products: productsSearched?.filter((product) =>
       product?.productClusters?.find(
         (productCluster) => productCluster?.id === collection?.collectionId
       )
@@ -104,11 +115,7 @@ const OrderExpressProductList = ({
   )
 
   if (!productsFiltered || !productsFiltered?.length) {
-    return (
-      <>
-        <Loading height="72px" count={collections?.length ?? 1} />
-      </>
-    )
+    return <></>
   }
 
   return (
@@ -119,6 +126,9 @@ const OrderExpressProductList = ({
           {...productCollection}
         />
       ))}
+      <div className={`${styles.productListEmpty} dn t-body`}>
+        Nenhum resultado encontrado.
+      </div>
     </div>
   )
 }
