@@ -26,36 +26,11 @@ const OrderExpressProductListCollection = ({
   collectionName,
   products,
 }: OrderExpressProductListCollectionProps) => {
-  console.log(
-    '🚀 ~ file: OrderExpressProductListCollection.tsx:17 ~ collectionName:',
-    collectionName
-  )
-  console.log(
-    '🚀 ~ file: OrderExpressProductListCollection.tsx:13 ~ products:',
-    products
-  )
-
   const [isExpanded, setIsExpanded] = useState(false)
-  console.log(
-    '🚀 ~ file: OrderExpressProductListCollection.tsx:35 ~ setIsExpanded:',
-    setIsExpanded
-  )
-  console.log(
-    '🚀 ~ file: OrderExpressProductListCollection.tsx:35 ~ isExpanded:',
-    isExpanded
-  )
 
   if (!products || !products?.length) {
     return <></>
   }
-
-  // const collectionNames = products?.find(
-  //   (product: any) => product?.productClusters?.[0]?.name
-  // )
-  // console.log(
-  //   '🚀 ~ file: OrderExpressProductListCollection.tsx:21 ~ collectionNames:',
-  //   collectionNames
-  // )
 
   return (
     <div className={`${styles.productListContent} w-100 flex flex-column`}>

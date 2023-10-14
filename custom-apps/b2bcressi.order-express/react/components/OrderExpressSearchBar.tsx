@@ -15,12 +15,7 @@ const OrderExpressSearchBar: StorefrontFunctionComponent = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const term = decodeURIComponent(searchValue.trim())
-
-    console.log(
-      '🚀 ~ file: OrderExpressSearchBar.tsx:20 ~ handleSubmit ~ term:',
-      term
-    )
+    // const term = decodeURIComponent(searchValue.trim())
 
     // navigate({
     //   page: 'store.custom#bulario-search',

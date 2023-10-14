@@ -19,10 +19,7 @@ const OrderExpressProductList = ({
   hideUnavailableItems,
 }: OrderExpressProductListProps) => {
   const { searchValue } = useContext(OrderExpressContext)
-  console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:20 ~ hideUnavailableItems:',
-    hideUnavailableItems
-  )
+
   const selectedFacets = collections?.map((collection) => ({
     key: 'productClusterIds',
     value: collection?.collectionId,
@@ -36,19 +33,6 @@ const OrderExpressProductList = ({
       hideUnavailableItems,
     },
   })
-
-  console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:16 ~ OrderExpressProductList ~ error:',
-    error
-  )
-  console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:16 ~ OrderExpressProductList ~ loading:',
-    loading
-  )
-  console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:16 ~ OrderExpressProductList ~ data:',
-    data
-  )
 
   if (loading || error || !data) {
     return <Loading height="72px" count={collections?.length ?? 1} />
@@ -77,22 +61,8 @@ const OrderExpressProductList = ({
       }))
     : products
 
-  console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:84 ~ productFilteredIfUnavailable ~ products:',
-    products
-  )
-  console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:84 ~ productFilteredIfUnavailable ~ productFilteredIfUnavailable:',
-    productFilteredIfUnavailable
-  )
-
   const productsSearched = productFilteredIfUnavailable?.filter((product) =>
     product?.productName?.toLowerCase()?.includes(searchValue?.toLowerCase())
-  )
-
-  console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:92 ~ productsSearched:',
-    productsSearched
   )
 
   const productsFiltered = collections?.map((collection) => ({
@@ -108,11 +78,6 @@ const OrderExpressProductList = ({
       )
     ),
   }))
-
-  console.log(
-    '🚀 ~ file: OrderExpressProductList.tsx:76 ~ productsFiltered ~ productsFiltered:',
-    productsFiltered
-  )
 
   if (!productsFiltered || !productsFiltered?.length) {
     return <></>

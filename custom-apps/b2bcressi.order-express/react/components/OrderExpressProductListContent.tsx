@@ -11,11 +11,6 @@ interface OrderExpressProductListContentProps {
 const OrderExpressProductListContent = ({
   products,
 }: OrderExpressProductListContentProps) => {
-  console.log(
-    '🚀 ~ file: OrderExpressProductListContent.tsx:13 ~ products:',
-    products
-  )
-
   return (
     <div className={`${styles.productListContentContainer}`}>
       <div className={`${styles.productListContentHead}`}>
