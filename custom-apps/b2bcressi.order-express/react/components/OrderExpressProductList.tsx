@@ -1,12 +1,12 @@
 import React from 'react'
 import { useQuery } from 'react-apollo'
-import { Loading } from 'vtex.render-runtime'
 
 import type { CollectionProps } from './OrderExpress'
 import type { MaybeProduct } from 'vtex.product-context/react/ProductTypes'
 import OrderExpressProductListCollection from './OrderExpressProductListCollection'
 import ProductSearchQuery from '../graphql/productSearch.gql'
 import styles from '../styles.css'
+import Loading from './Loading/Loading'
 
 interface OrderExpressProductListProps {
   collections?: CollectionProps[]
@@ -49,12 +49,7 @@ const OrderExpressProductList = ({
   )
 
   if (loading || error || !data) {
-    return (
-      <>
-        <Loading />
-        {/* <Skeleton className="mr4" count={2} height={550} width={320} inline /> */}
-      </>
-    )
+    return <Loading height="72px" />
   }
 
   const {
@@ -62,11 +57,7 @@ const OrderExpressProductList = ({
   } = data ?? {}
 
   if (!products || !products?.length) {
-    return (
-      <>
-        <Loading />
-      </>
-    )
+    return <Loading height="72px" />
   }
 
   const productFilteredIfUnavailable: MaybeProduct[] = hideUnavailableItems
@@ -115,7 +106,7 @@ const OrderExpressProductList = ({
   if (!productsFiltered || !productsFiltered?.length) {
     return (
       <>
-        <Loading />
+        <Loading height="72px" />
       </>
     )
   }

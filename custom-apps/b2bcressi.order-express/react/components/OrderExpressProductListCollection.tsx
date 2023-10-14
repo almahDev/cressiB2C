@@ -7,7 +7,6 @@ import {
   DisclosureLayoutGroup,
   DisclosureStateIndicator,
 } from '@vtex/disclosure'
-import { Loading } from 'vtex.render-runtime'
 import type { MaybeProduct } from 'vtex.product-context/react/ProductTypes'
 
 import styles from '../styles.css'
@@ -15,6 +14,7 @@ import IconShow from '../icons/IconShow'
 import IconHide from '../icons/IconHide'
 import DisclosureStateTrigger from './DisclosureStateTrigger'
 import OrderExpressProductListContent from './OrderExpressProductListContent'
+import Loading from './Loading/Loading'
 
 interface OrderExpressProductListCollectionProps {
   collectionId?: string | undefined
@@ -48,7 +48,7 @@ const OrderExpressProductListCollection = ({
   if (!products || !products?.length) {
     return (
       <>
-        <Loading />
+        <Loading height="72px" />
       </>
     )
   }

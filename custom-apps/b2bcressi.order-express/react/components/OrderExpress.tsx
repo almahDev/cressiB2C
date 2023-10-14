@@ -6,7 +6,7 @@ import OrderExpressTotalBar from './OrderExpressTotalBar'
 import OrderExpressTitle from './OrderExpressTitle'
 import OrderExpressProductList from './OrderExpressProductList'
 import { mockCollections } from '../mocks/collections'
-import { Loading } from 'vtex.render-runtime'
+import Loading from './Loading/Loading'
 
 export type CollectionProps = {
   collectionId?: string
@@ -26,7 +26,7 @@ const OrderExpress: StorefrontFunctionComponent<OrderExpressProps> = ({
   if (!collections || !collections?.length) {
     return (
       <>
-        <Loading />
+        <Loading height="72px" count={collections?.length ?? 1} />
       </>
     )
   }
