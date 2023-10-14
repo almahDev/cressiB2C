@@ -9,6 +9,7 @@ import { mockCollections } from '../mocks/collections'
 import Loading from './Loading/Loading'
 
 export type CollectionProps = {
+  __editorItemTitle?: string
   collectionId?: string
 }
 
@@ -81,6 +82,10 @@ OrderExpress.schema = {
         title: 'Coleção',
         type: 'object',
         properties: {
+          __editorTitle: {
+            title: 'Nome da Coleção (opcional)',
+            type: 'string',
+          },
           collectionId: {
             title: 'ID da Coleção',
             type: 'string',

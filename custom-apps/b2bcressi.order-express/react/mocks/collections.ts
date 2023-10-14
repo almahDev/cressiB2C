@@ -1,5 +1,5 @@
 export const mockCollections = [
-  { collectionId: '137' },
-  { collectionId: '138' },
-  { collectionId: '139' },
+  { __editorItemTitle: 'Mergulho', collectionId: '137' },
+  { __editorItemTitle: 'Pesca Sub', collectionId: '138' },
+  { __editorItemTitle: 'Natação', collectionId: '139' },
 ]
