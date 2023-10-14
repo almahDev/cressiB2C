@@ -372,8 +372,48 @@
 }
 
 @media (max-width: 1024px) {
+  .totalBar {
+    position: sticky;
+    bottom: 0;
+  }
+
+  .totalBarSticky {
+    display: none;
+  }
+
+  .titleContainer {
+    flex-direction: column;
+    padding: 0 25px 40px 20px;
+  }
+
+  .titleContainer .iconTitleLine {
+    width: 28px;
+    margin-right: 8px;
+  }
+
+  .title {
+    font-size: 20px;
+    padding: 21px 0;
+  }
+
+  .searchBarWrapper {
+    max-width: 100%;
+  }
+
+  .searchBarForm {
+    border: 1px solid #828282;
+  }
+
+  .searchBar  {
+    font-size: 16px;
+  }
+
   .productListContentHead {
     display: none;
+  }
+
+  .productListContainer {
+    padding: 0 26px 0 16px;
   }
 
   .accordionTrigger::before,
@@ -381,18 +421,29 @@
     width: 3px;
   }
 
+  .totalBar {
+    justify-content: space-between;
+  }
+
   .totalBarSubmitButton {
     min-width: unset;
     width: 100%;
     max-width: 164px;
+    padding: 8px 0;
   }
 
   .totalBarSubtotal {
     flex-direction: column;
+    padding: 0;
+    font-size: 17px;
   }
 
   .productListProductWrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .productListTitle  {
+    font-size: 16px;
   }
 }
