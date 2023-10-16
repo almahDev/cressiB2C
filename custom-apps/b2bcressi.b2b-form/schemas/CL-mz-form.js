@@ -68,6 +68,11 @@ fetch('/api/dataentities/CL/schemas/al-form', {
         maxLength: 100,
         title: 'Telefone Comercial',
       },
+      priceTables: {
+        type: 'string',
+        maxLength: 750,
+        title: 'Price Tables',
+      },
     },
     required: ['email', 'id'],
     'v-indexed': [
@@ -82,6 +87,7 @@ fetch('/api/dataentities/CL/schemas/al-form', {
       'lastName',
       'document',
       'isNewsletterOptIn',
+      'priceTables',
     ],
     'v-security': {
       allowGetAll: false,
@@ -100,6 +106,7 @@ fetch('/api/dataentities/CL/schemas/al-form', {
         'homePhone',
         'isNewsletterOptIn',
         'isCorporate',
+        'priceTables',
       ],
       publicFilter: ['email'],
     },
