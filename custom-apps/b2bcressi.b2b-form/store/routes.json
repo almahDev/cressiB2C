@@ -1,0 +1,17 @@
+{
+  "store.custom#signup": {
+    "isSitemapEntry": true,
+    "path": "/cadastro",
+    "title": "Cadastro de Revendedor"
+  },
+  "store.custom#signup-error": {
+    "isSitemapEntry": true,
+    "path": "/cadastro/erro",
+    "title": "Cadastro de Revendedor - Erro"
+  },
+  "store.custom#signup-success": {
+    "isSitemapEntry": true,
+    "path": "/cadastro/sucesso",
+    "title": "Cadastro de Revendedor - Sucesso"
+  }
+}

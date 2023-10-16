@@ -1,0 +1,14 @@
+{
+  "store.custom#signup": {
+    "title": "Cadastro de Revendedor",
+    "blocks": ["flex-layout.row#signup-title", "flex-layout.row#signup-form"]
+  },
+  "store.custom#signup-success": {
+    "title": "Cadastro de Revendedor - Sucesso",
+    "blocks": ["flex-layout.row#signup-success"]
+  },
+  "store.custom#signup-error": {
+    "title": "Cadastro de Revendedor - Erro",
+    "blocks": ["flex-layout.row#signup-error"]
+  }
+}

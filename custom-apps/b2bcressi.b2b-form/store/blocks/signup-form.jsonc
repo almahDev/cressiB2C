@@ -1,0 +1,12 @@
+{
+  "flex-layout.row#signup-form": {
+    "title": "Bloco - Formulário",
+    "props": {
+      "blockClass": "signup__form",
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["form-retailer"]
+  }
+}

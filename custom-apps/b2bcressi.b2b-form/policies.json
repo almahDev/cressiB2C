@@ -1,0 +1,15 @@
+[
+  {
+    "name": "b2b-form",
+    "description": "Allows access to request",
+    "statements": [
+      {
+        "actions": ["post", "get", "put", "patch", "delete"],
+        "effect": "allow",
+        "resources": [
+          "vrn:b2bcressi.b2b-form:{{region}}:{{account}}:{{workspace}}:/_v/graphql"
+        ]
+      }
+    ]
+  }
+]

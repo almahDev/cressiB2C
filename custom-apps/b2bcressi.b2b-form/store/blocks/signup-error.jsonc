@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#signup-error": {
+    "title": "Bloco - Erro - Texto",
+    "children": ["flex-layout.col#signup-error"],
+    "props": {
+      "blockClass": "signup-error__title",
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#signup-error": {
+    "children": [
+      "rich-text#signup-error-title",
+      "rich-text#signup-error-subtitle"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "signup-error__title"
+    }
+  },
+  "rich-text#signup-error-title": {
+    "title": "Título",
+    "props": {
+      "text": "## OPS, ALGO DEU ERRADO",
+      "blockClass": "signup-error__title"
+    }
+  },
+  "rich-text#signup-error-subtitle": {
+    "title": "Subtítulo",
+    "props": {
+      "text": "Por favor, tente novamente em instantes.",
+      "blockClass": "signup-error__subtitle"
+    }
+  }
+}

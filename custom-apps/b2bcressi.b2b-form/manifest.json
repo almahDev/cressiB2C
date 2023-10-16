@@ -1,0 +1,69 @@
+{
+  "vendor": "b2bcressi",
+  "name": "b2b-form",
+  "version": "0.0.17",
+  "title": "Formulário de Cadastro B2B",
+  "description": "Formulário feito em React e Node para cadastrar o revendedor na entidade de Cliente.",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "store": "0.x",
+    "assets": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.apps-graphql": "2.x",
+    "vtex.breadcrumb": "1.x",
+    "vtex.css-handles": "1.x",
+    "vtex.device-detector": "0.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.responsive-values": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.store": "2.x",
+    "vtex.store-icons": "0.x",
+    "vtex.store-components": "3.x",
+    "vtex.store-link": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.store-resources": "0.x",
+    "vtex.structured-data": "0.x",
+    "vtex.styleguide": "9.x",
+    "vtex.login": "2.x",
+    "vtex.order-manager": "0.x",
+    "vtex.store-form": "0.x",
+    "vtex.checkout-graphql": "0.x",
+    "vtex.checkout-resources": "0.x",
+    "vtex.checkout-splunk": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.myvtex.com",
+        "path": "/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*",
+        "path": "/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#signup-success": {
+    "title": "Bloco - Erro - Texto",
+    "children": ["flex-layout.col#signup-success"],
+    "props": {
+      "blockClass": "signup-success__title",
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#signup-success": {
+    "children": [
+      "rich-text#signup-success-title",
+      "rich-text#signup-success-subtitle"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "signup-success__title"
+    }
+  },
+  "rich-text#signup-success-title": {
+    "title": "Título",
+    "props": {
+      "text": "## TUDO CERTO :)",
+      "blockClass": "signup-success__title"
+    }
+  },
+  "rich-text#signup-success-subtitle": {
+    "title": "Subtítulo",
+    "props": {
+      "text": "Em alguns instantes o seu cadastro será aprovado.",
+      "blockClass": "signup-success__subtitle"
+    }
+  }
+}

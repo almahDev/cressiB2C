@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#signup-title": {
+    "title": "Bloco - Título e Subtítulo",
+    "children": ["flex-layout.col#signup-title"],
+    "props": {
+      "blockClass": "signup__title",
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#signup-title": {
+    "children": ["rich-text#signup-title", "rich-text#signup-subtitle"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "signup__title"
+    }
+  },
+  "rich-text#signup-title": {
+    "title": "Título",
+    "props": {
+      "text": "## Criar minha conta",
+      "blockClass": "signup__title"
+    }
+  },
+  "rich-text#signup-subtitle": {
+    "title": "Subtítulo",
+    "props": {
+      "text": "![](assets/svg/icon-lock.svg) Sujeito a aprovação de cadastro e pedido mínimo.",
+      "blockClass": "signup__subtitle"
+    }
+  }
+}
