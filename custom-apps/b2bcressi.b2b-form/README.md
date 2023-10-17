@@ -1,6 +1,6 @@
 # Formulário de Cadastro B2B
 
-Formulário feito em React e Node para cadastrar o revendedor nas entidades de Revendedor e Cliente.
+Formulário feito em React e Node para cadastrar o cliente nas entidades de Cliente e Cliente.
 
 ---
 

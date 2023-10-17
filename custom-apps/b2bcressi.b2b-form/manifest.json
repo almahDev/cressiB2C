@@ -3,7 +3,7 @@
   "name": "b2b-form",
   "version": "0.0.17",
   "title": "Formulário de Cadastro B2B",
-  "description": "Formulário feito em React e Node para cadastrar o revendedor na entidade de Cliente.",
+  "description": "Formulário feito em React e Node para cadastrar o cliente na entidade de Cliente.",
   "builders": {
     "react": "3.x",
     "messages": "1.x",

@@ -1,0 +1,26 @@
+.flexRow {
+  &--signup__title {
+    padding-top: 50px;
+  }
+
+  &--signup__form {
+    padding-top: 49px;
+  }
+}
+
+.flexRowContent {
+  &--signup__title,
+  &--signup__form {
+    @extend %container-large;
+  }
+}
+
+.flexCol {
+  &--signup__title {
+    align-items: flex-start;
+  }
+
+  &--signup__form {
+    align-items: stretch;
+  }
+}

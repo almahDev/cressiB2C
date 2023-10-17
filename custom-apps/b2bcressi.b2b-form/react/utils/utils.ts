@@ -1,5 +1,5 @@
 export const DEBUG_MODE = false
-export const DEVELOPER_IO_ENTITY = 'revendedor'
+export const DEVELOPER_IO_ENTITY = 'CL'
 
 export const isIOAccount = (account: string) => /io/i.test(account)
 
@@ -8,7 +8,6 @@ export const entityProdToDeveloper = (account: string, entity: string) => {
 }
 
 export const calculateAge = (date: string) => {
-  console.log('🚀 ~ file: utils.ts:11 ~ calculateAge ~ date', date)
   try {
     if (!date || !date?.length) {
       return 0

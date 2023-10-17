@@ -2,6 +2,7 @@
 import { Form, Formik } from 'formik'
 import React, { useState } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
+import { useRuntime } from 'vtex.render-runtime'
 
 import FormStep from '../FormStep'
 import Loading from '../Loading'
@@ -10,17 +11,20 @@ import usePublicSchema from '../../hooks/usePublicSchema'
 import useValidationSchema from '../../hooks/useValidationSchema'
 import { DEBUG_MODE } from '../../utils/utils'
 
-type FormRetailerProps = {
+type B2BFormProps = {
   entity?: string
   schema?: string
 }
 
 const CSS_HANDLES = ['container', 'form'] as const
 
-const FormRetailer: StorefrontFunctionComponent<FormRetailerProps> = ({
+const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
   entity = 'CL',
   schema = 'al-form',
 }) => {
+  const runmtime = useRuntime()
+
+  console.log('🚀 ~ file: index.tsx:26 ~ runmtime:', runmtime)
   const { handles } = useCssHandles(CSS_HANDLES)
 
   const [isBusiness, setIsBusiness] = useState(false)
@@ -28,6 +32,8 @@ const FormRetailer: StorefrontFunctionComponent<FormRetailerProps> = ({
 
   const { schemaStatus, schemaData } = usePublicSchema(entity, schema)
   const validationSchema = useValidationSchema(schemaData, true)
+
+  console.log('🚀 ~ file: index.tsx:31 ~ validationSchema:', validationSchema)
   const submitMasterData = useSubmitForm()
 
   if (schemaStatus === 'error' || schemaStatus === 'loading' || !schemaData) {
@@ -149,7 +155,7 @@ const FormRetailer: StorefrontFunctionComponent<FormRetailerProps> = ({
   )
 }
 
-FormRetailer.schema = {
+B2BForm.schema = {
   title: 'Formulário de Cadastro',
   type: 'object',
   properties: {
@@ -171,4 +177,4 @@ FormRetailer.schema = {
   },
 }
 
-export default FormRetailer
+export default B2BForm

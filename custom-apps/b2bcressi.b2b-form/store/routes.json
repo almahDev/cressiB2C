@@ -2,16 +2,26 @@
   "store.custom#signup": {
     "isSitemapEntry": true,
     "path": "/cadastro",
-    "title": "Cadastro de Revendedor"
+    "title": "Cadastro de Cliente"
+  },
+  "store.custom#signup-lojista": {
+    "title": "Cadastro de Cliente (Lojista)",
+    "isSitemapEntry": true,
+    "path": "/cadastro/lojista"
+  },
+  "store.custom#signup-instrutor": {
+    "title": "Cadastro de Cliente (Instrutor)",
+    "isSitemapEntry": true,
+    "path": "/cadastro/instrutor"
   },
   "store.custom#signup-error": {
     "isSitemapEntry": true,
     "path": "/cadastro/erro",
-    "title": "Cadastro de Revendedor - Erro"
+    "title": "Cadastro de Cliente - Erro"
   },
   "store.custom#signup-success": {
     "isSitemapEntry": true,
     "path": "/cadastro/sucesso",
-    "title": "Cadastro de Revendedor - Sucesso"
+    "title": "Cadastro de Cliente - Sucesso"
   }
 }

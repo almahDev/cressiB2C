@@ -1,6 +1,6 @@
 {
-  "form-retailer": {
-    "component": "FormRetailer",
+  "b2b-form": {
+    "component": "B2BForm",
     "render": "client",
     "preview": {
       "type": "box",

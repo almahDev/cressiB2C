@@ -10,7 +10,7 @@
     }
   },
   "flex-layout.col#signup-title": {
-    "children": ["rich-text#signup-title", "rich-text#signup-subtitle"],
+    "children": ["rich-text#signup-title"],
     "props": {
       "verticalAlign": "middle",
       "horizontalAlign": "center",
@@ -20,15 +20,8 @@
   "rich-text#signup-title": {
     "title": "Título",
     "props": {
-      "text": "## Criar minha conta",
+      "text": "![Icon Info Uni](assets/img/icon-info-uni.png)**FORMULÁRIO DE CADASTRO**",
       "blockClass": "signup__title"
-    }
-  },
-  "rich-text#signup-subtitle": {
-    "title": "Subtítulo",
-    "props": {
-      "text": "![](assets/svg/icon-lock.svg) Sujeito a aprovação de cadastro e pedido mínimo.",
-      "blockClass": "signup__subtitle"
     }
   }
 }

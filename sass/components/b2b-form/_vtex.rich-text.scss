@@ -1,0 +1,31 @@
+.image {
+  &--signup__title {
+    height: 48px;
+    margin-right: 0.87rem;
+
+    @include tablet {
+      height: 2.125rem;
+    }
+  }
+}
+
+.paragraph {
+  &--signup__title {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.strong {
+  &--signup__title {
+    color: $black;
+    font-family: $secondary-font;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}

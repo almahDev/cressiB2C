@@ -81,7 +81,8 @@
     "vtex.visibility-layout": "0.x",
     "vtex.store-media": "0.x",
     "b2bcressi.stop-propagation-layout": "0.x",
-    "b2bcressi.order-express": "0.x"
+    "b2bcressi.order-express": "0.x",
+    "b2bcressi.b2b-form": "0.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x",
