@@ -72,12 +72,18 @@
     "children": [
       "flex-layout.col#product-price-mobile",
       "flex-layout.col#product-ancora-mobile"
-    ]
+    ],
+    "props": {
+      "blockClass": "link-ancora-price"
+    }
   },
   "flex-layout.col#product-price-mobile": {
     "children": ["product-list-price#product", "product-selling-price#product"]
   },
   "flex-layout.col#product-ancora-mobile": {
-    "children": ["link#ancora-video"]
+    "children": ["link#ancora-video"],
+    "props": {
+      "blockClass": ["link-mobile-ancora"]
+    }
   }
 }

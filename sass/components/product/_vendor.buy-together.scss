@@ -463,12 +463,11 @@
     &:hover,
     &:active,
     &:focus {
-      border-color: $color-6-300;
-      background: $color-6-300;
+      border-color: $secondary-pure-500;
       transition: all 0.2s;
 
       .skuSelectorInternalBox .valueWrapper {
-        color: $white;
+        color: $secondary-pure-500;
       }
     }
 

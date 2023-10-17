@@ -3,8 +3,7 @@
     "title": "Seleção de SKU",
     "props": {
       "variationsSpacing": 3,
-      "showValueForVariation": "all",
-      "showValueNameForImageVariation": true,
+      "showValueForVariation": "image",
       "initialSelection": "complete"
     }
   }

@@ -70,10 +70,15 @@
 }
 
 .installmentsNumber {
-  @include text($font-size-sm, $primary-pure-500, $bold);
+  @include text($font-size-sm, $secondary-pure-500, $bold);
+
+  &::after {
+    content: 'x';
+    margin-right: 0.3rem;
+  }
 
   @include tablet {
-    font-size: $font-size-xxs;
+    font-size: 0.9375rem;
   }
 }
 
@@ -90,7 +95,7 @@
   @include text($font-size-sm, $low-pure, $normal);
 
   @include tablet {
-    font-size: $font-size-xxs;
+    font-size: 0.9375rem;
   }
 }
 

@@ -18,6 +18,10 @@
     line-height: normal;
     margin-top: 3rem;
 
+    @include tablet {
+      margin: 0 0 0.6rem 0;
+    }
+
     .currencyCode {
       &--product__price {
         font-size: 1.625rem;
@@ -75,6 +79,7 @@
 
     .currencyContainer--product__price {
       color: $secondary-pure-500;
+      font-weight: bold;
     }
   }
 
@@ -88,12 +93,12 @@
     font-size: 0 !important;
 
     &::before {
-      content: 'Ou ';
+      content: 'Ou em ';
       font-size: 0.9375rem;
     }
 
     &::after {
-      content: 'sem juros';
+      content: ' sem juros';
       font-size: 0.9375rem;
       color: $black;
     }
@@ -102,7 +107,7 @@
 .installmentValue {
   &--product__price {
     &::before {
-      content: 'de ';
+      content: ' de ';
     }
   }
 }

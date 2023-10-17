@@ -11,6 +11,6 @@
   justify-content: center;
 
   @include tablet {
-    font-size: $font-size-md - 1 !important;
+    font-size: 1.375rem !important;
   }
 }
