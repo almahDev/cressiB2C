@@ -16,6 +16,16 @@
     justify-content: center;
     align-items: center;
   }
+
+  &--signup__form {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 46px;
+  }
 }
 
 .strong {
