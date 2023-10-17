@@ -22,15 +22,25 @@ const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
   entity = 'CL',
   schema = 'al-form',
 }) => {
-  const runmtime = useRuntime()
+  const {
+    route: { path },
+  } = useRuntime()
 
-  console.log('🚀 ~ file: index.tsx:26 ~ runmtime:', runmtime)
+  console.log('🚀 ~ file: index.tsx:26 ~ path:', path)
+  const clientType = path?.includes('cadastro/lojista')
+    ? 'lojista'
+    : 'instrutor'
+
+  console.log('🚀 ~ file: index.tsx:31 ~ clientType:', clientType)
+
   const { handles } = useCssHandles(CSS_HANDLES)
 
   const [isBusiness, setIsBusiness] = useState(false)
   const [step, setStep] = useState(1)
 
   const { schemaStatus, schemaData } = usePublicSchema(entity, schema)
+
+  console.log('🚀 ~ file: index.tsx:42 ~ schemaData:', schemaData)
   const validationSchema = useValidationSchema(schemaData, true)
 
   console.log('🚀 ~ file: index.tsx:31 ~ validationSchema:', validationSchema)
@@ -72,61 +82,15 @@ const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
           errors,
           values,
           touched,
-          setFieldValue,
           validateForm,
         }) => (
           <Form className={`${handles.form} w-100 h-100`}>
             <FormStep
-              step={1}
-              title="Dados Gerais"
-              isSelected={step >= 1}
-              nextStep={nextStep}
               errors={errors}
               touched={touched}
               values={values}
-              isBusiness={isBusiness}
-              setIsBusiness={setIsBusiness}
               validateForm={validateForm}
-            />
-
-            <FormStep
-              step={2}
-              title="Endereço de entrega"
-              isSelected={step >= 2}
-              nextStep={nextStep}
-              errors={errors}
-              touched={touched}
-              values={values}
-              isBusiness={isBusiness}
-              setIsBusiness={setIsBusiness}
-            />
-
-            {isBusiness && (
-              <FormStep
-                step={3}
-                title="Endereço da Empresa"
-                isSelected={step >= 3}
-                nextStep={nextStep}
-                errors={errors}
-                touched={touched}
-                values={values}
-                isBusiness={isBusiness}
-                setIsBusiness={setIsBusiness}
-                setFieldValue={setFieldValue}
-                validateForm={validateForm}
-              />
-            )}
-
-            <FormStep
-              step={isBusiness ? 4 : 3}
-              title="Informações adicionais"
-              isSelected={isBusiness ? step >= 4 : step >= 3}
-              nextStep={nextStep}
-              errors={errors}
-              touched={touched}
-              values={values}
-              isBusiness={isBusiness}
-              setIsBusiness={setIsBusiness}
+              clientType={clientType}
             />
 
             {DEBUG_MODE && (

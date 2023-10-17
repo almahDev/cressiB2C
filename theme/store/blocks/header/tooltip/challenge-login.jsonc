@@ -15,6 +15,7 @@
     "title": "Almah | Header - Link - Login",
     "props": {
       "blockClass": "challenge__login-header--tooltip",
+      "logInButtonBehavior": "link",
       "showIconProfile": false
     }
   },

@@ -44,50 +44,28 @@ export const CSS_HANDLES = [
 ] as const
 
 type FormStepProps = {
-  step: number
-  title?: string
-  isSelected?: boolean
-  nextStep: () => void
-  isBusiness?: boolean
-  setIsBusiness: React.Dispatch<boolean>
-  setFieldValue?: (
-    field: string,
-    value: any,
-    shouldValidate?: boolean | undefined
-  ) => void
   validateForm?: any
   errors: any
   touched: any
   values: any
+  clientType: string
 }
 
 export type FormStepContentProps = {
   errors: any
   touched: any
   values: any
-  isBusiness?: boolean
-  nextStep: () => void
-  setFieldValue?: (
-    field: string,
-    value: any,
-    shouldValidate?: boolean | undefined
-  ) => void
   validateForm?: any
 }
 
 const FormStep = ({
-  step,
-  title,
-  isSelected,
-  nextStep,
   errors,
   touched,
   values,
-  isBusiness,
-  setIsBusiness,
-  setFieldValue,
   validateForm,
+  clientType,
 }: FormStepProps) => {
+  console.log('🚀 ~ file: index.tsx:85 ~ clientType:', clientType)
   const { handles } = useCssHandles(CSS_HANDLES)
 
   return (

@@ -199,6 +199,7 @@
   "login#header": {
     "title": "Almah | Header - Link - Login",
     "props": {
+      "logInButtonBehavior": "link",
       "showIconProfile": false
     }
   },
@@ -330,6 +331,7 @@
       "accessCodeTitle": "Acess Code LOG-IN",
       "emailPlaceholder": "e-mail",
       "passwordPlaceholder": "password",
+      "logInButtonBehavior": "link",
       "showPasswordVerificationIntoTooltip": true
     }
   },
