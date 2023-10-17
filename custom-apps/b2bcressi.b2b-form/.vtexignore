@@ -18,3 +18,4 @@ react/testUtils/**
 
 # schemas
 /schemas
+/schemas/**

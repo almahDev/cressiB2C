@@ -3,7 +3,7 @@ import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 
 import FormStepContentFour from '../FormStepContentFour'
-import FormStepContentOne from '../FormStepContentOne'
+import FormStepContent from '../FormStepContentOne'
 import FormStepContentThree from '../FormStepContentThree'
 import FormStepContentTwo from '../FormStepContentTwo'
 import FormStepRadio from '../FormStepRadio'
@@ -115,7 +115,7 @@ const FormStep = ({
 
       {isSelected &&
         (step === 1 ? (
-          <FormStepContentOne
+          <FormStepContent
             errors={errors}
             touched={touched}
             values={values}

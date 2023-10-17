@@ -10,7 +10,7 @@ import FormStepRequiredText from '../FormStepRequiredText'
 import useSearchData from '../../hooks/useSearchData'
 import { calculateAge } from '../../utils/utils'
 
-const FormStepContentOne = ({
+const FormStepContent = ({
   errors,
   touched,
   values,
@@ -383,7 +383,7 @@ const FormStepContentOne = ({
   )
 }
 
-export default FormStepContentOne
+export default FormStepContent
 
 // import React, { useEffect, useState } from 'react'
 // import { FormattedMessage } from 'react-intl'

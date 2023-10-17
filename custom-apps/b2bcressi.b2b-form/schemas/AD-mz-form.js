@@ -4,6 +4,8 @@ fetch('/api/dataentities/AD/schemas/al-form', {
   dataType: 'json',
   contentType: 'application/json',
   body: JSON.stringify({
+    title: 'Endereço',
+    type: 'object',
     properties: {
       city: { type: 'string', maxLength: 750, title: 'Cidade' },
       userId: {
@@ -52,6 +54,7 @@ fetch('/api/dataentities/AD/schemas/al-form', {
     required: ['addressName', 'userId', 'id'],
     'v-indexed': ['addressName', 'postalCode', 'userId', 'id'],
     'v-security': {
+      publicJsonSchema: true,
       allowGetAll: false,
       publicRead: ['id'],
       publicWrite: [

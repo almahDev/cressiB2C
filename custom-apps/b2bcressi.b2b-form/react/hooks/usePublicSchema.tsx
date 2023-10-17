@@ -1,21 +1,22 @@
 import { useEffect, useState } from 'react'
 import { useQuery } from 'react-apollo'
 import type { JSONSchemaType } from 'react-hook-form-jsonschema'
-import { useRuntime } from 'vtex.render-runtime'
+// import { useRuntime } from 'vtex.render-runtime'
 
 import documentPublicSchema from '../graphql/getSchema.graphql'
-import { entityProdToDeveloper } from '../utils/utils'
+// import { entityProdToDeveloper } from '../utils/utils'
 
 type SchemaStatusType = 'loading' | 'error' | 'success'
 
 const usePublicSchema = (entity: string, schema: string) => {
   // console.log('schema', schema)
 
-  const { account } = useRuntime()
+  // const { account } = useRuntime()
 
   // console.log('=== account', account)
 
-  const dataEntity = entityProdToDeveloper(account, entity)
+  // const dataEntity = entityProdToDeveloper(account, entity)
+  const dataEntity = entity
 
   // console.log('=== dataEntity', dataEntity)
 

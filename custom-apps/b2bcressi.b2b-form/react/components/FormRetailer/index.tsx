@@ -156,7 +156,7 @@ FormRetailer.schema = {
     entity: {
       title: 'Entidade',
       type: 'string',
-      default: 'RV',
+      default: 'CL',
     },
     schema: {
       title: 'Schema',

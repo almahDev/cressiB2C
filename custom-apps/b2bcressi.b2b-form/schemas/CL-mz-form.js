@@ -4,6 +4,8 @@ fetch('/api/dataentities/CL/schemas/al-form', {
   dataType: 'json',
   contentType: 'application/json',
   body: JSON.stringify({
+    title: 'Cliente',
+    type: 'object',
     properties: {
       corporateName: {
         type: 'string',
@@ -73,6 +75,20 @@ fetch('/api/dataentities/CL/schemas/al-form', {
         maxLength: 750,
         title: 'Price Tables',
       },
+      priceTables: {
+        type: 'string',
+        maxLength: 750,
+        title: 'Price Tables',
+      },
+      interestTopics: {
+        type: 'string',
+        maxLength: 50,
+        title: 'Tópicos de Interesse',
+      },
+      financialInfo: {
+        type: 'string',
+        title: 'Relações comerciais de fornecedores',
+      },
     },
     required: ['email', 'id'],
     'v-indexed': [
@@ -91,6 +107,7 @@ fetch('/api/dataentities/CL/schemas/al-form', {
     ],
     'v-security': {
       allowGetAll: false,
+      publicJsonSchema: true,
       publicRead: ['id', 'email'],
       publicWrite: [
         'approved',
@@ -107,6 +124,8 @@ fetch('/api/dataentities/CL/schemas/al-form', {
         'isNewsletterOptIn',
         'isCorporate',
         'priceTables',
+        'interestTopics',
+        'financialInfo',
       ],
       publicFilter: ['email'],
     },
