@@ -6,7 +6,7 @@ import { Spinner } from 'vtex.styleguide'
 import type { FormStepContentProps } from '../FormStep'
 import { CSS_HANDLES } from '../FormStep'
 import FormInput from '../FormInput'
-import FormStepRequiredText from '../FormStepRequiredText'
+// import FormStepRequiredText from '../FormStepRequiredText'
 import useSearchData from '../../hooks/useSearchData'
 
 const FormStepContentPJ = ({
@@ -27,13 +27,11 @@ const FormStepContentPJ = ({
   const { handles } = useCssHandles(CSS_HANDLES)
 
   const requiredFieldsPJ = [
-    'razao_social',
-    'nome_fantasia',
-    'cnpj',
-    'ie',
-    'data_abertura',
-    'celular',
-    'telefone',
+    'corporateName',
+    'stateRegistration',
+    'document',
+    'tradeName',
+    'homePhone',
   ]
 
   const isValid = requiredFieldsPJ.every(
@@ -87,19 +85,19 @@ const FormStepContentPJ = ({
         className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
       >
         <FormInput
-          field="cnpj"
+          field="document"
           placeholder="CNPJ"
-          error={errors?.cnpj && touched?.cnpj}
-          success={!errors?.cnpj && touched?.cnpj}
+          error={errors?.document && touched?.document}
+          success={!errors?.document && touched?.document}
           mask="99.999.999/9999-99"
           required
         />
 
         <FormInput
-          field="ie"
+          field="stateRegistration"
           placeholder="Inscrição estadual"
-          error={errors?.ie && touched?.ie}
-          success={!errors?.ie && touched?.ie}
+          error={errors?.stateRegistration && touched?.stateRegistration}
+          success={!errors?.stateRegistration && touched?.stateRegistration}
           required
         />
       </div>
@@ -108,107 +106,133 @@ const FormStepContentPJ = ({
         className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
       >
         <FormInput
-          field="razao_social"
-          placeholder="Digite a razão social"
-          error={errors?.razao_social && touched?.razao_social}
-          success={!errors?.razao_social && touched?.razao_social}
+          field="corporateName"
+          placeholder="Razão Social"
+          error={errors?.corporateName && touched?.corporateName}
+          success={!errors?.corporateName && touched?.corporateName}
           required
         />
 
         <FormInput
-          field="nome_fantasia"
-          placeholder="Digite o nome fantasia"
-          error={errors?.nome_fantasia && touched?.nome_fantasia}
-          success={!errors?.nome_fantasia && touched?.nome_fantasia}
+          field="tradeName"
+          placeholder="Nome fantasia"
+          error={errors?.tradeName && touched?.tradeName}
+          success={!errors?.tradeName && touched?.tradeName}
+          required
+        />
+      </div>
+
+      {/* TODO: integração viacep */}
+
+      <div
+        className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
+      >
+        <FormInput
+          field="receiverName"
+          placeholder="Responsável"
+          error={errors?.receiverName && touched?.receiverName}
+          success={!errors?.receiverName && touched?.receiverName}
+          required
+        />
+
+        <FormInput
+          field="street"
+          placeholder="Endereço"
+          error={errors?.street && touched?.street}
+          success={!errors?.street && touched?.street}
           required
         />
       </div>
 
       <div
         className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
-      />
+      >
+        <FormInput
+          field="number"
+          placeholder="Número"
+          error={errors?.number && touched?.number}
+          success={!errors?.number && touched?.number}
+          required
+        />
 
-      <FormInput
-        field="email"
-        placeholder="E-Mail"
-        type="email"
-        error={errors?.email && touched?.email}
-        success={
-          !errors?.email &&
-          touched?.email &&
-          values?.email &&
-          values?.email.length
-        }
-        required
-      />
+        <FormInput
+          field="complement"
+          placeholder="Complemento"
+          error={errors?.complement && touched?.complement}
+          success={!errors?.complement && touched?.complement}
+          required
+        />
+      </div>
 
       <div
         className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
       >
         <FormInput
-          field="data_abertura"
-          label="Data de abertura"
-          placeholder="__/__/____"
-          error={errors?.data_abertura && touched?.data_abertura}
-          success={!errors?.data_abertura && touched?.data_abertura}
-          mask="99/99/9999"
+          field="neighborhood"
+          placeholder="Bairro"
+          error={errors?.neighborhood && touched?.neighborhood}
+          success={!errors?.neighborhood && touched?.neighborhood}
           required
         />
 
         <FormInput
-          field="celular"
-          label="Celular"
-          placeholder="(__) 0000-0000"
-          error={errors?.ie && touched?.ie}
-          success={!errors?.ie && touched?.ie}
+          field="city"
+          placeholder="Cidade"
+          error={errors?.city && touched?.city}
+          success={!errors?.city && touched?.city}
+          required
+        />
+      </div>
+
+      <div
+        className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
+      >
+        <FormInput
+          field="state"
+          placeholder="UF"
+          error={errors?.state && touched?.state}
+          success={!errors?.state && touched?.state}
+          required
+        />
+
+        <FormInput
+          field="postalCode"
+          placeholder="CEP"
+          error={errors?.postalCode && touched?.postalCode}
+          success={!errors?.postalCode && touched?.postalCode}
+          mask="99999-999"
+          required
+        />
+      </div>
+
+      <div
+        className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
+      >
+        <FormInput
+          field="email"
+          placeholder="E-Mail"
+          type="email"
+          error={errors?.email && touched?.email}
+          success={
+            !errors?.email &&
+            touched?.email &&
+            values?.email &&
+            values?.email.length
+          }
+          required
+        />
+
+        <FormInput
+          field="homePhone"
+          placeholder="Celular"
+          error={errors?.homePhone && touched?.homePhone}
+          success={!errors?.homePhone && touched?.homePhone}
           mask="(99) 99999-9999"
           required
         />
       </div>
 
-      <div
-        className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
-      >
-        <FormInput
-          field="telefone"
-          label="Telefone Comercial"
-          placeholder="(__) 0000-0000"
-          error={errors?.telefone && touched?.telefone}
-          success={!errors?.telefone && touched?.telefone}
-          mask="(99) 9999-9999"
-          required
-        />
-
-        <FormInput
-          field="site"
-          label="Site da loja/empresa"
-          placeholder="Digite o site da sua loja/empresa"
-          error={errors?.site && touched?.site}
-          success={!errors?.site && touched?.site}
-        />
-      </div>
-
-      <div
-        className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
-      >
-        <FormInput
-          field="instagram"
-          label="Instagram da loja/empresa"
-          placeholder="Digite o Instagram da sua loja/empresa"
-          error={errors?.instagram}
-          success={!errors?.instagram && touched?.instagram}
-        />
-
-        <FormInput
-          field="facebook"
-          label="Facebook da loja/empresa"
-          placeholder="Digite o Facebook da sua loja/empresa"
-          error={errors?.facebook}
-          success={!errors?.facebook && touched?.facebook}
-        />
-      </div>
-
-      <FormStepRequiredText />
+      {/* <FormStepRequiredText /> */}
 
       <button
         className={`${handles.formStepSubmitButton}  ${

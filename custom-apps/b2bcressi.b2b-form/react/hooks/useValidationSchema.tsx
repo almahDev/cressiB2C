@@ -2,7 +2,7 @@
 import type { JSONSchemaType } from 'react-hook-form-jsonschema'
 import * as Yup from 'yup'
 
-import { parseDateString, validateCnpj, validateCpf } from '../utils/validation'
+import { validateCnpj, validateCpf } from '../utils/validation'
 
 const useValidationSchema = (
   schemaData: JSONSchemaType | null,
@@ -90,7 +90,7 @@ const useValidationSchema = (
           .required('Preencha o e-mail')
         break
 
-      case 'nome':
+      case 'firstName':
         if (!isBusiness) {
           currentShape[propertyName] = currentShape[propertyName].required(
             'Preencha o seu nome'
@@ -99,7 +99,7 @@ const useValidationSchema = (
 
         break
 
-      case 'sobrenome':
+      case 'lastName':
         if (!isBusiness) {
           currentShape[propertyName] = currentShape[propertyName].required(
             'Preencha o seu sobrenome'
@@ -108,7 +108,7 @@ const useValidationSchema = (
 
         break
 
-      case 'cpf':
+      case 'document':
         if (!isBusiness) {
           currentShape[propertyName] = currentShape[propertyName]
             .required('Preencha o CPF')
@@ -117,60 +117,7 @@ const useValidationSchema = (
               message: 'CPF inválido',
             })
             .cpf('CPF inválido')
-        }
-
-        break
-
-      case 'genero':
-        if (!isBusiness) {
-          currentShape[propertyName] = currentShape[propertyName].required(
-            'Selecione uma opção'
-          )
-        }
-
-        break
-
-      case 'data_nascimento':
-        if (!isBusiness) {
-          currentShape[propertyName] = Yup.date()
-            .transform(parseDateString)
-            .max(new Date())
-            .typeError('Data de abertura inválida')
-            .required('Preencha a data de nascimento')
-        }
-
-        break
-
-      case 'telefone':
-        currentShape[propertyName] = currentShape[propertyName]
-          .required('Preencha o telefone')
-          .matches(/^\([0-9]{2}\)\s[0-9]{4,5}-[0-9]{4}$/, {
-            excludeEmptyString: true,
-            message: 'Telefone inválido',
-          })
-        break
-
-      // DADOS JURÍDICOS
-      case 'razao_social':
-        if (isBusiness) {
-          currentShape[propertyName] = currentShape[propertyName].required(
-            'Preencha a razão social'
-          )
-        }
-
-        break
-
-      case 'nome_fantasia':
-        if (isBusiness) {
-          currentShape[propertyName] = currentShape[propertyName].required(
-            'Preencha o nome fantasia'
-          )
-        }
-
-        break
-
-      case 'cnpj':
-        if (isBusiness) {
+        } else {
           currentShape[propertyName] = currentShape[propertyName]
             .required('Preencha o CNPJ')
             .matches(/^\d{2}.\d{3}.\d{3}\/\d{4}-\d{2}$/, {
@@ -182,7 +129,68 @@ const useValidationSchema = (
 
         break
 
-      case 'ie':
+      // case 'genero':
+      //   if (!isBusiness) {
+      //     currentShape[propertyName] = currentShape[propertyName].required(
+      //       'Selecione uma opção'
+      //     )
+      //   }
+
+      //   break
+
+      // case 'data_nascimento':
+      //   if (!isBusiness) {
+      //     currentShape[propertyName] = Yup.date()
+      //       .transform(parseDateString)
+      //       .max(new Date())
+      //       .typeError('Data de abertura inválida')
+      //       .required('Preencha a data de nascimento')
+      //   }
+
+      //   break
+
+      case 'homePhone':
+        currentShape[propertyName] = currentShape[propertyName]
+          .required('Preencha o celular')
+          .matches(/^\([0-9]{2}\)\s9[0-9]{4}-[0-9]{4}$/, {
+            excludeEmptyString: true,
+            message: 'Celular inválido',
+          })
+        break
+
+      // DADOS JURÍDICOS
+      case 'corporateName':
+        if (isBusiness) {
+          currentShape[propertyName] = currentShape[propertyName].required(
+            'Preencha a razão social'
+          )
+        }
+
+        break
+
+      case 'tradeName':
+        if (isBusiness) {
+          currentShape[propertyName] = currentShape[propertyName].required(
+            'Preencha o nome fantasia'
+          )
+        }
+
+        break
+
+      // case 'cnpj':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] = currentShape[propertyName]
+      //       .required('Preencha o CNPJ')
+      //       .matches(/^\d{2}.\d{3}.\d{3}\/\d{4}-\d{2}$/, {
+      //         excludeEmptyString: true,
+      //         message: 'CNPJ inválido',
+      //       })
+      //       .cnpj('CNPJ inválido')
+      //   }
+
+      //   break
+
+      case 'stateRegistration':
         if (isBusiness) {
           currentShape[propertyName] = currentShape[propertyName].required(
             'Preencha a inscrição estadual'
@@ -191,31 +199,31 @@ const useValidationSchema = (
 
         break
 
-      case 'data_abertura':
-        if (isBusiness) {
-          currentShape[propertyName] = Yup.date()
-            .transform(parseDateString)
-            .max(new Date())
-            .typeError('Data de abertura inválida')
-            .required('Preencha a data de abertura')
-        }
+      // case 'data_abertura':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] = Yup.date()
+      //       .transform(parseDateString)
+      //       .max(new Date())
+      //       .typeError('Data de abertura inválida')
+      //       .required('Preencha a data de abertura')
+      //   }
 
-        break
+      //   break
 
-      case 'celular':
-        if (isBusiness) {
-          currentShape[propertyName] = currentShape[propertyName]
-            .required('Preencha o telefone')
-            .matches(/^\([0-9]{2}\)\s9[0-9]{4}-[0-9]{4}$/, {
-              excludeEmptyString: true,
-              message: 'Celular inválido',
-            })
-        }
+      // case 'celular':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] = currentShape[propertyName]
+      //       .required('Preencha o telefone')
+      //       .matches(/^\([0-9]{2}\)\s9[0-9]{4}-[0-9]{4}$/, {
+      //         excludeEmptyString: true,
+      //         message: 'Celular inválido',
+      //       })
+      //   }
 
-        break
+      //   break
 
       // ENDEREÇO DE ENTREGA
-      case 'cep':
+      case 'postalCode':
         currentShape[propertyName] = currentShape[propertyName]
           .required('Preencha o CEP')
           .matches(/^[0-9]{5}-[0-9]{3}$/, {
@@ -225,87 +233,93 @@ const useValidationSchema = (
 
         break
 
-      case 'endereco':
+      case 'street':
         currentShape[propertyName] = currentShape[propertyName].required(
           'Preencha o endereço'
         )
         break
 
-      case 'numero':
+      case 'number':
         currentShape[propertyName] =
           currentShape[propertyName].required('Preencha o número')
         break
 
-      case 'bairro':
+      case 'complement':
+        currentShape[propertyName] = currentShape[propertyName].required(
+          'Preencha o complemento'
+        )
+        break
+
+      case 'neighborhood':
         currentShape[propertyName] =
           currentShape[propertyName].required('Preencha o bairro')
         break
 
-      case 'cidade':
+      case 'city':
         currentShape[propertyName] =
           currentShape[propertyName].required('Preencha a cidade')
         break
 
-      case 'estado':
+      case 'state':
         currentShape[propertyName] = currentShape[propertyName].required(
           'Selecione uma opção'
         )
         break
 
       // ENDEREÇO DA EMPRESA
-      case 'emp_cep':
-        if (isBusiness) {
-          currentShape[propertyName] = currentShape[propertyName]
-            .required('Preencha o CEP')
-            .matches(/^[0-9]{5}-[0-9]{3}$/, {
-              excludeEmptyString: true,
-              message: 'CEP inválido',
-            })
-        }
+      // case 'emp_cep':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] = currentShape[propertyName]
+      //       .required('Preencha o CEP')
+      //       .matches(/^[0-9]{5}-[0-9]{3}$/, {
+      //         excludeEmptyString: true,
+      //         message: 'CEP inválido',
+      //       })
+      //   }
 
-        break
+      //   break
 
-      case 'emp_endereco':
-        if (isBusiness) {
-          currentShape[propertyName] = currentShape[propertyName].required(
-            'Preencha o endereço'
-          )
-        }
+      // case 'emp_endereco':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] = currentShape[propertyName].required(
+      //       'Preencha o endereço'
+      //     )
+      //   }
 
-        break
+      //   break
 
-      case 'emp_numero':
-        if (isBusiness) {
-          currentShape[propertyName] =
-            currentShape[propertyName].required('Preencha o número')
-        }
+      // case 'emp_numero':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] =
+      //       currentShape[propertyName].required('Preencha o número')
+      //   }
 
-        break
+      //   break
 
-      case 'emp_bairro':
-        if (isBusiness) {
-          currentShape[propertyName] =
-            currentShape[propertyName].required('Preencha o bairro')
-        }
+      // case 'emp_bairro':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] =
+      //       currentShape[propertyName].required('Preencha o bairro')
+      //   }
 
-        break
+      //   break
 
-      case 'emp_cidade':
-        if (isBusiness) {
-          currentShape[propertyName] =
-            currentShape[propertyName].required('Preencha a cidade')
-        }
+      // case 'emp_cidade':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] =
+      //       currentShape[propertyName].required('Preencha a cidade')
+      //   }
 
-        break
+      //   break
 
-      case 'emp_estado':
-        if (isBusiness) {
-          currentShape[propertyName] = currentShape[propertyName].required(
-            'Selecione uma opção'
-          )
-        }
+      // case 'emp_estado':
+      //   if (isBusiness) {
+      //     currentShape[propertyName] = currentShape[propertyName].required(
+      //       'Selecione uma opção'
+      //     )
+      //   }
 
-        break
+      //   break
 
       default:
         break
@@ -314,7 +328,15 @@ const useValidationSchema = (
 
   // console.log('currentShape', currentShape)
 
+  console.log(
+    '🚀 ~ file: useValidationSchema.tsx:318 ~ currentShape:',
+    currentShape
+  )
   currentSchema = currentSchema.shape(currentShape)
+  console.log(
+    '🚀 ~ file: useValidationSchema.tsx:318 ~ currentSchema:',
+    currentSchema
+  )
 
   return currentSchema
 }

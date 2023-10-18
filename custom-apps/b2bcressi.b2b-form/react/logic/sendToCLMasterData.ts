@@ -1,3 +1,4 @@
+/* eslint-disable max-params */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 const sendToCLMasterData = (
@@ -7,26 +8,33 @@ const sendToCLMasterData = (
 ) => {
   const CLValues = {
     email: values?.email,
-    corporateDocument: values?.cnpj,
-    stateRegistration: values?.ie,
-    corporateName: values?.razao_social,
-    tradeName: values?.nome_fantasia,
-    document: values?.cnpj,
-    businessPhone: values?.telefone,
-    homePhone: values?.celular,
-    isCorporate: true,
+    corporateDocument: values?.document,
+    stateRegistration: values?.stateRegistration,
+    corporateName: values?.corporateName,
+    tradeName: values?.tradeName,
+    document: values?.document,
+    phone: values?.homePhone,
+    businessPhone: values?.homePhone,
+    homePhone: values?.homePhone,
+    firstName: values?.firstName,
+    lastName: values?.lastName,
+    interestTopics: values?.interestTopics,
+    financialInfo: values?.financialInfo,
+    isCorporate: false,
+    isApproved: true,
   }
 
   const ADValues = {
-    postalCode: values?.emp_cep,
+    postalCode: values?.postalCode,
     addressName: 'Padrão',
     addressType: 'residential',
-    street: values?.emp_endereco,
-    number: values?.emp_numero,
-    complement: values?.emp_complemento,
-    neighborhood: values?.emp_bairro,
-    city: values?.emp_cidade,
-    state: values?.emp_estado,
+    street: values?.street,
+    number: values?.number,
+    complement: values?.complement,
+    neighborhood: values?.neighborhood,
+    city: values?.city,
+    state: values?.state,
+    receiverName: values?.receiverName,
     country: 'BRA',
   }
 

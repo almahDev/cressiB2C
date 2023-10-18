@@ -69,6 +69,7 @@ fetch('/api/dataentities/AD/schemas/al-form', {
         'state',
         'country',
         'userId',
+        'receiverName',
       ],
       publicFilter: [],
     },
