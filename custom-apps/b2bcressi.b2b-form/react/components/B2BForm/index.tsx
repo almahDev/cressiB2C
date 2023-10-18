@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Form, Formik } from 'formik'
-import React, { useState } from 'react'
+import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import { useRuntime } from 'vtex.render-runtime'
 
@@ -35,23 +35,19 @@ const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
 
   const { handles } = useCssHandles(CSS_HANDLES)
 
-  const [isBusiness, setIsBusiness] = useState(false)
-  const [step, setStep] = useState(1)
-
   const { schemaStatus, schemaData } = usePublicSchema(entity, schema)
 
   console.log('🚀 ~ file: index.tsx:42 ~ schemaData:', schemaData)
-  const validationSchema = useValidationSchema(schemaData, true)
+  const validationSchema = useValidationSchema(
+    schemaData,
+    clientType === 'lojista'
+  )
 
   console.log('🚀 ~ file: index.tsx:31 ~ validationSchema:', validationSchema)
   const submitMasterData = useSubmitForm()
 
   if (schemaStatus === 'error' || schemaStatus === 'loading' || !schemaData) {
     return <Loading />
-  }
-
-  const nextStep = () => {
-    setStep((state) => (state += 1))
   }
 
   const handleSubmit = (values: any) => {

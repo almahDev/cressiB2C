@@ -2,11 +2,7 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 
-import FormStepContentFour from '../FormStepContentFour'
-import FormStepContent from '../FormStepContentOne'
-import FormStepContentThree from '../FormStepContentThree'
-import FormStepContentTwo from '../FormStepContentTwo'
-import FormStepRadio from '../FormStepRadio'
+import FormStepContentPJ from '../FormStepContentPJ'
 
 export const CSS_HANDLES = [
   'formStep',
@@ -17,10 +13,8 @@ export const CSS_HANDLES = [
   'formStepTitle',
   'formStepNumber',
   'formStepContent',
-  'formStepContentOne',
-  'formStepContentTwo',
-  'formStepContentThree',
-  'formStepContentTFour',
+  'formStepContentPJ',
+  'formStepContentPF',
   'formStepButtonDisabled',
   'formStepButtonLoading',
   'formStepNextButton',
@@ -69,74 +63,19 @@ const FormStep = ({
   const { handles } = useCssHandles(CSS_HANDLES)
 
   return (
-    <div
-      className={`${handles.formStep} ${handles.formStep}--${step} ${
-        isSelected ? `${handles.formStepSelected}` : ''
-      }`}
-    >
-      <div id={`step-${step}`} className={`${handles.formStepAnchor}`} />
-
+    <div className={`${handles.formStep}`}>
       <div
         className={`${handles.formStepTitle} flex items-center justify-start`}
       >
-        <span
-          className={`${handles.formStepNumber} flex items-center justify-center mr5`}
-        >
-          {step}
-        </span>{' '}
-        {title}
+        SEUS DADOS
       </div>
 
-      {isSelected && step === 1 && (
-        <FormStepRadio isBusiness={isBusiness} setIsBusiness={setIsBusiness} />
-      )}
-
-      {isSelected &&
-        (step === 1 ? (
-          <FormStepContent
-            errors={errors}
-            touched={touched}
-            values={values}
-            isBusiness={isBusiness}
-            nextStep={nextStep}
-            validateForm={validateForm}
-          />
-        ) : step === 2 ? (
-          <FormStepContentTwo
-            errors={errors}
-            touched={touched}
-            values={values}
-            nextStep={nextStep}
-          />
-        ) : step === 3 ? (
-          isBusiness ? (
-            <FormStepContentThree
-              errors={errors}
-              touched={touched}
-              values={values}
-              nextStep={nextStep}
-              setFieldValue={setFieldValue}
-              validateForm={validateForm}
-            />
-          ) : (
-            <FormStepContentFour
-              errors={errors}
-              touched={touched}
-              values={values}
-              nextStep={nextStep}
-            />
-          )
-        ) : (
-          step === 4 &&
-          isBusiness && (
-            <FormStepContentFour
-              errors={errors}
-              touched={touched}
-              values={values}
-              nextStep={nextStep}
-            />
-          )
-        ))}
+      <FormStepContentPJ
+        errors={errors}
+        touched={touched}
+        values={values}
+        validateForm={validateForm}
+      />
     </div>
   )
 }

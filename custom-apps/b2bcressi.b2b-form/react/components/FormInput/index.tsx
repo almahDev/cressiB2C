@@ -17,7 +17,7 @@ const CSS_HANDLES = [
 
 type FormInputProps = {
   component?: string
-  label: string
+  label?: string
   field: string
   placeholder?: string
   type?: string
@@ -44,15 +44,21 @@ const FormInput = ({
 
   return (
     <div
-      className={`${handles.formInputContainer} w-100 flex flex-column items-start justify-center pb7 pr8-ns`}
+      className={`${handles.formInputContainer} w-100 flex flex-column items-start justify-center pb6 pr6-ns`}
     >
-      <label
-        className={`${handles.formInputLabel} w-100 c-on-base t-small pb3`}
-        htmlFor={field}
-      >
-        {label}
-        {required && <span className={handles.formInputLabelRequired}>*</span>}
-      </label>
+      {label && label.length > 0 ? (
+        <label
+          className={`${handles.formInputLabel} w-100 c-on-base t-small pb3`}
+          htmlFor={field}
+        >
+          {label}
+          {required && (
+            <span className={handles.formInputLabelRequired}>*</span>
+          )}
+        </label>
+      ) : (
+        <></>
+      )}
 
       <Field
         className={`${handles.formInput} ${
