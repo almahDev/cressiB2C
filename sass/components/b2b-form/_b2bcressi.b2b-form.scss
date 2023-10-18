@@ -19,9 +19,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: all 0.3s ease-in-out;
+  outline: none;
 
   &::placeholder {
     color: #000;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.7);
   }
 }
 
