@@ -10,7 +10,8 @@
       "experimental__visibility-layout#product-similar-products-variants",
       "product-availability",
       "product-assembly-options",
-      "flex-layout.row#product-main-btn"
+      "flex-layout.row#product-main-btn",
+      "flex-layout.row#ProgressiveDiscount"
     ],
     "props": {
       "disposition": [
@@ -84,6 +85,50 @@
     "children": ["link#ancora-video"],
     "props": {
       "blockClass": ["link-mobile-ancora"]
+    }
+  },
+  "flex-layout.row#ProgressiveDiscount": {
+    "children": [
+      "ProgressiveDiscount#10",
+      "ProgressiveDiscount#20",
+      "ProgressiveDiscount#30",
+      "ProgressiveDiscount#40",
+      "ProgressiveDiscount#50"
+    ],
+    "props": {
+      "blockClass": "progressive-discount",
+      "marginTop": 6,
+      "marginBottom": 6
+    }
+  },
+  "ProgressiveDiscount#10": {
+    "props": {
+      "value": 10,
+      "discountText": "3"
+    }
+  },
+  "ProgressiveDiscount#20": {
+    "props": {
+      "value": 20,
+      "discountText": "8"
+    }
+  },
+  "ProgressiveDiscount#30": {
+    "props": {
+      "value": 30,
+      "discountText": "10"
+    }
+  },
+  "ProgressiveDiscount#40": {
+    "props": {
+      "value": 40,
+      "discountText": "15"
+    }
+  },
+  "ProgressiveDiscount#50": {
+    "props": {
+      "value": 50,
+      "discountText": "17"
     }
   }
 }

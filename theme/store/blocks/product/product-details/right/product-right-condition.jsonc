@@ -46,6 +46,7 @@
   "responsive-layout.desktop#link-acora": {
     "children": ["link#ancora-video"]
   },
+
   "link#ancora-video": {
     "props": {
       "label": "",
