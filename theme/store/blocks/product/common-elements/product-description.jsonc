@@ -9,11 +9,71 @@
   },
   "flex-layout.col#product-description": {
     "children": [
+      "disclosure-layout#product-video",
       "disclosure-layout#product-description",
       "disclosure-layout#product-specifications"
     ],
     "props": {
       "blockClass": "product__description"
+    }
+  },
+
+  // Vídeo
+  "disclosure-layout#product-video": {
+    "title": "Descrição do Produto",
+    "props": {
+      "blockClass": "product__description",
+      "animated": false
+    },
+    "children": [
+      "disclosure-trigger#product-video",
+      "disclosure-content#product-video"
+    ]
+  },
+  "disclosure-trigger#product-video": {
+    "props": {
+      "blockClass": "product__description",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#product-video",
+      "disclosure-state-indicator#product-description"
+    ]
+  },
+  "disclosure-content#product-video": {
+    "props": {
+      "blockClass": ["product__description", "container-video"]
+    },
+    "children": ["product-images#product-video", "rich-text#text-video"]
+  },
+  "product-images#product-video": {
+    "title": "Opções - Vídeo",
+    "props": {
+      "aspectRatio": "1:1",
+      "width": 852,
+      "height": 446,
+      "maxHeight": 446,
+      "displayMode": "carousel",
+      "contentOrder": "videos-first",
+      "contentType": "videos",
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailVisibility": "hidden",
+      "blockClass": ["product__video"]
+    }
+  },
+  "rich-text#text-video": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "blockClass": "text-video"
+    }
+  },
+
+  "rich-text#product-video": {
+    "title": "Título",
+    "props": {
+      "blockClass": "product__description",
+      "text": "VÍDEO EXPLICATIVO"
     }
   },
 

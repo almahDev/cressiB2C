@@ -127,6 +127,13 @@
   &--product__tipbar-flag--text {
     margin-left: 1.38rem;
   }
+
+  &--text-video {
+    @include desktop {
+      width: 100%;
+      max-width: 442px;
+    }
+  }
 }
 
 .paragraph {

@@ -59,6 +59,12 @@
       padding-bottom: 1rem;
     }
   }
+
+  &--container-video {
+    @include desktop {
+      display: flex !important;
+    }
+  }
 }
 
 :global(.vtex-store-icons-0-x-caretIcon--product-description) {

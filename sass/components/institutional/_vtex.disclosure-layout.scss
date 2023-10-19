@@ -52,6 +52,7 @@
   &--product__description--visible {
     background-color: $white;
     border: 0;
+    padding: 1rem;
 
     :global(.vtex-store-components-3-x-productDescriptionContainer) {
       padding: 0;

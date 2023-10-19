@@ -10,6 +10,7 @@
     "children": [
       "responsive-layout.desktop#product-name",
       "condition-layout.product#link",
+      "rich-text#ancora",
       "condition-layout.product#availability-tip-bar"
     ]
   },
@@ -50,8 +51,9 @@
   "link#ancora-video": {
     "props": {
       "label": "",
-      "href": "{specificationGroups}",
-      "blockClass": ["cta-login-product-ancora"]
+      "href": "#video",
+      "blockClass": ["cta-login-product-ancora"],
+      "rel": ""
     }
   },
   "link#direct-login-product": {

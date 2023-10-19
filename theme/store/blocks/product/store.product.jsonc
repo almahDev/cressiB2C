@@ -55,5 +55,11 @@
     "props": {
       "blockClass": "top-name-page-product"
     }
+  },
+  "rich-text#ancora": {
+    "props": {
+      "htmlId": "video",
+      "text": ""
+    }
   }
 }
