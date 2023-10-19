@@ -7,11 +7,11 @@
       "responsive-layout.mobile#product-price",
       "product-installments#product",
       "sku-selector",
+      "flex-layout.row#ProgressiveDiscount",
       "experimental__visibility-layout#product-similar-products-variants",
       "product-availability",
       "product-assembly-options",
-      "flex-layout.row#product-main-btn",
-      "flex-layout.row#ProgressiveDiscount"
+      "flex-layout.row#product-main-btn"
     ],
     "props": {
       "disposition": [

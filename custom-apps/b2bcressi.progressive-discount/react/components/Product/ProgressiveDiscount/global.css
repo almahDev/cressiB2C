@@ -4,81 +4,102 @@
 }*/
 
 .progressive-discount-container label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    color: inherit;
-    border: 1px solid #BDBDBD;
-    padding: 13px 20px;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    transition: 0.3s all;
-  }
-  
-  .progressive-discount-container label:hover {
-    background-color: #FDEEEB;
-    border: solid 1px #F04C25;
-    transition: 0.3s all;
-  }
-  
-  .progressive-discount-container label:focus {
-    background-color: #FDEEEB;
-    border: solid 1px #F04C25;
-    transition: 0.3s all;
-  }
-  
-  .progressive-discount-container label .progressive-discount-number,
-  .progressive-discount-container label .progressive-discount-units {
-    font-family: 'Droid Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 145.14%;
-    color: #BDBDBD;
-  }
-  
-  .progressive-discount-container label .progressive-discount-discounts {
-    font-family: 'Droid Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 9px;
-    color: #F15B2A;    
-    margin-top: 5px;  
-  }
-  
-  .old-price {
-    font-size: 16px;
-    text-decoration: line-through;
-  }
-  
-  #netreviewsWidgetNum3863widget10av{
-    display: none;
-    }
-  
-  
-  
-    .nr-star:before{
-      font-size: 18px;
-    }
-  
-    .netreviews_reviews_rate{
-      left: 98px;
-      top: 5px;
-    }
-  
-    @media (max-width: 700px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  border: 1px solid #b8b8b8;
+  padding: 0.88rem 0.14rem;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  transition: 0.3s all;
+  width: 100%;
+  max-width: 3.6rem;
+  height: 6.72825rem;
+  border-radius: 0.3125rem;
+}
 
-      .progressive-discount-container label .progressive-discount-number,
-      .progressive-discount-container label .progressive-discount-units {
-        font-size: 14px;
-      }
-  
-      .progressive-discount-container label{
-        
-        height: 60px;
-  
-      }
-    }
+@media (min-width: 378px) and (max-width: 992px) {
+  .progressive-discount-container label {
+    max-width: 90%;
+  }
+}
+
+.progressive-discount-container label:hover {
+  background-color: #fdeeeb;
+  border: solid 1px #f04c25;
+  transition: 0.3s all;
+}
+
+.progressive-discount-container label:focus {
+  background-color: #fdeeeb;
+  border: solid 1px #f04c25;
+  transition: 0.3s all;
+}
+
+.progressive-discount-container label .progressive-discount-number,
+.progressive-discount-container label .progressive-discount-units {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 145.14%;
+  text-transform: uppercase;
+}
+
+.progressive-discount-container label .progressive-discount-discounts {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 9px;
+  color: #ffdb00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.old-price {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+#netreviewsWidgetNum3863widget10av {
+  display: none;
+}
+
+.nr-star:before {
+  font-size: 18px;
+}
+
+.netreviews_reviews_rate {
+  left: 98px;
+  top: 5px;
+}
+
+@media (max-width: 700px) {
+  .progressive-discount-container label .progressive-discount-number {
+    font-size: 1.125rem;
+  }
+
+  .progressive-discount-container label .progressive-discount-units {
+    font-size: 0.625rem;
+  }
+}
+
+@media (min-width: 993px) {
+  .progressive-discount-container label {
+    max-width: 5.4375rem;
+    height: 5.25rem;
+  }
+
+  .progressive-discount-discounts {
+    margin-top: 0.8rem !important;
+    flex-direction: row !important;
+  }
+
+  .progressive-discount-text {
+    margin-left: 0.3rem;
+  }
+}

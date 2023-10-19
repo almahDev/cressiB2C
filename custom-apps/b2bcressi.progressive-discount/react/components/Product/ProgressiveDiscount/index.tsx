@@ -11,8 +11,10 @@ const ProgressiveDiscount: StorefrontFunctionComponent<
 > = ({ value = 1, discountText = '' }) => {
   const dispatch = useProductDispatch()
   const product = useProduct()
-  const descontoClusterHighlights = product?.product?.clusterHighlights.length
-  const desconto = product?.product?.clusterHighlights
+  const descontoClusterHighlights = product?.product?.productClusters.length
+  const desconto = product?.product?.productClusters
+  // const descontoClusterHighlights = product?.product?.clusterHighlights.length
+  // const desconto = product?.product?.clusterHighlights
 
   const onChange = () => {
     dispatch({ type: 'SET_QUANTITY', args: { quantity: value } })
@@ -105,7 +107,7 @@ const ProgressiveDiscount: StorefrontFunctionComponent<
 
   return (
     <div className="progressive-discount-container">
-      {descontoClusterHighlights != 0 && desconto?.[0].id == '138' ? (
+      {descontoClusterHighlights != 0 && desconto?.[0].id == '140' ? (
         <label onClick={onChange}>
           <span className="progressive-discount-number">
             {value}
@@ -113,7 +115,8 @@ const ProgressiveDiscount: StorefrontFunctionComponent<
           </span>
           <span className="progressive-discount-units">Unidades</span>
           <span className="progressive-discount-discounts">
-            {discountText}% off
+            {discountText}%
+            <span className="progressive-discount-text">desconto</span>
           </span>
         </label>
       ) : null}

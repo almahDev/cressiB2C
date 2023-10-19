@@ -181,8 +181,14 @@
 
     .stretchChildrenWidth {
       &:first-child {
-        width: 86% !important;
-        padding-right: 1rem;
+        @include desktop {
+          width: 86% !important;
+          padding-right: 1rem;
+        }
+
+        @include tablet {
+          padding: 0;
+        }
       }
 
       &:last-child {
@@ -442,12 +448,30 @@
       }
     }
   }
+
+  &--progressive-discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+    @include desktop {
+      gap: 3px;
+    }
+
+    .stretchChildrenWidth {
+      @include tablet {
+        padding: 0;
+      }
+    }
+  }
 }
 
 .flexColChild {
   &--product__main--btn {
     @include tablet {
       padding-top: 0.313rem;
+      display: flex;
     }
 
     &:first-child {
@@ -473,7 +497,8 @@
         transition: all 0.2s;
 
         @include tablet {
-          width: 100%;
+          max-width: 95%;
+          margin: auto;
         }
 
         &:hover {
@@ -490,10 +515,6 @@
           :global(.vtex-spinner_circle) {
             color: $white;
           }
-        }
-
-        @include tablet {
-          font-size: $font-size-md !important;
         }
       }
     }
