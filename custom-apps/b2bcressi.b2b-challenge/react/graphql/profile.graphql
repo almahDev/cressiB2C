@@ -1,0 +1,9 @@
+query getProfile {
+  profile(customFields: "approved") {
+    email
+    customFields {
+      key
+      value
+    }
+  }
+}
