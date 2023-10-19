@@ -45,7 +45,7 @@ const ProgressiveDiscount: StorefrontFunctionComponent<
       '.vtex-store-components-3-x-price_sellingPrice--PriceBox span'
     )!
 
-    oldPriceMain.style.display = 'none'
+    oldPriceMain ? (oldPriceMain.style.display = 'none') : null
 
     if (!newPrice) {
       newPrice = window?.document?.createElement('div')
@@ -57,7 +57,7 @@ const ProgressiveDiscount: StorefrontFunctionComponent<
 
       oldPrice?.append(newPrice)
     } else {
-      newPrice.style.display = 'block'
+      newPrice ? (newPrice.style.display = 'block') : null
     }
     // @ts-ignore
     return (newPrice?.innerText = `R$ ${newDesconto}`)
@@ -73,7 +73,7 @@ const ProgressiveDiscount: StorefrontFunctionComponent<
       if (!oldPriceMain) {
         return
       } else {
-        oldPriceMain.style.display = 'block'
+        oldPriceMain ? (oldPriceMain.style.display = 'block') : null
       }
 
       let newPrice = document?.querySelector<HTMLElement>(
@@ -81,7 +81,7 @@ const ProgressiveDiscount: StorefrontFunctionComponent<
       )!
 
       if (newPrice) {
-        newPrice.style.display = 'none'
+        newPrice ? (newPrice.style.display = 'none') : null
       }
     }
 
