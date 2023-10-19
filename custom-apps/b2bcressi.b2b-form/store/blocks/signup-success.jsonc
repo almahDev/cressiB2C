@@ -23,14 +23,14 @@
   "rich-text#signup-success-title": {
     "title": "Título",
     "props": {
-      "text": "## TUDO CERTO :)",
+      "text": "![Icon Info Uni](assets/img/icon-info-uni.png)**CADASTRO FEITO COM SUCESSO**",
       "blockClass": "signup-success__title"
     }
   },
   "rich-text#signup-success-subtitle": {
     "title": "Subtítulo",
     "props": {
-      "text": "Em alguns instantes o seu cadastro será aprovado.",
+      "text": "![Icon Check](assets/img/icon-check.svg)\n\nObrigado pelo seu cadastro!\nEm breve entraremos em contato.",
       "blockClass": "signup-success__subtitle"
     }
   }

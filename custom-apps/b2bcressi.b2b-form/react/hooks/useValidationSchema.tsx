@@ -223,48 +223,48 @@ const useValidationSchema = (
       //   break
 
       // ENDEREÇO DE ENTREGA
-      case 'postalCode':
-        currentShape[propertyName] = currentShape[propertyName]
-          .required('Preencha o CEP')
-          .matches(/^[0-9]{5}-[0-9]{3}$/, {
-            excludeEmptyString: true,
-            message: 'CEP inválido',
-          })
+      // case 'postalCode':
+      //   currentShape[propertyName] = currentShape[propertyName]
+      //     .required('Preencha o CEP')
+      //     .matches(/^[0-9]{5}-[0-9]{3}$/, {
+      //       excludeEmptyString: true,
+      //       message: 'CEP inválido',
+      //     })
 
-        break
+      //   break
 
-      case 'street':
-        currentShape[propertyName] = currentShape[propertyName].required(
-          'Preencha o endereço'
-        )
-        break
+      // case 'street':
+      //   currentShape[propertyName] = currentShape[propertyName].required(
+      //     'Preencha o endereço'
+      //   )
+      //   break
 
-      case 'number':
-        currentShape[propertyName] =
-          currentShape[propertyName].required('Preencha o número')
-        break
+      // case 'number':
+      //   currentShape[propertyName] =
+      //     currentShape[propertyName].required('Preencha o número')
+      //   break
 
-      case 'complement':
-        currentShape[propertyName] = currentShape[propertyName].required(
-          'Preencha o complemento'
-        )
-        break
+      // case 'complement':
+      //   currentShape[propertyName] = currentShape[propertyName].required(
+      //     'Preencha o complemento'
+      //   )
+      //   break
 
-      case 'neighborhood':
-        currentShape[propertyName] =
-          currentShape[propertyName].required('Preencha o bairro')
-        break
+      // case 'neighborhood':
+      //   currentShape[propertyName] =
+      //     currentShape[propertyName].required('Preencha o bairro')
+      //   break
 
-      case 'city':
-        currentShape[propertyName] =
-          currentShape[propertyName].required('Preencha a cidade')
-        break
+      // case 'city':
+      //   currentShape[propertyName] =
+      //     currentShape[propertyName].required('Preencha a cidade')
+      //   break
 
-      case 'state':
-        currentShape[propertyName] = currentShape[propertyName].required(
-          'Selecione uma opção'
-        )
-        break
+      // case 'state':
+      //   currentShape[propertyName] = currentShape[propertyName].required(
+      //     'Selecione uma opção'
+      //   )
+      //   break
 
       // ENDEREÇO DA EMPRESA
       // case 'emp_cep':
@@ -326,17 +326,26 @@ const useValidationSchema = (
     }
   }
 
+  // VALIDAÇÃO EXTRA PARA CAMPOS DA ENTIDADE AD
+
   // console.log('currentShape', currentShape)
 
-  console.log(
-    '🚀 ~ file: useValidationSchema.tsx:318 ~ currentShape:',
-    currentShape
-  )
+  currentShape.postalCode = Yup.string()
+    .required('Preencha o CEP')
+    .matches(/^[0-9]{5}-[0-9]{3}$/, {
+      excludeEmptyString: true,
+      message: 'CEP inválido',
+    })
+
+  currentShape.street = Yup.string().required('Preencha o endereço')
+  currentShape.number = Yup.string().required('Preencha o número')
+  currentShape.complement = Yup.string().required('Preencha o complemento')
+  currentShape.neighborhood = Yup.string().required('Preencha o bairro')
+  currentShape.city = Yup.string().required('Preencha a cidade')
+  currentShape.state = Yup.string().required('Preencha o estado')
+  currentShape.receiverName = Yup.string().required('Preencha o campo')
+
   currentSchema = currentSchema.shape(currentShape)
-  console.log(
-    '🚀 ~ file: useValidationSchema.tsx:318 ~ currentSchema:',
-    currentSchema
-  )
 
   return currentSchema
 }

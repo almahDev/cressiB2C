@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useCssHandles } from 'vtex.css-handles'
 import { Spinner } from 'vtex.styleguide'
+import { useFormikContext } from 'formik'
 
 import type { FormStepContentProps } from '../FormStep'
 import { CSS_HANDLES } from '../FormStep'
 import FormInput from '../FormInput'
 // import FormStepRequiredText from '../FormStepRequiredText'
 import useSearchData from '../../hooks/useSearchData'
+import scrollToFieldError from '../../utils/scrollToFieldError'
 
 const FormStepContentPJ = ({
   errors,
@@ -24,13 +26,24 @@ const FormStepContentPJ = ({
     searchCLError,
   } = useSearchData()
 
+  const { submitForm } = useFormikContext()
+
   const { handles } = useCssHandles(CSS_HANDLES)
 
   const requiredFieldsPJ = [
-    'corporateName',
-    'stateRegistration',
     'document',
+    'stateRegistration',
+    'corporateName',
     'tradeName',
+    'receiverName',
+    'street',
+    'number',
+    'complement',
+    'neighborhood',
+    'city',
+    'state',
+    'postalCode',
+    'email',
     'homePhone',
   ]
 
@@ -47,11 +60,12 @@ const FormStepContentPJ = ({
       e.stopPropagation()
 
       setLoading(false)
+      scrollToFieldError(isValid, errors)
 
       return
     }
 
-    searchCLDocument(values?.email, values?.cnpj)
+    searchCLDocument(values?.email, values?.document)
     setShowError(false)
   }
 
@@ -67,14 +81,14 @@ const FormStepContentPJ = ({
     ) {
       setShowError(true)
       setLoading(false)
+      scrollToFieldError(isValid, errors)
 
       return
     }
 
     setShowError(false)
     setLoading(false)
-
-    window.location.hash = '#step-2'
+    submitForm()
   }, [searchCLData, searchCLLoading, searchCLCalled, searchCLError])
 
   return (
@@ -241,7 +255,7 @@ const FormStepContentPJ = ({
           loading || searchCLLoading ? `${handles.formStepButtonLoading}` : ''
         } flex items-center justify-center pointer bg-action-primary b--action-primary c-on-action-primary hover-bg-action-primary hover-b--action-primary hover-c-on-action-primary pointer`}
         onClick={handleClick}
-        type="submit"
+        type="button"
       >
         {loading ? (
           <Spinner color="currentColor" size="20" />

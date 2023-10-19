@@ -20,7 +20,7 @@ const sendToCLMasterData = (
     lastName: values?.lastName,
     interestTopics: values?.interestTopics,
     financialInfo: values?.financialInfo,
-    isCorporate: false,
+    isCorporate: true,
     isApproved: true,
   }
 

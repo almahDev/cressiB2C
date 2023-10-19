@@ -1,5 +1,7 @@
 .flexRow {
-  &--signup__title {
+  &--signup__title,
+  &--signup-success__title,
+  &--signup-error__title {
     padding-top: 50px;
   }
 
@@ -11,6 +13,8 @@
 
 .flexRowContent {
   &--signup__title,
+  &--signup-success__title,
+  &--signup-error__title,
   &--signup__form {
     @extend %container-large;
   }
@@ -19,6 +23,11 @@
 .flexCol {
   &--signup__title {
     align-items: flex-start;
+  }
+
+  &--signup-success__title,
+  &--signup-error__title {
+    align-items: stretch;
   }
 
   &--signup__form {

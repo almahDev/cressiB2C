@@ -23,7 +23,7 @@
   "rich-text#signup-error-title": {
     "title": "Título",
     "props": {
-      "text": "## OPS, ALGO DEU ERRADO",
+      "text": "![Icon Info Uni](assets/img/icon-info-uni.png)**ERRO**",
       "blockClass": "signup-error__title"
     }
   },
