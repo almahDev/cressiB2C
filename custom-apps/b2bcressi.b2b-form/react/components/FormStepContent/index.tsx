@@ -11,11 +11,7 @@ import FormInput from '../FormInput'
 import useSearchData from '../../hooks/useSearchData'
 import scrollToFieldError from '../../utils/scrollToFieldError'
 
-const FormStepContentPJ = ({
-  errors,
-  touched,
-  values,
-}: FormStepContentProps) => {
+const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
   const [loading, setLoading] = useState(false)
   const [showError, setShowError] = useState(false)
   const {
@@ -248,6 +244,25 @@ const FormStepContentPJ = ({
 
       {/* <FormStepRequiredText /> */}
 
+      {/* interestTopics: values?.interestTopics,
+    financialInfo: values?.financialInfo, */}
+
+      <FormInput
+        field="interestTopics"
+        placeholder="TÓPICOS DE INTERESSE:"
+        error={errors?.interestTopics && touched?.interestTopics}
+        success={!errors?.interestTopics && touched?.interestTopics}
+        required
+      />
+
+      <FormInput
+        field="financialInfo"
+        placeholder="Relações comerciais de fornecedores (nomes e contatos financeiros)"
+        error={errors?.financialInfo && touched?.financialInfo}
+        success={!errors?.financialInfo && touched?.financialInfo}
+        required
+      />
+
       <button
         className={`${handles.formStepSubmitButton}  ${
           !isValid ? `${handles.formStepButtonDisabled}` : ''
@@ -274,4 +289,4 @@ const FormStepContentPJ = ({
   )
 }
 
-export default FormStepContentPJ
+export default FormStepContent

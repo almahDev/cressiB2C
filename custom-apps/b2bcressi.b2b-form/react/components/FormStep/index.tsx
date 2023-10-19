@@ -2,7 +2,7 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 
-import FormStepContentPJ from '../FormStepContentPJ'
+import FormStepContent from '../FormStepContent'
 
 export const CSS_HANDLES = [
   'formStep',
@@ -70,7 +70,7 @@ const FormStep = ({
         SEUS DADOS
       </div>
 
-      <FormStepContentPJ
+      <FormStepContent
         errors={errors}
         touched={touched}
         values={values}
