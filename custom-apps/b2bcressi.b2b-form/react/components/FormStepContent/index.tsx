@@ -22,7 +22,7 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
     searchCLError,
   } = useSearchData()
 
-  const { submitForm } = useFormikContext()
+  const { setTouched, validateForm, submitForm } = useFormikContext()
 
   const { handles } = useCssHandles(CSS_HANDLES)
 
@@ -41,7 +41,26 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
     'postalCode',
     'email',
     'homePhone',
+    'financialInfo',
   ]
+
+  const requiredFieldsPJTouched = {
+    document: true,
+    stateRegistration: true,
+    corporateName: true,
+    tradeName: true,
+    receiverName: true,
+    street: true,
+    number: true,
+    complement: true,
+    neighborhood: true,
+    city: true,
+    state: true,
+    postalCode: true,
+    email: true,
+    homePhone: true,
+    financialInfo: true,
+  }
 
   const isValid = requiredFieldsPJ.every(
     (field) => !errors?.[field] && touched?.[field] && values?.[field]
@@ -50,6 +69,8 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClick = (e: any) => {
     setLoading(true)
+    setTouched(requiredFieldsPJTouched, true)
+    validateForm()
 
     if (!isValid) {
       e.preventDefault()
@@ -57,6 +78,10 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
 
       setLoading(false)
       scrollToFieldError(isValid, errors)
+
+      setTimeout(() => {
+        scrollToFieldError(isValid, errors)
+      }, 500)
 
       return
     }
@@ -260,6 +285,7 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
         placeholder="Relações comerciais de fornecedores (nomes e contatos financeiros)"
         error={errors?.financialInfo && touched?.financialInfo}
         success={!errors?.financialInfo && touched?.financialInfo}
+        component="textarea"
         required
       />
 

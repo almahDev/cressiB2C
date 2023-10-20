@@ -9,6 +9,7 @@ const CSS_HANDLES = [
   'formInputLabel',
   'formInputLabelRequired',
   'formInput',
+  'formTextArea',
   'formInputError',
   'formInputSuccess',
   'formError',
@@ -62,8 +63,10 @@ const FormInput = ({
 
       <Field
         className={`${handles.formInput} ${
-          error ? `${handles.formInputError}` : ''
-        } ${success && !component ? `${handles.formInputSuccess}` : ''} ${
+          component === 'textarea' ? `${handles.formTextArea}` : ''
+        } ${error ? `${handles.formInputError}` : ''} ${
+          success && !component ? `${handles.formInputSuccess}` : ''
+        } ${
           component === 'select' ? `${handles.formSelect}` : ''
         } w-100 ph5 pv4 c-on-base t-small ba b--muted-4 br2 bg-white`}
         id={field}
@@ -73,6 +76,7 @@ const FormInput = ({
         required={required}
         mask={mask}
         component={mask ? FormMask : component}
+        rows={component === 'textarea' ? 6 : undefined}
       >
         {children}
       </Field>
