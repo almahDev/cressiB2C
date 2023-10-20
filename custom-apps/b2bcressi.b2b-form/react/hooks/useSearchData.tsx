@@ -31,10 +31,11 @@ const useSearchData = () => {
 
   const searchCLDocument = (email: string, document?: string) => {
     // prettier-ignore
+    // const emailClean = email ? email?.replace('+', '%2B') : email
     const documentClean = document ? document?.replace('/', '%2F') : document
 
     const whereString = `email=${email}${
-      document ? ` OR document=${documentClean}` : ''
+      document ? ` OR document='${documentClean}'` : ''
     }`
 
     searchCLDocumentsQuery({

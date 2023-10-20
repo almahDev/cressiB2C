@@ -3,6 +3,7 @@
 
 const sendToCLMasterData = (
   values: any,
+  isBusiness: boolean,
   goToErrorPage: () => void,
   goToSuccessPage: () => void
 ) => {
@@ -18,10 +19,13 @@ const sendToCLMasterData = (
     homePhone: values?.homePhone,
     firstName: values?.firstName,
     lastName: values?.lastName,
-    interestTopics: values?.interestTopics,
+    interestTopics: Array.isArray(values?.interestTopics)
+      ? values?.interestTopics?.join(', ')
+      : values?.interestTopics,
     financialInfo: values?.financialInfo,
-    isCorporate: true,
-    isApproved: false,
+    isCorporate: isBusiness,
+    approved: false,
+    priceTables: isBusiness ? 'lojista' : 'instrutor',
   }
 
   const ADValues = {

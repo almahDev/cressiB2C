@@ -31,8 +31,6 @@ const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
     ? 'lojista'
     : 'instrutor'
 
-  console.log('🚀 ~ file: index.tsx:31 ~ clientType:', clientType)
-
   const { handles } = useCssHandles(CSS_HANDLES)
 
   const { schemaStatus, schemaData } = usePublicSchema(entity, schema)
@@ -44,7 +42,7 @@ const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
   )
 
   console.log('🚀 ~ file: index.tsx:31 ~ validationSchema:', validationSchema)
-  const submitMasterData = useSubmitForm()
+  const submitMasterData = useSubmitForm(clientType === 'lojista')
 
   if (schemaStatus === 'error' || schemaStatus === 'loading' || !schemaData) {
     return <Loading />

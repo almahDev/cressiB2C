@@ -199,6 +199,13 @@ const useValidationSchema = (
 
         break
 
+      case 'interestTopics':
+        currentShape[propertyName] = Yup.lazy((val) =>
+          Array.isArray(val) ? Yup.array().of(Yup.string()) : Yup.string()
+        )
+
+        break
+
       // case 'data_abertura':
       //   if (isBusiness) {
       //     currentShape[propertyName] = Yup.date()
@@ -344,6 +351,10 @@ const useValidationSchema = (
   currentShape.city = Yup.string().required('Preencha a cidade')
   currentShape.state = Yup.string().required('Preencha o estado')
   currentShape.receiverName = Yup.string().required('Preencha o campo')
+  console.log(
+    '🚀 ~ file: useValidationSchema.tsx:354 ~ currentShape:',
+    currentShape
+  )
 
   currentSchema = currentSchema.shape(currentShape)
 

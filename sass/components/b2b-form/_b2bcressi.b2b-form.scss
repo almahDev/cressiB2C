@@ -64,3 +64,51 @@
     opacity: 0.8;
   }
 }
+
+.formCheckboxGroupContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 56px 0 59px;
+}
+
+.formCheckboxGroupLabel {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-right: 30px;
+  width: auto;
+}
+
+.formCheckboxLabel {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    padding-right: 82px;
+  }
+}
+
+.formCheckbox {
+  appearance: none;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 3px solid #ffdb00;
+  margin-right: 16px;
+  accent-color: #ffdb00;
+}
+
+.formCheckboxChecked {
+  appearance: auto;
+  accent-color: #907b00;
+}

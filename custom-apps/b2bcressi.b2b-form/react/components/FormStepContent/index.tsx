@@ -10,8 +10,10 @@ import FormInput from '../FormInput'
 // import FormStepRequiredText from '../FormStepRequiredText'
 import useSearchData from '../../hooks/useSearchData'
 import scrollToFieldError from '../../utils/scrollToFieldError'
+import FormCheckboxGroup from '../FormCheckboxGroup'
 
 const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
+  console.log('🚀 ~ file: index.tsx:16 ~ FormStepContent ~ values:', values)
   const [loading, setLoading] = useState(false)
   const [showError, setShowError] = useState(false)
   const {
@@ -41,7 +43,6 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
     'postalCode',
     'email',
     'homePhone',
-    'financialInfo',
   ]
 
   const requiredFieldsPJTouched = {
@@ -59,7 +60,6 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
     postalCode: true,
     email: true,
     homePhone: true,
-    financialInfo: true,
   }
 
   const isValid = requiredFieldsPJ.every(
@@ -86,7 +86,8 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
       return
     }
 
-    searchCLDocument(values?.email, values?.document)
+    // searchCLDocument(values?.email, values?.document)
+    searchCLDocument(values?.email)
     setShowError(false)
   }
 
@@ -108,9 +109,19 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
     }
 
     setShowError(false)
-    setLoading(false)
+    // setLoading(false)
     submitForm()
   }, [searchCLData, searchCLLoading, searchCLCalled, searchCLError])
+
+  console.log(
+    '🚀 ~ file: sendToCLMasterData.ts:28 ~ Array.isArray(values?.interestTopics):',
+    Array.isArray(values?.interestTopics)
+  )
+  console.log(
+    '🚀 ~ file: sendToCLMasterData.ts:28 ~ values?.interestTopics?.join(',
+    '):',
+    values?.interestTopics?.join(', ')
+  )
 
   return (
     <div
@@ -272,12 +283,13 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
       {/* interestTopics: values?.interestTopics,
     financialInfo: values?.financialInfo, */}
 
-      <FormInput
+      <FormCheckboxGroup
         field="interestTopics"
-        placeholder="TÓPICOS DE INTERESSE:"
+        label="TÓPICOS DE INTERESSE:"
+        values={['Atacado', 'Integrações', 'Newsletter']}
         error={errors?.interestTopics && touched?.interestTopics}
         success={!errors?.interestTopics && touched?.interestTopics}
-        required
+        originalValues={values?.interestTopics}
       />
 
       <FormInput
@@ -286,7 +298,6 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
         error={errors?.financialInfo && touched?.financialInfo}
         success={!errors?.financialInfo && touched?.financialInfo}
         component="textarea"
-        required
       />
 
       <button
@@ -307,8 +318,8 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
 
       {showError && (
         <div className={`${handles.formError} w-100 c-danger t-mini pt3`}>
-          E-mail ou CNPJ já cadastrado! Entre em contato com a loja caso tenha
-          dúvidas.
+          {/* E-mail ou CNPJ já cadastrado! Entre em contato com a loja caso tenha */}
+          E-mail já cadastrado! Entre em contato com a loja caso tenha dúvidas.
         </div>
       )}
     </div>
