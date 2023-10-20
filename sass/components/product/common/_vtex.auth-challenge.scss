@@ -4,3 +4,9 @@
     align-items: center;
   }
 }
+
+.challengeContentWrapper {
+  &--challenge__summary-shelf-similars {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+}

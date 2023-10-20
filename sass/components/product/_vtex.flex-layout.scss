@@ -114,6 +114,26 @@
   &--logged {
     width: 100%;
   }
+
+  &--product__image-similars {
+    // width: 50%;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  &--product__qtty-add-similars {
+    grid-area: 2 / 1 / 3 / 3;
+    margin-top: 0.87rem;
+    height: 40px;
+  }
+
+  &--shelf__product--pdp {
+    width: 100%;
+    max-width: 600px;
+
+    @include desktop {
+      margin: 0 0 0 auto;
+    }
+  }
 }
 
 .flexRowContent {
@@ -465,6 +485,50 @@
       }
     }
   }
+
+  &--product__summary-name-similars {
+    :global(.vtex-product-summary-2-x-nameContainer) {
+      padding: 0 0 0 0.7rem !important;
+    }
+
+    :global(.vtex-product-summary-2-x-brandName) {
+      height: 57px;
+    }
+  }
+
+  &--product__qtty-add-similars {
+    :global(.vtex-button) {
+      border-radius: 0.1875rem;
+      border: 1px solid #000 !important;
+      height: 2.3125rem !important;
+      background-color: $white !important;
+
+      :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        font-size: 0 !important;
+
+        &::after {
+          content: 'ADICIONAR';
+          color: #000;
+          text-align: center;
+          font-family: Exo;
+          font-size: 0.9375rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  &--shelf__product--pdp {
+    .stretchChildrenWidth {
+      &:first-child {
+        @include tablet {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
 .flexColChild {
@@ -573,6 +637,10 @@
     @include tablet {
       padding-bottom: 0;
     }
+  }
+
+  &--shelf__price-and-savings--col-similars {
+    margin-top: 1.5rem;
   }
 }
 

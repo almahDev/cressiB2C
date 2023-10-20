@@ -17,9 +17,7 @@
       font-size: $font-size-h3 - 12;
       margin: 0 1rem;
     }
-  }
 
-  .title {
     &--all__title-pdp {
       display: flex;
       flex-direction: column;
@@ -33,6 +31,26 @@
         background-color: $color-1-500;
         margin: 0 auto 0.5rem;
         margin-top: 1.5rem;
+      }
+    }
+
+    &--similars {
+      color: $black;
+      font-size: 0.9rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: initial;
+      padding: 0;
+      margin-left: 15px;
+      margin-bottom: 5px;
+
+      @include tablet {
+        margin-left: 0;
+      }
+
+      &::before {
+        display: none;
       }
     }
   }
@@ -110,6 +128,14 @@
 
   .dot {
     @extend %dot;
+  }
+
+  .shelfContentContainer {
+    &--similars {
+      .dotsContainer {
+        bottom: -5px;
+      }
+    }
   }
 }
 

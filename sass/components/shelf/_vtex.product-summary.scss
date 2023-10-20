@@ -1,62 +1,4 @@
 .container {
-  &:hover {
-    :global(.vtex-button) {
-    }
-  }
-}
-
-.brandName {
-}
-
-.clearLink {
-}
-
-.element {
-}
-
-:global(.vtex-button) {
-}
-
-// new stuff
-
-.nameContainer {
-}
-.container {
-  &:hover {
-    :global(.vtex-button) {
-    }
-
-    :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
-    }
-  }
-}
-
-.brandName {
-}
-
-.clearLink {
-}
-
-.element {
-  :global(.vtex-reviews-and-ratings-3-x-inlineContainer) {
-  }
-}
-
-.image {
-}
-
-.hoverImage {
-}
-
-.hoverEffect:hover {
-  .hoverImage {
-  }
-}
-
-.diagonalCross {
-}
-
-.container {
   background: $white;
   border-radius: 0;
   padding: 0;
@@ -67,10 +9,24 @@
   border: none;
   margin-bottom: 0;
 
+  @include mobile {
+    &--similars {
+      height: 242px;
+      width: 100%;
+      max-width: 100% !important;
+    }
+  }
+
   @include desktop {
     max-width: 100% !important;
     margin: 7.5px;
     height: auto;
+
+    &--similars {
+      max-width: 16.82531rem !important;
+      height: 178px;
+      margin: 0;
+    }
 
     &:hover,
     &:active,
@@ -150,6 +106,14 @@
 
   .element {
     padding: 0 0 0;
+
+    &--similars {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
   }
 
   .imageContainer {
