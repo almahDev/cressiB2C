@@ -3,6 +3,7 @@
     "component": "BlockChallenge",
     "allowed": [
       "challenge-content",
+      "challenge-not-approved",
       "challenge-fallback"
     ],
     "render": "client"
@@ -14,6 +15,12 @@
     "allowed": "*"
   },
   "challenge-fallback": {
+    "component": "BlockContent",
+    "composition": "children",
+    "render": "client",
+    "allowed": "*"
+  },
+  "challenge-not-approved": {
     "component": "BlockContent",
     "composition": "children",
     "render": "client",

@@ -21,7 +21,7 @@ const sendToCLMasterData = (
     interestTopics: values?.interestTopics,
     financialInfo: values?.financialInfo,
     isCorporate: true,
-    isApproved: true,
+    isApproved: false,
   }
 
   const ADValues = {

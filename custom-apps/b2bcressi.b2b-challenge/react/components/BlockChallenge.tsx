@@ -29,10 +29,10 @@ const isProfileAllowed = (sessionResponse: SessionResponse | undefined) => {
     return null
   }
 
-  const hasAccessToTradePolicy = (sessionResponse as Session).namespaces?.store
+  const hasAccessToTradePolicy = (sessionResponse as Session)?.namespaces?.store
     ?.channel
 
-  const isLoggedIn = (sessionResponse as Session).namespaces?.profile?.email
+  const isLoggedIn = (sessionResponse as Session)?.namespaces?.profile?.email
 
   if (isLoggedIn && hasAccessToTradePolicy) {
     return 'authorized'
@@ -81,6 +81,7 @@ const BlockChallenge = ({ showLoading = true }: BlockChallengeProps) => {
     error: profileError,
   } = useQuery(PROFILE_QUERY)
 
+  const isLoggedIn = (sessionResponse as Session)?.namespaces?.profile?.email
   const isUnauthorized = isSessionUnauthorized(sessionResponse)
   const isForbidden = isSessionForbidden(sessionResponse)
   const profileCondition = isProfileAllowed(sessionResponse)
@@ -99,6 +100,10 @@ const BlockChallenge = ({ showLoading = true }: BlockChallengeProps) => {
   }
 
   const defaultHidden = sessionResponse == null
+
+  if (!defaultHidden && isLoggedIn && !profileApproved) {
+    return <ExtensionPoint id="challenge-not-approved" />
+  }
 
   if (
     defaultHidden ||

@@ -18,6 +18,7 @@
   "challenge-block#summary-shelf": {
     "blocks": [
       "challenge-content#summary-shelf",
+      "challenge-not-approved#summary-shelf",
       "challenge-fallback#summary-shelf"
     ],
     "props": {
@@ -26,6 +27,12 @@
   },
   "challenge-content#summary-shelf": {
     "children": ["disposition-layout#summary-shelf"],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
+    }
+  },
+  "challenge-not-approved#summary-shelf": {
+    "children": ["disposition-layout#summary-shelf-not-approved"],
     "props": {
       "blockClass": "challenge__summary-shelf"
     }
@@ -61,11 +68,46 @@
       ]
     }
   },
+  "disposition-layout#summary-shelf-not-approved": {
+    "title": "Sumário do produto - Disposição de elementos",
+    "children": [
+      "flex-layout.row#product-summary-name",
+      "product-summary-space",
+      "stop-propagation-layout#summary-shelf-login-not-approved"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1,
+          "show": true
+        },
+        {
+          "order": 2,
+          "show": true
+        },
+        {
+          "order": 3,
+          "show": true
+        }
+      ]
+    }
+  },
   // "login#summary-shelf-login": {
   //   "props": {
   //     "logInButtonBehavior": "link"
   //   }
   // },
+  "stop-propagation-layout#summary-shelf-login-not-approved": {
+    "children": ["link#summary-shelf-login-not-approved"]
+  },
+  "link#summary-shelf-login-not-approved": {
+    "title": "Link - Login",
+    "props": {
+      "blockClass": "shelf__login",
+      "href": "/account",
+      "label": "Seu cadastro não foi aprovado. Por favor, entre em contato com a loja."
+    }
+  },
   "stop-propagation-layout#summary-shelf-login": {
     "children": ["link#summary-shelf-login"]
   },

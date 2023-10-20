@@ -2,6 +2,7 @@
   "challenge-block#login-header-mobile": {
     "blocks": [
       "challenge-content#login-header-mobile",
+      "challenge-not-approved#login-header-mobile",
       "challenge-fallback#login-header-mobile"
     ],
     "props": {
@@ -10,6 +11,12 @@
   },
   "challenge-content#login-header-mobile": {
     "children": ["flex-layout.row#bar-search-logged"],
+    "props": {
+      "blockClass": "challenge__login-header--mobile"
+    }
+  },
+  "challenge-not-approved#login-header-mobile": {
+    "children": ["flex-layout.row#bar-search"],
     "props": {
       "blockClass": "challenge__login-header--mobile"
     }
