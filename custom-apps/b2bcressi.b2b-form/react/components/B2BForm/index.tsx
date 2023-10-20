@@ -26,9 +26,9 @@ const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
     route: { path },
   } = useRuntime()
 
-  const clientType = path?.includes('cadastro/lojista')
-    ? 'lojista'
-    : 'instrutor'
+  const clientType = path?.includes('cadastro/instrutor')
+    ? 'instrutor'
+    : 'lojista'
 
   const { handles } = useCssHandles(CSS_HANDLES)
 

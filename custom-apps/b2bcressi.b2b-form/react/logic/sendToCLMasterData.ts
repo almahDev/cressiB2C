@@ -20,7 +20,7 @@ const sendToCLMasterData = (
     firstName: values?.firstName?.split(' ')?.[0],
     lastName: values?.lastName
       ? values?.lastName
-      : values?.split(' ')?.slice(1)?.join(' '),
+      : values?.firstName?.split(' ')?.slice(1)?.join(' '),
     interestTopics: Array.isArray(values?.interestTopics)
       ? values?.interestTopics?.join(', ')
       : values?.interestTopics,
