@@ -33,7 +33,6 @@ const FormCheckboxGroup = ({
   success,
   originalValues,
 }: FormCheckboxGroupProps) => {
-  console.log('🚀 ~ file: index.tsx:34 ~ originalValues:', originalValues)
   const { handles } = useCssHandles(CSS_HANDLES)
 
   return (

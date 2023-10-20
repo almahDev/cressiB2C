@@ -12,8 +12,12 @@ import useSearchData from '../../hooks/useSearchData'
 import scrollToFieldError from '../../utils/scrollToFieldError'
 import FormCheckboxGroup from '../FormCheckboxGroup'
 
-const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
-  console.log('🚀 ~ file: index.tsx:16 ~ FormStepContent ~ values:', values)
+const FormStepContent = ({
+  errors,
+  touched,
+  values,
+  isBusiness = true,
+}: FormStepContentProps) => {
   const [loading, setLoading] = useState(false)
   const [showError, setShowError] = useState(false)
   const {
@@ -45,6 +49,21 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
     'homePhone',
   ]
 
+  const requiredFieldsPF = [
+    'document',
+    'firstName',
+    'receiverName',
+    'street',
+    'number',
+    'complement',
+    'neighborhood',
+    'city',
+    'state',
+    'postalCode',
+    'email',
+    'homePhone',
+  ]
+
   const requiredFieldsPJTouched = {
     document: true,
     stateRegistration: true,
@@ -62,14 +81,40 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
     homePhone: true,
   }
 
-  const isValid = requiredFieldsPJ.every(
-    (field) => !errors?.[field] && touched?.[field] && values?.[field]
-  )
+  const requiredFieldsPFTouched = {
+    document: true,
+    stateRegistration: true,
+    corporateName: true,
+    tradeName: true,
+    receiverName: true,
+    street: true,
+    number: true,
+    complement: true,
+    neighborhood: true,
+    city: true,
+    state: true,
+    postalCode: true,
+    email: true,
+    homePhone: true,
+  }
 
+  const isValid = isBusiness
+    ? requiredFieldsPJ.every(
+        (field) => !errors?.[field] && touched?.[field] && values?.[field]
+      )
+    : requiredFieldsPF.every(
+        (field) => !errors?.[field] && touched?.[field] && values?.[field]
+      )
+
+  console.log('🚀 ~ file: index.tsx:102 ~ isBusiness:', isBusiness)
+  console.log('🚀 ~ file: index.tsx:102 ~ isValid:', isValid)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClick = (e: any) => {
     setLoading(true)
-    setTouched(requiredFieldsPJTouched, true)
+    setTouched(
+      isBusiness ? requiredFieldsPJTouched : requiredFieldsPFTouched,
+      true
+    )
     validateForm()
 
     if (!isValid) {
@@ -113,60 +158,77 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
     submitForm()
   }, [searchCLData, searchCLLoading, searchCLCalled, searchCLError])
 
-  console.log(
-    '🚀 ~ file: sendToCLMasterData.ts:28 ~ Array.isArray(values?.interestTopics):',
-    Array.isArray(values?.interestTopics)
-  )
-  console.log(
-    '🚀 ~ file: sendToCLMasterData.ts:28 ~ values?.interestTopics?.join(',
-    '):',
-    values?.interestTopics?.join(', ')
-  )
-
   return (
     <div
       className={`${handles.formStepContent} ${handles.formStepContentPJ} flex flex-column w-100 h-100 items-stretch justify-center`}
     >
-      <div
-        className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
-      >
-        <FormInput
-          field="document"
-          placeholder="CNPJ"
-          error={errors?.document && touched?.document}
-          success={!errors?.document && touched?.document}
-          mask="99.999.999/9999-99"
-          required
-        />
+      {isBusiness ? (
+        <div
+          className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
+        >
+          <FormInput
+            field="document"
+            placeholder="CNPJ"
+            error={errors?.document && touched?.document}
+            success={!errors?.document && touched?.document}
+            mask="99.999.999/9999-99"
+            required
+          />
 
-        <FormInput
-          field="stateRegistration"
-          placeholder="Inscrição estadual"
-          error={errors?.stateRegistration && touched?.stateRegistration}
-          success={!errors?.stateRegistration && touched?.stateRegistration}
-          required
-        />
-      </div>
+          <FormInput
+            field="stateRegistration"
+            placeholder="Inscrição estadual"
+            error={errors?.stateRegistration && touched?.stateRegistration}
+            success={!errors?.stateRegistration && touched?.stateRegistration}
+            required
+          />
+        </div>
+      ) : (
+        <div
+          className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
+        >
+          <FormInput
+            field="document"
+            placeholder="CPF"
+            error={errors?.document && touched?.document}
+            success={!errors?.document && touched?.document}
+            mask="999.999.999-99"
+            required
+          />
 
-      <div
-        className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
-      >
-        <FormInput
-          field="corporateName"
-          placeholder="Razão Social"
-          error={errors?.corporateName && touched?.corporateName}
-          success={!errors?.corporateName && touched?.corporateName}
-          required
-        />
+          <FormInput
+            field="firstName"
+            placeholder="Nome completo"
+            error={errors?.firstName && touched?.firstName}
+            success={!errors?.firstName && touched?.firstName}
+            required
+          />
+        </div>
+      )}
 
-        <FormInput
-          field="tradeName"
-          placeholder="Nome fantasia"
-          error={errors?.tradeName && touched?.tradeName}
-          success={!errors?.tradeName && touched?.tradeName}
-          required
-        />
-      </div>
+      {isBusiness ? (
+        <div
+          className={`${handles.formStepRow} flex flex-column flex-row-ns w-100 h-100 items-start justify-start`}
+        >
+          <FormInput
+            field="corporateName"
+            placeholder="Razão Social"
+            error={errors?.corporateName && touched?.corporateName}
+            success={!errors?.corporateName && touched?.corporateName}
+            required
+          />
+
+          <FormInput
+            field="tradeName"
+            placeholder="Nome fantasia"
+            error={errors?.tradeName && touched?.tradeName}
+            success={!errors?.tradeName && touched?.tradeName}
+            required
+          />
+        </div>
+      ) : (
+        <></>
+      )}
 
       {/* TODO: integração viacep */}
 
@@ -175,7 +237,7 @@ const FormStepContent = ({ errors, touched, values }: FormStepContentProps) => {
       >
         <FormInput
           field="receiverName"
-          placeholder="Responsável"
+          placeholder={isBusiness ? 'Responsável' : 'Credenciadora'}
           error={errors?.receiverName && touched?.receiverName}
           success={!errors?.receiverName && touched?.receiverName}
           required

@@ -26,7 +26,6 @@ const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
     route: { path },
   } = useRuntime()
 
-  console.log('🚀 ~ file: index.tsx:26 ~ path:', path)
   const clientType = path?.includes('cadastro/lojista')
     ? 'lojista'
     : 'instrutor'
@@ -35,13 +34,11 @@ const B2BForm: StorefrontFunctionComponent<B2BFormProps> = ({
 
   const { schemaStatus, schemaData } = usePublicSchema(entity, schema)
 
-  console.log('🚀 ~ file: index.tsx:42 ~ schemaData:', schemaData)
   const validationSchema = useValidationSchema(
     schemaData,
     clientType === 'lojista'
   )
 
-  console.log('🚀 ~ file: index.tsx:31 ~ validationSchema:', validationSchema)
   const submitMasterData = useSubmitForm(clientType === 'lojista')
 
   if (schemaStatus === 'error' || schemaStatus === 'loading' || !schemaData) {

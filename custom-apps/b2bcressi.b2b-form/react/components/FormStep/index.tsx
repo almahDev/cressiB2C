@@ -50,6 +50,7 @@ export type FormStepContentProps = {
   touched: any
   values: any
   validateForm?: any
+  isBusiness?: boolean
 }
 
 const FormStep = ({
@@ -59,7 +60,6 @@ const FormStep = ({
   validateForm,
   clientType,
 }: FormStepProps) => {
-  console.log('🚀 ~ file: index.tsx:85 ~ clientType:', clientType)
   const { handles } = useCssHandles(CSS_HANDLES)
 
   return (
@@ -75,6 +75,7 @@ const FormStep = ({
         touched={touched}
         values={values}
         validateForm={validateForm}
+        isBusiness={clientType === 'lojista'}
       />
     </div>
   )
