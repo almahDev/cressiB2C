@@ -106,8 +106,6 @@ const FormStepContent = ({
         (field) => !errors?.[field] && touched?.[field] && values?.[field]
       )
 
-  console.log('🚀 ~ file: index.tsx:102 ~ isBusiness:', isBusiness)
-  console.log('🚀 ~ file: index.tsx:102 ~ isValid:', isValid)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClick = (e: any) => {
     setLoading(true)

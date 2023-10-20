@@ -9,7 +9,7 @@ const sendToCLMasterData = (
 ) => {
   const CLValues = {
     email: values?.email,
-    corporateDocument: values?.document,
+    corporateDocument: isBusiness ? values?.document : undefined,
     stateRegistration: values?.stateRegistration,
     corporateName: values?.corporateName,
     tradeName: values?.tradeName,
@@ -17,8 +17,10 @@ const sendToCLMasterData = (
     phone: values?.homePhone,
     businessPhone: values?.homePhone,
     homePhone: values?.homePhone,
-    firstName: values?.firstName,
-    lastName: values?.lastName,
+    firstName: values?.firstName?.split(' ')?.[0],
+    lastName: values?.lastName
+      ? values?.lastName
+      : values?.split(' ')?.slice(1)?.join(' '),
     interestTopics: Array.isArray(values?.interestTopics)
       ? values?.interestTopics?.join(', ')
       : values?.interestTopics,

@@ -99,14 +99,14 @@ const useValidationSchema = (
 
         break
 
-      case 'lastName':
-        if (!isBusiness) {
-          currentShape[propertyName] = currentShape[propertyName].required(
-            'Preencha o seu sobrenome'
-          )
-        }
+      // case 'lastName':
+      //   if (!isBusiness) {
+      //     currentShape[propertyName] = currentShape[propertyName].required(
+      //       'Preencha o seu sobrenome'
+      //     )
+      //   }
 
-        break
+      //   break
 
       case 'document':
         if (!isBusiness) {
@@ -351,10 +351,6 @@ const useValidationSchema = (
   currentShape.city = Yup.string().required('Preencha a cidade')
   currentShape.state = Yup.string().required('Preencha o estado')
   currentShape.receiverName = Yup.string().required('Preencha o campo')
-  console.log(
-    '🚀 ~ file: useValidationSchema.tsx:354 ~ currentShape:',
-    currentShape
-  )
 
   currentSchema = currentSchema.shape(currentShape)
 
