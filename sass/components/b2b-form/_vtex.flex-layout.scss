@@ -1,0 +1,52 @@
+.flexRow {
+  &--signup__title,
+  &--signup-success__title,
+  &--signup-error__title {
+    padding-top: 50px;
+
+    @include tablet {
+      padding: 29px 12px 0;
+    }
+  }
+
+  &--signup__form {
+    padding-top: 49px;
+    padding-bottom: 250px;
+
+    @include tablet {
+      padding: 0 20px 13px;
+    }
+  }
+}
+
+.flexRowContent {
+  &--signup__title,
+  &--signup-success__title,
+  &--signup-error__title,
+  &--signup__form {
+    @extend %container-large;
+  }
+}
+
+.flexCol {
+  &--signup__title {
+    align-items: flex-start;
+  }
+
+  &--signup-success__title,
+  &--signup-error__title {
+    align-items: stretch;
+  }
+
+  &--signup__form {
+    align-items: stretch;
+    background: rgba(235, 235, 235, 0.5);
+    padding: 31px 67px 52px 41px;
+    position: relative;
+
+    @include tablet {
+      padding: 0;
+      background: none;
+    }
+  }
+}

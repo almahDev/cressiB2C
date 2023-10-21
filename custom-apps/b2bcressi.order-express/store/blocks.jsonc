@@ -1,0 +1,6 @@
+{
+  "store.custom#order-express": {
+    "title": "Pedido Express",
+    "children": ["order-express"]
+  }
+}

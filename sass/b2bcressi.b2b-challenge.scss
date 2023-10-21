@@ -1,0 +1,14 @@
+// COMMON
+@import 'variables/all';
+@import 'mixins/all';
+@import 'extends/all';
+
+// HEADER
+@import 'components/header/main/vtex.auth-challenge';
+
+// SHELF
+@import 'components/shelf/vtex.auth-challenge';
+@import 'components/shelf/b2bcressi.b2b-challenge';
+
+// CARD
+@import 'components/home/common/vtex.auth-challenge';

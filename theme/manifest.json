@@ -1,7 +1,7 @@
 {
   "vendor": "b2bcressi",
   "name": "theme",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "vtex.add-to-cart-button": "0.x",
-    "vtex.auth-challenge": "1.x",
     "vtex.breadcrumb": "1.x",
     "vtex.carousel": "2.x",
     "vtex.category-menu": "2.x",
@@ -82,7 +81,10 @@
     "vtex.store-media": "0.x",
     "b2bcressi.stop-propagation-layout": "0.x",
     "b2bcressi.progressive-discount": "0.x",
-    "vtex.iframe": "0.x"
+    "vtex.iframe": "0.x",
+    "b2bcressi.order-express": "0.x",
+    "b2bcressi.b2b-form": "0.x",
+    "b2bcressi.b2b-challenge": "0.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x",

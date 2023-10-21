@@ -1,0 +1,174 @@
+.container {
+  @include tablet {
+    padding: 0 8px;
+  }
+}
+
+.form {
+  @include tablet {
+    background: rgba(235, 235, 235, 0.5);
+    padding: 25px 15px 32px 13px;
+  }
+}
+
+.formStepTitle {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 23px;
+
+  @include tablet {
+    font-size: 16px;
+    padding-bottom: 29px;
+  }
+}
+
+.formInputContainer {
+  @include tablet {
+    padding-bottom: 13px;
+  }
+}
+
+.formInput {
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: 1px solid #4f4f4f;
+  background: #fff;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+
+  &::placeholder {
+    color: #000;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.7);
+  }
+
+  @include tablet {
+    font-size: 15px;
+    padding: 14px 17px;
+  }
+}
+
+.formTextArea {
+  padding: 25px 15px;
+  resize: none;
+
+  @include tablet {
+    padding: 16px 17px;
+  }
+}
+
+.formStepSubmitButton {
+  height: 50px;
+  position: absolute;
+  bottom: -90px;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 516px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #000;
+    opacity: 0.8;
+  }
+
+  @include tablet {
+    position: static;
+    width: 100%;
+    max-width: 296px;
+    margin-top: 19px;
+  }
+}
+
+.formCheckboxGroupContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 56px 6px 59px;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 0 45px;
+  }
+}
+
+.formCheckboxGroupLabel {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-right: 30px;
+  width: auto;
+
+  @include tablet {
+    padding: 0 0 29px;
+    font-size: 16px;
+  }
+}
+
+.formCheckboxLabel {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    padding-right: 82px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+
+    &:not(:last-child) {
+      padding-right: 0;
+      padding-bottom: 33px;
+    }
+  }
+}
+
+.formCheckbox {
+  appearance: none;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 3px solid #ffdb00;
+  margin-right: 16px;
+  accent-color: #ffdb00;
+}
+
+.formCheckboxChecked {
+  appearance: auto;
+  accent-color: #907b00;
+}

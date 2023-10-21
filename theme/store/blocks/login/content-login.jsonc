@@ -47,14 +47,14 @@
   "link#lojista": {
     "props": {
       "label": "SOU LOJISTA",
-      "href": "",
+      "href": "/cadastro/lojista",
       "blockClass": ["cta-lojista"]
     }
   },
   "link#instrutor": {
     "props": {
       "label": "SOU INSTRUTOR",
-      "href": "",
+      "href": "/cadastro/instrutor",
       "blockClass": ["cta-instrutor"]
     }
   }

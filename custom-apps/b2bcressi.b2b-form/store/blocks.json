@@ -1,0 +1,22 @@
+{
+  "store.custom#signup": {
+    "title": "Cadastro de Cliente",
+    "blocks": ["flex-layout.row#signup-title", "flex-layout.row#signup-form"]
+  },
+  "store.custom#signup-lojista": {
+    "title": "Cadastro de Cliente (Lojista)",
+    "blocks": ["flex-layout.row#signup-title", "flex-layout.row#signup-form"]
+  },
+  "store.custom#signup-instrutor": {
+    "title": "Cadastro de Cliente (Instrutor)",
+    "blocks": ["flex-layout.row#signup-title", "flex-layout.row#signup-form"]
+  },
+  "store.custom#signup-success": {
+    "title": "Cadastro de Cliente - Sucesso",
+    "blocks": ["flex-layout.row#signup-success"]
+  },
+  "store.custom#signup-error": {
+    "title": "Cadastro de Cliente - Erro",
+    "blocks": ["flex-layout.row#signup-error"]
+  }
+}

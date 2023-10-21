@@ -2,6 +2,7 @@
   "challenge-block#home-projects": {
     "blocks": [
       "challenge-content#home-projects",
+      "challenge-not-approved#home-projects",
       "challenge-fallback#home-projects"
     ]
   },
