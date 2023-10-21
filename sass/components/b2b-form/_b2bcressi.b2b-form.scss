@@ -1,5 +1,11 @@
 .container {
   @include tablet {
+    padding: 0 8px;
+  }
+}
+
+.form {
+  @include tablet {
     background: rgba(235, 235, 235, 0.5);
     padding: 25px 15px 32px 13px;
   }

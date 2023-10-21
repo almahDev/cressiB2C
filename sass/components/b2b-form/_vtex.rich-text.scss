@@ -24,6 +24,10 @@
     width: 100%;
     align-items: center;
     padding: 236px 0 231px;
+
+    @include tablet {
+      padding: 92px 0 213px;
+    }
   }
 }
 
@@ -48,8 +52,7 @@
 
     @include tablet {
       font-size: 13px;
-      padding-top: 28px;
-      padding-bottom: 46px;
+      padding: 28px 8px 46px;
     }
   }
 
