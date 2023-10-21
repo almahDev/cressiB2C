@@ -9,7 +9,7 @@
     }
   },
   "shelf.relatedProducts#option-1": {
-    "blocks": ["product-summary.shelf#product"],
+    "blocks": ["product-summary.shelf#product-quem-viu"],
     "props": {
       "recommendation": "view",
       "hideOutOfStockItems": false,

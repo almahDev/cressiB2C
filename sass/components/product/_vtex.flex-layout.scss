@@ -519,6 +519,22 @@
       }
     }
   }
+
+  &--shelf-quem-viu {
+    flex-direction: column;
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+
+      :global(.vtex-button) {
+        margin-top: 2.25rem;
+
+        :global(.vtex-add-to-cart-button-0-x-buttonText) {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+  }
 }
 
 .flexColChild {

@@ -1,0 +1,24 @@
+{
+  "product-summary.shelf#product-quem-viu": {
+    "title": "Sumário do produto",
+    "children": [
+      "flex-layout.row#image-tags",
+      "flex-layout.row#content-quem-viu"
+    ],
+    "props": {
+      "blockClass": ["product__summary", "product__summary--shelf"],
+      "priceBehavior": "default",
+      "trackListName": true
+    }
+  },
+  "flex-layout.row#content-quem-viu": {
+    "children": [
+      "flex-layout.row#product-summary-name",
+      "add-to-cart-button#add",
+      "product-rating-summary"
+    ],
+    "props": {
+      "blockClass": "shelf-quem-viu"
+    }
+  }
+}
