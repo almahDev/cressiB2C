@@ -93,6 +93,9 @@
 
   @include tablet {
     position: static;
+    width: 100%;
+    max-width: 296px;
+    margin-top: 19px;
   }
 }
 
