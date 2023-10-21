@@ -71,6 +71,8 @@ button#payment-data-submit {
   @include text($font-size-md, $text-pure-500, $regular);
   height: 48px !important;
   padding: 0 1.5rem;
+  margin: 0;
+
   @include tablet {
     padding: 0 1rem;
   }
@@ -78,6 +80,10 @@ button#payment-data-submit {
 
 th.product {
   max-width: 442px;
+}
+
+th.product-price {
+  min-width: 145px;
 }
 
 .product-item {
@@ -113,7 +119,142 @@ th.product {
     }
 
     .product-price {
-      margin: auto;
+      margin: 0 40px !important;
+    }
+
+    .item-remove {
+      margin-left: unset !important;
+    }
+  }
+}
+
+.srp-description {
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+  max-width: 21rem !important;
+}
+
+#cart-to-orderform,
+#shipping-calculate-link {
+  border-radius: 0.125rem;
+  background: #ffdb00;
+  border-color: #ffdb00;
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4rem;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+#cart-to-orderform {
+  font-size: 0;
+  &::after {
+    content: 'Finalizar Compra';
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+#cart-coupon,
+#ship-postalCode {
+  border-radius: 0.125rem;
+  border: 0;
+  background-color: #f2f2f2;
+  width: 29rem !important;
+
+  @include tablet {
+    width: 100% !important;
+  }
+}
+
+#cart-coupon {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#cart-coupon-add,
+#cart-shipping-calculate {
+  background-color: #ffc62a;
+  border-radius: 0.5rem !important;
+  margin-left: -80px;
+  margin-top: -12px;
+  border-color: #ffc62a !important;
+  color: #000 !important;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #ffc62a !important;
+    opacity: 0.9;
+  }
+}
+
+#cart-coupon-add {
+  margin: 0;
+  position: absolute !important;
+  right: 0;
+}
+
+.coupon-fields {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.coupon-label {
+  display: none !important;
+}
+
+.vtex-shipping-preview-0-x-postalCodeForgotten {
+  position: relative;
+
+  .ship-postalCode {
+    max-width: unset !important;
+  }
+  label {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+    margin-top: 1.31rem;
+    display: block;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.totalizers-list {
+  padding: 0;
+
+  td {
+    font-size: 1.25rem !important;
+    margin: 0.5rem 0;
+  }
+}
+
+.accordion-inner {
+  tfoot {
+    border-top: 1px solid #eee !important;
+    border-bottom: 1px solid #eee !important;
+
+    td {
+      font-size: 1.25rem !important;
+      color: #000 !important;
     }
   }
 }
