@@ -488,7 +488,7 @@
 
   &--product__summary-name-similars {
     :global(.vtex-product-summary-2-x-nameContainer) {
-      padding: 0 0 0 0.7rem !important;
+      padding: 0 !important;
     }
 
     :global(.vtex-product-summary-2-x-brandName) {
@@ -515,16 +515,6 @@
           font-style: normal;
           font-weight: 700;
           line-height: normal;
-        }
-      }
-    }
-  }
-
-  &--shelf__product--pdp {
-    .stretchChildrenWidth {
-      &:first-child {
-        @include tablet {
-          padding: 0;
         }
       }
     }

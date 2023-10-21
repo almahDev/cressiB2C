@@ -3,3 +3,13 @@
   min-height: 100%;
   height: auto;
 }
+
+:global(.vtex-shelf-1-x-sliderContainer--similars) {
+  .dotsContainer {
+    bottom: 0;
+
+    @include desktop {
+      bottom: -1rem;
+    }
+  }
+}

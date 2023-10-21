@@ -1,16 +1,20 @@
 {
   "flex-layout.row#shelf-similars-pdp": {
     "title": "Vitrine de produtos similares",
-    "children": [
-      "responsive-layout.desktop#shelf-similars",
-      "responsive-layout.mobile#shelf-similars"
-    ],
+    "children": ["flex-layout.col#similars"],
     "props": {
       "fullWidth": false,
       "preserveLayoutOnMobile": true,
       "blockClass": ["shelf__product--pdp"]
     }
   },
+  "flex-layout.col#similars": {
+    "children": [
+      "responsive-layout.desktop#shelf-similars",
+      "responsive-layout.mobile#shelf-similars"
+    ]
+  },
+
   "responsive-layout.desktop#shelf-similars": {
     "children": ["shelf.relatedProducts#option-pdp"]
   },
@@ -106,7 +110,6 @@
       "Else": "disposition-layout#summary-shelf-similars"
     }
   },
-
   "challenge-block#summary-shelf-similars": {
     "blocks": [
       "challenge-content#summary-shelf-similars",
@@ -123,7 +126,7 @@
     }
   },
   "challenge-fallback#summary-shelf-similars": {
-    "children": ["disposition-layout#summary-shelf-not-logged"],
+    "children": ["disposition-layout#summary-shelf-not-logged-similares"],
     "props": {
       "blockClass": "challenge__summary-shelf"
     }
@@ -228,7 +231,7 @@
       "sliderDisplayThreshold": 4
     }
   },
-  "disposition-layout#summary-shelf-not-logged": {
+  "disposition-layout#summary-shelf-not-logged-similares": {
     "title": "Sumário do produto - Disposição de elementos",
     "children": ["flex-layout.row#product-summary-name-similars"],
     "props": {

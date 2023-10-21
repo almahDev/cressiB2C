@@ -9,7 +9,7 @@
   border: none;
   margin-bottom: 0;
 
-  @include mobile {
+  @include tablet {
     &--similars {
       height: 242px;
       width: 100%;
@@ -95,6 +95,14 @@
     @include tablet {
       font-size: $font-size-xs + 1;
       line-height: 13px;
+    }
+  }
+
+  :global(
+      .vtex-flex-layout-0-x-flexRowContent--product__summary-name-similars
+    ) {
+    .brandName {
+      font-size: 1rem;
     }
   }
 

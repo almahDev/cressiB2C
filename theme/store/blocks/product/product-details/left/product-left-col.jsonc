@@ -4,12 +4,19 @@
     "title": "Bloco da Esquerda",
     "children": [
       "stack-layout#product-images",
-      "flex-layout.row#shelf-similars-pdp"
+      "challenge-block#shelf-similars-pdp"
     ],
     "props": {
       "width": "60%",
       "rowGap": 0,
       "blockClass": "product__left-col"
     }
+  },
+  "challenge-block#shelf-similars-pdp": {
+    "blocks": ["challenge-content#shelf-similars-pdp"]
+  },
+
+  "challenge-content#shelf-similars-pdp": {
+    "children": ["flex-layout.row#shelf-similars-pdp"]
   }
 }
