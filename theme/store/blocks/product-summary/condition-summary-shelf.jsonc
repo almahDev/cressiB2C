@@ -109,7 +109,7 @@
     }
   },
   "stop-propagation-layout#summary-shelf-login": {
-    "children": ["link#summary-shelf-login"]
+    "children": ["challenge-button#summary-shelf-login"]
   },
   "link#summary-shelf-login": {
     "title": "Link - Login",
@@ -117,6 +117,15 @@
       "blockClass": "shelf__login",
       "href": "/login?returnUrl={queryString.returnUrl}",
       "label": "Para visualizar os preços, faça login ou cadastre-se."
+    }
+  },
+  "challenge-button#summary-shelf-login": {
+    "title": "Link - Login",
+    "props": {
+      "blockClass": "shelf__login",
+      "href": "/login?returnUrl={returnUrl}",
+      "label": "Para visualizar os preços, faça login ou cadastre-se.",
+      "variant": ""
     }
   },
   "add-to-cart-button#summary-shelf-login": {
