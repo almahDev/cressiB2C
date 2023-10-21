@@ -16,3 +16,9 @@
 * {
   scroll-behavior: smooth;
 }
+
+:global(.vtex-store-components-3-x-productImagesContainer) {
+  > div {
+    margin-left: 0 !important;
+  }
+}
