@@ -5,19 +5,45 @@
       "challenge-fallback#home-projects"
     ]
   },
-
   "challenge-content#home-projects": {
-    "children": ["flex-layout.row#home-projects-login"]
-  },
-  "challenge-fallback#home-projects": {
     "children": ["flex-layout.row#home-projects"]
   },
-
+  "flex-layout.row#home-projects": {
+    "title": "Coleções",
+    "children": [
+      "list-context.image-list#home-projects",
+      "info-card#home-projects-logged"
+    ],
+    "props": {
+      "colGap": 4,
+      "fullWidth": true,
+      "experimentalHideEmptyCols": true,
+      "blockClass": "home__projects"
+    }
+  },
+  "info-card#home-projects-logged": {
+    "title": "Bloco de Informações",
+    "props": {
+      "id": "info-card-home-projects",
+      "isFullModeStyle": false,
+      "headline": "## BENEFÍCIOS CRESSI",
+      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "callToActionText": "CADASTRE-SE",
+      "callToActionUrl": "/",
+      "callToActionMode": "button",
+      "blockClass": "home__projects",
+      "textAlignment": "left",
+      "textMode": "rich-text",
+      "width": "55%"
+    }
+  },
+  "challenge-fallback#home-projects": {
+    "children": ["flex-layout.row#home-projects-login"]
+  },
   "flex-layout.row#home-projects-login": {
     "title": "Coleções Login",
     "children": [
       "list-context.image-list#home-projects-login",
-      "responsive-layout.mobile#home-collections-title-mobile-login",
       "info-card#home-projects-login"
     ],
     "props": {
@@ -27,16 +53,7 @@
       "blockClass": "home__projects"
     }
   },
-  "responsive-layout.mobile#home-collections-title-mobile-login": {
-    "children": ["rich-text#home-collections-title-mobile-login"]
-  },
-  "rich-text#home-collections-title-mobile-login": {
-    "title": "Título (Mobile)",
-    "props": {
-      "text": "## **BENEFÍCIOS CRESSI**",
-      "blockClass": "home__title"
-    }
-  },
+
   "info-card#home-projects-login": {
     "title": "Bloco de Informações",
     "props": {
@@ -67,30 +84,6 @@
     }
   },
 
-  "flex-layout.row#home-projects": {
-    "title": "Coleções",
-    "children": [
-      "list-context.image-list#home-projects",
-      "responsive-layout.mobile#home-collections-title-mobile",
-      "info-card#home-projects"
-    ],
-    "props": {
-      "colGap": 4,
-      "fullWidth": true,
-      "experimentalHideEmptyCols": true,
-      "blockClass": "home__projects"
-    }
-  },
-  "responsive-layout.mobile#home-collections-title-mobile": {
-    "children": ["rich-text#home-collections-title-mobile"]
-  },
-  "rich-text#home-collections-title-mobile": {
-    "title": "Título (Mobile)",
-    "props": {
-      "text": "## **CADASTRE-SE**",
-      "blockClass": "home__title"
-    }
-  },
   "info-card#home-projects": {
     "title": "Bloco de Informações",
     "props": {

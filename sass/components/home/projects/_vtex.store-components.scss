@@ -134,15 +134,8 @@
       width: 264px;
 
       @include tablet {
-        width: 170px;
+        display: none;
       }
-    }
-
-    @include tablet {
-      display: none;
-      font-size: $font-size-xs;
-      letter-spacing: 4.8px;
-      line-height: 14.63px;
     }
   }
 }
