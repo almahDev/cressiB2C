@@ -7,6 +7,7 @@
 
     @include tablet {
       height: 2.125rem;
+      margin-right: 8px;
     }
   }
 
@@ -44,6 +45,12 @@
     font-weight: 400;
     line-height: normal;
     padding-bottom: 46px;
+
+    @include tablet {
+      font-size: 13px;
+      padding-top: 28px;
+      padding-bottom: 46px;
+    }
   }
 
   &--signup-error__subtitle,
@@ -69,5 +76,9 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 20px;
+    }
   }
 }

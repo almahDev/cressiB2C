@@ -1,3 +1,10 @@
+.container {
+  @include tablet {
+    background: rgba(235, 235, 235, 0.5);
+    padding: 25px 15px 32px 13px;
+  }
+}
+
 .formStepTitle {
   color: #000;
   font-size: 20px;
@@ -6,6 +13,17 @@
   line-height: normal;
   text-transform: uppercase;
   padding-bottom: 23px;
+
+  @include tablet {
+    font-size: 16px;
+    padding-bottom: 29px;
+  }
+}
+
+.formInputContainer {
+  @include tablet {
+    padding-bottom: 13px;
+  }
 }
 
 .formInput {
@@ -30,11 +48,20 @@
     outline: none;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.7);
   }
+
+  @include tablet {
+    font-size: 15px;
+    padding: 14px 17px;
+  }
 }
 
 .formTextArea {
   padding: 25px 15px;
   resize: none;
+
+  @include tablet {
+    padding: 16px 17px;
+  }
 }
 
 .formStepSubmitButton {
@@ -63,6 +90,10 @@
     background: #000;
     opacity: 0.8;
   }
+
+  @include tablet {
+    position: static;
+  }
 }
 
 .formCheckboxGroupContainer {
@@ -70,7 +101,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 56px 0 59px;
+  padding: 56px 6px 59px;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 0 45px;
+  }
 }
 
 .formCheckboxGroupLabel {
@@ -81,6 +118,11 @@
   line-height: normal;
   padding-right: 30px;
   width: auto;
+
+  @include tablet {
+    padding: 0 0 29px;
+    font-size: 16px;
+  }
 }
 
 .formCheckboxLabel {
@@ -94,6 +136,15 @@
 
   &:not(:last-child) {
     padding-right: 82px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+
+    &:not(:last-child) {
+      padding-right: 0;
+      padding-bottom: 33px;
+    }
   }
 }
 

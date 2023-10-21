@@ -3,11 +3,19 @@
   &--signup-success__title,
   &--signup-error__title {
     padding-top: 50px;
+
+    @include tablet {
+      padding: 29px 20px 0;
+    }
   }
 
   &--signup__form {
     padding-top: 49px;
     padding-bottom: 250px;
+
+    @include tablet {
+      padding: 0 20px 13px;
+    }
   }
 }
 
@@ -35,5 +43,10 @@
     background: rgba(235, 235, 235, 0.5);
     padding: 31px 67px 52px 41px;
     position: relative;
+
+    @include tablet {
+      padding: 0;
+      background: none;
+    }
   }
 }
