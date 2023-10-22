@@ -193,7 +193,7 @@ th.product-price {
   background-color: #ffc62a;
   border-radius: 0.5rem !important;
   margin-left: -80px;
-  margin-top: -12px;
+  margin-top: -61px;
   border-color: #ffc62a !important;
   color: #000 !important;
   font-size: 1rem;
@@ -282,10 +282,6 @@ label[for] {
 .ship-postalCode {
   display: flex;
   flex-direction: column;
-
-  #ship-postalCode {
-    width: 100% !important;
-  }
 
   small {
     margin: {
