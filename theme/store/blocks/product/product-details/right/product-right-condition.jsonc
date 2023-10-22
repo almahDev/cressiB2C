@@ -30,13 +30,22 @@
   "challenge-block#product-main": {
     "blocks": [
       "challenge-content#product-main",
-      "challenge-fallback#product-main"
+      "challenge-fallback#product-main",
+      "challenge-not-approved#product-main"
     ]
   },
   "challenge-content#product-main": {
     "children": ["flex-layout.row#logged-product-main"]
   },
   "challenge-fallback#product-main": {
+    "children": [
+      "link#direct-login-product",
+      "responsive-layout.desktop#link-acora"
+      // "flex-layout.row#shipping-simulator",
+      // "flex-layout.row#product-tipbar"
+    ]
+  },
+  "challenge-not-approved#product-main": {
     "children": [
       "link#direct-login-product",
       "responsive-layout.desktop#link-acora"

@@ -113,7 +113,8 @@
   "challenge-block#summary-shelf-similars": {
     "blocks": [
       "challenge-content#summary-shelf-similars",
-      "challenge-fallback#summary-shelf-similars"
+      "challenge-fallback#summary-shelf-similars",
+      "challenge-not-approved#summary-shelf-similars"
     ],
     "props": {
       "blockClass": "challenge__summary-shelf-similars"
@@ -123,6 +124,12 @@
     "children": ["disposition-layout#summary-shelf-similars"],
     "props": {
       "blockClass": "challenge__summary-shelf-similars"
+    }
+  },
+  "challenge-not-approved#summary-shelf-similars": {
+    "children": ["disposition-layout#summary-shelf-not-logged-similares"],
+    "props": {
+      "blockClass": "challenge__summary-shelf"
     }
   },
   "challenge-fallback#summary-shelf-similars": {

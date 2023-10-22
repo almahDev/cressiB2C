@@ -41,6 +41,9 @@
   "challenge-fallback#home-projects": {
     "children": ["flex-layout.row#home-projects-login"]
   },
+  "challenge-not-approved#home-projects": {
+    "children": ["flex-layout.row#home-projects-login"]
+  },
   "flex-layout.row#home-projects-login": {
     "title": "Coleções Login",
     "children": [
