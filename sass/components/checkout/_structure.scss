@@ -217,10 +217,6 @@ th.product-price {
   border-bottom: 1px solid #eee;
 }
 
-.coupon-label {
-  display: none !important;
-}
-
 .vtex-shipping-preview-0-x-postalCodeForgotten {
   position: relative;
 
@@ -384,4 +380,32 @@ label[for] {
 #creditCardpayment-card-0Month,
 #creditCardpayment-card-0Code {
   background-color: #f2f2f2 !important;
+}
+
+.link-choose-more-products-wrapper {
+  display: block !important;
+
+  a {
+    border-radius: 0.125rem;
+    border: 1px solid #ffdb00;
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.cart-links-bottom {
+  display: flex !important;
+  flex-direction: column-reverse;
 }
