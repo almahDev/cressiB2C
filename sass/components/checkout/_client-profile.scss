@@ -1,6 +1,9 @@
 .client-profile-data {
   // .active & {
   // }
+  &.filled {
+    opacity: 0.5;
+  }
 
   .box-client-info-pf {
     .client-notice {
@@ -20,16 +23,11 @@
 
   .box-client-info-pj {
     a {
-      background-color: $black;
-      color: $white !important;
-      font-size: 0.875rem;
+      color: #ffdb00 !important;
+      font-size: 1.125rem;
       font-style: normal;
-      font-weight: 600;
-      padding: 0.95rem;
-      margin-top: 1.12rem;
-      margin-bottom: 1.5rem;
-      display: block;
-      border-radius: 0.125rem;
+      font-weight: 400;
+      text-decoration-line: underline;
     }
   }
 
@@ -49,7 +47,7 @@
       width: 20px;
       height: 20px;
       background-color: $white;
-      border: 2px solid #ffdb00;
+      border: 1px solid #f2f2f2;
       cursor: pointer;
     }
 
@@ -80,7 +78,7 @@
   }
 
   #go-to-shipping {
-    border-radius: 6px !important;
+    border-radius: 0.125rem !important;
     text-transform: uppercase !important;
     padding: 1rem;
   }
@@ -93,33 +91,35 @@
 
 .accordion-toggle {
   > span {
-    color: #000;
-    font-size: 19px;
+    color: #515151;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
 
     &:before {
-      border-radius: 33px;
-      border: 2px solid $secondary-pure-500 !important;
-      background: #f7f5f2 !important;
-      color: $secondary-pure-500 !important;
+      border: none !important;
+      background: #fff !important;
+      color: #515151 !important;
+      margin: 0 !important;
+      font-size: 1.25rem !important;
     }
   }
 }
 
 #shipping-data {
   span {
-    color: #000;
-    font-size: 11px;
+    color: #515151 !important;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
     &:before {
-      border-radius: 33px;
-      border: 2px solid $secondary-pure-500 !important;
-      background: #f7f5f2 !important;
-      color: $secondary-pure-500 !important;
+      border: none !important;
+      background: #fff !important;
+      color: #515151 !important;
+      margin: 0 !important;
+      font-size: 1.25rem !important;
     }
   }
 }
@@ -142,7 +142,7 @@
     width: 20px;
     height: 20px;
     background-color: $white;
-    border: 2px solid #ffdb00;
+    border: 1px solid #f2f2f2;
     cursor: pointer;
   }
 
@@ -172,7 +172,7 @@
     width: 20px;
     height: 20px;
     background-color: $white;
-    border: 2px solid #ffdb00;
+    border: 1px solid #f2f2f2;
     cursor: pointer;
   }
 

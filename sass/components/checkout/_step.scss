@@ -2,18 +2,26 @@ body.js-vcustom-hideEmailStep
   .client-profile-data
   .accordion-toggle
   > span:before {
-  content: '2';
+  content: '2.';
 }
 
 body.js-vcustom-hideEmailStep .shipping-data .accordion-toggle:before {
-  content: '3';
+  content: '3.';
 }
 
 body.js-vcustom-hideEmailStep
   .payment-data
   .accordion-toggle
   > span:not(.payment-edit-link):before {
-  content: '4';
+  content: '4.';
+}
+
+.vtex-omnishipping-1-x-shippingDataDev {
+  opacity: 0.5;
+
+  &.active {
+    opacity: 1;
+  }
 }
 
 #shipping-data,
@@ -21,8 +29,7 @@ body.js-vcustom-hideEmailStep
 #payment-data {
   .accordion-toggle {
     span {
-      font-family: 'Montserrat' !important;
-      font-size: 19px;
+      font-size: 1.25rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;

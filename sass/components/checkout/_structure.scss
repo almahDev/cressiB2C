@@ -23,13 +23,22 @@ body {
 
 button#go-to-shipping,
 button#go-to-payment,
+#btn-go-to-payment,
+#open-shipping,
 button#payment-data-submit {
   @extend %primary-button;
-  text-transform: lowercase !important;
-  &::first-letter {
-    text-transform: uppercase !important;
+}
+
+#payment-data-submit {
+  font-size: 0;
+  &::after {
+    content: 'Finalizar Compra';
+    font-size: 1rem;
+    text-transform: uppercase;
   }
-  border-radius: 6px !important;
+  .icon-lock {
+    display: none;
+  }
 }
 .btn-place-order-wrapper {
   @include tablet {
@@ -255,6 +264,110 @@ th.product-price {
     td {
       font-size: 1.25rem !important;
       color: #000 !important;
+    }
+  }
+}
+
+.vtex-omnishipping-1-x-shippingSectionTitle,
+.delivery-address-title,
+label[for] {
+  color: #515151 !important;
+  font-size: 1.125rem !important;
+  font-style: normal;
+  font-weight: 400 !important;
+}
+
+.ship-postalCode {
+  display: flex;
+  flex-direction: column;
+
+  #ship-postalCode {
+    width: 100% !important;
+  }
+
+  small {
+    margin: {
+      top: 1.5rem;
+      bottom: 1.5rem;
+      left: 0 !important;
+      right: 0 !important;
+    }
+    a {
+      color: #ffdb00;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 700;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.vtex-omnishipping-1-x-addressSummary {
+  .address-summary {
+    background: url('/arquivos/so-home-4.svg') no-repeat !important;
+    background-position: 10px 26px !important;
+  }
+
+  #force-shipping-fields {
+    color: #ffdb00;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
+
+#delivery-packages-options {
+  border: 0 !important;
+}
+
+.vtex-omnishipping-1-x-leanShippingOption {
+  padding: 0 12px !important;
+  margin: 0.8rem 0;
+  border: 1px solid #eee;
+
+  .shp-option-text-label {
+    margin-top: 0.3rem;
+  }
+
+  .vtex-omnishipping-1-x-svg {
+    path {
+      fill: #ffdb00 !important;
+    }
+  }
+}
+
+.icon-edit {
+  &::before {
+    content: url('/arquivos/fi_edit.svg');
+  }
+}
+
+.v-custom-payment-item-wrap {
+  &.active {
+    border-color: #ffdb00 !important;
+  }
+
+  .payment-group-item.active {
+    border-color: #ffdb00 !important;
+    background-color: transparent !important;
+
+    .payment-group-item-text:before {
+      background-color: #ffdb00 !important;
+      border-color: #c4c4c4 !important;
+    }
+  }
+}
+
+.ChangeNumberOfPayments {
+  a {
+    color: #ffdb00;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+
+    &:hover {
+      color: #ffdb00;
+      text-decoration: none;
     }
   }
 }

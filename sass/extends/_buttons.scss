@@ -2,10 +2,10 @@
   font-family: $main-font;
   letter-spacing: 0 !important;
   margin: 0;
-  background: $color-1-500;
+  background: $secondary-pure-500;
   transition: all 0.2s ease-in-out;
-  color: $white;
-  border-radius: 2rem;
+  color: $black;
+  border-radius: 0.125rem;
   text-decoration: none;
   text-align: center;
   font-size: $font-size-md;
@@ -20,8 +20,8 @@
   &:focus,
   &:active {
     transition: all 0.2s ease-in-out;
-    background: $color-1-700;
-    color: $white;
+    background: $secondary-pure-500;
+    opacity: 0.8;
     border: none;
   }
 }
