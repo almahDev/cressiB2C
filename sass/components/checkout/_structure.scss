@@ -30,13 +30,15 @@ button#payment-data-submit {
 }
 
 #payment-data-submit {
-  font-size: 0;
+  font-size: 0 !important;
+
   &::after {
     content: 'Finalizar Compra';
     font-size: 1rem;
     text-transform: uppercase;
   }
-  .icon-lock {
+  .icon-lock,
+  span {
     display: none;
   }
 }
@@ -364,10 +366,26 @@ label[for] {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
+    margin: 0.62rem 1.5rem;
 
     &:hover {
       color: #ffdb00;
       text-decoration: none;
     }
   }
+}
+
+#creditCardpayment-card-0Brand {
+  max-width: 100%;
+}
+
+#ship-receiverName,
+#ship-complement,
+#ship-number,
+#creditCardpayment-card-0Number,
+#creditCardpayment-card-0Name,
+#creditCardpayment-card-0Year,
+#creditCardpayment-card-0Month,
+#creditCardpayment-card-0Code {
+  background-color: #f2f2f2 !important;
 }

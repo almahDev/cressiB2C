@@ -16,15 +16,6 @@ body.js-vcustom-hideEmailStep
   content: '4.';
 }
 
-.vtex-omnishipping-1-x-shippingDataDev {
-  opacity: 0.5;
-
-  &.active {
-    opacity: 1;
-  }
-}
-
-#shipping-data,
 #client-profile-data,
 #payment-data {
   .accordion-toggle {
@@ -33,6 +24,31 @@ body.js-vcustom-hideEmailStep
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+    }
+  }
+}
+
+.vtex-omnishipping-1-x-shippingDataDev {
+  opacity: 0.5;
+
+  .address-summary {
+    span {
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  &.active {
+    opacity: 1;
+
+    .accordion-toggle {
+      span {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
     }
   }
 }

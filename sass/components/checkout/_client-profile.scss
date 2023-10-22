@@ -107,19 +107,21 @@
 }
 
 #shipping-data {
-  span {
-    color: #515151 !important;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    &:before {
-      border: none !important;
-      background: #fff !important;
+  .accordion-heading {
+    span {
       color: #515151 !important;
-      margin: 0 !important;
-      font-size: 1.25rem !important;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      &:before {
+        border: none !important;
+        background: #fff !important;
+        color: #515151 !important;
+        margin: 0 !important;
+        font-size: 1.25rem !important;
+      }
     }
   }
 }
