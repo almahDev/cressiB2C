@@ -12,7 +12,7 @@
           }
         }
       ],
-      "GridSummary": "product-summary.shelf#category"
+      "GridSummary": "product-summary.shelf#product"
     }
   }
 }
