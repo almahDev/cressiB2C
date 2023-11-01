@@ -1,9 +1,4 @@
 .flexRow {
-  &--home__shelf-1 {
-    @media (min-width: 768px) {
-      padding-top: 28px;
-    }
-  }
 }
 
 .flexRowContent {
@@ -36,16 +31,6 @@
   &--home__shelf--group-col {
     @include desktop {
       padding-left: 20.5px;
-    }
-  }
-}
-
-.flexColChild {
-  &--home__shelf-2--col {
-    padding-bottom: 25px;
-
-    @include tablet {
-      padding-bottom: 0;
     }
   }
 }
