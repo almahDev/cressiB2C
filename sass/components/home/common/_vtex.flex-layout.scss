@@ -108,6 +108,10 @@
 
         &:last-child {
           right: 143px;
+
+          @media (max-width: 1290px) and (min-width: 1000px) {
+            right: 79px;
+          }
         }
       }
     }
@@ -120,6 +124,40 @@
       :global(.vtex-store-components-3-x-imageElement) {
         position: relative;
         z-index: 2;
+      }
+
+      @media (max-width: 993px) and (min-width: 766px) {
+        flex-direction: column;
+
+        .stretchChildrenWidth {
+          width: auto !important;
+
+          :global(.vtex-flex-layout-0-x-flexColChild--story-mobile-background) {
+            display: flex;
+            justify-content: center;
+
+            :global(.vtex-store-components-3-x-imageElement) {
+              top: -200px;
+            }
+          }
+
+          :global(.vtex-rich-text-0-x-wrapper--story-text-title) {
+            padding: 0;
+          }
+
+          :global(.vtex-flex-layout-0-x-flexCol--story-mobile-background-text) {
+            top: 191px;
+          }
+
+          :global(.vtex-rich-text-0-x-container) {
+            padding: 0;
+          }
+
+          :global(.vtex-rich-text-0-x-paragraph--story-mobile-text),
+          :global(.vtex-rich-text-0-x-paragraph--story-text) {
+            color: $white;
+          }
+        }
       }
     }
 

@@ -66,6 +66,10 @@
     padding: 0 0 0 7.6rem;
     margin: auto;
 
+    @media (max-width: 1301px) and (min-width: 1200px) {
+      padding: 0 0 0 5.6rem;
+    }
+
     @media (max-width: 768px) {
       padding: 11rem 1.44rem 0;
       color: $white;
@@ -82,6 +86,20 @@
     &--story-text-title {
       text-align: left !important;
       padding: 0 0 0 15rem;
+
+      @media (max-width: 1301px) and (min-width: 1200px) {
+        padding: 0 0 0 9rem;
+      }
+    }
+
+    &--modal__info--title {
+      @media (max-width: 1400px) and (min-width: 1300px) {
+        padding: 0 0 0 13rem;
+      }
+
+      @media (max-width: 1301px) and (min-width: 1200px) {
+        padding: 0 0 0 9rem;
+      }
     }
   }
 
