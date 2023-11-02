@@ -36,6 +36,9 @@
     "children": ["flex-layout.col#confirmation-buttons"]
   },
   "flex-layout.col#confirmation-buttons": {
+    "props": {
+      "blockClass": "confirmationButtons"
+    },
     "children": ["op-print-button"]
   },
   "op-section#notices": {

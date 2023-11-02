@@ -97,7 +97,7 @@
 
 .minicartProductListContainer {
   margin: 0 !important;
-  padding: 0;
+  padding: 0 0 10px;
   position: static;
   height: 100%;
   @extend %scrollbar;
@@ -115,7 +115,7 @@
     @extend %primary-button;
     border-radius: 0 !important;
     width: 100%;
-    height: 66px;
+    height: 48px;
     margin: 0 auto 0.5rem;
     border-radius: 6px !important;
     background-color: #ffdb00;
@@ -129,10 +129,10 @@
     :global(.vtex-button__label) {
       font-size: 0;
       &::before {
-        content: 'Finalizar Compras';
+        content: 'Finalizar Compra';
         color: #000;
         text-align: center;
-        font-size: 22px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
