@@ -22,3 +22,16 @@
     margin-left: 0 !important;
   }
 }
+
+:global(.vtex-slider-layout-0-x-sliderTrack--home__deals) {
+  :global(.vtex-slider-layout-0-x-slide--home__deals) {
+    &:nth-child(4),
+    &:nth-child(2) {
+      :global(.vtex-slider-layout-0-x-infoCardTextContainer--home__deals) {
+        @include desktop {
+          padding: 0 0 0 2.38rem;
+        }
+      }
+    }
+  }
+}

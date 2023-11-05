@@ -19,7 +19,7 @@
 
   @include desktop {
     max-width: 100% !important;
-    margin: 7.5px;
+    margin: 7.5px 28px;
     height: auto;
 
     &--similars {
@@ -91,6 +91,7 @@
     margin: 0;
     letter-spacing: 0;
     text-transform: uppercase;
+    height: 58px;
 
     @include tablet {
       font-size: $font-size-xs + 1;

@@ -73,7 +73,7 @@
 
     &::before {
       content: 'X';
-      @include text($font-c-4, $black, $bold);
+      @include text($font-c-4 - 5, $black, $bold);
       line-height: 80px;
       margin: 0;
     }

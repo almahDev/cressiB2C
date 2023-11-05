@@ -1,21 +1,22 @@
 .relatedProducts {
   .title {
-    @include text($font-size-h3, #000, $bold);
+    @include text(1.875rem, #000, $bold);
     text-transform: uppercase;
     margin: 0;
     font-style: italic;
     display: flex;
-    align-items: center;
     justify-content: inherit;
     width: auto;
+    font-family: 'Barlow', sans-serif;
 
     &::before {
       content: url('assets/img/home/icon-info-uni.png');
+      margin: 0 1rem 0 0;
     }
 
     @include tablet {
       font-size: $font-size-h3 - 12;
-      margin: 0 1rem;
+      margin: 0 0.87rem;
     }
 
     &--all__title-pdp {

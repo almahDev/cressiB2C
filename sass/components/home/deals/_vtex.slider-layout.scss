@@ -47,16 +47,12 @@
         }
       }
 
-      &:not(:last-child) {
-        .infoCardContainer--home__deals {
-          padding-left: 20px;
-          padding-right: 11px;
-        }
-
-        .infoCardTextContainer--home__deals {
-          padding-left: 30px;
-        }
-      }
+      // &:not(:last-child) {
+      //   .infoCardContainer--home__deals {
+      //     padding-left: 20px;
+      //     padding-right: 11px;
+      //   }
+      // }
     }
   }
 }
@@ -125,7 +121,7 @@
 
 .infoCardImageContainer {
   &--home__deals {
-    width: auto;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,6 +132,8 @@
 .infoCardImage {
   &--home__deals {
     display: block;
+    width: 48px;
+    height: 49px;
 
     @include tablet {
       width: 55px;
@@ -178,7 +176,7 @@
 
 .paragraph {
   &--home__deals {
-    @include text(11px, $color-c-3, $normal);
+    @include text(11px, #000, 600);
     line-height: 1.0625rem;
     margin: 0;
 

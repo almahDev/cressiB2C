@@ -19,10 +19,10 @@
           "isFullModeStyle": false,
           "textPosition": "right",
           "imageUrl": "assets/svg/icon-deals-1.svg",
-          "headline": "Compre com segurança: até \n 3x semjuros no cartão.",
+          "headline": "Compre com segurança: até 3x \n sem juros no cartão.",
           "textAlignment": "left",
           "textMode": "rich-text",
-          "blockClass": "home__deals",
+          "blockClass": ["home__deals"],
           "callToActionMode": "none"
         },
         {
@@ -39,10 +39,10 @@
           "isFullModeStyle": false,
           "textPosition": "right",
           "imageUrl": "assets/svg/icon-deals-1.svg",
-          "headline": "Compre com segurança: até \n 3x semjuros no cartão.",
+          "headline": "Compre com segurança: até 3x \n  sem juros no cartão.",
           "textAlignment": "left",
           "textMode": "rich-text",
-          "blockClass": "home__deals",
+          "blockClass": ["home__deals", "home__deals--middle"],
           "callToActionMode": "none"
         }
       ]
@@ -61,7 +61,7 @@
       //     "isFullModeStyle": false,
       //     "textPosition": "right",
       //     "imageUrl": "assets/svg/icon-deals-1.svg",
-      //     "headline": "Compre com segurança: até \n 3x semjuros no cartão.",
+      //     "headline": "Compre com segurança: até 3x \n  sem juros no cartão.",
       //     "textAlignment": "left",
       //     "textMode": "rich-text",
       //     "blockClass": "home__deals",
@@ -81,7 +81,7 @@
       //     "isFullModeStyle": false,
       //     "textPosition": "right",
       //     "imageUrl": "assets/svg/icon-deals-1.svg",
-      //     "headline": "Compre com segurança: até \n 3x semjuros no cartão.",
+      //     "headline": "Compre com segurança: até 3x \n  sem juros no cartão.",
       //     "textAlignment": "left",
       //     "textMode": "rich-text",
       //     "blockClass": "home__deals",

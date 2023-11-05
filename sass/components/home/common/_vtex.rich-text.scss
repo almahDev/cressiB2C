@@ -15,11 +15,11 @@
 
     .heading {
       @include text($font-size-h3, #000, $regular);
+      align-items: flex-start;
       text-transform: uppercase;
       margin: 0;
       font-style: italic;
       display: flex;
-      align-items: center;
       margin-bottom: 3.13rem;
 
       &::before {
@@ -43,9 +43,11 @@
     }
 
     .strong {
-      @include text(1.875rem, #515151, $extra-bold);
+      @include text(1.875rem, #000, $bold);
       text-transform: uppercase;
       margin: 0 0.56rem;
+      font-style: italic;
+      font-family: 'Barlow';
 
       @include tablet {
         font-size: $font-size-h3 - 12;
@@ -64,6 +66,10 @@
     padding: 0 0 0 7.6rem;
     margin: auto;
 
+    @media (max-width: 1301px) and (min-width: 1200px) {
+      padding: 0 0 0 5.6rem;
+    }
+
     @media (max-width: 768px) {
       padding: 11rem 1.44rem 0;
       color: $white;
@@ -80,10 +86,29 @@
     &--story-text-title {
       text-align: left !important;
       padding: 0 0 0 15rem;
+
+      @media (max-width: 1301px) and (min-width: 1200px) {
+        padding: 0 0 0 9rem;
+      }
+    }
+
+    &--modal__info--title {
+      @media (max-width: 1400px) and (min-width: 1300px) {
+        padding: 0 0 0 13rem;
+      }
+
+      @media (max-width: 1301px) and (min-width: 1200px) {
+        padding: 0 0 0 9rem;
+      }
     }
   }
 
   .paragraph {
+    &--home__title {
+      margin-bottom: 3.12rem;
+    }
+
+    &--home__title,
     &--title-home {
       display: flex;
       align-items: center;
@@ -100,6 +125,7 @@
     }
 
     .image {
+      &--home__title,
       &--title-home {
         height: 3rem;
         margin-right: 0.87rem;
@@ -113,6 +139,7 @@
     .strong {
       &--title-home {
         font-family: 'Barlow';
+        color: #000;
       }
 
       &--story-text-title {
