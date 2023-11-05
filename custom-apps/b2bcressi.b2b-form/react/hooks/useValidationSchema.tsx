@@ -346,7 +346,8 @@ const useValidationSchema = (
 
   currentShape.street = Yup.string().required('Preencha o endereço')
   currentShape.number = Yup.string().required('Preencha o número')
-  currentShape.complement = Yup.string().required('Preencha o complemento')
+  // currentShape.complement = Yup.string().required('Preencha o complemento')
+  currentShape.complement = Yup.string()
   currentShape.neighborhood = Yup.string().required('Preencha o bairro')
   currentShape.city = Yup.string().required('Preencha a cidade')
   currentShape.state = Yup.string().required('Preencha o estado')
