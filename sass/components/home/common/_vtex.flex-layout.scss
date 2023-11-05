@@ -26,6 +26,18 @@
     top: 0;
     padding: 0 1.5rem;
     height: 32.5rem;
+
+    @media (min-width: 442px) and (max-width: 500px) {
+      height: 36.5rem;
+    }
+
+    @media (min-width: 501px) and (max-width: 580px) {
+      height: 40.5rem;
+    }
+
+    @media (min-width: 581px) and (max-width: 643px) {
+      height: 44.5rem;
+    }
   }
 
   &--background-story-mobile {
@@ -42,6 +54,12 @@
 
     &--story-mobile-background {
       background-color: $low-dark;
+
+      @media (min-width: 641px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     &--new-tech {
@@ -49,6 +67,17 @@
 
       @include tablet {
         margin-bottom: 1.25rem;
+      }
+    }
+
+    &--background-story-mobile {
+      @media (min-width: 775px) {
+        margin-top: 20rem;
+
+        :global(.vtex-rich-text-0-x-paragraph--story-mobile-text),
+        :global(.vtex-rich-text-0-x-paragraph--story-text) {
+          color: $white;
+        }
       }
     }
   }
@@ -124,6 +153,23 @@
       :global(.vtex-store-components-3-x-imageElement) {
         position: relative;
         z-index: 2;
+
+        @media (min-width: 641px) and (max-width: 768px) {
+          width: 56%;
+          height: auto;
+        }
+
+        @media (min-width: 769px) {
+          width: 38%;
+        }
+      }
+
+      @media (min-width: 641px) {
+        flex-direction: column;
+
+        .stretchChildrenWidth {
+          width: auto !important;
+        }
       }
 
       // .vtex-flex-layout-0-x-flexCol--story-mobile-background-text começar a mudar por essa tela

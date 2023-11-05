@@ -91,6 +91,7 @@
     margin: 0;
     letter-spacing: 0;
     text-transform: uppercase;
+    height: 58px;
 
     @include tablet {
       font-size: $font-size-xs + 1;

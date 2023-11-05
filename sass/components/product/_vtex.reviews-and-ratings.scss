@@ -31,7 +31,7 @@
     margin-left: -0.438rem;
 
     &::before {
-      content: "Avalie esse produto";
+      content: 'Avalie esse produto';
       font-weight: $regular;
       font-size: $font-size-md;
       line-height: 1.5rem;
@@ -167,20 +167,20 @@
 }
 
 .star {
-  color: #fbe385;
+  color: $black !important;
 }
 
 .summaryContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
 
   .summaryTotalReviews {
     @include text($font-size-sm, $text-color-2-400, $regular);
     font-size: 0;
 
     &::after {
-      content: " Comentários";
+      content: ' Comentários';
       display: inline-block;
       white-space: pre;
     }
