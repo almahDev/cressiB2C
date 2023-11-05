@@ -13,6 +13,15 @@
       align-items: center;
       justify-content: center;
     }
+
+    :global(.vtex-button__label) {
+      font-size: 0;
+
+      &::after {
+        content: 'Imprimir Boleto';
+        font-size: $font-size-md;
+      }
+    }
   }
 
   &--order-header {

@@ -2,7 +2,7 @@
   font-size: 0;
   font-style: normal;
   margin: 0;
-  padding: 48px 0 88px 53px;
+  padding: 48px 0 64px 53px;
 
   @include tablet {
     padding: 38px 23px;
@@ -12,7 +12,7 @@
     content: 'MINHAS COMPRAS';
     color: $color-1;
     font-family: $secondary-font;
-    font-size: 30px;
+    font-size: 24px;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
@@ -67,9 +67,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 66px;
+    height: 48px;
     width: 100%;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: $bold;
     color: $white;
     text-transform: uppercase;

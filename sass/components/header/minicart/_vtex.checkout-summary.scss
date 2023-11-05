@@ -6,6 +6,7 @@
 .summaryItemContainer {
   &--al-cart {
     padding-bottom: 0;
+    margin-top: 8px;
 
     &:first-child {
       margin-top: 0;
@@ -14,7 +15,7 @@
     &:not(:last-child) {
       .summaryItemLabel,
       .summaryItemPrice {
-        font-size: 1.25rem;
+        font-size: 18px;
         font-weight: $regular;
         font-family: $secondary-font;
         color: $black;
@@ -22,14 +23,14 @@
 
       .summaryItemLabel {
         color: #000;
-        font-size: 30px;
+        font-size: 18px;
         font-style: italic;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
 
         @include tablet {
-          font-size: 22px;
+          font-size: 16px;
         }
 
         &::after {
@@ -40,7 +41,7 @@
 
       .summaryItemPrice {
         color: #ffdb00;
-        font-size: 30px;
+        font-size: 18px;
         font-style: italic;
         font-weight: 700;
         line-height: normal;
@@ -48,7 +49,7 @@
         display: flex;
 
         @include tablet {
-          font-size: 22px;
+          font-size: 16px;
         }
       }
     }
@@ -56,21 +57,21 @@
     &:last-child {
       .summaryItemLabel,
       .summaryItemPrice {
-        font-size: 1.25rem;
+        font-size: 18px;
         font-family: $secondary-font;
         color: $black;
       }
 
       .summaryItemLabel {
         color: #000;
-        font-size: 30px;
+        font-size: 18px;
         font-style: italic;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
 
         @include tablet {
-          font-size: 22px;
+          font-size: 16px;
         }
 
         &::after {
@@ -81,7 +82,7 @@
 
       .summaryItemPrice {
         color: #ffdb00;
-        font-size: 30px;
+        font-size: 18px;
         font-style: italic;
         font-weight: 700;
         line-height: normal;
@@ -89,7 +90,7 @@
         display: flex;
 
         @include tablet {
-          font-size: 22px;
+          font-size: 16px;
         }
       }
     }
