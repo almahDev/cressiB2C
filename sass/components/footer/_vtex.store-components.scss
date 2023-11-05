@@ -53,4 +53,11 @@
       max-width: 55px;
     }
   }
+
+  &--footer__powered-by-almah {
+    @include tablet {
+      padding-left: 12px;
+      padding-right: 4px;
+    }
+  }
 }

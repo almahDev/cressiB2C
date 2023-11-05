@@ -30,7 +30,11 @@
   },
   "flex-layout.row#footer-legal-information-mob": {
     "title": "Footer - Copyright",
-    "children": ["rich-text#footer-powered", "image#powered"],
+    "children": [
+      "rich-text#footer-powered",
+      "image#logo-almah-white",
+      "image#powered"
+    ],
     "props": {
       "blockClass": ["footer_legal_information"],
       "preserveLayoutOnMobile": true,
@@ -68,6 +72,18 @@
     "title": "Imagem - Logo Almah",
     "props": {
       "src": "assets/img/logo-almah.png",
+      "link": {
+        "url": "https://www.almahcomunicacao.com.br/",
+        "openNewTab": true,
+        "title": "Almah Comunicação"
+      },
+      "blockClass": ["home__footer-powered--image", "footer__powered-by-almah"]
+    }
+  },
+  "image#logo-almah-white": {
+    "title": "Imagem - Logo Almah",
+    "props": {
+      "src": "assets/img/logo-almah-white.png",
       "link": {
         "url": "https://www.almahcomunicacao.com.br/",
         "openNewTab": true,

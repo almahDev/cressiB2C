@@ -201,7 +201,11 @@
   "menu-item#footer-menu-3-mob": {
     "title": "Footer  Menu 3 - Mobile",
     "props": {
-      "blockClass": ["footer__menu--mob", "footer__menu--mob-title"],
+      "blockClass": [
+        "footer__menu--mob",
+        "footer__menu--mob-title",
+        "footer__menu--mob-security"
+      ],
       "id": "menu-item-all-categories",
       "type": "custom",
       "iconId": null,
@@ -217,83 +221,83 @@
     "blocks": ["vtex.menu@2.x:submenu.accordion#footer-menu-3-mob"]
   },
   "vtex.menu@2.x:submenu.accordion#footer-menu-3-mob": {
-    "children": ["vtex.menu@2.x:menu#footer-menu-3-mob"],
+    "children": ["list-context.media-list#security"],
     "props": {
       "blockClass": "footer_inner_menu--mob"
     }
-  },
-  "vtex.menu@2.x:menu#footer-menu-3-mob": {
-    "title": "Footer  Menu 1",
-    "props": {
-      "orientation": "vertical",
-      "blockClass": ["footer__menu--mob"],
-      "items": [
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Entrega",
-            "text": "Entrega"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Pagamento",
-            "text": "Pagamento"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Este Site é Seguro",
-            "text": "Este Site é Seguro"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Trocas e Devoluções",
-            "text": "Trocas e Devoluções"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "blockClass": "footer__menu__item",
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "FAQ",
-            "text": "FAQ"
-          }
-        }
-      ]
-    }
   }
+  // "vtex.menu@2.x:menu#footer-menu-3-mob": {
+  //   "title": "Footer  Menu 1",
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": ["footer__menu--mob"],
+  //     "items": [
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "blockClass": "footer__menu__item",
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/",
+  //           "noFollow": false,
+  //           "tagTitle": "Entrega",
+  //           "text": "Entrega"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "blockClass": "footer__menu__item",
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/",
+  //           "noFollow": false,
+  //           "tagTitle": "Pagamento",
+  //           "text": "Pagamento"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "blockClass": "footer__menu__item",
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/",
+  //           "noFollow": false,
+  //           "tagTitle": "Este Site é Seguro",
+  //           "text": "Este Site é Seguro"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "blockClass": "footer__menu__item",
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/",
+  //           "noFollow": false,
+  //           "tagTitle": "Trocas e Devoluções",
+  //           "text": "Trocas e Devoluções"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "blockClass": "footer__menu__item",
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/",
+  //           "noFollow": false,
+  //           "tagTitle": "FAQ",
+  //           "text": "FAQ"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // }
 }

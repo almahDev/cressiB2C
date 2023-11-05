@@ -196,6 +196,12 @@
   &--footer_inner_menu--mob {
     padding: 0;
   }
+
+  &--footer__menu--mob-security {
+    @include tablet {
+      min-height: 70px;
+    }
+  }
 }
 
 .styledLink {

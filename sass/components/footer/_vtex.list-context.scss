@@ -13,6 +13,10 @@
 
   &--footer__security {
     padding-bottom: 55px;
+
+    @include tablet {
+      padding: 12px 0;
+    }
   }
 
   &--footer__payment-methods {
