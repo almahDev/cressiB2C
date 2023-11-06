@@ -1,7 +1,7 @@
 {
   "vendor": "b2bcressi",
   "name": "b2b-form",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "title": "Formulário de Cadastro B2B",
   "description": "Formulário feito em React e Node para cadastrar o cliente na entidade de Cliente.",
   "builders": {
