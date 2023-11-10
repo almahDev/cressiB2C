@@ -2,7 +2,7 @@
   "experimental__visibility-layout#header-whatsapp": {
     "title": "Link do Whatsapp (Flutuante) (On/Off)",
     "props": {
-      "visible": false
+      "visible": true
     },
     "children": ["image#header-whatsapp"]
   },
@@ -10,7 +10,7 @@
     "title": "Link do Whatsapp (Flutuante)",
     "props": {
       "analyticsProperties": "provide",
-      "src": "icon-whatsapp",
+      "src": "assets/svg/icon-whatsapp-header.svg",
       "link": {
         "openNewTab": true,
         "title": "WhatsApp",
