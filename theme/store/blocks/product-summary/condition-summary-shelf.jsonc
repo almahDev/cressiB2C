@@ -48,6 +48,7 @@
     "title": "Sumário do produto - Disposição de elementos",
     "children": [
       "flex-layout.row#product-summary-name",
+      "product-rating-summary",
       "product-summary-space",
       "stop-propagation-layout#summary-shelf-login"
     ],
@@ -72,6 +73,7 @@
     "title": "Sumário do produto - Disposição de elementos",
     "children": [
       "flex-layout.row#product-summary-name",
+      "product-rating-summary",
       "product-summary-space",
       "stop-propagation-layout#summary-shelf-login-not-approved"
     ],

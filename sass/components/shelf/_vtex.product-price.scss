@@ -69,6 +69,7 @@
     font-weight: 700;
     line-height: normal;
     display: block;
+    letter-spacing: 0;
 
     @include tablet {
       font-size: 12px;
@@ -86,6 +87,19 @@
     margin-right: 0.3rem;
   }
 
+  &--summary {
+    color: #515151;
+    font-family: $secondary-font !important;
+    font-size: $font-size-lg;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+
   @include tablet {
     font-size: 0.9375rem;
   }
@@ -98,6 +112,15 @@
   @include tablet {
     font-size: $font-size-xxs;
   }
+
+  &--summary {
+    color: #515151;
+    font-family: $secondary-font !important;
+    font-size: $font-size-lg;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
 }
 
 .installmentValue {
@@ -105,6 +128,15 @@
 
   @include tablet {
     font-size: 0.9375rem;
+  }
+
+  &--summary {
+    color: #515151;
+    font-family: $secondary-font !important;
+    font-size: $font-size-lg;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0;
   }
 }
 

@@ -3,22 +3,18 @@
     "title": "Sumário do produto",
     "children": [
       "flex-layout.row#image-tags",
-      "flex-layout.row#content-quem-viu"
+      "condition-layout.binding#summary-shelf"
     ],
     "props": {
       "blockClass": ["product__summary", "product__summary--shelf"],
       "priceBehavior": "default",
       "trackListName": true
     }
-  },
-  "flex-layout.row#content-quem-viu": {
-    "children": [
-      "flex-layout.row#product-summary-name",
-      "add-to-cart-button#add",
-      "product-rating-summary"
-    ],
-    "props": {
-      "blockClass": "shelf-quem-viu"
-    }
   }
+  // "flex-layout.row#content-quem-viu": {
+  //   "children": ["challenge-block#summary-shelf", "product-rating-summary"],
+  //   "props": {
+  //     "blockClass": "shelf-quem-viu"
+  //   }
+  // }
 }

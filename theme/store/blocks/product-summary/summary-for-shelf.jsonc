@@ -27,6 +27,7 @@
     "children": [
       "condition-layout.product#availability-summary",
       "flex-layout.row#product-summary-name",
+      "product-rating-summary",
       "product-summary-space",
       "condition-layout.product#availability-summary-savings",
       "product-summary-sku-selector#shelf"
