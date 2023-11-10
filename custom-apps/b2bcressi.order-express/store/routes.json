@@ -1,8 +1,0 @@
-{
-  "store.custom#order-express": {
-    "title": "Pedido Express",
-    "description": "Pedido Express",
-    "path": "/pedido-express",
-    "isSitemapEntry": true
-  }
-}
