@@ -1,14 +1,4 @@
 {
-  "challenge-block#home-projects": {
-    "blocks": [
-      "challenge-content#home-projects",
-      "challenge-not-approved#home-projects",
-      "challenge-fallback#home-projects"
-    ]
-  },
-  "challenge-content#home-projects": {
-    "children": ["flex-layout.row#home-projects"]
-  },
   "flex-layout.row#home-projects": {
     "title": "Coleções",
     "children": [
@@ -37,12 +27,6 @@
       "textMode": "rich-text",
       "width": "55%"
     }
-  },
-  "challenge-fallback#home-projects": {
-    "children": ["flex-layout.row#home-projects-login"]
-  },
-  "challenge-not-approved#home-projects": {
-    "children": ["flex-layout.row#home-projects-login"]
   },
   "flex-layout.row#home-projects-login": {
     "title": "Coleções Login",

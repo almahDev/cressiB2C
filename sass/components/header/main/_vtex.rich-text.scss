@@ -2,7 +2,7 @@
   &--header__tooltip--text {
     .paragraph {
       margin: 0;
-      @include text($font-size-xs - 1, $white, $bold, $secondary-font);
+      @include text($font-size-xs - 1, #000, $bold, $secondary-font);
       font-style: italic;
       display: flex;
       align-items: center;

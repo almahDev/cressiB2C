@@ -1,32 +1,4 @@
 {
-  "challenge-block#login-header-desktop": {
-    "blocks": [
-      "challenge-content#login-header-desktop",
-      "challenge-not-approved#login-header-desktop",
-      "challenge-fallback#login-header-desktop"
-    ],
-    "props": {
-      "blockClass": "challenge__login-header--desktop"
-    }
-  },
-  "challenge-content#login-header-desktop": {
-    "children": ["flex-layout.row#login-header-desktop"],
-    "props": {
-      "blockClass": "challenge__login-header--desktop"
-    }
-  },
-  "challenge-not-approved#login-header-desktop": {
-    "children": ["login#header"],
-    "props": {
-      "blockClass": "challenge__login-header--desktop"
-    }
-  },
-  "challenge-fallback#login-header-desktop": {
-    "children": ["login#header"],
-    "props": {
-      "blockClass": "challenge__login-header--desktop"
-    }
-  },
   "flex-layout.row#login-header-desktop": {
     "children": ["login#header", "flex-layout.col#login-header-desktop"],
     "props": {

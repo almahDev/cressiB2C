@@ -1,7 +1,7 @@
 {
   "disposition-layout#product-right-col-link": {
     "title": "Disposição de elementos - Link",
-    "children": ["challenge-block#product-main"],
+    "children": ["flex-layout.row#logged-product-main"],
     "props": {
       "disposition": [
         {

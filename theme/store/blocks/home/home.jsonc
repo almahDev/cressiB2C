@@ -16,7 +16,7 @@
       "flex-layout.row#home-categories",
       "flex-layout.row#home-selecao",
       "flex-layout.row#shelf-home-1",
-      "challenge-block#home-projects",
+      "flex-layout.row#home-projects",
       "flex-layout.row#home-new-tech",
       "flex-layout.row#tab-layout-business",
       "flex-layout.row#shelf-home-2",

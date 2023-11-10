@@ -52,7 +52,7 @@
     "title": "Sumário do produto",
     "children": [
       "flex-layout.row#image-tags-similars",
-      "condition-layout.binding#summary-shelf-similars",
+      "disposition-layout#summary-shelf-similars",
       "condition-layout.product#availability-summary-similars"
     ],
     "props": {
@@ -93,49 +93,6 @@
         "mobile": 152
       },
       "blockClass": "shelf__image-similars"
-    }
-  },
-  "condition-layout.binding#summary-shelf-similars": {
-    "title": "Condição de Exibição - Sumário do produto",
-    "props": {
-      "conditions": [
-        {
-          "subject": "bindingId",
-          "arguments": {
-            "id": "e0bbf489-af0d-4c18-8d9d-6f4ea0e09a17"
-          }
-        }
-      ],
-      "Then": "challenge-block#summary-shelf-similars",
-      "Else": "disposition-layout#summary-shelf-similars"
-    }
-  },
-  "challenge-block#summary-shelf-similars": {
-    "blocks": [
-      "challenge-content#summary-shelf-similars",
-      "challenge-fallback#summary-shelf-similars",
-      "challenge-not-approved#summary-shelf-similars"
-    ],
-    "props": {
-      "blockClass": "challenge__summary-shelf-similars"
-    }
-  },
-  "challenge-content#summary-shelf-similars": {
-    "children": ["disposition-layout#summary-shelf-similars"],
-    "props": {
-      "blockClass": "challenge__summary-shelf-similars"
-    }
-  },
-  "challenge-not-approved#summary-shelf-similars": {
-    "children": ["disposition-layout#summary-shelf-not-logged-similares"],
-    "props": {
-      "blockClass": "challenge__summary-shelf"
-    }
-  },
-  "challenge-fallback#summary-shelf-similars": {
-    "children": ["disposition-layout#summary-shelf-not-logged-similares"],
-    "props": {
-      "blockClass": "challenge__summary-shelf"
     }
   },
   "disposition-layout#summary-shelf-similars": {
@@ -236,26 +193,6 @@
       "visibleVariations": ["Cor"],
       "initialSelection": "complete",
       "sliderDisplayThreshold": 4
-    }
-  },
-  "disposition-layout#summary-shelf-not-logged-similares": {
-    "title": "Sumário do produto - Disposição de elementos",
-    "children": ["flex-layout.row#product-summary-name-similars"],
-    "props": {
-      "disposition": [
-        {
-          "order": 1,
-          "show": true
-        },
-        {
-          "order": 2,
-          "show": true
-        },
-        {
-          "order": 3,
-          "show": true
-        }
-      ]
     }
   },
   "flex-layout.row#product-summary-name-similars": {

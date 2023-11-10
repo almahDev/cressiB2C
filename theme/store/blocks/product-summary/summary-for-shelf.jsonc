@@ -3,7 +3,7 @@
     "title": "Sumário do produto",
     "children": [
       "flex-layout.row#image-tags",
-      "condition-layout.binding#summary-shelf"
+      "disposition-layout#summary-shelf"
     ],
     "props": {
       "blockClass": ["product__summary", "product__summary--shelf"],

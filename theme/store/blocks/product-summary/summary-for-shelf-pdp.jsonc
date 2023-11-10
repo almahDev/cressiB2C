@@ -3,7 +3,7 @@
     "title": "Sumário do produto",
     "children": [
       "flex-layout.row#image-tags",
-      "condition-layout.binding#summary-shelf"
+      "disposition-layout#summary-shelf"
     ],
     "props": {
       "blockClass": ["product__summary", "product__summary--shelf"],
@@ -11,10 +11,4 @@
       "trackListName": true
     }
   }
-  // "flex-layout.row#content-quem-viu": {
-  //   "children": ["challenge-block#summary-shelf", "product-rating-summary"],
-  //   "props": {
-  //     "blockClass": "shelf-quem-viu"
-  //   }
-  // }
 }

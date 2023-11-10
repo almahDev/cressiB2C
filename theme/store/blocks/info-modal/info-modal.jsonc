@@ -3,25 +3,10 @@
     "title": "Visibilidade - Modal de Informações (ON/OFF)",
     "props": {
       "blockClass": ["modal__info"],
-      "visible": true
+      "visible": false
     },
-    "children": ["condition-layout.binding#info-modal"]
+    "children": ["modal-trigger#info-modal"]
   },
-  "condition-layout.binding#info-modal": {
-    "title": "Condição de Exibição - Modal de Informações",
-    "props": {
-      "conditions": [
-        {
-          "subject": "bindingId",
-          "arguments": {
-            "id": "e0bbf489-af0d-4c18-8d9d-6f4ea0e09a17"
-          }
-        }
-      ],
-      "Then": "modal-trigger#info-modal"
-    }
-  },
-
   "modal-trigger#info-modal": {
     "title": "Modal de Informações",
     "props": {
