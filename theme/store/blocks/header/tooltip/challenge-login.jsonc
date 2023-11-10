@@ -8,14 +8,11 @@
     }
   },
   "link#login-header-tooltip-2": {
-    "title": "Link - Para Pessoas Físicas",
+    "title": "Link - ÁREA DO LOJISTA",
     "props": {
-      "blockClass": [
-        "header__link-login",
-        "header__link-login--para-pessoas-fisicas"
-      ],
-      "href": "https://b2ccressi.myvtex.com/",
-      "label": "Para Pessoas Físicas"
+      "blockClass": ["header__link-login", "header__link-login--area-lojista"],
+      "href": "https://b2bcressi.myvtex.com/",
+      "label": "ÁREA DO LOJISTA"
     }
   }
 }

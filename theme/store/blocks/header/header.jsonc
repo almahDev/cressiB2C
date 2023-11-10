@@ -101,7 +101,7 @@
   },
   "flex-layout.row#links-desktop": {
     "title": "Almah |Header - Links - Desktop",
-    "children": ["login#header", "menu#wishlist", "minicart.v2#main-header"],
+    "children": ["login#header", "minicart.v2#main-header"],
     "props": {
       "colGap": 0,
       "blockClass": "block-main-links"

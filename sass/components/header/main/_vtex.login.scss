@@ -89,6 +89,18 @@
 .container {
   margin: 0;
 
+  @include desktop {
+    width: auto !important;
+    margin-left: auto;
+    position: relative;
+
+    &::after {
+      content: url('assets/svg/haste.svg');
+      position: absolute;
+      right: -21px;
+    }
+  }
+
   :global(.vtex-button) {
     border: none;
     background: none;
@@ -119,7 +131,7 @@
       }
 
       &::before {
-        @include icon('profile', 32px);
+        @include icon('profile', 21px);
       }
     }
   }
@@ -140,7 +152,7 @@
     text-transform: none;
     text-align: left;
     line-height: 21px;
-    padding-left: 0.8rem;
+    padding-left: 20px;
     max-width: 100px;
     letter-spacing: 0;
 
