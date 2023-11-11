@@ -23,6 +23,7 @@
       "blockClass": "header-mob"
     },
     "children": [
+      "link#login-header-tooltip-2",
       "flex-layout.col#header-menu",
       "flex-layout.col#social-media-menu"
     ]

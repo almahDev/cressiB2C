@@ -1,0 +1,56 @@
+.list {
+  &--search__collections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 67px;
+
+    @include tablet {
+      flex-direction: column;
+      padding-bottom: 24px;
+    }
+  }
+}
+
+.item {
+  &--search__collections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(odd),
+    &:first-child {
+      padding-right: 12px;
+    }
+
+    &:nth-child(even),
+    &:last-child {
+      padding-left: 12px;
+    }
+
+    @include tablet {
+      &:nth-child(odd),
+      &:first-child {
+        padding: 0 0 4.5px 0;
+      }
+
+      &:nth-child(even),
+      &:last-child {
+        padding: 4.5px 0 0 0;
+      }
+    }
+  }
+}
+
+.imageElementLink {
+  &--search__collections {
+    display: flex;
+  }
+}
+
+.imageElement {
+  &--search__collections {
+    display: block;
+    width: 100%;
+  }
+}

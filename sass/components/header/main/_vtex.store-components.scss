@@ -102,9 +102,5 @@
 .imageElement {
   &--tooltip-social {
     display: block;
-
-    @include tablet {
-      filter: invert(1);
-    }
   }
 }

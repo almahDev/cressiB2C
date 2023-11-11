@@ -8,16 +8,12 @@
       // "colSizing": "auto",
       "blockClass": ["block-search-bar", "block-search-bar--logged"]
     },
-    "children": [
-      "search-bar#logged",
-      "link#login-header-1",
-      "link#login-header-2"
-    ]
+    "children": ["search-bar#logged"]
   },
 
   "search-bar#logged": {
     "props": {
-      "width": "40%",
+      "width": "100%",
       "placeholder": "Busca",
       "containerMode": "container",
       "openAutocompleteOnFocus": true,
