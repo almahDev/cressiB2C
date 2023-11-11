@@ -21,7 +21,7 @@
   "rich-text#shelf-home-1": {
     "title": "Vitrine 1 - Título",
     "props": {
-      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png) **MAIS VENDIDOS**",
+      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png) **DESTAQUES**",
       "blockClass": "home__title"
     }
   },

@@ -1,0 +1,40 @@
+{
+  "flex-layout.row#first-banners": {
+    "props": {
+      "blockClass": ""
+    },
+    "children": ["flex-layout.col#first-banners"]
+  },
+  "flex-layout.col#first-banners": {
+    "children": [
+      "responsive-layout.desktop#mosaic-banners-first",
+      "responsive-layout.mobile#mosaic-banners-first"
+    ]
+  },
+  "responsive-layout.desktop#mosaic-banners-first": {
+    "children": ["image#desk-image-one", "image#desk-image-two"]
+  },
+  "responsive-layout.mobile#mosaic-banners-first": {
+    "children": ["image#mob-image-one", "image#mob-image-two"]
+  },
+  "image#mob-image-one": {
+    "props": {
+      "src": "https://placehold.co/423x316"
+    }
+  },
+  "image#mob-image-two": {
+    "props": {
+      "src": "https://placehold.co/423x316"
+    }
+  },
+  "image#desk-image-one": {
+    "props": {
+      "src": "https://placehold.co/648x306"
+    }
+  },
+  "image#desk-image-two": {
+    "props": {
+      "src": "https://placehold.co/648x306"
+    }
+  }
+}

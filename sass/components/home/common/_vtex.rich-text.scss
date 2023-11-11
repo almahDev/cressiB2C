@@ -105,7 +105,9 @@
 
   .paragraph {
     &--home__title {
-      margin-bottom: 3.12rem;
+      @include tablet {
+        margin: 4rem 0 1.5rem 0;
+      }
     }
 
     &--home__title,
@@ -128,7 +130,7 @@
       &--home__title,
       &--title-home {
         height: 3rem;
-        margin-right: 0.87rem;
+        margin-right: 0.56rem;
 
         @include tablet {
           height: 2.125rem;

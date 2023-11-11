@@ -20,69 +20,38 @@
         {
           "id": "info-card-category-1",
           "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/produto-base.png",
-          "callToActionText": "Mergulho",
+          "imageUrl": "assets/img/home/artigo1.png",
+          "callToActionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi id urna non urna vestibulum dapibus porta eu turpis. Praesent tempor justo vel mi finibus facilisis.",
           "callToActionUrl": "#",
           "imageActionUrl": "#",
           "callToActionMode": "link",
           "blockClass": "home__categories",
-          "textAlignment": "center"
+          "textAlignment": "left",
+          "subhead": "NOME DO ARTIGO"
         },
         {
           "id": "info-card-category-2",
           "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/produto-base.png",
-          "callToActionText": "Snorkeling",
+          "imageUrl": "assets/img/home/artigo2.png",
+          "callToActionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi id urna non urna vestibulum dapibus porta eu turpis. Praesent tempor justo vel mi finibus facilisis.",
           "callToActionUrl": "#",
           "imageActionUrl": "#",
           "callToActionMode": "link",
           "blockClass": "home__categories",
-          "textAlignment": "center"
+          "textAlignment": "left",
+          "subhead": "NOME DO ARTIGO"
         },
         {
           "id": "info-card-category-3",
           "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/produto-base.png",
-          "callToActionText": "Freediving",
+          "imageUrl": "assets/img/home/artigo3.png",
+          "callToActionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi id urna non urna vestibulum dapibus porta eu turpis. Praesent tempor justo vel mi finibus facilisis. ",
           "callToActionUrl": "#",
           "imageActionUrl": "#",
           "callToActionMode": "link",
           "blockClass": "home__categories",
-          "textAlignment": "center"
-        },
-        {
-          "id": "info-card-category-4",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/produto-base.png",
-          "callToActionText": "Pesca Sub",
-          "callToActionUrl": "#",
-          "imageActionUrl": "#",
-          "callToActionMode": "link",
-          "blockClass": "home__categories",
-          "textAlignment": "center"
-        },
-        {
-          "id": "info-card-category-5",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/produto-base.png",
-          "callToActionText": "Natação",
-          "callToActionUrl": "#",
-          "imageActionUrl": "#",
-          "callToActionMode": "link",
-          "blockClass": "home__categories",
-          "textAlignment": "center"
-        },
-        {
-          "id": "info-card-category-6",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/img/home/produto-base.png",
-          "callToActionText": "Kids",
-          "callToActionUrl": "#",
-          "imageActionUrl": "#",
-          "callToActionMode": "link",
-          "blockClass": "home__categories",
-          "textAlignment": "center",
-          "textPosition": "center"
+          "textAlignment": "left",
+          "subhead": "NOME DO ARTIGO"
         }
       ]
     }
@@ -91,12 +60,12 @@
     "props": {
       "itemsPerPage": {
         "desktop": 6,
-        "tablet": 3,
-        "phone": 2
+        "tablet": 2,
+        "phone": 1
       },
       "blockClass": "home__categories",
       "fullWidth": true,
-      "infinite": false,
+      "infinite": true,
       "showNavigationArrows": "mobileOnly",
       "showPaginationDots": "never"
     }

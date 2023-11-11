@@ -1,0 +1,30 @@
+{
+  "flex-layout.row#second-banners": {
+    "props": {
+      "blockClass": ""
+    },
+    "children": ["flex-layout.col#second-banners"]
+  },
+  "flex-layout.col#second-banners": {
+    "children": [
+      "image#image-second-one",
+      "image#image-second-two",
+      "image#image-second-three"
+    ]
+  },
+  "image#image-second-one": {
+    "props": {
+      "src": "https://placehold.co/423x316"
+    }
+  },
+  "image#image-second-two": {
+    "props": {
+      "src": "https://placehold.co/423x316"
+    }
+  },
+  "image#image-second-three": {
+    "props": {
+      "src": "https://placehold.co/423x316"
+    }
+  }
+}

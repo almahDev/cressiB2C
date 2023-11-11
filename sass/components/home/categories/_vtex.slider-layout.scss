@@ -22,7 +22,7 @@
 .slideChildrenContainer {
   &--home__categories {
     align-items: stretch;
-    padding: 0;
+    padding: 0 1.2rem;
 
     :global(.vtex-info-card-list-0-x-home__categories--home__categories) {
       display: flex;
@@ -153,9 +153,10 @@
 
 .infoCardSubhead {
   &--home__categories {
-    @include text($font-size-sm, $text-dark-400, $regular);
-    line-height: 1.0625rem;
-    margin: 0;
+    @include text(1.25rem, $black, $bold);
+    font-family: 'Barlow';
+    font-style: italic;
+    text-transform: uppercase;
   }
 }
 

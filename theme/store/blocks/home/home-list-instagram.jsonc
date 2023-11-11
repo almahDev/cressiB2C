@@ -1,0 +1,47 @@
+{
+  "flex-layout.row#instagram": {
+    "children": ["flex-layout.col#instagram"]
+  },
+  "flex-layout.col#instagram": {
+    "children": ["list-context.media-list#instagram"]
+  },
+  "list-context.media-list#instagram": {
+    "title": "Banner",
+    "children": ["slider-layout#instagram"],
+    "props": {
+      "height": "100%",
+      "preload": true,
+      "mediaList": [
+        {
+          "image": "assets/img/home/insta1.png"
+        },
+        {
+          "image": "assets/img/home/insta2.png"
+        },
+        {
+          "image": "assets/img/home/insta3.png"
+        },
+        {
+          "image": "assets/img/home/insta2.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#instagram": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1.5
+      },
+      "infinite": true,
+      "usePagination": false,
+      "autoplay": {
+        "stopOnHover": true,
+        "timeout": 1000
+      },
+      "showNavigationArrows": "never",
+      "blockClass": []
+    }
+  }
+}

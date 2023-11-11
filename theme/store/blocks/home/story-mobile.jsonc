@@ -21,7 +21,7 @@
   },
   "image#banner-story-mobile": {
     "props": {
-      "src": "assets/img/home/nossa-historia.png"
+      "src": "assets/img/home/imageoculos.png"
     }
   },
   "flex-layout.col#story-mobile-news-title": {

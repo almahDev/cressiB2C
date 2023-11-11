@@ -12,16 +12,20 @@
     "title": "Home - Disposição do conteúdo",
     "children": [
       "list-context.media-list#home-full-banner",
-      "list-context.info-card-list#home-deals",
-      "flex-layout.row#home-categories",
       "flex-layout.row#home-selecao",
+      "list-context.info-card-list#home-deals",
       "flex-layout.row#shelf-home-1",
-      "flex-layout.row#home-projects",
-      "flex-layout.row#home-new-tech",
-      "flex-layout.row#tab-layout-business",
-      "flex-layout.row#shelf-home-2",
       "responsive-layout.desktop#story",
-      "responsive-layout.mobile#story"
+      "responsive-layout.mobile#story",
+      "flex-layout.row#home-categories",
+      "flex-layout.row#shelf-home-2",
+      "flex-layout.row#first-banners",
+      "flex-layout.row#second-banners",
+      "flex-layout.row#tab-layout-business",
+      "flex-layout.row#shelf-home-3",
+      "flex-layout.row#instagram"
+      // "flex-layout.row#home-projects",
+      // "flex-layout.row#home-new-tech",
     ],
     "props": {
       "disposition": [
@@ -60,6 +64,9 @@
         },
         {
           "order": 12
+        },
+        {
+          "order": 13
         }
       ]
     }
