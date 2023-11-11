@@ -96,6 +96,7 @@
     "title": "Almah |Header - Links",
     "children": ["flex-layout.row#links-desktop"],
     "props": {
+      "width": "40%",
       "verticalAlign": "middle"
     }
   },
