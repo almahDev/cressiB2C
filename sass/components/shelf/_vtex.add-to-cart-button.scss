@@ -14,3 +14,9 @@
     font-size: 1.375rem !important;
   }
 }
+
+.buttonText--shelf__add-to-cart {
+  @include tablet {
+    font-size: 12px !important;
+  }
+}

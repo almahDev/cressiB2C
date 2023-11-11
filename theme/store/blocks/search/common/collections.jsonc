@@ -22,11 +22,17 @@
       "images": [
         {
           "image": "assets/img/category/category-banner-desktop-1.png",
-          "mobileImage": "assets/img/category/category-banner-mobile-1.png"
+          "mobileImage": "assets/img/category/category-banner-mobile-1.png",
+          "link": {
+            "url": "#"
+          }
         },
         {
           "image": "assets/img/category/category-banner-desktop-2.png",
-          "mobileImage": "assets/img/category/category-banner-mobile-2.png"
+          "mobileImage": "assets/img/category/category-banner-mobile-2.png",
+          "link": {
+            "url": "#"
+          }
         }
       ]
     }
