@@ -1,45 +1,78 @@
 {
-  "responsive-layout.desktop#shelf-home-3": {
-    "children": ["flex-layout.row#shelf-home-3"]
-  },
-  "flex-layout.row#shelf-home-3": {
-    "title": "Vitrine 2",
-    "children": ["flex-layout.col#shelf-home-3"],
-    "props": {
-      "fullWidth": true,
-      "blockClass": ["home__shelf", "home__shelf-2"]
-    }
-  },
+  // "flex-layout.row#shelf-home-3": {
+  //   "title": "Vitrine 3",
+  //   "children": ["flex-layout.col#shelf-home-3"],
+  //   "props": {
+  //     "fullWidth": true,
+  //     "blockClass": ["home__shelf", "home__shelf-3"]
+  //   }
+  // },
 
   "flex-layout.col#shelf-home-3": {
     "children": [
-      "rich-text#shelf-home-3",
-      "flex-layout.row#shelf-home-3-slider"
+      // "rich-text#shelf-home-3",
+      "flex-layout.row#shelf-home-slider-3"
     ],
     "props": {
-      "blockClass": ["home__shelf--col", "home__shelf-2--col"]
+      "blockClass": ["home__shelf--col", "home__shelf-3--col"]
     }
   },
 
   "rich-text#shelf-home-3": {
-    "title": "Vitrine 2 - Título",
+    "title": "Vitrine 3 - Título",
     "props": {
-      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png) **EM PROMOÇÃO**",
+      "text": "## **CAMPEÕES** DE VENDA",
       "blockClass": "home__title"
     }
   },
 
-  "flex-layout.row#shelf-home-3-slider": {
-    "children": ["list-context.product-list#shelf-home-3-slider"],
+  "flex-layout.row#shelf-home-slider-3": {
+    "children": [
+      // "info-card#home-slider-3",
+      "flex-layout.col#shelf-group-home-slider-3"
+    ],
     "props": {
-      "blockClass": "shelf--col"
+      "blockClass": "home__shelf--col"
+    }
+  },
+  "flex-layout.col#shelf-group-home-slider-3": {
+    "children": ["slider-layout-group#shelf-home-slider-3"],
+    "props": {
+      "blockClass": "home__shelf--group-col"
     }
   },
 
-  "list-context.product-list#shelf-home-3-slider": {
-    "title": "Vitrine 2 - Produtos",
+  "info-card#home-slider-3": {
+    "title": "Bloco de Informações",
+    "props": {
+      "id": "info-card-home-slider",
+      "imageUrl": "assets/img/home/home-info-card-desktop.png",
+      "mobileImageUrl": "assets/img/home/home-info-card-mobile-2.png",
+      "imageActionUrl": "/",
+      "isFullModeStyle": false,
+      "headline": "CAMPEÕES",
+      "callToActionText": "Ver Todos",
+      "callToActionUrl": "/",
+      "callToActionMode": "button",
+      "blockClass": "home__shelf",
+      "textPosition": "center",
+      "textAlignment": "center",
+      "width": "50%"
+    }
+  },
+  "slider-layout-group#shelf-home-slider-3": {
+    "children": [
+      "list-context.product-list#shelf-home-slider-3-1"
+      // "responsive-layout.desktop#shelf-home-slider-3-2"
+    ],
+    "props": {
+      "blockClass": "home__shelf"
+    }
+  },
+  "list-context.product-list#shelf-home-slider-3-1": {
+    "title": "Vitrine 1 - Produtos",
     "blocks": ["product-summary.shelf#product"],
-    "children": ["slider-layout#shelf-home-3-slider"],
+    "children": ["slider-layout#shelf-home-slider-3-1"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "collection": "",
@@ -48,18 +81,47 @@
       "maxItems": 10
     }
   },
-  "slider-layout#shelf-home-3-slider": {
+  "responsive-layout.desktop#shelf-home-slider-3-2": {
+    "children": ["list-context.product-list#shelf-home-slider-3-2"]
+  },
+  "list-context.product-list#shelf-home-slider-3-2": {
+    "title": "Vitrine 2 - Produtos",
+    "blocks": ["product-summary.shelf#product"],
+    "children": ["slider-layout#shelf-home-slider-3-2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "slider-layout#shelf-home-slider-3-1": {
     "props": {
       "itemsPerPage": {
-        "desktop": 3,
-        "tablet": 2,
-        "phone": 2
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
       },
       "infinite": true,
       "fullWidth": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "never",
-      "blockClass": ["home__shelf", "home__shelf-simple"]
+      "blockClass": ["home__shelf", "shelf-group", "shelf-group-1"]
+    }
+  },
+  "slider-layout#shelf-home-slider-3-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": ["home__shelf", "shelf-group", "shelf-group-2"]
     }
   }
 }

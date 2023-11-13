@@ -1,45 +1,45 @@
 {
-  "responsive-layout.desktop#shelf-home-2": {
-    "children": ["flex-layout.row#shelf-home-2"]
+  "responsive-layout.desktop#shelf-home-4": {
+    "children": ["flex-layout.row#shelf-home-4"]
   },
-  "flex-layout.row#shelf-home-2": {
+  "flex-layout.row#shelf-home-4": {
     "title": "Vitrine 2",
-    "children": ["flex-layout.col#shelf-home-2"],
+    "children": ["flex-layout.col#shelf-home-4"],
     "props": {
       "fullWidth": true,
       "blockClass": ["home__shelf", "home__shelf-2"]
     }
   },
 
-  "flex-layout.col#shelf-home-2": {
+  "flex-layout.col#shelf-home-4": {
     "children": [
-      "rich-text#shelf-home-2",
-      "flex-layout.row#shelf-home-2-slider"
+      "rich-text#shelf-home-4",
+      "flex-layout.row#shelf-home-4-slider"
     ],
     "props": {
       "blockClass": ["home__shelf--col", "home__shelf-2--col"]
     }
   },
 
-  "rich-text#shelf-home-2": {
+  "rich-text#shelf-home-4": {
     "title": "Vitrine 2 - Título",
     "props": {
-      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png) **MAIS VENDIDOS**",
-      "blockClass": ["home__title", "home__title--shelf-2"]
+      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png) **EM PROMOÇÃO**",
+      "blockClass": "home__title"
     }
   },
 
-  "flex-layout.row#shelf-home-2-slider": {
-    "children": ["list-context.product-list#shelf-home-2-slider"],
+  "flex-layout.row#shelf-home-4-slider": {
+    "children": ["list-context.product-list#shelf-home-4-slider"],
     "props": {
       "blockClass": "shelf--col"
     }
   },
 
-  "list-context.product-list#shelf-home-2-slider": {
+  "list-context.product-list#shelf-home-4-slider": {
     "title": "Vitrine 2 - Produtos",
     "blocks": ["product-summary.shelf#product"],
-    "children": ["slider-layout#shelf-home-2-slider"],
+    "children": ["slider-layout#shelf-home-4-slider"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "collection": "",
@@ -48,7 +48,7 @@
       "maxItems": 10
     }
   },
-  "slider-layout#shelf-home-2-slider": {
+  "slider-layout#shelf-home-4-slider": {
     "props": {
       "itemsPerPage": {
         "desktop": 3,

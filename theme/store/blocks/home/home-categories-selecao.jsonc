@@ -33,6 +33,11 @@
           "loading": "lazy",
           "image": "assets/img/home/banner_dev4.png",
           "description": "something something"
+        },
+        {
+          "loading": "lazy",
+          "image": "assets/img/home/banner_dev3.png",
+          "description": "something something"
         }
       ]
     }
@@ -40,7 +45,7 @@
   "slider-layout#home-selecao": {
     "props": {
       "itemsPerPage": {
-        "desktop": 3,
+        "desktop": 4,
         "tablet": 2,
         "phone": 2
       },

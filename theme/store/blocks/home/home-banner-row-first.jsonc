@@ -1,7 +1,7 @@
 {
   "flex-layout.row#first-banners": {
     "props": {
-      "blockClass": ""
+      "blockClass": "first-banner"
     },
     "children": ["flex-layout.col#first-banners"]
   },
@@ -9,7 +9,10 @@
     "children": [
       "responsive-layout.desktop#mosaic-banners-first",
       "responsive-layout.mobile#mosaic-banners-first"
-    ]
+    ],
+    "props": {
+      "blockClass": "first-banner"
+    }
   },
   "responsive-layout.desktop#mosaic-banners-first": {
     "children": ["image#desk-image-one", "image#desk-image-two"]

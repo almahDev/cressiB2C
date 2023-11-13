@@ -127,19 +127,11 @@
 
 .infoCardCallActionText {
   &--home__categories {
-    @include text($font-size-sm, $low-pure, $semi-bold);
-    line-height: 21px;
+    @include text(0.9375rem, #515151, 400);
     margin: 0;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     text-decoration: none;
-    text-align: center;
-
-    @include tablet {
-      font-size: $font-size-xs - 1;
-      line-height: 13.41px;
-      letter-spacing: 1.1px;
-    }
+    text-align: left;
+    line-height: 1.0625rem;
   }
 }
 

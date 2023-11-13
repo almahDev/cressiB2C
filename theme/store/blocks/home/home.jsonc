@@ -22,7 +22,8 @@
       "flex-layout.row#first-banners",
       "flex-layout.row#second-banners",
       "flex-layout.row#tab-layout-business",
-      "flex-layout.row#shelf-home-3",
+      "flex-layout.row#shelf-home-4",
+      "flex-layout.row#instagram-title",
       "flex-layout.row#instagram"
       // "flex-layout.row#home-projects",
       // "flex-layout.row#home-new-tech",
@@ -67,14 +68,11 @@
         },
         {
           "order": 13
+        },
+        {
+          "order": 14
         }
       ]
-    }
-  },
-  "flex-layout.row#info-card": {
-    "children": ["info-card#home"],
-    "props": {
-      "blockClass": ["home--info-card"]
     }
   },
   "info-card#home": {

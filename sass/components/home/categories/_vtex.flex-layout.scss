@@ -1,10 +1,7 @@
 .flexRow {
   &--home__categories {
-    padding-bottom: 58px;
-
     @include desktop {
       padding-top: 23px;
-      padding-bottom: 94px;
     }
   }
 
@@ -21,6 +18,14 @@
 
 .flexCol {
   &--home__categories {
+  }
+
+  &--second-banner {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 }
 

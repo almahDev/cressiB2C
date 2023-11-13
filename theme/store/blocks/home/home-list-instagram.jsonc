@@ -1,6 +1,9 @@
 {
   "flex-layout.row#instagram": {
-    "children": ["flex-layout.col#instagram"]
+    "children": ["flex-layout.col#instagram"],
+    "props": {
+      "blockClass": "instagram"
+    }
   },
   "flex-layout.col#instagram": {
     "children": ["list-context.media-list#instagram"]
@@ -30,18 +33,16 @@
   "slider-layout#instagram": {
     "props": {
       "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
+        "desktop": 4,
+        "tablet": 3.5,
         "phone": 1.5
       },
-      "infinite": true,
       "usePagination": false,
-      "autoplay": {
-        "stopOnHover": true,
-        "timeout": 1000
-      },
-      "showNavigationArrows": "never",
-      "blockClass": []
+      "blockClass": ["instagram"],
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never"
     }
   }
 }

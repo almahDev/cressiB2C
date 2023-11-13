@@ -1,7 +1,7 @@
 {
   "flex-layout.row#second-banners": {
     "props": {
-      "blockClass": ""
+      "blockClass": "first-banner"
     },
     "children": ["flex-layout.col#second-banners"]
   },
@@ -10,7 +10,10 @@
       "image#image-second-one",
       "image#image-second-two",
       "image#image-second-three"
-    ]
+    ],
+    "props": {
+      "blockClass": ["first-banner", "second-banner"]
+    }
   },
   "image#image-second-one": {
     "props": {

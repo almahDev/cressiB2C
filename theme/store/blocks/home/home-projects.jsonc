@@ -1,119 +1,16 @@
 {
-  "flex-layout.row#home-projects": {
+  "flex-layout.row#instagram-title": {
     "title": "Coleções",
-    "children": [
-      "list-context.image-list#home-projects",
-      "info-card#home-projects-logged"
-    ],
+    "children": ["rich-text#instagram"],
     "props": {
-      "colGap": 4,
-      "fullWidth": true,
-      "experimentalHideEmptyCols": true,
-      "blockClass": "home__projects"
+      "blockClass": "home__insta-title"
     }
   },
-  "info-card#home-projects-logged": {
-    "title": "Bloco de Informações",
+  "rich-text#instagram": {
+    "title": "Instagram - Título",
     "props": {
-      "id": "info-card-home-projects",
-      "isFullModeStyle": false,
-      "headline": "## BENEFÍCIOS CRESSI",
-      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-      "callToActionText": "CADASTRE-SE",
-      "callToActionUrl": "/",
-      "callToActionMode": "button",
-      "blockClass": "home__projects",
-      "textAlignment": "left",
-      "textMode": "rich-text",
-      "width": "55%"
-    }
-  },
-  "flex-layout.row#home-projects-login": {
-    "title": "Coleções Login",
-    "children": [
-      "list-context.image-list#home-projects-login",
-      "info-card#home-projects-login"
-    ],
-    "props": {
-      "colGap": 4,
-      "fullWidth": true,
-      "experimentalHideEmptyCols": true,
-      "blockClass": "home__projects"
-    }
-  },
-
-  "info-card#home-projects-login": {
-    "title": "Bloco de Informações",
-    "props": {
-      "id": "info-card-home-projects",
-      "isFullModeStyle": false,
-      "headline": "## CADASTRE-SE",
-      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-      "callToActionText": "CADASTRE-SE",
-      "callToActionUrl": "/",
-      "callToActionMode": "button",
-      "blockClass": "home__projects",
-      "textAlignment": "left",
-      "textMode": "rich-text",
-      "width": "55%"
-    }
-  },
-  "list-context.image-list#home-projects-login": {
-    "title": "Lista de Imagens",
-    "children": ["slider-layout#home-projects"],
-    "props": {
-      "height": "100%",
-      "preload": false,
-      "images": [
-        {
-          "image": "assets/img/home/banner-cadastre-se.png"
-        }
-      ]
-    }
-  },
-
-  "info-card#home-projects": {
-    "title": "Bloco de Informações",
-    "props": {
-      "id": "info-card-home-projects",
-      "isFullModeStyle": false,
-      "headline": "## CADASTRE-SE",
-      "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-      "callToActionText": "CADASTRE-SE",
-      "callToActionUrl": "/",
-      "callToActionMode": "button",
-      "blockClass": "home__projects",
-      "textAlignment": "left",
-      "textMode": "rich-text",
-      "width": "55%"
-    }
-  },
-  "list-context.image-list#home-projects": {
-    "title": "Lista de Imagens",
-    "children": ["slider-layout#home-projects"],
-    "props": {
-      "height": "100%",
-      "preload": false,
-      "images": [
-        {
-          "image": "assets/img/home/banner-cadastre-se.png"
-        }
-      ]
-    }
-  },
-  "slider-layout#home-projects": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 2,
-        "tablet": 2,
-        "phone": 1
-      },
-      "blockClass": "home__projects",
-      "fullWidth": true,
-      "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "centerMode": "disabled"
+      "text": "![Icon Info Uni](assets/img/home/icon-info-uni.png) **SIGA-NOS**",
+      "blockClass": ["home__title", "home__title--instagram"]
     }
   }
 }
