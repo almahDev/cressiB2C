@@ -53,6 +53,10 @@
         {
           "order": 5,
           "show": true
+        },
+        {
+          "order": 6,
+          "show": true
         }
       ]
     }
@@ -85,9 +89,11 @@
   "product-summary-sku-selector#shelf": {
     "props": {
       "blockClass": "product__sku-selector--shelf",
-      "skuSelector": true,
-      "showVariationsLabels": "itemValue",
-      "visibleVariations": ["Cor"],
+      // "skuSelector": true,
+      "hideImpossibleCombinations": false,
+      "showVariationsLabels": "none",
+      // "showValueForVariation": "all",
+      // "visibleVariations": ["Cor"],
       "initialSelection": "complete",
       "sliderDisplayThreshold": 4
     }

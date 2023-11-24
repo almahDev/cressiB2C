@@ -395,7 +395,13 @@
       padding-top: 12px;
     }
 
+    // FIX PARA ESCONDER AS VARIAÇÕES E SÓ MOSTRAR A VARIAÇÃO COR VIA CSS
+    :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+      display: none;
+    }
+
     :global(.vtex-store-components-3-x-skuSelectorSubcontainer--cor) {
+      display: flex;
       padding: 0;
 
       :global(.vtex-store-components-3-x-skuSelectorTextContainer) {
