@@ -4,6 +4,8 @@
 
 .sliderTrackContainer {
   &--instagram {
-    overflow: hidden;
+    @include desktop {
+      overflow: hidden;
+    }
   }
 }
