@@ -26,8 +26,7 @@
     "children": [
       "image#cadastre-se",
       "rich-text#sub-text-cadastro",
-      "link#lojista",
-      "link#instrutor"
+      "link#lojista"
     ],
     "props": {
       "blockClass": ["background-cadastre"]
@@ -46,16 +45,9 @@
   },
   "link#lojista": {
     "props": {
-      "label": "SOU LOJISTA",
-      "href": "/cadastro/lojista",
+      "label": "QUERO ME CADASTRAR",
+      "href": "#",
       "blockClass": ["cta-lojista"]
-    }
-  },
-  "link#instrutor": {
-    "props": {
-      "label": "SOU INSTRUTOR",
-      "href": "/cadastro/instrutor",
-      "blockClass": ["cta-instrutor"]
     }
   }
 }

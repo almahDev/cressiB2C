@@ -8,26 +8,54 @@
     }
   },
   "flex-layout.col#search-collections": {
-    "children": [
-      "rich-text#search-collections-title",
-      "blog-latest-posts-preview.wordpress-latest-posts-preview"
-    ],
+    "children": ["list-context.image-list#search-collections"],
     "props": {
       "blockClass": ["home__collections", "search__collections"]
     }
   },
-  "rich-text#search-collections-title": {
-    "title": "Coleções - Título",
+  "list-context.image-list#search-collections": {
+    "title": "Listagem Banners - Coleções",
+    "children": ["list-context-renderer#search-collections"],
     "props": {
-      "text": "## **ARTIGOS SOBRE ESTA CATEGORIA**",
-      "blockClass": ["home__title", "search__collections--title"]
+      "preload": true,
+      "height": "100%",
+      "images": [
+        {
+          "image": "assets/img/category/category-banner-desktop-1.png",
+          "mobileImage": "assets/img/category/category-banner-mobile-1.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/img/category/category-banner-desktop-2.png",
+          "mobileImage": "assets/img/category/category-banner-mobile-2.png",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
     }
   },
-
-  "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+  "list-context-renderer#search-collections": {
     "props": {
-      "title": "Teste",
-      "showDates": true
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": ["search__collections"]
     }
   }
+  // "rich-text#search-collections-title": {
+  //   "title": "Coleções - Título",
+  //   "props": {
+  //     "text": "## **ARTIGOS SOBRE ESTA CATEGORIA**",
+  //     "blockClass": ["home__title", "search__collections--title"]
+  //   }
+  // },
+
+  // "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+  //   "props": {
+  //     "title": "Teste",
+  //     "showDates": true
+  //   }
+  // }
 }

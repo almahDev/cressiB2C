@@ -33,6 +33,12 @@
   &--header__link-login--area-lojista {
     min-width: 138px;
     background: #000;
+
+    @include tablet {
+      width: auto !important;
+      margin-right: auto;
+      margin-bottom: 26px;
+    }
   }
 }
 

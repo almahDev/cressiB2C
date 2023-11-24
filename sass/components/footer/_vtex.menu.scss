@@ -190,6 +190,14 @@
       }
     }
   }
+
+  &--footer__menu--mob-security {
+    .submenuAccordion {
+      @include tablet {
+        min-height: 70px;
+      }
+    }
+  }
 }
 
 .submenuAccordion {

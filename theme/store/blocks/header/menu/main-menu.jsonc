@@ -2,6 +2,7 @@
   "vtex.menu@2.x:menu#main-menu": {
     "title": "Menu Header - Desktop",
     "props": {
+      "width": "60%",
       "blockClass": ["main-menu-wrapper", "header__menu"],
       "experimentalOptimizeRendering": true
     },
@@ -14,7 +15,8 @@
       "menu-item#dep4",
       "menu-item#dep5",
       "menu-item#dep6",
-      "menu-item#dep7"
+      "menu-item#dep7",
+      "menu-item#dep8"
     ]
   },
   "flex-layout.row#mega-menu": {
