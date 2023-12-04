@@ -1,7 +1,7 @@
 {
   "store.custom#embaixadivers": {
     "children": [
-      "flex-layout.row#lading-banners",
+      "flex-layout.row#landing-banners",
       "rich-text#title",
       "flex-layout.row#shelf-home-2"
     ]
@@ -14,34 +14,36 @@
       "blockClass": ["home__shelf", "home__shelf-1"]
     }
   },
-  "flex-layout.row#lading-banners": {
+  "flex-layout.row#landing-banners": {
     "props": {
-      "blockClass": "lading-banner"
+      "blockClass": "landing-banner"
     },
-    "children": ["flex-layout.col#lading-banners"]
+    "children": ["flex-layout.col#landing-banners"]
   },
-  "flex-layout.col#lading-banners": {
+  "flex-layout.col#landing-banners": {
     "children": [
-      "responsive-layout.desktop#mosaic-banners-lading",
-      "responsive-layout.mobile#mosaic-banners-lading"
+      "responsive-layout.desktop#mosaic-banners-landing",
+      "responsive-layout.mobile#mosaic-banners-landing"
     ],
     "props": {
-      "blockClass": "lading-banner"
+      "blockClass": "landing-banner"
     }
   },
-  "responsive-layout.desktop#mosaic-banners-lading": {
+  "responsive-layout.desktop#mosaic-banners-landing": {
     "children": ["image#desk-image-one"]
   },
-  "responsive-layout.mobile#mosaic-banners-lading": {
+  "responsive-layout.mobile#mosaic-banners-landing": {
     "children": ["image#mob-image-one"]
   },
   "image#mob-image-one": {
+    "title": "Banner Mobile",
     "props": {
       "src": "https://placehold.co/423x316"
     }
   },
 
   "image#desk-image-one": {
+    "title": "Banner Desk",
     "props": {
       "src": "https://placehold.co/648x306"
     }
@@ -49,8 +51,9 @@
 
 
   "rich-text#title":{
+    "title": "Texto Page",
     "props": {
-      "blockClass": "title-lading",
+      "blockClass": "title-landing",
       "text": ""
     }
   }
