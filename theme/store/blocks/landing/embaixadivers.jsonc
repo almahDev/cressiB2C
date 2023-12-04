@@ -1,0 +1,60 @@
+{
+  "store.custom#embaixadivers": {
+    "children": [
+      "flex-layout.row#landing-banners",
+      "rich-text#title",
+      "flex-layout.row#shelf-home-2"
+    ]
+  },
+  "flex-layout.row#shelf-landing-1": {
+    "title": "Vitrine 1",
+    "children": ["flex-layout.col#shelf-home-1"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__shelf", "home__shelf-1"]
+    }
+  },
+  "flex-layout.row#landing-banners": {
+    "props": {
+      "blockClass": "landing-banner"
+    },
+    "children": ["flex-layout.col#landing-banners"]
+  },
+  "flex-layout.col#landing-banners": {
+    "children": [
+      "responsive-layout.desktop#mosaic-banners-landing",
+      "responsive-layout.mobile#mosaic-banners-landing"
+    ],
+    "props": {
+      "blockClass": "landing-banner"
+    }
+  },
+  "responsive-layout.desktop#mosaic-banners-landing": {
+    "children": ["image#desk-image-one"]
+  },
+  "responsive-layout.mobile#mosaic-banners-landing": {
+    "children": ["image#mob-image-one"]
+  },
+  "image#mob-image-one": {
+    "title": "Banner Mobile",
+    "props": {
+      "src": "https://placehold.co/423x316"
+    }
+  },
+
+  "image#desk-image-one": {
+    "title": "Banner Desk",
+    "props": {
+      "src": "https://placehold.co/648x306"
+    }
+  },
+
+
+  "rich-text#title":{
+    "title": "Texto Page",
+    "props": {
+      "blockClass": "title-landing",
+      "text": ""
+    }
+  }
+}
