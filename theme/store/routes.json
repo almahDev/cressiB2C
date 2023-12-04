@@ -17,5 +17,8 @@
   },
   "store.custom#collection": {
     "path": "/colecao/:id"
+  },
+  "store.custom#embaixadivers":{
+    "path": "lawrence-wahba"
   }
 }

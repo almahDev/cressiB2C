@@ -1,0 +1,10 @@
+.container{
+  max-width: 82.5rem;
+    padding: 0 2.4rem;
+    margin: 0 auto;
+}
+.paragraph{
+  &--title-lading{
+   padding-top: 1em;
+  }
+}
