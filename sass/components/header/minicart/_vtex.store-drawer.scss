@@ -55,7 +55,9 @@
     }
   }
 }
-
+:global(.vtex-rich-text-0-x-container--continuar-comprando) {
+  padding: 0 !important;
+}
 :global(.vtex-rich-text-0-x-wrapper--continuar-comprando) {
   width: 100%;
 
