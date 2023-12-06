@@ -63,7 +63,7 @@
   &--story-text,
   &--story-mobile-text {
     width: 32rem;
-    padding: 0 0 0 7.6rem;
+    padding: 0 0 0 7.6rem !important;
     margin: auto;
 
     @media (max-width: 1301px) and (min-width: 1200px) {
@@ -71,7 +71,7 @@
     }
 
     @media (max-width: 768px) {
-      padding: 11rem 1.44rem 0;
+      padding: 11rem 1.44rem 0 !important;
       color: $white;
       width: unset;
       font-size: 1.125rem;
@@ -85,7 +85,7 @@
   .wrapper {
     &--story-text-title {
       text-align: left !important;
-      padding: 0 0 0 15rem;
+      padding: 0 0 0 12rem;
 
       @media (max-width: 1301px) and (min-width: 1200px) {
         padding: 0 0 0 9rem;

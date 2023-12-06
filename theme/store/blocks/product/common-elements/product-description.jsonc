@@ -23,7 +23,8 @@
     "title": "Descrição do Produto",
     "props": {
       "blockClass": "product__description",
-      "animated": false
+      "animated": false,
+      "initialVisibility": "visible"
     },
     "children": [
       "disclosure-trigger#product-video",

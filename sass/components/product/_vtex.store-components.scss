@@ -196,7 +196,7 @@
 }
 
 .productDescriptionText {
-  @include text($font-size-md, $text-color-2, $regular);
+  @include text($font-size-md, #000, $regular);
   line-height: 1.5rem;
 
   @include tablet {
