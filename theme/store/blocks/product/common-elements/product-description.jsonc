@@ -73,7 +73,8 @@
   "rich-text#product-video": {
     "title": "Título",
     "props": {
-      "blockClass": "product__description",
+      "htmlId": "video",
+      "blockClass": ["product__description", "product__description--video"],
       "text": "VÍDEO EXPLICATIVO"
     }
   },
