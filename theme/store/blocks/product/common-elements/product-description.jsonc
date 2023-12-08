@@ -23,7 +23,8 @@
     "title": "Descrição do Produto",
     "props": {
       "blockClass": "product__description",
-      "animated": false
+      "animated": false,
+      "initialVisibility": "visible"
     },
     "children": [
       "disclosure-trigger#product-video",
@@ -72,7 +73,8 @@
   "rich-text#product-video": {
     "title": "Título",
     "props": {
-      "blockClass": "product__description",
+      "htmlId": "video",
+      "blockClass": ["product__description", "product__description--video"],
       "text": "VÍDEO EXPLICATIVO"
     }
   },
