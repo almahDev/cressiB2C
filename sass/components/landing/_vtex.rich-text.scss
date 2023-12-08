@@ -1,10 +1,13 @@
-.container{
-  max-width: 82.5rem;
+.container {
+  &--title-landing {
+    max-width: 82.5rem;
     padding: 0 2.4rem;
     margin: 0 auto;
+  }
 }
-.paragraph{
-  &--title-landing{
-   padding-top: 1em;
+
+.paragraph {
+  &--title-landing {
+    padding-top: 1em;
   }
 }
