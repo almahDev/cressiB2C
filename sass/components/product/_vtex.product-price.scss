@@ -11,12 +11,13 @@
   }
 }
 
+.customSellingPrice,
 .sellingPrice,
 .sellingPriceValue {
   &--product__price {
     @include text(2.1875rem, $secondary-pure-500, $bold);
     line-height: normal;
-    margin-top: 3rem;
+    margin-top: 0rem;
 
     @include tablet {
       margin: 0 0 0.6rem 0;
