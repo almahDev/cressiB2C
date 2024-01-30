@@ -1,4 +1,19 @@
 {
+  "condition-layout.product#product-main-btn": {
+    "title": "Condição de campo produto - Modal de Anexos",
+    "props": {
+      "matchType": "none",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Personalização"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#product-main-btn"
+    }
+  },
   "flex-layout.row#product-main-btn": {
     "title": "Botões de compra",
     "props": {

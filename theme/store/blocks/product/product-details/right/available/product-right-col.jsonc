@@ -10,8 +10,8 @@
       "flex-layout.row#ProgressiveDiscount",
       "experimental__visibility-layout#product-similar-products-variants",
       "product-availability",
-      "product-assembly-options",
-      "flex-layout.row#product-main-btn"
+      "condition-layout.product#assembly-options-modal",
+      "condition-layout.product#product-main-btn"
     ],
     "props": {
       "disposition": [

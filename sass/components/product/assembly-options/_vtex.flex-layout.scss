@@ -1,0 +1,49 @@
+.flexRowContent {
+  &--assembly-options__name {
+    :global(.vtex-store-components-3-x-productBrand) {
+      padding-top: 0;
+    }
+  }
+
+  &--assembly-options__identifier-rating {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 8px;
+
+    .stretchChildrenWidth {
+      width: auto !important;
+    }
+  }
+}
+
+.flexCol {
+  &--product__left-col {
+    :global(
+        .vtex-store-components-3-x-productImagesContainer--product__images--desktop
+      ) {
+      padding: 0;
+    }
+  }
+
+  &--assembly-options__right-col {
+    :global(.vtex-store-components-3-x-skuSelectorItemImage) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include desktop {
+      padding-top: 0;
+      padding-right: 88px;
+    }
+  }
+}
+
+.flexColChild {
+  &--assembly-options__main-btn {
+    width: 100%;
+
+    &:nth-child(2n) {
+      display: none;
+    }
+  }
+}

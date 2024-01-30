@@ -1,0 +1,18 @@
+.container {
+  &--modal__assembly-options {
+    .wrapper {
+      text-align: center;
+    }
+
+    .paragraph {
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}

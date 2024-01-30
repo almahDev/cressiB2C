@@ -1,13 +1,206 @@
 {
-  "product-assembly-options": {
+  "condition-layout.product#assembly-options-modal": {
+    "title": "Condição de campo produto - Modal de Anexos",
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Personalização"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#product-assembly-options-btns"
+    }
+  },
+  "flex-layout.row#product-assembly-options-btns": {
+    "title": "Botões - Anexos",
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["product__assembly--btn"]
+    },
     "children": [
-      "flex-layout.row#product-assembly-options",
-      "assembly-option-input-values"
+      "modal-trigger#assembly-options-modal",
+      "flex-layout.col#link-ancora"
     ]
+  },
+  "modal-trigger#assembly-options-modal": {
+    "title": "Modal de Anexos",
+    "props": {
+      "blockClass": "modal__assembly-options"
+    },
+    "children": [
+      "rich-text#assembly-options-modal",
+      "modal-layout#assembly-options-modal-content"
+    ]
+  },
+
+  "rich-text#assembly-options-modal": {
+    "title": "Texto - PERSONALIZE O SEU PRODUTO",
+    "props": {
+      "text": "PERSONALIZE O SEU PRODUTO",
+      "blockClass": "modal__assembly-options"
+    }
+  },
+
+  "modal-layout#assembly-options-modal-content": {
+    "children": [
+      "flex-layout.row#assembly-options-modal-header",
+      "custom-product-context"
+    ],
+    "props": {
+      "blockClass": "modal__assembly-options"
+    }
+  },
+
+  "flex-layout.row#assembly-options-modal-header": {
+    "children": ["modal-header#assembly-options-modal"]
+  },
+  "modal-header#assembly-options-modal": {
+    "props": {
+      "blockClass": "modal__assembly-options--header",
+      "iconCloseSize": 20
+    }
+  },
+
+  "custom-product-context": {
+    "children": ["flex-layout.row#assembly-options-modal-content"]
+  },
+  "flex-layout.row#assembly-options-modal-content": {
+    "title": "Modal de Anexos - Conteúdo",
+    "children": [
+      "flex-layout.col#assembly-options-left-col",
+      "flex-layout.col#assembly-options-right-col"
+    ],
+    "props": {
+      "blockClass": "modal__assembly-options--content",
+      "colSizing": "auto"
+    }
+  },
+
+  // LEFT COL
+  "flex-layout.col#assembly-options-left-col": {
+    "title": "Bloco da Esquerda",
+    "children": ["product-images#assembly-options"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0,
+      "blockClass": ["product__left-col", "assembly-options__left-col"]
+    }
+  },
+  "product-images#assembly-options": {
+    "title": "Opções da Imagem",
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "maxHeight": 686,
+      "displayMode": "first-image",
+      "zoomMode": "disabled",
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailVisibility": "hidden",
+      "blockClass": [
+        "product__images--desktop",
+        "assembly-options__images--desktop"
+      ]
+    }
+  },
+  // RIGHT COL
+  "flex-layout.col#assembly-options-right-col": {
+    "title": "Bloco da Direita",
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": ["product__right-col", "assembly-options__right-col"]
+    },
+    "children": [
+      "flex-layout.row#assembly-options-name",
+      "custom-product-dropdowns",
+      "product-assembly-options",
+      "stop-propagation-layout#sku-selector-assembly-options",
+      "custom-product-price",
+      "flex-layout.row#assembly-options-main-btn",
+      "custom-assembly-text"
+    ]
+  },
+  // NOME
+  "flex-layout.row#assembly-options-name": {
+    "children": [
+      "vtex.store-components:product-name",
+      "flex-layout.row#product-identifier-rating"
+    ],
+    "props": {
+      "blockClass": ["top-name-page-product", "assembly-options__name"]
+    }
+  },
+  "flex-layout.row#product-identifier-rating": {
+    "children": ["product-identifier.product", "product-rating-summary"],
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "blockClass": ["assembly-options__identifier-rating"]
+    }
+  },
+  // SKU SELECTOR
+  "stop-propagation-layout#sku-selector-assembly-options": {
+    "children": ["sku-selector#assembly-options"]
+  },
+  "sku-selector#assembly-options": {
+    "title": "Seleção de SKU",
+    "props": {
+      "variationsSpacing": 3,
+      "showVariationsLabels": "none",
+      "initialSelection": "complete",
+      "visibleVariations": ["Cor"] // TODO remover quando o bug for corrigido
+    }
+  },
+  // BUY BUTTON
+
+  "flex-layout.row#assembly-options-main-btn": {
+    "title": "Botões de compra",
+    "props": {
+      "blockClass": ["assembly-options__main-btn"]
+    },
+    "children": ["flex-layout.col#assembly-options-main-btn"]
+  },
+  "flex-layout.col#assembly-options-main-btn": {
+    "props": {
+      "blockClass": ["assembly-options__main-btn"],
+      "rowGap": 4
+    },
+    "children": [
+      "experimental__visibility-layout#quantity-selector",
+      "add-to-cart-button#product-add-to-cart",
+      "custom-product-buy-button"
+    ]
+  },
+  "experimental__visibility-layout#quantity-selector": {
+    "title": "Controle de visibilidade - Botão 'Comprar agora' (ON/OFF)",
+    "props": {
+      "blockClass": "product__quantity",
+      "visible": true
+    },
+    "children": ["product-quantity"]
+  },
+  // "flex-layout.col#assembly-options-modal-content": {
+  //   "children": ["product-assembly-options"],
+  //   "props": {
+  //     "blockClass": "modal__assembly-options--content"
+  //   }
+  // },
+
+  // BLOCOS DO ASSEMBLY OPTIONS
+  "product-assembly-options": {
+    "children": ["assembly-option-input-values"],
+    "props": {
+      "initiallyOpened": "always"
+    }
   },
   "assembly-option-input-values": {
     "props": {
-      "optionsDisplay": "box"
+      "optionsDisplay": "select"
     }
   },
   "flex-layout.row#product-assembly-options": {
